@@ -122,7 +122,7 @@
         android:inputType="number"
         app:layout_constraintStart_toEndOf="@+id/textAge"
         app:layout_constraintTop_toBottomOf="@+id/textWeight" />
-    
+
     <RelativeLayout android:id="@+id/RelativeLayout01"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
