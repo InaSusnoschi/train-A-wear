@@ -3,6 +3,7 @@ package com.example.first_app;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,9 +22,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 public class History extends AppCompatActivity {
 
+    final String TAG = "history";
+
     EditText editTextAddress, editTextPort;
     Button buttonConnect;
-    TextView textViewState, textViewRx;
+    TextView textViewState, textViewRx, textViewOther;
 
     UdpClientHandler udpClientHandler;
     UdpClientThread udpClientThread;
@@ -35,25 +38,26 @@ public class History extends AppCompatActivity {
 
         Intent history = getIntent();
 
-        /* other tutorial */
         editTextAddress = (EditText) findViewById(R.id.address);
         editTextPort = (EditText) findViewById(R.id.port);
         buttonConnect = (Button) findViewById(R.id.connect);
         textViewState = (TextView)findViewById(R.id.state);
         textViewRx = (TextView)findViewById(R.id.received);
+        textViewOther = (TextView)findViewById(R.id.received2);
 
         buttonConnect.setOnClickListener(buttonConnectOnClickListener);
 
-}
+        udpClientHandler = new UdpClientHandler(this);
+    }
 
-
-    /* OTHER TUTORIAL */
 
     View.OnClickListener buttonConnectOnClickListener =
             new View.OnClickListener() {
 
                 @Override
                 public void onClick(View arg0) {
+
+                    Log.d(TAG,"Connecting");
 
                     udpClientThread = new UdpClientThread(
                             editTextAddress.getText().toString(),
@@ -66,11 +70,14 @@ public class History extends AppCompatActivity {
             };
 
     private void updateState(String state){
+        Log.d(TAG,"update state");
         textViewState.setText(state);
     }
 
     private void updateRxMsg(String rxmsg){
+        Log.d(TAG,"update message");
         textViewRx.append(rxmsg + "\n");
+        textViewOther.append(rxmsg + "\n");
     }
 
     private void clientEnd(){
@@ -84,11 +91,11 @@ public class History extends AppCompatActivity {
         public static final int UPDATE_STATE = 0;
         public static final int UPDATE_MSG = 1;
         public static final int UPDATE_END = 2;
-        private History history;
+        private History parent;
 
-        public UdpClientHandler(MainActivity parent) {
+        public UdpClientHandler(History parent) {
             super();
-            this.history = history;
+            this.parent = parent;
         }
 
         @Override
@@ -96,13 +103,13 @@ public class History extends AppCompatActivity {
 
             switch (msg.what){
                 case UPDATE_STATE:
-                    history.updateState((String)msg.obj);
+                    parent.updateState((String)msg.obj);
                     break;
                 case UPDATE_MSG:
-                    history.updateRxMsg((String)msg.obj);
+                    parent.updateRxMsg((String)msg.obj);
                     break;
                 case UPDATE_END:
-                    history.clientEnd();
+                    parent.clientEnd();
                     break;
                 default:
                     super.handleMessage(msg);
@@ -111,15 +118,4 @@ public class History extends AppCompatActivity {
         }
     }
 
-
-
-
-//    public void serverMessage(View view) {
-//        // Do something in response to button
-//        Intent server = new Intent(this, History.class);
-//        EditText editText = (EditText) findViewById(R.id.toSendServer);
-//        String message = editText.getText().toString();
-//        server.putExtra(EXTRA_MESSAGE, message);
-//        startActivity(server);
-//    }
 }

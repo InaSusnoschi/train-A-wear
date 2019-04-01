@@ -1,6 +1,9 @@
 package com.example.first_app;
 
 import android.os.Message;
+import android.util.Log;
+
+import com.example.first_app.History;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -11,13 +14,15 @@ import java.net.UnknownHostException;
 
 public class UdpClientThread extends Thread{
 
-    String dstAddress;
-    int dstPort;
-    private boolean running;
-    History.UdpClientHandler handler;
+    private final String TAG = "UpdCl";
 
-    DatagramSocket socket;
-    InetAddress address;
+    private String dstAddress;
+    private int dstPort;
+    private boolean running;
+    private History.UdpClientHandler handler;
+
+    private DatagramSocket socket;
+    private InetAddress address;
 
     public UdpClientThread(String addr, int port, History.UdpClientHandler handler) {
         super();
@@ -38,6 +43,7 @@ public class UdpClientThread extends Thread{
 
     @Override
     public void run() {
+        Log.d(TAG, "connecting...");
         sendState("connecting...");
 
         running = true;
@@ -45,28 +51,44 @@ public class UdpClientThread extends Thread{
         try {
             socket = new DatagramSocket();
             address = InetAddress.getByName(dstAddress);
-
+            Log.d(TAG, "send request...");
             // send request
-            byte[] buf = new byte[256];
+            byte[] buf = ("Heya! \n \r").getBytes();
+            byte[] buf_r = new byte[2048];  // received message stored here
+//            byte[] bufmsg = ("heya").getBytes();
 
             DatagramPacket packet =
-                    new DatagramPacket(buf, buf.length, address, dstPort);
+                    new DatagramPacket( buf, buf.length, address, dstPort);
+
+//            DatagramPacket pack =
+//                    new DatagramPacket( bufmsg, bufmsg.length, address, dstPort);
+            Log.d(TAG, "send packet");
             socket.send(packet);
+//            socket.send(pack);
 
             sendState("connected");
 
-            // get response
-            packet = new DatagramPacket(buf, buf.length);
+            // get response message (ACK)
+//            packet = new DatagramPacket(buf, buf.length);
+            DatagramPacket packetrec = new DatagramPacket(buf_r, buf_r.length);
 
+            Log.d(TAG, "receive packet");
+            socket.receive(packetrec);
+  //          socket.receive(packet);
 
-            socket.receive(packet);
-            String line = new String(packet.getData(), 0, packet.getLength());
+            Log.d(TAG, "get packet data");
+            String line = new String(packetrec.getData(), 0, packetrec.getLength());
+  //          String number = new String(packetrec.getData(), 0, packetrec.getLength());
 
+            Log.d(TAG, "handle packet");
             handler.sendMessage(
                     Message.obtain(handler, History.UdpClientHandler.UPDATE_MSG, line));
 
+//            handler.sendMessage(
+//                    Message.obtain(handler, History.UdpClientHandler.UPDATE_MSG, number));
+
         } catch (SocketException e) {
-            e.printStackTrace();
+            Log.e(TAG,"socket excetopm h0 happed",e);
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -74,6 +96,7 @@ public class UdpClientThread extends Thread{
         } finally {
             if(socket != null){
                 socket.close();
+
                 handler.sendEmptyMessage(History.UdpClientHandler.UPDATE_END);
             }
         }
