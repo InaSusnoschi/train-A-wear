@@ -37,6 +37,7 @@ int main(void){
 	struct sockaddr_in 		client_addr;
 	socklen_t 				client_addr_len;
 	char*					message;
+	char*					handshake = "train-A-wear online";
 
 	// Determining local IP
 	char 			ip_address[15];
@@ -89,7 +90,7 @@ int main(void){
 		// Filter out the message or print it
 		message = (char*) malloc(rlen-1);
 		memcpy(message, buffer, rlen-1);
-		if(strcmp(message, "train-A-wear online") == 0)
+		if(strcmp(message, handshake) == 0)
 			cout << "I FOUND YOU!" << endl;
 		else
 			cout << message << endl;
