@@ -6,13 +6,24 @@
 #include <sys/socket.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <iostream>
 
 //Needed for figuring out machine IP address as per https://www.includehelp.com/c-programs/get-ip-address-in-linux.aspx
 #include <sys/ioctl.h>
 #include <net/if.h>
 
+//Headers for multi-threading as per https://dzone.com/articles/parallel-tcpip-socket-server-with-multi-threading
+#include <cstdlib>
+#include <netinet/in.h>
+#include <fcntl.h>
+#include <pthread.h>
+
 #define BUFFER_LENGTH 1500
 #define PORT 31415
+
+using namespace std;
+
+
 
 int main(void){
 	
@@ -25,6 +36,7 @@ int main(void){
 	// Needed for UDP connection as per https:linux.die.net/man/3/getaddrinfo
 	struct sockaddr_in 		client_addr;
 	socklen_t 				client_addr_len;
+	string					message;
 
 	// Determining local IP
 	char 			ip_address[15];
@@ -37,7 +49,11 @@ int main(void){
 	close(fd);
 
 	strcpy(ip_address,inet_ntoa(((struct sockaddr_in *)&ifr.ifr_addr)->sin_addr));
-	printf("Server IP Address is: %s\n", ip_address);
+	cout << "Server IP Address is: " << ip_address << endl;
+
+
+	//Network IP discovery
+	int broadcast = 1;
 
 	// Create a UDP (SOCK_DGRAM) over IP scoket
 	fd = socket (AF_INET, SOCK_DGRAM, 0);
@@ -46,8 +62,7 @@ int main(void){
 		return 1;
 	}
 
-	// Network IP discovery
-	int broadcast = 1;
+
 	if(setsockopt(fd,SOL_SOCKET,SO_BROADCAST,&broadcast,sizeof(broadcast)) < 0){
         perror("Error in setting Broadcast option");
         close(fd);
@@ -69,10 +84,21 @@ int main(void){
 	client_addr_len = sizeof(struct sockaddr_storage);
 	while((rlen = recvfrom(fd, buffer, BUFFER_LENGTH, flags, (struct sockaddr *) &client_addr, &client_addr_len)) > 0){
 		int i;
-		printf("%s -> ", inet_ntoa(client_addr.sin_addr));
-		for(i = 0; i < rlen; i++){
-			printf("%c", buffer[i]);
+		cout << inet_ntoa(client_addr.sin_addr) << " -> ";
+
+		//message = (char*) malloc(rlen-1);
+		//memcpy(message, buffer, rlen-1);
+		//if ()
+		message = buffer;
+		message = message.substr(0, message.length()-1);
+		int comp = message.compare("trainAwear");
+		if (comp == 0){
+			cout << "I FOUND YOU!" << endl;
+		} else{
+			cout << message;	
 		}
+		message.clear();
+		//free(message);
 	}
 
 	// Close the socket
