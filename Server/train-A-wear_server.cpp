@@ -36,7 +36,7 @@ int main(void){
 	// Needed for UDP connection as per https:linux.die.net/man/3/getaddrinfo
 	struct sockaddr_in 		client_addr;
 	socklen_t 				client_addr_len;
-	string					message;
+	char*					message;
 
 	// Determining local IP
 	char 			ip_address[15];
@@ -85,21 +85,15 @@ int main(void){
 	while((rlen = recvfrom(fd, buffer, BUFFER_LENGTH, flags, (struct sockaddr *) &client_addr, &client_addr_len)) > 0){
 		int i;
 		cout << inet_ntoa(client_addr.sin_addr) << " -> ";
-
-		//message = (char*) malloc(rlen-1);
-		//memcpy(message, buffer, rlen-1);
-		//if ()
-		message = buffer;
-		message = message.substr(0, message.length()-1);
-		int comp = message.compare("trainAwear");
-		if (comp == 0){
+		
+		// Filter out the message or print it
+		message = (char*) malloc(rlen-1);
+		memcpy(message, buffer, rlen-1);
+		if(strcmp(message, "train-A-wear online") == 0)
 			cout << "I FOUND YOU!" << endl;
-		} else{
-			cout << message;	
-		}
-		message.clear();
-		//free(message);
-	}
+		else
+			cout << message << endl;
+		free(message);	}
 
 	// Close the socket
 	close(fd);
