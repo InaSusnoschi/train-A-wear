@@ -3,8 +3,8 @@
     package="com.example.first_app">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +13,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".Lunge"
+            android:parentActivityName=".Workout">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Workout" />
+        </activity>
+        <activity
+            android:name=".SquatInstr"
+            android:parentActivityName=".ClassicSquat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ClassicSquat" />
+        </activity>
         <activity
             android:name=".Biceps"
             android:parentActivityName=".Workout">
@@ -51,7 +67,7 @@
                 android:value=".Workout" />
         </activity>
         <activity
-            android:name=".DisplayMessageActivity"
+            android:name=".Setup"
             android:parentActivityName=".MainActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->

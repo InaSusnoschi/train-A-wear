@@ -25,4 +25,11 @@ public class Workout extends AppCompatActivity {
         Intent biceps = new Intent(this, Biceps.class);
         startActivity(biceps);
     }
+
+    public void enterLunge(View view) {
+        Intent lunge = new Intent(this, Lunge.class);
+        startActivity(lunge);
+    }
+
+
 }

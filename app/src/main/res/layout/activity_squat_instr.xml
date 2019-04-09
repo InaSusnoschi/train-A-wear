@@ -1,9 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".SquatInstr">
+    <RelativeLayout android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView android:id="@+id/backgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logosquat" />
+        <ImageView android:id="@+id/gravitywell_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logodumbbell"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <ModifiedScrollView android:id="@+id/scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none">
+        <LinearLayout android:id="@+id/scroller_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:paddingTop="330dp">
+            <LinearLayout android:id="@+id/scroller_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:background="@drawable/fuzzybackground">
+
+                <!-- Content for upper layer goes here -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </ModifiedScrollView>
+</RelativeLayout>
