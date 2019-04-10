@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/geom2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:paddingTop="5dp"
+        android:background="@color/colorGreyLight"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".ClassicSquat">
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carousel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:pageColor="@color/colorGreyLight"
+                app:fillColor="@color/colorNavy"
+                app:slideInterval="3000"
+                app:radius="6dp"
+                app:strokeColor="@color/colorPrimaryDark"
+                app:strokeWidth="1dp"/>
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/button_exercise_start"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonClassicSquatInstr"
+        android:onClick="enterInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/button_instructions"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:text="@string/exercise_headline"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonClassicSquatInstr" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/fire"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/fire"
+            app:srcCompat="@drawable/fire_transp" />
+
+        <TextView
+            android:id="@+id/textKcalBurned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/calories_burned"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/calDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/calories_value"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect"/>
+    <Button
+        android:id="@+id/disconnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Disonnect"/>
+</LinearLayout>
+
+
