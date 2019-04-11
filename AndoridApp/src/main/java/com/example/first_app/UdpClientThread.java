@@ -33,10 +33,10 @@ public class UdpClientThread extends Thread{
      * \brief Constructor that takes port and address from History activity
      * @param addr
      * @param port
-     * @param udpClientHandler
+     * @param handler
      */
 
-    public UdpClientThread(String addr, int port, History.UdpClientHandler udpClientHandler) {
+    public UdpClientThread(String addr, int port, ClassicSquat.UdpClientHandler handler) {
         super();
         dstAddress = addr;
         dstPort = port;
@@ -80,7 +80,6 @@ public class UdpClientThread extends Thread{
         while (running.get()) {
             Log.d(TAG, "receive running state");
             try {
-
 
                 socket = new DatagramSocket();
                 address = InetAddress.getByName(dstAddress);

@@ -35,7 +35,7 @@ public class ClassicSquat extends AppCompatActivity {
     };
 
     /**
-     * \brief create UDP connection
+     * @brief create UDP connection
      */
     public static int instruction = 1;
     int num;
@@ -57,7 +57,7 @@ public class ClassicSquat extends AppCompatActivity {
     static TextView textViewState, textViewRx, textViewNumber, textFeedback;
 
     UdpClientHandler udpClientHandler;
-    com.example.first_app.UdpClientThread udpClientThread;
+    UdpClientThread udpClientThread;
 
 
     @Override
@@ -87,8 +87,8 @@ public class ClassicSquat extends AppCompatActivity {
          * from UDP connection: buttons and text fields
          */
 
-        editTextAddress =  findViewById(R.id.address); // in History
-        editTextPort =  findViewById(R.id.port); // in History
+//        editTextAddress =  findViewById(R.id.address); // in History
+//        editTextPort =  findViewById(R.id.port); // in History
         buttonConnect =  findViewById(R.id.connect); // in History
         buttonDisconnect =  findViewById(R.id.disconnect); // in History
         textViewState = findViewById(R.id.state); // in History
@@ -110,11 +110,10 @@ public class ClassicSquat extends AppCompatActivity {
 
                     Log.d(TAG,"Connecting");
                     setInstruction(1);
-//                    udpClientThread = new com.example.first_app.UdpClientThread(
-//                            editTextAddress.getText().toString(),
-//                            Integer.parseInt(editTextPort.getText().toString()),
-//                            udpClientHandler);
-//                    udpClientThread.start();
+                    udpClientThread = new com.example.first_app.UdpClientThread(
+                           "192.168.1.148",31415,
+                            udpClientHandler);
+                    udpClientThread.start();
 
 
                     Log.d(TAG,"connect button state");
@@ -127,6 +126,7 @@ public class ClassicSquat extends AppCompatActivity {
             };
 
     private void updateState(String state){
+        Log.d(TAG,"update state");
         textViewState.setText(state);
     }
 
@@ -209,9 +209,9 @@ public class ClassicSquat extends AppCompatActivity {
      * \brief enter Instructions&Setup view on click
      * @param view
      */
-
-    public void enterInstructions(View view) {
-        Intent squatInstr = new Intent(this, SquatInstr.class);
-        startActivity(squatInstr);
-    }
+//
+//    public void enterInstructions(View view) {
+//        Intent squatInstr = new Intent(this, SquatInstr.class);
+//        startActivity(squatInstr);
+//    }
 }
