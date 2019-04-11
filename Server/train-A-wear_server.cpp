@@ -12,9 +12,14 @@
 #include <sys/ioctl.h>
 #include <net/if.h>
 
+//Broadcast message timestamping
 #include <thread>
 #include <chrono>
 
+//JSON Parsing
+#include "rapidjson/document.h"
+#include "rapidjson/prettywriter.h"
+#include <cstring>
 #include <mutex>
 
 #define BUFFER_LENGTH 1500
@@ -22,8 +27,9 @@
 #define BROADCAST_DELAY_S 45
 
 using namespace std;
+using namespace rapidjson;
 
-char*					handshake = "train-A-wear online\n";
+const char*	handshake = "train-A-wear online\n";
 mutex mut;
 
 int broadcast_server(){
@@ -50,10 +56,11 @@ int broadcast_server(){
 
 
 	for(;;){
+		mut.lock();
 		sendto(socket_d, handshake, strlen(handshake), MSG_CONFIRM, (const struct sockaddr *) &multicast_addr, sizeof(multicast_addr));
 		time_t now_time = chrono::system_clock::to_time_t(chrono::system_clock::now());
-		mut.lock();
 		cout << "Broadcast sent @ " << ctime(&now_time);
+		cout << endl;
 		mut.unlock();
 		this_thread::sleep_for(chrono::seconds(BROADCAST_DELAY_S));
 	}
@@ -79,6 +86,14 @@ int main(void){
 
 	//Network IP discovery
 	int broadcast = 1;
+
+	//JSON transmission variables
+	Document receivedDocument;
+	string 	sensorName;
+	double 	gyro[3];
+	double 	accelerometer[3];
+	double 	magnetometer[3];
+
 
 	fd = socket(AF_INET, SOCK_DGRAM, 0);
 	ifr.ifr_addr.sa_family = AF_INET;
@@ -118,17 +133,52 @@ int main(void){
 	// Retrieve the data in the packet
 	client_addr_len = sizeof(struct sockaddr_storage);
 	while((rlen = recvfrom(fd, buffer, BUFFER_LENGTH, flags, (struct sockaddr *) &client_addr, &client_addr_len)) > 0){
-		int i;
 		mut.lock();
-		cout << inet_ntoa(client_addr.sin_addr) << " -> ";
+		time_t now_time = chrono::system_clock::to_time_t(chrono::system_clock::now());
+		cout << inet_ntoa(client_addr.sin_addr) << " @ " << ctime(&now_time);
 		
 		// Filter out the message or print it
 		message = (char*) malloc(rlen);
 		memcpy(message, buffer, rlen);
-		if(strncmp(message, handshake, strlen(handshake)) == 0)
+		if(strncmp(message, handshake, strlen(handshake)) == 0){
 			cout << "I FOUND YOU!" << endl;
-		else
-			cout << message;
+			cout << endl;
+		}
+		else{
+			// Proper JSON parsing
+			receivedDocument.Parse(message).HasParseError();
+			assert(receivedDocument.IsObject());
+
+			assert(receivedDocument.HasMember("sensor"));
+			assert(receivedDocument["sensor"].IsString());
+			sensorName = receivedDocument["sensor"].GetString();
+
+			//Receiving an array of values
+			const Value& aGyro = receivedDocument["gyro"];
+			const Value& aAcce = receivedDocument["accel"];
+			const Value& aMagn = receivedDocument["magnet"];
+
+			assert(aGyro.IsArray());
+			assert(aGyro.Size() == 3);
+			assert(aAcce.IsArray());
+			assert(aAcce.Size() == 3);
+			assert(aMagn.IsArray());
+			assert(aMagn.Size() == 3);
+
+
+			for (SizeType i = 0; i<aGyro.Size(); i++){
+				gyro[i] = aGyro[i].GetDouble();
+				accelerometer[i] = aAcce[i].GetDouble();
+				magnetometer[i] = aMagn[i].GetDouble();
+			}
+
+			cout << "Sensor: " << sensorName << endl;
+			cout << "Gyro: \t\t" << gyro[0] << "\t" << gyro[1] << "\t" << gyro [2] << endl;
+			cout << "Accelerometer:  " << accelerometer[0] << "\t" << accelerometer[1] << "\t" << accelerometer [2] << endl;
+			cout << "Gyro: \t\t" << magnetometer[0] << "\t" << magnetometer[1] << "\t" << magnetometer [2] << endl;
+			cout << endl;
+		}
+
 		free(message);
 		mut.unlock();
 	}
