@@ -1,6 +1,6 @@
 /** Software for train-A-wear sensor microcontrollers.
  *  
- *  Version:    0.1
+ *  Version:    0.3
  *  Maintainer: Borko 
  *  Contacts:   https://github.com/InaSusnoschi/train-A-wear
  *  Target mCU: ESP8266
@@ -16,7 +16,7 @@
 #include <ESP8266WiFiMulti.h>
 #include <WiFiUDP.h>
 #include <Ticker.h>
-//#include <Ethernet.h> IPAddress might be resolved without it. Give it a try first?
+#include <ArduinoJson.h>
 
 
 #define UDP_PORT          31415
@@ -26,8 +26,8 @@ Ticker timedRoutines;
 
 // WiFi Variables
 ESP8266WiFiMulti wifiManager;
-const char *ssid_1 = "*";
-const char *pass_1 = "*";
+const char *ssid_1 = "x";
+const char *pass_1 = "x";
 const char *ssid_2 = "rank510iot";
 const char *pass_2 = "raspberry";
 
@@ -42,6 +42,10 @@ bool      gotServerIP;
 char newData[UDP_TX_PACKET_MAX_SIZE];
 char receivedData[UDP_TX_PACKET_MAX_SIZE];
 
+
+const size_t capacity = JSON_ARRAY_SIZE(3) + JSON_ARRAY_SIZE(3) + JSON_ARRAY_SIZE(3) + JSON_OBJECT_SIZE(4);
+StaticJsonDocument<capacity> doc;
+char serialOutput[128];
 
 /**
  *  A function that polls the sensor over I2C. It updates the 
@@ -64,7 +68,27 @@ void pollSensor(){
  */
 
 void makePayload(char* dataBuffer){
-  
+  //Testing JSON serialization
+  doc["sensor"] = "tAw-1";
+  JsonArray gyro    = doc.createNestedArray("gyro");
+  JsonArray accel   = doc.createNestedArray("accel");
+  JsonArray magnet  = doc.createNestedArray("magnet");
+
+  gyro.add(3.248);
+  gyro.add(7.8454);
+  gyro.add(-6.584);
+
+  accel.add(0.007);
+  accel.add(4);
+  accel.add(-8.254);
+
+  magnet.add(1.874);
+  magnet.add(-0.004);
+  magnet.add(-5);
+
+  serializeJson(doc, serialOutput);
+  Serial.printf("%s\n", serialOutput);
+  //JSON done
 }
 
 /**
@@ -120,11 +144,13 @@ void setup() {
   Serial.println(WiFi.localIP());
   Serial.print("Port: ");
   Serial.println(UDP_PORT);
-
+   
   // Start listening to UDP port
   UDP.begin(UDP_PORT);
   Serial.println("Listening for UDP packets.");
-  
+
+  makePayload(newData);
+ 
   while (!gotServerIP){
     int packetSize = UDP.parsePacket();
     if (packetSize){
@@ -143,6 +169,8 @@ void setup() {
       }
     }
   }
+
+  sendUDP(serialOutput);
 
   // Initialises a ticker that calls the routine every so many ms
   //timedRoutines.attach_ms(ROUTINE_PERIOD_MS, readAndTransmit);
