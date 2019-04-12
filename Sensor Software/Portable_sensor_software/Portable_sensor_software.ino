@@ -20,7 +20,7 @@
 
 
 #define UDP_PORT          31415
-#define ROUTINE_PERIOD_MS 50 
+#define ROUTINE_PERIOD_MS 500 
 
 Ticker timedRoutines;
 
@@ -144,13 +144,13 @@ void setup() {
   Serial.println(WiFi.localIP());
   Serial.print("Port: ");
   Serial.println(UDP_PORT);
-   
+
   // Start listening to UDP port
   UDP.begin(UDP_PORT);
   Serial.println("Listening for UDP packets.");
 
   makePayload(newData);
- 
+
   while (!gotServerIP){
     int packetSize = UDP.parsePacket();
     if (packetSize){
@@ -170,7 +170,8 @@ void setup() {
     }
   }
 
-  sendUDP(serialOutput);
+  //Draft test routine. TODO: REMOVE FROM FINAL CODE!
+  timedRoutines.attach_ms(ROUTINE_PERIOD_MS, sendUDP, serialOutput);
 
   // Initialises a ticker that calls the routine every so many ms
   //timedRoutines.attach_ms(ROUTINE_PERIOD_MS, readAndTransmit);
