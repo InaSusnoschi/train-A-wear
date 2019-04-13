@@ -23,6 +23,8 @@
 #include <cstring>
 #include <mutex>
 
+#include "Integration_algorithms.h"
+
 #define BUFFER_LENGTH 1500
 #define PORT 31415
 #define BROADCAST_DELAY_S 45
@@ -182,10 +184,14 @@ int main(void){
 				sensorRecords[sensorName].magnetometer[i] 	= aMagn[i].GetDouble();
 			}
 
+			Integration_algorithms obj;
+			int result = obj.squat_straight_back(sensorRecords[sensorName].gyro[1], sensorRecords[sensorName].accelerometer[0], sensorRecords[sensorName].accelerometer[3]);
+
 			cout << "Sensor: " << sensorName << endl;
 			cout << "Gyro: \t\t" << sensorRecords[sensorName].gyro[0] << "\t" << sensorRecords[sensorName].gyro[1] << "\t" << sensorRecords[sensorName].gyro [2] << endl;
 			cout << "Accelerometer:  " << sensorRecords[sensorName].accelerometer[0] << "\t" << sensorRecords[sensorName].accelerometer[1] << "\t" << sensorRecords[sensorName].accelerometer [2] << endl;
 			cout << "Gyro: \t\t" << sensorRecords[sensorName].magnetometer[0] << "\t" << sensorRecords[sensorName].magnetometer[1] << "\t" << sensorRecords[sensorName].magnetometer [2] << endl;
+			cout << "Result: " << result << endl;
 			cout << endl;
 
 		}
