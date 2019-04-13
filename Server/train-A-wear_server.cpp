@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <iostream>
+#include <map>
 
 //Needed for figuring out machine IP address as per https://www.includehelp.com/c-programs/get-ip-address-in-linux.aspx
 #include <sys/ioctl.h>
@@ -31,6 +32,13 @@ using namespace rapidjson;
 
 const char*	handshake = "train-A-wear online\n";
 mutex mut;
+
+
+struct sensor_data {
+	double 	gyro[3];
+	double 	accelerometer[3];
+	double 	magnetometer[3];
+};
 
 int broadcast_server(){
 	int 				socket_d;
@@ -89,10 +97,8 @@ int main(void){
 
 	//JSON transmission variables
 	Document receivedDocument;
+	map<string, sensor_data> sensorRecords;
 	string 	sensorName;
-	double 	gyro[3];
-	double 	accelerometer[3];
-	double 	magnetometer[3];
 
 
 	fd = socket(AF_INET, SOCK_DGRAM, 0);
@@ -165,18 +171,23 @@ int main(void){
 			assert(aMagn.IsArray());
 			assert(aMagn.Size() == 3);
 
+			if(sensorRecords.count(sensorName) == 0){
+				sensor_data newRecord;
+				sensorRecords.emplace(sensorName, newRecord);
+			}
 
 			for (SizeType i = 0; i<aGyro.Size(); i++){
-				gyro[i] = aGyro[i].GetDouble();
-				accelerometer[i] = aAcce[i].GetDouble();
-				magnetometer[i] = aMagn[i].GetDouble();
+				sensorRecords[sensorName].gyro[i] 			= aGyro[i].GetDouble();
+				sensorRecords[sensorName].accelerometer[i] 	= aAcce[i].GetDouble();
+				sensorRecords[sensorName].magnetometer[i] 	= aMagn[i].GetDouble();
 			}
 
 			cout << "Sensor: " << sensorName << endl;
-			cout << "Gyro: \t\t" << gyro[0] << "\t" << gyro[1] << "\t" << gyro [2] << endl;
-			cout << "Accelerometer:  " << accelerometer[0] << "\t" << accelerometer[1] << "\t" << accelerometer [2] << endl;
-			cout << "Gyro: \t\t" << magnetometer[0] << "\t" << magnetometer[1] << "\t" << magnetometer [2] << endl;
+			cout << "Gyro: \t\t" << sensorRecords[sensorName].gyro[0] << "\t" << sensorRecords[sensorName].gyro[1] << "\t" << sensorRecords[sensorName].gyro [2] << endl;
+			cout << "Accelerometer:  " << sensorRecords[sensorName].accelerometer[0] << "\t" << sensorRecords[sensorName].accelerometer[1] << "\t" << sensorRecords[sensorName].accelerometer [2] << endl;
+			cout << "Gyro: \t\t" << sensorRecords[sensorName].magnetometer[0] << "\t" << sensorRecords[sensorName].magnetometer[1] << "\t" << sensorRecords[sensorName].magnetometer [2] << endl;
 			cout << endl;
+
 		}
 
 		free(message);
