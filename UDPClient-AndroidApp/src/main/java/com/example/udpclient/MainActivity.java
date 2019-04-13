@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.IOException;
+
 public class MainActivity extends AppCompatActivity {
 
     final String TAG = "MainActivity";
@@ -29,10 +31,15 @@ public class MainActivity extends AppCompatActivity {
 
     EditText editTextAddress, editTextPort;
     Button buttonConnect, buttonDisconnect;
-    static TextView textViewState, textViewRx, textViewNumber, textFeedback;
+    static TextView textViewState, textViewRx, textViewNumber, textFeedback, messageView;
 
     UdpClientHandler udpClientHandler;
     UdpClientThread udpClientThread;
+
+
+    private final int PORT = 31415;
+    private Thread udpListener;
+    private ClientSend udpSender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,13 +53,15 @@ public class MainActivity extends AppCompatActivity {
         textViewState = findViewById(R.id.state);
         textViewRx = findViewById(R.id.received); // number received
         textFeedback = findViewById(R.id.feedback);
+        messageView = findViewById(R.id.message);
 
         buttonConnect.setOnClickListener(buttonConnectOnClickListener);
         buttonDisconnect.setOnClickListener(buttonDisonnectOnClickListener);
 
         udpClientHandler = new UdpClientHandler(this);
 
-
+        udpListener = new Thread(new ClientListen(PORT, textViewRx));
+        udpListener.start();
     }
 
     View.OnClickListener buttonConnectOnClickListener =
@@ -63,20 +72,30 @@ public class MainActivity extends AppCompatActivity {
 
                     Log.d(TAG,"Connecting");
                     setInstruction(1);
-                    udpClientThread = new UdpClientThread(
-                            editTextAddress.getText().toString(),
-                            Integer.parseInt(editTextPort.getText().toString()),
-                            udpClientHandler);
+                    /*************** Currently existing code from Ina
+                    try {
+                        udpClientThread = new UdpClientThread(
+                                editTextAddress.getText().toString(),
+                                Integer.parseInt(editTextPort.getText().toString()),
+                                udpClientHandler);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     udpClientThread.start();
 
+                    ***************************/
 
+                    udpSender = new ClientSend(editTextAddress.getText().toString(), PORT);
+                    udpSender.execute(messageView.getText().toString());
+
+                    /***  Button switching
                     Log.d(TAG,"connect button state");
                     buttonConnect.setEnabled(false);
-                     buttonConnect.setVisibility(View.GONE);
-                     buttonDisconnect.setEnabled(true);
-                     buttonDisconnect.setVisibility(View.VISIBLE);
-
-            }
+                    buttonConnect.setVisibility(View.GONE);
+                    buttonDisconnect.setEnabled(true);
+                    buttonDisconnect.setVisibility(View.VISIBLE);
+                    ******** */
+                }
             };
 
     private void updateState(String state){
@@ -108,12 +127,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             };
 
-//    private void clientEnd(){
-//        udpClientThread = null;
-//        textViewState.setText("clientEnd()");
-//        buttonConnect.setEnabled(true);
-//
-//    }
+
+    private void clientEnd(){
+        udpClientThread = null;
+        textViewState.setText("clientEnd()");
+        buttonConnect.setEnabled(true);
+
+    }
 
     public static class UdpClientHandler extends Handler {
         public static final int UPDATE_STATE = 0;
