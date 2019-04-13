@@ -1,6 +1,6 @@
 /** Software for train-A-wear sensor microcontrollers.
  *  
- *  Version:    0.3
+ *  Version:    0.4
  *  Maintainer: Borko 
  *  Contacts:   https://github.com/InaSusnoschi/train-A-wear
  *  Target mCU: ESP8266
@@ -19,8 +19,10 @@
 #include <ArduinoJson.h>
 
 
-#define UDP_PORT          31415
-#define ROUTINE_PERIOD_MS 500 
+#define UDP_PORT              31415
+#define ROUTINE_PERIOD_MS     500
+#define MAX_CONNECT_ATTEMPTS  120
+#define SENSOR_NAME           "tAw-1"
 
 Ticker timedRoutines;
 
@@ -30,9 +32,8 @@ const char *ssid_1 = "x";
 const char *pass_1 = "x";
 const char *ssid_2 = "rank510iot";
 const char *pass_2 = "raspberry";
-
 const char *handshake = "train-A-wear online\n";
-
+int         connectAttempts = 0;
 // UDP Variables
 WiFiUDP   UDP;
 IPAddress serverIP;
@@ -67,9 +68,9 @@ void pollSensor(){
  * returns: char []
  */
 
-void makePayload(char* dataBuffer){
+void makePayload(){
   //Testing JSON serialization
-  doc["sensor"] = "tAw-1";
+  doc["sensor"] = SENSOR_NAME;
   JsonArray gyro    = doc.createNestedArray("gyro");
   JsonArray accel   = doc.createNestedArray("accel");
   JsonArray magnet  = doc.createNestedArray("magnet");
@@ -113,7 +114,7 @@ void sendUDP(char* payload){
 
 void readAndTransmit(){
   pollSensor();
-  makePayload(newData);
+  makePayload();
   sendUDP(newData);
 }
 
@@ -132,8 +133,13 @@ void setup() {
 
   // Keep trying to connect to the strongest WiFi network nearby
   while (wifiManager.run() != WL_CONNECTED){
+    if(connectAttempts > MAX_CONNECT_ATTEMPTS){
+      Serial.println("\nRebooting ESP8266 now!");
+      ESP.restart();
+    }
     delay(500);
     Serial.print('.');
+    connectAttempts++;
   }
   Serial.println();
 
@@ -149,7 +155,7 @@ void setup() {
   UDP.begin(UDP_PORT);
   Serial.println("Listening for UDP packets.");
 
-  makePayload(newData);
+  makePayload();
 
   while (!gotServerIP){
     int packetSize = UDP.parsePacket();
