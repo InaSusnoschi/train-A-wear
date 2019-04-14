@@ -5,7 +5,7 @@
 
 This uses a Raspberry Pi and three Inertial Measurement Units that detect position and orientation of the body segments they are placed on.
 
-## If you need help or want to brag about your sensor, find us on any social media or join our chat [![Gitter](https://badges.gitter.im/train-A-wear/community.svg)](https://gitter.im/train-A-wear/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+## If you need help or want to brag about your sensor, find us on any social media or join our [![Gitter](https://badges.gitter.im/train-A-wear/community.svg)](https://gitter.im/train-A-wear/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
 ## Prerequisites
