@@ -104,7 +104,7 @@ int Integration_algorithms::plank_bend_back(double gyro_y, double acc_x, double 
 {
     double Roll = Integration_algorithms::Roll(gyro_y, acc_x, acc_z);
     if (Roll > 0){
-        return 6 //message "Straighten you back during exercise!"
+        return 6; //message "Straighten you back during exercise!"
     } else{
         return 7; //message "Keep the nice posture"
     }
@@ -117,7 +117,7 @@ int Integration_algorithms::pushup_shoulder_back(double gyro_x, double acc_y, do
     double* rotation1_x = sensor2_roty->get_buffer();
     sensor3_roty->buffer(Integration_algorithms::Roll(gyro_x, acc_y, acc_z)); //shoulder sensor
     double* rotation2_x = sensor3_roty->get_buffer();
-    if ((abs(rotation1_x[1] - rotation1_x[0]) - abs(rotation2_x[1] - rotation2_x[0])) > 0.2{
+    if ((abs(rotation1_x[1] - rotation1_x[0]) - abs(rotation2_x[1] - rotation2_x[0])) > 0.2){
         cout<<"Straighten your shoulders"<<endl;
         return 8;
     }{
@@ -132,7 +132,7 @@ int Integration_algorithms::pushup_knee_back(double gyro_x, double acc_y, double
     double* rotation1_x = sensor2_roty->get_buffer();
     sensor1_roty->buffer(Integration_algorithms::Roll(gyro_x, acc_y, acc_z)); //knee sensor
     double* rotation2_x = sensor1_roty->get_buffer();
-    if ((abs(rotation1_x[1] - rotation1_x[0]) - abs(rotation2_x[1] - rotation2_x[0])) > 0.2{
+    if ((abs(rotation1_x[1] - rotation1_x[0]) - abs(rotation2_x[1] - rotation2_x[0])) > 0.2){
         cout<<"Dont bend your knees"<<endl;
         return 10;
     }{
