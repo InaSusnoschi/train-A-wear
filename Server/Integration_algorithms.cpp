@@ -1,14 +1,27 @@
 #include "Integration_algorithms.h"
+#include "Buffer.h"
 
 #include <stdio.h>
 #include <cmath>
+#include <stdlib.h>
+#include <iostream>
 
 using namespace std;
+
+Integration_algorithms::Integration_algorithms(){
+    sensor1_rotx_values = sensor1_rotx.get_buffer();
+
+}
+
+Integration_algorithms::~Integration_algorithms(){
+
+}
 
 void Integration_algorithms::complementary_filter(double* angle, double acc)
 {
     *angle = ((double)0.98)*(*angle) + 0.02*acc;
 }
+
 
 
 //y axis rotation
@@ -49,7 +62,7 @@ int Integration_algorithms::squat_straight_back(double gyro_y, double acc_x, dou
     if (Roll == 0){
         return 1; //message "Bend during exercise!"
     } else{
-        return 2;
+        return 2; //message "Keep the nice posture"
     }
 }
 
@@ -57,12 +70,18 @@ int Integration_algorithms::squat_straight_back(double gyro_y, double acc_x, dou
 //rotation along x axis
 int Integration_algorithms::squat_bend_right_knee(double gyro_x, double acc_y, double acc_z)
 {
-    double pitches[2] = {0.0,0.0};
-    pitches[1] = Integration_algorithms::Pitch(gyro_x, acc_y, acc_z);
-    if (abs(pitches[1]-pitches[0])>0.3){
-        printf("Wrong angle");
+    sensor1_rotx.buffer(Integration_algorithms::Pitch(gyro_x, acc_y, acc_z));
+    double* rotation_x = sensor1_rotx.get_buffer();
+    if (rotation_x[1] > rotation_x[0]){
+        cout<<"wrong way"<<endl;
+        return 3;
     }
-    pitches[0] = pitches[1];
-    pitches[1] = 0.0;
-    return 10;
+    else if(rotation_x[1] < rotation_x[0]) {
+        cout<<"wrong way"<<endl;
+        return 4;
+    }else {
+        cout<<"right way"<<endl;
+        return 5;
+    }
 }
+

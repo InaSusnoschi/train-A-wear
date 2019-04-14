@@ -1,10 +1,13 @@
 #ifndef INTEGRATION_ALGORITHMS_H
 #define INTEGRATION_ALGORITHMS_H
 
+#include "Buffer.h"
 
 class Integration_algorithms
 {
     public:
+        Integration_algorithms();
+        ~Integration_algorithms();
         void complementary_filter(double* angle, double acc);
         double Roll(double gyro_y, double acc_x, double acc_z);
         double Pitch(double gyro_x, double acc_y, double acc_z);
@@ -14,6 +17,13 @@ class Integration_algorithms
     protected:
 
     private:
+        Buffer sensor1_rotx;
+        double* sensor1_rotx_values;
+        Buffer sensor1_roty;
+        Buffer sensor2_rotx;
+        Buffer sensor2_roty;
+        Buffer sensor3_rotx;
+        Buffer sensor3_roty;
 };
 
 #endif // INTEGRATION_ALGORITHMS_H
