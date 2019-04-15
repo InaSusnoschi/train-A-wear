@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="rapidjson::EncodedInputStream\l\< UTF8\<\>, MemoryStream \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_encoded_input_stream_3_01_u_t_f8_3_4_00_01_memory_stream_01_4.html",tooltip="Specialized for UTF8 MemoryStream."];
+}

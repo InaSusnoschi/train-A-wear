@@ -1,0 +1,10 @@
+digraph "com.synnapps.carouselview.R.dimen"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="com.synnapps.carouselview.\lR.dimen",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" disabled_alpha_material\l_light\nabc_text_size_subhead\l_material\nabc_text_size_headline\l_material\nabc_text_size_button\l_material\nabc_edit_text_inset\l_horizontal_material\ntooltip_corner_radius\ndisabled_alpha_material\l_dark\ndefault_indicator_margin\l_vertical\nabc_text_size_large\l_material\nabc_dialog_fixed_width\l_major\n..." ,fontname="Helvetica"];
+  Node2 [label="int",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

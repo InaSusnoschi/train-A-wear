@@ -1,0 +1,16 @@
+digraph "rapidjson::internal::Hasher&lt; Encoding, Allocator &gt;::Number"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="rapidjson::internal\l::Hasher\< Encoding,\l Allocator \>::Number",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d" ,fontname="Helvetica"];
+  Node2 [label="double",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" u" ,fontname="Helvetica"];
+  Node3 [label="rapidjson::internal\l::Hasher\< Encoding,\l Allocator \>::Number::U",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionrapidjson_1_1internal_1_1_hasher_1_1_number_1_1_u.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" i" ,fontname="Helvetica"];
+  Node4 [label="signed __int64",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" u" ,fontname="Helvetica"];
+  Node5 [label="unsigned __int64",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

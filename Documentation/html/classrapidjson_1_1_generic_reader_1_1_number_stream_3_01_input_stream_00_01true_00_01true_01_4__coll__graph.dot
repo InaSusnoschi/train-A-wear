@@ -1,0 +1,27 @@
+digraph "rapidjson::GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::NumberStream&lt; InputStream, true, true &gt;"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="rapidjson::GenericReader\l\< SourceEncoding, TargetEncoding,\l StackAllocator \>::NumberStream\l\< InputStream, true, true \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="rapidjson::GenericReader\l\< SourceEncoding, TargetEncoding,\l StackAllocator \>::NumberStream\l\< InputStream, true, false \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_generic_reader_1_1_number_stream_3_01_input_stream_00_01true_00_01false_01_4.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="rapidjson::GenericReader\l\< SourceEncoding, TargetEncoding,\l StackAllocator \>::NumberStream\l\< InputStream, false, false \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_generic_reader_1_1_number_stream_3_01_input_stream_00_01false_00_01false_01_4.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" is" ,fontname="Helvetica"];
+  Node6 [label="InputStream &",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" stackStream" ,fontname="Helvetica"];
+  Node7 [label="rapidjson::GenericReader\l\< SourceEncoding, TargetEncoding,\l StackAllocator \>::StackStream\< char \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_generic_reader_1_1_stack_stream.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" length_" ,fontname="Helvetica"];
+  Node8 [label="unsigned",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" stack_" ,fontname="Helvetica"];
+  Node9 [label="rapidjson::internal\l::Stack\< StackAllocator \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_stack.html",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ownAllocator_\nallocator_" ,fontname="Helvetica"];
+  Node10 [label="StackAllocator *",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" initialCapacity_" ,fontname="Helvetica"];
+  Node11 [label="size_t",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" stack_\nstackEnd_\nstackTop_" ,fontname="Helvetica"];
+  Node12 [label="char *",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

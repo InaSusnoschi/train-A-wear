@@ -1,0 +1,21 @@
+digraph "Integration_algorithms::Roll"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node20 [label="Integration_algorithms\l::Roll",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Calculation of the roll (y-axis sensor rotation)"];
+  Node20 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="Integration_algorithms\l::plank_bend_back",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_integration__algorithms.html#a19e62aed96ce9fd9c784e39924cc6617",tooltip="Algorithm checking for bent back during planks/push ups."];
+  Node20 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="Integration_algorithms\l::pushup_knee_back",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_integration__algorithms.html#a859df296a5fb433f665796823db4b401",tooltip="Algorithm checking for rate of change between the back and the knees during push ups."];
+  Node20 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="Integration_algorithms\l::pushup_shoulder_back",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_integration__algorithms.html#a4e11a75d0b52af4a46d1f18a6e6693f3",tooltip="Algorithm checking for rate of change between the back and the shoulders during push ups."];
+  Node20 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="Integration_algorithms\l::squat_straight_back",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_integration__algorithms.html#a1e3abc78c151732e013b41fa0300a6f0",tooltip="Algorithm checking for back rotation during squats."];
+  Node24 -> Node25 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="parsing_function",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$train-_a-wear__server_8cpp.html#acdb6c6606c64b3a5b7b952f030fb5b4e",tooltip=" "];
+  Node25 -> Node26 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$train-_a-wear__server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip=" "];
+}

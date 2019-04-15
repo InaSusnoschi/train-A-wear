@@ -1,0 +1,10 @@
+digraph "com.example.trainawearapplication.R.bool"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="com.example.trainawearapplication.\lR.bool",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" abc_config_actionMenuItem\lAllCaps\nabc_allow_stacked_button\l_bar\ndefault_circle_indicator\l_snap\ndefault_circle_indicator\l_centered\nabc_config_showMenuShortcuts\lWhenKeyboardPresent\nabc_action_bar_embed_tabs" ,fontname="Helvetica"];
+  Node2 [label="int",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

@@ -1,0 +1,10 @@
+digraph "rapidjson::GenericMemberIterator&lt; Const, Encoding, Allocator &gt;"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="rapidjson::GenericMember\lIterator\< Const, Encoding,\l Allocator \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="(Constant) member iterator for a JSON object value"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ptr_" ,fontname="Helvetica"];
+  Node2 [label="pointer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

@@ -1,0 +1,10 @@
+digraph "com.example.trainawearapplication.R.color"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="com.example.trainawearapplication.\lR.color",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" vpi__bright_foreground\l_disabled_holo_dark\nswitch_thumb_normal_material\l_light\nmaterial_blue_grey_800\ndesign_fab_stroke_top\l_outer_color\nbutton_material_dark\nbright_foreground_disabled\l_material_dark\nbackground_floating_material\l_dark\nswitch_thumb_disabled\l_material_light\nsecondary_text_disabled\l_material_dark\nripple_material_light\n..." ,fontname="Helvetica"];
+  Node2 [label="static final int",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

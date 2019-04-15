@@ -1,0 +1,19 @@
+digraph "rapidjson::internal::DecodedStream::Take"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node10 [label="rapidjson::internal\l::DecodedStream::Take",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="rapidjson::internal\l::GenericRegex::CharacterEscape",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_generic_regex.html#a3c70a25082040233268ad41085a26cf6",tooltip=" "];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="rapidjson::internal\l::GenericRegex::Parse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_generic_regex.html#a9cc3606d931a530fc9c2619cf266f789",tooltip=" "];
+  Node10 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="rapidjson::internal\l::GenericRegex::ParseRange",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_generic_regex.html#a026d39ed3817f87cb287a6f8fa7fc92b",tooltip=" "];
+  Node10 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="rapidjson::internal\l::GenericRegex::ParseUnsigned",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_generic_regex.html#add633802029c121872583a66981ae148",tooltip=" "];
+  Node10 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="rapidjson::internal\l::GenericRegexSearch\l::SearchWithAnchoring",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_generic_regex_search.html#a29e3ab6d7d2666a7d30a9326a992e3ea",tooltip=" "];
+}

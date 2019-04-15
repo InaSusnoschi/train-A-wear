@@ -1,0 +1,17 @@
+digraph "Server/Buffer.h"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Server/Buffer.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Buffer for storing the last two values of a sensor."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Server/Buffer.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_buffer_8cpp.html",tooltip="Buffer for storing the last two values of a sensor."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Server/Integration\l_algorithms.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_integration__algorithms_8h.html",tooltip="Algorithms used for the measurement of the posture of the person wearing the train-A-wear sensor syst..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Server/Integration\l_algorithms.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$_integration__algorithms_8cpp.html",tooltip="Algorithms used for the measurement of the posture of the person wearing the train-A-wear sensor syst..."];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Server/train-A-wear\l_server.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$train-_a-wear__server_8cpp.html",tooltip="train-A-wear server file. A UDP server that binds to port 31415 to listen for any train-A-wear active..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

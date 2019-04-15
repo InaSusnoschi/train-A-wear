@@ -1,0 +1,17 @@
+digraph "rapidjson::Writer::WriteUint"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node150 [label="rapidjson::Writer::\lWriteUint",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node150 -> Node151 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node151 [label="rapidjson::PutReserve",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacerapidjson.html#a820f77efccfbb749bd15fe4822d2c740",tooltip="Reserve n characters for writing to a stream."];
+  Node150 -> Node152 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node152 [label="rapidjson::PutUnsafe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacerapidjson.html#a0a774dcffe8ae07686f459ae017d2f20",tooltip="Write character to a stream, presuming buffer is reserved."];
+  Node150 -> Node153 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node153 [label="rapidjson::internal\l::u32toa",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacerapidjson_1_1internal.html#ad5e42102d2ac70a691b3fdfdd2238e70",tooltip=" "];
+  Node153 -> Node154 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node154 [label="rapidjson::internal\l::GetDigitsLut",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacerapidjson_1_1internal.html#a2220f7bb22e11be3bc6f20291659c545",tooltip=" "];
+}

@@ -1,0 +1,15 @@
+digraph "rapidjson::internal::Schema::String"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node177 [label="rapidjson::internal\l::Schema::String",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node177 -> Node178 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node178 [label="rapidjson::internal\l::IValidationErrorHandler\l::DoesNotMatch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a67070bdbe6ed6196e6e2a9755fa76c9c",tooltip=" "];
+  Node177 -> Node179 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node179 [label="rapidjson::internal\l::IValidationErrorHandler\l::TooLong",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a9e26e52da7914dd0a9e7a4e06db8943c",tooltip=" "];
+  Node177 -> Node180 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node180 [label="rapidjson::internal\l::IValidationErrorHandler\l::TooShort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_i_validation_error_handler.html#af13eb2448c9606f58af8cecc009bea85",tooltip=" "];
+}

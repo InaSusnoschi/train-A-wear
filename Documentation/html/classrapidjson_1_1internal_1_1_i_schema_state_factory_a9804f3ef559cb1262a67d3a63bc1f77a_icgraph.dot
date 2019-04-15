@@ -1,0 +1,13 @@
+digraph "rapidjson::internal::ISchemaStateFactory::MallocState"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node19 [label="rapidjson::internal\l::ISchemaStateFactory\l::MallocState",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node19 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="rapidjson::internal\l::Schema::CreateParallelValidator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_schema.html#aa8e9504b3e7bea6e6f6e80ea302c252d",tooltip=" "];
+  Node19 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="rapidjson::internal\l::Schema::StartObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_schema.html#a64fd79498ff9e034dae8180f1f0701ce",tooltip=" "];
+}

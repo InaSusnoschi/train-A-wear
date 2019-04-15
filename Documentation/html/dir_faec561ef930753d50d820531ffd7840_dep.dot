@@ -1,0 +1,17 @@
+digraph "Server/rapidjson" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_1a445cb237d74f7a5f8d11ec3b0585cc {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Server" fontname="Helvetica", fontsize="10", URL="dir_1a445cb237d74f7a5f8d11ec3b0585cc.html"]
+  subgraph clusterdir_faec561ef930753d50d820531ffd7840 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_faec561ef930753d50d820531ffd7840.html"];
+    dir_faec561ef930753d50d820531ffd7840 [shape=plaintext label="rapidjson"];
+    dir_091fc4c3022f0e110c18e75f66621a72 [shape=box label="error" color="black" fillcolor="white" style="filled" URL="dir_091fc4c3022f0e110c18e75f66621a72.html"];
+    dir_19a547bb551f5d130c91e67fecdf26b8 [shape=box label="internal" color="black" fillcolor="white" style="filled" URL="dir_19a547bb551f5d130c91e67fecdf26b8.html"];
+    dir_bb3a99de2f7e2b2fb3e02192874e231f [shape=box label="msinttypes" color="black" fillcolor="white" style="filled" URL="dir_bb3a99de2f7e2b2fb3e02192874e231f.html"];
+  }
+  }
+  dir_faec561ef930753d50d820531ffd7840->dir_19a547bb551f5d130c91e67fecdf26b8 [headlabel="14", labeldistance=1.5 headhref="dir_000069_000071.html"];
+  dir_faec561ef930753d50d820531ffd7840->dir_091fc4c3022f0e110c18e75f66621a72 [headlabel="1", labeldistance=1.5 headhref="dir_000069_000070.html"];
+}

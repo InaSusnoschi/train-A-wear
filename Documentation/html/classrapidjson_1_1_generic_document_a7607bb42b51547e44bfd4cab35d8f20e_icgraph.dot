@@ -1,0 +1,13 @@
+digraph "rapidjson::GenericDocument::HasParseError"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node29 [label="rapidjson::GenericDocument\l::HasParseError",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Whether a parse error has occurred in the last parsing."];
+  Node29 -> Node30 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node30 [label="parsing_function",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$train-_a-wear__server_8cpp.html#acdb6c6606c64b3a5b7b952f030fb5b4e",tooltip=" "];
+  Node30 -> Node31 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node31 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$train-_a-wear__server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe",tooltip=" "];
+}

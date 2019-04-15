@@ -1,0 +1,47 @@
+digraph "com.example.trainawearapplication.ClassicSquatSwitchTest"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="com.example.trainawearapplication.\lClassicSquatSwitchTest",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TEST_CASE1\nTEST_CASE2" ,fontname="Helvetica"];
+  Node2 [label="int",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mActivitySquat" ,fontname="Helvetica"];
+  Node3 [label="com.example.trainawearapplication.\lClassicSquat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_classic_squat.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AppCompatActivity",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="com.example.trainawearapplication.\lUpdateFeedback",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacecom_1_1example_1_1trainawearapplication_1_1_update_feedback.html",tooltip=" "];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TAG\nsquatImagesTitle" ,fontname="Helvetica"];
+  Node6 [label="String",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" udpSender" ,fontname="Helvetica"];
+  Node7 [label="com.example.trainawearapplication.\lClientSend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_client_send.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="android::os::AsyncTask\l\< String, Void, Void \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ip" ,fontname="Helvetica"];
+  Node2 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" port" ,fontname="Helvetica"];
+  Node9 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" udpClientHandler" ,fontname="Helvetica"];
+  Node9 [label="com.example.trainawearapplication.\lUdpClientHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler.html",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Handler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classandroid_1_1os_1_1_handler.html",tooltip=" "];
+  Node6 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TAG" ,fontname="Helvetica"];
+  Node11 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" parent" ,fontname="Helvetica"];
+  Node11 [label="com.example.trainawearapplication.\lMainActivity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_main_activity.html",tooltip=" "];
+  Node4 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" TAG" ,fontname="Helvetica"];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" instaButtonListener\nwordpressButtonListener" ,fontname="Helvetica"];
+  Node12 [label="View",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" udpClientHandler" ,fontname="Helvetica"];
+  Node2 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" UPDATE_PLANK\nUPDATE_MSG\nUPDATE_STATE\nUPDATE_END" ,fontname="Helvetica"];
+  Node13 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buttonDisconnect\nbuttonConnect" ,fontname="Helvetica"];
+  Node13 [label="Button",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" num\nPORT\nsquatImages\ninstruction" ,fontname="Helvetica"];
+  Node14 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" udpListener" ,fontname="Helvetica"];
+  Node14 [label="Thread",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" buttonDisonnectOnClickListener\nbuttonConnectOnClickListener" ,fontname="Helvetica"];
+  Node15 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" textViewRx\nmessageView\ntextFeedback\ntextViewState" ,fontname="Helvetica"];
+  Node15 [label="TextView",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" outputText" ,fontname="Helvetica"];
+}

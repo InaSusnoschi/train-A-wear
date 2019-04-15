@@ -1,0 +1,23 @@
+digraph "rapidjson::GenericPointer&lt; ValueType, Allocator &gt;"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rapidjson::GenericPointer\l\< ValueType, Allocator \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Represents a JSON Pointer. Use Pointer for UTF8 encoding and default allocator."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tokens_" ,fontname="Helvetica"];
+  Node2 [label="rapidjson::GenericPointer\l\< ValueType, Allocator\l \>::Token",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structrapidjson_1_1_generic_pointer_1_1_token.html",tooltip="A token is the basic units of internal representation."];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" name" ,fontname="Helvetica"];
+  Node3 [label="const Ch *",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" length\nindex" ,fontname="Helvetica"];
+  Node4 [label="unsigned",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" nameBuffer_" ,fontname="Helvetica"];
+  Node5 [label="Ch *",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ownAllocator_\nallocator_\nallocator" ,fontname="Helvetica"];
+  Node6 [label="rapidjson::Allocator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_allocator.html",tooltip="Concept for allocating, resizing and freeing memory block."];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" parseErrorCode_" ,fontname="Helvetica"];
+  Node7 [label="PointerParseErrorCode",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tokenCount_\nparseErrorOffset_" ,fontname="Helvetica"];
+  Node8 [label="size_t",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

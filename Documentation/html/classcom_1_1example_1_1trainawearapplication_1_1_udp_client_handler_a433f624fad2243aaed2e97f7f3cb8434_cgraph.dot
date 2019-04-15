@@ -1,0 +1,15 @@
+digraph "com.example.trainawearapplication.UdpClientHandler.handleMessage"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="com.example.trainawearapplication.\lUdpClientHandler.handleMessage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="com.example.trainawearapplication.\lUdpClientHandler.UdpClientHandler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler.html#ab5ff425dbf594d074ab709f2be441419",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="com.example.trainawearapplication.\lUdpClientHandler.updateRxMsg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler.html#a8fa21c06cef3adafc938dc19ecc232ab",tooltip="Method that updates the receive field with the received String; used to read the String."];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="com.example.trainawearapplication.\lUdpClientHandler.updateState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler.html#a65fd50027c6302d5c8d858e844fc3e6f",tooltip="Method that displays the IP address in invisible field."];
+}

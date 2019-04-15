@@ -1,0 +1,11 @@
+digraph "Graphical Class Hierarchy"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node30 [label="Type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node30 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="rapidjson::internal\l::IsGenericValueImpl\l\< T, typename Void\< typename\l T::EncodingType \>::Type,\l typename Void\< typename T\l::AllocatorType \>::Type \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structrapidjson_1_1internal_1_1_is_generic_value_impl_3_01_t_00_01typename_01_void_3_01typename_958d471b859187f8641bd1e7a1585eac.html",tooltip=" "];
+}

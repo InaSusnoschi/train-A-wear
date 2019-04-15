@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['main',['main',['../train-_a-wear__server_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe',1,'main(void):&#160;train-A-wear_server.cpp'],['../_u_d_p___client_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main(int argc, char *argv[]):&#160;UDP_Client.cpp']]],
+  ['malloc',['Malloc',['../classrapidjson_1_1_crt_allocator.html#aa3dab0aa1b00fc5b6e6cf29708e6667f',1,'rapidjson::CrtAllocator::Malloc()'],['../classrapidjson_1_1_memory_pool_allocator.html#a208c29e04b1d748bfe068444b7044344',1,'rapidjson::MemoryPoolAllocator::Malloc()']]],
+  ['mallocstate',['MallocState',['../classrapidjson_1_1internal_1_1_i_schema_state_factory.html#a9804f3ef559cb1262a67d3a63bc1f77a',1,'rapidjson::internal::ISchemaStateFactory::MallocState()'],['../classrapidjson_1_1_generic_schema_validator.html#a73d58da18b6e77665daaa977852f205c',1,'rapidjson::GenericSchemaValidator::MallocState()']]],
+  ['match',['Match',['../classrapidjson_1_1internal_1_1_generic_regex_search.html#ab793f6f4e0e2065cfc1e03eae844a392',1,'rapidjson::internal::GenericRegexSearch::Match(InputStream &amp;is)'],['../classrapidjson_1_1internal_1_1_generic_regex_search.html#ab1011ef61e8000808a4321c9f7399ffb',1,'rapidjson::internal::GenericRegexSearch::Match(const Ch *s)']]],
+  ['matchrange',['MatchRange',['../classrapidjson_1_1internal_1_1_generic_regex_search.html#afa518b5ea6268d3ee71586142d03fec1',1,'rapidjson::internal::GenericRegexSearch']]],
+  ['memberbegin',['MemberBegin',['../classrapidjson_1_1_generic_object.html#ac3410e31a3a38bd7004daf8e76d5327c',1,'rapidjson::GenericObject']]],
+  ['membercapacity',['MemberCapacity',['../classrapidjson_1_1_generic_object.html#ae48a240f8168be407c6dd40864bee0f1',1,'rapidjson::GenericObject']]],
+  ['membercount',['MemberCount',['../classrapidjson_1_1_generic_object.html#a583962734202dfdf22ab851d78f24d92',1,'rapidjson::GenericObject']]],
+  ['memberend',['MemberEnd',['../classrapidjson_1_1_generic_object.html#a446032e977f37638cf3c44eb3a972fdd',1,'rapidjson::GenericObject']]],
+  ['memberreserve',['MemberReserve',['../classrapidjson_1_1_generic_object.html#afcd9124531e6c55ba44c2de99b2f9bf1',1,'rapidjson::GenericObject']]],
+  ['memorypoolallocator',['MemoryPoolAllocator',['../classrapidjson_1_1_memory_pool_allocator.html#a59d783f4feba17dcd35d9f25fcbc09f4',1,'rapidjson::MemoryPoolAllocator::MemoryPoolAllocator(size_t chunkSize=kDefaultChunkCapacity, BaseAllocator *baseAllocator=0)'],['../classrapidjson_1_1_memory_pool_allocator.html#abcc572bdb6902c9d69711540db5098a7',1,'rapidjson::MemoryPoolAllocator::MemoryPoolAllocator(void *buffer, size_t size, size_t chunkSize=kDefaultChunkCapacity, BaseAllocator *baseAllocator=0)'],['../classrapidjson_1_1_memory_pool_allocator.html#a7aebc93e8dc47971bb3f2e4e50677912',1,'rapidjson::MemoryPoolAllocator::MemoryPoolAllocator(const MemoryPoolAllocator &amp;rhs)']]],
+  ['memorystream',['MemoryStream',['../structrapidjson_1_1_memory_stream.html#a78a2158aae245de652bad7d53de1772c',1,'rapidjson::MemoryStream']]],
+  ['mergeerror',['MergeError',['../classrapidjson_1_1_generic_schema_validator.html#a71af0029789510f194a8580f240940ae',1,'rapidjson::GenericSchemaValidator']]],
+  ['min',['Min',['../classrapidjson_1_1internal_1_1_generic_regex.html#a03202b58856e5d43fbb6e8e7546a0bd6',1,'rapidjson::internal::GenericRegex']]],
+  ['min3',['Min3',['../namespacerapidjson_1_1internal.html#a7d72423e8173159a0d90cac2f2ef6b8a',1,'rapidjson::internal']]],
+  ['modifiedscrollview',['ModifiedScrollView',['../classcom_1_1example_1_1trainawearapplication_1_1_modified_scroll_view.html#a54164bcc307ead282e4a872882790ba1',1,'com.example.trainawearapplication.ModifiedScrollView.ModifiedScrollView(Context context, AttributeSet attrs)'],['../classcom_1_1example_1_1trainawearapplication_1_1_modified_scroll_view.html#a60a3e71da3963714f6ec401034a80c6f',1,'com.example.trainawearapplication.ModifiedScrollView.ModifiedScrollView(Context context)']]],
+  ['muladd64',['MulAdd64',['../classrapidjson_1_1internal_1_1_big_integer.html#a58f2555329537d758530430c5baf1e49',1,'rapidjson::internal::BigInteger']]],
+  ['multiplypow5',['MultiplyPow5',['../classrapidjson_1_1internal_1_1_big_integer.html#a60c5fbdcd9992177d25bda441e5d49bb',1,'rapidjson::internal::BigInteger']]]
+];

@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="rapidjson::Writer\<\l OutputStream, SourceEncoding,\l TargetEncoding, StackAllocator,\l writeFlags \>::Level",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structrapidjson_1_1_writer_1_1_level.html",tooltip="Information for each nested level."];
+}

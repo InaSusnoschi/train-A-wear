@@ -1,0 +1,10 @@
+digraph "android.support.graphics.drawable.R.dimen"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="android.support.graphics.drawable.\lR.dimen",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" notification_media\l_narrow_margin\ncompat_button_inset\l_vertical_material\nnotification_right_icon\l_size\nnotification_large\l_icon_width\nnotification_content\l_margin_start\ncompat_button_padding\l_horizontal_material\nnotification_large_icon\l_height\nnotification_subtext\l_size\nnotification_big\l_circle_margin\ncompat_control_corner\l_material\n..." ,fontname="Helvetica"];
+  Node2 [label="static final int",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

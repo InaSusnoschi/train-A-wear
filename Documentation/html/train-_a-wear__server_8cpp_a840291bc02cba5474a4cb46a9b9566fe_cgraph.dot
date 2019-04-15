@@ -1,0 +1,23 @@
+digraph "main"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node3 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="broadcast_server",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$train-_a-wear__server_8cpp.html#a0fca5c05bd3ddbf5a153d3b9d43c25f1",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="parsing_function",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$train-_a-wear__server_8cpp.html#acdb6c6606c64b3a5b7b952f030fb5b4e",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="rapidjson::GenericDocument\l::Parse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_generic_document.html#aea842b533a858c9a3861451ad9e8642c",tooltip="Parse JSON text from a read-only string (with Encoding conversion)"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="rapidjson::GenericDocument\l::HasParseError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_generic_document.html#a7607bb42b51547e44bfd4cab35d8f20e",tooltip="Whether a parse error has occurred in the last parsing."];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Integration_algorithms\l::squat_straight_back",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_integration__algorithms.html#a1e3abc78c151732e013b41fa0300a6f0",tooltip="Algorithm checking for back rotation during squats."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Integration_algorithms\l::Roll",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_integration__algorithms.html#a5edf31b0eb679866bc9426dcae975df5",tooltip="Calculation of the roll (y-axis sensor rotation)"];
+  Node3 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="send_message",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$train-_a-wear__server_8cpp.html#a95b7d8dc0b0f9099cbd8370e65e36ebd",tooltip=" "];
+}

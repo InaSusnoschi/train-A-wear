@@ -1,0 +1,15 @@
+digraph "Graphical Class Hierarchy"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node164 [label="rapidjson::internal\l::ISchemaStateFactory\l\< SchemaDocumentType::\lSchemaType \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_i_schema_state_factory.html",tooltip=" "];
+  Node164 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="rapidjson::GenericSchema\lValidator\< SchemaDocumentType,\l OutputHandler, StateAllocator \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_generic_schema_validator.html",tooltip="JSON Schema Validator."];
+  Node163 [label="rapidjson::internal\l::ISchemaValidator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_i_schema_validator.html",tooltip=" "];
+  Node163 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="rapidjson::internal\l::IValidationErrorHandler\l\< SchemaDocumentType::SchemaType \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1internal_1_1_i_validation_error_handler.html",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

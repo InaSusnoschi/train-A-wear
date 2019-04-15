@@ -1,0 +1,19 @@
+digraph "rapidjson::SchemaValidatingReader::operator()"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node14 [label="rapidjson::SchemaValidating\lReader::operator()",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="rapidjson::GenericSchema\lValidator::GetError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_generic_schema_validator.html#a422c16457e512835b0d0f64ec1c81ba2",tooltip="Gets the error object."];
+  Node14 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="rapidjson::GenericSchema\lValidator::GetInvalidDocument\lPointer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_generic_schema_validator.html#a60dfb4a89593c8d3ca4c89a6202feb52",tooltip="Gets the JSON pointer pointed to the invalid value."];
+  Node14 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="rapidjson::GenericSchema\lValidator::GetInvalidSchemaKeyword",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_generic_schema_validator.html#a03bcd5497a574cffbd066d0aec2b5585",tooltip="Gets the keyword of invalid schema."];
+  Node14 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="rapidjson::GenericSchema\lValidator::GetInvalidSchemaPointer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_generic_schema_validator.html#a3238efb9d9144c2d6577362d8dc5f61b",tooltip="Gets the JSON pointer pointed to the invalid schema."];
+  Node14 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="rapidjson::GenericSchema\lValidator::IsValid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_generic_schema_validator.html#ad32a9ad31dbb588edaaf038ab053275b",tooltip="Checks whether the current state is valid."];
+}

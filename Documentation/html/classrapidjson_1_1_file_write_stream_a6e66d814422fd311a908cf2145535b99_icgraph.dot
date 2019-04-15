@@ -1,0 +1,13 @@
+digraph "rapidjson::FileWriteStream::PutN"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node17 [label="rapidjson::FileWriteStream\l::PutN",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="rapidjson::PutN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacerapidjson.html#a1ac13bac5976fc06587e00fc0bcfb32a",tooltip="Implement specialized version of PutN() with memset() for better performance."];
+  Node18 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="rapidjson::PrettyWriter\l::WriteIndent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classrapidjson_1_1_pretty_writer.html#aa0bfa813b170d7fc27f1b370388861e4",tooltip=" "];
+}

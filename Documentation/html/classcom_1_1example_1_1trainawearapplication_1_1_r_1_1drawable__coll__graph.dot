@@ -1,0 +1,10 @@
+digraph "com.example.trainawearapplication.R.drawable"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="com.example.trainawearapplication.\lR.drawable",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" squatend1\nnotification_bg\l_low\nlogorun\nabc_text_select\l_handle_middle_mtrl\l_dark\nabc_list_selector\l_disabled_holo_light\nplankhigh1\nnotify_panel_notification\l_icon_bg\nabc_ratingbar_small\l_material\nabc_ic_star_half_black\l_36dp\nabc_ic_menu_overflow\l_material\n..." ,fontname="Helvetica"];
+  Node2 [label="int",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

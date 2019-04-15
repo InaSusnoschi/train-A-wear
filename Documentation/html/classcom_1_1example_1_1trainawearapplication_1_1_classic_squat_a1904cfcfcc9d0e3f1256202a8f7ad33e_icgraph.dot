@@ -1,0 +1,23 @@
+digraph "com.example.trainawearapplication.ClassicSquat.showFeedback"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node13 [label="com.example.trainawearapplication.\lClassicSquat.showFeedback",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Switch case that decides on the feedback to be printed."];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="com.example.trainawearapplication.\lClassicSquatSwitchTest.testSwitchCase0",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_switch_test.html#adca8046d4e95d7ca68bbc42ad0cf5d49",tooltip="Test method for ClassicSquat."];
+  Node13 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="com.example.trainawearapplication.\lClassicSquatSwitchTest.testSwitchCase1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_switch_test.html#a8921734ff16a8ee1db468bbe571aaeef",tooltip=" "];
+  Node13 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="com.example.trainawearapplication.\lClassicSquatSwitchTest.testSwitchCase2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_switch_test.html#a14b7eb13809009e9175946b1bdcf3d46",tooltip=" "];
+  Node13 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="com.example.trainawearapplication.\lClassicSquatSwitchTest.testSwitchCase3",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_switch_test.html#a2823f330df1b584569d8ab4b90e9634e",tooltip=" "];
+  Node13 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="com.example.trainawearapplication.\lClassicSquatSwitchTest.testSwitchCase6",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_switch_test.html#a674df333a8d1b14d893d921e1e3be281",tooltip=" "];
+  Node13 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="com.example.trainawearapplication.\lClassicSquatSwitchTest.testSwitchCase\lDefault",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_switch_test.html#af3378ca920eb59a2c102f85e3627084c",tooltip=" "];
+  Node13 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="com.example.trainawearapplication.\lClassicSquatSwitchTest.testSwitchCaseFail",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_switch_test.html#aade7e343e9d5050a6ce3142f756650e9",tooltip=" "];
+}
