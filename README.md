@@ -11,6 +11,7 @@ This uses a Raspberry Pi and three Inertial Measurement Units that detect positi
 ## Prerequisites
 * Inertial Measurement Unit train-box
 * Local WiFi network
+* Android Smartphone
 
 ### Server
 * Linux machine with g++ compiler
@@ -52,8 +53,27 @@ with the values of your WiFi's SSID and password. Upload the sketch, reset the s
 ### Phone application
 Import the project from Phone App folder in Android Studio and run the gradle build. You can either generate an APK file or install it straight away on your phone.
 
+## Using the real time sensor system
+Once everything is set up on the Raspberry Pi and the application is installed, the user can start using the features provided. The system requires a specific number and location for the inertial sensors, depending on the exercise type.
+
+### Setup
+To obtain the correct sensor placement, consult the Wear it and go section inside each workout. This provides descriptions of the location and orientation, as well as images. The top of the sensor carcass displays two logos and two LEDs, which allows the user to determine the correct placement.
+### Quick start
+Star the application -> Workout -> exercise of choice -> START
+
+### Obtaining feedback
+Enter a workout using the steps quoted in <i>Quick start</i>. When the sensors are ready to go, the message "Ready to go!" is displayed. Then, the workout can be started anytime by pressing START, and stopped  
+The sensors send datagrams to the RPI, whose algorithms process it and send instructions to the app. These are displayed on the screen in the
+
+### Additional features
+To get help on <b>network or sensor faults</b>: start the app -> Help -> FAULTY SYSTEM
+For more detail on <b>pre- and post-workout stretching</b>: start the app -> Help -> RECOMMENDED STRETCHES
+Advice on <b>healthy lifestyle<b> is available: start the app -> Help -> HEALTH & LIFESTYLE
+
+### Sensor power
+When the sensor is powered, the green LED turns on. The red LED is on when the battery is connected.
+
 ## Documentation
-More documentation is availabe in the project's wiki page! To view Doxygen generated documentation on the project, just open the index file in the Documentation/html folder.
 
 ### Examples
 Using IMU data to obtain body position and orientation.
