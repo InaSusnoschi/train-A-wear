@@ -102,6 +102,49 @@ int broadcast_server(){
 	}
 }
 
+void *parsing_function(char * receivedJSON){
+	Document receivedDocument; /** Document variable that holds the received JSON documents after transmission */
+	// Proper JSON parsing
+	receivedDocument.Parse(message).HasParseError();
+	assert(receivedDocument.IsObject());
+
+	assert(receivedDocument.HasMember("sensor"));
+	assert(receivedDocument["sensor"].IsString());
+	sensorName = receivedDocument["sensor"].GetString();
+
+	//Receiving an array of values
+	const Value& aGyro = receivedDocument["gyro"];
+	const Value& aAcce = receivedDocument["accel"];
+	const Value& aMagn = receivedDocument["magnet"];
+
+	assert(aGyro.IsArray());
+	assert(aGyro.Size() == 3);
+	assert(aAcce.IsArray());
+	assert(aAcce.Size() == 3);
+	assert(aMagn.IsArray());
+	assert(aMagn.Size() == 3);
+
+	if(sensorRecords.count(sensorName) == 0){
+		sensor_data newRecord;
+		sensorRecords.emplace(sensorName, newRecord);
+	}
+
+	for (SizeType i = 0; i<aGyro.Size(); i++){
+		sensorRecords[sensorName].gyro[i] 			= aGyro[i].GetDouble();
+		sensorRecords[sensorName].accelerometer[i] 	= aAcce[i].GetDouble();
+		sensorRecords[sensorName].magnetometer[i] 	= aMagn[i].GetDouble();
+	}
+
+	Integration_algorithms obj;
+	int result = obj.squat_straight_back(sensorRecords[sensorName].gyro[1], sensorRecords[sensorName].accelerometer[0], sensorRecords[sensorName].accelerometer[3]);
+
+	cout << "Sensor: " << sensorName << endl;
+	cout << "Gyro: \t\t" << sensorRecords[sensorName].gyro[0] << "\t" << sensorRecords[sensorName].gyro[1] << "\t" << sensorRecords[sensorName].gyro [2] << endl;
+	cout << "Accelerometer:  " << sensorRecords[sensorName].accelerometer[0] << "\t" << sensorRecords[sensorName].accelerometer[1] << "\t" << sensorRecords[sensorName].accelerometer [2] << endl;
+	cout << "Gyro: \t\t" << sensorRecords[sensorName].magnetometer[0] << "\t" << sensorRecords[sensorName].magnetometer[1] << "\t" << sensorRecords[sensorName].magnetometer [2] << endl;
+	cout << "Result: " << result << endl;
+	cout << endl;
+}
 
 int main(void){
 	
@@ -124,7 +167,6 @@ int main(void){
 	int broadcast = 1; /** Flag used for allowing sending and receiving multicast messages */
 
 	//JSON transmission variables
-	Document receivedDocument; /** Document variable that holds the received JSON documents after transmission */
 	map<string, sensor_data> sensorRecords; /** map record that holds known sensor data stored. Sensor names are keys, sensor_data structs are values. @see sensor_data */
 	string 	sensorName; /** Holds the name of the sensor received on each transmission */
 
@@ -179,46 +221,9 @@ int main(void){
 			cout << endl;
 		}
 		else{
-			// Proper JSON parsing
-			receivedDocument.Parse(message).HasParseError();
-			assert(receivedDocument.IsObject());
 
-			assert(receivedDocument.HasMember("sensor"));
-			assert(receivedDocument["sensor"].IsString());
-			sensorName = receivedDocument["sensor"].GetString();
-
-			//Receiving an array of values
-			const Value& aGyro = receivedDocument["gyro"];
-			const Value& aAcce = receivedDocument["accel"];
-			const Value& aMagn = receivedDocument["magnet"];
-
-			assert(aGyro.IsArray());
-			assert(aGyro.Size() == 3);
-			assert(aAcce.IsArray());
-			assert(aAcce.Size() == 3);
-			assert(aMagn.IsArray());
-			assert(aMagn.Size() == 3);
-
-			if(sensorRecords.count(sensorName) == 0){
-				sensor_data newRecord;
-				sensorRecords.emplace(sensorName, newRecord);
-			}
-
-			for (SizeType i = 0; i<aGyro.Size(); i++){
-				sensorRecords[sensorName].gyro[i] 			= aGyro[i].GetDouble();
-				sensorRecords[sensorName].accelerometer[i] 	= aAcce[i].GetDouble();
-				sensorRecords[sensorName].magnetometer[i] 	= aMagn[i].GetDouble();
-			}
-
-			Integration_algorithms obj;
-			int result = obj.squat_straight_back(sensorRecords[sensorName].gyro[1], sensorRecords[sensorName].accelerometer[0], sensorRecords[sensorName].accelerometer[3]);
-
-			cout << "Sensor: " << sensorName << endl;
-			cout << "Gyro: \t\t" << sensorRecords[sensorName].gyro[0] << "\t" << sensorRecords[sensorName].gyro[1] << "\t" << sensorRecords[sensorName].gyro [2] << endl;
-			cout << "Accelerometer:  " << sensorRecords[sensorName].accelerometer[0] << "\t" << sensorRecords[sensorName].accelerometer[1] << "\t" << sensorRecords[sensorName].accelerometer [2] << endl;
-			cout << "Gyro: \t\t" << sensorRecords[sensorName].magnetometer[0] << "\t" << sensorRecords[sensorName].magnetometer[1] << "\t" << sensorRecords[sensorName].magnetometer [2] << endl;
-			cout << "Result: " << result << endl;
-			cout << endl;
+			//Call parsing function here to test it
+			parsing_function(message);
 
 		}
 
