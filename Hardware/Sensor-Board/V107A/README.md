@@ -9,4 +9,4 @@ Changes to previous version:
 * Added powerplane to the bottom of the PCB
 * Correct pull up on the Reset pin which is active low
 
-Bill of Materials is included in the accompanying txt file in the folder.
+Bill of Materials is included in the accompanying txt file in the folder. Jumper 2 is where a standard LiPo battery can be connected to the PCB to power it up. The board features smart battery charging capabilities for LiPo batteries.
