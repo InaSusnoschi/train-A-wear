@@ -1,3 +1,9 @@
+/*!
+ * @file Buffer.cpp
+ * @author Margarita Ivanova
+ *  \brief Buffer for storing the last two values of a sensor
+ */
+
 #include "Buffer.h"
 
 #include <stdio.h>
@@ -9,7 +15,9 @@ using namespace std;
 
 //Buffer class to save the last two values from the sensors for later analysis
 
-
+/**
+ * @brief Allocate memory for the buffer and initialize the values to 0
+*/
 //Initialize the buffer by allocating memory for two double numbers and
 // setting them to 0
 Buffer::Buffer()
@@ -35,6 +43,11 @@ void Buffer::print_buffer(void){
 
 }
 
+/**
+ * @brief Buffer functionality
+ * @param value2 The value to be added
+ * Stores the last two values input by removing the oldest one
+*/
 //creating the buffer with two values which are recorded as one by one comes in
 //  it starts filling up the buffer from the first position and
 //  when full, the oldest value is replaced with next value and the new value
@@ -54,7 +67,9 @@ void Buffer::buffer(double value2)
     cout<<stage<<endl;
 }
 
-//accessing the buffer values
+/**
+ * @brief Access the buffer values
+*/
 double* Buffer::get_buffer(void){
     double* temp= (double*)malloc(sizeof(double));
     temp[0] = buffer_val[0];

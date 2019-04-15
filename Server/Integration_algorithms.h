@@ -1,3 +1,10 @@
+/*!
+ * @file Integration_algorithms.h
+ * @author Margarita Ivanova
+ *  \brief Algorithms used for the measurement of the posture of the person wearing the train-A-wear
+ *         sensor system
+ */
+
 #ifndef INTEGRATION_ALGORITHMS_H
 #define INTEGRATION_ALGORITHMS_H
 

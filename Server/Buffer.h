@@ -1,3 +1,9 @@
+/*!
+ * @file Buffer.h
+ * @author Margarita Ivanova
+ *  \brief Buffer for storing the last two values of a sensor
+ */
+
 #ifndef BUFFER_H
 #define BUFFER_H
 
