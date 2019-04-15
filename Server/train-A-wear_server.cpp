@@ -1,5 +1,16 @@
-// A UDP server file that listens to all train-A-wear sensors and 
-// provides updates to the phone app.
+/**
+ *  @brief train-A-wear server file.
+ *  A UDP server that binds to port 31415 to listen for any train-A-wear active devices 
+ *  and transmit results to the coresponding phone apps.
+ *
+ *  @author Borislav Gachev
+ *  @author Margarita Ivanova
+ *
+ *  @date April 2019
+ *  @file
+ *
+ */
+
 #include <cstring>
 #include <arpa/inet.h>
 #include <sys/types.h>
@@ -25,23 +36,37 @@
 
 #include "Integration_algorithms.h"
 
+/** Maximum length of a single UDP packet to be read in from the socket **/
 #define BUFFER_LENGTH 1500
-#define PORT 31415
+/** Default port that the server would establish a socket to listen on **/
+#define PORT 31415 //Because it's going to run on Raspberry 3.1415 ;)
+/** Delay in seconds between successive multicast messages sent from the server **/
 #define BROADCAST_DELAY_S 45
 
 using namespace std;
 using namespace rapidjson;
 
-const char*	handshake = "train-A-wear online\n";
+const char*	handshake = "train-A-wear online\n"; /**< constant char array. It holds our pre-defined text used for handshaking between server, sensors and phones. */
 mutex mut;
 
-
+/**
+ * A structure that holds the latest sensor readings, after parsing them.
+ */
 struct sensor_data {
-	double 	gyro[3];
-	double 	accelerometer[3];
-	double 	magnetometer[3];
+	double 	gyro[3]; /**< Array containing gyroscope readings in X, Y, Z order. */
+	double 	accelerometer[3]; /**< Array containing accelerometer readings in X, Y, Z order. */
+	double 	magnetometer[3]; /**< Array containing magnetometer readings in X, Y, Z order. */
 };
 
+
+/**
+ * A thread function that sends a predefined message to Multicast IP address over UDP. Used for
+ * for automatic network discovery of train-A-wear active devices. After sending the message 
+ * the function sleeps for a predefined number of seconds.
+ *
+ * @see BROADCAST_DELAY_S
+ * @see handshake
+ */
 int broadcast_server(){
 	int 				socket_d;
 	struct sockaddr_in 	multicast_addr;
@@ -59,12 +84,13 @@ int broadcast_server(){
         return 3;
     }
 
-	//Fillout the server information
+	//Fillout the server information for multicasting to "255.255.255.255"
 	multicast_addr.sin_family 		= AF_INET;
 	multicast_addr.sin_port 		= htons(PORT);
 	multicast_addr.sin_addr.s_addr 	= inet_addr("255.255.255.255");
 
 
+	//Run this indefinetely until the thread is closed. Sleed for BROADCAST_DELAY_S between executions
 	for(;;){
 		mut.lock();
 		sendto(socket_d, handshake, strlen(handshake), MSG_CONFIRM, (const struct sockaddr *) &multicast_addr, sizeof(multicast_addr));
@@ -76,31 +102,31 @@ int broadcast_server(){
 	}
 }
 
+
 int main(void){
 	
-	int  					fd;
-	ssize_t					rlen;
-	struct sockaddr_in 		addr, conn_addr;
-	socklen_t 				conn_addr_len;
-	char 					buffer[BUFFER_LENGTH];
-	int 					flags = 0;
+	int  					fd; /** Int field holding the socket descriptor */
+	ssize_t					rlen; /** Length of received packet */
+	struct sockaddr_in 		addr, conn_addr; /** sockaddr_in structures for determining local IP address and receiving UDP packets */
+	char 					buffer[BUFFER_LENGTH]; /** Buffer for holding the data from the received UDP packet */
+	int 					flags = 0; /** int variable holding the flags from recv function */
 
 	// Needed for UDP connection as per https:linux.die.net/man/3/getaddrinfo
-	struct sockaddr_in 		client_addr;
-	socklen_t 				client_addr_len;
-	char*					message;
+	struct sockaddr_in 		client_addr; /** sockaddr_in structure holding the address of the client */
+	socklen_t 				client_addr_len; /** socklen_t for holding the length of the client address */
+	char*					message; /** char * the will hold the received message from the client */
 
 	// Determining local IP
-	char 			ip_address[15];
-	struct ifreq 	ifr;
+	char 			ip_address[15]; /** 16-digit variable for holding the local machine's IP address */
+	struct ifreq 	ifr; /** Structure for holding the result of IOCTL call */
 
 	//Network IP discovery
-	int broadcast = 1;
+	int broadcast = 1; /** Flag used for allowing sending and receiving multicast messages */
 
 	//JSON transmission variables
-	Document receivedDocument;
-	map<string, sensor_data> sensorRecords;
-	string 	sensorName;
+	Document receivedDocument; /** Document variable that holds the received JSON documents after transmission */
+	map<string, sensor_data> sensorRecords; /** map record that holds known sensor data stored. Sensor names are keys, sensor_data structs are values. @see sensor_data */
+	string 	sensorName; /** Holds the name of the sensor received on each transmission */
 
 
 	fd = socket(AF_INET, SOCK_DGRAM, 0);
