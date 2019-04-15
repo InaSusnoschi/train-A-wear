@@ -1,0 +1,200 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:2:1-101:12
+INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:2:1-101:12
+INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:2:1-101:12
+INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:2:1-101:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\4df1cd110349643e79cc4d885b639214\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\6dc8e0410981cbdee955b782011d6c6d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.synnapps:carouselview:0.1.5] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\carouselview-0.1.5.aar\5c54ced09a0e8e53e951433dfa57591a\AndroidManifest.xml:2:1-16:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\d6d936302ce057a6df46f8eaa588a5bc\AndroidManifest.xml:2:1-11:12
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\de61a3e8ceabc53d71e12a85834570cc\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\cb3182e7f2ac95a69b33654a65256687\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d4ba76f8227e363970cc29acc80b7359\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\1903f63fd1a4a8704fca9d59ade371a8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\58b04701719ca7d704f0b853cad4d855\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\434abc2fa4c4d8d691fd277f7cd59da6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\c46fdd038a8739bc5703dda92d1ef35a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\a52b5669a1cda331e7a1ff4aeddabba3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\f114e812f07eef8a542b5aabe049f353\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\3e7e846581e3a726fbf49a21482c2a29\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\729afbd3ebf9383c3fd3c0486070f722\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\38d348011a934a0672032476f7a0624f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3167f82df21347e05da36357ac445aaf\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c35a84bb57c38d3b6eb83047cde69144\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9bea37e301fc3df25f39d74477bc26c1\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:2:1-101:12
+INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:2:1-101:12
+INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:2:1-101:12
+	package
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:3:5-48
+		INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:2:1-101:12
+		INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:2:1-101:12
+		INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:6:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:7:22-76
+application
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:9:5-99:19
+MERGED from [com.synnapps:carouselview:0.1.5] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\carouselview-0.1.5.aar\5c54ced09a0e8e53e951433dfa57591a\AndroidManifest.xml:11:5-14:19
+MERGED from [com.synnapps:carouselview:0.1.5] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\carouselview-0.1.5.aar\5c54ced09a0e8e53e951433dfa57591a\AndroidManifest.xml:11:5-14:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\d6d936302ce057a6df46f8eaa588a5bc\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\d6d936302ce057a6df46f8eaa588a5bc\AndroidManifest.xml:9:5-20
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\de61a3e8ceabc53d71e12a85834570cc\AndroidManifest.xml:11:5-12:19
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\de61a3e8ceabc53d71e12a85834570cc\AndroidManifest.xml:11:5-12:19
+	android:supportsRtl
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:11:9-44
+	android:allowBackup
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:15:9-40
+activity#com.example.trainawearapplication.Biceps
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:16:9-24:20
+	android:parentActivityName
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:18:13-50
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:17:13-35
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:21:13-23:44
+	android:value
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:23:17-41
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:22:17-63
+activity#com.example.trainawearapplication.SquatInstr
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:25:9-31:20
+	android:parentActivityName
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:27:13-55
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:26:13-39
+activity#com.example.trainawearapplication.Progress
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:32:9-38:20
+	android:parentActivityName
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:34:13-55
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:33:13-37
+activity#com.example.trainawearapplication.HelpApp
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:39:9-45:20
+	android:parentActivityName
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:41:13-55
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:40:13-36
+activity#com.example.trainawearapplication.ClassicSquat
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:46:9-54:20
+	android:parentActivityName
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:48:13-48
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:47:13-41
+activity#com.example.trainawearapplication.Squat
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:55:9-63:20
+	android:parentActivityName
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:57:13-50
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:56:13-34
+activity#com.example.trainawearapplication.Workout
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:64:9-72:20
+	android:parentActivityName
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:66:13-55
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:65:13-36
+activity#com.example.trainawearapplication.Setup
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:73:9-81:20
+	android:parentActivityName
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:75:13-55
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:74:13-34
+activity#com.example.trainawearapplication.Plank
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:82:9-90:20
+	android:parentActivityName
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:84:13-50
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:83:13-34
+activity#com.example.trainawearapplication.MainActivity
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:91:9-97:20
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:91:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:92:13-96:29
+action#android.intent.action.MAIN
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:93:17-69
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:93:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:95:17-77
+	android:name
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml:95:27-74
+uses-sdk
+INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\4df1cd110349643e79cc4d885b639214\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\4df1cd110349643e79cc4d885b639214\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\6dc8e0410981cbdee955b782011d6c6d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\6dc8e0410981cbdee955b782011d6c6d\AndroidManifest.xml:20:5-44
+MERGED from [com.synnapps:carouselview:0.1.5] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\carouselview-0.1.5.aar\5c54ced09a0e8e53e951433dfa57591a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.synnapps:carouselview:0.1.5] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\carouselview-0.1.5.aar\5c54ced09a0e8e53e951433dfa57591a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\d6d936302ce057a6df46f8eaa588a5bc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\d6d936302ce057a6df46f8eaa588a5bc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\de61a3e8ceabc53d71e12a85834570cc\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jjoe64:graphview:4.2.2] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\graphview-4.2.2.aar\de61a3e8ceabc53d71e12a85834570cc\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\cb3182e7f2ac95a69b33654a65256687\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\cb3182e7f2ac95a69b33654a65256687\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d4ba76f8227e363970cc29acc80b7359\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d4ba76f8227e363970cc29acc80b7359\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\1903f63fd1a4a8704fca9d59ade371a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\1903f63fd1a4a8704fca9d59ade371a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\58b04701719ca7d704f0b853cad4d855\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\58b04701719ca7d704f0b853cad4d855\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\434abc2fa4c4d8d691fd277f7cd59da6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\434abc2fa4c4d8d691fd277f7cd59da6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\c46fdd038a8739bc5703dda92d1ef35a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\c46fdd038a8739bc5703dda92d1ef35a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\a52b5669a1cda331e7a1ff4aeddabba3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\a52b5669a1cda331e7a1ff4aeddabba3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\f114e812f07eef8a542b5aabe049f353\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\f114e812f07eef8a542b5aabe049f353\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\3e7e846581e3a726fbf49a21482c2a29\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\3e7e846581e3a726fbf49a21482c2a29\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\729afbd3ebf9383c3fd3c0486070f722\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\729afbd3ebf9383c3fd3c0486070f722\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\38d348011a934a0672032476f7a0624f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\38d348011a934a0672032476f7a0624f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3167f82df21347e05da36357ac445aaf\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3167f82df21347e05da36357ac445aaf\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c35a84bb57c38d3b6eb83047cde69144\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c35a84bb57c38d3b6eb83047cde69144\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9bea37e301fc3df25f39d74477bc26c1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\ioana\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9bea37e301fc3df25f39d74477bc26c1\AndroidManifest.xml:20:5-44
+INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+		ADDED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Firstapp\TrainAwearapplication\app\src\main\AndroidManifest.xml

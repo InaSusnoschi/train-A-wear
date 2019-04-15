@@ -1,0 +1,286 @@
+\hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_main_activity}{}\section{com.\+example.\+trainawearapplication.\+Main\+Activity Class Reference}
+\label{classcom_1_1example_1_1trainawearapplication_1_1_main_activity}\index{com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}}
+
+
+The \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity}{Main\+Activity}} is the first activity on entering the app.  
+
+
+Inheritance diagram for com.\+example.\+trainawearapplication.\+Main\+Activity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1example_1_1trainawearapplication_1_1_main_activity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_aeb1226f930e5d26a0aa04fc7614f3618}{enter\+Setup}} (View view)
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a1f9bee72c098b97dc196ab9b9af6fe00}{enter\+Workout}} (View view)
+\begin{DoxyCompactList}\small\item\em Called when user taps the \char`\"{}workout\char`\"{} button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a981791c0f63196acc0294ea82e1ff73a}{enter\+Progress}} (View view)
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a8f0652f7fc7f760d577d47b9ee3f9886}{enter\+Help\+App}} (View view)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a9602d3869b7b5392704fbf9fc2b041a9}{get\+Screen\+Height\+In\+D\+Ps}} (Context context)
+\begin{DoxyCompactList}\small\item\em background process for connecting to R\+PI and sending get request \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_ab22dede000985c356ec6d4419f3d2825}{on\+Create}} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+View.\+On\+Click\+Listener \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a24be9aa01bd26567f9846c8007a979bd}{wordpress\+Button\+Listener}}
+\begin{DoxyCompactList}\small\item\em Linked to media. \end{DoxyCompactList}\item 
+View.\+On\+Click\+Listener \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a46b1c1063fc63c8850150682ceef4d5b}{insta\+Button\+Listener}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity}{Main\+Activity}} is the first activity on entering the app. 
+
+\begin{DoxyAuthor}{Author}
+Ioana Susnoschi 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+2019-\/01-\/31 
+\end{DoxySince}
+
+
+Definition at line 32 of file Main\+Activity.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a8f0652f7fc7f760d577d47b9ee3f9886}\label{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a8f0652f7fc7f760d577d47b9ee3f9886}} 
+\index{com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}!enterHelpApp@{enterHelpApp}}
+\index{enterHelpApp@{enterHelpApp}!com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}}
+\subsubsection{\texorpdfstring{enterHelpApp()}{enterHelpApp()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Main\+Activity.\+enter\+Help\+App (\begin{DoxyParamCaption}\item[{View}]{view }\end{DoxyParamCaption})}
+
+
+
+Definition at line 97 of file Main\+Activity.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97                                         \{}
+\DoxyCodeLine{98         Intent helpApp = \textcolor{keyword}{new} Intent(\textcolor{keyword}{this}, HelpApp.class);}
+\DoxyCodeLine{99         startActivity(helpApp);}
+\DoxyCodeLine{100     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a981791c0f63196acc0294ea82e1ff73a}\label{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a981791c0f63196acc0294ea82e1ff73a}} 
+\index{com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}!enterProgress@{enterProgress}}
+\index{enterProgress@{enterProgress}!com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}}
+\subsubsection{\texorpdfstring{enterProgress()}{enterProgress()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Main\+Activity.\+enter\+Progress (\begin{DoxyParamCaption}\item[{View}]{view }\end{DoxyParamCaption})}
+
+
+
+Definition at line 92 of file Main\+Activity.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92                                          \{}
+\DoxyCodeLine{93         Intent progress = \textcolor{keyword}{new} Intent(\textcolor{keyword}{this}, Progress.class);}
+\DoxyCodeLine{94         startActivity(progress);}
+\DoxyCodeLine{95     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_aeb1226f930e5d26a0aa04fc7614f3618}\label{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_aeb1226f930e5d26a0aa04fc7614f3618}} 
+\index{com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}!enterSetup@{enterSetup}}
+\index{enterSetup@{enterSetup}!com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}}
+\subsubsection{\texorpdfstring{enterSetup()}{enterSetup()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Main\+Activity.\+enter\+Setup (\begin{DoxyParamCaption}\item[{View}]{view }\end{DoxyParamCaption})}
+
+
+
+Definition at line 78 of file Main\+Activity.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                                        \{}
+\DoxyCodeLine{79         Intent setup = \textcolor{keyword}{new} Intent(\textcolor{keyword}{this}, Setup.class);}
+\DoxyCodeLine{80         startActivity(setup);}
+\DoxyCodeLine{81     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a1f9bee72c098b97dc196ab9b9af6fe00}\label{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a1f9bee72c098b97dc196ab9b9af6fe00}} 
+\index{com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}!enterWorkout@{enterWorkout}}
+\index{enterWorkout@{enterWorkout}!com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}}
+\subsubsection{\texorpdfstring{enterWorkout()}{enterWorkout()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Main\+Activity.\+enter\+Workout (\begin{DoxyParamCaption}\item[{View}]{view }\end{DoxyParamCaption})}
+
+
+
+Called when user taps the \char`\"{}workout\char`\"{} button. 
+
+
+
+Definition at line 84 of file Main\+Activity.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84                                          \{}
+\DoxyCodeLine{85         \textcolor{comment}{// enter new screen in response to button}}
+\DoxyCodeLine{86         Intent workout = \textcolor{keyword}{new} Intent(\textcolor{keyword}{this}, Workout.class);}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88         startActivity(workout);}
+\DoxyCodeLine{89     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a9602d3869b7b5392704fbf9fc2b041a9}\label{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a9602d3869b7b5392704fbf9fc2b041a9}} 
+\index{com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}!getScreenHeightInDPs@{getScreenHeightInDPs}}
+\index{getScreenHeightInDPs@{getScreenHeightInDPs}!com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}}
+\subsubsection{\texorpdfstring{getScreenHeightInDPs()}{getScreenHeightInDPs()}}
+{\footnotesize\ttfamily static int com.\+example.\+trainawearapplication.\+Main\+Activity.\+get\+Screen\+Height\+In\+D\+Ps (\begin{DoxyParamCaption}\item[{Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+background process for connecting to R\+PI and sending get request 
+
+Method used to obtain the dimensions of the screen 
+\begin{DoxyParams}{Parameters}
+{\em context} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Height of the screen 
+\end{DoxyReturn}
+
+
+Definition at line 139 of file Main\+Activity.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{139                                                            \{}
+\DoxyCodeLine{140         DisplayMetrics dm = \textcolor{keyword}{new} DisplayMetrics();}
+\DoxyCodeLine{141         WindowManager windowManager = (WindowManager) context.getSystemService(WINDOW\_SERVICE);}
+\DoxyCodeLine{142         windowManager.getDefaultDisplay().getMetrics(dm);}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144         \textcolor{comment}{/*}}
+\DoxyCodeLine{145 \textcolor{comment}{            public int heightPixels}}
+\DoxyCodeLine{146 \textcolor{comment}{                The absolute height of the display in pixels.}}
+\DoxyCodeLine{147 \textcolor{comment}{}}
+\DoxyCodeLine{148 \textcolor{comment}{            public float density}}
+\DoxyCodeLine{149 \textcolor{comment}{             The logical density of the display.}}
+\DoxyCodeLine{150 \textcolor{comment}{        */}}
+\DoxyCodeLine{151         \textcolor{keywordtype}{int} heightInDP = Math.round(dm.heightPixels / dm.density);}
+\DoxyCodeLine{152         Log.d(TAG, \textcolor{stringliteral}{"height is:"} + heightInDP);}
+\DoxyCodeLine{153         System.out.println(\textcolor{stringliteral}{"height is: "}+ heightInDP);}
+\DoxyCodeLine{154         \textcolor{keywordflow}{return} heightInDP;}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{156     \}}
+
+\end{DoxyCode}
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Main\+Activity.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_ab22dede000985c356ec6d4419f3d2825}\label{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_ab22dede000985c356ec6d4419f3d2825}} 
+\index{com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}}
+\subsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Main\+Activity.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 36 of file Main\+Activity.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36                                                        \{}
+\DoxyCodeLine{37         super.onCreate(savedInstanceState);}
+\DoxyCodeLine{38         setContentView(R.layout.activity\_main);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40         \textcolor{keyword}{final} TextView tv = (TextView) findViewById(R.id.tv);}
+\DoxyCodeLine{41         Button wordpress = (Button) findViewById(R.id.buttonWordpress);}
+\DoxyCodeLine{42         Button insta = (Button) findViewById(R.id.buttonInsta);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44         Context context = getApplicationContext();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46         tv.setText(tv.getText() + \textcolor{stringliteral}{"\(\backslash\)nScreen height : "}}
+\DoxyCodeLine{47                 + \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a9602d3869b7b5392704fbf9fc2b041a9}{getScreenHeightInDPs}}(context) + \textcolor{stringliteral}{"dp"});}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49         \textcolor{comment}{//Register onClick listener}}
+\DoxyCodeLine{50         wordpress.setOnClickListener(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a24be9aa01bd26567f9846c8007a979bd}{wordpressButtonListener}});}
+\DoxyCodeLine{51         insta.setOnClickListener(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a46b1c1063fc63c8850150682ceef4d5b}{instaButtonListener}});}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+R.\+layout.\+activity\+\_\+main, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Insta, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Wordpress, com.\+example.\+trainawearapplication.\+Main\+Activity.\+get\+Screen\+Height\+In\+D\+Ps(), com.\+example.\+trainawearapplication.\+Main\+Activity.\+insta\+Button\+Listener, com.\+example.\+trainawearapplication.\+R.\+id.\+tv, and com.\+example.\+trainawearapplication.\+Main\+Activity.\+wordpress\+Button\+Listener.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a46b1c1063fc63c8850150682ceef4d5b}\label{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a46b1c1063fc63c8850150682ceef4d5b}} 
+\index{com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}!instaButtonListener@{instaButtonListener}}
+\index{instaButtonListener@{instaButtonListener}!com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}}
+\subsubsection{\texorpdfstring{instaButtonListener}{instaButtonListener}}
+{\footnotesize\ttfamily View.\+On\+Click\+Listener com.\+example.\+trainawearapplication.\+Main\+Activity.\+insta\+Button\+Listener\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} View.OnClickListener() \{}
+\DoxyCodeLine{        @Override}
+\DoxyCodeLine{        \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(View v) \{}
+\DoxyCodeLine{            Intent i = \textcolor{keyword}{new} Intent(Intent.ACTION\_VIEW, Uri.parse(\textcolor{stringliteral}{"https://www.instagram.com/trainawear/"}));}
+\DoxyCodeLine{            startActivity(i);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line 67 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Main\+Activity.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a24be9aa01bd26567f9846c8007a979bd}\label{classcom_1_1example_1_1trainawearapplication_1_1_main_activity_a24be9aa01bd26567f9846c8007a979bd}} 
+\index{com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}!wordpressButtonListener@{wordpressButtonListener}}
+\index{wordpressButtonListener@{wordpressButtonListener}!com.example.trainawearapplication.MainActivity@{com.example.trainawearapplication.MainActivity}}
+\subsubsection{\texorpdfstring{wordpressButtonListener}{wordpressButtonListener}}
+{\footnotesize\ttfamily View.\+On\+Click\+Listener com.\+example.\+trainawearapplication.\+Main\+Activity.\+wordpress\+Button\+Listener\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} View.OnClickListener() \{}
+\DoxyCodeLine{        @Override}
+\DoxyCodeLine{        \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(View v) \{}
+\DoxyCodeLine{            Intent i = \textcolor{keyword}{new} Intent(Intent.ACTION\_VIEW, Uri.parse(\textcolor{stringliteral}{"https://trainawear.wordpress.com/"}));}
+\DoxyCodeLine{            startActivity(i);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Linked to media. 
+
+
+
+Definition at line 59 of file Main\+Activity.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Main\+Activity.\+on\+Create().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/trainawearapplication/\mbox{\hyperlink{_main_activity_8java}{Main\+Activity.\+java}}\end{DoxyCompactItemize}

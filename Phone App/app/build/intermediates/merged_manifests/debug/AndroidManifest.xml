@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trainawearapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/logocolour"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.trainawearapplication.Biceps"
+            android:parentActivityName="com.example.trainawearapplication.Workout" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Workout" />
+        </activity>
+        <activity
+            android:name="com.example.trainawearapplication.SquatInstr"
+            android:parentActivityName="com.example.trainawearapplication.ClassicSquat" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ClassicSquat" />
+        </activity>
+        <activity
+            android:name="com.example.trainawearapplication.Progress"
+            android:parentActivityName="com.example.trainawearapplication.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.trainawearapplication.HelpApp"
+            android:parentActivityName="com.example.trainawearapplication.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.trainawearapplication.ClassicSquat"
+            android:parentActivityName="com.example.trainawearapplication.Squat" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Squat" />
+        </activity>
+        <activity
+            android:name="com.example.trainawearapplication.Squat"
+            android:parentActivityName="com.example.trainawearapplication.Workout" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Workout" />
+        </activity>
+        <activity
+            android:name="com.example.trainawearapplication.Workout"
+            android:parentActivityName="com.example.trainawearapplication.MainActivity" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.trainawearapplication.Setup"
+            android:parentActivityName="com.example.trainawearapplication.MainActivity" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.trainawearapplication.Plank"
+            android:parentActivityName="com.example.trainawearapplication.Workout" >
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Workout" />
+        </activity>
+        <activity android:name="com.example.trainawearapplication.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

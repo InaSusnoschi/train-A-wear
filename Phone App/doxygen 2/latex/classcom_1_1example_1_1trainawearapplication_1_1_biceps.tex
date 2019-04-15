@@ -1,0 +1,207 @@
+\hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps}{}\section{com.\+example.\+trainawearapplication.\+Biceps Class Reference}
+\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps}\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+Inheritance diagram for com.\+example.\+trainawearapplication.\+Biceps\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1example_1_1trainawearapplication_1_1_biceps}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_ae96aa9493d3419ad5d9690b146926e53}{get\+Instruction}} ()
+\item 
+static void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a05106a83eaf742a4c3e4d7c9a40d0e11}{set\+Instruction}} (int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_afe5d0b51d5fd89d0f25bc145c9ab0d1b}{instruction}})
+\begin{DoxyCompactList}\small\item\em Implements the instruction obtained from the switch cases. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_afe5d0b51d5fd89d0f25bc145c9ab0d1b}{instruction}} = 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_abcdfd60742e9da12033fad625275ca4f}{on\+Create}} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a48759c12a8068afab742cfdafa76772a}{m\+Images}} \mbox{[}$\,$\mbox{]}
+\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_acc5fba9ec43f042ed263e515defce14e}{m\+Images\+Title}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file Biceps.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps_ae96aa9493d3419ad5d9690b146926e53}\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps_ae96aa9493d3419ad5d9690b146926e53}} 
+\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}!getInstruction@{getInstruction}}
+\index{getInstruction@{getInstruction}!com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+\subsubsection{\texorpdfstring{getInstruction()}{getInstruction()}}
+{\footnotesize\ttfamily static int com.\+example.\+trainawearapplication.\+Biceps.\+get\+Instruction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 37 of file Biceps.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                        \{}
+\DoxyCodeLine{38         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_afe5d0b51d5fd89d0f25bc145c9ab0d1b}{instruction}};}
+\DoxyCodeLine{39     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+Biceps.\+instruction.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps_abcdfd60742e9da12033fad625275ca4f}\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps_abcdfd60742e9da12033fad625275ca4f}} 
+\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+\subsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Biceps.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 57 of file Biceps.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57                                                        \{}
+\DoxyCodeLine{58         super.onCreate(savedInstanceState);}
+\DoxyCodeLine{59         setContentView(R.layout.activity\_biceps);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61         Intent biceps = getIntent();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63         \textcolor{comment}{// implement Carousel - can maybe make it separate class?}}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65         CarouselView carouselView = findViewById(R.id.carousel);}
+\DoxyCodeLine{66         carouselView.setPageCount(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a48759c12a8068afab742cfdafa76772a}{mImages}}.length);}
+\DoxyCodeLine{67         carouselView.setImageListener(\textcolor{keyword}{new} ImageListener() \{}
+\DoxyCodeLine{68             @Override}
+\DoxyCodeLine{69             \textcolor{keyword}{public} \textcolor{keywordtype}{void} setImageForPosition(\textcolor{keywordtype}{int} position, ImageView imageView) \{}
+\DoxyCodeLine{70                 imageView.setImageResource(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a48759c12a8068afab742cfdafa76772a}{mImages}}[position]);}
+\DoxyCodeLine{71             \}}
+\DoxyCodeLine{72         \});}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74         carouselView.setImageClickListener(\textcolor{keyword}{new} ImageClickListener() \{}
+\DoxyCodeLine{75             @Override}
+\DoxyCodeLine{76             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(\textcolor{keywordtype}{int} position) \{}
+\DoxyCodeLine{77                 Toast.makeText(Biceps.this, \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_acc5fba9ec43f042ed263e515defce14e}{mImagesTitle}}[position], Toast.LENGTH\_SHORT).show();}
+\DoxyCodeLine{78             \}}
+\DoxyCodeLine{79         \});}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81         buttonConnect =  findViewById(R.id.buttonStartBiceps);}
+\DoxyCodeLine{82         buttonDisconnect =  findViewById(R.id.buttonStopBiceps);}
+\DoxyCodeLine{83         textViewState = findViewById(R.id.state); \textcolor{comment}{//}}
+\DoxyCodeLine{84         textViewRx = findViewById(R.id.received); \textcolor{comment}{//}}
+\DoxyCodeLine{85         textFeedback = findViewById(R.id.feedbackBiceps); \textcolor{comment}{//}}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 \textcolor{comment}{//        udpClientHandler = new ClassicSquat.UdpClientHandler(ClassicSquat parent);}}
+\DoxyCodeLine{88     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+R.\+layout.\+activity\+\_\+biceps, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Start\+Biceps, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Stop\+Biceps, com.\+example.\+trainawearapplication.\+R.\+id.\+carousel, com.\+example.\+trainawearapplication.\+R.\+id.\+feedback\+Biceps, com.\+example.\+trainawearapplication.\+Biceps.\+m\+Images, com.\+example.\+trainawearapplication.\+Biceps.\+m\+Images\+Title, com.\+example.\+trainawearapplication.\+R.\+id.\+received, and com.\+example.\+trainawearapplication.\+R.\+id.\+state.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a05106a83eaf742a4c3e4d7c9a40d0e11}\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a05106a83eaf742a4c3e4d7c9a40d0e11}} 
+\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}!setInstruction@{setInstruction}}
+\index{setInstruction@{setInstruction}!com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+\subsubsection{\texorpdfstring{setInstruction()}{setInstruction()}}
+{\footnotesize\ttfamily static void com.\+example.\+trainawearapplication.\+Biceps.\+set\+Instruction (\begin{DoxyParamCaption}\item[{int}]{instruction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Implements the instruction obtained from the switch cases. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & -\/ variable used to decide on the message to be displayed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 45 of file Biceps.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45                                                        \{}
+\DoxyCodeLine{46         Biceps.instruction = \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_afe5d0b51d5fd89d0f25bc145c9ab0d1b}{instruction}};}
+\DoxyCodeLine{47     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+Biceps.\+instruction.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps_afe5d0b51d5fd89d0f25bc145c9ab0d1b}\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps_afe5d0b51d5fd89d0f25bc145c9ab0d1b}} 
+\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}!instruction@{instruction}}
+\index{instruction@{instruction}!com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+\subsubsection{\texorpdfstring{instruction}{instruction}}
+{\footnotesize\ttfamily int com.\+example.\+trainawearapplication.\+Biceps.\+instruction = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 34 of file Biceps.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Biceps.\+get\+Instruction(), and com.\+example.\+trainawearapplication.\+Biceps.\+set\+Instruction().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a48759c12a8068afab742cfdafa76772a}\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a48759c12a8068afab742cfdafa76772a}} 
+\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}!mImages@{mImages}}
+\index{mImages@{mImages}!com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+\subsubsection{\texorpdfstring{mImages}{mImages}}
+{\footnotesize\ttfamily int com.\+example.\+trainawearapplication.\+Biceps.\+m\+Images\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} \textcolor{keywordtype}{int}[]\{}
+\DoxyCodeLine{            R.drawable.pullup1, R.drawable.pullup2, R.drawable.pullup3}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line 26 of file Biceps.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Biceps.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps_acc5fba9ec43f042ed263e515defce14e}\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps_acc5fba9ec43f042ed263e515defce14e}} 
+\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}!mImagesTitle@{mImagesTitle}}
+\index{mImagesTitle@{mImagesTitle}!com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+\subsubsection{\texorpdfstring{mImagesTitle}{mImagesTitle}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} com.\+example.\+trainawearapplication.\+Biceps.\+m\+Images\+Title\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Pullup1"}, \textcolor{stringliteral}{"Pullup2"}, \textcolor{stringliteral}{"Pullup3"}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line 30 of file Biceps.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Biceps.\+on\+Create().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/trainawearapplication/\mbox{\hyperlink{_biceps_8java}{Biceps.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,229 @@
+\hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank}{}\section{com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank Class Reference}
+\label{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank}\index{com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}}
+Inheritance diagram for com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a648a0fa42206709b739c8b754aa178dd}{Udp\+Client\+Handler\+Plank}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a2182425709c67eae734dd1f8dc2e228c}{handle\+Message}} (Message msg)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_af27cd7ec8aca34d7c434ddaeb312f907}{U\+P\+D\+A\+T\+E\+\_\+\+S\+T\+A\+TE}} = 0
+\item 
+static final int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a74216073d90f6a9a7ab3731239f93eb3}{U\+P\+D\+A\+T\+E\+\_\+\+M\+SG}} = 1
+\item 
+static final int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a75f364bd8c7c31476d6f9d2b621765c8}{U\+P\+D\+A\+T\+E\+\_\+\+E\+ND}} = 2
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a83b0d0b19d7c9be902069368bd7fa84f}{update\+Rx\+Msg\+Plank}} (String rxmsg)
+\begin{DoxyCompactList}\small\item\em Method that updates the receive field with the received String; used to read the String. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a68ceca8349b52704db25834ca5eb5b38}{update\+State\+Plank}} (String state)
+\begin{DoxyCompactList}\small\item\em Method that displays the IP address in invisible field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity}{Main\+Activity}} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a4ae127059889ca5270670220bb58b613}{parent}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file Udp\+Client\+Handler\+Plank.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a648a0fa42206709b739c8b754aa178dd}\label{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a648a0fa42206709b739c8b754aa178dd}} 
+\index{com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}!UdpClientHandlerPlank@{UdpClientHandlerPlank}}
+\index{UdpClientHandlerPlank@{UdpClientHandlerPlank}!com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}}
+\subsubsection{\texorpdfstring{UdpClientHandlerPlank()}{UdpClientHandlerPlank()}}
+{\footnotesize\ttfamily com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+Udp\+Client\+Handler\+Plank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 33 of file Udp\+Client\+Handler\+Plank.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                                    \{}
+\DoxyCodeLine{34         super();}
+\DoxyCodeLine{35         this.\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a4ae127059889ca5270670220bb58b613}{parent}} = \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a4ae127059889ca5270670220bb58b613}{parent}};}
+\DoxyCodeLine{36     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+parent.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+handle\+Message().
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a2182425709c67eae734dd1f8dc2e228c}\label{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a2182425709c67eae734dd1f8dc2e228c}} 
+\index{com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}!handleMessage@{handleMessage}}
+\index{handleMessage@{handleMessage}!com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}}
+\subsubsection{\texorpdfstring{handleMessage()}{handleMessage()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+handle\+Message (\begin{DoxyParamCaption}\item[{Message}]{msg }\end{DoxyParamCaption})}
+
+
+
+Definition at line 40 of file Udp\+Client\+Handler\+Plank.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                                            \{}
+\DoxyCodeLine{41         udpClientHandler = \textcolor{keyword}{new} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a648a0fa42206709b739c8b754aa178dd}{UdpClientHandlerPlank}}();}
+\DoxyCodeLine{42         \textcolor{keywordflow}{switch} (msg.what)\{}
+\DoxyCodeLine{43             \textcolor{keywordflow}{case} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_af27cd7ec8aca34d7c434ddaeb312f907}{UPDATE\_STATE}}:}
+\DoxyCodeLine{44                 udpClientHandler.\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a68ceca8349b52704db25834ca5eb5b38}{updateStatePlank}}((String)msg.obj);}
+\DoxyCodeLine{45                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{46             \textcolor{keywordflow}{case} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a74216073d90f6a9a7ab3731239f93eb3}{UPDATE\_MSG}}:}
+\DoxyCodeLine{47                 udpClientHandler.\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a83b0d0b19d7c9be902069368bd7fa84f}{updateRxMsgPlank}}((String)msg.obj);}
+\DoxyCodeLine{48                 textFeedbackPlank.setText(showFeedback((String)msg.obj));}
+\DoxyCodeLine{49                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{50             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{51                 super.handleMessage(msg);}
+\DoxyCodeLine{52         \}}
+\DoxyCodeLine{53     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+Udp\+Client\+Handler\+Plank(), com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+U\+P\+D\+A\+T\+E\+\_\+\+M\+SG, com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+U\+P\+D\+A\+T\+E\+\_\+\+S\+T\+A\+TE, com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+update\+Rx\+Msg\+Plank(), and com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+update\+State\+Plank().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a83b0d0b19d7c9be902069368bd7fa84f}\label{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a83b0d0b19d7c9be902069368bd7fa84f}} 
+\index{com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}!updateRxMsgPlank@{updateRxMsgPlank}}
+\index{updateRxMsgPlank@{updateRxMsgPlank}!com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}}
+\subsubsection{\texorpdfstring{updateRxMsgPlank()}{updateRxMsgPlank()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+update\+Rx\+Msg\+Plank (\begin{DoxyParamCaption}\item[{String}]{rxmsg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method that updates the receive field with the received String; used to read the String. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rxmsg} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file Udp\+Client\+Handler\+Plank.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                                                 \{}
+\DoxyCodeLine{60         textViewRxPlank.setText(rxmsg + \textcolor{stringliteral}{"\(\backslash\)n"});}
+\DoxyCodeLine{61         Log.d(TAG, \textcolor{stringliteral}{"on text update"});}
+\DoxyCodeLine{62     \}}
+
+\end{DoxyCode}
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+handle\+Message().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a68ceca8349b52704db25834ca5eb5b38}\label{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a68ceca8349b52704db25834ca5eb5b38}} 
+\index{com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}!updateStatePlank@{updateStatePlank}}
+\index{updateStatePlank@{updateStatePlank}!com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}}
+\subsubsection{\texorpdfstring{updateStatePlank()}{updateStatePlank()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+update\+State\+Plank (\begin{DoxyParamCaption}\item[{String}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method that displays the IP address in invisible field. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & Variable displays the IP address when the handskahe occurs \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 70 of file Udp\+Client\+Handler\+Plank.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                                                 \{}
+\DoxyCodeLine{71         Log.d(TAG,\textcolor{stringliteral}{"update state"});}
+\DoxyCodeLine{72         textViewStatePlank.setText(state);}
+\DoxyCodeLine{73     \}}
+
+\end{DoxyCode}
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+handle\+Message().
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a4ae127059889ca5270670220bb58b613}\label{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a4ae127059889ca5270670220bb58b613}} 
+\index{com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}!parent@{parent}}
+\index{parent@{parent}!com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}}
+\subsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity}{Main\+Activity}} com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+parent\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Udp\+Client\+Handler\+Plank.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+Udp\+Client\+Handler\+Plank().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a75f364bd8c7c31476d6f9d2b621765c8}\label{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a75f364bd8c7c31476d6f9d2b621765c8}} 
+\index{com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}!UPDATE\_END@{UPDATE\_END}}
+\index{UPDATE\_END@{UPDATE\_END}!com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}}
+\subsubsection{\texorpdfstring{UPDATE\_END}{UPDATE\_END}}
+{\footnotesize\ttfamily final int com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+U\+P\+D\+A\+T\+E\+\_\+\+E\+ND = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 27 of file Udp\+Client\+Handler\+Plank.\+java.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a74216073d90f6a9a7ab3731239f93eb3}\label{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_a74216073d90f6a9a7ab3731239f93eb3}} 
+\index{com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}!UPDATE\_MSG@{UPDATE\_MSG}}
+\index{UPDATE\_MSG@{UPDATE\_MSG}!com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}}
+\subsubsection{\texorpdfstring{UPDATE\_MSG}{UPDATE\_MSG}}
+{\footnotesize\ttfamily final int com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+U\+P\+D\+A\+T\+E\+\_\+\+M\+SG = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 26 of file Udp\+Client\+Handler\+Plank.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+handle\+Message(), and com.\+example.\+trainawearapplication.\+Client\+Listen.\+run().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_af27cd7ec8aca34d7c434ddaeb312f907}\label{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank_af27cd7ec8aca34d7c434ddaeb312f907}} 
+\index{com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}!UPDATE\_STATE@{UPDATE\_STATE}}
+\index{UPDATE\_STATE@{UPDATE\_STATE}!com.example.trainawearapplication.UdpClientHandlerPlank@{com.example.trainawearapplication.UdpClientHandlerPlank}}
+\subsubsection{\texorpdfstring{UPDATE\_STATE}{UPDATE\_STATE}}
+{\footnotesize\ttfamily final int com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+U\+P\+D\+A\+T\+E\+\_\+\+S\+T\+A\+TE = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 25 of file Udp\+Client\+Handler\+Plank.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+handle\+Message(), and com.\+example.\+trainawearapplication.\+Client\+Listen.\+run().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/trainawearapplication/\mbox{\hyperlink{_udp_client_handler_plank_8java}{Udp\+Client\+Handler\+Plank.\+java}}\end{DoxyCompactItemize}
