@@ -53,6 +53,7 @@ with the values of your WiFi's SSID and password. Upload the sketch, reset the s
 Import the project from Phone App folder in Android Studio and run the gradle build. You can either generate an APK file or install it straight away on your phone.
 
 ## Documentation
+More documentation is availabe in the project's wiki page!
 
 ### Examples
 Using IMU data to obtain body position and orientation.
