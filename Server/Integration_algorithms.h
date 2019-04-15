@@ -15,8 +15,8 @@ class Integration_algorithms
         int squat_twist_right_knee(double gyro_x, double acc_y, double acc_z);
         int squat_twist_left_knee(double gyro_x, double acc_y, double acc_z);
         int plank_bend_back(double gyro_y, double acc_x, double acc_z);
-        int pushup_shoulder_back(double gyro_x, double acc_y, double acc_z);
-        int pushup_knee_back(double gyro_x, double acc_y, double acc_z);
+        int pushup_shoulder_back(double s1_gyro_y, double s1_acc_x, double s1_acc_z, double s2_gyro_y, double s2_acc_x, double s2_acc_z);
+        int pushup_knee_back(double s1_gyro_y, double s1_acc_x, double s1_acc_z, double s3_gyro_y, double s3_acc_x, double s3_acc_z);
     protected:
 
     private:

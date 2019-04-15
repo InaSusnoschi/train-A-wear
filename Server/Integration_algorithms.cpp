@@ -1,3 +1,9 @@
+/*! \brief Algorithms used for the measurement of the posture of the person wearing the train-A-wear
+ *         sensor system
+ *
+ *  Detailed description starts here.
+ */
+
 #include "Integration_algorithms.h"
 #include "Buffer.h"
 
@@ -7,6 +13,8 @@
 #include <iostream>
 
 using namespace std;
+
+
 
 Integration_algorithms::Integration_algorithms(){
     sensor1_rotx = new Buffer();
@@ -33,9 +41,9 @@ double Integration_algorithms::Roll(double gyro_y, double acc_x, double acc_z)
 {
     double roll;
     double dt = 0.01;
-    roll += gyro_y * dt;
+    roll += gyro_y * dt; /*!< raw sensor calculation for roll */
     printf("Original roll = %f\n",roll);
-    double acc_correction_y = atan2f(acc_z, acc_x) *180/M_PI;
+    double acc_correction_y = atan2f(acc_z, acc_x) *180/M_PI; /*!< calibration factor for roll*/
     complementary_filter(&roll, acc_correction_y);
     printf("Calibrated roll = %f\n",roll);
     return roll;
@@ -46,9 +54,9 @@ double Integration_algorithms::Pitch(double gyro_x, double acc_y, double acc_z)
 {
     double pitch;
     double dt = 0.01;
-    pitch += gyro_x * dt;
+    pitch += gyro_x * dt; /*!< raw sensor calculation for pitch */
     printf("Original pitch = %f\n",pitch);
-    double acc_correction_x = atan2f(acc_y, acc_z)*180/M_PI;
+    double acc_correction_x = atan2f(acc_y, acc_z)*180/M_PI; /*!< calibration factor for pitch*/
     if (acc_correction_x >180.0){
         acc_correction_x -=(double)360.0;
     }
@@ -62,8 +70,8 @@ double Integration_algorithms::Pitch(double gyro_x, double acc_y, double acc_z)
 //check for rotation along y axis
 int Integration_algorithms::squat_straight_back(double gyro_y, double acc_x, double acc_z)
 {
-    double Roll = Integration_algorithms::Roll(gyro_y, acc_x, acc_z);
-    if (Roll == 0){
+    double roll = Integration_algorithms::Roll(gyro_y, acc_x, acc_z);
+    if (roll == 0){
         return 1; //message "Bend during exercise!"
     } else{
         return 2; //message "Keep the nice posture"
@@ -111,12 +119,12 @@ int Integration_algorithms::plank_bend_back(double gyro_y, double acc_x, double 
 }
 
 //check if the back and shoulders are aligned during push up
-int Integration_algorithms::pushup_shoulder_back(double gyro_x, double acc_y, double acc_z)
+int Integration_algorithms::pushup_shoulder_back(double s1_gyro_y, double s1_acc_x, double s1_acc_z, double s2_gyro_y, double s2_acc_x, double s2_acc_z)
 {
-    sensor2_roty->buffer(Integration_algorithms::Roll(gyro_x, acc_y, acc_z)); //back sensor
-    double* rotation1_x = sensor2_roty->get_buffer();
-    sensor3_roty->buffer(Integration_algorithms::Roll(gyro_x, acc_y, acc_z)); //shoulder sensor
-    double* rotation2_x = sensor3_roty->get_buffer();
+    sensor1_roty->buffer(Integration_algorithms::Roll(s1_gyro_y, s1_acc_x, s1_acc_z)); //back sensor
+    double* rotation1_x = sensor1_roty->get_buffer();
+    sensor2_roty->buffer(Integration_algorithms::Roll(s2_gyro_y, s2_acc_x, s2_acc_z)); //shoulder sensor
+    double* rotation2_x = sensor2_roty->get_buffer();
     if ((abs(rotation1_x[1] - rotation1_x[0]) - abs(rotation2_x[1] - rotation2_x[0])) > 0.2){
         cout<<"Straighten your shoulders"<<endl;
         return 8;
@@ -126,13 +134,13 @@ int Integration_algorithms::pushup_shoulder_back(double gyro_x, double acc_y, do
     }
 }
 
-int Integration_algorithms::pushup_knee_back(double gyro_x, double acc_y, double acc_z)
+int Integration_algorithms::pushup_knee_back(double s1_gyro_y, double s1_acc_x, double s1_acc_z, double s3_gyro_y, double s3_acc_x, double s3_acc_z)
 {
-    sensor2_roty->buffer(Integration_algorithms::Roll(gyro_x, acc_y, acc_z)); //back sensor
-    double* rotation1_x = sensor2_roty->get_buffer();
-    sensor1_roty->buffer(Integration_algorithms::Roll(gyro_x, acc_y, acc_z)); //knee sensor
-    double* rotation2_x = sensor1_roty->get_buffer();
-    if ((abs(rotation1_x[1] - rotation1_x[0]) - abs(rotation2_x[1] - rotation2_x[0])) > 0.2){
+    sensor1_roty->buffer(Integration_algorithms::Roll(s1_gyro_y, s1_acc_x, s1_acc_z)); //back sensor
+    double* rotation1_x = sensor1_roty->get_buffer();
+    sensor3_roty->buffer(Integration_algorithms::Roll(s3_gyro_y, s3_acc_x, s3_acc_z)); //knee sensor
+    double* rotation3_x = sensor3_roty->get_buffer();
+    if ((abs(rotation1_x[1] - rotation1_x[0]) - abs(rotation3_x[1] - rotation3_x[0])) > 0.2){
         cout<<"Dont bend your knees"<<endl;
         return 10;
     }{
