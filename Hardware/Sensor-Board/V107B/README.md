@@ -8,3 +8,6 @@ Changes to previous version:
 * Removed pins for programming the microcontroller while soldered on the board. Programming has to be done prior to soldering on the PCB
 * Added powerplane to the bottom of the PCB
 * Correct pull up on the Reset pin which is active low
+
+
+Bill of Materials is included in the accompanying txt file in the folder.
