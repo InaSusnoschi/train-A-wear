@@ -33,6 +33,7 @@
 #include "rapidjson/prettywriter.h"
 #include <cstring>
 #include <mutex>
+#include <future>
 
 #include "Integration_algorithms.h"
 
@@ -46,7 +47,10 @@
 using namespace std;
 using namespace rapidjson;
 
-const char*	handshake = "train-A-wear online\n"; /**< constant char array. It holds our pre-defined text used for handshaking between server, sensors and phones. */
+char*	handshake = "train-A-wear online\n"; /**< constant char array. It holds our pre-defined text used for handshaking between server, sensors and phones. */
+const char* phone_handshake = "train-a-wear ready"; /**< constat char array. Holds the value for handshaking with the phone. */
+const char* start = "START";
+const char* stop = "STOP";
 mutex mut;
 
 /**
@@ -57,6 +61,8 @@ struct sensor_data {
 	double 	accelerometer[3]; /**< Array containing accelerometer readings in X, Y, Z order. */
 	double 	magnetometer[3]; /**< Array containing magnetometer readings in X, Y, Z order. */
 };
+
+map<string, sensor_data> sensorRecords; /** map record that holds known sensor data stored. Sensor names are keys, sensor_data structs are values. @see sensor_data */
 
 
 /**
@@ -102,11 +108,33 @@ int broadcast_server(){
 	}
 }
 
-void *parsing_function(char * receivedJSON){
+/**
+ * A function that takes a pointer to JSON formatted char array. It tries to parse it or throws an error.
+ *
+ * @param receivedJSON char * to the JSON string 
+ * @return Returns an int representing a feedback message as a result of the integration algorithms.
+ */
+
+int parsing_function(char * receivedJSON){
 	Document receivedDocument; /** Document variable that holds the received JSON documents after transmission */
+	string sensorName;
+
+	// Incoming data is converted to c++ string
+	// then the first occurence of } is found, which denotes end of JSON packet.
+	// Afterwards everything up to is is copied into char * and passed to the parser.
+	string recJSON = string(receivedJSON);
+	int pos = recJSON.find_first_of("}") + 1;
+	recJSON = recJSON.substr(0, pos);
+	char dataToParse[pos];
+	strcpy(dataToParse, recJSON.c_str());
+
 	// Proper JSON parsing
-	receivedDocument.Parse(message).HasParseError();
-	assert(receivedDocument.IsObject());
+	receivedDocument.Parse(dataToParse).HasParseError();
+	cout << endl << receivedJSON << endl;
+	if (receivedDocument.IsObject() == 0){
+		cout << receivedJSON << endl;
+		return -1;
+	}
 
 	assert(receivedDocument.HasMember("sensor"));
 	assert(receivedDocument["sensor"].IsString());
@@ -144,7 +172,40 @@ void *parsing_function(char * receivedJSON){
 	cout << "Gyro: \t\t" << sensorRecords[sensorName].magnetometer[0] << "\t" << sensorRecords[sensorName].magnetometer[1] << "\t" << sensorRecords[sensorName].magnetometer [2] << endl;
 	cout << "Result: " << result << endl;
 	cout << endl;
+	return result;
 }
+
+/**
+ * A generic function for sending char arrays to port 31415 at destination IP.
+ *
+ * @param destination_ip Recipient IP for the text.
+ * @param message Message to be sent to target IP.
+ *
+ * @return 0, if succesfull, otherwise 1.
+ */
+
+int send_message(char * destination_ip, char * message){
+	int 				socket_d;
+	struct sockaddr_in 	m_addr;
+	int 				broadcast = 1;
+
+	// Create the socket
+	if((socket_d = socket(AF_INET, SOCK_DGRAM, 0)) == -1){
+		perror("Unable to create the UDP socket.");
+		return 1;
+	}
+
+	//Fillout the server information
+	m_addr.sin_family 		= AF_INET;
+	m_addr.sin_port 		= htons(PORT);
+	m_addr.sin_addr.s_addr 	= inet_addr(destination_ip); 
+
+
+	sendto(socket_d, message, strlen(message), MSG_CONFIRM, (const struct sockaddr *) &m_addr, sizeof(m_addr));
+	close(socket_d);
+	return 0;
+}
+
 
 int main(void){
 	
@@ -167,9 +228,10 @@ int main(void){
 	int broadcast = 1; /** Flag used for allowing sending and receiving multicast messages */
 
 	//JSON transmission variables
-	map<string, sensor_data> sensorRecords; /** map record that holds known sensor data stored. Sensor names are keys, sensor_data structs are values. @see sensor_data */
 	string 	sensorName; /** Holds the name of the sensor received on each transmission */
 
+	char	ip_phone[15]; /** Holds the value of user's phone IP address */
+	bool 	sendUpdates = false; /** Flag that indicates if the surver should be sending data to the user or not */
 
 	fd = socket(AF_INET, SOCK_DGRAM, 0);
 	ifr.ifr_addr.sa_family = AF_INET;
@@ -180,7 +242,7 @@ int main(void){
 	strcpy(ip_address,inet_ntoa(((struct sockaddr_in *)&ifr.ifr_addr)->sin_addr));
 	cout << "Server IP Address is: " << ip_address << endl;
 
-	// Create a UDP (SOCK_DGRAM) over IP scoket
+	// Create a UDP (SOCK_DGRAM) socket
 	fd = socket (AF_INET, SOCK_DGRAM, 0);
 	if(fd == -1){
 		perror("Unable to create socket.");
@@ -219,12 +281,22 @@ int main(void){
 		if(strncmp(message, handshake, strlen(handshake)) == 0){
 			cout << "I FOUND YOU!" << endl;
 			cout << endl;
-		}
-		else{
+		} else if(strncmp(message, phone_handshake, strlen(phone_handshake)) == 0){
+			strcpy(ip_phone, inet_ntoa(client_addr.sin_addr));
 
-			//Call parsing function here to test it
-			parsing_function(message);
-
+			cout << "I FOUND A PHONE! @" << ip_phone << endl;
+			send_message(ip_phone, handshake);
+			cout << endl;
+		} else if (strncmp(message, start, strlen(start)) == 0){
+			sendUpdates = true;
+		} else if(strncmp(message, stop, strlen(stop)) == 0){
+			sendUpdates = false;
+		} else if(sendUpdates){
+			char mBuffer[8];
+			sprintf(mBuffer, "%d", parsing_function(message));
+			send_message(ip_phone, mBuffer);
+		} else{
+			cout << message << endl;
 		}
 
 		free(message);
