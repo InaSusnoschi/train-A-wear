@@ -1,0 +1,71 @@
+\hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_progress}{}\section{com.\+example.\+trainawearapplication.\+Progress Class Reference}
+\label{classcom_1_1example_1_1trainawearapplication_1_1_progress}\index{com.example.trainawearapplication.Progress@{com.example.trainawearapplication.Progress}}
+
+
+The \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_progress}{Progress}} activity plots how many times the system has been used.  
+
+
+Inheritance diagram for com.\+example.\+trainawearapplication.\+Progress\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1example_1_1trainawearapplication_1_1_progress}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_progress_a839ad2f2cb526d70b32c517f54400f36}{on\+Create}} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_progress}{Progress}} activity plots how many times the system has been used. 
+
+\begin{DoxyAuthor}{Author}
+Ioana Susnoschi 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+2019-\/04-\/05 
+\end{DoxySince}
+
+
+Definition at line 19 of file Progress.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_progress_a839ad2f2cb526d70b32c517f54400f36}\label{classcom_1_1example_1_1trainawearapplication_1_1_progress_a839ad2f2cb526d70b32c517f54400f36}} 
+\index{com.example.trainawearapplication.Progress@{com.example.trainawearapplication.Progress}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!com.example.trainawearapplication.Progress@{com.example.trainawearapplication.Progress}}
+\subsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Progress.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 22 of file Progress.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                                                        \{}
+\DoxyCodeLine{23         super.onCreate(savedInstanceState);}
+\DoxyCodeLine{24         setContentView(R.layout.activity\_progress);}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26         GraphView graph = (GraphView) findViewById(R.id.graph);}
+\DoxyCodeLine{27         Intent progress = getIntent();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         graph.addSeries(series);}
+\DoxyCodeLine{30     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+R.\+layout.\+activity\+\_\+progress, and com.\+example.\+trainawearapplication.\+R.\+id.\+graph.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/trainawearapplication/\mbox{\hyperlink{_progress_8java}{Progress.\+java}}\end{DoxyCompactItemize}

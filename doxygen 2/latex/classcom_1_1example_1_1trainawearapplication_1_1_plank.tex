@@ -1,0 +1,345 @@
+\hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_plank}{}\section{com.\+example.\+trainawearapplication.\+Plank Class Reference}
+\label{classcom_1_1example_1_1trainawearapplication_1_1_plank}\index{com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}}
+Inheritance diagram for com.\+example.\+trainawearapplication.\+Plank\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.766562cm]{classcom_1_1example_1_1trainawearapplication_1_1_plank}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_a4d4a46b71ced8fe89023ccbf14d17f77}{set\+View\+Text}} (Text\+View view, String text)
+\begin{DoxyCompactList}\small\item\em Method required by the \mbox{\hyperlink{interfacecom_1_1example_1_1trainawearapplication_1_1_update_feedback}{Update\+Feedback}} interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_a2220e1459dd56fb27948dcddf79bfcfa}{get\+Instruction}} ()
+\item 
+static void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_a3cc3d10c2310227ff9fe69e49afac328}{set\+Instruction}} (int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_a78c9024e55b5817aa05befcff69394c3}{instruction}})
+\item 
+static String \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_a14343873d9ff489757bebbad97adbaf1}{show\+Feedback}} (String instruction\+Def)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_a78c9024e55b5817aa05befcff69394c3}{instruction}} = 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_a8071af6c71d817914e58bd99b92c0904}{on\+Create}} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_af0574ebfbf8f016aebe193e5694c53fa}{plank\+Images}} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Create Carousel view with three images. \end{DoxyCompactList}\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_aaeb5339c942a37b01b333cd7cdeea57d}{plank\+Images\+Title}}
+\item 
+final int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_afdb06528b46b1961c50dc081c3cf4557}{P\+O\+RT}} = 31415
+\item 
+Thread \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_ac43cc854533c5fc22b5638149d26512c}{udp\+Listener}}
+\item 
+\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send}{Client\+Send}} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_a840985b7a4ec5f3092c91a8336e616e9}{udp\+Sender}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Plank.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_plank_a2220e1459dd56fb27948dcddf79bfcfa}\label{classcom_1_1example_1_1trainawearapplication_1_1_plank_a2220e1459dd56fb27948dcddf79bfcfa}} 
+\index{com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}!getInstruction@{getInstruction}}
+\index{getInstruction@{getInstruction}!com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}}
+\subsubsection{\texorpdfstring{getInstruction()}{getInstruction()}}
+{\footnotesize\ttfamily static int com.\+example.\+trainawearapplication.\+Plank.\+get\+Instruction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 33 of file Plank.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                                        \{}
+\DoxyCodeLine{34         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_a78c9024e55b5817aa05befcff69394c3}{instruction}};}
+\DoxyCodeLine{35     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+Plank.\+instruction.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_plank_a8071af6c71d817914e58bd99b92c0904}\label{classcom_1_1example_1_1trainawearapplication_1_1_plank_a8071af6c71d817914e58bd99b92c0904}} 
+\index{com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}}
+\subsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Plank.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 51 of file Plank.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                                                        \{}
+\DoxyCodeLine{52         super.onCreate(savedInstanceState);}
+\DoxyCodeLine{53         setContentView(R.layout.activity\_plank);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55         Intent plank = getIntent();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57         \textcolor{comment}{// set carousel view}}
+\DoxyCodeLine{58         CarouselView carouselView = findViewById(R.id.carouselPlank);}
+\DoxyCodeLine{59         carouselView.setPageCount(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_af0574ebfbf8f016aebe193e5694c53fa}{plankImages}}.length);}
+\DoxyCodeLine{60         carouselView.setImageListener(\textcolor{keyword}{new} ImageListener() \{}
+\DoxyCodeLine{61             @Override}
+\DoxyCodeLine{62             \textcolor{keyword}{public} \textcolor{keywordtype}{void} setImageForPosition(\textcolor{keywordtype}{int} position, ImageView imageView) \{}
+\DoxyCodeLine{63                 imageView.setImageResource(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_af0574ebfbf8f016aebe193e5694c53fa}{plankImages}}[position]);}
+\DoxyCodeLine{64             \}}
+\DoxyCodeLine{65         \});}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67         carouselView.setImageClickListener(\textcolor{keyword}{new} ImageClickListener() \{}
+\DoxyCodeLine{68             @Override}
+\DoxyCodeLine{69             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(\textcolor{keywordtype}{int} position) \{}
+\DoxyCodeLine{70                 Toast.makeText(Plank.this, \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_aaeb5339c942a37b01b333cd7cdeea57d}{plankImagesTitle}}[position], Toast.LENGTH\_SHORT).show();}
+\DoxyCodeLine{71             \}}
+\DoxyCodeLine{72         \});}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74         buttonConnect =  findViewById(R.id.buttonStartPlank); \textcolor{comment}{// in History}}
+\DoxyCodeLine{75         buttonDisconnect =  findViewById(R.id.buttonStopPlank); \textcolor{comment}{// in History}}
+\DoxyCodeLine{76         textViewStatePlank = findViewById(R.id.statePlank); \textcolor{comment}{// store IP address after handshake}}
+\DoxyCodeLine{77         textViewRxPlank = findViewById(R.id.receivedPlank); \textcolor{comment}{// store numbers for feedback}}
+\DoxyCodeLine{78         textFeedbackPlank = findViewById(R.id.feedbackPlank); \textcolor{comment}{// in Squat}}
+\DoxyCodeLine{79         messageView = findViewById(R.id.message);}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81         buttonConnect.setOnClickListener(buttonConnectOnClickListener);}
+\DoxyCodeLine{82         buttonDisconnect.setOnClickListener(buttonDisonnectOnClickListener);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84         udpClientHandler = \textcolor{keyword}{new} \mbox{\hyperlink{namespacecom}{com}}.\mbox{\hyperlink{namespacecom_1_1example}{example}}.\mbox{\hyperlink{namespacecom_1_1example_1_1trainawearapplication}{trainawearapplication}}.\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank}{UdpClientHandlerPlank}}();}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86         Log.d(TAG, \textcolor{stringliteral}{"Start listening for messages"});}
+\DoxyCodeLine{87         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_ac43cc854533c5fc22b5638149d26512c}{udpListener}} = \textcolor{keyword}{new} Thread(\textcolor{keyword}{new} \mbox{\hyperlink{namespacecom}{com}}.\mbox{\hyperlink{namespacecom_1_1example}{example}}.\mbox{\hyperlink{namespacecom_1_1example_1_1trainawearapplication}{trainawearapplication}}.\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen}{ClientListen}}(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_afdb06528b46b1961c50dc081c3cf4557}{PORT}}, textViewStatePlank, udpClientHandler));}
+\DoxyCodeLine{88         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_ac43cc854533c5fc22b5638149d26512c}{udpListener}}.start();}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_a840985b7a4ec5f3092c91a8336e616e9}{udpSender}} = \textcolor{keyword}{new} ClientSend(\textcolor{stringliteral}{"255.255.255.255"}, \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_afdb06528b46b1961c50dc081c3cf4557}{PORT}});}
+\DoxyCodeLine{91         Log.d(TAG, \textcolor{stringliteral}{"sending to "} + textViewStatePlank.getText().toString());}
+\DoxyCodeLine{92         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_a840985b7a4ec5f3092c91a8336e616e9}{udpSender}}.execute(\textcolor{stringliteral}{"train-a-wear ready"});}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+R.\+layout.\+activity\+\_\+plank, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Start\+Plank, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Stop\+Plank, com.\+example.\+trainawearapplication.\+R.\+id.\+carousel\+Plank, com.\+example.\+trainawearapplication.\+R.\+id.\+feedback\+Plank, com.\+example.\+trainawearapplication.\+R.\+id.\+message, com.\+example.\+trainawearapplication.\+Plank.\+plank\+Images, com.\+example.\+trainawearapplication.\+Plank.\+plank\+Images\+Title, com.\+example.\+trainawearapplication.\+Plank.\+P\+O\+RT, com.\+example.\+trainawearapplication.\+R.\+id.\+received\+Plank, com.\+example.\+trainawearapplication.\+R.\+id.\+state\+Plank, com.\+example.\+trainawearapplication.\+Plank.\+udp\+Listener, and com.\+example.\+trainawearapplication.\+Plank.\+udp\+Sender.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_plank_a3cc3d10c2310227ff9fe69e49afac328}\label{classcom_1_1example_1_1trainawearapplication_1_1_plank_a3cc3d10c2310227ff9fe69e49afac328}} 
+\index{com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}!setInstruction@{setInstruction}}
+\index{setInstruction@{setInstruction}!com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}}
+\subsubsection{\texorpdfstring{setInstruction()}{setInstruction()}}
+{\footnotesize\ttfamily static void com.\+example.\+trainawearapplication.\+Plank.\+set\+Instruction (\begin{DoxyParamCaption}\item[{int}]{instruction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 37 of file Plank.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                                        \{}
+\DoxyCodeLine{38         ClassicSquat.instruction = \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_plank_a78c9024e55b5817aa05befcff69394c3}{instruction}};}
+\DoxyCodeLine{39     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+Plank.\+instruction, and com.\+example.\+trainawearapplication.\+Classic\+Squat.\+instruction.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_plank_a4d4a46b71ced8fe89023ccbf14d17f77}\label{classcom_1_1example_1_1trainawearapplication_1_1_plank_a4d4a46b71ced8fe89023ccbf14d17f77}} 
+\index{com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}!setViewText@{setViewText}}
+\index{setViewText@{setViewText}!com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}}
+\subsubsection{\texorpdfstring{setViewText()}{setViewText()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Plank.\+set\+View\+Text (\begin{DoxyParamCaption}\item[{Text\+View}]{view,  }\item[{String}]{text }\end{DoxyParamCaption})}
+
+
+
+Method required by the \mbox{\hyperlink{interfacecom_1_1example_1_1trainawearapplication_1_1_update_feedback}{Update\+Feedback}} interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view} & \\
+\hline
+{\em text} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1example_1_1trainawearapplication_1_1_update_feedback_a7a026880188b11aca6d8184d57e699e8}{com.\+example.\+trainawearapplication.\+Update\+Feedback}}.
+
+
+
+Definition at line 180 of file Plank.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{180                                                         \{}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{182     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_plank_a14343873d9ff489757bebbad97adbaf1}\label{classcom_1_1example_1_1trainawearapplication_1_1_plank_a14343873d9ff489757bebbad97adbaf1}} 
+\index{com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}!showFeedback@{showFeedback}}
+\index{showFeedback@{showFeedback}!com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}}
+\subsubsection{\texorpdfstring{showFeedback()}{showFeedback()}}
+{\footnotesize\ttfamily static String com.\+example.\+trainawearapplication.\+Plank.\+show\+Feedback (\begin{DoxyParamCaption}\item[{String}]{instruction\+Def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 143 of file Plank.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{143                                                              \{}
+\DoxyCodeLine{144         \textcolor{keywordflow}{switch} (instructionDef)\{}
+\DoxyCodeLine{145             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"0"}:}
+\DoxyCodeLine{146                 \textcolor{keywordflow}{return}(\textcolor{stringliteral}{"Ready to start"});}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"1"}:}
+\DoxyCodeLine{149                 \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"Let's go!"});}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"2"}:}
+\DoxyCodeLine{152                 \textcolor{keywordflow}{return}(\textcolor{stringliteral}{"Knees caving in: Keep your knees in line with your toes"});}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"3"}:}
+\DoxyCodeLine{155                 \textcolor{keywordflow}{return}(\textcolor{stringliteral}{"Your back is bending, keep it straight while tensing your abs"});}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"4"}:}
+\DoxyCodeLine{158                 \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"Bring the weight down slowly and increase speed when lifting"});}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"5"}:}
+\DoxyCodeLine{161                 \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"Try to keep you back in a neutral position, don't lift your hips"});}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"6"}:}
+\DoxyCodeLine{164                 \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"If you keep your hips steady, the abs are working harder"});}
+\DoxyCodeLine{165 }
+\DoxyCodeLine{166             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"7"}:}
+\DoxyCodeLine{167                 \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"For an effective push up, bring your chest close to the ground"});}
+\DoxyCodeLine{168 }
+\DoxyCodeLine{169             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{170                 \textcolor{keywordflow}{return}(\textcolor{stringliteral}{"You're doing great, keep going!"});}
+\DoxyCodeLine{171         \}}
+\DoxyCodeLine{172     \}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_plank_a78c9024e55b5817aa05befcff69394c3}\label{classcom_1_1example_1_1trainawearapplication_1_1_plank_a78c9024e55b5817aa05befcff69394c3}} 
+\index{com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}!instruction@{instruction}}
+\index{instruction@{instruction}!com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}}
+\subsubsection{\texorpdfstring{instruction}{instruction}}
+{\footnotesize\ttfamily int com.\+example.\+trainawearapplication.\+Plank.\+instruction = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 20 of file Plank.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Plank.\+get\+Instruction(), and com.\+example.\+trainawearapplication.\+Plank.\+set\+Instruction().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_plank_af0574ebfbf8f016aebe193e5694c53fa}\label{classcom_1_1example_1_1trainawearapplication_1_1_plank_af0574ebfbf8f016aebe193e5694c53fa}} 
+\index{com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}!plankImages@{plankImages}}
+\index{plankImages@{plankImages}!com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}}
+\subsubsection{\texorpdfstring{plankImages}{plankImages}}
+{\footnotesize\ttfamily int com.\+example.\+trainawearapplication.\+Plank.\+plank\+Images\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} \textcolor{keywordtype}{int}[]\{}
+\DoxyCodeLine{            R.drawable.planklow2, R.drawable.plankhigh1}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Create Carousel view with three images. 
+
+
+
+Definition at line 25 of file Plank.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Plank.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_plank_aaeb5339c942a37b01b333cd7cdeea57d}\label{classcom_1_1example_1_1trainawearapplication_1_1_plank_aaeb5339c942a37b01b333cd7cdeea57d}} 
+\index{com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}!plankImagesTitle@{plankImagesTitle}}
+\index{plankImagesTitle@{plankImagesTitle}!com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}}
+\subsubsection{\texorpdfstring{plankImagesTitle}{plankImagesTitle}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} com.\+example.\+trainawearapplication.\+Plank.\+plank\+Images\+Title\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"PlankL"}, \textcolor{stringliteral}{"PlankH"}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line 29 of file Plank.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Plank.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_plank_afdb06528b46b1961c50dc081c3cf4557}\label{classcom_1_1example_1_1trainawearapplication_1_1_plank_afdb06528b46b1961c50dc081c3cf4557}} 
+\index{com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}!PORT@{PORT}}
+\index{PORT@{PORT}!com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}}
+\subsubsection{\texorpdfstring{PORT}{PORT}}
+{\footnotesize\ttfamily final int com.\+example.\+trainawearapplication.\+Plank.\+P\+O\+RT = 31415\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 46 of file Plank.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Plank.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_plank_ac43cc854533c5fc22b5638149d26512c}\label{classcom_1_1example_1_1trainawearapplication_1_1_plank_ac43cc854533c5fc22b5638149d26512c}} 
+\index{com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}!udpListener@{udpListener}}
+\index{udpListener@{udpListener}!com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}}
+\subsubsection{\texorpdfstring{udpListener}{udpListener}}
+{\footnotesize\ttfamily Thread com.\+example.\+trainawearapplication.\+Plank.\+udp\+Listener\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 47 of file Plank.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Plank.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_plank_a840985b7a4ec5f3092c91a8336e616e9}\label{classcom_1_1example_1_1trainawearapplication_1_1_plank_a840985b7a4ec5f3092c91a8336e616e9}} 
+\index{com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}!udpSender@{udpSender}}
+\index{udpSender@{udpSender}!com.example.trainawearapplication.Plank@{com.example.trainawearapplication.Plank}}
+\subsubsection{\texorpdfstring{udpSender}{udpSender}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send}{Client\+Send}} com.\+example.\+trainawearapplication.\+Plank.\+udp\+Sender\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 48 of file Plank.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Plank.\+on\+Create().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/trainawearapplication/\mbox{\hyperlink{_plank_8java}{Plank.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,165 @@
+\hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_client_send}{}\section{com.\+example.\+trainawearapplication.\+Client\+Send Class Reference}
+\label{classcom_1_1example_1_1trainawearapplication_1_1_client_send}\index{com.example.trainawearapplication.ClientSend@{com.example.trainawearapplication.ClientSend}}
+
+
+The \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send}{Client\+Send}} class declares an asynchronous task used to send messages from \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_workout}{Workout}} activities.  
+
+
+Inheritance diagram for com.\+example.\+trainawearapplication.\+Client\+Send\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1example_1_1trainawearapplication_1_1_client_send}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send_ab1f011085d4305f586a7074a46e73450}{Client\+Send}} (String dest\+IP, int dest\+Port)
+\begin{DoxyCompactList}\small\item\em Class constructor for \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send}{Client\+Send}}. \end{DoxyCompactList}\item 
+Void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send_ad8e0bcd2078b23e83c1060065834ae7d}{do\+In\+Background}} (String... data\+To\+Send)
+\begin{DoxyCompactList}\small\item\em Method that has to be implemented because the class is Async\+Task Called by invoking Client\+Send.\+execute(vars);. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send_ad35299d12486a041cdcbcffab3cc320f}{ip}}
+\item 
+int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send_a1295f5916c4527127a9dd68b7c6fe759}{port}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send}{Client\+Send}} class declares an asynchronous task used to send messages from \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_workout}{Workout}} activities. 
+
+\begin{DoxyAuthor}{Author}
+Ioana Susnoschi 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+2019-\/04-\/05 
+\end{DoxySince}
+
+
+Definition at line 21 of file Client\+Send.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_client_send_ab1f011085d4305f586a7074a46e73450}\label{classcom_1_1example_1_1trainawearapplication_1_1_client_send_ab1f011085d4305f586a7074a46e73450}} 
+\index{com.example.trainawearapplication.ClientSend@{com.example.trainawearapplication.ClientSend}!ClientSend@{ClientSend}}
+\index{ClientSend@{ClientSend}!com.example.trainawearapplication.ClientSend@{com.example.trainawearapplication.ClientSend}}
+\subsubsection{\texorpdfstring{ClientSend()}{ClientSend()}}
+{\footnotesize\ttfamily com.\+example.\+trainawearapplication.\+Client\+Send.\+Client\+Send (\begin{DoxyParamCaption}\item[{String}]{dest\+IP,  }\item[{int}]{dest\+Port }\end{DoxyParamCaption})}
+
+
+
+Class constructor for \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send}{Client\+Send}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest\+IP} & IP address of the server/destination \\
+\hline
+{\em dest\+Port} & Destination port \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file Client\+Send.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32                                                   \{}
+\DoxyCodeLine{33         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send_ad35299d12486a041cdcbcffab3cc320f}{ip}}      = destIP;}
+\DoxyCodeLine{34         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send_a1295f5916c4527127a9dd68b7c6fe759}{port}}    = destPort;}
+\DoxyCodeLine{35     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+Client\+Send.\+ip, and com.\+example.\+trainawearapplication.\+Client\+Send.\+port.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_client_send_ad8e0bcd2078b23e83c1060065834ae7d}\label{classcom_1_1example_1_1trainawearapplication_1_1_client_send_ad8e0bcd2078b23e83c1060065834ae7d}} 
+\index{com.example.trainawearapplication.ClientSend@{com.example.trainawearapplication.ClientSend}!doInBackground@{doInBackground}}
+\index{doInBackground@{doInBackground}!com.example.trainawearapplication.ClientSend@{com.example.trainawearapplication.ClientSend}}
+\subsubsection{\texorpdfstring{doInBackground()}{doInBackground()}}
+{\footnotesize\ttfamily Void com.\+example.\+trainawearapplication.\+Client\+Send.\+do\+In\+Background (\begin{DoxyParamCaption}\item[{String...}]{data\+To\+Send }\end{DoxyParamCaption})}
+
+
+
+Method that has to be implemented because the class is Async\+Task Called by invoking Client\+Send.\+execute(vars);. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+To\+Send} & The data introduced by the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Is related to the Interface type definition 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file Client\+Send.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                                      \{}
+\DoxyCodeLine{44         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{45             String transmissionData = dataToSend[0];}
+\DoxyCodeLine{46             DatagramSocket udpSocket = \textcolor{keyword}{new} DatagramSocket();}
+\DoxyCodeLine{47             InetAddress serverAddr = InetAddress.getByName(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send_ad35299d12486a041cdcbcffab3cc320f}{ip}});}
+\DoxyCodeLine{48             \textcolor{keywordtype}{byte}[] buf = transmissionData.getBytes();}
+\DoxyCodeLine{49             DatagramPacket packet = \textcolor{keyword}{new} DatagramPacket(buf, buf.length,serverAddr, \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send_a1295f5916c4527127a9dd68b7c6fe759}{port}});}
+\DoxyCodeLine{50             udpSocket.send(packet);}
+\DoxyCodeLine{51         \} \textcolor{keywordflow}{catch} (SocketException e) \{}
+\DoxyCodeLine{52             Log.e(\textcolor{stringliteral}{"Udp:"}, \textcolor{stringliteral}{"Socket Error:"}, e);}
+\DoxyCodeLine{53         \} \textcolor{keywordflow}{catch} (IOException e) \{}
+\DoxyCodeLine{54             Log.e(\textcolor{stringliteral}{"Udp Send:"}, \textcolor{stringliteral}{"IO Error:"}, e);}
+\DoxyCodeLine{55         \}}
+\DoxyCodeLine{56         \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{57     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+Client\+Send.\+ip, and com.\+example.\+trainawearapplication.\+Client\+Send.\+port.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_client_send_ad35299d12486a041cdcbcffab3cc320f}\label{classcom_1_1example_1_1trainawearapplication_1_1_client_send_ad35299d12486a041cdcbcffab3cc320f}} 
+\index{com.example.trainawearapplication.ClientSend@{com.example.trainawearapplication.ClientSend}!ip@{ip}}
+\index{ip@{ip}!com.example.trainawearapplication.ClientSend@{com.example.trainawearapplication.ClientSend}}
+\subsubsection{\texorpdfstring{ip}{ip}}
+{\footnotesize\ttfamily String com.\+example.\+trainawearapplication.\+Client\+Send.\+ip\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 23 of file Client\+Send.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Client\+Send.\+Client\+Send(), and com.\+example.\+trainawearapplication.\+Client\+Send.\+do\+In\+Background().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_client_send_a1295f5916c4527127a9dd68b7c6fe759}\label{classcom_1_1example_1_1trainawearapplication_1_1_client_send_a1295f5916c4527127a9dd68b7c6fe759}} 
+\index{com.example.trainawearapplication.ClientSend@{com.example.trainawearapplication.ClientSend}!port@{port}}
+\index{port@{port}!com.example.trainawearapplication.ClientSend@{com.example.trainawearapplication.ClientSend}}
+\subsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily int com.\+example.\+trainawearapplication.\+Client\+Send.\+port\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 24 of file Client\+Send.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Client\+Send.\+Client\+Send(), and com.\+example.\+trainawearapplication.\+Client\+Send.\+do\+In\+Background().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/example/trainawearapplication/\mbox{\hyperlink{_client_send_8java}{Client\+Send.\+java}}\end{DoxyCompactItemize}

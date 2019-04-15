@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">TrainAwear application</string>
+    <string name="top_message">Are you ready? Bring it on!</string>
+    <string name="title">train-A-wear</string>
+    <string name="welcome">Welcome!</string>
+    <string name="button_setup">SETUP</string>
+    <string name="button_WORKOUT">WORKOUT</string>
+    <string name="button_progress">PROGRESS</string>
+    <string name="button_help">Help</string>
+    <string name="button_health">Health &amp; lifestyle</string>
+    <string name="button_mount">Donning &amp; doffing</string>
+    <string name="button_stretch">Recommended stretches</string>
+    <string name="edit_message">Enter your name</string>
+    <string name="inputParameters">Please introduce the following:</string>
+    <string name="textQuote">It does not matter how slowly you go as long as you do not stop - Confucius</string>
+    <string name="text_progress">Nothing to show yet :( \n Keep working hard, consistency is key to success.</string>
+    <string name="text_progress_update">Make sure you have signed in to allow train-A-wear keep track of your progress</string>
+    <string name="textWeight">Weight</string>
+    <string name="textHeight">Height</string>
+    <string name="textAge">Age</string>
+    <string name="text_help_head">How can I help?</string>
+    <string name="text_fault_head">Faulty system</string>
+    <string name="text_fault_body">In case of a sensor defection or issues with the connection to
+        the app, please contact us directly     using the form provided on our website. \n Remember
+        to add key words like <i>sensor</i> or <i>connection</i>.</string>
+    <string name="text_mount_body">Use the Velcro straps provided to fix the sensors on the indicated
+         body segments and make sure that the orientation of the sensor for each segment matches the
+        one in the instructions provided for each exercise. \n For more questions, <a href="https://trainawear.wordpress.com/feedback/">click here</a>. </string>
+    <string name="text_health_body">Find out more on healthy lifestyles:\n<a href="https://www.instagram.com/trainawear/">train-A-wear instagram</a> where we post daily tips
+       \n<a href="https://www.coachmag.co.uk/">for workout ideas</a> \n<a href="https://www.nhs.uk/live-well/exercise/10-minute-workouts/">10-minute workouts recommended by NHS</a> </string>
+    <string name="textSquat">Squats</string>
+    <string name="textSquatEnum">Perfect classic, sumo and weight squats</string>
+    <string name="textBiceps">Bicep curls</string>
+    <string name="textBicepsEnum">Get control over your rhythm &amp; range of motion</string>
+    <string name="textLunges">Lunges</string>
+    <string name="textLungesEnum">Front and back leg monitoring</string>
+    <string name="textPlank">Plank&amp;Pushup</string>
+    <string name="textPlankEnum">Back position: increase core strength</string>
+    <string name="enterWeight">(Kg)</string>
+    <string name="enterHeight">(cm)</string>
+    <string name="enterAge">y.o.</string>
+    <string name="buttonOk">OK</string>
+    <string name="ready">All set to go!</string>
+    <string name="tools_ignore_contentdescription">tools:ignore=ContentDescription</string>
+    <string name="workoutHeadline">Scroll to choose your workout</string>
+    <string name="button_squat">Squat</string>
+    <string name="button_plank">Plank</string>
+    <string name="button_curls">Bicep curls</string>
+    <string name="button_lunge">Lunges</string>
+    <string name="workout_low_text">Remember to breathe in deeply and stay hydrated!</string>
+    <string name="setup_hello">Hello</string>
+    <string name="exercise_headline">Let\'s shape that body!</string>
+    <string name="exercise_start">Start</string>
+    <string name="exercise_type">Pick your squat type</string>
+    <string name="button_exercise_start">Start</string>
+    <string name="button_exercise_stop">Stop</string>
+    <string name="squat_stretch">Make sure to warm up and stretch your hips, knees and ankles!</string>
+    <string name="squat_classic">Classic</string>
+    <string name="squat_plie">Plie</string>
+    <string name="squat_weights">Weights</string>
+    <string name="squat_stages">Squat stages</string>
+    <string name="button_instructions">Wear it &amp; go</string>
+    <string name="squatInstrHeadline">Instructions and Setup</string>
+    <string name="calories_burned">Calories burned</string>
+    <string name="calories_value">0 KCal</string>
+    <string name="fire">fire</string>
+    <string name="name">Name</string>
+</resources>
