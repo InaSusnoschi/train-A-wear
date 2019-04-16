@@ -1,0 +1,344 @@
+\hypertarget{structrapidjson_1_1_base_reader_handler}{}\section{rapidjson\+::Base\+Reader\+Handler$<$ Encoding, Derived $>$ Struct Template Reference}
+\label{structrapidjson_1_1_base_reader_handler}\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+
+
+Default implementation of \mbox{\hyperlink{classrapidjson_1_1_handler}{Handler}}.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Encoding\+::\+Ch \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a2932a8ecbb1997dda305f4dbef32ab0d}{Ch}}
+\item 
+typedef internal\+::\+Select\+If$<$ internal\+::\+Is\+Same$<$ Derived, void $>$, \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{Base\+Reader\+Handler}}, Derived $>$\+::\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{Type}} \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_ae61944eee4cb6a3f7f34f3d4edce7eeb}{Override}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a050d1b4130a924d138f762d3c914a748}{Default}} ()
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a823c816871a8dd881019ee8526b517cb}{Null}} ()
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_aead125c32fbf2a1311a2ba9c95b8604a}{Bool}} (bool)
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a7de3a16b56209aa2aa56a42591c426cb}{Int}} (int)
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a9627844582969a7d79a2250bdb4f9ec0}{Uint}} (unsigned)
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_afb78023dc0f5a31f9c5d5de4a55d9077}{Int64}} (\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}})
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a76b043fefd5fac0faadf3846995af6f5}{Uint64}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}})
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a03e7d273b4d317b61a4ae56e0da9097a}{Double}} (double)
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a0de969fd05528960c2a7de51b2265bf1}{Raw\+Number}} (const \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a2932a8ecbb1997dda305f4dbef32ab0d}{Ch}} $\ast$str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} len, bool copy)
+\begin{DoxyCompactList}\small\item\em enabled via k\+Parse\+Numbers\+As\+Strings\+Flag, string is not null-\/terminated (use length) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_ad48b724f01c31c1fdbd623bd31df6a3c}{String}} (const \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a2932a8ecbb1997dda305f4dbef32ab0d}{Ch}} $\ast$, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}, bool)
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a2f3d3bec89a751cdcf7a4236dbc6b26d}{Start\+Object}} ()
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a92649c2dc3e94e085ee056c17444d418}{Key}} (const \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a2932a8ecbb1997dda305f4dbef32ab0d}{Ch}} $\ast$str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} len, bool copy)
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a6216b7af34bbae857ff06363f5b13f5d}{End\+Object}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}})
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a0c6fba36350848cb691879758b2d8d59}{Start\+Array}} ()
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a8fc75176ec793217d40d5a8de049cdb3}{End\+Array}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$\newline
+struct rapidjson\+::\+Base\+Reader\+Handler$<$ Encoding, Derived $>$}
+
+Default implementation of \mbox{\hyperlink{classrapidjson_1_1_handler}{Handler}}. 
+
+This can be used as base class of any reader handler. \begin{DoxyNote}{Note}
+implements \mbox{\hyperlink{classrapidjson_1_1_handler}{Handler}} concept 
+\end{DoxyNote}
+
+
+Definition at line 85 of file fwd.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_a2932a8ecbb1997dda305f4dbef32ab0d}\label{structrapidjson_1_1_base_reader_handler_a2932a8ecbb1997dda305f4dbef32ab0d}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+typedef Encoding\+::\+Ch \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::\mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a2932a8ecbb1997dda305f4dbef32ab0d}{Ch}}}
+
+
+
+Definition at line 197 of file reader.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_ae61944eee4cb6a3f7f34f3d4edce7eeb}\label{structrapidjson_1_1_base_reader_handler_ae61944eee4cb6a3f7f34f3d4edce7eeb}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!Override@{Override}}
+\index{Override@{Override}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{Override}{Override}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+typedef internal\+::\+Select\+If$<$internal\+::\+Is\+Same$<$Derived, void$>$, \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{Base\+Reader\+Handler}}, Derived$>$\+::\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{Type}} \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::\mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_ae61944eee4cb6a3f7f34f3d4edce7eeb}{Override}}}
+
+
+
+Definition at line 199 of file reader.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_aead125c32fbf2a1311a2ba9c95b8604a}\label{structrapidjson_1_1_base_reader_handler_aead125c32fbf2a1311a2ba9c95b8604a}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!Bool@{Bool}}
+\index{Bool@{Bool}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{Bool()}{Bool()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::Bool (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 203 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{203 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).Default(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_a050d1b4130a924d138f762d3c914a748}\label{structrapidjson_1_1_base_reader_handler_a050d1b4130a924d138f762d3c914a748}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!Default@{Default}}
+\index{Default@{Default}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{Default()}{Default()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 201 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{201 \{ \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_a03e7d273b4d317b61a4ae56e0da9097a}\label{structrapidjson_1_1_base_reader_handler_a03e7d273b4d317b61a4ae56e0da9097a}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!Double@{Double}}
+\index{Double@{Double}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{Double()}{Double()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::Double (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 208 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{208 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).Default(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_a8fc75176ec793217d40d5a8de049cdb3}\label{structrapidjson_1_1_base_reader_handler_a8fc75176ec793217d40d5a8de049cdb3}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!EndArray@{EndArray}}
+\index{EndArray@{EndArray}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{EndArray()}{EndArray()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::End\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 216 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{216 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).Default(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_a6216b7af34bbae857ff06363f5b13f5d}\label{structrapidjson_1_1_base_reader_handler_a6216b7af34bbae857ff06363f5b13f5d}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!EndObject@{EndObject}}
+\index{EndObject@{EndObject}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{EndObject()}{EndObject()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::End\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 214 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{214 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).Default(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_a7de3a16b56209aa2aa56a42591c426cb}\label{structrapidjson_1_1_base_reader_handler_a7de3a16b56209aa2aa56a42591c426cb}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!Int@{Int}}
+\index{Int@{Int}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{Int()}{Int()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::Int (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 204 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{204 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).Default(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_afb78023dc0f5a31f9c5d5de4a55d9077}\label{structrapidjson_1_1_base_reader_handler_afb78023dc0f5a31f9c5d5de4a55d9077}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!Int64@{Int64}}
+\index{Int64@{Int64}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{Int64()}{Int64()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::Int64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 206 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{206 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).Default(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_a92649c2dc3e94e085ee056c17444d418}\label{structrapidjson_1_1_base_reader_handler_a92649c2dc3e94e085ee056c17444d418}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!Key@{Key}}
+\index{Key@{Key}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{Key()}{Key()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::Key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a2932a8ecbb1997dda305f4dbef32ab0d}{Ch}} $\ast$}]{str,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{len,  }\item[{bool}]{copy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 213 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{213 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).String(str, len, copy); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_a823c816871a8dd881019ee8526b517cb}\label{structrapidjson_1_1_base_reader_handler_a823c816871a8dd881019ee8526b517cb}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!Null@{Null}}
+\index{Null@{Null}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{Null()}{Null()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 202 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{202 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).Default(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_a0de969fd05528960c2a7de51b2265bf1}\label{structrapidjson_1_1_base_reader_handler_a0de969fd05528960c2a7de51b2265bf1}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!RawNumber@{RawNumber}}
+\index{RawNumber@{RawNumber}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{RawNumber()}{RawNumber()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::Raw\+Number (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a2932a8ecbb1997dda305f4dbef32ab0d}{Ch}} $\ast$}]{str,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{len,  }\item[{bool}]{copy }\end{DoxyParamCaption})}
+
+
+
+enabled via k\+Parse\+Numbers\+As\+Strings\+Flag, string is not null-\/terminated (use length) 
+
+
+
+Definition at line 210 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{210 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).String(str, len, copy); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_a0c6fba36350848cb691879758b2d8d59}\label{structrapidjson_1_1_base_reader_handler_a0c6fba36350848cb691879758b2d8d59}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!StartArray@{StartArray}}
+\index{StartArray@{StartArray}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{StartArray()}{StartArray()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::Start\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 215 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{215 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).Default(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_a2f3d3bec89a751cdcf7a4236dbc6b26d}\label{structrapidjson_1_1_base_reader_handler_a2f3d3bec89a751cdcf7a4236dbc6b26d}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!StartObject@{StartObject}}
+\index{StartObject@{StartObject}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{StartObject()}{StartObject()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::Start\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 212 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{212 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).Default(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_ad48b724f01c31c1fdbd623bd31df6a3c}\label{structrapidjson_1_1_base_reader_handler_ad48b724f01c31c1fdbd623bd31df6a3c}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!String@{String}}
+\index{String@{String}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler_a2932a8ecbb1997dda305f4dbef32ab0d}{Ch}} $\ast$}]{,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{,  }\item[{bool}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 211 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{211 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).Default(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_a9627844582969a7d79a2250bdb4f9ec0}\label{structrapidjson_1_1_base_reader_handler_a9627844582969a7d79a2250bdb4f9ec0}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!Uint@{Uint}}
+\index{Uint@{Uint}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{Uint()}{Uint()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::Uint (\begin{DoxyParamCaption}\item[{unsigned}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 205 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{205 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).Default(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_base_reader_handler_a76b043fefd5fac0faadf3846995af6f5}\label{structrapidjson_1_1_base_reader_handler_a76b043fefd5fac0faadf3846995af6f5}} 
+\index{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}!Uint64@{Uint64}}
+\index{Uint64@{Uint64}!rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$@{rapidjson::BaseReaderHandler$<$ Encoding, Derived $>$}}
+\subsubsection{\texorpdfstring{Uint64()}{Uint64()}}
+{\footnotesize\ttfamily template$<$typename Encoding = U\+T\+F8$<$$>$, typename Derived = void$>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, Derived $>$\+::Uint64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 207 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{207 \{ \textcolor{keywordflow}{return} static\_cast<Override\&>(*this).Default(); \}}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{fwd_8h}{fwd.\+h}}\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{reader_8h}{reader.\+h}}\end{DoxyCompactItemize}

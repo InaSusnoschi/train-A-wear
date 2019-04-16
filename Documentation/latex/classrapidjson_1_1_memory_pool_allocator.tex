@@ -1,0 +1,601 @@
+\hypertarget{classrapidjson_1_1_memory_pool_allocator}{}\section{rapidjson\+::Memory\+Pool\+Allocator$<$ Base\+Allocator $>$ Class Template Reference}
+\label{classrapidjson_1_1_memory_pool_allocator}\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+
+
+Default memory allocator used by the parser and D\+OM.  
+
+
+
+
+{\ttfamily \#include $<$allocators.\+h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header}{Chunk\+Header}}
+\begin{DoxyCompactList}\small\item\em Chunk header for perpending to each chunk. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a59d783f4feba17dcd35d9f25fcbc09f4}{Memory\+Pool\+Allocator}} (size\+\_\+t chunk\+Size=\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_aeee1e169678a23611887feded99007a2}{k\+Default\+Chunk\+Capacity}}, Base\+Allocator $\ast$base\+Allocator=0)
+\begin{DoxyCompactList}\small\item\em Constructor with chunk\+Size. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_abcc572bdb6902c9d69711540db5098a7}{Memory\+Pool\+Allocator}} (void $\ast$buffer, size\+\_\+t size, size\+\_\+t chunk\+Size=\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_aeee1e169678a23611887feded99007a2}{k\+Default\+Chunk\+Capacity}}, Base\+Allocator $\ast$base\+Allocator=0)
+\begin{DoxyCompactList}\small\item\em Constructor with user-\/supplied buffer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_aa1d5b36c67611937e8ad6b2be53a483e}{$\sim$\+Memory\+Pool\+Allocator}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_aa050d52c62503ca6d6f66289ce83a18e}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Deallocates all memory chunks, excluding the user-\/supplied buffer. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_acdf0fc08cbcd940205a0a6289f1c58bd}{Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Computes the total capacity of allocated memory chunks. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_aa08b368c54e7643fcd23ef55139b9b40}{Size}} () const
+\begin{DoxyCompactList}\small\item\em Computes the memory blocks allocated. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a208c29e04b1d748bfe068444b7044344}{Malloc}} (size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Allocates a memory block. (concept \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}) \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a880524b17bbecb5d2691b8075050d55d}{Realloc}} (void $\ast$original\+Ptr, size\+\_\+t original\+Size, size\+\_\+t new\+Size)
+\begin{DoxyCompactList}\small\item\em Resizes a memory block (concept \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a9470dfeaeef3b3775249df2223129a2b}{Free}} (void $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em Frees a memory block (concept \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const bool \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a2606d96e19bcfc9d4bf58aefe55c1b29}{k\+Need\+Free}} = false
+\begin{DoxyCompactList}\small\item\em Tell users that no need to call \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a9470dfeaeef3b3775249df2223129a2b}{Free()}} with this allocator. (concept \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a7aebc93e8dc47971bb3f2e4e50677912}{Memory\+Pool\+Allocator}} (const \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{Memory\+Pool\+Allocator}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Copy constructor is not permitted. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{Memory\+Pool\+Allocator}} \& \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_aa0691de3f5f34cb7f89628af74c6283b}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{Memory\+Pool\+Allocator}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Copy assignment operator is not permitted. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_aa35232aea8863efcdf29139f42c6ef68}{Add\+Chunk}} (size\+\_\+t capacity)
+\begin{DoxyCompactList}\small\item\em Creates a new chunk. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header}{Chunk\+Header}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunk\+Head\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Head of the chunk linked-\/list. Only the head chunk serves allocation. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a5de12903a376ea7128e65890a287050c}{chunk\+\_\+capacity\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The minimum capacity of chunk when they are allocated. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a3d705851c08a78cbf6ab35d9bcdef010}{user\+Buffer\+\_\+}}
+\begin{DoxyCompactList}\small\item\em User supplied buffer. \end{DoxyCompactList}\item 
+Base\+Allocator $\ast$ \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_ae9f3a3ea9e2baaeb7c4412268ca88efc}{base\+Allocator\+\_\+}}
+\begin{DoxyCompactList}\small\item\em base allocator for allocating memory chunks. \end{DoxyCompactList}\item 
+Base\+Allocator $\ast$ \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_afc4427c123458c4a2b5a03319e038788}{own\+Base\+Allocator\+\_\+}}
+\begin{DoxyCompactList}\small\item\em base allocator created by this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_aeee1e169678a23611887feded99007a2}{k\+Default\+Chunk\+Capacity}} = (64 $\ast$ 1024)
+\begin{DoxyCompactList}\small\item\em Default chunk capacity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Base\+Allocator = Crt\+Allocator$>$\newline
+class rapidjson\+::\+Memory\+Pool\+Allocator$<$ Base\+Allocator $>$}
+
+Default memory allocator used by the parser and D\+OM. 
+
+This allocator allocate memory blocks from pre-\/allocated memory chunks.
+
+It does not free memory blocks. And \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a880524b17bbecb5d2691b8075050d55d}{Realloc()}} only allocate new memory.
+
+The memory chunks are allocated by Base\+Allocator, which is \mbox{\hyperlink{classrapidjson_1_1_crt_allocator}{Crt\+Allocator}} by default.
+
+User may also supply a buffer as the first chunk.
+
+If the user-\/buffer is full then additional chunks are allocated by Base\+Allocator.
+
+The user-\/buffer is not deallocated by this allocator.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Base\+Allocator} & the allocator type for allocating memory chunks. Default is \mbox{\hyperlink{classrapidjson_1_1_crt_allocator}{Crt\+Allocator}}. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyNote}{Note}
+implements \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} concept 
+\end{DoxyNote}
+
+
+Definition at line 115 of file allocators.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_a59d783f4feba17dcd35d9f25fcbc09f4}\label{classrapidjson_1_1_memory_pool_allocator_a59d783f4feba17dcd35d9f25fcbc09f4}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!MemoryPoolAllocator@{MemoryPoolAllocator}}
+\index{MemoryPoolAllocator@{MemoryPoolAllocator}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{MemoryPoolAllocator()}{MemoryPoolAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{Memory\+Pool\+Allocator}} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{chunk\+Size = {\ttfamily \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_aeee1e169678a23611887feded99007a2}{k\+Default\+Chunk\+Capacity}}},  }\item[{Base\+Allocator $\ast$}]{base\+Allocator = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor with chunk\+Size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chunk\+Size} & The size of memory chunk. The default is k\+Default\+Chunk\+Size. \\
+\hline
+{\em base\+Allocator} & The allocator for allocating memory chunks. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file allocators.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{123                                                                                                     : }
+\DoxyCodeLine{124         \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a5de12903a376ea7128e65890a287050c}{chunk\_capacity\_}}(chunkSize), \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a3d705851c08a78cbf6ab35d9bcdef010}{userBuffer\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_ae9f3a3ea9e2baaeb7c4412268ca88efc}{baseAllocator\_}}(baseAllocator), \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_afc4427c123458c4a2b5a03319e038788}{ownBaseAllocator\_}}(0)}
+\DoxyCodeLine{125     \{}
+\DoxyCodeLine{126     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_abcc572bdb6902c9d69711540db5098a7}\label{classrapidjson_1_1_memory_pool_allocator_abcc572bdb6902c9d69711540db5098a7}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!MemoryPoolAllocator@{MemoryPoolAllocator}}
+\index{MemoryPoolAllocator@{MemoryPoolAllocator}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{MemoryPoolAllocator()}{MemoryPoolAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{Memory\+Pool\+Allocator}} (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer,  }\item[{size\+\_\+t}]{size,  }\item[{size\+\_\+t}]{chunk\+Size = {\ttfamily \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_aeee1e169678a23611887feded99007a2}{k\+Default\+Chunk\+Capacity}}},  }\item[{Base\+Allocator $\ast$}]{base\+Allocator = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor with user-\/supplied buffer. 
+
+The user buffer will be used firstly. When it is full, memory pool allocates new chunk with chunk size.
+
+The user buffer will not be deallocated when this allocator is destructed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & User supplied buffer. \\
+\hline
+{\em size} & Size of the buffer in bytes. It must at least larger than sizeof(\+Chunk\+Header). \\
+\hline
+{\em chunk\+Size} & The size of memory chunk. The default is k\+Default\+Chunk\+Size. \\
+\hline
+{\em base\+Allocator} & The allocator for allocating memory chunks. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 138 of file allocators.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{138                                                                                                                                :}
+\DoxyCodeLine{139         \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a5de12903a376ea7128e65890a287050c}{chunk\_capacity\_}}(chunkSize), \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a3d705851c08a78cbf6ab35d9bcdef010}{userBuffer\_}}(buffer), \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_ae9f3a3ea9e2baaeb7c4412268ca88efc}{baseAllocator\_}}(baseAllocator), \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_afc4427c123458c4a2b5a03319e038788}{ownBaseAllocator\_}}(0)}
+\DoxyCodeLine{140     \{}
+\DoxyCodeLine{141         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(buffer != 0);}
+\DoxyCodeLine{142         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(size > \textcolor{keyword}{sizeof}(ChunkHeader));}
+\DoxyCodeLine{143         \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}} = reinterpret\_cast<ChunkHeader*>(buffer);}
+\DoxyCodeLine{144         \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a2bce5ae3d208e501af06b36fe34411cf}{capacity}} = size - \textcolor{keyword}{sizeof}(ChunkHeader);}
+\DoxyCodeLine{145         \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a585b07316f4ff3e9475608d8a0812bb3}{size}} = 0;}
+\DoxyCodeLine{146         \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a448b562df88b314ee8e751b2146b8682}{next}} = 0;}
+\DoxyCodeLine{147     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_aa1d5b36c67611937e8ad6b2be53a483e}\label{classrapidjson_1_1_memory_pool_allocator_aa1d5b36c67611937e8ad6b2be53a483e}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!````~MemoryPoolAllocator@{$\sim$MemoryPoolAllocator}}
+\index{````~MemoryPoolAllocator@{$\sim$MemoryPoolAllocator}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{$\sim$MemoryPoolAllocator()}{~MemoryPoolAllocator()}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::$\sim$\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{Memory\+Pool\+Allocator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+This deallocates all memory chunks, excluding the user-\/supplied buffer. 
+
+Definition at line 152 of file allocators.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{152                            \{}
+\DoxyCodeLine{153         \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_aa050d52c62503ca6d6f66289ce83a18e}{Clear}}();}
+\DoxyCodeLine{154         \mbox{\hyperlink{rapidjson_8h_a52c941c3fdd646527cdcd42aa846a28a}{RAPIDJSON\_DELETE}}(\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_afc4427c123458c4a2b5a03319e038788}{ownBaseAllocator\_}});}
+\DoxyCodeLine{155     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+L\+E\+TE.
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_a7aebc93e8dc47971bb3f2e4e50677912}\label{classrapidjson_1_1_memory_pool_allocator_a7aebc93e8dc47971bb3f2e4e50677912}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!MemoryPoolAllocator@{MemoryPoolAllocator}}
+\index{MemoryPoolAllocator@{MemoryPoolAllocator}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{MemoryPoolAllocator()}{MemoryPoolAllocator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{Memory\+Pool\+Allocator}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Copy constructor is not permitted. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_aa35232aea8863efcdf29139f42c6ef68}\label{classrapidjson_1_1_memory_pool_allocator_aa35232aea8863efcdf29139f42c6ef68}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!AddChunk@{AddChunk}}
+\index{AddChunk@{AddChunk}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{AddChunk()}{AddChunk()}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::Add\+Chunk (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates a new chunk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & Capacity of the chunk in bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if success. 
+\end{DoxyReturn}
+
+
+Definition at line 250 of file allocators.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{250                                    \{}
+\DoxyCodeLine{251         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_ae9f3a3ea9e2baaeb7c4412268ca88efc}{baseAllocator\_}})}
+\DoxyCodeLine{252             \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_afc4427c123458c4a2b5a03319e038788}{ownBaseAllocator\_}} = \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_ae9f3a3ea9e2baaeb7c4412268ca88efc}{baseAllocator\_}} = \mbox{\hyperlink{rapidjson_8h_abdc7cd7902748ffe6626d71c59a73c3b}{RAPIDJSON\_NEW}}(BaseAllocator)();}
+\DoxyCodeLine{253         \textcolor{keywordflow}{if} (ChunkHeader* chunk = reinterpret\_cast<ChunkHeader*>(\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_ae9f3a3ea9e2baaeb7c4412268ca88efc}{baseAllocator\_}}->Malloc(\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_ga583915242504c7fdb36e826f02f76242}{RAPIDJSON\_ALIGN}}(\textcolor{keyword}{sizeof}(ChunkHeader)) + capacity))) \{}
+\DoxyCodeLine{254             chunk->capacity = capacity;}
+\DoxyCodeLine{255             chunk->size = 0;}
+\DoxyCodeLine{256             chunk->next = \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}};}
+\DoxyCodeLine{257             \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}} =  chunk;}
+\DoxyCodeLine{258             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{259         \}}
+\DoxyCodeLine{260         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{261             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{262     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+L\+I\+GN, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+EW.
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_acdf0fc08cbcd940205a0a6289f1c58bd}\label{classrapidjson_1_1_memory_pool_allocator_acdf0fc08cbcd940205a0a6289f1c58bd}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!Capacity@{Capacity}}
+\index{Capacity@{Capacity}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{Capacity()}{Capacity()}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Computes the total capacity of allocated memory chunks. 
+
+\begin{DoxyReturn}{Returns}
+total capacity in bytes. 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file allocators.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{171                             \{}
+\DoxyCodeLine{172         \textcolor{keywordtype}{size\_t} capacity = 0;}
+\DoxyCodeLine{173         \textcolor{keywordflow}{for} (ChunkHeader* c = \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}; c != 0; c = c->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a448b562df88b314ee8e751b2146b8682}{next}})}
+\DoxyCodeLine{174             capacity += c->capacity;}
+\DoxyCodeLine{175         \textcolor{keywordflow}{return} capacity;}
+\DoxyCodeLine{176     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Memory\+Pool\+Allocator$<$ Base\+Allocator $>$\+::\+Chunk\+Header\+::next.
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_aa050d52c62503ca6d6f66289ce83a18e}\label{classrapidjson_1_1_memory_pool_allocator_aa050d52c62503ca6d6f66289ce83a18e}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deallocates all memory chunks, excluding the user-\/supplied buffer. 
+
+
+
+Definition at line 158 of file allocators.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{158                  \{}
+\DoxyCodeLine{159         \textcolor{keywordflow}{while} (\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}} \&\& \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}} != \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a3d705851c08a78cbf6ab35d9bcdef010}{userBuffer\_}}) \{}
+\DoxyCodeLine{160             ChunkHeader* next = \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a448b562df88b314ee8e751b2146b8682}{next}};}
+\DoxyCodeLine{161             \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_ae9f3a3ea9e2baaeb7c4412268ca88efc}{baseAllocator\_}}->Free(\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}});}
+\DoxyCodeLine{162             \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}} = next;}
+\DoxyCodeLine{163         \}}
+\DoxyCodeLine{164         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}} \&\& \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}} == \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a3d705851c08a78cbf6ab35d9bcdef010}{userBuffer\_}})}
+\DoxyCodeLine{165             \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a585b07316f4ff3e9475608d8a0812bb3}{size}} = 0; \textcolor{comment}{// Clear user buffer}}
+\DoxyCodeLine{166     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Memory\+Pool\+Allocator$<$ Base\+Allocator $>$\+::\+Chunk\+Header\+::next, and rapidjson\+::\+Memory\+Pool\+Allocator$<$ Base\+Allocator $>$\+::\+Chunk\+Header\+::size.
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_a9470dfeaeef3b3775249df2223129a2b}\label{classrapidjson_1_1_memory_pool_allocator_a9470dfeaeef3b3775249df2223129a2b}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!Free@{Free}}
+\index{Free@{Free}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{Free()}{Free()}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+static void \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::Free (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Frees a memory block (concept \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}) 
+
+
+
+Definition at line 238 of file allocators.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{238 \{ (void)ptr; \} \textcolor{comment}{// Do nothing}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_a208c29e04b1d748bfe068444b7044344}\label{classrapidjson_1_1_memory_pool_allocator_a208c29e04b1d748bfe068444b7044344}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!Malloc@{Malloc}}
+\index{Malloc@{Malloc}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{Malloc()}{Malloc()}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+void$\ast$ \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::Malloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Allocates a memory block. (concept \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}) 
+
+
+
+Definition at line 189 of file allocators.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{189                               \{}
+\DoxyCodeLine{190         \textcolor{keywordflow}{if} (!size)}
+\DoxyCodeLine{191             \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193         size = \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_ga583915242504c7fdb36e826f02f76242}{RAPIDJSON\_ALIGN}}(size);}
+\DoxyCodeLine{194         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}} == 0 || \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a585b07316f4ff3e9475608d8a0812bb3}{size}} + size > \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a2bce5ae3d208e501af06b36fe34411cf}{capacity}})}
+\DoxyCodeLine{195             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_aa35232aea8863efcdf29139f42c6ef68}{AddChunk}}(\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a5de12903a376ea7128e65890a287050c}{chunk\_capacity\_}} > size ? \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a5de12903a376ea7128e65890a287050c}{chunk\_capacity\_}} : size))}
+\DoxyCodeLine{196                 \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198         \textcolor{keywordtype}{void} *buffer = reinterpret\_cast<char *>(\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}) + \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_ga583915242504c7fdb36e826f02f76242}{RAPIDJSON\_ALIGN}}(\textcolor{keyword}{sizeof}(ChunkHeader)) + \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a585b07316f4ff3e9475608d8a0812bb3}{size}};}
+\DoxyCodeLine{199         \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a585b07316f4ff3e9475608d8a0812bb3}{size}} += size;}
+\DoxyCodeLine{200         \textcolor{keywordflow}{return} buffer;}
+\DoxyCodeLine{201     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+L\+I\+GN.
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_aa0691de3f5f34cb7f89628af74c6283b}\label{classrapidjson_1_1_memory_pool_allocator_aa0691de3f5f34cb7f89628af74c6283b}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{Memory\+Pool\+Allocator}}\& \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Copy assignment operator is not permitted. 
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_a880524b17bbecb5d2691b8075050d55d}\label{classrapidjson_1_1_memory_pool_allocator_a880524b17bbecb5d2691b8075050d55d}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!Realloc@{Realloc}}
+\index{Realloc@{Realloc}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{Realloc()}{Realloc()}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+void$\ast$ \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::Realloc (\begin{DoxyParamCaption}\item[{void $\ast$}]{original\+Ptr,  }\item[{size\+\_\+t}]{original\+Size,  }\item[{size\+\_\+t}]{new\+Size }\end{DoxyParamCaption})}
+
+
+
+Resizes a memory block (concept \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}) 
+
+
+
+Definition at line 204 of file allocators.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{204                                                                           \{}
+\DoxyCodeLine{205         \textcolor{keywordflow}{if} (originalPtr == 0)}
+\DoxyCodeLine{206             \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a208c29e04b1d748bfe068444b7044344}{Malloc}}(newSize);}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208         \textcolor{keywordflow}{if} (newSize == 0)}
+\DoxyCodeLine{209             \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{210 }
+\DoxyCodeLine{211         originalSize = \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_ga583915242504c7fdb36e826f02f76242}{RAPIDJSON\_ALIGN}}(originalSize);}
+\DoxyCodeLine{212         newSize = \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_ga583915242504c7fdb36e826f02f76242}{RAPIDJSON\_ALIGN}}(newSize);}
+\DoxyCodeLine{213 }
+\DoxyCodeLine{214         \textcolor{comment}{// Do not shrink if new size is smaller than original}}
+\DoxyCodeLine{215         \textcolor{keywordflow}{if} (originalSize >= newSize)}
+\DoxyCodeLine{216             \textcolor{keywordflow}{return} originalPtr;}
+\DoxyCodeLine{217 }
+\DoxyCodeLine{218         \textcolor{comment}{// Simply expand it if it is the last allocation and there is sufficient space}}
+\DoxyCodeLine{219         \textcolor{keywordflow}{if} (originalPtr == reinterpret\_cast<char *>(\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}) + \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_ga583915242504c7fdb36e826f02f76242}{RAPIDJSON\_ALIGN}}(\textcolor{keyword}{sizeof}(ChunkHeader)) + \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a585b07316f4ff3e9475608d8a0812bb3}{size}} - originalSize) \{}
+\DoxyCodeLine{220             \textcolor{keywordtype}{size\_t} increment = static\_cast<size\_t>(newSize - originalSize);}
+\DoxyCodeLine{221             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a585b07316f4ff3e9475608d8a0812bb3}{size}} + increment <= chunkHead\_->capacity) \{}
+\DoxyCodeLine{222                 \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a585b07316f4ff3e9475608d8a0812bb3}{size}} += increment;}
+\DoxyCodeLine{223                 \textcolor{keywordflow}{return} originalPtr;}
+\DoxyCodeLine{224             \}}
+\DoxyCodeLine{225         \}}
+\DoxyCodeLine{226 }
+\DoxyCodeLine{227         \textcolor{comment}{// Realloc process: allocate and copy memory, do not free original buffer.}}
+\DoxyCodeLine{228         \textcolor{keywordflow}{if} (\textcolor{keywordtype}{void}* newBuffer = \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a208c29e04b1d748bfe068444b7044344}{Malloc}}(newSize)) \{}
+\DoxyCodeLine{229             \textcolor{keywordflow}{if} (originalSize)}
+\DoxyCodeLine{230                 std::memcpy(newBuffer, originalPtr, originalSize);}
+\DoxyCodeLine{231             \textcolor{keywordflow}{return} newBuffer;}
+\DoxyCodeLine{232         \}}
+\DoxyCodeLine{233         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{234             \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{235     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+L\+I\+GN.
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_aa08b368c54e7643fcd23ef55139b9b40}\label{classrapidjson_1_1_memory_pool_allocator_aa08b368c54e7643fcd23ef55139b9b40}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!Size@{Size}}
+\index{Size@{Size}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{Size()}{Size()}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Computes the memory blocks allocated. 
+
+\begin{DoxyReturn}{Returns}
+total used bytes. 
+\end{DoxyReturn}
+
+
+Definition at line 181 of file allocators.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{181                         \{}
+\DoxyCodeLine{182         \textcolor{keywordtype}{size\_t} size = 0;}
+\DoxyCodeLine{183         \textcolor{keywordflow}{for} (ChunkHeader* c = \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}{chunkHead\_}}; c != 0; c = c->\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header_a448b562df88b314ee8e751b2146b8682}{next}})}
+\DoxyCodeLine{184             size += c->size;}
+\DoxyCodeLine{185         \textcolor{keywordflow}{return} size;}
+\DoxyCodeLine{186     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Memory\+Pool\+Allocator$<$ Base\+Allocator $>$\+::\+Chunk\+Header\+::next.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_ae9f3a3ea9e2baaeb7c4412268ca88efc}\label{classrapidjson_1_1_memory_pool_allocator_ae9f3a3ea9e2baaeb7c4412268ca88efc}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!baseAllocator\_@{baseAllocator\_}}
+\index{baseAllocator\_@{baseAllocator\_}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{baseAllocator\_}{baseAllocator\_}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+Base\+Allocator$\ast$ \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::base\+Allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+base allocator for allocating memory chunks. 
+
+
+
+Definition at line 278 of file allocators.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_a5de12903a376ea7128e65890a287050c}\label{classrapidjson_1_1_memory_pool_allocator_a5de12903a376ea7128e65890a287050c}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!chunk\_capacity\_@{chunk\_capacity\_}}
+\index{chunk\_capacity\_@{chunk\_capacity\_}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{chunk\_capacity\_}{chunk\_capacity\_}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::chunk\+\_\+capacity\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The minimum capacity of chunk when they are allocated. 
+
+
+
+Definition at line 276 of file allocators.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}\label{classrapidjson_1_1_memory_pool_allocator_a64acbd6f74dd8757baa2a9f6b5841400}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!chunkHead\_@{chunkHead\_}}
+\index{chunkHead\_@{chunkHead\_}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{chunkHead\_}{chunkHead\_}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_memory_pool_allocator_1_1_chunk_header}{Chunk\+Header}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::chunk\+Head\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Head of the chunk linked-\/list. Only the head chunk serves allocation. 
+
+
+
+Definition at line 275 of file allocators.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_aeee1e169678a23611887feded99007a2}\label{classrapidjson_1_1_memory_pool_allocator_aeee1e169678a23611887feded99007a2}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!kDefaultChunkCapacity@{kDefaultChunkCapacity}}
+\index{kDefaultChunkCapacity@{kDefaultChunkCapacity}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{kDefaultChunkCapacity}{kDefaultChunkCapacity}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+const int \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::k\+Default\+Chunk\+Capacity = (64 $\ast$ 1024)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Default chunk capacity. 
+
+
+
+Definition at line 264 of file allocators.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_a2606d96e19bcfc9d4bf58aefe55c1b29}\label{classrapidjson_1_1_memory_pool_allocator_a2606d96e19bcfc9d4bf58aefe55c1b29}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!kNeedFree@{kNeedFree}}
+\index{kNeedFree@{kNeedFree}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{kNeedFree}{kNeedFree}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+const bool \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::k\+Need\+Free = false\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tell users that no need to call \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator_a9470dfeaeef3b3775249df2223129a2b}{Free()}} with this allocator. (concept \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}) 
+
+
+
+Definition at line 117 of file allocators.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_afc4427c123458c4a2b5a03319e038788}\label{classrapidjson_1_1_memory_pool_allocator_afc4427c123458c4a2b5a03319e038788}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!ownBaseAllocator\_@{ownBaseAllocator\_}}
+\index{ownBaseAllocator\_@{ownBaseAllocator\_}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{ownBaseAllocator\_}{ownBaseAllocator\_}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+Base\+Allocator$\ast$ \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::own\+Base\+Allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+base allocator created by this object. 
+
+
+
+Definition at line 279 of file allocators.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_memory_pool_allocator_a3d705851c08a78cbf6ab35d9bcdef010}\label{classrapidjson_1_1_memory_pool_allocator_a3d705851c08a78cbf6ab35d9bcdef010}} 
+\index{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}!userBuffer\_@{userBuffer\_}}
+\index{userBuffer\_@{userBuffer\_}!rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$@{rapidjson::MemoryPoolAllocator$<$ BaseAllocator $>$}}
+\subsubsection{\texorpdfstring{userBuffer\_}{userBuffer\_}}
+{\footnotesize\ttfamily template$<$typename Base\+Allocator = Crt\+Allocator$>$ \\
+void$\ast$ \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{rapidjson\+::\+Memory\+Pool\+Allocator}}$<$ Base\+Allocator $>$\+::user\+Buffer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+User supplied buffer. 
+
+
+
+Definition at line 277 of file allocators.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{allocators_8h}{allocators.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,1727 @@
+\hypertarget{namespacerapidjson_1_1internal}{}\section{rapidjson\+::internal Namespace Reference}
+\label{namespacerapidjson_1_1internal}\index{rapidjson::internal@{rapidjson::internal}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream}{Decoded\+Stream}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double}{Double}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex}{Generic\+Regex}}
+\begin{DoxyCompactList}\small\item\em Regular expression engine with subset of E\+C\+M\+Ascript grammar. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{Generic\+Regex\+Search}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_hasher}{Hasher}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory}{I\+Schema\+State\+Factory}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value}{Is\+Generic\+Value}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value_impl}{Is\+Generic\+Value\+Impl}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value_impl_3_01_t_00_01typename_01_void_3_01typename_958d471b859187f8641bd1e7a1585eac}{Is\+Generic\+Value\+Impl$<$ T, typename Void$<$ typename T\+::\+Encoding\+Type $>$\+::\+Type, typename Void$<$ typename T\+::\+Allocator\+Type $>$\+::\+Type $>$}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{I\+Validation\+Error\+Handler}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema}{Schema}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{Schema\+Validation\+Context}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}}
+\begin{DoxyCompactList}\small\item\em A type-\/unsafe stack for storing different types of data. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stream_local_copy}{Stream\+Local\+Copy}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stream_local_copy_3_01_stream_00_010_01_4}{Stream\+Local\+Copy$<$ Stream, 0 $>$}}
+\begin{DoxyCompactList}\small\item\em Keep reference. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stream_local_copy_3_01_stream_00_011_01_4}{Stream\+Local\+Copy$<$ Stream, 1 $>$}}
+\begin{DoxyCompactList}\small\item\em Do copy optimization. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_token_helper}{Token\+Helper}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_token_helper_3_01_stack_00_01char_01_4}{Token\+Helper$<$ Stack, char $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper}{Type\+Helper}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01bool_01_4}{Type\+Helper$<$ Value\+Type, bool $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01const_01typename_01_value_type_1_1_ch_01_5_01_4}{Type\+Helper$<$ Value\+Type, const typename Value\+Type\+::\+Ch $\ast$ $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01double_01_4}{Type\+Helper$<$ Value\+Type, double $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01float_01_4}{Type\+Helper$<$ Value\+Type, float $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01int_01_4}{Type\+Helper$<$ Value\+Type, int $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01int64__t_01_4}{Type\+Helper$<$ Value\+Type, int64\+\_\+t $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01typename_01_value_type_1_1_array_01_4}{Type\+Helper$<$ Value\+Type, typename Value\+Type\+::\+Array $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01typename_01_value_type_1_1_const_array_01_4}{Type\+Helper$<$ Value\+Type, typename Value\+Type\+::\+Const\+Array $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01typename_01_value_type_1_1_const_object_01_4}{Type\+Helper$<$ Value\+Type, typename Value\+Type\+::\+Const\+Object $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01typename_01_value_type_1_1_object_01_4}{Type\+Helper$<$ Value\+Type, typename Value\+Type\+::\+Object $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01uint64__t_01_4}{Type\+Helper$<$ Value\+Type, uint64\+\_\+t $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4}{Type\+Helper$<$ Value\+Type, unsigned $>$}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex}{Generic\+Regex}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$$>$ $>$ \mbox{\hyperlink{namespacerapidjson_1_1internal_a6e31418488a57106fa341bc0e6fe7960}{Regex}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{Generic\+Regex\+Search}}$<$ \mbox{\hyperlink{namespacerapidjson_1_1internal_a6e31418488a57106fa341bc0e6fe7960}{Regex}} $>$ \mbox{\hyperlink{namespacerapidjson_1_1internal_a8790aa6e3fc1729f369b06cf84e76fae}{Regex\+Search}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \mbox{\hyperlink{namespacerapidjson_1_1internal_a25a77e349cce869daae13c1bdd058d4a}{Get\+Cached\+Power\+By\+Index}} (size\+\_\+t index)
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \mbox{\hyperlink{namespacerapidjson_1_1internal_a7c58ee2ca622624367808fa3a40dc9e3}{Get\+Cached\+Power}} (int e, int $\ast$K)
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \mbox{\hyperlink{namespacerapidjson_1_1internal_a21de5a1527938da9b57c84699ce519e7}{Get\+Cached\+Power10}} (int exp, int $\ast$out\+Exp)
+\item 
+void \mbox{\hyperlink{namespacerapidjson_1_1internal_a7d7397686d2c8c57cf11d9afae17bb4d}{Grisu\+Round}} (char $\ast$buffer, int len, \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} delta, \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rest, \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} ten\+\_\+kappa, \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} wp\+\_\+w)
+\item 
+int \mbox{\hyperlink{namespacerapidjson_1_1internal_ace8d1c16dab8600e0641c4fb6c81aff7}{Count\+Decimal\+Digit32}} (\mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} n)
+\item 
+void \mbox{\hyperlink{namespacerapidjson_1_1internal_a6ba68d7defea7ccc4f8aa2feeafeccde}{Digit\+Gen}} (const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \&W, const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \&Mp, \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} delta, char $\ast$buffer, int $\ast$len, int $\ast$K)
+\item 
+void \mbox{\hyperlink{namespacerapidjson_1_1internal_a74828fd6e9a874421231ef346b1126f3}{Grisu2}} (double \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, char $\ast$buffer, int $\ast$length, int $\ast$K)
+\item 
+char $\ast$ \mbox{\hyperlink{namespacerapidjson_1_1internal_adacfea46aca31aae732f952a9872b6e6}{Write\+Exponent}} (int K, char $\ast$buffer)
+\item 
+char $\ast$ \mbox{\hyperlink{namespacerapidjson_1_1internal_a7865c7734bca9cbbf66bdc7c0d164a77}{Prettify}} (char $\ast$buffer, int length, int k, int max\+Decimal\+Places)
+\item 
+char $\ast$ \mbox{\hyperlink{namespacerapidjson_1_1internal_a51f3497ab9a7f691e06329409d6b5191}{dtoa}} (double \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, char $\ast$buffer, int max\+Decimal\+Places=324)
+\item 
+const char $\ast$ \mbox{\hyperlink{namespacerapidjson_1_1internal_a2220f7bb22e11be3bc6f20291659c545}{Get\+Digits\+Lut}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{namespacerapidjson_1_1internal_ad5e42102d2ac70a691b3fdfdd2238e70}{u32toa}} (\mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, char $\ast$buffer)
+\item 
+char $\ast$ \mbox{\hyperlink{namespacerapidjson_1_1internal_af2da6e17b77cf999be3b84d06e652d14}{i32toa}} (\mbox{\hyperlink{stdint_8h_ab1967d8591af1a4e48c37fd2b0f184d0}{int32\+\_\+t}} \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, char $\ast$buffer)
+\item 
+char $\ast$ \mbox{\hyperlink{namespacerapidjson_1_1internal_af565c1edf212e5e41b8a51c3973e38cb}{u64toa}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, char $\ast$buffer)
+\item 
+char $\ast$ \mbox{\hyperlink{namespacerapidjson_1_1internal_a676fae3f0a9bc9a5e7646e31097a6f34}{i64toa}} (\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}} \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, char $\ast$buffer)
+\item 
+double \mbox{\hyperlink{namespacerapidjson_1_1internal_aba2871b1440237f69acb5ae602407bf9}{Pow10}} (int n)
+\begin{DoxyCompactList}\small\item\em Computes integer powers of 10 in double (10.\+0$^\wedge$n). \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Ch $>$ }\\\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{namespacerapidjson_1_1internal_abe45d9242ecab3b9b58117961f57dc2f}{Str\+Len}} (const Ch $\ast$s)
+\begin{DoxyCompactList}\small\item\em Custom strlen() which works on different character types. \end{DoxyCompactList}\item 
+{\footnotesize template$<$$>$ }\\\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{namespacerapidjson_1_1internal_a48318b28376546f0bcf0c26e82f45cae}{Str\+Len}} (const char $\ast$s)
+\item 
+{\footnotesize template$<$$>$ }\\\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{namespacerapidjson_1_1internal_ae74a003a7f30195697381e82a63111fb}{Str\+Len}} (const wchar\+\_\+t $\ast$s)
+\item 
+{\footnotesize template$<$typename Encoding $>$ }\\bool \mbox{\hyperlink{namespacerapidjson_1_1internal_a39c9bac195cb1af11c9f493ef4dca436}{Count\+String\+Code\+Point}} (const typename Encoding\+::\+Ch $\ast$s, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} length, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} $\ast$out\+Count)
+\begin{DoxyCompactList}\small\item\em Returns number of code points in a encoded string. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{namespacerapidjson_1_1internal_aadfc08b386baffa85f618e0ef0e2f188}{Fast\+Path}} (double significand, int exp)
+\item 
+double \mbox{\hyperlink{namespacerapidjson_1_1internal_a0173579d8f2b3724583f64758beb8e69}{Strtod\+Normal\+Precision}} (double d, int p)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespacerapidjson_1_1internal_a7d72423e8173159a0d90cac2f2ef6b8a}{Min3}} (T \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}, T b, T c)
+\item 
+int \mbox{\hyperlink{namespacerapidjson_1_1internal_a1c9faaa8ff1461a84ee35c04c7b926c5}{Check\+Within\+Half\+U\+LP}} (double b, const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \&d, int d\+Exp)
+\item 
+bool \mbox{\hyperlink{namespacerapidjson_1_1internal_acfd06fe2a2709ad372a373f0921e9571}{Strtod\+Fast}} (double d, int p, double $\ast$result)
+\item 
+bool \mbox{\hyperlink{namespacerapidjson_1_1internal_a2005b2ac382e70120987b7889476d01f}{Strtod\+Diy\+Fp}} (const char $\ast$decimals, int d\+Len, int d\+Exp, double $\ast$result)
+\item 
+double \mbox{\hyperlink{namespacerapidjson_1_1internal_aeb0c7910094111c91cd31339bf707950}{Strtod\+Big\+Integer}} (double approx, const char $\ast$decimals, int d\+Len, int d\+Exp)
+\item 
+double \mbox{\hyperlink{namespacerapidjson_1_1internal_afdec628bd595f8aca4ff74ec9e3c88f2}{Strtod\+Full\+Precision}} (double d, int p, const char $\ast$decimals, size\+\_\+t length, size\+\_\+t decimal\+Position, int exp)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{Swap}} (T \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}, T \&b) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\begin{DoxyCompactList}\small\item\em Custom swap() to avoid dependency on C++ $<$algorithm$>$ header. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{namespacerapidjson_1_1internal_a5e338a291ef3558dbba9ba6eb2b346ea}{k\+Regex\+Invalid\+State}} = $\sim$\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}(0)
+\begin{DoxyCompactList}\small\item\em Represents an invalid index in \mbox{\hyperlink{structrapidjson_1_1internal_1_1_generic_regex_1_1_state_a6df788d7a28b25c65a20068dfdbe2fe1}{Generic\+Regex\+::\+State\+::out}}, out1. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{namespacerapidjson_1_1internal_a6198792292d27358dbe5595ecaed21d9}{k\+Regex\+Invalid\+Range}} = $\sim$\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}(0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a6e31418488a57106fa341bc0e6fe7960}\label{namespacerapidjson_1_1internal_a6e31418488a57106fa341bc0e6fe7960}} 
+\index{rapidjson::internal@{rapidjson::internal}!Regex@{Regex}}
+\index{Regex@{Regex}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{Regex}{Regex}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex}{Generic\+Regex}}$<$\mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$$>$ $>$ \mbox{\hyperlink{namespacerapidjson_1_1internal_a6e31418488a57106fa341bc0e6fe7960}{rapidjson\+::internal\+::\+Regex}}}
+
+
+
+Definition at line 726 of file regex.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a8790aa6e3fc1729f369b06cf84e76fae}\label{namespacerapidjson_1_1internal_a8790aa6e3fc1729f369b06cf84e76fae}} 
+\index{rapidjson::internal@{rapidjson::internal}!RegexSearch@{RegexSearch}}
+\index{RegexSearch@{RegexSearch}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{RegexSearch}{RegexSearch}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{Generic\+Regex\+Search}}$<$\mbox{\hyperlink{namespacerapidjson_1_1internal_a6e31418488a57106fa341bc0e6fe7960}{Regex}}$>$ \mbox{\hyperlink{namespacerapidjson_1_1internal_a8790aa6e3fc1729f369b06cf84e76fae}{rapidjson\+::internal\+::\+Regex\+Search}}}
+
+
+
+Definition at line 727 of file regex.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a1c9faaa8ff1461a84ee35c04c7b926c5}\label{namespacerapidjson_1_1internal_a1c9faaa8ff1461a84ee35c04c7b926c5}} 
+\index{rapidjson::internal@{rapidjson::internal}!CheckWithinHalfULP@{CheckWithinHalfULP}}
+\index{CheckWithinHalfULP@{CheckWithinHalfULP}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{CheckWithinHalfULP()}{CheckWithinHalfULP()}}
+{\footnotesize\ttfamily int rapidjson\+::internal\+::\+Check\+Within\+Half\+U\+LP (\begin{DoxyParamCaption}\item[{double}]{b,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \&}]{d,  }\item[{int}]{d\+Exp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 56 of file strtod.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                                                        \{}
+\DoxyCodeLine{57     \textcolor{keyword}{const} Double db(b);}
+\DoxyCodeLine{58     \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} bInt = db.IntegerSignificand();}
+\DoxyCodeLine{59     \textcolor{keyword}{const} \textcolor{keywordtype}{int} bExp = db.IntegerExponent();}
+\DoxyCodeLine{60     \textcolor{keyword}{const} \textcolor{keywordtype}{int} hExp = bExp - 1;}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{int} dS\_Exp2 = 0, dS\_Exp5 = 0, bS\_Exp2 = 0, bS\_Exp5 = 0, hS\_Exp2 = 0, hS\_Exp5 = 0;}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64     \textcolor{comment}{// Adjust for decimal exponent}}
+\DoxyCodeLine{65     \textcolor{keywordflow}{if} (dExp >= 0) \{}
+\DoxyCodeLine{66         dS\_Exp2 += dExp;}
+\DoxyCodeLine{67         dS\_Exp5 += dExp;}
+\DoxyCodeLine{68     \}}
+\DoxyCodeLine{69     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{70         bS\_Exp2 -= dExp;}
+\DoxyCodeLine{71         bS\_Exp5 -= dExp;}
+\DoxyCodeLine{72         hS\_Exp2 -= dExp;}
+\DoxyCodeLine{73         hS\_Exp5 -= dExp;}
+\DoxyCodeLine{74     \}}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{comment}{// Adjust for binary exponent}}
+\DoxyCodeLine{77     \textcolor{keywordflow}{if} (bExp >= 0)}
+\DoxyCodeLine{78         bS\_Exp2 += bExp;}
+\DoxyCodeLine{79     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{80         dS\_Exp2 -= bExp;}
+\DoxyCodeLine{81         hS\_Exp2 -= bExp;}
+\DoxyCodeLine{82     \}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84     \textcolor{comment}{// Adjust for half ulp exponent}}
+\DoxyCodeLine{85     \textcolor{keywordflow}{if} (hExp >= 0)}
+\DoxyCodeLine{86         hS\_Exp2 += hExp;}
+\DoxyCodeLine{87     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{88         dS\_Exp2 -= hExp;}
+\DoxyCodeLine{89         bS\_Exp2 -= hExp;}
+\DoxyCodeLine{90     \}}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92     \textcolor{comment}{// Remove common power of two factor from all three scaled values}}
+\DoxyCodeLine{93     \textcolor{keywordtype}{int} common\_Exp2 = \mbox{\hyperlink{namespacerapidjson_1_1internal_a7d72423e8173159a0d90cac2f2ef6b8a}{Min3}}(dS\_Exp2, bS\_Exp2, hS\_Exp2);}
+\DoxyCodeLine{94     dS\_Exp2 -= common\_Exp2;}
+\DoxyCodeLine{95     bS\_Exp2 -= common\_Exp2;}
+\DoxyCodeLine{96     hS\_Exp2 -= common\_Exp2;}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98     BigInteger dS = d;}
+\DoxyCodeLine{99     dS.MultiplyPow5(static\_cast<unsigned>(dS\_Exp5)) <<= static\_cast<unsigned>(dS\_Exp2);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101     BigInteger bS(bInt);}
+\DoxyCodeLine{102     bS.MultiplyPow5(static\_cast<unsigned>(bS\_Exp5)) <<= static\_cast<unsigned>(bS\_Exp2);}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104     BigInteger hS(1);}
+\DoxyCodeLine{105     hS.MultiplyPow5(static\_cast<unsigned>(hS\_Exp5)) <<= static\_cast<unsigned>(hS\_Exp2);}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107     BigInteger delta(0);}
+\DoxyCodeLine{108     dS.Difference(bS, \&delta);}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110     \textcolor{keywordflow}{return} delta.Compare(hS);}
+\DoxyCodeLine{111 \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::internal\+::\+Big\+Integer\+::\+Compare(), rapidjson\+::internal\+::\+Big\+Integer\+::\+Difference(), rapidjson\+::internal\+::\+Double\+::\+Integer\+Exponent(), rapidjson\+::internal\+::\+Double\+::\+Integer\+Significand(), Min3(), and rapidjson\+::internal\+::\+Big\+Integer\+::\+Multiply\+Pow5().
+
+
+
+Referenced by Strtod\+Big\+Integer().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_ace8d1c16dab8600e0641c4fb6c81aff7}\label{namespacerapidjson_1_1internal_ace8d1c16dab8600e0641c4fb6c81aff7}} 
+\index{rapidjson::internal@{rapidjson::internal}!CountDecimalDigit32@{CountDecimalDigit32}}
+\index{CountDecimalDigit32@{CountDecimalDigit32}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{CountDecimalDigit32()}{CountDecimalDigit32()}}
+{\footnotesize\ttfamily int rapidjson\+::internal\+::\+Count\+Decimal\+Digit32 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 44 of file dtoa.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                            \{}
+\DoxyCodeLine{45     \textcolor{comment}{// Simple pure C++ implementation was faster than \_\_builtin\_clz version in this situation.}}
+\DoxyCodeLine{46     \textcolor{keywordflow}{if} (n < 10) \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{47     \textcolor{keywordflow}{if} (n < 100) \textcolor{keywordflow}{return} 2;}
+\DoxyCodeLine{48     \textcolor{keywordflow}{if} (n < 1000) \textcolor{keywordflow}{return} 3;}
+\DoxyCodeLine{49     \textcolor{keywordflow}{if} (n < 10000) \textcolor{keywordflow}{return} 4;}
+\DoxyCodeLine{50     \textcolor{keywordflow}{if} (n < 100000) \textcolor{keywordflow}{return} 5;}
+\DoxyCodeLine{51     \textcolor{keywordflow}{if} (n < 1000000) \textcolor{keywordflow}{return} 6;}
+\DoxyCodeLine{52     \textcolor{keywordflow}{if} (n < 10000000) \textcolor{keywordflow}{return} 7;}
+\DoxyCodeLine{53     \textcolor{keywordflow}{if} (n < 100000000) \textcolor{keywordflow}{return} 8;}
+\DoxyCodeLine{54     \textcolor{comment}{// Will not reach 10 digits in DigitGen()}}
+\DoxyCodeLine{55     \textcolor{comment}{//if (n < 1000000000) return 9;}}
+\DoxyCodeLine{56     \textcolor{comment}{//return 10;}}
+\DoxyCodeLine{57     \textcolor{keywordflow}{return} 9;}
+\DoxyCodeLine{58 \}}
+
+\end{DoxyCode}
+
+
+Referenced by Digit\+Gen().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a39c9bac195cb1af11c9f493ef4dca436}\label{namespacerapidjson_1_1internal_a39c9bac195cb1af11c9f493ef4dca436}} 
+\index{rapidjson::internal@{rapidjson::internal}!CountStringCodePoint@{CountStringCodePoint}}
+\index{CountStringCodePoint@{CountStringCodePoint}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{CountStringCodePoint()}{CountStringCodePoint()}}
+{\footnotesize\ttfamily template$<$typename Encoding $>$ \\
+bool rapidjson\+::internal\+::\+Count\+String\+Code\+Point (\begin{DoxyParamCaption}\item[{const typename Encoding\+::\+Ch $\ast$}]{s,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{length,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} $\ast$}]{out\+Count }\end{DoxyParamCaption})}
+
+
+
+Returns number of code points in a encoded string. 
+
+
+
+Definition at line 50 of file strfunc.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                                                                                              \{}
+\DoxyCodeLine{51     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(s != 0);}
+\DoxyCodeLine{52     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(outCount != 0);}
+\DoxyCodeLine{53     GenericStringStream<Encoding> is(s);}
+\DoxyCodeLine{54     \textcolor{keyword}{const} \textcolor{keyword}{typename} Encoding::Ch* end = s + length;}
+\DoxyCodeLine{55     \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} count = 0;}
+\DoxyCodeLine{56     \textcolor{keywordflow}{while} (is.src\_ < end) \{}
+\DoxyCodeLine{57         \textcolor{keywordtype}{unsigned} codepoint;}
+\DoxyCodeLine{58         \textcolor{keywordflow}{if} (!Encoding::Decode(is, \&codepoint))}
+\DoxyCodeLine{59             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{60         count++;}
+\DoxyCodeLine{61     \}}
+\DoxyCodeLine{62     *outCount = count;}
+\DoxyCodeLine{63     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{64 \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, and rapidjson\+::\+Generic\+String\+Stream$<$ Encoding $>$\+::src\+\_\+.
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a6ba68d7defea7ccc4f8aa2feeafeccde}\label{namespacerapidjson_1_1internal_a6ba68d7defea7ccc4f8aa2feeafeccde}} 
+\index{rapidjson::internal@{rapidjson::internal}!DigitGen@{DigitGen}}
+\index{DigitGen@{DigitGen}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{DigitGen()}{DigitGen()}}
+{\footnotesize\ttfamily void rapidjson\+::internal\+::\+Digit\+Gen (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \&}]{W,  }\item[{const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \&}]{Mp,  }\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{delta,  }\item[{char $\ast$}]{buffer,  }\item[{int $\ast$}]{len,  }\item[{int $\ast$}]{K }\end{DoxyParamCaption})}
+
+
+
+Definition at line 60 of file dtoa.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                                                                                       \{}
+\DoxyCodeLine{61     \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} kPow10[] = \{ 1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000 \};}
+\DoxyCodeLine{62     \textcolor{keyword}{const} DiyFp one(\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}}(1) << -Mp.e, Mp.e);}
+\DoxyCodeLine{63     \textcolor{keyword}{const} DiyFp wp\_w = Mp - W;}
+\DoxyCodeLine{64     \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} p1 = static\_cast<uint32\_t>(Mp.f >> -one.e);}
+\DoxyCodeLine{65     \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} p2 = Mp.f \& (one.f - 1);}
+\DoxyCodeLine{66     \textcolor{keywordtype}{int} kappa = \mbox{\hyperlink{namespacerapidjson_1_1internal_ace8d1c16dab8600e0641c4fb6c81aff7}{CountDecimalDigit32}}(p1); \textcolor{comment}{// kappa in [0, 9]}}
+\DoxyCodeLine{67     *len = 0;}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69     \textcolor{keywordflow}{while} (kappa > 0) \{}
+\DoxyCodeLine{70         \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d = 0;}
+\DoxyCodeLine{71         \textcolor{keywordflow}{switch} (kappa) \{}
+\DoxyCodeLine{72             \textcolor{keywordflow}{case}  9: d = p1 /  100000000; p1 \%=  100000000; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{73             \textcolor{keywordflow}{case}  8: d = p1 /   10000000; p1 \%=   10000000; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{74             \textcolor{keywordflow}{case}  7: d = p1 /    1000000; p1 \%=    1000000; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{75             \textcolor{keywordflow}{case}  6: d = p1 /     100000; p1 \%=     100000; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{76             \textcolor{keywordflow}{case}  5: d = p1 /      10000; p1 \%=      10000; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{77             \textcolor{keywordflow}{case}  4: d = p1 /       1000; p1 \%=       1000; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{78             \textcolor{keywordflow}{case}  3: d = p1 /        100; p1 \%=        100; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{79             \textcolor{keywordflow}{case}  2: d = p1 /         10; p1 \%=         10; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{80             \textcolor{keywordflow}{case}  1: d = p1;              p1 =           0; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{81             \textcolor{keywordflow}{default}:;}
+\DoxyCodeLine{82         \}}
+\DoxyCodeLine{83         \textcolor{keywordflow}{if} (d || *len)}
+\DoxyCodeLine{84             buffer[(*len)++] = static\_cast<char>(\textcolor{charliteral}{'0'} + static\_cast<char>(d));}
+\DoxyCodeLine{85         kappa--;}
+\DoxyCodeLine{86         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} tmp = (static\_cast<uint64\_t>(p1) << -one.e) + p2;}
+\DoxyCodeLine{87         \textcolor{keywordflow}{if} (tmp <= delta) \{}
+\DoxyCodeLine{88             *K += kappa;}
+\DoxyCodeLine{89             \mbox{\hyperlink{namespacerapidjson_1_1internal_a7d7397686d2c8c57cf11d9afae17bb4d}{GrisuRound}}(buffer, *len, delta, tmp, static\_cast<uint64\_t>(kPow10[kappa]) << -one.e, wp\_w.f);}
+\DoxyCodeLine{90             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{91         \}}
+\DoxyCodeLine{92     \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     \textcolor{comment}{// kappa = 0}}
+\DoxyCodeLine{95     \textcolor{keywordflow}{for} (;;) \{}
+\DoxyCodeLine{96         p2 *= 10;}
+\DoxyCodeLine{97         delta *= 10;}
+\DoxyCodeLine{98         \textcolor{keywordtype}{char} d = static\_cast<char>(p2 >> -one.e);}
+\DoxyCodeLine{99         \textcolor{keywordflow}{if} (d || *len)}
+\DoxyCodeLine{100             buffer[(*len)++] = static\_cast<char>(\textcolor{charliteral}{'0'} + d);}
+\DoxyCodeLine{101         p2 \&= one.f - 1;}
+\DoxyCodeLine{102         kappa--;}
+\DoxyCodeLine{103         \textcolor{keywordflow}{if} (p2 < delta) \{}
+\DoxyCodeLine{104             *K += kappa;}
+\DoxyCodeLine{105             \textcolor{keywordtype}{int} index = -kappa;}
+\DoxyCodeLine{106             \mbox{\hyperlink{namespacerapidjson_1_1internal_a7d7397686d2c8c57cf11d9afae17bb4d}{GrisuRound}}(buffer, *len, delta, p2, one.f, wp\_w.f * (index < 9 ? kPow10[index] : 0));}
+\DoxyCodeLine{107             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{108         \}}
+\DoxyCodeLine{109     \}}
+\DoxyCodeLine{110 \}}
+
+\end{DoxyCode}
+
+
+References Count\+Decimal\+Digit32(), rapidjson\+::internal\+::\+Diy\+Fp\+::e, rapidjson\+::internal\+::\+Diy\+Fp\+::f, and Grisu\+Round().
+
+
+
+Referenced by Grisu2().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a51f3497ab9a7f691e06329409d6b5191}\label{namespacerapidjson_1_1internal_a51f3497ab9a7f691e06329409d6b5191}} 
+\index{rapidjson::internal@{rapidjson::internal}!dtoa@{dtoa}}
+\index{dtoa@{dtoa}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{dtoa()}{dtoa()}}
+{\footnotesize\ttfamily char$\ast$ rapidjson\+::internal\+::dtoa (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{char $\ast$}]{buffer,  }\item[{int}]{max\+Decimal\+Places = {\ttfamily 324} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 216 of file dtoa.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{216                                                                           \{}
+\DoxyCodeLine{217     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(maxDecimalPlaces >= 1);}
+\DoxyCodeLine{218     Double d(\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}});}
+\DoxyCodeLine{219     \textcolor{keywordflow}{if} (d.IsZero()) \{}
+\DoxyCodeLine{220         \textcolor{keywordflow}{if} (d.Sign())}
+\DoxyCodeLine{221             *buffer++ = \textcolor{charliteral}{'-'};     \textcolor{comment}{// -0.0, Issue \#289}}
+\DoxyCodeLine{222         buffer[0] = \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{223         buffer[1] = \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{224         buffer[2] = \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{225         \textcolor{keywordflow}{return} \&buffer[3];}
+\DoxyCodeLine{226     \}}
+\DoxyCodeLine{227     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{228         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} < 0) \{}
+\DoxyCodeLine{229             *buffer++ = \textcolor{charliteral}{'-'};}
+\DoxyCodeLine{230             \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} = -\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}};}
+\DoxyCodeLine{231         \}}
+\DoxyCodeLine{232         \textcolor{keywordtype}{int} length, K;}
+\DoxyCodeLine{233         \mbox{\hyperlink{namespacerapidjson_1_1internal_a74828fd6e9a874421231ef346b1126f3}{Grisu2}}(\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, buffer, \&length, \&K);}
+\DoxyCodeLine{234         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_1_1internal_a7865c7734bca9cbbf66bdc7c0d164a77}{Prettify}}(buffer, length, K, maxDecimalPlaces);}
+\DoxyCodeLine{235     \}}
+\DoxyCodeLine{236 \}}
+
+\end{DoxyCode}
+
+
+References Grisu2(), rapidjson\+::internal\+::\+Double\+::\+Is\+Zero(), Prettify(), R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, rapidjson\+::internal\+::\+Double\+::\+Sign(), and rapidjson\+::value.
+
+
+
+Referenced by rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Double().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_aadfc08b386baffa85f618e0ef0e2f188}\label{namespacerapidjson_1_1internal_aadfc08b386baffa85f618e0ef0e2f188}} 
+\index{rapidjson::internal@{rapidjson::internal}!FastPath@{FastPath}}
+\index{FastPath@{FastPath}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{FastPath()}{FastPath()}}
+{\footnotesize\ttfamily double rapidjson\+::internal\+::\+Fast\+Path (\begin{DoxyParamCaption}\item[{double}]{significand,  }\item[{int}]{exp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file strtod.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28                                                     \{}
+\DoxyCodeLine{29     \textcolor{keywordflow}{if} (exp < -308)}
+\DoxyCodeLine{30         \textcolor{keywordflow}{return} 0.0;}
+\DoxyCodeLine{31     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (exp >= 0)}
+\DoxyCodeLine{32         \textcolor{keywordflow}{return} significand * \mbox{\hyperlink{namespacerapidjson_1_1internal_aba2871b1440237f69acb5ae602407bf9}{internal::Pow10}}(exp);}
+\DoxyCodeLine{33     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{34         \textcolor{keywordflow}{return} significand / \mbox{\hyperlink{namespacerapidjson_1_1internal_aba2871b1440237f69acb5ae602407bf9}{internal::Pow10}}(-exp);}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+
+
+References Pow10().
+
+
+
+Referenced by Strtod\+Fast(), and Strtod\+Normal\+Precision().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a7c58ee2ca622624367808fa3a40dc9e3}\label{namespacerapidjson_1_1internal_a7c58ee2ca622624367808fa3a40dc9e3}} 
+\index{rapidjson::internal@{rapidjson::internal}!GetCachedPower@{GetCachedPower}}
+\index{GetCachedPower@{GetCachedPower}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{GetCachedPower()}{GetCachedPower()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} rapidjson\+::internal\+::\+Get\+Cached\+Power (\begin{DoxyParamCaption}\item[{int}]{e,  }\item[{int $\ast$}]{K }\end{DoxyParamCaption})}
+
+
+
+Definition at line 238 of file diyfp.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{238                                            \{}
+\DoxyCodeLine{239 }
+\DoxyCodeLine{240     \textcolor{comment}{//int k = static\_cast<int>(ceil((-61 - e) * 0.30102999566398114)) + 374;}}
+\DoxyCodeLine{241     \textcolor{keywordtype}{double} dk = (-61 - e) * 0.30102999566398114 + 347;  \textcolor{comment}{// dk must be positive, so can do ceiling in positive}}
+\DoxyCodeLine{242     \textcolor{keywordtype}{int} k = static\_cast<int>(dk);}
+\DoxyCodeLine{243     \textcolor{keywordflow}{if} (dk - k > 0.0)}
+\DoxyCodeLine{244         k++;}
+\DoxyCodeLine{245 }
+\DoxyCodeLine{246     \textcolor{keywordtype}{unsigned} index = static\_cast<unsigned>((k >> 3) + 1);}
+\DoxyCodeLine{247     *K = -(-348 + static\_cast<int>(index << 3));    \textcolor{comment}{// decimal exponent no need lookup table}}
+\DoxyCodeLine{248 }
+\DoxyCodeLine{249     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_1_1internal_a25a77e349cce869daae13c1bdd058d4a}{GetCachedPowerByIndex}}(index);}
+\DoxyCodeLine{250 \}}
+
+\end{DoxyCode}
+
+
+References Get\+Cached\+Power\+By\+Index().
+
+
+
+Referenced by Grisu2().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a21de5a1527938da9b57c84699ce519e7}\label{namespacerapidjson_1_1internal_a21de5a1527938da9b57c84699ce519e7}} 
+\index{rapidjson::internal@{rapidjson::internal}!GetCachedPower10@{GetCachedPower10}}
+\index{GetCachedPower10@{GetCachedPower10}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{GetCachedPower10()}{GetCachedPower10()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} rapidjson\+::internal\+::\+Get\+Cached\+Power10 (\begin{DoxyParamCaption}\item[{int}]{exp,  }\item[{int $\ast$}]{out\+Exp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 252 of file diyfp.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{252                                                     \{}
+\DoxyCodeLine{253     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(exp >= -348);}
+\DoxyCodeLine{254     \textcolor{keywordtype}{unsigned} index = static\_cast<unsigned>(exp + 348) / 8u;}
+\DoxyCodeLine{255     *outExp = -348 + static\_cast<int>(index) * 8;}
+\DoxyCodeLine{256     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_1_1internal_a25a77e349cce869daae13c1bdd058d4a}{GetCachedPowerByIndex}}(index);}
+\DoxyCodeLine{257 \}}
+
+\end{DoxyCode}
+
+
+References Get\+Cached\+Power\+By\+Index(), and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+Referenced by Strtod\+Diy\+Fp().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a25a77e349cce869daae13c1bdd058d4a}\label{namespacerapidjson_1_1internal_a25a77e349cce869daae13c1bdd058d4a}} 
+\index{rapidjson::internal@{rapidjson::internal}!GetCachedPowerByIndex@{GetCachedPowerByIndex}}
+\index{GetCachedPowerByIndex@{GetCachedPowerByIndex}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{GetCachedPowerByIndex()}{GetCachedPowerByIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} rapidjson\+::internal\+::\+Get\+Cached\+Power\+By\+Index (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Definition at line 175 of file diyfp.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{175                                                  \{}
+\DoxyCodeLine{176     \textcolor{comment}{// 10\string^-348, 10\string^-340, ..., 10\string^340}}
+\DoxyCodeLine{177     \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} kCachedPowers\_F[] = \{}
+\DoxyCodeLine{178         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xfa8fd5a0, 0x081c0288), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xbaaee17f, 0xa23ebf76),}
+\DoxyCodeLine{179         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x8b16fb20, 0x3055ac76), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xcf42894a, 0x5dce35ea),}
+\DoxyCodeLine{180         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x9a6bb0aa, 0x55653b2d), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xe61acf03, 0x3d1a45df),}
+\DoxyCodeLine{181         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xab70fe17, 0xc79ac6ca), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xff77b1fc, 0xbebcdc4f),}
+\DoxyCodeLine{182         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xbe5691ef, 0x416bd60c), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x8dd01fad, 0x907ffc3c),}
+\DoxyCodeLine{183         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xd3515c28, 0x31559a83), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x9d71ac8f, 0xada6c9b5),}
+\DoxyCodeLine{184         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xea9c2277, 0x23ee8bcb), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xaecc4991, 0x4078536d),}
+\DoxyCodeLine{185         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x823c1279, 0x5db6ce57), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xc2109436, 0x4dfb5637),}
+\DoxyCodeLine{186         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x9096ea6f, 0x3848984f), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xd77485cb, 0x25823ac7),}
+\DoxyCodeLine{187         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xa086cfcd, 0x97bf97f4), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xef340a98, 0x172aace5),}
+\DoxyCodeLine{188         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xb23867fb, 0x2a35b28e), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x84c8d4df, 0xd2c63f3b),}
+\DoxyCodeLine{189         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xc5dd4427, 0x1ad3cdba), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x936b9fce, 0xbb25c996),}
+\DoxyCodeLine{190         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xdbac6c24, 0x7d62a584), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xa3ab6658, 0x0d5fdaf6),}
+\DoxyCodeLine{191         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xf3e2f893, 0xdec3f126), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xb5b5ada8, 0xaaff80b8),}
+\DoxyCodeLine{192         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x87625f05, 0x6c7c4a8b), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xc9bcff60, 0x34c13053),}
+\DoxyCodeLine{193         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x964e858c, 0x91ba2655), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xdff97724, 0x70297ebd),}
+\DoxyCodeLine{194         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xa6dfbd9f, 0xb8e5b88f), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xf8a95fcf, 0x88747d94),}
+\DoxyCodeLine{195         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xb9447093, 0x8fa89bcf), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x8a08f0f8, 0xbf0f156b),}
+\DoxyCodeLine{196         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xcdb02555, 0x653131b6), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x993fe2c6, 0xd07b7fac),}
+\DoxyCodeLine{197         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xe45c10c4, 0x2a2b3b06), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xaa242499, 0x697392d3),}
+\DoxyCodeLine{198         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xfd87b5f2, 0x8300ca0e), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xbce50864, 0x92111aeb),}
+\DoxyCodeLine{199         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x8cbccc09, 0x6f5088cc), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xd1b71758, 0xe219652c),}
+\DoxyCodeLine{200         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x9c400000, 0x00000000), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xe8d4a510, 0x00000000),}
+\DoxyCodeLine{201         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xad78ebc5, 0xac620000), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x813f3978, 0xf8940984),}
+\DoxyCodeLine{202         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xc097ce7b, 0xc90715b3), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x8f7e32ce, 0x7bea5c70),}
+\DoxyCodeLine{203         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xd5d238a4, 0xabe98068), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x9f4f2726, 0x179a2245),}
+\DoxyCodeLine{204         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xed63a231, 0xd4c4fb27), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xb0de6538, 0x8cc8ada8),}
+\DoxyCodeLine{205         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x83c7088e, 0x1aab65db), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xc45d1df9, 0x42711d9a),}
+\DoxyCodeLine{206         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x924d692c, 0xa61be758), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xda01ee64, 0x1a708dea),}
+\DoxyCodeLine{207         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xa26da399, 0x9aef774a), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xf209787b, 0xb47d6b85),}
+\DoxyCodeLine{208         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xb454e4a1, 0x79dd1877), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x865b8692, 0x5b9bc5c2),}
+\DoxyCodeLine{209         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xc83553c5, 0xc8965d3d), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x952ab45c, 0xfa97a0b3),}
+\DoxyCodeLine{210         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xde469fbd, 0x99a05fe3), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xa59bc234, 0xdb398c25),}
+\DoxyCodeLine{211         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xf6c69a72, 0xa3989f5c), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xb7dcbf53, 0x54e9bece),}
+\DoxyCodeLine{212         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x88fcf317, 0xf22241e2), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xcc20ce9b, 0xd35c78a5),}
+\DoxyCodeLine{213         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x98165af3, 0x7b2153df), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xe2a0b5dc, 0x971f303a),}
+\DoxyCodeLine{214         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xa8d9d153, 0x5ce3b396), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xfb9b7cd9, 0xa4a7443c),}
+\DoxyCodeLine{215         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xbb764c4c, 0xa7a44410), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x8bab8eef, 0xb6409c1a),}
+\DoxyCodeLine{216         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xd01fef10, 0xa657842c), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x9b10a4e5, 0xe9913129),}
+\DoxyCodeLine{217         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xe7109bfb, 0xa19c0c9d), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xac2820d9, 0x623bf429),}
+\DoxyCodeLine{218         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x80444b5e, 0x7aa7cf85), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xbf21e440, 0x03acdd2d),}
+\DoxyCodeLine{219         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x8e679c2f, 0x5e44ff8f), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xd433179d, 0x9c8cb841),}
+\DoxyCodeLine{220         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x9e19db92, 0xb4e31ba9), \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xeb96bf6e, 0xbadf77d9),}
+\DoxyCodeLine{221         \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xaf87023b, 0x9bf0ee6b)}
+\DoxyCodeLine{222     \};}
+\DoxyCodeLine{223     \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a269259c924dce846340ddbb810db2e3c}{int16\_t}} kCachedPowers\_E[] = \{}
+\DoxyCodeLine{224         -1220, -1193, -1166, -1140, -1113, -1087, -1060, -1034, -1007,  -980,}
+\DoxyCodeLine{225         -954,  -927,  -901,  -874,  -847,  -821,  -794,  -768,  -741,  -715,}
+\DoxyCodeLine{226         -688,  -661,  -635,  -608,  -582,  -555,  -529,  -502,  -475,  -449,}
+\DoxyCodeLine{227         -422,  -396,  -369,  -343,  -316,  -289,  -263,  -236,  -210,  -183,}
+\DoxyCodeLine{228         -157,  -130,  -103,   -77,   -50,   -24,     3,    30,    56,    83,}
+\DoxyCodeLine{229         109,   136,   162,   189,   216,   242,   269,   295,   322,   348,}
+\DoxyCodeLine{230         375,   402,   428,   455,   481,   508,   534,   561,   588,   614,}
+\DoxyCodeLine{231         641,   667,   694,   720,   747,   774,   800,   827,   853,   880,}
+\DoxyCodeLine{232         907,   933,   960,   986,  1013,  1039,  1066}
+\DoxyCodeLine{233     \};}
+\DoxyCodeLine{234     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(index < 87);}
+\DoxyCodeLine{235     \textcolor{keywordflow}{return} DiyFp(kCachedPowers\_F[index], kCachedPowers\_E[index]);}
+\DoxyCodeLine{236 \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+U\+I\+N\+T64\+\_\+\+C2.
+
+
+
+Referenced by Get\+Cached\+Power(), and Get\+Cached\+Power10().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a2220f7bb22e11be3bc6f20291659c545}\label{namespacerapidjson_1_1internal_a2220f7bb22e11be3bc6f20291659c545}} 
+\index{rapidjson::internal@{rapidjson::internal}!GetDigitsLut@{GetDigitsLut}}
+\index{GetDigitsLut@{GetDigitsLut}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{GetDigitsLut()}{GetDigitsLut()}}
+{\footnotesize\ttfamily const char$\ast$ rapidjson\+::internal\+::\+Get\+Digits\+Lut (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file itoa.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                                   \{}
+\DoxyCodeLine{24     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{char} cDigitsLut[200] = \{}
+\DoxyCodeLine{25         \textcolor{charliteral}{'0'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'9'},}
+\DoxyCodeLine{26         \textcolor{charliteral}{'1'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'9'},}
+\DoxyCodeLine{27         \textcolor{charliteral}{'2'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'9'},}
+\DoxyCodeLine{28         \textcolor{charliteral}{'3'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'9'},}
+\DoxyCodeLine{29         \textcolor{charliteral}{'4'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'9'},}
+\DoxyCodeLine{30         \textcolor{charliteral}{'5'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'9'},}
+\DoxyCodeLine{31         \textcolor{charliteral}{'6'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'9'},}
+\DoxyCodeLine{32         \textcolor{charliteral}{'7'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'9'},}
+\DoxyCodeLine{33         \textcolor{charliteral}{'8'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'9'},}
+\DoxyCodeLine{34         \textcolor{charliteral}{'9'},\textcolor{charliteral}{'0'},\textcolor{charliteral}{'9'},\textcolor{charliteral}{'1'},\textcolor{charliteral}{'9'},\textcolor{charliteral}{'2'},\textcolor{charliteral}{'9'},\textcolor{charliteral}{'3'},\textcolor{charliteral}{'9'},\textcolor{charliteral}{'4'},\textcolor{charliteral}{'9'},\textcolor{charliteral}{'5'},\textcolor{charliteral}{'9'},\textcolor{charliteral}{'6'},\textcolor{charliteral}{'9'},\textcolor{charliteral}{'7'},\textcolor{charliteral}{'9'},\textcolor{charliteral}{'8'},\textcolor{charliteral}{'9'},\textcolor{charliteral}{'9'}}
+\DoxyCodeLine{35     \};}
+\DoxyCodeLine{36     \textcolor{keywordflow}{return} cDigitsLut;}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}
+
+
+Referenced by u32toa(), u64toa(), and Write\+Exponent().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a74828fd6e9a874421231ef346b1126f3}\label{namespacerapidjson_1_1internal_a74828fd6e9a874421231ef346b1126f3}} 
+\index{rapidjson::internal@{rapidjson::internal}!Grisu2@{Grisu2}}
+\index{Grisu2@{Grisu2}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{Grisu2()}{Grisu2()}}
+{\footnotesize\ttfamily void rapidjson\+::internal\+::\+Grisu2 (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{char $\ast$}]{buffer,  }\item[{int $\ast$}]{length,  }\item[{int $\ast$}]{K }\end{DoxyParamCaption})}
+
+
+
+Definition at line 112 of file dtoa.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112                                                                     \{}
+\DoxyCodeLine{113     \textcolor{keyword}{const} DiyFp v(\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}});}
+\DoxyCodeLine{114     DiyFp w\_m, w\_p;}
+\DoxyCodeLine{115     v.NormalizedBoundaries(\&w\_m, \&w\_p);}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117     \textcolor{keyword}{const} DiyFp c\_mk = \mbox{\hyperlink{namespacerapidjson_1_1internal_a7c58ee2ca622624367808fa3a40dc9e3}{GetCachedPower}}(w\_p.e, K);}
+\DoxyCodeLine{118     \textcolor{keyword}{const} DiyFp W = v.Normalize() * c\_mk;}
+\DoxyCodeLine{119     DiyFp Wp = w\_p * c\_mk;}
+\DoxyCodeLine{120     DiyFp Wm = w\_m * c\_mk;}
+\DoxyCodeLine{121     Wm.f++;}
+\DoxyCodeLine{122     Wp.f--;}
+\DoxyCodeLine{123     \mbox{\hyperlink{namespacerapidjson_1_1internal_a6ba68d7defea7ccc4f8aa2feeafeccde}{DigitGen}}(W, Wp, Wp.f - Wm.f, buffer, length, K);}
+\DoxyCodeLine{124 \}}
+
+\end{DoxyCode}
+
+
+References Digit\+Gen(), rapidjson\+::internal\+::\+Diy\+Fp\+::e, rapidjson\+::internal\+::\+Diy\+Fp\+::f, Get\+Cached\+Power(), rapidjson\+::internal\+::\+Diy\+Fp\+::\+Normalize(), rapidjson\+::internal\+::\+Diy\+Fp\+::\+Normalized\+Boundaries(), and rapidjson\+::value.
+
+
+
+Referenced by dtoa().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a7d7397686d2c8c57cf11d9afae17bb4d}\label{namespacerapidjson_1_1internal_a7d7397686d2c8c57cf11d9afae17bb4d}} 
+\index{rapidjson::internal@{rapidjson::internal}!GrisuRound@{GrisuRound}}
+\index{GrisuRound@{GrisuRound}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{GrisuRound()}{GrisuRound()}}
+{\footnotesize\ttfamily void rapidjson\+::internal\+::\+Grisu\+Round (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{int}]{len,  }\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{delta,  }\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{rest,  }\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{ten\+\_\+kappa,  }\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{wp\+\_\+w }\end{DoxyParamCaption})}
+
+closer 
+
+Definition at line 35 of file dtoa.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                                                                                                                 \{}
+\DoxyCodeLine{36     \textcolor{keywordflow}{while} (rest < wp\_w \&\& delta - rest >= ten\_kappa \&\&}
+\DoxyCodeLine{37            (rest + ten\_kappa < wp\_w ||  }
+\DoxyCodeLine{38             wp\_w - rest > rest + ten\_kappa - wp\_w)) \{}
+\DoxyCodeLine{39         buffer[len - 1]--;}
+\DoxyCodeLine{40         rest += ten\_kappa;}
+\DoxyCodeLine{41     \}}
+\DoxyCodeLine{42 \}}
+
+\end{DoxyCode}
+
+
+Referenced by Digit\+Gen().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_af2da6e17b77cf999be3b84d06e652d14}\label{namespacerapidjson_1_1internal_af2da6e17b77cf999be3b84d06e652d14}} 
+\index{rapidjson::internal@{rapidjson::internal}!i32toa@{i32toa}}
+\index{i32toa@{i32toa}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{i32toa()}{i32toa()}}
+{\footnotesize\ttfamily char$\ast$ rapidjson\+::internal\+::i32toa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_ab1967d8591af1a4e48c37fd2b0f184d0}{int32\+\_\+t}}}]{value,  }\item[{char $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 115 of file itoa.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{115                                                  \{}
+\DoxyCodeLine{116     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(buffer != 0);}
+\DoxyCodeLine{117     \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} u = static\_cast<uint32\_t>(\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}});}
+\DoxyCodeLine{118     \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} < 0) \{}
+\DoxyCodeLine{119         *buffer++ = \textcolor{charliteral}{'-'};}
+\DoxyCodeLine{120         u = ~u + 1;}
+\DoxyCodeLine{121     \}}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_1_1internal_ad5e42102d2ac70a691b3fdfdd2238e70}{u32toa}}(u, buffer);}
+\DoxyCodeLine{124 \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, u32toa(), and rapidjson\+::value.
+
+
+
+Referenced by rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Int().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a676fae3f0a9bc9a5e7646e31097a6f34}\label{namespacerapidjson_1_1internal_a676fae3f0a9bc9a5e7646e31097a6f34}} 
+\index{rapidjson::internal@{rapidjson::internal}!i64toa@{i64toa}}
+\index{i64toa@{i64toa}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{i64toa()}{i64toa()}}
+{\footnotesize\ttfamily char$\ast$ rapidjson\+::internal\+::i64toa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}}}]{value,  }\item[{char $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 294 of file itoa.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{294                                                  \{}
+\DoxyCodeLine{295     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(buffer != 0);}
+\DoxyCodeLine{296     \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} u = static\_cast<uint64\_t>(\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}});}
+\DoxyCodeLine{297     \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} < 0) \{}
+\DoxyCodeLine{298         *buffer++ = \textcolor{charliteral}{'-'};}
+\DoxyCodeLine{299         u = ~u + 1;}
+\DoxyCodeLine{300     \}}
+\DoxyCodeLine{301 }
+\DoxyCodeLine{302     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_1_1internal_af565c1edf212e5e41b8a51c3973e38cb}{u64toa}}(u, buffer);}
+\DoxyCodeLine{303 \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, u64toa(), and rapidjson\+::value.
+
+
+
+Referenced by rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Int64().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a7d72423e8173159a0d90cac2f2ef6b8a}\label{namespacerapidjson_1_1internal_a7d72423e8173159a0d90cac2f2ef6b8a}} 
+\index{rapidjson::internal@{rapidjson::internal}!Min3@{Min3}}
+\index{Min3@{Min3}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{Min3()}{Min3()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T rapidjson\+::internal\+::\+Min3 (\begin{DoxyParamCaption}\item[{T}]{a,  }\item[{T}]{b,  }\item[{T}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 49 of file strtod.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                              \{}
+\DoxyCodeLine{50     T m = \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}};}
+\DoxyCodeLine{51     \textcolor{keywordflow}{if} (m > b) m = b;}
+\DoxyCodeLine{52     \textcolor{keywordflow}{if} (m > c) m = c;}
+\DoxyCodeLine{53     \textcolor{keywordflow}{return} m;}
+\DoxyCodeLine{54 \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::a.
+
+
+
+Referenced by Check\+Within\+Half\+U\+L\+P().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_aba2871b1440237f69acb5ae602407bf9}\label{namespacerapidjson_1_1internal_aba2871b1440237f69acb5ae602407bf9}} 
+\index{rapidjson::internal@{rapidjson::internal}!Pow10@{Pow10}}
+\index{Pow10@{Pow10}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{Pow10()}{Pow10()}}
+{\footnotesize\ttfamily double rapidjson\+::internal\+::\+Pow10 (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Computes integer powers of 10 in double (10.\+0$^\wedge$n). 
+
+This function uses lookup table for fast and accurate results. 
+\begin{DoxyParams}{Parameters}
+{\em n} & non-\/negative exponent. Must $<$= 308. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+10.\+0$^\wedge$n 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file pow10.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28                            \{}
+\DoxyCodeLine{29     \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{double} e[] = \{ \textcolor{comment}{// 1e-0...1e308: 309 * 8 bytes = 2472 bytes}}
+\DoxyCodeLine{30         1e+0,  }
+\DoxyCodeLine{31         1e+1,  1e+2,  1e+3,  1e+4,  1e+5,  1e+6,  1e+7,  1e+8,  1e+9,  1e+10, 1e+11, 1e+12, 1e+13, 1e+14, 1e+15, 1e+16, 1e+17, 1e+18, 1e+19, 1e+20, }
+\DoxyCodeLine{32         1e+21, 1e+22, 1e+23, 1e+24, 1e+25, 1e+26, 1e+27, 1e+28, 1e+29, 1e+30, 1e+31, 1e+32, 1e+33, 1e+34, 1e+35, 1e+36, 1e+37, 1e+38, 1e+39, 1e+40,}
+\DoxyCodeLine{33         1e+41, 1e+42, 1e+43, 1e+44, 1e+45, 1e+46, 1e+47, 1e+48, 1e+49, 1e+50, 1e+51, 1e+52, 1e+53, 1e+54, 1e+55, 1e+56, 1e+57, 1e+58, 1e+59, 1e+60,}
+\DoxyCodeLine{34         1e+61, 1e+62, 1e+63, 1e+64, 1e+65, 1e+66, 1e+67, 1e+68, 1e+69, 1e+70, 1e+71, 1e+72, 1e+73, 1e+74, 1e+75, 1e+76, 1e+77, 1e+78, 1e+79, 1e+80,}
+\DoxyCodeLine{35         1e+81, 1e+82, 1e+83, 1e+84, 1e+85, 1e+86, 1e+87, 1e+88, 1e+89, 1e+90, 1e+91, 1e+92, 1e+93, 1e+94, 1e+95, 1e+96, 1e+97, 1e+98, 1e+99, 1e+100,}
+\DoxyCodeLine{36         1e+101,1e+102,1e+103,1e+104,1e+105,1e+106,1e+107,1e+108,1e+109,1e+110,1e+111,1e+112,1e+113,1e+114,1e+115,1e+116,1e+117,1e+118,1e+119,1e+120,}
+\DoxyCodeLine{37         1e+121,1e+122,1e+123,1e+124,1e+125,1e+126,1e+127,1e+128,1e+129,1e+130,1e+131,1e+132,1e+133,1e+134,1e+135,1e+136,1e+137,1e+138,1e+139,1e+140,}
+\DoxyCodeLine{38         1e+141,1e+142,1e+143,1e+144,1e+145,1e+146,1e+147,1e+148,1e+149,1e+150,1e+151,1e+152,1e+153,1e+154,1e+155,1e+156,1e+157,1e+158,1e+159,1e+160,}
+\DoxyCodeLine{39         1e+161,1e+162,1e+163,1e+164,1e+165,1e+166,1e+167,1e+168,1e+169,1e+170,1e+171,1e+172,1e+173,1e+174,1e+175,1e+176,1e+177,1e+178,1e+179,1e+180,}
+\DoxyCodeLine{40         1e+181,1e+182,1e+183,1e+184,1e+185,1e+186,1e+187,1e+188,1e+189,1e+190,1e+191,1e+192,1e+193,1e+194,1e+195,1e+196,1e+197,1e+198,1e+199,1e+200,}
+\DoxyCodeLine{41         1e+201,1e+202,1e+203,1e+204,1e+205,1e+206,1e+207,1e+208,1e+209,1e+210,1e+211,1e+212,1e+213,1e+214,1e+215,1e+216,1e+217,1e+218,1e+219,1e+220,}
+\DoxyCodeLine{42         1e+221,1e+222,1e+223,1e+224,1e+225,1e+226,1e+227,1e+228,1e+229,1e+230,1e+231,1e+232,1e+233,1e+234,1e+235,1e+236,1e+237,1e+238,1e+239,1e+240,}
+\DoxyCodeLine{43         1e+241,1e+242,1e+243,1e+244,1e+245,1e+246,1e+247,1e+248,1e+249,1e+250,1e+251,1e+252,1e+253,1e+254,1e+255,1e+256,1e+257,1e+258,1e+259,1e+260,}
+\DoxyCodeLine{44         1e+261,1e+262,1e+263,1e+264,1e+265,1e+266,1e+267,1e+268,1e+269,1e+270,1e+271,1e+272,1e+273,1e+274,1e+275,1e+276,1e+277,1e+278,1e+279,1e+280,}
+\DoxyCodeLine{45         1e+281,1e+282,1e+283,1e+284,1e+285,1e+286,1e+287,1e+288,1e+289,1e+290,1e+291,1e+292,1e+293,1e+294,1e+295,1e+296,1e+297,1e+298,1e+299,1e+300,}
+\DoxyCodeLine{46         1e+301,1e+302,1e+303,1e+304,1e+305,1e+306,1e+307,1e+308}
+\DoxyCodeLine{47     \};}
+\DoxyCodeLine{48     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(n >= 0 \&\& n <= 308);}
+\DoxyCodeLine{49     \textcolor{keywordflow}{return} e[n];}
+\DoxyCodeLine{50 \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+Referenced by Fast\+Path(), and Strtod\+Fast().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a7865c7734bca9cbbf66bdc7c0d164a77}\label{namespacerapidjson_1_1internal_a7865c7734bca9cbbf66bdc7c0d164a77}} 
+\index{rapidjson::internal@{rapidjson::internal}!Prettify@{Prettify}}
+\index{Prettify@{Prettify}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{Prettify()}{Prettify()}}
+{\footnotesize\ttfamily char$\ast$ rapidjson\+::internal\+::\+Prettify (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer,  }\item[{int}]{length,  }\item[{int}]{k,  }\item[{int}]{max\+Decimal\+Places }\end{DoxyParamCaption})}
+
+
+
+Definition at line 150 of file dtoa.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{150                                                                              \{}
+\DoxyCodeLine{151     \textcolor{keyword}{const} \textcolor{keywordtype}{int} kk = length + k;  \textcolor{comment}{// 10\string^(kk-1) <= v < 10\string^kk}}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153     \textcolor{keywordflow}{if} (0 <= k \&\& kk <= 21) \{}
+\DoxyCodeLine{154         \textcolor{comment}{// 1234e7 -> 12340000000}}
+\DoxyCodeLine{155         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = length; i < kk; i++)}
+\DoxyCodeLine{156             buffer[i] = \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{157         buffer[kk] = \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{158         buffer[kk + 1] = \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{159         \textcolor{keywordflow}{return} \&buffer[kk + 2];}
+\DoxyCodeLine{160     \}}
+\DoxyCodeLine{161     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (0 < kk \&\& kk <= 21) \{}
+\DoxyCodeLine{162         \textcolor{comment}{// 1234e-2 -> 12.34}}
+\DoxyCodeLine{163         std::memmove(\&buffer[kk + 1], \&buffer[kk], static\_cast<size\_t>(length - kk));}
+\DoxyCodeLine{164         buffer[kk] = \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{165         \textcolor{keywordflow}{if} (0 > k + maxDecimalPlaces) \{}
+\DoxyCodeLine{166             \textcolor{comment}{// When maxDecimalPlaces = 2, 1.2345 -> 1.23, 1.102 -> 1.1}}
+\DoxyCodeLine{167             \textcolor{comment}{// Remove extra trailing zeros (at least one) after truncation.}}
+\DoxyCodeLine{168             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = kk + maxDecimalPlaces; i > kk + 1; i--)}
+\DoxyCodeLine{169                 \textcolor{keywordflow}{if} (buffer[i] != \textcolor{charliteral}{'0'})}
+\DoxyCodeLine{170                     \textcolor{keywordflow}{return} \&buffer[i + 1];}
+\DoxyCodeLine{171             \textcolor{keywordflow}{return} \&buffer[kk + 2]; \textcolor{comment}{// Reserve one zero}}
+\DoxyCodeLine{172         \}}
+\DoxyCodeLine{173         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{174             \textcolor{keywordflow}{return} \&buffer[length + 1];}
+\DoxyCodeLine{175     \}}
+\DoxyCodeLine{176     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (-6 < kk \&\& kk <= 0) \{}
+\DoxyCodeLine{177         \textcolor{comment}{// 1234e-6 -> 0.001234}}
+\DoxyCodeLine{178         \textcolor{keyword}{const} \textcolor{keywordtype}{int} offset = 2 - kk;}
+\DoxyCodeLine{179         std::memmove(\&buffer[offset], \&buffer[0], static\_cast<size\_t>(length));}
+\DoxyCodeLine{180         buffer[0] = \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{181         buffer[1] = \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{182         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 2; i < offset; i++)}
+\DoxyCodeLine{183             buffer[i] = \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{184         \textcolor{keywordflow}{if} (length - kk > maxDecimalPlaces) \{}
+\DoxyCodeLine{185             \textcolor{comment}{// When maxDecimalPlaces = 2, 0.123 -> 0.12, 0.102 -> 0.1}}
+\DoxyCodeLine{186             \textcolor{comment}{// Remove extra trailing zeros (at least one) after truncation.}}
+\DoxyCodeLine{187             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = maxDecimalPlaces + 1; i > 2; i--)}
+\DoxyCodeLine{188                 \textcolor{keywordflow}{if} (buffer[i] != \textcolor{charliteral}{'0'})}
+\DoxyCodeLine{189                     \textcolor{keywordflow}{return} \&buffer[i + 1];}
+\DoxyCodeLine{190             \textcolor{keywordflow}{return} \&buffer[3]; \textcolor{comment}{// Reserve one zero}}
+\DoxyCodeLine{191         \}}
+\DoxyCodeLine{192         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{193             \textcolor{keywordflow}{return} \&buffer[length + offset];}
+\DoxyCodeLine{194     \}}
+\DoxyCodeLine{195     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (kk < -maxDecimalPlaces) \{}
+\DoxyCodeLine{196         \textcolor{comment}{// Truncate to zero}}
+\DoxyCodeLine{197         buffer[0] = \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{198         buffer[1] = \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{199         buffer[2] = \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{200         \textcolor{keywordflow}{return} \&buffer[3];}
+\DoxyCodeLine{201     \}}
+\DoxyCodeLine{202     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (length == 1) \{}
+\DoxyCodeLine{203         \textcolor{comment}{// 1e30}}
+\DoxyCodeLine{204         buffer[1] = \textcolor{charliteral}{'e'};}
+\DoxyCodeLine{205         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_1_1internal_adacfea46aca31aae732f952a9872b6e6}{WriteExponent}}(kk - 1, \&buffer[2]);}
+\DoxyCodeLine{206     \}}
+\DoxyCodeLine{207     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{208         \textcolor{comment}{// 1234e30 -> 1.234e33}}
+\DoxyCodeLine{209         std::memmove(\&buffer[2], \&buffer[1], static\_cast<size\_t>(length - 1));}
+\DoxyCodeLine{210         buffer[1] = \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{211         buffer[length + 1] = \textcolor{charliteral}{'e'};}
+\DoxyCodeLine{212         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_1_1internal_adacfea46aca31aae732f952a9872b6e6}{WriteExponent}}(kk - 1, \&buffer[0 + length + 2]);}
+\DoxyCodeLine{213     \}}
+\DoxyCodeLine{214 \}}
+
+\end{DoxyCode}
+
+
+References Write\+Exponent().
+
+
+
+Referenced by dtoa().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_abe45d9242ecab3b9b58117961f57dc2f}\label{namespacerapidjson_1_1internal_abe45d9242ecab3b9b58117961f57dc2f}} 
+\index{rapidjson::internal@{rapidjson::internal}!StrLen@{StrLen}}
+\index{StrLen@{StrLen}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{StrLen()}{StrLen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Ch $>$ \\
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} rapidjson\+::internal\+::\+Str\+Len (\begin{DoxyParamCaption}\item[{const Ch $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Custom strlen() which works on different character types. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Ch} & Character type (e.\+g. char, wchar\+\_\+t, short) \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Null-\/terminated input string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of characters in the string. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This has the same semantics as strlen(), the return value is not number of Unicode codepoints. 
+\end{DoxyNote}
+
+
+Definition at line 31 of file strfunc.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31                                     \{}
+\DoxyCodeLine{32     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(s != 0);}
+\DoxyCodeLine{33     \textcolor{keyword}{const} Ch* p = s;}
+\DoxyCodeLine{34     \textcolor{keywordflow}{while} (*p) ++p;}
+\DoxyCodeLine{35     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}}(p - s);}
+\DoxyCodeLine{36 \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+Referenced by rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Generic\+Pointer(), rapidjson\+::\+Pretty\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Key(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Key(), rapidjson\+::\+Generic\+String\+Ref$<$ Char\+Type $>$\+::\+Not\+Null\+Str\+Len(), rapidjson\+::\+Pretty\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+String(), and rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+String().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a48318b28376546f0bcf0c26e82f45cae}\label{namespacerapidjson_1_1internal_a48318b28376546f0bcf0c26e82f45cae}} 
+\index{rapidjson::internal@{rapidjson::internal}!StrLen@{StrLen}}
+\index{StrLen@{StrLen}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{StrLen()}{StrLen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} rapidjson\+::internal\+::\+Str\+Len (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 39 of file strfunc.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                       \{}
+\DoxyCodeLine{40     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}}(std::strlen(s));}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_ae74a003a7f30195697381e82a63111fb}\label{namespacerapidjson_1_1internal_ae74a003a7f30195697381e82a63111fb}} 
+\index{rapidjson::internal@{rapidjson::internal}!StrLen@{StrLen}}
+\index{StrLen@{StrLen}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{StrLen()}{StrLen()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} rapidjson\+::internal\+::\+Str\+Len (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 44 of file strfunc.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                          \{}
+\DoxyCodeLine{45     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}}(std::wcslen(s));}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_aeb0c7910094111c91cd31339bf707950}\label{namespacerapidjson_1_1internal_aeb0c7910094111c91cd31339bf707950}} 
+\index{rapidjson::internal@{rapidjson::internal}!StrtodBigInteger@{StrtodBigInteger}}
+\index{StrtodBigInteger@{StrtodBigInteger}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{StrtodBigInteger()}{StrtodBigInteger()}}
+{\footnotesize\ttfamily double rapidjson\+::internal\+::\+Strtod\+Big\+Integer (\begin{DoxyParamCaption}\item[{double}]{approx,  }\item[{const char $\ast$}]{decimals,  }\item[{int}]{d\+Len,  }\item[{int}]{d\+Exp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 208 of file strtod.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{208                                                                                         \{}
+\DoxyCodeLine{209     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(dLen >= 0);}
+\DoxyCodeLine{210     \textcolor{keyword}{const} BigInteger dInt(decimals, static\_cast<unsigned>(dLen));}
+\DoxyCodeLine{211     Double \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}(approx);}
+\DoxyCodeLine{212     \textcolor{keywordtype}{int} cmp = \mbox{\hyperlink{namespacerapidjson_1_1internal_a1c9faaa8ff1461a84ee35c04c7b926c5}{CheckWithinHalfULP}}(\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}.Value(), dInt, dExp);}
+\DoxyCodeLine{213     \textcolor{keywordflow}{if} (cmp < 0)}
+\DoxyCodeLine{214         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}.Value();  \textcolor{comment}{// within half ULP}}
+\DoxyCodeLine{215     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (cmp == 0) \{}
+\DoxyCodeLine{216         \textcolor{comment}{// Round towards even}}
+\DoxyCodeLine{217         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}.Significand() \& 1)}
+\DoxyCodeLine{218             \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}.NextPositiveDouble();}
+\DoxyCodeLine{219         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{220             \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}.Value();}
+\DoxyCodeLine{221     \}}
+\DoxyCodeLine{222     \textcolor{keywordflow}{else} \textcolor{comment}{// adjustment}}
+\DoxyCodeLine{223         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}.NextPositiveDouble();}
+\DoxyCodeLine{224 \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::a, Check\+Within\+Half\+U\+L\+P(), and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+Referenced by Strtod\+Full\+Precision().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a2005b2ac382e70120987b7889476d01f}\label{namespacerapidjson_1_1internal_a2005b2ac382e70120987b7889476d01f}} 
+\index{rapidjson::internal@{rapidjson::internal}!StrtodDiyFp@{StrtodDiyFp}}
+\index{StrtodDiyFp@{StrtodDiyFp}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{StrtodDiyFp()}{StrtodDiyFp()}}
+{\footnotesize\ttfamily bool rapidjson\+::internal\+::\+Strtod\+Diy\+Fp (\begin{DoxyParamCaption}\item[{const char $\ast$}]{decimals,  }\item[{int}]{d\+Len,  }\item[{int}]{d\+Exp,  }\item[{double $\ast$}]{result }\end{DoxyParamCaption})}
+
+
+
+Definition at line 131 of file strtod.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131                                                                                   \{}
+\DoxyCodeLine{132     \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} significand = 0;}
+\DoxyCodeLine{133     \textcolor{keywordtype}{int} i = 0;   \textcolor{comment}{// 2\string^64 - 1 = 18446744073709551615, 1844674407370955161 = 0x1999999999999999    }}
+\DoxyCodeLine{134     \textcolor{keywordflow}{for} (; i < dLen; i++) \{}
+\DoxyCodeLine{135         \textcolor{keywordflow}{if} (significand  >  \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x19999999, 0x99999999) ||}
+\DoxyCodeLine{136             (significand == \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x19999999, 0x99999999) \&\& decimals[i] > \textcolor{charliteral}{'5'}))}
+\DoxyCodeLine{137             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{138         significand = significand * 10u + static\_cast<unsigned>(decimals[i] - \textcolor{charliteral}{'0'});}
+\DoxyCodeLine{139     \}}
+\DoxyCodeLine{140     }
+\DoxyCodeLine{141     \textcolor{keywordflow}{if} (i < dLen \&\& decimals[i] >= \textcolor{charliteral}{'5'}) \textcolor{comment}{// Rounding}}
+\DoxyCodeLine{142         significand++;}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144     \textcolor{keywordtype}{int} remaining = dLen - i;}
+\DoxyCodeLine{145     \textcolor{keyword}{const} \textcolor{keywordtype}{int} kUlpShift = 3;}
+\DoxyCodeLine{146     \textcolor{keyword}{const} \textcolor{keywordtype}{int} kUlp = 1 << kUlpShift;}
+\DoxyCodeLine{147     \mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\_t}} error = (remaining == 0) ? 0 : kUlp / 2;}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149     DiyFp v(significand, 0);}
+\DoxyCodeLine{150     v = v.Normalize();}
+\DoxyCodeLine{151     error <<= -v.e;}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153     dExp += remaining;}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155     \textcolor{keywordtype}{int} actualExp;}
+\DoxyCodeLine{156     DiyFp cachedPower = \mbox{\hyperlink{namespacerapidjson_1_1internal_a21de5a1527938da9b57c84699ce519e7}{GetCachedPower10}}(dExp, \&actualExp);}
+\DoxyCodeLine{157     \textcolor{keywordflow}{if} (actualExp != dExp) \{}
+\DoxyCodeLine{158         \textcolor{keyword}{static} \textcolor{keyword}{const} DiyFp kPow10[] = \{}
+\DoxyCodeLine{159             DiyFp(\mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xa0000000, 0x00000000), -60),  \textcolor{comment}{// 10\string^1}}
+\DoxyCodeLine{160             DiyFp(\mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xc8000000, 0x00000000), -57),  \textcolor{comment}{// 10\string^2}}
+\DoxyCodeLine{161             DiyFp(\mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xfa000000, 0x00000000), -54),  \textcolor{comment}{// 10\string^3}}
+\DoxyCodeLine{162             DiyFp(\mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x9c400000, 0x00000000), -50),  \textcolor{comment}{// 10\string^4}}
+\DoxyCodeLine{163             DiyFp(\mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xc3500000, 0x00000000), -47),  \textcolor{comment}{// 10\string^5}}
+\DoxyCodeLine{164             DiyFp(\mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0xf4240000, 0x00000000), -44),  \textcolor{comment}{// 10\string^6}}
+\DoxyCodeLine{165             DiyFp(\mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0x98968000, 0x00000000), -40)   \textcolor{comment}{// 10\string^7}}
+\DoxyCodeLine{166         \};}
+\DoxyCodeLine{167         \textcolor{keywordtype}{int} adjustment = dExp - actualExp;}
+\DoxyCodeLine{168         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(adjustment >= 1 \&\& adjustment < 8);}
+\DoxyCodeLine{169         v = v * kPow10[adjustment - 1];}
+\DoxyCodeLine{170         \textcolor{keywordflow}{if} (dLen + adjustment > 19) \textcolor{comment}{// has more digits than decimal digits in 64-bit}}
+\DoxyCodeLine{171             error += kUlp / 2;}
+\DoxyCodeLine{172     \}}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174     v = v * cachedPower;}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176     error += kUlp + (error == 0 ? 0 : 1);}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178     \textcolor{keyword}{const} \textcolor{keywordtype}{int} oldExp = v.e;}
+\DoxyCodeLine{179     v = v.Normalize();}
+\DoxyCodeLine{180     error <<= oldExp - v.e;}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{182     \textcolor{keyword}{const} \textcolor{keywordtype}{int} effectiveSignificandSize = Double::EffectiveSignificandSize(64 + v.e);}
+\DoxyCodeLine{183     \textcolor{keywordtype}{int} precisionSize = 64 - effectiveSignificandSize;}
+\DoxyCodeLine{184     \textcolor{keywordflow}{if} (precisionSize + kUlpShift >= 64) \{}
+\DoxyCodeLine{185         \textcolor{keywordtype}{int} scaleExp = (precisionSize + kUlpShift) - 63;}
+\DoxyCodeLine{186         v.f >>= scaleExp;}
+\DoxyCodeLine{187         v.e += scaleExp; }
+\DoxyCodeLine{188         error = (error >> scaleExp) + 1 + kUlp;}
+\DoxyCodeLine{189         precisionSize -= scaleExp;}
+\DoxyCodeLine{190     \}}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192     DiyFp rounded(v.f >> precisionSize, v.e + precisionSize);}
+\DoxyCodeLine{193     \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} precisionBits = (v.f \& ((\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}}(1) << precisionSize) - 1)) * kUlp;}
+\DoxyCodeLine{194     \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} halfWay = (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}}(1) << (precisionSize - 1)) * kUlp;}
+\DoxyCodeLine{195     \textcolor{keywordflow}{if} (precisionBits >= halfWay + static\_cast<unsigned>(error)) \{}
+\DoxyCodeLine{196         rounded.f++;}
+\DoxyCodeLine{197         \textcolor{keywordflow}{if} (rounded.f \& (DiyFp::kDpHiddenBit << 1)) \{ \textcolor{comment}{// rounding overflows mantissa (issue \#340)}}
+\DoxyCodeLine{198             rounded.f >>= 1;}
+\DoxyCodeLine{199             rounded.e++;}
+\DoxyCodeLine{200         \}}
+\DoxyCodeLine{201     \}}
+\DoxyCodeLine{202 }
+\DoxyCodeLine{203     *result = rounded.ToDouble();}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205     \textcolor{keywordflow}{return} halfWay - static\_cast<unsigned>(error) >= precisionBits || precisionBits >= halfWay + static\_cast<unsigned>(error);}
+\DoxyCodeLine{206 \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::internal\+::\+Diy\+Fp\+::e, rapidjson\+::internal\+::\+Diy\+Fp\+::f, Get\+Cached\+Power10(), rapidjson\+::internal\+::\+Diy\+Fp\+::\+Normalize(), R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+U\+I\+N\+T64\+\_\+\+C2, and rapidjson\+::internal\+::\+Diy\+Fp\+::\+To\+Double().
+
+
+
+Referenced by Strtod\+Full\+Precision().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_acfd06fe2a2709ad372a373f0921e9571}\label{namespacerapidjson_1_1internal_acfd06fe2a2709ad372a373f0921e9571}} 
+\index{rapidjson::internal@{rapidjson::internal}!StrtodFast@{StrtodFast}}
+\index{StrtodFast@{StrtodFast}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{StrtodFast()}{StrtodFast()}}
+{\footnotesize\ttfamily bool rapidjson\+::internal\+::\+Strtod\+Fast (\begin{DoxyParamCaption}\item[{double}]{d,  }\item[{int}]{p,  }\item[{double $\ast$}]{result }\end{DoxyParamCaption})}
+
+
+
+Definition at line 113 of file strtod.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{113                                                         \{}
+\DoxyCodeLine{114     \textcolor{comment}{// Use fast path for string-to-double conversion if possible}}
+\DoxyCodeLine{115     \textcolor{comment}{// see http://www.exploringbinary.com/fast-path-decimal-to-floating-point-conversion/}}
+\DoxyCodeLine{116     \textcolor{keywordflow}{if} (p > 22  \&\& p < 22 + 16) \{}
+\DoxyCodeLine{117         \textcolor{comment}{// Fast Path Cases In Disguise}}
+\DoxyCodeLine{118         d *= \mbox{\hyperlink{namespacerapidjson_1_1internal_aba2871b1440237f69acb5ae602407bf9}{internal::Pow10}}(p - 22);}
+\DoxyCodeLine{119         p = 22;}
+\DoxyCodeLine{120     \}}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122     \textcolor{keywordflow}{if} (p >= -22 \&\& p <= 22 \&\& d <= 9007199254740991.0) \{ \textcolor{comment}{// 2\string^53 - 1}}
+\DoxyCodeLine{123         *result = \mbox{\hyperlink{namespacerapidjson_1_1internal_aadfc08b386baffa85f618e0ef0e2f188}{FastPath}}(d, p);}
+\DoxyCodeLine{124         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{125     \}}
+\DoxyCodeLine{126     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{127         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{128 \}}
+
+\end{DoxyCode}
+
+
+References Fast\+Path(), and Pow10().
+
+
+
+Referenced by Strtod\+Full\+Precision().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_afdec628bd595f8aca4ff74ec9e3c88f2}\label{namespacerapidjson_1_1internal_afdec628bd595f8aca4ff74ec9e3c88f2}} 
+\index{rapidjson::internal@{rapidjson::internal}!StrtodFullPrecision@{StrtodFullPrecision}}
+\index{StrtodFullPrecision@{StrtodFullPrecision}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{StrtodFullPrecision()}{StrtodFullPrecision()}}
+{\footnotesize\ttfamily double rapidjson\+::internal\+::\+Strtod\+Full\+Precision (\begin{DoxyParamCaption}\item[{double}]{d,  }\item[{int}]{p,  }\item[{const char $\ast$}]{decimals,  }\item[{size\+\_\+t}]{length,  }\item[{size\+\_\+t}]{decimal\+Position,  }\item[{int}]{exp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 226 of file strtod.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{226                                                                                                                          \{}
+\DoxyCodeLine{227     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(d >= 0.0);}
+\DoxyCodeLine{228     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(length >= 1);}
+\DoxyCodeLine{229 }
+\DoxyCodeLine{230     \textcolor{keywordtype}{double} result = 0.0;}
+\DoxyCodeLine{231     \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_1_1internal_acfd06fe2a2709ad372a373f0921e9571}{StrtodFast}}(d, p, \&result))}
+\DoxyCodeLine{232         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{233 }
+\DoxyCodeLine{234     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(length <= INT\_MAX);}
+\DoxyCodeLine{235     \textcolor{keywordtype}{int} dLen = static\_cast<int>(length);}
+\DoxyCodeLine{236 }
+\DoxyCodeLine{237     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(length >= decimalPosition);}
+\DoxyCodeLine{238     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(length - decimalPosition <= INT\_MAX);}
+\DoxyCodeLine{239     \textcolor{keywordtype}{int} dExpAdjust = static\_cast<int>(length - decimalPosition);}
+\DoxyCodeLine{240 }
+\DoxyCodeLine{241     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(exp >= INT\_MIN + dExpAdjust);}
+\DoxyCodeLine{242     \textcolor{keywordtype}{int} dExp = exp - dExpAdjust;}
+\DoxyCodeLine{243 }
+\DoxyCodeLine{244     \textcolor{comment}{// Make sure length+dExp does not overflow}}
+\DoxyCodeLine{245     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(dExp <= INT\_MAX - dLen);}
+\DoxyCodeLine{246 }
+\DoxyCodeLine{247     \textcolor{comment}{// Trim leading zeros}}
+\DoxyCodeLine{248     \textcolor{keywordflow}{while} (dLen > 0 \&\& *decimals == \textcolor{charliteral}{'0'}) \{}
+\DoxyCodeLine{249         dLen--;}
+\DoxyCodeLine{250         decimals++;}
+\DoxyCodeLine{251     \}}
+\DoxyCodeLine{252 }
+\DoxyCodeLine{253     \textcolor{comment}{// Trim trailing zeros}}
+\DoxyCodeLine{254     \textcolor{keywordflow}{while} (dLen > 0 \&\& decimals[dLen - 1] == \textcolor{charliteral}{'0'}) \{}
+\DoxyCodeLine{255         dLen--;}
+\DoxyCodeLine{256         dExp++;}
+\DoxyCodeLine{257     \}}
+\DoxyCodeLine{258 }
+\DoxyCodeLine{259     \textcolor{keywordflow}{if} (dLen == 0) \{ \textcolor{comment}{// Buffer only contains zeros.}}
+\DoxyCodeLine{260         \textcolor{keywordflow}{return} 0.0;}
+\DoxyCodeLine{261     \}}
+\DoxyCodeLine{262 }
+\DoxyCodeLine{263     \textcolor{comment}{// Trim right-most digits}}
+\DoxyCodeLine{264     \textcolor{keyword}{const} \textcolor{keywordtype}{int} kMaxDecimalDigit = 767 + 1;}
+\DoxyCodeLine{265     \textcolor{keywordflow}{if} (dLen > kMaxDecimalDigit) \{}
+\DoxyCodeLine{266         dExp += dLen - kMaxDecimalDigit;}
+\DoxyCodeLine{267         dLen = kMaxDecimalDigit;}
+\DoxyCodeLine{268     \}}
+\DoxyCodeLine{269 }
+\DoxyCodeLine{270     \textcolor{comment}{// If too small, underflow to zero.}}
+\DoxyCodeLine{271     \textcolor{comment}{// Any x <= 10\string^-324 is interpreted as zero.}}
+\DoxyCodeLine{272     \textcolor{keywordflow}{if} (dLen + dExp <= -324)}
+\DoxyCodeLine{273         \textcolor{keywordflow}{return} 0.0;}
+\DoxyCodeLine{274 }
+\DoxyCodeLine{275     \textcolor{comment}{// If too large, overflow to infinity.}}
+\DoxyCodeLine{276     \textcolor{comment}{// Any x >= 10\string^309 is interpreted as +infinity.}}
+\DoxyCodeLine{277     \textcolor{keywordflow}{if} (dLen + dExp > 309)}
+\DoxyCodeLine{278         \textcolor{keywordflow}{return} std::numeric\_limits<double>::infinity();}
+\DoxyCodeLine{279 }
+\DoxyCodeLine{280     \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_1_1internal_a2005b2ac382e70120987b7889476d01f}{StrtodDiyFp}}(decimals, dLen, dExp, \&result))}
+\DoxyCodeLine{281         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{282 }
+\DoxyCodeLine{283     \textcolor{comment}{// Use approximation from StrtodDiyFp and make adjustment with BigInteger comparison}}
+\DoxyCodeLine{284     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_1_1internal_aeb0c7910094111c91cd31339bf707950}{StrtodBigInteger}}(result, decimals, dLen, dExp);}
+\DoxyCodeLine{285 \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, Strtod\+Big\+Integer(), Strtod\+Diy\+Fp(), and Strtod\+Fast().
+
+
+
+Referenced by rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\+Parse\+Number().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a0173579d8f2b3724583f64758beb8e69}\label{namespacerapidjson_1_1internal_a0173579d8f2b3724583f64758beb8e69}} 
+\index{rapidjson::internal@{rapidjson::internal}!StrtodNormalPrecision@{StrtodNormalPrecision}}
+\index{StrtodNormalPrecision@{StrtodNormalPrecision}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{StrtodNormalPrecision()}{StrtodNormalPrecision()}}
+{\footnotesize\ttfamily double rapidjson\+::internal\+::\+Strtod\+Normal\+Precision (\begin{DoxyParamCaption}\item[{double}]{d,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file strtod.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                                      \{}
+\DoxyCodeLine{38     \textcolor{keywordflow}{if} (p < -308) \{}
+\DoxyCodeLine{39         \textcolor{comment}{// Prevent expSum < -308, making Pow10(p) = 0}}
+\DoxyCodeLine{40         d = \mbox{\hyperlink{namespacerapidjson_1_1internal_aadfc08b386baffa85f618e0ef0e2f188}{FastPath}}(d, -308);}
+\DoxyCodeLine{41         d = \mbox{\hyperlink{namespacerapidjson_1_1internal_aadfc08b386baffa85f618e0ef0e2f188}{FastPath}}(d, p + 308);}
+\DoxyCodeLine{42     \}}
+\DoxyCodeLine{43     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{44         d = \mbox{\hyperlink{namespacerapidjson_1_1internal_aadfc08b386baffa85f618e0ef0e2f188}{FastPath}}(d, p);}
+\DoxyCodeLine{45     \textcolor{keywordflow}{return} d;}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+
+
+References Fast\+Path().
+
+
+
+Referenced by rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\+Parse\+Number().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}\label{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}} 
+\index{rapidjson::internal@{rapidjson::internal}!Swap@{Swap}}
+\index{Swap@{Swap}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void rapidjson\+::internal\+::\+Swap (\begin{DoxyParamCaption}\item[{T \&}]{a,  }\item[{T \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Custom swap() to avoid dependency on C++ $<$algorithm$>$ header. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the arguments to swap, should be instantiated with primitive C++ types only. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyNote}{Note}
+This has the same semantics as std\+::swap(). 
+\end{DoxyNote}
+
+
+Definition at line 33 of file swap.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                                                 \{}
+\DoxyCodeLine{34     T tmp = \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}};}
+\DoxyCodeLine{35         \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} = b;}
+\DoxyCodeLine{36         b = tmp;}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::a.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Generic\+Regex\+Search$<$ Regex\+Type, Allocator $>$\+::\+Search\+With\+Anchoring(), rapidjson\+::internal\+::\+Stack$<$ Stack\+Allocator $>$\+::\+Swap(), rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Swap(), and rapidjson\+::\+Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$\+::\+Swap().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_ad5e42102d2ac70a691b3fdfdd2238e70}\label{namespacerapidjson_1_1internal_ad5e42102d2ac70a691b3fdfdd2238e70}} 
+\index{rapidjson::internal@{rapidjson::internal}!u32toa@{u32toa}}
+\index{u32toa@{u32toa}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{u32toa()}{u32toa()}}
+{\footnotesize\ttfamily char$\ast$ rapidjson\+::internal\+::u32toa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{value,  }\item[{char $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 39 of file itoa.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                                   \{}
+\DoxyCodeLine{40     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(buffer != 0);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* cDigitsLut = \mbox{\hyperlink{namespacerapidjson_1_1internal_a2220f7bb22e11be3bc6f20291659c545}{GetDigitsLut}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} < 10000) \{}
+\DoxyCodeLine{45         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d1 = (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} / 100) << 1;}
+\DoxyCodeLine{46         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d2 = (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} \% 100) << 1;}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= 1000)}
+\DoxyCodeLine{49             *buffer++ = cDigitsLut[d1];}
+\DoxyCodeLine{50         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= 100)}
+\DoxyCodeLine{51             *buffer++ = cDigitsLut[d1 + 1];}
+\DoxyCodeLine{52         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= 10)}
+\DoxyCodeLine{53             *buffer++ = cDigitsLut[d2];}
+\DoxyCodeLine{54         *buffer++ = cDigitsLut[d2 + 1];}
+\DoxyCodeLine{55     \}}
+\DoxyCodeLine{56     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} < 100000000) \{}
+\DoxyCodeLine{57         \textcolor{comment}{// value = bbbbcccc}}
+\DoxyCodeLine{58         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} b = \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} / 10000;}
+\DoxyCodeLine{59         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} c = \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} \% 10000;}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d1 = (b / 100) << 1;}
+\DoxyCodeLine{62         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d2 = (b \% 100) << 1;}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d3 = (c / 100) << 1;}
+\DoxyCodeLine{65         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d4 = (c \% 100) << 1;}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= 10000000)}
+\DoxyCodeLine{68             *buffer++ = cDigitsLut[d1];}
+\DoxyCodeLine{69         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= 1000000)}
+\DoxyCodeLine{70             *buffer++ = cDigitsLut[d1 + 1];}
+\DoxyCodeLine{71         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= 100000)}
+\DoxyCodeLine{72             *buffer++ = cDigitsLut[d2];}
+\DoxyCodeLine{73         *buffer++ = cDigitsLut[d2 + 1];}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75         *buffer++ = cDigitsLut[d3];}
+\DoxyCodeLine{76         *buffer++ = cDigitsLut[d3 + 1];}
+\DoxyCodeLine{77         *buffer++ = cDigitsLut[d4];}
+\DoxyCodeLine{78         *buffer++ = cDigitsLut[d4 + 1];}
+\DoxyCodeLine{79     \}}
+\DoxyCodeLine{80     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{81         \textcolor{comment}{// value = aabbbbcccc in decimal}}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} = \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} / 100000000; \textcolor{comment}{// 1 to 42}}
+\DoxyCodeLine{84         \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} \%= 100000000;}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} >= 10) \{}
+\DoxyCodeLine{87             \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} i = \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} << 1;}
+\DoxyCodeLine{88             *buffer++ = cDigitsLut[i];}
+\DoxyCodeLine{89             *buffer++ = cDigitsLut[i + 1];}
+\DoxyCodeLine{90         \}}
+\DoxyCodeLine{91         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{92             *buffer++ = static\_cast<char>(\textcolor{charliteral}{'0'} + static\_cast<char>(\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}));}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} b = \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} / 10000; \textcolor{comment}{// 0 to 9999}}
+\DoxyCodeLine{95         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} c = \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} \% 10000; \textcolor{comment}{// 0 to 9999}}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d1 = (b / 100) << 1;}
+\DoxyCodeLine{98         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d2 = (b \% 100) << 1;}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d3 = (c / 100) << 1;}
+\DoxyCodeLine{101         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d4 = (c \% 100) << 1;}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103         *buffer++ = cDigitsLut[d1];}
+\DoxyCodeLine{104         *buffer++ = cDigitsLut[d1 + 1];}
+\DoxyCodeLine{105         *buffer++ = cDigitsLut[d2];}
+\DoxyCodeLine{106         *buffer++ = cDigitsLut[d2 + 1];}
+\DoxyCodeLine{107         *buffer++ = cDigitsLut[d3];}
+\DoxyCodeLine{108         *buffer++ = cDigitsLut[d3 + 1];}
+\DoxyCodeLine{109         *buffer++ = cDigitsLut[d4];}
+\DoxyCodeLine{110         *buffer++ = cDigitsLut[d4 + 1];}
+\DoxyCodeLine{111     \}}
+\DoxyCodeLine{112     \textcolor{keywordflow}{return} buffer;}
+\DoxyCodeLine{113 \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::a, Get\+Digits\+Lut(), R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, and rapidjson\+::value.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Token\+Helper$<$ Stack, Ch $>$\+::\+Append\+Index\+Token(), rapidjson\+::internal\+::\+Token\+Helper$<$ Stack, char $>$\+::\+Append\+Index\+Token(), i32toa(), and rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Uint().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_af565c1edf212e5e41b8a51c3973e38cb}\label{namespacerapidjson_1_1internal_af565c1edf212e5e41b8a51c3973e38cb}} 
+\index{rapidjson::internal@{rapidjson::internal}!u64toa@{u64toa}}
+\index{u64toa@{u64toa}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{u64toa()}{u64toa()}}
+{\footnotesize\ttfamily char$\ast$ rapidjson\+::internal\+::u64toa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{value,  }\item[{char $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 126 of file itoa.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126                                                   \{}
+\DoxyCodeLine{127     \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(buffer != 0);}
+\DoxyCodeLine{128     \textcolor{keyword}{const} \textcolor{keywordtype}{char}* cDigitsLut = \mbox{\hyperlink{namespacerapidjson_1_1internal_a2220f7bb22e11be3bc6f20291659c545}{GetDigitsLut}}();}
+\DoxyCodeLine{129     \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}}  kTen8 = 100000000;}
+\DoxyCodeLine{130     \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}}  kTen9 = kTen8 * 10;}
+\DoxyCodeLine{131     \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} kTen10 = kTen8 * 100;}
+\DoxyCodeLine{132     \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} kTen11 = kTen8 * 1000;}
+\DoxyCodeLine{133     \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} kTen12 = kTen8 * 10000;}
+\DoxyCodeLine{134     \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} kTen13 = kTen8 * 100000;}
+\DoxyCodeLine{135     \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} kTen14 = kTen8 * 1000000;}
+\DoxyCodeLine{136     \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} kTen15 = kTen8 * 10000000;}
+\DoxyCodeLine{137     \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} kTen16 = kTen8 * kTen8;}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139     \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} < kTen8) \{}
+\DoxyCodeLine{140         \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} v = static\_cast<uint32\_t>(\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}});}
+\DoxyCodeLine{141         \textcolor{keywordflow}{if} (v < 10000) \{}
+\DoxyCodeLine{142             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d1 = (v / 100) << 1;}
+\DoxyCodeLine{143             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d2 = (v \% 100) << 1;}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145             \textcolor{keywordflow}{if} (v >= 1000)}
+\DoxyCodeLine{146                 *buffer++ = cDigitsLut[d1];}
+\DoxyCodeLine{147             \textcolor{keywordflow}{if} (v >= 100)}
+\DoxyCodeLine{148                 *buffer++ = cDigitsLut[d1 + 1];}
+\DoxyCodeLine{149             \textcolor{keywordflow}{if} (v >= 10)}
+\DoxyCodeLine{150                 *buffer++ = cDigitsLut[d2];}
+\DoxyCodeLine{151             *buffer++ = cDigitsLut[d2 + 1];}
+\DoxyCodeLine{152         \}}
+\DoxyCodeLine{153         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{154             \textcolor{comment}{// value = bbbbcccc}}
+\DoxyCodeLine{155             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} b = v / 10000;}
+\DoxyCodeLine{156             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} c = v \% 10000;}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d1 = (b / 100) << 1;}
+\DoxyCodeLine{159             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d2 = (b \% 100) << 1;}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{161             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d3 = (c / 100) << 1;}
+\DoxyCodeLine{162             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d4 = (c \% 100) << 1;}
+\DoxyCodeLine{163 }
+\DoxyCodeLine{164             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= 10000000)}
+\DoxyCodeLine{165                 *buffer++ = cDigitsLut[d1];}
+\DoxyCodeLine{166             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= 1000000)}
+\DoxyCodeLine{167                 *buffer++ = cDigitsLut[d1 + 1];}
+\DoxyCodeLine{168             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= 100000)}
+\DoxyCodeLine{169                 *buffer++ = cDigitsLut[d2];}
+\DoxyCodeLine{170             *buffer++ = cDigitsLut[d2 + 1];}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{172             *buffer++ = cDigitsLut[d3];}
+\DoxyCodeLine{173             *buffer++ = cDigitsLut[d3 + 1];}
+\DoxyCodeLine{174             *buffer++ = cDigitsLut[d4];}
+\DoxyCodeLine{175             *buffer++ = cDigitsLut[d4 + 1];}
+\DoxyCodeLine{176         \}}
+\DoxyCodeLine{177     \}}
+\DoxyCodeLine{178     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} < kTen16) \{}
+\DoxyCodeLine{179         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} v0 = static\_cast<uint32\_t>(\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} / kTen8);}
+\DoxyCodeLine{180         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} v1 = static\_cast<uint32\_t>(\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} \% kTen8);}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{182         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} b0 = v0 / 10000;}
+\DoxyCodeLine{183         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} c0 = v0 \% 10000;}
+\DoxyCodeLine{184 }
+\DoxyCodeLine{185         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d1 = (b0 / 100) << 1;}
+\DoxyCodeLine{186         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d2 = (b0 \% 100) << 1;}
+\DoxyCodeLine{187 }
+\DoxyCodeLine{188         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d3 = (c0 / 100) << 1;}
+\DoxyCodeLine{189         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d4 = (c0 \% 100) << 1;}
+\DoxyCodeLine{190 }
+\DoxyCodeLine{191         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} b1 = v1 / 10000;}
+\DoxyCodeLine{192         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} c1 = v1 \% 10000;}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d5 = (b1 / 100) << 1;}
+\DoxyCodeLine{195         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d6 = (b1 \% 100) << 1;}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d7 = (c1 / 100) << 1;}
+\DoxyCodeLine{198         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d8 = (c1 \% 100) << 1;}
+\DoxyCodeLine{199 }
+\DoxyCodeLine{200         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= kTen15)}
+\DoxyCodeLine{201             *buffer++ = cDigitsLut[d1];}
+\DoxyCodeLine{202         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= kTen14)}
+\DoxyCodeLine{203             *buffer++ = cDigitsLut[d1 + 1];}
+\DoxyCodeLine{204         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= kTen13)}
+\DoxyCodeLine{205             *buffer++ = cDigitsLut[d2];}
+\DoxyCodeLine{206         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= kTen12)}
+\DoxyCodeLine{207             *buffer++ = cDigitsLut[d2 + 1];}
+\DoxyCodeLine{208         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= kTen11)}
+\DoxyCodeLine{209             *buffer++ = cDigitsLut[d3];}
+\DoxyCodeLine{210         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= kTen10)}
+\DoxyCodeLine{211             *buffer++ = cDigitsLut[d3 + 1];}
+\DoxyCodeLine{212         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} >= kTen9)}
+\DoxyCodeLine{213             *buffer++ = cDigitsLut[d4];}
+\DoxyCodeLine{214 }
+\DoxyCodeLine{215         *buffer++ = cDigitsLut[d4 + 1];}
+\DoxyCodeLine{216         *buffer++ = cDigitsLut[d5];}
+\DoxyCodeLine{217         *buffer++ = cDigitsLut[d5 + 1];}
+\DoxyCodeLine{218         *buffer++ = cDigitsLut[d6];}
+\DoxyCodeLine{219         *buffer++ = cDigitsLut[d6 + 1];}
+\DoxyCodeLine{220         *buffer++ = cDigitsLut[d7];}
+\DoxyCodeLine{221         *buffer++ = cDigitsLut[d7 + 1];}
+\DoxyCodeLine{222         *buffer++ = cDigitsLut[d8];}
+\DoxyCodeLine{223         *buffer++ = cDigitsLut[d8 + 1];}
+\DoxyCodeLine{224     \}}
+\DoxyCodeLine{225     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{226         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} = static\_cast<uint32\_t>(\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} / kTen16); \textcolor{comment}{// 1 to 1844}}
+\DoxyCodeLine{227         \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} \%= kTen16;}
+\DoxyCodeLine{228 }
+\DoxyCodeLine{229         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} < 10)}
+\DoxyCodeLine{230             *buffer++ = static\_cast<char>(\textcolor{charliteral}{'0'} + static\_cast<char>(\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}));}
+\DoxyCodeLine{231         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} < 100) \{}
+\DoxyCodeLine{232             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} i = \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} << 1;}
+\DoxyCodeLine{233             *buffer++ = cDigitsLut[i];}
+\DoxyCodeLine{234             *buffer++ = cDigitsLut[i + 1];}
+\DoxyCodeLine{235         \}}
+\DoxyCodeLine{236         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} < 1000) \{}
+\DoxyCodeLine{237             *buffer++ = static\_cast<char>(\textcolor{charliteral}{'0'} + static\_cast<char>(\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} / 100));}
+\DoxyCodeLine{238 }
+\DoxyCodeLine{239             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} i = (\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} \% 100) << 1;}
+\DoxyCodeLine{240             *buffer++ = cDigitsLut[i];}
+\DoxyCodeLine{241             *buffer++ = cDigitsLut[i + 1];}
+\DoxyCodeLine{242         \}}
+\DoxyCodeLine{243         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{244             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} i = (\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} / 100) << 1;}
+\DoxyCodeLine{245             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} j = (\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} \% 100) << 1;}
+\DoxyCodeLine{246             *buffer++ = cDigitsLut[i];}
+\DoxyCodeLine{247             *buffer++ = cDigitsLut[i + 1];}
+\DoxyCodeLine{248             *buffer++ = cDigitsLut[j];}
+\DoxyCodeLine{249             *buffer++ = cDigitsLut[j + 1];}
+\DoxyCodeLine{250         \}}
+\DoxyCodeLine{251 }
+\DoxyCodeLine{252         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} v0 = static\_cast<uint32\_t>(\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} / kTen8);}
+\DoxyCodeLine{253         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} v1 = static\_cast<uint32\_t>(\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}} \% kTen8);}
+\DoxyCodeLine{254 }
+\DoxyCodeLine{255         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} b0 = v0 / 10000;}
+\DoxyCodeLine{256         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} c0 = v0 \% 10000;}
+\DoxyCodeLine{257 }
+\DoxyCodeLine{258         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d1 = (b0 / 100) << 1;}
+\DoxyCodeLine{259         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d2 = (b0 \% 100) << 1;}
+\DoxyCodeLine{260 }
+\DoxyCodeLine{261         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d3 = (c0 / 100) << 1;}
+\DoxyCodeLine{262         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d4 = (c0 \% 100) << 1;}
+\DoxyCodeLine{263 }
+\DoxyCodeLine{264         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} b1 = v1 / 10000;}
+\DoxyCodeLine{265         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} c1 = v1 \% 10000;}
+\DoxyCodeLine{266 }
+\DoxyCodeLine{267         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d5 = (b1 / 100) << 1;}
+\DoxyCodeLine{268         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d6 = (b1 \% 100) << 1;}
+\DoxyCodeLine{269 }
+\DoxyCodeLine{270         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d7 = (c1 / 100) << 1;}
+\DoxyCodeLine{271         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} d8 = (c1 \% 100) << 1;}
+\DoxyCodeLine{272 }
+\DoxyCodeLine{273         *buffer++ = cDigitsLut[d1];}
+\DoxyCodeLine{274         *buffer++ = cDigitsLut[d1 + 1];}
+\DoxyCodeLine{275         *buffer++ = cDigitsLut[d2];}
+\DoxyCodeLine{276         *buffer++ = cDigitsLut[d2 + 1];}
+\DoxyCodeLine{277         *buffer++ = cDigitsLut[d3];}
+\DoxyCodeLine{278         *buffer++ = cDigitsLut[d3 + 1];}
+\DoxyCodeLine{279         *buffer++ = cDigitsLut[d4];}
+\DoxyCodeLine{280         *buffer++ = cDigitsLut[d4 + 1];}
+\DoxyCodeLine{281         *buffer++ = cDigitsLut[d5];}
+\DoxyCodeLine{282         *buffer++ = cDigitsLut[d5 + 1];}
+\DoxyCodeLine{283         *buffer++ = cDigitsLut[d6];}
+\DoxyCodeLine{284         *buffer++ = cDigitsLut[d6 + 1];}
+\DoxyCodeLine{285         *buffer++ = cDigitsLut[d7];}
+\DoxyCodeLine{286         *buffer++ = cDigitsLut[d7 + 1];}
+\DoxyCodeLine{287         *buffer++ = cDigitsLut[d8];}
+\DoxyCodeLine{288         *buffer++ = cDigitsLut[d8 + 1];}
+\DoxyCodeLine{289     \}}
+\DoxyCodeLine{290 }
+\DoxyCodeLine{291     \textcolor{keywordflow}{return} buffer;}
+\DoxyCodeLine{292 \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::a, Get\+Digits\+Lut(), R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, and rapidjson\+::value.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Token\+Helper$<$ Stack, Ch $>$\+::\+Append\+Index\+Token(), rapidjson\+::internal\+::\+Token\+Helper$<$ Stack, char $>$\+::\+Append\+Index\+Token(), i64toa(), and rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Uint64().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_adacfea46aca31aae732f952a9872b6e6}\label{namespacerapidjson_1_1internal_adacfea46aca31aae732f952a9872b6e6}} 
+\index{rapidjson::internal@{rapidjson::internal}!WriteExponent@{WriteExponent}}
+\index{WriteExponent@{WriteExponent}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{WriteExponent()}{WriteExponent()}}
+{\footnotesize\ttfamily char$\ast$ rapidjson\+::internal\+::\+Write\+Exponent (\begin{DoxyParamCaption}\item[{int}]{K,  }\item[{char $\ast$}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 126 of file dtoa.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126                                                 \{}
+\DoxyCodeLine{127     \textcolor{keywordflow}{if} (K < 0) \{}
+\DoxyCodeLine{128         *buffer++ = \textcolor{charliteral}{'-'};}
+\DoxyCodeLine{129         K = -K;}
+\DoxyCodeLine{130     \}}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132     \textcolor{keywordflow}{if} (K >= 100) \{}
+\DoxyCodeLine{133         *buffer++ = static\_cast<char>(\textcolor{charliteral}{'0'} + static\_cast<char>(K / 100));}
+\DoxyCodeLine{134         K \%= 100;}
+\DoxyCodeLine{135         \textcolor{keyword}{const} \textcolor{keywordtype}{char}* d = \mbox{\hyperlink{namespacerapidjson_1_1internal_a2220f7bb22e11be3bc6f20291659c545}{GetDigitsLut}}() + K * 2;}
+\DoxyCodeLine{136         *buffer++ = d[0];}
+\DoxyCodeLine{137         *buffer++ = d[1];}
+\DoxyCodeLine{138     \}}
+\DoxyCodeLine{139     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (K >= 10) \{}
+\DoxyCodeLine{140         \textcolor{keyword}{const} \textcolor{keywordtype}{char}* d = \mbox{\hyperlink{namespacerapidjson_1_1internal_a2220f7bb22e11be3bc6f20291659c545}{GetDigitsLut}}() + K * 2;}
+\DoxyCodeLine{141         *buffer++ = d[0];}
+\DoxyCodeLine{142         *buffer++ = d[1];}
+\DoxyCodeLine{143     \}}
+\DoxyCodeLine{144     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{145         *buffer++ = static\_cast<char>(\textcolor{charliteral}{'0'} + static\_cast<char>(K));}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147     \textcolor{keywordflow}{return} buffer;}
+\DoxyCodeLine{148 \}}
+
+\end{DoxyCode}
+
+
+References Get\+Digits\+Lut().
+
+
+
+Referenced by Prettify().
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a6198792292d27358dbe5595ecaed21d9}\label{namespacerapidjson_1_1internal_a6198792292d27358dbe5595ecaed21d9}} 
+\index{rapidjson::internal@{rapidjson::internal}!kRegexInvalidRange@{kRegexInvalidRange}}
+\index{kRegexInvalidRange@{kRegexInvalidRange}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{kRegexInvalidRange}{kRegexInvalidRange}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} rapidjson\+::internal\+::k\+Regex\+Invalid\+Range = $\sim$\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}(0)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 76 of file regex.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Generic\+Regex\+Search$<$ Regex\+Type, Allocator $>$\+::\+Match\+Range(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+New\+Range(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+New\+State(), and rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Parse\+Range().
+
+\mbox{\Hypertarget{namespacerapidjson_1_1internal_a5e338a291ef3558dbba9ba6eb2b346ea}\label{namespacerapidjson_1_1internal_a5e338a291ef3558dbba9ba6eb2b346ea}} 
+\index{rapidjson::internal@{rapidjson::internal}!kRegexInvalidState@{kRegexInvalidState}}
+\index{kRegexInvalidState@{kRegexInvalidState}!rapidjson::internal@{rapidjson::internal}}
+\subsubsection{\texorpdfstring{kRegexInvalidState}{kRegexInvalidState}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} rapidjson\+::internal\+::k\+Regex\+Invalid\+State = $\sim$\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}(0)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Represents an invalid index in \mbox{\hyperlink{structrapidjson_1_1internal_1_1_generic_regex_1_1_state_a6df788d7a28b25c65a20068dfdbe2fe1}{Generic\+Regex\+::\+State\+::out}}, out1. 
+
+
+
+Definition at line 75 of file regex.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Generic\+Regex\+Search$<$ Regex\+Type, Allocator $>$\+::\+Add\+State(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Append(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Clone\+Top\+Operand(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Eval(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Is\+Valid(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Parse(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Patch(), and rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Push\+Operand().
+

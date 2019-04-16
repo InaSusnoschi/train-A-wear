@@ -11,9 +11,8 @@ import android.widget.TextView;
 import android.text.TextWatcher;
 import android.widget.Toast;
 
-//import static com.example.trainawearapplication.R.id.editAge;
-//import static com.example.trainawearapplication.R.id.editHeight;
-//import static com.example.trainawearapplication.R.id.editWeight;
+import static com.example.trainawearapplication.R.id.editAge;
+import static com.example.trainawearapplication.R.id.editHeight;
 
 /**
  * <h1> Setup Activity</h1>
@@ -31,20 +30,22 @@ public class Setup extends AppCompatActivity {
     int num1;
     int num2;
     int num3;
-    EditText height, weight, age;
+    EditText height;
+    EditText weight;
+    EditText age;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        setContentView(R.layout.activity_display_message);
+        setContentView(R.layout.activity_setup);
 
-        height = findViewById(R.id.editHeight);
+        height = findViewById(editHeight);
         weight = findViewById(R.id.editWeight);
-        age = findViewById(R.id.editAge);
+        age = findViewById(editAge);
         // text watchers
-        height.addTextChangedListener(textHeightWatcher);
+        height.addTextChangedListener(textWatcher);
         weight.addTextChangedListener(textWeightWatcher);
         age.addTextChangedListener(textAgeWatcher);
 
@@ -54,14 +55,22 @@ public class Setup extends AppCompatActivity {
         //Register onClick listener
         done.setOnClickListener(doneButtonListener);
 
+        /** This gets the parameters values and checks they are the right format*/
+        //height = findViewById(R.id.enterHeight);
+
+        /**
+         * Get the Intent that started this activity and extract the string
+         */
+
         Intent setup = getIntent();
 
-         // Capture the layout's TextView and set the string as its text
-
+        /**
+         * Capture the layout's TextView and set the string as its text
+         */
         TextView textView = findViewById(R.id.textRequest);
     }
 
-    TextWatcher textHeightWatcher = new TextWatcher(){
+    TextWatcher textWatcher = new TextWatcher(){
 
         /**
          * TextWatcher method is used to check the parameters input by the users are within specified limits
@@ -110,7 +119,7 @@ public class Setup extends AppCompatActivity {
 
     // SECOND TEXT WATCHER: weight
 
-    TextWatcher textWeightWatcher = new TextWatcher() {
+    TextWatcher textWeightWatcher =new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s2, int start2, int count2, int after2) {
 
@@ -143,8 +152,10 @@ public class Setup extends AppCompatActivity {
 
     // TEXT watcher for Age
 
+    TextWatcher textAgeWatcher;
 
-    TextWatcher textAgeWatcher = new TextWatcher() {
+    {
+        textAgeWatcher = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s3, int start3, int count3, int after3) {
 
@@ -185,7 +196,7 @@ public class Setup extends AppCompatActivity {
                 }
             }
         };
-
+    }
 
 
     /**

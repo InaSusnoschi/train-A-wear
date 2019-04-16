@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logosmall.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">train-A-wear
+   &#160;<span id="projectnumber">2.1</span>
    </div>
+   <div id="projectbrief">Real time feedback application with wireless connection to three IMUs</div>
   </td>
  </tr>
  </tbody>
@@ -275,9 +278,6 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int rapidjson::internal::CheckWithinHalfULP </td>
@@ -303,11 +303,6 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="strtod_8h_source.html#l00056">56</a> of file <a class="el" href="strtod_8h_source.html">strtod.h</a>.</p>
@@ -317,16 +312,6 @@ Variables</h2></td></tr>
 <p class="reference">References <a class="el" href="biginteger_8h_source.html#l00208">rapidjson::internal::BigInteger::Compare()</a>, <a class="el" href="biginteger_8h_source.html#l00186">rapidjson::internal::BigInteger::Difference()</a>, <a class="el" href="ieee754_8h_source.html#l00048">rapidjson::internal::Double::IntegerExponent()</a>, <a class="el" href="ieee754_8h_source.html#l00047">rapidjson::internal::Double::IntegerSignificand()</a>, <a class="el" href="strtod_8h_source.html#l00049">Min3()</a>, and <a class="el" href="biginteger_8h_source.html#l00162">rapidjson::internal::BigInteger::MultiplyPow5()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="strtod_8h_source.html#l00208">StrtodBigInteger()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a1c9faaa8ff1461a84ee35c04c7b926c5_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a1c9faaa8ff1461a84ee35c04c7b926c5_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a1c9faaa8ff1461a84ee35c04c7b926c5_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a1c9faaa8ff1461a84ee35c04c7b926c5_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -335,9 +320,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int rapidjson::internal::CountDecimalDigit32 </td>
@@ -347,21 +329,11 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="dtoa_8h_source.html#l00044">44</a> of file <a class="el" href="dtoa_8h_source.html">dtoa.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                           {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// Simple pure C++ implementation was faster than __builtin_clz version in this situation.</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span> (n &lt; 10) <span class="keywordflow">return</span> 1;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (n &lt; 100) <span class="keywordflow">return</span> 2;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span> (n &lt; 1000) <span class="keywordflow">return</span> 3;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (n &lt; 10000) <span class="keywordflow">return</span> 4;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (n &lt; 100000) <span class="keywordflow">return</span> 5;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (n &lt; 1000000) <span class="keywordflow">return</span> 6;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (n &lt; 10000000) <span class="keywordflow">return</span> 7;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> (n &lt; 100000000) <span class="keywordflow">return</span> 8;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Will not reach 10 digits in DigitGen()</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//if (n &lt; 1000000000) return 9;</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//return 10;</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> 9;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div></div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="dtoa_8h_source.html#l00060">DigitGen()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_ace8d1c16dab8600e0641c4fb6c81aff7_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_ace8d1c16dab8600e0641c4fb6c81aff7_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -414,9 +386,6 @@ template&lt;typename Encoding &gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void rapidjson::internal::DigitGen </td>
@@ -460,11 +429,6 @@ template&lt;typename Encoding &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="dtoa_8h_source.html#l00060">60</a> of file <a class="el" href="dtoa_8h_source.html">dtoa.h</a>.</p>
@@ -476,16 +440,6 @@ template&lt;typename Encoding &gt; </div>
 <p class="reference">References <a class="el" href="dtoa_8h_source.html#l00044">CountDecimalDigit32()</a>, <a class="el" href="diyfp_8h_source.html#l00172">rapidjson::internal::DiyFp::e</a>, <a class="el" href="diyfp_8h_source.html#l00171">rapidjson::internal::DiyFp::f</a>, and <a class="el" href="dtoa_8h_source.html#l00035">GrisuRound()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="dtoa_8h_source.html#l00112">Grisu2()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a6ba68d7defea7ccc4f8aa2feeafeccde_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a6ba68d7defea7ccc4f8aa2feeafeccde_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a6ba68d7defea7ccc4f8aa2feeafeccde_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a6ba68d7defea7ccc4f8aa2feeafeccde_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -494,9 +448,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">char* rapidjson::internal::dtoa </td>
@@ -522,11 +473,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="dtoa_8h_source.html#l00216">216</a> of file <a class="el" href="dtoa_8h_source.html">dtoa.h</a>.</p>
@@ -538,16 +484,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="dtoa_8h_source.html#l00112">Grisu2()</a>, <a class="el" href="ieee754_8h_source.html#l00045">rapidjson::internal::Double::IsZero()</a>, <a class="el" href="dtoa_8h_source.html#l00150">Prettify()</a>, <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>, <a class="el" href="ieee754_8h_source.html#l00037">rapidjson::internal::Double::Sign()</a>, and <a class="el" href="pointer_8h_source.html#l01282">rapidjson::value</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="writer_8h_source.html#l00348">rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::WriteDouble()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a51f3497ab9a7f691e06329409d6b5191_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a51f3497ab9a7f691e06329409d6b5191_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a51f3497ab9a7f691e06329409d6b5191_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a51f3497ab9a7f691e06329409d6b5191_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -556,9 +492,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double rapidjson::internal::FastPath </td>
@@ -578,11 +511,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="strtod_8h_source.html#l00028">28</a> of file <a class="el" href="strtod_8h_source.html">strtod.h</a>.</p>
@@ -591,16 +519,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="pow10_8h_source.html#l00028">Pow10()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="strtod_8h_source.html#l00113">StrtodFast()</a>, and <a class="el" href="strtod_8h_source.html#l00037">StrtodNormalPrecision()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_aadfc08b386baffa85f618e0ef0e2f188_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_aadfc08b386baffa85f618e0ef0e2f188_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_aadfc08b386baffa85f618e0ef0e2f188_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_aadfc08b386baffa85f618e0ef0e2f188_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -609,9 +527,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structrapidjson_1_1internal_1_1_diy_fp.html">DiyFp</a> rapidjson::internal::GetCachedPower </td>
@@ -631,11 +546,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="diyfp_8h_source.html#l00238">238</a> of file <a class="el" href="diyfp_8h_source.html">diyfp.h</a>.</p>
@@ -644,16 +554,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="diyfp_8h_source.html#l00175">GetCachedPowerByIndex()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="dtoa_8h_source.html#l00112">Grisu2()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a7c58ee2ca622624367808fa3a40dc9e3_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a7c58ee2ca622624367808fa3a40dc9e3_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a7c58ee2ca622624367808fa3a40dc9e3_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a7c58ee2ca622624367808fa3a40dc9e3_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -662,9 +562,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structrapidjson_1_1internal_1_1_diy_fp.html">DiyFp</a> rapidjson::internal::GetCachedPower10 </td>
@@ -684,11 +581,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="diyfp_8h_source.html#l00252">252</a> of file <a class="el" href="diyfp_8h_source.html">diyfp.h</a>.</p>
@@ -698,16 +590,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="diyfp_8h_source.html#l00175">GetCachedPowerByIndex()</a>, and <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="strtod_8h_source.html#l00131">StrtodDiyFp()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a21de5a1527938da9b57c84699ce519e7_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a21de5a1527938da9b57c84699ce519e7_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a21de5a1527938da9b57c84699ce519e7_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a21de5a1527938da9b57c84699ce519e7_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -716,9 +598,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structrapidjson_1_1internal_1_1_diy_fp.html">DiyFp</a> rapidjson::internal::GetCachedPowerByIndex </td>
@@ -728,11 +607,6 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="diyfp_8h_source.html#l00175">175</a> of file <a class="el" href="diyfp_8h_source.html">diyfp.h</a>.</p>
@@ -744,11 +618,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>, and <a class="el" href="rapidjson_8h_source.html#l00289">RAPIDJSON_UINT64_C2</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="diyfp_8h_source.html#l00238">GetCachedPower()</a>, and <a class="el" href="diyfp_8h_source.html#l00252">GetCachedPower10()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a25a77e349cce869daae13c1bdd058d4a_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a25a77e349cce869daae13c1bdd058d4a_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -757,9 +626,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const char* rapidjson::internal::GetDigitsLut </td>
@@ -768,21 +634,11 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="itoa_8h_source.html#l00023">23</a> of file <a class="el" href="itoa_8h_source.html">itoa.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                  {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> cDigitsLut[200] = {</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="charliteral">&#39;9&#39;</span>,<span class="charliteral">&#39;0&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,<span class="charliteral">&#39;1&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,<span class="charliteral">&#39;2&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,<span class="charliteral">&#39;3&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,<span class="charliteral">&#39;4&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,<span class="charliteral">&#39;5&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,<span class="charliteral">&#39;6&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,<span class="charliteral">&#39;7&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,<span class="charliteral">&#39;8&#39;</span>,<span class="charliteral">&#39;9&#39;</span>,<span class="charliteral">&#39;9&#39;</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> cDigitsLut;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div></div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="itoa_8h_source.html#l00039">u32toa()</a>, <a class="el" href="itoa_8h_source.html#l00126">u64toa()</a>, and <a class="el" href="dtoa_8h_source.html#l00126">WriteExponent()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a2220f7bb22e11be3bc6f20291659c545_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a2220f7bb22e11be3bc6f20291659c545_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -791,9 +647,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void rapidjson::internal::Grisu2 </td>
@@ -825,11 +678,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="dtoa_8h_source.html#l00112">112</a> of file <a class="el" href="dtoa_8h_source.html">dtoa.h</a>.</p>
@@ -840,16 +688,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="dtoa_8h_source.html#l00060">DigitGen()</a>, <a class="el" href="diyfp_8h_source.html#l00172">rapidjson::internal::DiyFp::e</a>, <a class="el" href="diyfp_8h_source.html#l00171">rapidjson::internal::DiyFp::f</a>, <a class="el" href="diyfp_8h_source.html#l00238">GetCachedPower()</a>, <a class="el" href="diyfp_8h_source.html#l00102">rapidjson::internal::DiyFp::Normalize()</a>, <a class="el" href="diyfp_8h_source.html#l00132">rapidjson::internal::DiyFp::NormalizedBoundaries()</a>, and <a class="el" href="pointer_8h_source.html#l01282">rapidjson::value</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="dtoa_8h_source.html#l00216">dtoa()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a74828fd6e9a874421231ef346b1126f3_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a74828fd6e9a874421231ef346b1126f3_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a74828fd6e9a874421231ef346b1126f3_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a74828fd6e9a874421231ef346b1126f3_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -858,9 +696,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void rapidjson::internal::GrisuRound </td>
@@ -904,22 +739,12 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>closer </p>
 
 <p class="definition">Definition at line <a class="el" href="dtoa_8h_source.html#l00035">35</a> of file <a class="el" href="dtoa_8h_source.html">dtoa.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                                                                                {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">while</span> (rest &lt; wp_w &amp;&amp; delta - rest &gt;= ten_kappa &amp;&amp;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;           (rest + ten_kappa &lt; wp_w ||  </div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            wp_w - rest &gt; rest + ten_kappa - wp_w)) {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        buffer[len - 1]--;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        rest += ten_kappa;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div></div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="dtoa_8h_source.html#l00060">DigitGen()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a7d7397686d2c8c57cf11d9afae17bb4d_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a7d7397686d2c8c57cf11d9afae17bb4d_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -928,9 +753,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">char* rapidjson::internal::i32toa </td>
@@ -950,11 +772,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="itoa_8h_source.html#l00115">115</a> of file <a class="el" href="itoa_8h_source.html">itoa.h</a>.</p>
@@ -966,16 +783,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>, <a class="el" href="itoa_8h_source.html#l00039">u32toa()</a>, and <a class="el" href="pointer_8h_source.html#l01282">rapidjson::value</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="writer_8h_source.html#l00312">rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::WriteInt()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_af2da6e17b77cf999be3b84d06e652d14_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_af2da6e17b77cf999be3b84d06e652d14_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_af2da6e17b77cf999be3b84d06e652d14_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_af2da6e17b77cf999be3b84d06e652d14_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -984,9 +791,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">char* rapidjson::internal::i64toa </td>
@@ -1006,11 +810,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="itoa_8h_source.html#l00294">294</a> of file <a class="el" href="itoa_8h_source.html">itoa.h</a>.</p>
@@ -1022,16 +821,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>, <a class="el" href="itoa_8h_source.html#l00126">u64toa()</a>, and <a class="el" href="pointer_8h_source.html#l01282">rapidjson::value</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="writer_8h_source.html#l00330">rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::WriteInt64()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a676fae3f0a9bc9a5e7646e31097a6f34_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a676fae3f0a9bc9a5e7646e31097a6f34_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a676fae3f0a9bc9a5e7646e31097a6f34_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a676fae3f0a9bc9a5e7646e31097a6f34_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1042,9 +831,6 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">T rapidjson::internal::Min3 </td>
@@ -1070,11 +856,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="strtod_8h_source.html#l00049">49</a> of file <a class="el" href="strtod_8h_source.html">strtod.h</a>.</p>
@@ -1083,11 +864,6 @@ template&lt;typename T &gt; </div>
 <p class="reference">References <a class="el" href="pointer_8h_source.html#l01181">rapidjson::a</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="strtod_8h_source.html#l00056">CheckWithinHalfULP()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a7d72423e8173159a0d90cac2f2ef6b8a_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a7d72423e8173159a0d90cac2f2ef6b8a_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1096,9 +872,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double rapidjson::internal::Pow10 </td>
@@ -1108,11 +881,6 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Computes integer powers of 10 in double (10.0^n). </p>
@@ -1130,11 +898,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="strtod_8h_source.html#l00028">FastPath()</a>, and <a class="el" href="strtod_8h_source.html#l00113">StrtodFast()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_aba2871b1440237f69acb5ae602407bf9_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_aba2871b1440237f69acb5ae602407bf9_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1143,9 +906,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">char* rapidjson::internal::Prettify </td>
@@ -1177,11 +937,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="dtoa_8h_source.html#l00150">150</a> of file <a class="el" href="dtoa_8h_source.html">dtoa.h</a>.</p>
@@ -1190,16 +945,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="dtoa_8h_source.html#l00126">WriteExponent()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="dtoa_8h_source.html#l00216">dtoa()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a7865c7734bca9cbbf66bdc7c0d164a77_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a7865c7734bca9cbbf66bdc7c0d164a77_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a7865c7734bca9cbbf66bdc7c0d164a77_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a7865c7734bca9cbbf66bdc7c0d164a77_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1210,9 +955,6 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Ch &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacerapidjson.html#a44eb33eaa523e36d466b1ced64b85c84">SizeType</a> rapidjson::internal::StrLen </td>
@@ -1222,11 +964,6 @@ template&lt;typename Ch &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Custom strlen() which works on different character types. </p>
@@ -1252,11 +989,6 @@ template&lt;typename Ch &gt; </div>
 <p class="reference">References <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="pointer_8h_source.html#l00114">rapidjson::GenericPointer&lt; ValueType, Allocator &gt;::GenericPointer()</a>, <a class="el" href="prettywriter_8h_source.html#l00188">rapidjson::PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Key()</a>, <a class="el" href="writer_8h_source.html#l00259">rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Key()</a>, <a class="el" href="document_8h_source.html#l00333">rapidjson::GenericStringRef&lt; CharType &gt;::NotNullStrLen()</a>, <a class="el" href="prettywriter_8h_source.html#l00187">rapidjson::PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::String()</a>, and <a class="el" href="writer_8h_source.html#l00258">rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::String()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_abe45d9242ecab3b9b58117961f57dc2f_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_abe45d9242ecab3b9b58117961f57dc2f_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1267,9 +999,6 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacerapidjson.html#a44eb33eaa523e36d466b1ced64b85c84">SizeType</a> rapidjson::internal::StrLen </td>
@@ -1279,11 +1008,6 @@ template&lt;&gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="strfunc_8h_source.html#l00039">39</a> of file <a class="el" href="strfunc_8h_source.html">strfunc.h</a>.</p>
@@ -1298,9 +1022,6 @@ template&lt;&gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacerapidjson.html#a44eb33eaa523e36d466b1ced64b85c84">SizeType</a> rapidjson::internal::StrLen </td>
@@ -1310,11 +1031,6 @@ template&lt;&gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="strfunc_8h_source.html#l00044">44</a> of file <a class="el" href="strfunc_8h_source.html">strfunc.h</a>.</p>
@@ -1327,9 +1043,6 @@ template&lt;&gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double rapidjson::internal::StrtodBigInteger </td>
@@ -1361,11 +1074,6 @@ template&lt;&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="strtod_8h_source.html#l00208">208</a> of file <a class="el" href="strtod_8h_source.html">strtod.h</a>.</p>
@@ -1376,16 +1084,6 @@ template&lt;&gt; </div>
 <p class="reference">References <a class="el" href="pointer_8h_source.html#l01181">rapidjson::a</a>, <a class="el" href="strtod_8h_source.html#l00056">CheckWithinHalfULP()</a>, and <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="strtod_8h_source.html#l00226">StrtodFullPrecision()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_aeb0c7910094111c91cd31339bf707950_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_aeb0c7910094111c91cd31339bf707950_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_aeb0c7910094111c91cd31339bf707950_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_aeb0c7910094111c91cd31339bf707950_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1394,9 +1092,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool rapidjson::internal::StrtodDiyFp </td>
@@ -1428,11 +1123,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="strtod_8h_source.html#l00131">131</a> of file <a class="el" href="strtod_8h_source.html">strtod.h</a>.</p>
@@ -1445,16 +1135,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="diyfp_8h_source.html#l00172">rapidjson::internal::DiyFp::e</a>, <a class="el" href="diyfp_8h_source.html#l00171">rapidjson::internal::DiyFp::f</a>, <a class="el" href="diyfp_8h_source.html#l00252">GetCachedPower10()</a>, <a class="el" href="diyfp_8h_source.html#l00102">rapidjson::internal::DiyFp::Normalize()</a>, <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>, <a class="el" href="rapidjson_8h_source.html#l00289">RAPIDJSON_UINT64_C2</a>, and <a class="el" href="diyfp_8h_source.html#l00141">rapidjson::internal::DiyFp::ToDouble()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="strtod_8h_source.html#l00226">StrtodFullPrecision()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a2005b2ac382e70120987b7889476d01f_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a2005b2ac382e70120987b7889476d01f_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a2005b2ac382e70120987b7889476d01f_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a2005b2ac382e70120987b7889476d01f_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1463,9 +1143,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool rapidjson::internal::StrtodFast </td>
@@ -1491,11 +1168,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="strtod_8h_source.html#l00113">113</a> of file <a class="el" href="strtod_8h_source.html">strtod.h</a>.</p>
@@ -1505,16 +1177,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="strtod_8h_source.html#l00028">FastPath()</a>, and <a class="el" href="pow10_8h_source.html#l00028">Pow10()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="strtod_8h_source.html#l00226">StrtodFullPrecision()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_acfd06fe2a2709ad372a373f0921e9571_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_acfd06fe2a2709ad372a373f0921e9571_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_acfd06fe2a2709ad372a373f0921e9571_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_acfd06fe2a2709ad372a373f0921e9571_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1523,9 +1185,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double rapidjson::internal::StrtodFullPrecision </td>
@@ -1569,11 +1228,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="strtod_8h_source.html#l00226">226</a> of file <a class="el" href="strtod_8h_source.html">strtod.h</a>.</p>
@@ -1585,16 +1239,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>, <a class="el" href="strtod_8h_source.html#l00208">StrtodBigInteger()</a>, <a class="el" href="strtod_8h_source.html#l00131">StrtodDiyFp()</a>, and <a class="el" href="strtod_8h_source.html#l00113">StrtodFast()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="reader_8h_source.html#l01454">rapidjson::GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseNumber()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_afdec628bd595f8aca4ff74ec9e3c88f2_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_afdec628bd595f8aca4ff74ec9e3c88f2_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_afdec628bd595f8aca4ff74ec9e3c88f2_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_afdec628bd595f8aca4ff74ec9e3c88f2_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1603,9 +1247,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double rapidjson::internal::StrtodNormalPrecision </td>
@@ -1625,11 +1266,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="strtod_8h_source.html#l00037">37</a> of file <a class="el" href="strtod_8h_source.html">strtod.h</a>.</p>
@@ -1638,16 +1274,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="strtod_8h_source.html#l00028">FastPath()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="reader_8h_source.html#l01454">rapidjson::GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::ParseNumber()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a0173579d8f2b3724583f64758beb8e69_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a0173579d8f2b3724583f64758beb8e69_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a0173579d8f2b3724583f64758beb8e69_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a0173579d8f2b3724583f64758beb8e69_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1658,9 +1284,6 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void rapidjson::internal::Swap </td>
@@ -1680,11 +1303,6 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Custom swap() to avoid dependency on C++ &lt;algorithm&gt; header. </p>
@@ -1702,11 +1320,6 @@ template&lt;typename T &gt; </div>
 <p class="reference">References <a class="el" href="pointer_8h_source.html#l01181">rapidjson::a</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="regex_8h_source.html#l00654">rapidjson::internal::GenericRegexSearch&lt; RegexType, Allocator &gt;::SearchWithAnchoring()</a>, <a class="el" href="stack_8h_source.html#l00090">rapidjson::internal::Stack&lt; StackAllocator &gt;::Swap()</a>, <a class="el" href="pointer_8h_source.html#l00208">rapidjson::GenericPointer&lt; ValueType, Allocator &gt;::Swap()</a>, and <a class="el" href="document_8h_source.html#l02206">rapidjson::GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;::Swap()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1715,9 +1328,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">char* rapidjson::internal::u32toa </td>
@@ -1737,11 +1347,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="itoa_8h_source.html#l00039">39</a> of file <a class="el" href="itoa_8h_source.html">itoa.h</a>.</p>
@@ -1754,16 +1359,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="pointer_8h_source.html#l01181">rapidjson::a</a>, <a class="el" href="itoa_8h_source.html#l00023">GetDigitsLut()</a>, <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>, and <a class="el" href="pointer_8h_source.html#l01282">rapidjson::value</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="schema_8h_source.html#l01446">rapidjson::internal::TokenHelper&lt; Stack, Ch &gt;::AppendIndexToken()</a>, <a class="el" href="schema_8h_source.html#l01458">rapidjson::internal::TokenHelper&lt; Stack, char &gt;::AppendIndexToken()</a>, <a class="el" href="itoa_8h_source.html#l00115">i32toa()</a>, and <a class="el" href="writer_8h_source.html#l00321">rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::WriteUint()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_ad5e42102d2ac70a691b3fdfdd2238e70_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_ad5e42102d2ac70a691b3fdfdd2238e70_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_ad5e42102d2ac70a691b3fdfdd2238e70_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_ad5e42102d2ac70a691b3fdfdd2238e70_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1772,9 +1367,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">char* rapidjson::internal::u64toa </td>
@@ -1794,11 +1386,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="itoa_8h_source.html#l00126">126</a> of file <a class="el" href="itoa_8h_source.html">itoa.h</a>.</p>
@@ -1812,16 +1399,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="pointer_8h_source.html#l01181">rapidjson::a</a>, <a class="el" href="itoa_8h_source.html#l00023">GetDigitsLut()</a>, <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>, and <a class="el" href="pointer_8h_source.html#l01282">rapidjson::value</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="schema_8h_source.html#l01446">rapidjson::internal::TokenHelper&lt; Stack, Ch &gt;::AppendIndexToken()</a>, <a class="el" href="schema_8h_source.html#l01458">rapidjson::internal::TokenHelper&lt; Stack, char &gt;::AppendIndexToken()</a>, <a class="el" href="itoa_8h_source.html#l00294">i64toa()</a>, and <a class="el" href="writer_8h_source.html#l00339">rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::WriteUint64()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_af565c1edf212e5e41b8a51c3973e38cb_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_af565c1edf212e5e41b8a51c3973e38cb_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_af565c1edf212e5e41b8a51c3973e38cb_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_af565c1edf212e5e41b8a51c3973e38cb_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1830,9 +1407,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">char* rapidjson::internal::WriteExponent </td>
@@ -1852,11 +1426,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="dtoa_8h_source.html#l00126">126</a> of file <a class="el" href="dtoa_8h_source.html">dtoa.h</a>.</p>
@@ -1865,16 +1434,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="itoa_8h_source.html#l00023">GetDigitsLut()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="dtoa_8h_source.html#l00150">Prettify()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_adacfea46aca31aae732f952a9872b6e6_cgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_adacfea46aca31aae732f952a9872b6e6_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespacerapidjson_1_1internal_adacfea46aca31aae732f952a9872b6e6_icgraph.png" border="0" usemap="#namespacerapidjson_1_1internal_adacfea46aca31aae732f952a9872b6e6_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1936,7 +1495,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2019 00:37:14 for train-A-wear by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

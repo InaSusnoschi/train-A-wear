@@ -1,0 +1,495 @@
+\hypertarget{classrapidjson_1_1internal_1_1_double}{}\section{rapidjson\+::internal\+::Double Class Reference}
+\label{classrapidjson_1_1internal_1_1_double}\index{rapidjson::internal::Double@{rapidjson::internal::Double}}
+
+
+{\ttfamily \#include $<$ieee754.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a6a806fb33921f079eac494f82aa041f7}{Double}} ()
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a7b18d4e93fd0bae8fcbc1fedf95c4edb}{Double}} (double d)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a8697b34333785e2b314f1ae09871652d}{Double}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} u)
+\item 
+double \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_ab2f141d811565e1a4a3c4d3ec6390981}{Value}} () const
+\item 
+\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_af193524f8f31ea11dca828e3df192e74}{Uint64\+Value}} () const
+\item 
+double \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a21819f1a5166c96c8c2fcfd924499d53}{Next\+Positive\+Double}} () const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a48bc9da5e0a79c25f107faefd3607125}{Sign}} () const
+\item 
+\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_acab4a6239a646ca3f6da460ddca20ea1}{Significand}} () const
+\item 
+int \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a7fc1b2b1a48d30b61636b12c47c928f4}{Exponent}} () const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_af8d174992b769af3631b926caafb5ebd}{Is\+Nan}} () const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a5a67f00ff8711f46aed0a6c888f57b80}{Is\+Inf}} () const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_aef914e3e67857f80a6463ee4afc540e0}{Is\+Nan\+Or\+Inf}} () const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a554e97e612896eeea1abcfb800145b81}{Is\+Normal}} () const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a5f8ef8b899b1c8ff33ba4c78ecaf85ba}{Is\+Zero}} () const
+\item 
+\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a91859964023326d3678b9b14b8dd2a16}{Integer\+Significand}} () const
+\item 
+int \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a5d75c8b17eb36703ea78d940b85c5364}{Integer\+Exponent}} () const
+\item 
+\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a26b58bad74356a267c137eb50aa21797}{To\+Bias}} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a44c3a36f884e47baf47ee0474ea65354}{Effective\+Significand\+Size}} (int order)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>double \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_aed3fd8bcaac96183232d6277bf7248c1}{d\_}}\\
+\>\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a7b3a81a2e3e15d230f023e7598205aa6}{k\+Significand\+Size}} = 52
+\item 
+static const int \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a98d3cd7a5e045d754913d998145dd5db}{k\+Exponent\+Bias}} = 0x3\+FF
+\item 
+static const int \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a7403414a98c493a539adbbc3cb58a1b3}{k\+Denormal\+Exponent}} = 1 -\/ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a98d3cd7a5e045d754913d998145dd5db}{k\+Exponent\+Bias}}
+\item 
+static const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_ace8ae4f049aa47ea645ebf305227cb88}{k\+Sign\+Mask}} = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x80000000 ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x00000000 ))
+\item 
+static const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a5e4e25bf99c4378e35ce6c435ecfb113}{k\+Exponent\+Mask}} = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x7\+F\+F00000 ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x00000000 ))
+\item 
+static const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a565ba85ac68c6a78da78b78e53c5326b}{k\+Significand\+Mask}} = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x000\+F\+F\+F\+F\+F ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x\+F\+F\+F\+F\+F\+F\+F\+F ))
+\item 
+static const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a9a209f4e38c947ba2fe18ca9479ce939}{k\+Hidden\+Bit}} = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x00100000 ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x00000000 ))
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file ieee754.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a6a806fb33921f079eac494f82aa041f7}\label{classrapidjson_1_1internal_1_1_double_a6a806fb33921f079eac494f82aa041f7}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!Double@{Double}}
+\index{Double@{Double}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{Double()}{Double()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily rapidjson\+::internal\+::\+Double\+::\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 25 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a7b18d4e93fd0bae8fcbc1fedf95c4edb}\label{classrapidjson_1_1internal_1_1_double_a7b18d4e93fd0bae8fcbc1fedf95c4edb}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!Double@{Double}}
+\index{Double@{Double}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{Double()}{Double()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily rapidjson\+::internal\+::\+Double\+::\+Double (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26 : \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_aed3fd8bcaac96183232d6277bf7248c1}{d\_}}(d) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a8697b34333785e2b314f1ae09871652d}\label{classrapidjson_1_1internal_1_1_double_a8697b34333785e2b314f1ae09871652d}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!Double@{Double}}
+\index{Double@{Double}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{Double()}{Double()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily rapidjson\+::internal\+::\+Double\+::\+Double (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{u }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27 : \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}}(u) \{\}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a44c3a36f884e47baf47ee0474ea65354}\label{classrapidjson_1_1internal_1_1_double_a44c3a36f884e47baf47ee0474ea65354}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!EffectiveSignificandSize@{EffectiveSignificandSize}}
+\index{EffectiveSignificandSize@{EffectiveSignificandSize}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{EffectiveSignificandSize()}{EffectiveSignificandSize()}}
+{\footnotesize\ttfamily static int rapidjson\+::internal\+::\+Double\+::\+Effective\+Significand\+Size (\begin{DoxyParamCaption}\item[{int}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 51 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                                                    \{}
+\DoxyCodeLine{52         \textcolor{keywordflow}{if} (order >= -1021)}
+\DoxyCodeLine{53             \textcolor{keywordflow}{return} 53;}
+\DoxyCodeLine{54         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (order <= -1074)}
+\DoxyCodeLine{55             \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{56         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{57             \textcolor{keywordflow}{return} order + 1074;}
+\DoxyCodeLine{58     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a7fc1b2b1a48d30b61636b12c47c928f4}\label{classrapidjson_1_1internal_1_1_double_a7fc1b2b1a48d30b61636b12c47c928f4}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!Exponent@{Exponent}}
+\index{Exponent@{Exponent}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{Exponent()}{Exponent()}}
+{\footnotesize\ttfamily int rapidjson\+::internal\+::\+Double\+::\+Exponent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 39 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39 \{ \textcolor{keywordflow}{return} static\_cast<int>(((\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a5e4e25bf99c4378e35ce6c435ecfb113}{kExponentMask}}) >> \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a7b3a81a2e3e15d230f023e7598205aa6}{kSignificandSize}}) - \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a98d3cd7a5e045d754913d998145dd5db}{kExponentBias}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a5d75c8b17eb36703ea78d940b85c5364}\label{classrapidjson_1_1internal_1_1_double_a5d75c8b17eb36703ea78d940b85c5364}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!IntegerExponent@{IntegerExponent}}
+\index{IntegerExponent@{IntegerExponent}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{IntegerExponent()}{IntegerExponent()}}
+{\footnotesize\ttfamily int rapidjson\+::internal\+::\+Double\+::\+Integer\+Exponent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 48 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48 \{ \textcolor{keywordflow}{return} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a554e97e612896eeea1abcfb800145b81}{IsNormal}}() ? \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a7fc1b2b1a48d30b61636b12c47c928f4}{Exponent}}() : \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a7403414a98c493a539adbbc3cb58a1b3}{kDenormalExponent}}) - \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a7b3a81a2e3e15d230f023e7598205aa6}{kSignificandSize}}; \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::internal\+::\+Check\+Within\+Half\+U\+L\+P().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a91859964023326d3678b9b14b8dd2a16}\label{classrapidjson_1_1internal_1_1_double_a91859964023326d3678b9b14b8dd2a16}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!IntegerSignificand@{IntegerSignificand}}
+\index{IntegerSignificand@{IntegerSignificand}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{IntegerSignificand()}{IntegerSignificand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Double\+::\+Integer\+Significand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 47 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a554e97e612896eeea1abcfb800145b81}{IsNormal}}() ? \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_acab4a6239a646ca3f6da460ddca20ea1}{Significand}}() | \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a9a209f4e38c947ba2fe18ca9479ce939}{kHiddenBit}} : \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_acab4a6239a646ca3f6da460ddca20ea1}{Significand}}(); \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::internal\+::\+Check\+Within\+Half\+U\+L\+P().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a5a67f00ff8711f46aed0a6c888f57b80}\label{classrapidjson_1_1internal_1_1_double_a5a67f00ff8711f46aed0a6c888f57b80}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!IsInf@{IsInf}}
+\index{IsInf@{IsInf}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{IsInf()}{IsInf()}}
+{\footnotesize\ttfamily bool rapidjson\+::internal\+::\+Double\+::\+Is\+Inf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 42 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42 \{ \textcolor{keywordflow}{return} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a5e4e25bf99c4378e35ce6c435ecfb113}{kExponentMask}}) == \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a5e4e25bf99c4378e35ce6c435ecfb113}{kExponentMask}} \&\& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_acab4a6239a646ca3f6da460ddca20ea1}{Significand}}() == 0; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_af8d174992b769af3631b926caafb5ebd}\label{classrapidjson_1_1internal_1_1_double_af8d174992b769af3631b926caafb5ebd}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!IsNan@{IsNan}}
+\index{IsNan@{IsNan}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{IsNan()}{IsNan()}}
+{\footnotesize\ttfamily bool rapidjson\+::internal\+::\+Double\+::\+Is\+Nan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 41 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41 \{ \textcolor{keywordflow}{return} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a5e4e25bf99c4378e35ce6c435ecfb113}{kExponentMask}}) == \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a5e4e25bf99c4378e35ce6c435ecfb113}{kExponentMask}} \&\& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_acab4a6239a646ca3f6da460ddca20ea1}{Significand}}() != 0; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_aef914e3e67857f80a6463ee4afc540e0}\label{classrapidjson_1_1internal_1_1_double_aef914e3e67857f80a6463ee4afc540e0}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!IsNanOrInf@{IsNanOrInf}}
+\index{IsNanOrInf@{IsNanOrInf}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{IsNanOrInf()}{IsNanOrInf()}}
+{\footnotesize\ttfamily bool rapidjson\+::internal\+::\+Double\+::\+Is\+Nan\+Or\+Inf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 43 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{ \textcolor{keywordflow}{return} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a5e4e25bf99c4378e35ce6c435ecfb113}{kExponentMask}}) == \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a5e4e25bf99c4378e35ce6c435ecfb113}{kExponentMask}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a554e97e612896eeea1abcfb800145b81}\label{classrapidjson_1_1internal_1_1_double_a554e97e612896eeea1abcfb800145b81}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!IsNormal@{IsNormal}}
+\index{IsNormal@{IsNormal}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{IsNormal()}{IsNormal()}}
+{\footnotesize\ttfamily bool rapidjson\+::internal\+::\+Double\+::\+Is\+Normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 44 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{ \textcolor{keywordflow}{return} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a5e4e25bf99c4378e35ce6c435ecfb113}{kExponentMask}}) != 0 || \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_acab4a6239a646ca3f6da460ddca20ea1}{Significand}}() == 0; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a5f8ef8b899b1c8ff33ba4c78ecaf85ba}\label{classrapidjson_1_1internal_1_1_double_a5f8ef8b899b1c8ff33ba4c78ecaf85ba}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!IsZero@{IsZero}}
+\index{IsZero@{IsZero}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{IsZero()}{IsZero()}}
+{\footnotesize\ttfamily bool rapidjson\+::internal\+::\+Double\+::\+Is\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 45 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{ \textcolor{keywordflow}{return} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}} \& (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a5e4e25bf99c4378e35ce6c435ecfb113}{kExponentMask}} | \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a565ba85ac68c6a78da78b78e53c5326b}{kSignificandMask}})) == 0; \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::internal\+::dtoa().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a21819f1a5166c96c8c2fcfd924499d53}\label{classrapidjson_1_1internal_1_1_double_a21819f1a5166c96c8c2fcfd924499d53}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!NextPositiveDouble@{NextPositiveDouble}}
+\index{NextPositiveDouble@{NextPositiveDouble}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{NextPositiveDouble()}{NextPositiveDouble()}}
+{\footnotesize\ttfamily double rapidjson\+::internal\+::\+Double\+::\+Next\+Positive\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 32 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32                                       \{}
+\DoxyCodeLine{33         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(!\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a48bc9da5e0a79c25f107faefd3607125}{Sign}}());}
+\DoxyCodeLine{34         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a6a806fb33921f079eac494f82aa041f7}{Double}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}} + 1).Value();}
+\DoxyCodeLine{35     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, and Value().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a48bc9da5e0a79c25f107faefd3607125}\label{classrapidjson_1_1internal_1_1_double_a48bc9da5e0a79c25f107faefd3607125}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!Sign@{Sign}}
+\index{Sign@{Sign}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{Sign()}{Sign()}}
+{\footnotesize\ttfamily bool rapidjson\+::internal\+::\+Double\+::\+Sign (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 37 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37 \{ \textcolor{keywordflow}{return} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_ace8ae4f049aa47ea645ebf305227cb88}{kSignMask}}) != 0; \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::internal\+::dtoa().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_acab4a6239a646ca3f6da460ddca20ea1}\label{classrapidjson_1_1internal_1_1_double_acab4a6239a646ca3f6da460ddca20ea1}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!Significand@{Significand}}
+\index{Significand@{Significand}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{Significand()}{Significand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Double\+::\+Significand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 38 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a565ba85ac68c6a78da78b78e53c5326b}{kSignificandMask}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a26b58bad74356a267c137eb50aa21797}\label{classrapidjson_1_1internal_1_1_double_a26b58bad74356a267c137eb50aa21797}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!ToBias@{ToBias}}
+\index{ToBias@{ToBias}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{ToBias()}{ToBias()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Double\+::\+To\+Bias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 49 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49 \{ \textcolor{keywordflow}{return} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_ace8ae4f049aa47ea645ebf305227cb88}{kSignMask}}) ? ~\mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}} + 1 : \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}} | \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_ace8ae4f049aa47ea645ebf305227cb88}{kSignMask}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_af193524f8f31ea11dca828e3df192e74}\label{classrapidjson_1_1internal_1_1_double_af193524f8f31ea11dca828e3df192e74}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!Uint64Value@{Uint64Value}}
+\index{Uint64Value@{Uint64Value}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{Uint64Value()}{Uint64Value()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Double\+::\+Uint64\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 30 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}{u\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_ab2f141d811565e1a4a3c4d3ec6390981}\label{classrapidjson_1_1internal_1_1_double_ab2f141d811565e1a4a3c4d3ec6390981}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!Value@{Value}}
+\index{Value@{Value}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{Value()}{Value()}}
+{\footnotesize\ttfamily double rapidjson\+::internal\+::\+Double\+::\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 29 of file ieee754.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_aed3fd8bcaac96183232d6277bf7248c1}{d\_}}; \}}
+
+\end{DoxyCode}
+
+
+Referenced by Next\+Positive\+Double().
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_aad1230769d2caaa6d4437a02b77b9ccf}\label{classrapidjson_1_1internal_1_1_double_aad1230769d2caaa6d4437a02b77b9ccf}} 
+\subsubsection{\texorpdfstring{"@8}{@8}}
+{\footnotesize\ttfamily union \{ ... \} \hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_aed3fd8bcaac96183232d6277bf7248c1}\label{classrapidjson_1_1internal_1_1_double_aed3fd8bcaac96183232d6277bf7248c1}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!d\_@{d\_}}
+\index{d\_@{d\_}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{d\_}{d\_}}
+{\footnotesize\ttfamily double rapidjson\+::internal\+::\+Double\+::d\+\_\+}
+
+
+
+Definition at line 70 of file ieee754.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a7403414a98c493a539adbbc3cb58a1b3}\label{classrapidjson_1_1internal_1_1_double_a7403414a98c493a539adbbc3cb58a1b3}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!kDenormalExponent@{kDenormalExponent}}
+\index{kDenormalExponent@{kDenormalExponent}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{kDenormalExponent}{kDenormalExponent}}
+{\footnotesize\ttfamily const int rapidjson\+::internal\+::\+Double\+::k\+Denormal\+Exponent = 1 -\/ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_double_a98d3cd7a5e045d754913d998145dd5db}{k\+Exponent\+Bias}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 63 of file ieee754.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a98d3cd7a5e045d754913d998145dd5db}\label{classrapidjson_1_1internal_1_1_double_a98d3cd7a5e045d754913d998145dd5db}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!kExponentBias@{kExponentBias}}
+\index{kExponentBias@{kExponentBias}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{kExponentBias}{kExponentBias}}
+{\footnotesize\ttfamily const int rapidjson\+::internal\+::\+Double\+::k\+Exponent\+Bias = 0x3\+FF\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 62 of file ieee754.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a5e4e25bf99c4378e35ce6c435ecfb113}\label{classrapidjson_1_1internal_1_1_double_a5e4e25bf99c4378e35ce6c435ecfb113}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!kExponentMask@{kExponentMask}}
+\index{kExponentMask@{kExponentMask}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{kExponentMask}{kExponentMask}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Double\+::k\+Exponent\+Mask = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x7\+F\+F00000 ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x00000000 ))\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 65 of file ieee754.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a9a209f4e38c947ba2fe18ca9479ce939}\label{classrapidjson_1_1internal_1_1_double_a9a209f4e38c947ba2fe18ca9479ce939}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!kHiddenBit@{kHiddenBit}}
+\index{kHiddenBit@{kHiddenBit}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{kHiddenBit}{kHiddenBit}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Double\+::k\+Hidden\+Bit = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x00100000 ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x00000000 ))\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 67 of file ieee754.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a565ba85ac68c6a78da78b78e53c5326b}\label{classrapidjson_1_1internal_1_1_double_a565ba85ac68c6a78da78b78e53c5326b}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!kSignificandMask@{kSignificandMask}}
+\index{kSignificandMask@{kSignificandMask}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{kSignificandMask}{kSignificandMask}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Double\+::k\+Significand\+Mask = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x000\+F\+F\+F\+F\+F ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x\+F\+F\+F\+F\+F\+F\+F\+F ))\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 66 of file ieee754.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a7b3a81a2e3e15d230f023e7598205aa6}\label{classrapidjson_1_1internal_1_1_double_a7b3a81a2e3e15d230f023e7598205aa6}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!kSignificandSize@{kSignificandSize}}
+\index{kSignificandSize@{kSignificandSize}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{kSignificandSize}{kSignificandSize}}
+{\footnotesize\ttfamily const int rapidjson\+::internal\+::\+Double\+::k\+Significand\+Size = 52\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 61 of file ieee754.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_ace8ae4f049aa47ea645ebf305227cb88}\label{classrapidjson_1_1internal_1_1_double_ace8ae4f049aa47ea645ebf305227cb88}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!kSignMask@{kSignMask}}
+\index{kSignMask@{kSignMask}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{kSignMask}{kSignMask}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Double\+::k\+Sign\+Mask = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x80000000 ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x00000000 ))\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 64 of file ieee754.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}\label{classrapidjson_1_1internal_1_1_double_a1f983c37796c260a9493b49d79f85516}} 
+\index{rapidjson::internal::Double@{rapidjson::internal::Double}!u\_@{u\_}}
+\index{u\_@{u\_}!rapidjson::internal::Double@{rapidjson::internal::Double}}
+\subsubsection{\texorpdfstring{u\_}{u\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Double\+::u\+\_\+}
+
+
+
+Definition at line 71 of file ieee754.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/internal/\mbox{\hyperlink{ieee754_8h}{ieee754.\+h}}\end{DoxyCompactItemize}

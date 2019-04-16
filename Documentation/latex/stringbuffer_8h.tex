@@ -1,0 +1,23 @@
+\hypertarget{stringbuffer_8h}{}\section{D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/stringbuffer.h File Reference}
+\label{stringbuffer_8h}\index{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/stringbuffer.h@{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/stringbuffer.h}}
+{\ttfamily \#include \char`\"{}stream.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal/stack.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer$<$ Encoding, Allocator $>$}}
+\begin{DoxyCompactList}\small\item\em Represents an in-\/memory output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacerapidjson}{rapidjson}}
+\begin{DoxyCompactList}\small\item\em main Rapid\+J\+S\+ON namespace \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Encoding , typename Allocator $>$ }\\void \mbox{\hyperlink{namespacerapidjson_ab38d4a353d3577fdedd8171316af80b3}{rapidjson\+::\+Put\+Reserve}} (Generic\+String\+Buffer$<$ Encoding, Allocator $>$ \&stream, size\+\_\+t count)
+\item 
+{\footnotesize template$<$typename Encoding , typename Allocator $>$ }\\void \mbox{\hyperlink{namespacerapidjson_ad338901177ac5feb414a9e620bfbd717}{rapidjson\+::\+Put\+Unsafe}} (Generic\+String\+Buffer$<$ Encoding, Allocator $>$ \&stream, typename Encoding\+::\+Ch c)
+\item 
+{\footnotesize template$<$$>$ }\\void \mbox{\hyperlink{namespacerapidjson_a9d43be9c033dc49738b713fe6fbafecf}{rapidjson\+::\+PutN}} (Generic\+String\+Buffer$<$ U\+T\+F8$<$$>$ $>$ \&stream, char c, size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Implement specialized version of \mbox{\hyperlink{namespacerapidjson_a1ac13bac5976fc06587e00fc0bcfb32a}{Put\+N()}} with memset() for better performance. \end{DoxyCompactList}\end{DoxyCompactItemize}

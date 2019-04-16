@@ -1,0 +1,289 @@
+\hypertarget{structrapidjson_1_1_generic_insitu_string_stream}{}\section{rapidjson\+::Generic\+Insitu\+String\+Stream$<$ Encoding $>$ Struct Template Reference}
+\label{structrapidjson_1_1_generic_insitu_string_stream}\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+
+
+A read-\/write string stream.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Encoding\+::\+Ch \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a5a17e183fec782bf9bc11d247ffbee73}{Generic\+Insitu\+String\+Stream}} (\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} $\ast$src)
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a0f88ca6c2d9ccd0c201ddb37dae39298}{Peek}} ()
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a99d4a96da7d602895136c90fed68695f}{Take}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a2a94ae3504087a55c85c73772eaf4405}{Tell}} ()
+\item 
+void \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ab6e262e1319e2645870082a2da03ce50}{Put}} (\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} c)
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a136bffd9cb0f8dc4aa3b768f14c50546}{Put\+Begin}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a75f19e02d6aa78478aab0d5a5c03c1c8}{Put\+End}} (\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} $\ast$begin)
+\item 
+void \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a95abb3fe7cc3b08ecb70d804eb234dc2}{Flush}} ()
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a33114ed86002c6ed6f1ca0bbbe3d5141}{Push}} (size\+\_\+t count)
+\item 
+void \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_affff67ccd9e6cd2816fd7e67cb5b147d}{Pop}} (size\+\_\+t count)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ae68a80f99fd484704af045a0ccd9c00f}{src\+\_\+}}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ac6b5cf07cdb691f99abd52a672790d8a}{dst\+\_\+}}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a6d611d9f5372d457373b90a711dd2717}{head\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Encoding$>$\newline
+struct rapidjson\+::\+Generic\+Insitu\+String\+Stream$<$ Encoding $>$}
+
+A read-\/write string stream. 
+
+This string stream is particularly designed for in-\/situ parsing. \begin{DoxyNote}{Note}
+implements \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept 
+\end{DoxyNote}
+
+
+Definition at line 52 of file fwd.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}\label{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+typedef Encoding\+::\+Ch \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}}}
+
+
+
+Definition at line 189 of file stream.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_a5a17e183fec782bf9bc11d247ffbee73}\label{structrapidjson_1_1_generic_insitu_string_stream_a5a17e183fec782bf9bc11d247ffbee73}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!GenericInsituStringStream@{GenericInsituStringStream}}
+\index{GenericInsituStringStream@{GenericInsituStringStream}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{GenericInsituStringStream()}{GenericInsituStringStream()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{Generic\+Insitu\+String\+Stream}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+Definition at line 191 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{191 : \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ae68a80f99fd484704af045a0ccd9c00f}{src\_}}(src), \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ac6b5cf07cdb691f99abd52a672790d8a}{dst\_}}(0), \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a6d611d9f5372d457373b90a711dd2717}{head\_}}(src) \{\}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_a95abb3fe7cc3b08ecb70d804eb234dc2}\label{structrapidjson_1_1_generic_insitu_string_stream_a95abb3fe7cc3b08ecb70d804eb234dc2}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!Flush@{Flush}}
+\index{Flush@{Flush}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+void \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 203 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{203 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_a0f88ca6c2d9ccd0c201ddb37dae39298}\label{structrapidjson_1_1_generic_insitu_string_stream_a0f88ca6c2d9ccd0c201ddb37dae39298}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!Peek@{Peek}}
+\index{Peek@{Peek}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 194 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{194 \{ \textcolor{keywordflow}{return} *\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ae68a80f99fd484704af045a0ccd9c00f}{src\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_affff67ccd9e6cd2816fd7e67cb5b147d}\label{structrapidjson_1_1_generic_insitu_string_stream_affff67ccd9e6cd2816fd7e67cb5b147d}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!Pop@{Pop}}
+\index{Pop@{Pop}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Pop()}{Pop()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+void \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Pop (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 206 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{206 \{ \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ac6b5cf07cdb691f99abd52a672790d8a}{dst\_}} -= count; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_a33114ed86002c6ed6f1ca0bbbe3d5141}\label{structrapidjson_1_1_generic_insitu_string_stream_a33114ed86002c6ed6f1ca0bbbe3d5141}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!Push@{Push}}
+\index{Push@{Push}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Push()}{Push()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}}$\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Push (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 205 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{205 \{ \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}}* begin = \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ac6b5cf07cdb691f99abd52a672790d8a}{dst\_}}; \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ac6b5cf07cdb691f99abd52a672790d8a}{dst\_}} += count; \textcolor{keywordflow}{return} begin; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_ab6e262e1319e2645870082a2da03ce50}\label{structrapidjson_1_1_generic_insitu_string_stream_ab6e262e1319e2645870082a2da03ce50}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!Put@{Put}}
+\index{Put@{Put}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+void \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 199 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{199 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ac6b5cf07cdb691f99abd52a672790d8a}{dst\_}} != 0); *\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ac6b5cf07cdb691f99abd52a672790d8a}{dst\_}}++ = c; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_a136bffd9cb0f8dc4aa3b768f14c50546}\label{structrapidjson_1_1_generic_insitu_string_stream_a136bffd9cb0f8dc4aa3b768f14c50546}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!PutBegin@{PutBegin}}
+\index{PutBegin@{PutBegin}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{PutBegin()}{PutBegin()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}}$\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Put\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 201 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{201 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ac6b5cf07cdb691f99abd52a672790d8a}{dst\_}} = \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ae68a80f99fd484704af045a0ccd9c00f}{src\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_a75f19e02d6aa78478aab0d5a5c03c1c8}\label{structrapidjson_1_1_generic_insitu_string_stream_a75f19e02d6aa78478aab0d5a5c03c1c8}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!PutEnd@{PutEnd}}
+\index{PutEnd@{PutEnd}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{PutEnd()}{PutEnd()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Put\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} $\ast$}]{begin }\end{DoxyParamCaption})}
+
+
+
+Definition at line 202 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{202 \{ \textcolor{keywordflow}{return} static\_cast<size\_t>(\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ac6b5cf07cdb691f99abd52a672790d8a}{dst\_}} - begin); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_a99d4a96da7d602895136c90fed68695f}\label{structrapidjson_1_1_generic_insitu_string_stream_a99d4a96da7d602895136c90fed68695f}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!Take@{Take}}
+\index{Take@{Take}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Take()}{Take()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}} \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Take (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 195 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{195 \{ \textcolor{keywordflow}{return} *\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ae68a80f99fd484704af045a0ccd9c00f}{src\_}}++; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_a2a94ae3504087a55c85c73772eaf4405}\label{structrapidjson_1_1_generic_insitu_string_stream_a2a94ae3504087a55c85c73772eaf4405}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!Tell@{Tell}}
+\index{Tell@{Tell}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Tell()}{Tell()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Tell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 196 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{196 \{ \textcolor{keywordflow}{return} static\_cast<size\_t>(\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_ae68a80f99fd484704af045a0ccd9c00f}{src\_}} - \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a6d611d9f5372d457373b90a711dd2717}{head\_}}); \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_ac6b5cf07cdb691f99abd52a672790d8a}\label{structrapidjson_1_1_generic_insitu_string_stream_ac6b5cf07cdb691f99abd52a672790d8a}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!dst\_@{dst\_}}
+\index{dst\_@{dst\_}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{dst\_}{dst\_}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}}$\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::dst\+\_\+}
+
+
+
+Definition at line 209 of file stream.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_a6d611d9f5372d457373b90a711dd2717}\label{structrapidjson_1_1_generic_insitu_string_stream_a6d611d9f5372d457373b90a711dd2717}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!head\_@{head\_}}
+\index{head\_@{head\_}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{head\_}{head\_}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}}$\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::head\+\_\+}
+
+
+
+Definition at line 210 of file stream.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1_generic_insitu_string_stream_ae68a80f99fd484704af045a0ccd9c00f}\label{structrapidjson_1_1_generic_insitu_string_stream_ae68a80f99fd484704af045a0ccd9c00f}} 
+\index{rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}!src\_@{src\_}}
+\index{src\_@{src\_}!rapidjson::GenericInsituStringStream$<$ Encoding $>$@{rapidjson::GenericInsituStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{src\_}{src\_}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream_a3a7ed47ee193d1e5f850aa841b743631}{Ch}}$\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::src\+\_\+}
+
+
+
+Definition at line 208 of file stream.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{fwd_8h}{fwd.\+h}}\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{stream_8h}{stream.\+h}}\end{DoxyCompactItemize}

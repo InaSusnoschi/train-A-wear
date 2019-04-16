@@ -1,0 +1,798 @@
+\hypertarget{classrapidjson_1_1_generic_member_iterator}{}\section{rapidjson\+::Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$ Class Template Reference}
+\label{classrapidjson_1_1_generic_member_iterator}\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+
+
+(Constant) member iterator for a J\+S\+ON object value  
+
+
+
+
+{\ttfamily \#include $<$document.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{Generic\+Member\+Iterator}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}}
+\begin{DoxyCompactList}\small\item\em Iterator type itself. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{Generic\+Member\+Iterator}}$<$ true, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Constant iterator type. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{Generic\+Member\+Iterator}}$<$ false, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a1a91868fa388664bb301061e3e24badb}{Non\+Const\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Non-\/constant iterator type. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a72c5c50dc9df5622b0be822dad59e372}{pointer}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aa9d53504374c7c6bdf46775482c5b107}{Pointer}}
+\begin{DoxyCompactList}\small\item\em Pointer to (const) \mbox{\hyperlink{structrapidjson_1_1_generic_member}{Generic\+Member}}. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ab7d2d79f74f084b9b5abd42ef891536d}{reference}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_abe27838f8dc71fdb38028ef27ae0b4f2}{Reference}}
+\begin{DoxyCompactList}\small\item\em Reference to (const) \mbox{\hyperlink{structrapidjson_1_1_generic_member}{Generic\+Member}}. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a2a981caecbc8b48968bccd6c3fa7513d}{difference\+\_\+type}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}}
+\begin{DoxyCompactList}\small\item\em Signed integer type (e.\+g. {\ttfamily ptrdiff\+\_\+t}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ std\+::iterator\+\_\+traits support}\par
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad2b02bbaddb3cc35db1d6a70d7850481}{Value\+Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_afc86203583390c3b719a2c9298866a7e}{value\+\_\+type}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad2b02bbaddb3cc35db1d6a70d7850481}{Value\+Type}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a72c5c50dc9df5622b0be822dad59e372}{pointer}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad2b02bbaddb3cc35db1d6a70d7850481}{Value\+Type}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ab7d2d79f74f084b9b5abd42ef891536d}{reference}}
+\item 
+typedef std\+::ptrdiff\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a2a981caecbc8b48968bccd6c3fa7513d}{difference\+\_\+type}}
+\item 
+typedef std\+::random\+\_\+access\+\_\+iterator\+\_\+tag \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a38b75fd16d115b5230b373207ac05b27}{iterator\+\_\+category}}
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ac920af483c9e31a6746c22acf0dffc50}{Generic\+Member\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor (singular value) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aa30ffef74b3f4978b403024d81b484e4}{Generic\+Member\+Iterator}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a1a91868fa388664bb301061e3e24badb}{Non\+Const\+Iterator}} \&it)
+\begin{DoxyCompactList}\small\item\em Iterator conversions to more const. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a192f924969f2b9d99ed1ec4ec2552884}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a1a91868fa388664bb301061e3e24badb}{Non\+Const\+Iterator}} \&it)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_abfad2c34a97f82178cbf9464e958e2c2}{operator-\/}} (\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}} that) const
+\begin{DoxyCompactList}\small\item\em Distance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ stepping}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a0854c7e305fa3b9c509a85bcba7c37b1}{operator++}} ()
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a5b29025a0fe480332fa24922ef5852c0}{operator-\/-\/}} ()
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a38a9b2515b32b47183948bc76449cd18}{operator++}} (int)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aeb9ae9faaca1608e9ee93ebb50892839}{operator-\/-\/}} (int)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ increment/decrement}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ace89a84c151b8346cfc9ade17b5bac21}{operator+}} (\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}} n) const
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a36f7e485594c44a81a7c501cafb1cbf7}{operator-\/}} (\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}} n) const
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a7f531c899039358b2a5cd1873d71beb2}{operator+=}} (\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}} n)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a38d0f8a8d55d86b0b2f49b308978ba0e}{operator-\/=}} (\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}} n)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ relations}\par
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a874f8e34f3ae9889e9380feb36582779}{operator==}} (\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}} that) const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a6c313e57c10ca419a7321ee791378198}{operator!=}} (\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}} that) const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a8defc2832dfffde7e7e8cab99233f16f}{operator$<$=}} (\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}} that) const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a1cfebee3ec82a524dfe3788854eebb8c}{operator$>$=}} (\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}} that) const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ae40f615a3674f3d387cba9fac217a30b}{operator$<$}} (\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}} that) const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_afeb581725f6ae68ed508803e73295a14}{operator$>$}} (\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}} that) const
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ dereference}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_abe27838f8dc71fdb38028ef27ae0b4f2}{Reference}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_af7fd265b754226356beee0378d1914e4}{operator $\ast$}} () const
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aa9d53504374c7c6bdf46775482c5b107}{Pointer}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a0e6cf49338db1c15b9e2bb93005b7597}{operator-\/$>$}} () const
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_abe27838f8dc71fdb38028ef27ae0b4f2}{Reference}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a76a73a0206437a1318bb93af83f0b7ec}{operator\mbox{[}$\,$\mbox{]}}} (\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}} n) const
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{structrapidjson_1_1_generic_member}{Generic\+Member}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_abbee93e8c55379249e99c1d5c4255661}{Plain\+Type}}
+\item 
+typedef internal\+::\+Maybe\+Add\+Const$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_abbee93e8c55379249e99c1d5c4255661}{Plain\+Type}} $>$\+::\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad2b02bbaddb3cc35db1d6a70d7850481}{Value\+Type}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a5defd2655cc9878bbc9431d0c2d1b2e0}{Generic\+Member\+Iterator}} (\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aa9d53504374c7c6bdf46775482c5b107}{Pointer}} p)
+\begin{DoxyCompactList}\small\item\em Internal constructor from plain pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aa9d53504374c7c6bdf46775482c5b107}{Pointer}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\+\_\+}}
+\begin{DoxyCompactList}\small\item\em raw pointer \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a82bdd5798f1a5ac0e3e7ba4bd6938cfc}{Generic\+Value$<$ Encoding, Allocator $>$}}
+\item 
+{\footnotesize template$<$bool , typename , typename $>$ }\\class \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aa375aeb1ffac85cddc3a72a6c24ec6e1}{Generic\+Member\+Iterator}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$bool Const, typename Encoding, typename Allocator$>$\newline
+class rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$}
+
+(Constant) member iterator for a J\+S\+ON object value 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Const} & Is this a constant iterator? \\
+\hline
+{\em \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}} & \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} of the value. (Even non-\/string values need to have the same encoding in a document) \\
+\hline
+{\em \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}} & \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} type for allocating memory of object, array and string.\\
+\hline
+\end{DoxyTemplParams}
+This class implements a Random Access Iterator for \mbox{\hyperlink{structrapidjson_1_1_generic_member}{Generic\+Member}} elements of a \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}, see I\+S\+O/\+I\+EC 14882\+:2003(E) C++ standard, 24.\+1 \mbox{[}lib.\+iterator.\+requirements\mbox{]}.
+
+\begin{DoxyNote}{Note}
+This iterator implementation is mainly intended to avoid implicit conversions from iterator values to {\ttfamily N\+U\+LL}, e.\+g. from Generic\+Value\+::\+Find\+Member.
+
+Define {\ttfamily R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+M\+E\+M\+B\+E\+R\+I\+T\+E\+R\+A\+T\+O\+R\+C\+L\+A\+SS} to fall back to a pointer-\/based implementation, if your platform doesn\textquotesingle{}t provide the C++ $<$iterator$>$ header.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structrapidjson_1_1_generic_member}{Generic\+Member}}, \mbox{\hyperlink{classrapidjson_1_1_generic_value_aca5596987335016c1a7c2a9467baf80b}{Generic\+Value\+::\+Member\+Iterator}}, \mbox{\hyperlink{classrapidjson_1_1_generic_value_a6cd2b09795c48d2892bebc0ae350d51f}{Generic\+Value\+::\+Const\+Member\+Iterator}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 102 of file document.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}\label{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!ConstIterator@{ConstIterator}}
+\index{ConstIterator@{ConstIterator}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{ConstIterator}{ConstIterator}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{Generic\+Member\+Iterator}}$<$true,\mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}},\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$>$ \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}}}
+
+
+
+Constant iterator type. 
+
+
+
+Definition at line 114 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a2a981caecbc8b48968bccd6c3fa7513d}\label{classrapidjson_1_1_generic_member_iterator_a2a981caecbc8b48968bccd6c3fa7513d}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!difference\_type@{difference\_type}}
+\index{difference\_type@{difference\_type}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{difference\_type}{difference\_type}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+typedef std\+::ptrdiff\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a2a981caecbc8b48968bccd6c3fa7513d}{difference\+\_\+type}}}
+
+
+
+Definition at line 123 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}\label{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!DifferenceType@{DifferenceType}}
+\index{DifferenceType@{DifferenceType}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{DifferenceType}{DifferenceType}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a2a981caecbc8b48968bccd6c3fa7513d}{difference\+\_\+type}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}}}
+
+
+
+Signed integer type (e.\+g. {\ttfamily ptrdiff\+\_\+t}) 
+
+
+
+Definition at line 132 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}\label{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{Generic\+Member\+Iterator}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}}}
+
+
+
+Iterator type itself. 
+
+
+
+Definition at line 112 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a38b75fd16d115b5230b373207ac05b27}\label{classrapidjson_1_1_generic_member_iterator_a38b75fd16d115b5230b373207ac05b27}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!iterator\_category@{iterator\_category}}
+\index{iterator\_category@{iterator\_category}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{iterator\_category}{iterator\_category}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+typedef std\+::random\+\_\+access\+\_\+iterator\+\_\+tag \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a38b75fd16d115b5230b373207ac05b27}{iterator\+\_\+category}}}
+
+
+
+Definition at line 124 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a1a91868fa388664bb301061e3e24badb}\label{classrapidjson_1_1_generic_member_iterator_a1a91868fa388664bb301061e3e24badb}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!NonConstIterator@{NonConstIterator}}
+\index{NonConstIterator@{NonConstIterator}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{NonConstIterator}{NonConstIterator}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{Generic\+Member\+Iterator}}$<$false,\mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}},\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$>$ \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a1a91868fa388664bb301061e3e24badb}{Non\+Const\+Iterator}}}
+
+
+
+Non-\/constant iterator type. 
+
+
+
+Definition at line 116 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_abbee93e8c55379249e99c1d5c4255661}\label{classrapidjson_1_1_generic_member_iterator_abbee93e8c55379249e99c1d5c4255661}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!PlainType@{PlainType}}
+\index{PlainType@{PlainType}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{PlainType}{PlainType}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+typedef \mbox{\hyperlink{structrapidjson_1_1_generic_member}{Generic\+Member}}$<$\mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}},\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$>$ \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_abbee93e8c55379249e99c1d5c4255661}{Plain\+Type}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 107 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a72c5c50dc9df5622b0be822dad59e372}\label{classrapidjson_1_1_generic_member_iterator_a72c5c50dc9df5622b0be822dad59e372}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!pointer@{pointer}}
+\index{pointer@{pointer}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad2b02bbaddb3cc35db1d6a70d7850481}{Value\+Type}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a72c5c50dc9df5622b0be822dad59e372}{pointer}}}
+
+
+
+Definition at line 121 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_aa9d53504374c7c6bdf46775482c5b107}\label{classrapidjson_1_1_generic_member_iterator_aa9d53504374c7c6bdf46775482c5b107}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!Pointer@{Pointer}}
+\index{Pointer@{Pointer}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{Pointer}{Pointer}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a72c5c50dc9df5622b0be822dad59e372}{pointer}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aa9d53504374c7c6bdf46775482c5b107}{Pointer}}}
+
+
+
+Pointer to (const) \mbox{\hyperlink{structrapidjson_1_1_generic_member}{Generic\+Member}}. 
+
+
+
+Definition at line 128 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_ab7d2d79f74f084b9b5abd42ef891536d}\label{classrapidjson_1_1_generic_member_iterator_ab7d2d79f74f084b9b5abd42ef891536d}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!reference@{reference}}
+\index{reference@{reference}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad2b02bbaddb3cc35db1d6a70d7850481}{Value\+Type}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ab7d2d79f74f084b9b5abd42ef891536d}{reference}}}
+
+
+
+Definition at line 122 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_abe27838f8dc71fdb38028ef27ae0b4f2}\label{classrapidjson_1_1_generic_member_iterator_abe27838f8dc71fdb38028ef27ae0b4f2}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!Reference@{Reference}}
+\index{Reference@{Reference}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{Reference}{Reference}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ab7d2d79f74f084b9b5abd42ef891536d}{reference}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_abe27838f8dc71fdb38028ef27ae0b4f2}{Reference}}}
+
+
+
+Reference to (const) \mbox{\hyperlink{structrapidjson_1_1_generic_member}{Generic\+Member}}. 
+
+
+
+Definition at line 130 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_afc86203583390c3b719a2c9298866a7e}\label{classrapidjson_1_1_generic_member_iterator_afc86203583390c3b719a2c9298866a7e}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad2b02bbaddb3cc35db1d6a70d7850481}{Value\+Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_afc86203583390c3b719a2c9298866a7e}{value\+\_\+type}}}
+
+
+
+Definition at line 120 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_ad2b02bbaddb3cc35db1d6a70d7850481}\label{classrapidjson_1_1_generic_member_iterator_ad2b02bbaddb3cc35db1d6a70d7850481}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!ValueType@{ValueType}}
+\index{ValueType@{ValueType}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{ValueType}{ValueType}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+typedef internal\+::\+Maybe\+Add\+Const$<$Const,\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_abbee93e8c55379249e99c1d5c4255661}{Plain\+Type}}$>$\+::\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad2b02bbaddb3cc35db1d6a70d7850481}{Value\+Type}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 108 of file document.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_ac920af483c9e31a6746c22acf0dffc50}\label{classrapidjson_1_1_generic_member_iterator_ac920af483c9e31a6746c22acf0dffc50}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!GenericMemberIterator@{GenericMemberIterator}}
+\index{GenericMemberIterator@{GenericMemberIterator}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericMemberIterator()}{GenericMemberIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{Generic\+Member\+Iterator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor (singular value) 
+
+Creates an iterator pointing to no element. \begin{DoxyNote}{Note}
+All operations, except for comparisons, are undefined on such values. 
+\end{DoxyNote}
+
+
+Definition at line 138 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{138 : \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}() \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_aa30ffef74b3f4978b403024d81b484e4}\label{classrapidjson_1_1_generic_member_iterator_aa30ffef74b3f4978b403024d81b484e4}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!GenericMemberIterator@{GenericMemberIterator}}
+\index{GenericMemberIterator@{GenericMemberIterator}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericMemberIterator()}{GenericMemberIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{Generic\+Member\+Iterator}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a1a91868fa388664bb301061e3e24badb}{Non\+Const\+Iterator}} \&}]{it }\end{DoxyParamCaption})}
+
+
+
+Iterator conversions to more const. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & (Non-\/const) iterator to copy from\\
+\hline
+\end{DoxyParams}
+Allows the creation of an iterator from another \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{Generic\+Member\+Iterator}} that is \char`\"{}less const\char`\"{}. Especially, creating a non-\/constant iterator from a constant iterator are disabled\+: \begin{DoxyItemize}
+\item const -\/$>$ non-\/const (not ok) \item const -\/$>$ const (ok) \item non-\/const -\/$>$ const (ok) \item non-\/const -\/$>$ non-\/const (ok)\end{DoxyItemize}
+\begin{DoxyNote}{Note}
+If the {\ttfamily Const} template parameter is already {\ttfamily false}, this constructor effectively defines a regular copy-\/constructor. Otherwise, the copy constructor is implicitly defined. 
+\end{DoxyNote}
+
+
+Definition at line 156 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{156 : \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}(it.ptr\_) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a5defd2655cc9878bbc9431d0c2d1b2e0}\label{classrapidjson_1_1_generic_member_iterator_a5defd2655cc9878bbc9431d0c2d1b2e0}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!GenericMemberIterator@{GenericMemberIterator}}
+\index{GenericMemberIterator@{GenericMemberIterator}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericMemberIterator()}{GenericMemberIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{Generic\+Member\+Iterator}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aa9d53504374c7c6bdf46775482c5b107}{Pointer}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [private]}}
+
+
+
+Internal constructor from plain pointer. 
+
+
+
+Definition at line 198 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{198 : \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}(p) \{\}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_af7fd265b754226356beee0378d1914e4}\label{classrapidjson_1_1_generic_member_iterator_af7fd265b754226356beee0378d1914e4}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_abe27838f8dc71fdb38028ef27ae0b4f2}{Reference}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator $\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 188 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{188 \{ \textcolor{keywordflow}{return} *\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a6c313e57c10ca419a7321ee791378198}\label{classrapidjson_1_1_generic_member_iterator_a6c313e57c10ca419a7321ee791378198}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}}}]{that }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 179 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{179 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}} != that.ptr\_; \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::ptr\+\_\+.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_ace89a84c151b8346cfc9ade17b5bac21}\label{classrapidjson_1_1_generic_member_iterator_ace89a84c151b8346cfc9ade17b5bac21}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}}}]{n }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 169 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{169 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}}(\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}+n); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a0854c7e305fa3b9c509a85bcba7c37b1}\label{classrapidjson_1_1_generic_member_iterator_a0854c7e305fa3b9c509a85bcba7c37b1}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 161 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{161 \{ ++\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}; \textcolor{keywordflow}{return} *\textcolor{keyword}{this}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a38a9b2515b32b47183948bc76449cd18}\label{classrapidjson_1_1_generic_member_iterator_a38a9b2515b32b47183948bc76449cd18}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 163 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{163 \{ \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} old(*\textcolor{keyword}{this}); ++\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}; \textcolor{keywordflow}{return} old; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a7f531c899039358b2a5cd1873d71beb2}\label{classrapidjson_1_1_generic_member_iterator_a7f531c899039358b2a5cd1873d71beb2}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}}}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 172 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{172 \{ \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}+=n; \textcolor{keywordflow}{return} *\textcolor{keyword}{this}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a36f7e485594c44a81a7c501cafb1cbf7}\label{classrapidjson_1_1_generic_member_iterator_a36f7e485594c44a81a7c501cafb1cbf7}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}}}]{n }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 170 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{170 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}}(\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}-n); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_abfad2c34a97f82178cbf9464e958e2c2}\label{classrapidjson_1_1_generic_member_iterator_abfad2c34a97f82178cbf9464e958e2c2}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}}}]{that }\end{DoxyParamCaption}) const}
+
+
+
+Distance. 
+
+
+
+Definition at line 194 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{194 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}-that.ptr\_; \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::ptr\+\_\+.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a5b29025a0fe480332fa24922ef5852c0}\label{classrapidjson_1_1_generic_member_iterator_a5b29025a0fe480332fa24922ef5852c0}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 162 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162 \{ --\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}; \textcolor{keywordflow}{return} *\textcolor{keyword}{this}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_aeb9ae9faaca1608e9ee93ebb50892839}\label{classrapidjson_1_1_generic_member_iterator_aeb9ae9faaca1608e9ee93ebb50892839}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 164 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{164 \{ \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}} old(*\textcolor{keyword}{this}); --\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}; \textcolor{keywordflow}{return} old; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a38d0f8a8d55d86b0b2f49b308978ba0e}\label{classrapidjson_1_1_generic_member_iterator_a38d0f8a8d55d86b0b2f49b308978ba0e}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}}}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 173 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{173 \{ \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}-=n; \textcolor{keywordflow}{return} *\textcolor{keyword}{this}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a0e6cf49338db1c15b9e2bb93005b7597}\label{classrapidjson_1_1_generic_member_iterator_a0e6cf49338db1c15b9e2bb93005b7597}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aa9d53504374c7c6bdf46775482c5b107}{Pointer}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 189 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{189 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_ae40f615a3674f3d387cba9fac217a30b}\label{classrapidjson_1_1_generic_member_iterator_ae40f615a3674f3d387cba9fac217a30b}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}}}]{that }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 182 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{182 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}} < that.ptr\_; \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::ptr\+\_\+.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a8defc2832dfffde7e7e8cab99233f16f}\label{classrapidjson_1_1_generic_member_iterator_a8defc2832dfffde7e7e8cab99233f16f}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}}}]{that }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 180 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{180 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}} <= that.ptr\_; \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::ptr\+\_\+.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a192f924969f2b9d99ed1ec4ec2552884}\label{classrapidjson_1_1_generic_member_iterator_a192f924969f2b9d99ed1ec4ec2552884}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a37091c3dd8470486ef5188f3c1108653}{Iterator}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a1a91868fa388664bb301061e3e24badb}{Non\+Const\+Iterator}} \&}]{it }\end{DoxyParamCaption})}
+
+
+
+Definition at line 157 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{157 \{ \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}} = it.ptr\_; \textcolor{keywordflow}{return} *\textcolor{keyword}{this}; \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::ptr\+\_\+.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a874f8e34f3ae9889e9380feb36582779}\label{classrapidjson_1_1_generic_member_iterator_a874f8e34f3ae9889e9380feb36582779}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}}}]{that }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 178 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{178 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}} == that.ptr\_; \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::ptr\+\_\+.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_afeb581725f6ae68ed508803e73295a14}\label{classrapidjson_1_1_generic_member_iterator_afeb581725f6ae68ed508803e73295a14}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}}}]{that }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 183 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{183 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}} > that.ptr\_; \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::ptr\+\_\+.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a1cfebee3ec82a524dfe3788854eebb8c}\label{classrapidjson_1_1_generic_member_iterator_a1cfebee3ec82a524dfe3788854eebb8c}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_a61b9a9ba8a5917d90406532f104605cc}{Const\+Iterator}}}]{that }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 181 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{181 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}} >= that.ptr\_; \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::ptr\+\_\+.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a76a73a0206437a1318bb93af83f0b7ec}\label{classrapidjson_1_1_generic_member_iterator_a76a73a0206437a1318bb93af83f0b7ec}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_abe27838f8dc71fdb38028ef27ae0b4f2}{Reference}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aff2739a9265639a7a4be8c3e6216b31a}{Difference\+Type}}}]{n }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 190 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{190 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}{ptr\_}}[n]; \}}
+
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_aa375aeb1ffac85cddc3a72a6c24ec6e1}\label{classrapidjson_1_1_generic_member_iterator_aa375aeb1ffac85cddc3a72a6c24ec6e1}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!GenericMemberIterator@{GenericMemberIterator}}
+\index{GenericMemberIterator@{GenericMemberIterator}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericMemberIterator}{GenericMemberIterator}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+template$<$bool , typename , typename $>$ \\
+friend class \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{Generic\+Member\+Iterator}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 105 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_a82bdd5798f1a5ac0e3e7ba4bd6938cfc}\label{classrapidjson_1_1_generic_member_iterator_a82bdd5798f1a5ac0e3e7ba4bd6938cfc}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!GenericValue$<$ Encoding, Allocator $>$@{GenericValue$<$ Encoding, Allocator $>$}}
+\index{GenericValue$<$ Encoding, Allocator $>$@{GenericValue$<$ Encoding, Allocator $>$}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericValue$<$ Encoding, Allocator $>$}{GenericValue< Encoding, Allocator >}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+friend class \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 104 of file document.\+h.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}\label{classrapidjson_1_1_generic_member_iterator_ad3ee810e5bbd347865eebcd50c993204}} 
+\index{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}!ptr\_@{ptr\_}}
+\index{ptr\_@{ptr\_}!rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$@{rapidjson::GenericMemberIterator$<$ Const, Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{ptr\_}{ptr\_}}
+{\footnotesize\ttfamily template$<$bool Const, typename Encoding , typename Allocator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator_aa9d53504374c7c6bdf46775482c5b107}{Pointer}} \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator}}$<$ Const, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::ptr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+raw pointer 
+
+
+
+Definition at line 200 of file document.\+h.
+
+
+
+Referenced by rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::operator!=(), rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::operator-\/(), rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::operator$<$(), rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::operator$<$=(), rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::operator=(), rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::operator==(), rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::operator$>$(), and rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$\+::operator$>$=().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{document_8h}{document.\+h}}\end{DoxyCompactItemize}

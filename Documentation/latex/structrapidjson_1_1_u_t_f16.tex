@@ -1,0 +1,251 @@
+\hypertarget{structrapidjson_1_1_u_t_f16}{}\section{rapidjson\+::U\+T\+F16$<$ Char\+Type $>$ Struct Template Reference}
+\label{structrapidjson_1_1_u_t_f16}\index{rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}}
+
+
+U\+T\+F-\/16 encoding.  
+
+
+
+
+{\ttfamily \#include $<$encodings.\+h$>$}
+
+Inheritance diagram for rapidjson\+::U\+T\+F16$<$ Char\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structrapidjson_1_1_u_t_f16}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_a439e1dc4701cc7ae34d257ce76f5dc37a5a09bf086fb94e4d6fb106da7c3f01ea}{support\+Unicode}} = 1
+ \}
+\item 
+typedef Char\+Type \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_acb67f53501b796b55996352a6080da54}{Ch}}
+\item 
+typedef \+::rapidjson \+::Static\+Assert\+Test$<$ sizeof(\+::rapidjson \+::S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+U\+RE$<$ bool(sizeof(\mbox{\hyperlink{structrapidjson_1_1_u_t_f16_acb67f53501b796b55996352a6080da54}{Ch}}) $>$=2) $>$)$>$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_a504bdaba3bbc5345c15b6e44f708f994}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+J\+O\+IN}}(Static\+Assert\+Typedef, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Output\+Stream $>$ }\\static void \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_a7f15344b8f35e341a723fa25d22e59d2}{Encode}} (Output\+Stream \&os, unsigned codepoint)
+\item 
+{\footnotesize template$<$typename Output\+Stream $>$ }\\static void \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_aac8a8cdff51c647b3c3a9d7df5c2ce62}{Encode\+Unsafe}} (Output\+Stream \&os, unsigned codepoint)
+\item 
+{\footnotesize template$<$typename Input\+Stream $>$ }\\static bool \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_a2665394536a32c9ea76d0cc7184e52fe}{Decode}} (Input\+Stream \&is, unsigned $\ast$codepoint)
+\item 
+{\footnotesize template$<$typename Input\+Stream , typename Output\+Stream $>$ }\\static bool \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_a9bfa2e9096b1596e0b3a2cc2be6c9477}{Validate}} (Input\+Stream \&is, Output\+Stream \&os)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Char\+Type = wchar\+\_\+t$>$\newline
+struct rapidjson\+::\+U\+T\+F16$<$ Char\+Type $>$}
+
+U\+T\+F-\/16 encoding. 
+
+\href{http://en.wikipedia.org/wiki/UTF-16}{\texttt{ http\+://en.\+wikipedia.\+org/wiki/\+U\+T\+F-\/16}} \href{http://tools.ietf.org/html/rfc2781}{\texttt{ http\+://tools.\+ietf.\+org/html/rfc2781}} 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Char\+Type} & Type for storing 16-\/bit U\+T\+F-\/16 data. Default is wchar\+\_\+t. C++11 may use char16\+\_\+t instead. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyNote}{Note}
+implements \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} concept
+
+For in-\/memory access, no need to concern endianness. The code units and code points are represented by C\+PU\textquotesingle{}s endianness. For streaming, use \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_l_e}{U\+T\+F16\+LE}} and \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_b_e}{U\+T\+F16\+BE}}, which handle endianness. 
+\end{DoxyNote}
+
+
+Definition at line 269 of file encodings.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_u_t_f16_acb67f53501b796b55996352a6080da54}\label{structrapidjson_1_1_u_t_f16_acb67f53501b796b55996352a6080da54}} 
+\index{rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = wchar\+\_\+t$>$ \\
+typedef Char\+Type \mbox{\hyperlink{structrapidjson_1_1_u_t_f16}{rapidjson\+::\+U\+T\+F16}}$<$ Char\+Type $>$\+::\mbox{\hyperlink{structrapidjson_1_1_u_t_f16_acb67f53501b796b55996352a6080da54}{Ch}}}
+
+
+
+Definition at line 270 of file encodings.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1_u_t_f16_a504bdaba3bbc5345c15b6e44f708f994}\label{structrapidjson_1_1_u_t_f16_a504bdaba3bbc5345c15b6e44f708f994}} 
+\index{rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}!RAPIDJSON\_JOIN@{RAPIDJSON\_JOIN}}
+\index{RAPIDJSON\_JOIN@{RAPIDJSON\_JOIN}!rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_JOIN}{RAPIDJSON\_JOIN}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = wchar\+\_\+t$>$ \\
+typedef \+:: rapidjson \+::Static\+Assert\+Test$<$ sizeof(\+:: rapidjson \+::S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+U\+RE$<$bool( sizeof(\mbox{\hyperlink{structrapidjson_1_1_u_t_f16_acb67f53501b796b55996352a6080da54}{Ch}}) $>$= 2 ) $>$)$>$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f16}{rapidjson\+::\+U\+T\+F16}}$<$ Char\+Type $>$\+::R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+J\+O\+IN(Static\+Assert\+Typedef, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}
+
+
+
+Definition at line 271 of file encodings.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_u_t_f16_a439e1dc4701cc7ae34d257ce76f5dc37}\label{structrapidjson_1_1_u_t_f16_a439e1dc4701cc7ae34d257ce76f5dc37}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = wchar\+\_\+t$>$ \\
+anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{supportUnicode@{supportUnicode}!rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}}\index{rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}!supportUnicode@{supportUnicode}}}\mbox{\Hypertarget{structrapidjson_1_1_u_t_f16_a439e1dc4701cc7ae34d257ce76f5dc37a5a09bf086fb94e4d6fb106da7c3f01ea}\label{structrapidjson_1_1_u_t_f16_a439e1dc4701cc7ae34d257ce76f5dc37a5a09bf086fb94e4d6fb106da7c3f01ea}} 
+support\+Unicode&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 273 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{273 \{ \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_a439e1dc4701cc7ae34d257ce76f5dc37a5a09bf086fb94e4d6fb106da7c3f01ea}{supportUnicode}} = 1 \};}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_u_t_f16_a2665394536a32c9ea76d0cc7184e52fe}\label{structrapidjson_1_1_u_t_f16_a2665394536a32c9ea76d0cc7184e52fe}} 
+\index{rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}!Decode@{Decode}}
+\index{Decode@{Decode}!rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Decode()}{Decode()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = wchar\+\_\+t$>$ \\
+template$<$typename Input\+Stream $>$ \\
+static bool \mbox{\hyperlink{structrapidjson_1_1_u_t_f16}{rapidjson\+::\+U\+T\+F16}}$<$ Char\+Type $>$\+::Decode (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{unsigned $\ast$}]{codepoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 307 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{307                                                              \{}
+\DoxyCodeLine{308         \mbox{\hyperlink{rapidjson_8h_af95188da1d8eb6d4b148fe9ce71cd7c4}{RAPIDJSON\_STATIC\_ASSERT}}(\textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} InputStream::Ch) >= 2);}
+\DoxyCodeLine{309         \textcolor{keyword}{typename} InputStream::Ch c = is.Take();}
+\DoxyCodeLine{310         \textcolor{keywordflow}{if} (c < 0xD800 || c > 0xDFFF) \{}
+\DoxyCodeLine{311             *codepoint = static\_cast<unsigned>(c);}
+\DoxyCodeLine{312             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{313         \}}
+\DoxyCodeLine{314         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (c <= 0xDBFF) \{}
+\DoxyCodeLine{315             *codepoint = (static\_cast<unsigned>(c) \& 0x3FF) << 10;}
+\DoxyCodeLine{316             c = is.Take();}
+\DoxyCodeLine{317             *codepoint |= (static\_cast<unsigned>(c) \& 0x3FF);}
+\DoxyCodeLine{318             *codepoint += 0x10000;}
+\DoxyCodeLine{319             \textcolor{keywordflow}{return} c >= 0xDC00 \&\& c <= 0xDFFF;}
+\DoxyCodeLine{320         \}}
+\DoxyCodeLine{321         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{322     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_u_t_f16_a7f15344b8f35e341a723fa25d22e59d2}\label{structrapidjson_1_1_u_t_f16_a7f15344b8f35e341a723fa25d22e59d2}} 
+\index{rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}!Encode@{Encode}}
+\index{Encode@{Encode}!rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Encode()}{Encode()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = wchar\+\_\+t$>$ \\
+template$<$typename Output\+Stream $>$ \\
+static void \mbox{\hyperlink{structrapidjson_1_1_u_t_f16}{rapidjson\+::\+U\+T\+F16}}$<$ Char\+Type $>$\+::Encode (\begin{DoxyParamCaption}\item[{Output\+Stream \&}]{os,  }\item[{unsigned}]{codepoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 276 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{276                                                              \{}
+\DoxyCodeLine{277         \mbox{\hyperlink{rapidjson_8h_af95188da1d8eb6d4b148fe9ce71cd7c4}{RAPIDJSON\_STATIC\_ASSERT}}(\textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} OutputStream::Ch) >= 2);}
+\DoxyCodeLine{278         \textcolor{keywordflow}{if} (codepoint <= 0xFFFF) \{}
+\DoxyCodeLine{279             \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(codepoint < 0xD800 || codepoint > 0xDFFF); \textcolor{comment}{// Code point itself cannot be surrogate pair }}
+\DoxyCodeLine{280             os.Put(static\_cast<typename OutputStream::Ch>(codepoint));}
+\DoxyCodeLine{281         \}}
+\DoxyCodeLine{282         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{283             \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(codepoint <= 0x10FFFF);}
+\DoxyCodeLine{284             \textcolor{keywordtype}{unsigned} v = codepoint - 0x10000;}
+\DoxyCodeLine{285             os.Put(static\_cast<typename OutputStream::Ch>((v >> 10) | 0xD800));}
+\DoxyCodeLine{286             os.Put(static\_cast<typename OutputStream::Ch>((v \& 0x3FF) | 0xDC00));}
+\DoxyCodeLine{287         \}}
+\DoxyCodeLine{288     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_u_t_f16_aac8a8cdff51c647b3c3a9d7df5c2ce62}\label{structrapidjson_1_1_u_t_f16_aac8a8cdff51c647b3c3a9d7df5c2ce62}} 
+\index{rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}!EncodeUnsafe@{EncodeUnsafe}}
+\index{EncodeUnsafe@{EncodeUnsafe}!rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{EncodeUnsafe()}{EncodeUnsafe()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = wchar\+\_\+t$>$ \\
+template$<$typename Output\+Stream $>$ \\
+static void \mbox{\hyperlink{structrapidjson_1_1_u_t_f16}{rapidjson\+::\+U\+T\+F16}}$<$ Char\+Type $>$\+::Encode\+Unsafe (\begin{DoxyParamCaption}\item[{Output\+Stream \&}]{os,  }\item[{unsigned}]{codepoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 292 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{292                                                                    \{}
+\DoxyCodeLine{293         \mbox{\hyperlink{rapidjson_8h_af95188da1d8eb6d4b148fe9ce71cd7c4}{RAPIDJSON\_STATIC\_ASSERT}}(\textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} OutputStream::Ch) >= 2);}
+\DoxyCodeLine{294         \textcolor{keywordflow}{if} (codepoint <= 0xFFFF) \{}
+\DoxyCodeLine{295             \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(codepoint < 0xD800 || codepoint > 0xDFFF); \textcolor{comment}{// Code point itself cannot be surrogate pair }}
+\DoxyCodeLine{296             \mbox{\hyperlink{namespacerapidjson_a0a774dcffe8ae07686f459ae017d2f20}{PutUnsafe}}(os, static\_cast<typename OutputStream::Ch>(codepoint));}
+\DoxyCodeLine{297         \}}
+\DoxyCodeLine{298         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{299             \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(codepoint <= 0x10FFFF);}
+\DoxyCodeLine{300             \textcolor{keywordtype}{unsigned} v = codepoint - 0x10000;}
+\DoxyCodeLine{301             \mbox{\hyperlink{namespacerapidjson_a0a774dcffe8ae07686f459ae017d2f20}{PutUnsafe}}(os, static\_cast<typename OutputStream::Ch>((v >> 10) | 0xD800));}
+\DoxyCodeLine{302             \mbox{\hyperlink{namespacerapidjson_a0a774dcffe8ae07686f459ae017d2f20}{PutUnsafe}}(os, static\_cast<typename OutputStream::Ch>((v \& 0x3FF) | 0xDC00));}
+\DoxyCodeLine{303         \}}
+\DoxyCodeLine{304     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Put\+Unsafe(), R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_u_t_f16_a9bfa2e9096b1596e0b3a2cc2be6c9477}\label{structrapidjson_1_1_u_t_f16_a9bfa2e9096b1596e0b3a2cc2be6c9477}} 
+\index{rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}!Validate@{Validate}}
+\index{Validate@{Validate}!rapidjson::UTF16$<$ CharType $>$@{rapidjson::UTF16$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Validate()}{Validate()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = wchar\+\_\+t$>$ \\
+template$<$typename Input\+Stream , typename Output\+Stream $>$ \\
+static bool \mbox{\hyperlink{structrapidjson_1_1_u_t_f16}{rapidjson\+::\+U\+T\+F16}}$<$ Char\+Type $>$\+::Validate (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{Output\+Stream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 325 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{325                                                             \{}
+\DoxyCodeLine{326         \mbox{\hyperlink{rapidjson_8h_af95188da1d8eb6d4b148fe9ce71cd7c4}{RAPIDJSON\_STATIC\_ASSERT}}(\textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} InputStream::Ch) >= 2);}
+\DoxyCodeLine{327         \mbox{\hyperlink{rapidjson_8h_af95188da1d8eb6d4b148fe9ce71cd7c4}{RAPIDJSON\_STATIC\_ASSERT}}(\textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} OutputStream::Ch) >= 2);}
+\DoxyCodeLine{328         \textcolor{keyword}{typename} InputStream::Ch c;}
+\DoxyCodeLine{329         os.Put(static\_cast<typename OutputStream::Ch>(c = is.Take()));}
+\DoxyCodeLine{330         \textcolor{keywordflow}{if} (c < 0xD800 || c > 0xDFFF)}
+\DoxyCodeLine{331             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{332         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (c <= 0xDBFF) \{}
+\DoxyCodeLine{333             os.Put(c = is.Take());}
+\DoxyCodeLine{334             \textcolor{keywordflow}{return} c >= 0xDC00 \&\& c <= 0xDFFF;}
+\DoxyCodeLine{335         \}}
+\DoxyCodeLine{336         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{337     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{encodings_8h}{encodings.\+h}}\end{DoxyCompactItemize}

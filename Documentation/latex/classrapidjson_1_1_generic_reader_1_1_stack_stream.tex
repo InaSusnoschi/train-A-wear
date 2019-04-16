@@ -1,0 +1,215 @@
+\hypertarget{classrapidjson_1_1_generic_reader_1_1_stack_stream}{}\section{rapidjson\+::Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::Stack\+Stream$<$ Char\+Type $>$ Class Template Reference}
+\label{classrapidjson_1_1_generic_reader_1_1_stack_stream}\index{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Char\+Type \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a26312406aad81ffa8ef6dd01fae42a30}{Ch}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_ab1e34ebbc487d5c19bbabe57936afc09}{Stack\+Stream}} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$ Stack\+Allocator $>$ \&stack)
+\item 
+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE void \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a86be44e7edd2a6afa32325b783d6e0e7}{Put}} (\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a26312406aad81ffa8ef6dd01fae42a30}{Ch}} c)
+\item 
+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE void $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a6831faa6974dd9dee2a10e8df68554c1}{Push}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} count)
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a8e7a1a66d6602cbe3e290a94d1f99eb8}{Length}} () const
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a26312406aad81ffa8ef6dd01fae42a30}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a0d0f7dc8727ab44301ea697563068a19}{Pop}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_aefa510439cbd8ad697725f9c53d5f04a}{Stack\+Stream}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}} \&)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a624972cddcd4df10dbc43bae2cfaedf9}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}} \&)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$ Stack\+Allocator $>$ \& \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a9fb3b8e374497248e7b4dedd65983838}{stack\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_aacdc751831a6c54e3c89a63c8f0a2735}{length\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Source\+Encoding, typename Target\+Encoding, typename Stack\+Allocator = Crt\+Allocator$>$\newline
+template$<$typename Char\+Type$>$\newline
+class rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\+Stack\+Stream$<$ Char\+Type $>$}
+
+
+
+Definition at line 926 of file reader.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_reader_1_1_stack_stream_a26312406aad81ffa8ef6dd01fae42a30}\label{classrapidjson_1_1_generic_reader_1_1_stack_stream_a26312406aad81ffa8ef6dd01fae42a30}} 
+\index{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Source\+Encoding, typename Target\+Encoding, typename Stack\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename Char\+Type$>$ \\
+typedef Char\+Type \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{rapidjson\+::\+Generic\+Reader}}$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}}$<$ Char\+Type $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a26312406aad81ffa8ef6dd01fae42a30}{Ch}}}
+
+
+
+Definition at line 928 of file reader.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_reader_1_1_stack_stream_ab1e34ebbc487d5c19bbabe57936afc09}\label{classrapidjson_1_1_generic_reader_1_1_stack_stream_ab1e34ebbc487d5c19bbabe57936afc09}} 
+\index{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}!StackStream@{StackStream}}
+\index{StackStream@{StackStream}!rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{StackStream()}{StackStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Source\+Encoding, typename Target\+Encoding, typename Stack\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename Char\+Type$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_reader}{rapidjson\+::\+Generic\+Reader}}$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}}$<$ Char\+Type $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$ Stack\+Allocator $>$ \&}]{stack }\end{DoxyParamCaption})}
+
+
+
+Definition at line 930 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{930 : \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a9fb3b8e374497248e7b4dedd65983838}{stack\_}}(stack), \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_aacdc751831a6c54e3c89a63c8f0a2735}{length\_}}(0) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_reader_1_1_stack_stream_aefa510439cbd8ad697725f9c53d5f04a}\label{classrapidjson_1_1_generic_reader_1_1_stack_stream_aefa510439cbd8ad697725f9c53d5f04a}} 
+\index{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}!StackStream@{StackStream}}
+\index{StackStream@{StackStream}!rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{StackStream()}{StackStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Source\+Encoding, typename Target\+Encoding, typename Stack\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename Char\+Type$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_reader}{rapidjson\+::\+Generic\+Reader}}$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}}$<$ Char\+Type $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}}$<$ Char\+Type $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_reader_1_1_stack_stream_a8e7a1a66d6602cbe3e290a94d1f99eb8}\label{classrapidjson_1_1_generic_reader_1_1_stack_stream_a8e7a1a66d6602cbe3e290a94d1f99eb8}} 
+\index{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}!Length@{Length}}
+\index{Length@{Length}!rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Length()}{Length()}}
+{\footnotesize\ttfamily template$<$typename Source\+Encoding, typename Target\+Encoding, typename Stack\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename Char\+Type$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{rapidjson\+::\+Generic\+Reader}}$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}}$<$ Char\+Type $>$\+::Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 941 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{941 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_aacdc751831a6c54e3c89a63c8f0a2735}{length\_}}; \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\+Parse\+String().
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_reader_1_1_stack_stream_a624972cddcd4df10dbc43bae2cfaedf9}\label{classrapidjson_1_1_generic_reader_1_1_stack_stream_a624972cddcd4df10dbc43bae2cfaedf9}} 
+\index{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Source\+Encoding, typename Target\+Encoding, typename Stack\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename Char\+Type$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{rapidjson\+::\+Generic\+Reader}}$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}}$<$ Char\+Type $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}}$<$ Char\+Type $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_reader_1_1_stack_stream_a0d0f7dc8727ab44301ea697563068a19}\label{classrapidjson_1_1_generic_reader_1_1_stack_stream_a0d0f7dc8727ab44301ea697563068a19}} 
+\index{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}!Pop@{Pop}}
+\index{Pop@{Pop}!rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Pop()}{Pop()}}
+{\footnotesize\ttfamily template$<$typename Source\+Encoding, typename Target\+Encoding, typename Stack\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename Char\+Type$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a26312406aad81ffa8ef6dd01fae42a30}{Ch}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{rapidjson\+::\+Generic\+Reader}}$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}}$<$ Char\+Type $>$\+::Pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 943 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{943                   \{}
+\DoxyCodeLine{944             \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a9fb3b8e374497248e7b4dedd65983838}{stack\_}}.template Pop<Ch>(\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_aacdc751831a6c54e3c89a63c8f0a2735}{length\_}});}
+\DoxyCodeLine{945         \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\+Parse\+String().
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_reader_1_1_stack_stream_a6831faa6974dd9dee2a10e8df68554c1}\label{classrapidjson_1_1_generic_reader_1_1_stack_stream_a6831faa6974dd9dee2a10e8df68554c1}} 
+\index{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}!Push@{Push}}
+\index{Push@{Push}!rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Push()}{Push()}}
+{\footnotesize\ttfamily template$<$typename Source\+Encoding, typename Target\+Encoding, typename Stack\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename Char\+Type$>$ \\
+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE void$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{rapidjson\+::\+Generic\+Reader}}$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}}$<$ Char\+Type $>$\+::Push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 936 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{936                                                          \{}
+\DoxyCodeLine{937             \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_aacdc751831a6c54e3c89a63c8f0a2735}{length\_}} += count;}
+\DoxyCodeLine{938             \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a9fb3b8e374497248e7b4dedd65983838}{stack\_}}.template Push<Ch>(count);}
+\DoxyCodeLine{939         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_reader_1_1_stack_stream_a86be44e7edd2a6afa32325b783d6e0e7}\label{classrapidjson_1_1_generic_reader_1_1_stack_stream_a86be44e7edd2a6afa32325b783d6e0e7}} 
+\index{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}!Put@{Put}}
+\index{Put@{Put}!rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily template$<$typename Source\+Encoding, typename Target\+Encoding, typename Stack\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename Char\+Type$>$ \\
+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE void \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{rapidjson\+::\+Generic\+Reader}}$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}}$<$ Char\+Type $>$\+::Put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a26312406aad81ffa8ef6dd01fae42a30}{Ch}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 931 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{931                                              \{}
+\DoxyCodeLine{932             *\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_a9fb3b8e374497248e7b4dedd65983838}{stack\_}}.template Push<Ch>() = c;}
+\DoxyCodeLine{933             ++\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream_aacdc751831a6c54e3c89a63c8f0a2735}{length\_}};}
+\DoxyCodeLine{934         \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_reader_1_1_stack_stream_aacdc751831a6c54e3c89a63c8f0a2735}\label{classrapidjson_1_1_generic_reader_1_1_stack_stream_aacdc751831a6c54e3c89a63c8f0a2735}} 
+\index{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}!length\_@{length\_}}
+\index{length\_@{length\_}!rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{length\_}{length\_}}
+{\footnotesize\ttfamily template$<$typename Source\+Encoding, typename Target\+Encoding, typename Stack\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename Char\+Type$>$ \\
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{rapidjson\+::\+Generic\+Reader}}$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}}$<$ Char\+Type $>$\+::length\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 952 of file reader.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_reader_1_1_stack_stream_a9fb3b8e374497248e7b4dedd65983838}\label{classrapidjson_1_1_generic_reader_1_1_stack_stream_a9fb3b8e374497248e7b4dedd65983838}} 
+\index{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}!stack\_@{stack\_}}
+\index{stack\_@{stack\_}!rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$@{rapidjson::GenericReader$<$ SourceEncoding, TargetEncoding, StackAllocator $>$::StackStream$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{stack\_}{stack\_}}
+{\footnotesize\ttfamily template$<$typename Source\+Encoding, typename Target\+Encoding, typename Stack\+Allocator = Crt\+Allocator$>$ \\
+template$<$typename Char\+Type$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$Stack\+Allocator$>$\& \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{rapidjson\+::\+Generic\+Reader}}$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{Stack\+Stream}}$<$ Char\+Type $>$\+::stack\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 951 of file reader.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{reader_8h}{reader.\+h}}\end{DoxyCompactItemize}

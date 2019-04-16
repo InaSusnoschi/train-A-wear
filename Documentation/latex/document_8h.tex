@@ -1,0 +1,108 @@
+\hypertarget{document_8h}{}\section{D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/document.h File Reference}
+\label{document_8h}\index{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/document.h@{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/document.h}}
+{\ttfamily \#include \char`\"{}reader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal/meta.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal/strfunc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}memorystream.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}encodedstream.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$new$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_value}{rapidjson\+::\+Generic\+Value$<$ Encoding, Allocator $>$}}
+\begin{DoxyCompactList}\small\item\em Represents a J\+S\+ON value. Use Value for \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding and default allocator. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$}}
+\begin{DoxyCompactList}\small\item\em A document for parsing J\+S\+ON text as D\+OM. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_member}{rapidjson\+::\+Generic\+Member$<$ Encoding, Allocator $>$}}
+\begin{DoxyCompactList}\small\item\em Name-\/value pair in a J\+S\+ON object value. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{rapidjson\+::\+Generic\+Member\+Iterator$<$ Const, Encoding, Allocator $>$}}
+\begin{DoxyCompactList}\small\item\em (Constant) member iterator for a J\+S\+ON object value \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_string_ref}{rapidjson\+::\+Generic\+String\+Ref$<$ Char\+Type $>$}}
+\begin{DoxyCompactList}\small\item\em Reference to a constant string (not taking a copy) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value_impl}{rapidjson\+::internal\+::\+Is\+Generic\+Value\+Impl$<$ T, Encoding, Allocator $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value_impl_3_01_t_00_01typename_01_void_3_01typename_958d471b859187f8641bd1e7a1585eac}{rapidjson\+::internal\+::\+Is\+Generic\+Value\+Impl$<$ T, typename Void$<$ typename T\+::\+Encoding\+Type $>$\+::\+Type, typename Void$<$ typename T\+::\+Allocator\+Type $>$\+::\+Type $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value}{rapidjson\+::internal\+::\+Is\+Generic\+Value$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper}{rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, T $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01bool_01_4}{rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, bool $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01int_01_4}{rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, int $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4}{rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, unsigned $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01int64__t_01_4}{rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, int64\+\_\+t $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01uint64__t_01_4}{rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, uint64\+\_\+t $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01double_01_4}{rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, double $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01float_01_4}{rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, float $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01const_01typename_01_value_type_1_1_ch_01_5_01_4}{rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, const typename Value\+Type\+::\+Ch $\ast$ $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01typename_01_value_type_1_1_array_01_4}{rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, typename Value\+Type\+::\+Array $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01typename_01_value_type_1_1_const_array_01_4}{rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, typename Value\+Type\+::\+Const\+Array $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01typename_01_value_type_1_1_object_01_4}{rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, typename Value\+Type\+::\+Object $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01typename_01_value_type_1_1_const_object_01_4}{rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, typename Value\+Type\+::\+Const\+Object $>$}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_array}{rapidjson\+::\+Generic\+Array$<$ Const, Value\+T $>$}}
+\begin{DoxyCompactList}\small\item\em Helper class for accessing Value of array type. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_object}{rapidjson\+::\+Generic\+Object$<$ Const, Value\+T $>$}}
+\begin{DoxyCompactList}\small\item\em Helper class for accessing Value of object type. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_value}{rapidjson\+::\+Generic\+Value$<$ Encoding, Allocator $>$}}
+\begin{DoxyCompactList}\small\item\em Represents a J\+S\+ON value. Use Value for \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding and default allocator. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_flag}{rapidjson\+::\+Generic\+Value$<$ Encoding, Allocator $>$\+::\+Flag}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_string}{rapidjson\+::\+Generic\+Value$<$ Encoding, Allocator $>$\+::\+String}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string}{rapidjson\+::\+Generic\+Value$<$ Encoding, Allocator $>$\+::\+Short\+String}}
+\item 
+union \mbox{\hyperlink{unionrapidjson_1_1_generic_value_1_1_number}{rapidjson\+::\+Generic\+Value$<$ Encoding, Allocator $>$\+::\+Number}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_number_1_1_i}{rapidjson\+::\+Generic\+Value$<$ Encoding, Allocator $>$\+::\+Number\+::I}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_number_1_1_u}{rapidjson\+::\+Generic\+Value$<$ Encoding, Allocator $>$\+::\+Number\+::U}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_object_data}{rapidjson\+::\+Generic\+Value$<$ Encoding, Allocator $>$\+::\+Object\+Data}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_array_data}{rapidjson\+::\+Generic\+Value$<$ Encoding, Allocator $>$\+::\+Array\+Data}}
+\item 
+union \mbox{\hyperlink{unionrapidjson_1_1_generic_value_1_1_data}{rapidjson\+::\+Generic\+Value$<$ Encoding, Allocator $>$\+::\+Data}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$}}
+\begin{DoxyCompactList}\small\item\em A document for parsing J\+S\+ON text as D\+OM. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_document_1_1_clear_stack_on_exit}{rapidjson\+::\+Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$\+::\+Clear\+Stack\+On\+Exit}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_array}{rapidjson\+::\+Generic\+Array$<$ Const, Value\+T $>$}}
+\begin{DoxyCompactList}\small\item\em Helper class for accessing Value of array type. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_object}{rapidjson\+::\+Generic\+Object$<$ Const, Value\+T $>$}}
+\begin{DoxyCompactList}\small\item\em Helper class for accessing Value of object type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacerapidjson}{rapidjson}}
+\begin{DoxyCompactList}\small\item\em main Rapid\+J\+S\+ON namespace \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacerapidjson_1_1internal}{rapidjson\+::internal}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Generic\+Value$<$ U\+T\+F8$<$$>$ $>$ \mbox{\hyperlink{namespacerapidjson_aa65fc9fb381b2cbc54f98673eadd6505}{rapidjson\+::\+Value}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}} with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding. \end{DoxyCompactList}\item 
+typedef Generic\+Document$<$ U\+T\+F8$<$$>$ $>$ \mbox{\hyperlink{namespacerapidjson_ace11b5b575baf1cccd5ba5f8586dcdc8}{rapidjson\+::\+Document}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Char\+Type $>$ }\\Generic\+String\+Ref$<$ Char\+Type $>$ \mbox{\hyperlink{namespacerapidjson_aa6b9fd9f6aa49405a574c362ba9af6b5}{rapidjson\+::\+String\+Ref}} (const Char\+Type $\ast$str)
+\begin{DoxyCompactList}\small\item\em Mark a character pointer as constant string. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Char\+Type $>$ }\\Generic\+String\+Ref$<$ Char\+Type $>$ \mbox{\hyperlink{namespacerapidjson_a578c51ab574a50a9c760b9da7c7562f2}{rapidjson\+::\+String\+Ref}} (const Char\+Type $\ast$str, size\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Mark a character pointer as constant string. \end{DoxyCompactList}\end{DoxyCompactItemize}

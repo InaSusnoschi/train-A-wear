@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logosmall.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">train-A-wear
+   &#160;<span id="projectnumber">2.1</span>
    </div>
+   <div id="projectbrief">Real time feedback application with wireless connection to three IMUs</div>
   </td>
  </tr>
  </tbody>
@@ -78,11 +81,6 @@ $(function() {
  <a href="classrapidjson_1_1_schema_validating_reader.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="schema_8h_source.html">schema.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for rapidjson::SchemaValidatingReader&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_schema_validating_reader__coll__graph.png" border="0" usemap="#rapidjson_1_1_schema_validating_reader_3_01parse_flags_00_01_input_stream_00_01_source_encoding_00_01_schema_document_type_00_01_stack_allocator_01_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -216,9 +214,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
 <div class="memproto">
 <div class="memtemplate">
 template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding , typename SchemaDocumentType  = SchemaDocument, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_schema_validating_reader.html">rapidjson::SchemaValidatingReader</a>&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;::<a class="el" href="classrapidjson_1_1_schema_validating_reader.html">SchemaValidatingReader</a> </td>
@@ -238,11 +233,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructor. </p>
@@ -272,9 +262,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
 <div class="memproto">
 <div class="memtemplate">
 template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding , typename SchemaDocumentType  = SchemaDocument, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classrapidjson_1_1_schema_validating_reader.html#a6fb634fa68daaa8c185136258042f4c6">ValueType</a>&amp; <a class="el" href="classrapidjson_1_1_schema_validating_reader.html">rapidjson::SchemaValidatingReader</a>&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;::GetError </td>
@@ -283,11 +270,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02478">2478</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -302,9 +284,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
 <div class="memproto">
 <div class="memtemplate">
 template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding , typename SchemaDocumentType  = SchemaDocument, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classrapidjson_1_1_schema_validating_reader.html#a42c64d1ed25ffb2e70a35b9e43e0e564">PointerType</a>&amp; <a class="el" href="classrapidjson_1_1_schema_validating_reader.html">rapidjson::SchemaValidatingReader</a>&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;::GetInvalidDocumentPointer </td>
@@ -313,11 +292,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02477">2477</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -332,9 +306,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
 <div class="memproto">
 <div class="memtemplate">
 template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding , typename SchemaDocumentType  = SchemaDocument, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classrapidjson_1_1_schema_validating_reader.html#a3507a4886ce6778fe1cae39ed5f0baaf">Ch</a>* <a class="el" href="classrapidjson_1_1_schema_validating_reader.html">rapidjson::SchemaValidatingReader</a>&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;::GetInvalidSchemaKeyword </td>
@@ -343,11 +314,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02476">2476</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -362,9 +328,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
 <div class="memproto">
 <div class="memtemplate">
 template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding , typename SchemaDocumentType  = SchemaDocument, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classrapidjson_1_1_schema_validating_reader.html#a42c64d1ed25ffb2e70a35b9e43e0e564">PointerType</a>&amp; <a class="el" href="classrapidjson_1_1_schema_validating_reader.html">rapidjson::SchemaValidatingReader</a>&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;::GetInvalidSchemaPointer </td>
@@ -373,11 +336,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02475">2475</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -392,9 +350,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
 <div class="memproto">
 <div class="memtemplate">
 template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding , typename SchemaDocumentType  = SchemaDocument, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="structrapidjson_1_1_parse_result.html">ParseResult</a>&amp; <a class="el" href="classrapidjson_1_1_schema_validating_reader.html">rapidjson::SchemaValidatingReader</a>&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;::GetParseResult </td>
@@ -403,11 +358,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02473">2473</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -422,9 +372,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
 <div class="memproto">
 <div class="memtemplate">
 template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding , typename SchemaDocumentType  = SchemaDocument, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_schema_validating_reader.html">rapidjson::SchemaValidatingReader</a>&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;::IsValid </td>
@@ -433,11 +380,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02474">2474</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -454,9 +396,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
 template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding , typename SchemaDocumentType  = SchemaDocument, typename StackAllocator  = CrtAllocator&gt; </div>
 <div class="memtemplate">
 template&lt;typename Handler &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_schema_validating_reader.html">rapidjson::SchemaValidatingReader</a>&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;::operator() </td>
@@ -466,11 +405,6 @@ template&lt;typename Handler &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02451">2451</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -486,11 +420,6 @@ template&lt;typename Handler &gt; </div>
 <div class="ttc" id="classrapidjson_1_1_schema_validating_reader_html_a03ee9d61d5051eb0d97eca449d6c2615"><div class="ttname"><a href="classrapidjson_1_1_schema_validating_reader.html#a03ee9d61d5051eb0d97eca449d6c2615">rapidjson::SchemaValidatingReader::parseResult_</a></div><div class="ttdeci">ParseResult parseResult_</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l02484">schema.h:2484</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="schema_8h_source.html#l01860">rapidjson::GenericSchemaValidator&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::GetError()</a>, <a class="el" href="schema_8h_source.html#l01874">rapidjson::GenericSchemaValidator&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::GetInvalidDocumentPointer()</a>, <a class="el" href="schema_8h_source.html#l01869">rapidjson::GenericSchemaValidator&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::GetInvalidSchemaKeyword()</a>, <a class="el" href="schema_8h_source.html#l01864">rapidjson::GenericSchemaValidator&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::GetInvalidSchemaPointer()</a>, and <a class="el" href="schema_8h_source.html#l01857">rapidjson::GenericSchemaValidator&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::IsValid()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_schema_validating_reader_adb09230cc40b8dc5ba607de14d37dc42_cgraph.png" border="0" usemap="#classrapidjson_1_1_schema_validating_reader_adb09230cc40b8dc5ba607de14d37dc42_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -730,12 +659,12 @@ template&lt;unsigned parseFlags, typename InputStream , typename SourceEncoding 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Server/rapidjson/<a class="el" href="schema_8h_source.html">schema.h</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Server/rapidjson/<a class="el" href="schema_8h_source.html">schema.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2019 00:37:13 for train-A-wear by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

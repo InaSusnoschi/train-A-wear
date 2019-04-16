@@ -1,0 +1,538 @@
+\hypertarget{class_integration__algorithms}{}\section{Integration\+\_\+algorithms Class Reference}
+\label{class_integration__algorithms}\index{Integration\_algorithms@{Integration\_algorithms}}
+
+
+{\ttfamily \#include $<$Integration\+\_\+algorithms.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_integration__algorithms_adc24b9c4f28db0e56755297e0f3eaa27}{Integration\+\_\+algorithms}} ()
+\item 
+\mbox{\hyperlink{class_integration__algorithms_a2ef259e2e7da2b39e374e03a1fc748ec}{$\sim$\+Integration\+\_\+algorithms}} ()
+\item 
+void \mbox{\hyperlink{class_integration__algorithms_a0966fe666b2c99a384c7a138a6817ece}{complementary\+\_\+filter}} (double $\ast$angle, double acc)
+\begin{DoxyCompactList}\small\item\em Function to create a filtered version of the calculated change of rotation. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_integration__algorithms_a5edf31b0eb679866bc9426dcae975df5}{Roll}} (double gyro\+\_\+y, double acc\+\_\+x, double acc\+\_\+z)
+\begin{DoxyCompactList}\small\item\em Calculation of the roll (y-\/axis sensor rotation) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_integration__algorithms_aa501e38449c081dd1ece866f5e9a4150}{Pitch}} (double gyro\+\_\+x, double acc\+\_\+y, double acc\+\_\+z)
+\begin{DoxyCompactList}\small\item\em Calculation of the roll (x-\/axis sensor rotation) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_integration__algorithms_a1e3abc78c151732e013b41fa0300a6f0}{squat\+\_\+straight\+\_\+back}} (double gyro\+\_\+y, double acc\+\_\+x, double acc\+\_\+z)
+\begin{DoxyCompactList}\small\item\em Algorithm checking for back rotation during squats. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_integration__algorithms_a536f64355f0ccce1e191aebeee30a6d0}{squat\+\_\+twist\+\_\+right\+\_\+knee}} (double gyro\+\_\+x, double acc\+\_\+y, double acc\+\_\+z)
+\begin{DoxyCompactList}\small\item\em Algorithm checking for twisting of the right knee. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_integration__algorithms_aa53617d2e831625774f19c186f73ed01}{squat\+\_\+twist\+\_\+left\+\_\+knee}} (double gyro\+\_\+x, double acc\+\_\+y, double acc\+\_\+z)
+\begin{DoxyCompactList}\small\item\em Algorithm checking for twisting of the right knee. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_integration__algorithms_a19e62aed96ce9fd9c784e39924cc6617}{plank\+\_\+bend\+\_\+back}} (double gyro\+\_\+y, double acc\+\_\+x, double acc\+\_\+z)
+\begin{DoxyCompactList}\small\item\em Algorithm checking for bent back during planks/push ups. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_integration__algorithms_a4e11a75d0b52af4a46d1f18a6e6693f3}{pushup\+\_\+shoulder\+\_\+back}} (double s1\+\_\+gyro\+\_\+y, double s1\+\_\+acc\+\_\+x, double s1\+\_\+acc\+\_\+z, double s2\+\_\+gyro\+\_\+y, double s2\+\_\+acc\+\_\+x, double s2\+\_\+acc\+\_\+z)
+\begin{DoxyCompactList}\small\item\em Algorithm checking for rate of change between the back and the shoulders during push ups. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_integration__algorithms_a859df296a5fb433f665796823db4b401}{pushup\+\_\+knee\+\_\+back}} (double s1\+\_\+gyro\+\_\+y, double s1\+\_\+acc\+\_\+x, double s1\+\_\+acc\+\_\+z, double s3\+\_\+gyro\+\_\+y, double s3\+\_\+acc\+\_\+x, double s3\+\_\+acc\+\_\+z)
+\begin{DoxyCompactList}\small\item\em Algorithm checking for rate of change between the back and the knees during push ups. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_buffer}{Buffer}} $\ast$ \mbox{\hyperlink{class_integration__algorithms_a29875d9357df6ac6be6884b4dd086e99}{sensor1\+\_\+rotx}}
+\item 
+\mbox{\hyperlink{class_buffer}{Buffer}} $\ast$ \mbox{\hyperlink{class_integration__algorithms_a2e6ecf3dec5dd79a83509417ba119b29}{sensor1\+\_\+roty}}
+\item 
+\mbox{\hyperlink{class_buffer}{Buffer}} $\ast$ \mbox{\hyperlink{class_integration__algorithms_ae12aab372ffece29e31c4001267682b0}{sensor2\+\_\+rotx}}
+\item 
+\mbox{\hyperlink{class_buffer}{Buffer}} $\ast$ \mbox{\hyperlink{class_integration__algorithms_a7c3f8e0bdb68032f29a5226cc1728428}{sensor2\+\_\+roty}}
+\item 
+\mbox{\hyperlink{class_buffer}{Buffer}} $\ast$ \mbox{\hyperlink{class_integration__algorithms_a6a1bad9a3c085c33d6a4922a007b6a9b}{sensor3\+\_\+rotx}}
+\item 
+\mbox{\hyperlink{class_buffer}{Buffer}} $\ast$ \mbox{\hyperlink{class_integration__algorithms_a4170f08224c157734de64da6286bb6ea}{sensor3\+\_\+roty}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Integration\+\_\+algorithms.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_integration__algorithms_adc24b9c4f28db0e56755297e0f3eaa27}\label{class_integration__algorithms_adc24b9c4f28db0e56755297e0f3eaa27}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!Integration\_algorithms@{Integration\_algorithms}}
+\index{Integration\_algorithms@{Integration\_algorithms}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{Integration\_algorithms()}{Integration\_algorithms()}}
+{\footnotesize\ttfamily Integration\+\_\+algorithms\+::\+Integration\+\_\+algorithms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file Integration\+\_\+algorithms.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20                                               \{}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_integration__algorithms_a29875d9357df6ac6be6884b4dd086e99}{sensor1\_rotx}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_buffer}{Buffer}}();}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_integration__algorithms_a2e6ecf3dec5dd79a83509417ba119b29}{sensor1\_roty}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_buffer}{Buffer}}();}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_integration__algorithms_ae12aab372ffece29e31c4001267682b0}{sensor2\_rotx}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_buffer}{Buffer}}();}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_integration__algorithms_a7c3f8e0bdb68032f29a5226cc1728428}{sensor2\_roty}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_buffer}{Buffer}}();}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_integration__algorithms_a6a1bad9a3c085c33d6a4922a007b6a9b}{sensor3\_rotx}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_buffer}{Buffer}}();}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_integration__algorithms_a4170f08224c157734de64da6286bb6ea}{sensor3\_roty}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_buffer}{Buffer}}();}
+\DoxyCodeLine{27 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_integration__algorithms_a2ef259e2e7da2b39e374e03a1fc748ec}\label{class_integration__algorithms_a2ef259e2e7da2b39e374e03a1fc748ec}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!````~Integration\_algorithms@{$\sim$Integration\_algorithms}}
+\index{````~Integration\_algorithms@{$\sim$Integration\_algorithms}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{$\sim$Integration\_algorithms()}{~Integration\_algorithms()}}
+{\footnotesize\ttfamily Integration\+\_\+algorithms\+::$\sim$\+Integration\+\_\+algorithms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 29 of file Integration\+\_\+algorithms.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29                                                \{}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_integration__algorithms_a0966fe666b2c99a384c7a138a6817ece}\label{class_integration__algorithms_a0966fe666b2c99a384c7a138a6817ece}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!complementary\_filter@{complementary\_filter}}
+\index{complementary\_filter@{complementary\_filter}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{complementary\_filter()}{complementary\_filter()}}
+{\footnotesize\ttfamily void Integration\+\_\+algorithms\+::complementary\+\_\+filter (\begin{DoxyParamCaption}\item[{double $\ast$}]{angle,  }\item[{double}]{acc }\end{DoxyParamCaption})}
+
+
+
+Function to create a filtered version of the calculated change of rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & A pointer to the rotational angle \\
+\hline
+{\em acc} & The acceleration used for the filtering \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file Integration\+\_\+algorithms.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40 \{}
+\DoxyCodeLine{41     *angle = ((double)0.98)*(*angle) + 0.02*acc;}
+\DoxyCodeLine{42 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_integration__algorithms_aa501e38449c081dd1ece866f5e9a4150}\label{class_integration__algorithms_aa501e38449c081dd1ece866f5e9a4150}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!Pitch@{Pitch}}
+\index{Pitch@{Pitch}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{Pitch()}{Pitch()}}
+{\footnotesize\ttfamily double Integration\+\_\+algorithms\+::\+Pitch (\begin{DoxyParamCaption}\item[{double}]{gyro\+\_\+x,  }\item[{double}]{acc\+\_\+y,  }\item[{double}]{acc\+\_\+z }\end{DoxyParamCaption})}
+
+
+
+Calculation of the roll (x-\/axis sensor rotation) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gyro\+\_\+x} & The value from the x-\/axis of the gyroscope \\
+\hline
+{\em acc\+\_\+y} & The value from the y-\/axis of the accelerometer \\
+\hline
+{\em acc\+\_\+z} & The value from the z-\/axis of the accelerometer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file Integration\+\_\+algorithms.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70 \{}
+\DoxyCodeLine{71     \textcolor{keywordtype}{double} pitch;}
+\DoxyCodeLine{72     \textcolor{keywordtype}{double} dt = 0.01;}
+\DoxyCodeLine{73     pitch += gyro\_x * dt;}
+\DoxyCodeLine{74     \textcolor{keywordtype}{double} acc\_correction\_x = atan2f(acc\_y, acc\_z)*180/M\_PI;}
+\DoxyCodeLine{75     \textcolor{keywordflow}{if} (acc\_correction\_x >180.0)\{}
+\DoxyCodeLine{76         acc\_correction\_x -=(double)360.0;}
+\DoxyCodeLine{77     \}}
+\DoxyCodeLine{78     \mbox{\hyperlink{class_integration__algorithms_a0966fe666b2c99a384c7a138a6817ece}{complementary\_filter}}(\&pitch, acc\_correction\_x);}
+\DoxyCodeLine{79     \textcolor{keywordflow}{return} pitch;}
+\DoxyCodeLine{80 \}}
+
+\end{DoxyCode}
+
+
+Referenced by squat\+\_\+twist\+\_\+left\+\_\+knee(), and squat\+\_\+twist\+\_\+right\+\_\+knee().
+
+\mbox{\Hypertarget{class_integration__algorithms_a19e62aed96ce9fd9c784e39924cc6617}\label{class_integration__algorithms_a19e62aed96ce9fd9c784e39924cc6617}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!plank\_bend\_back@{plank\_bend\_back}}
+\index{plank\_bend\_back@{plank\_bend\_back}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{plank\_bend\_back()}{plank\_bend\_back()}}
+{\footnotesize\ttfamily int Integration\+\_\+algorithms\+::plank\+\_\+bend\+\_\+back (\begin{DoxyParamCaption}\item[{double}]{gyro\+\_\+y,  }\item[{double}]{acc\+\_\+x,  }\item[{double}]{acc\+\_\+z }\end{DoxyParamCaption})}
+
+
+
+Algorithm checking for bent back during planks/push ups. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gyro\+\_\+y} & The value from the sensor on the back for the y-\/axis of the gyroscope \\
+\hline
+{\em acc\+\_\+x} & The value from the sensor on the back for the x-\/axis of the accelerometer \\
+\hline
+{\em acc\+\_\+z} & The value from the sensor on the back for the z-\/axis of the accelerometer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 145 of file Integration\+\_\+algorithms.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{146 \{}
+\DoxyCodeLine{147     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_integration__algorithms_a5edf31b0eb679866bc9426dcae975df5}{Roll}} = \mbox{\hyperlink{class_integration__algorithms_a5edf31b0eb679866bc9426dcae975df5}{Integration\_algorithms::Roll}}(gyro\_y, acc\_x, acc\_z);}
+\DoxyCodeLine{148     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_integration__algorithms_a5edf31b0eb679866bc9426dcae975df5}{Roll}} > 0)\{}
+\DoxyCodeLine{149         \textcolor{keywordflow}{return} 6; \textcolor{comment}{//message "Straighten you back during exercise!"}}
+\DoxyCodeLine{150     \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{151         \textcolor{keywordflow}{return} 7; \textcolor{comment}{//message "Keep the nice posture"}}
+\DoxyCodeLine{152     \}}
+\DoxyCodeLine{153 \}}
+
+\end{DoxyCode}
+
+
+References Roll().
+
+\mbox{\Hypertarget{class_integration__algorithms_a859df296a5fb433f665796823db4b401}\label{class_integration__algorithms_a859df296a5fb433f665796823db4b401}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!pushup\_knee\_back@{pushup\_knee\_back}}
+\index{pushup\_knee\_back@{pushup\_knee\_back}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{pushup\_knee\_back()}{pushup\_knee\_back()}}
+{\footnotesize\ttfamily int Integration\+\_\+algorithms\+::pushup\+\_\+knee\+\_\+back (\begin{DoxyParamCaption}\item[{double}]{s1\+\_\+gyro\+\_\+y,  }\item[{double}]{s1\+\_\+acc\+\_\+x,  }\item[{double}]{s1\+\_\+acc\+\_\+z,  }\item[{double}]{s3\+\_\+gyro\+\_\+y,  }\item[{double}]{s3\+\_\+acc\+\_\+x,  }\item[{double}]{s3\+\_\+acc\+\_\+z }\end{DoxyParamCaption})}
+
+
+
+Algorithm checking for rate of change between the back and the knees during push ups. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1\+\_\+gyro\+\_\+y} & The value from the sensor on the back for the y-\/axis of the gyroscope \\
+\hline
+{\em s1\+\_\+acc\+\_\+x} & The value from the sensor on the back for the x-\/axis of the accelerometer \\
+\hline
+{\em s1\+\_\+acc\+\_\+z} & The value from the sensor on the back for the z-\/axis of the accelerometer \\
+\hline
+{\em s3\+\_\+gyro\+\_\+y} & The value from the sensor on the right knee for the y-\/axis of the gyroscope \\
+\hline
+{\em s3\+\_\+acc\+\_\+x} & The value from the sensor on the right knee for the x-\/axis of the accelerometer \\
+\hline
+{\em s3\+\_\+acc\+\_\+z} & The value from the sensor on the right knee for the z-\/axis of the accelerometer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 190 of file Integration\+\_\+algorithms.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{191 \{}
+\DoxyCodeLine{192     \mbox{\hyperlink{class_integration__algorithms_a2e6ecf3dec5dd79a83509417ba119b29}{sensor1\_roty}}->\mbox{\hyperlink{class_buffer_a43bc2e8725cb4f43bbf4b67d2c787fd1}{buffer}}(\mbox{\hyperlink{class_integration__algorithms_a5edf31b0eb679866bc9426dcae975df5}{Integration\_algorithms::Roll}}(s1\_gyro\_y, s1\_acc\_x, s1\_acc\_z)); \textcolor{comment}{//back sensor}}
+\DoxyCodeLine{193     \textcolor{keywordtype}{double}* rotation1\_x = \mbox{\hyperlink{class_integration__algorithms_a2e6ecf3dec5dd79a83509417ba119b29}{sensor1\_roty}}->\mbox{\hyperlink{class_buffer_a58556f015b2a2260b95a6c7005e41d45}{get\_buffer}}();}
+\DoxyCodeLine{194     \mbox{\hyperlink{class_integration__algorithms_a4170f08224c157734de64da6286bb6ea}{sensor3\_roty}}->\mbox{\hyperlink{class_buffer_a43bc2e8725cb4f43bbf4b67d2c787fd1}{buffer}}(\mbox{\hyperlink{class_integration__algorithms_a5edf31b0eb679866bc9426dcae975df5}{Integration\_algorithms::Roll}}(s3\_gyro\_y, s3\_acc\_x, s3\_acc\_z)); \textcolor{comment}{//knee sensor}}
+\DoxyCodeLine{195     \textcolor{keywordtype}{double}* rotation3\_x = \mbox{\hyperlink{class_integration__algorithms_a4170f08224c157734de64da6286bb6ea}{sensor3\_roty}}->\mbox{\hyperlink{class_buffer_a58556f015b2a2260b95a6c7005e41d45}{get\_buffer}}();}
+\DoxyCodeLine{196     \textcolor{keywordflow}{if} ((abs(rotation1\_x[1] - rotation1\_x[0]) - abs(rotation3\_x[1] - rotation3\_x[0])) > 0.2)\{}
+\DoxyCodeLine{197         cout<<\textcolor{stringliteral}{"Dont bend your knees"}<<endl;}
+\DoxyCodeLine{198         \textcolor{keywordflow}{return} 10;}
+\DoxyCodeLine{199     \}\{}
+\DoxyCodeLine{200         cout<<\textcolor{stringliteral}{"right way"}<<endl;}
+\DoxyCodeLine{201         \textcolor{keywordflow}{return} 11;}
+\DoxyCodeLine{202     \}}
+\DoxyCodeLine{203 \}}
+
+\end{DoxyCode}
+
+
+References Roll().
+
+\mbox{\Hypertarget{class_integration__algorithms_a4e11a75d0b52af4a46d1f18a6e6693f3}\label{class_integration__algorithms_a4e11a75d0b52af4a46d1f18a6e6693f3}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!pushup\_shoulder\_back@{pushup\_shoulder\_back}}
+\index{pushup\_shoulder\_back@{pushup\_shoulder\_back}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{pushup\_shoulder\_back()}{pushup\_shoulder\_back()}}
+{\footnotesize\ttfamily int Integration\+\_\+algorithms\+::pushup\+\_\+shoulder\+\_\+back (\begin{DoxyParamCaption}\item[{double}]{s1\+\_\+gyro\+\_\+y,  }\item[{double}]{s1\+\_\+acc\+\_\+x,  }\item[{double}]{s1\+\_\+acc\+\_\+z,  }\item[{double}]{s2\+\_\+gyro\+\_\+y,  }\item[{double}]{s2\+\_\+acc\+\_\+x,  }\item[{double}]{s2\+\_\+acc\+\_\+z }\end{DoxyParamCaption})}
+
+
+
+Algorithm checking for rate of change between the back and the shoulders during push ups. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1\+\_\+gyro\+\_\+y} & The value from the sensor on the back for the y-\/axis of the gyroscope \\
+\hline
+{\em s1\+\_\+acc\+\_\+x} & The value from the sensor on the back for the x-\/axis of the accelerometer \\
+\hline
+{\em s1\+\_\+acc\+\_\+z} & The value from the sensor on the back for the z-\/axis of the accelerometer \\
+\hline
+{\em s2\+\_\+gyro\+\_\+y} & The value from the sensor on the shoulders for the y-\/axis of the gyroscope \\
+\hline
+{\em s2\+\_\+acc\+\_\+x} & The value from the sensor on the shoulders for the x-\/axis of the accelerometer \\
+\hline
+{\em s2\+\_\+acc\+\_\+z} & The value from the sensor on the shoulders for the z-\/axis of the accelerometer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 166 of file Integration\+\_\+algorithms.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{167 \{}
+\DoxyCodeLine{168     \mbox{\hyperlink{class_integration__algorithms_a2e6ecf3dec5dd79a83509417ba119b29}{sensor1\_roty}}->\mbox{\hyperlink{class_buffer_a43bc2e8725cb4f43bbf4b67d2c787fd1}{buffer}}(\mbox{\hyperlink{class_integration__algorithms_a5edf31b0eb679866bc9426dcae975df5}{Integration\_algorithms::Roll}}(s1\_gyro\_y, s1\_acc\_x, s1\_acc\_z)); \textcolor{comment}{//back sensor}}
+\DoxyCodeLine{169     \textcolor{keywordtype}{double}* rotation1\_x = \mbox{\hyperlink{class_integration__algorithms_a2e6ecf3dec5dd79a83509417ba119b29}{sensor1\_roty}}->\mbox{\hyperlink{class_buffer_a58556f015b2a2260b95a6c7005e41d45}{get\_buffer}}();}
+\DoxyCodeLine{170     \mbox{\hyperlink{class_integration__algorithms_a7c3f8e0bdb68032f29a5226cc1728428}{sensor2\_roty}}->\mbox{\hyperlink{class_buffer_a43bc2e8725cb4f43bbf4b67d2c787fd1}{buffer}}(\mbox{\hyperlink{class_integration__algorithms_a5edf31b0eb679866bc9426dcae975df5}{Integration\_algorithms::Roll}}(s2\_gyro\_y, s2\_acc\_x, s2\_acc\_z)); \textcolor{comment}{//shoulder sensor}}
+\DoxyCodeLine{171     \textcolor{keywordtype}{double}* rotation2\_x = \mbox{\hyperlink{class_integration__algorithms_a7c3f8e0bdb68032f29a5226cc1728428}{sensor2\_roty}}->\mbox{\hyperlink{class_buffer_a58556f015b2a2260b95a6c7005e41d45}{get\_buffer}}();}
+\DoxyCodeLine{172     \textcolor{keywordflow}{if} ((abs(rotation1\_x[1] - rotation1\_x[0]) - abs(rotation2\_x[1] - rotation2\_x[0])) > 0.2)\{}
+\DoxyCodeLine{173         cout<<\textcolor{stringliteral}{"Straighten your shoulders"}<<endl;}
+\DoxyCodeLine{174         \textcolor{keywordflow}{return} 8;}
+\DoxyCodeLine{175     \}\{}
+\DoxyCodeLine{176         cout<<\textcolor{stringliteral}{"right way"}<<endl;}
+\DoxyCodeLine{177         \textcolor{keywordflow}{return} 9;}
+\DoxyCodeLine{178     \}}
+\DoxyCodeLine{179 \}}
+
+\end{DoxyCode}
+
+
+References Roll().
+
+\mbox{\Hypertarget{class_integration__algorithms_a5edf31b0eb679866bc9426dcae975df5}\label{class_integration__algorithms_a5edf31b0eb679866bc9426dcae975df5}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!Roll@{Roll}}
+\index{Roll@{Roll}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{Roll()}{Roll()}}
+{\footnotesize\ttfamily double Integration\+\_\+algorithms\+::\+Roll (\begin{DoxyParamCaption}\item[{double}]{gyro\+\_\+y,  }\item[{double}]{acc\+\_\+x,  }\item[{double}]{acc\+\_\+z }\end{DoxyParamCaption})}
+
+
+
+Calculation of the roll (y-\/axis sensor rotation) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gyro\+\_\+y} & The value from the y-\/axis of the gyroscope \\
+\hline
+{\em acc\+\_\+x} & The value from the x-\/axis of the accelerometer \\
+\hline
+{\em acc\+\_\+z} & The value from the z-\/axis of the accelerometer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 51 of file Integration\+\_\+algorithms.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52 \{}
+\DoxyCodeLine{53     \textcolor{keywordtype}{double} roll;}
+\DoxyCodeLine{54     \textcolor{keywordtype}{double} dt = 0.01;}
+\DoxyCodeLine{55     roll += gyro\_y * dt;}
+\DoxyCodeLine{56     \textcolor{keywordtype}{double} acc\_correction\_y = atan2f(acc\_z, acc\_x) *180/M\_PI;}
+\DoxyCodeLine{57     \mbox{\hyperlink{class_integration__algorithms_a0966fe666b2c99a384c7a138a6817ece}{complementary\_filter}}(\&roll, acc\_correction\_y);}
+\DoxyCodeLine{58     \textcolor{keywordflow}{return} roll;}
+\DoxyCodeLine{59 \}}
+
+\end{DoxyCode}
+
+
+Referenced by plank\+\_\+bend\+\_\+back(), pushup\+\_\+knee\+\_\+back(), pushup\+\_\+shoulder\+\_\+back(), and squat\+\_\+straight\+\_\+back().
+
+\mbox{\Hypertarget{class_integration__algorithms_a1e3abc78c151732e013b41fa0300a6f0}\label{class_integration__algorithms_a1e3abc78c151732e013b41fa0300a6f0}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!squat\_straight\_back@{squat\_straight\_back}}
+\index{squat\_straight\_back@{squat\_straight\_back}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{squat\_straight\_back()}{squat\_straight\_back()}}
+{\footnotesize\ttfamily int Integration\+\_\+algorithms\+::squat\+\_\+straight\+\_\+back (\begin{DoxyParamCaption}\item[{double}]{gyro\+\_\+y,  }\item[{double}]{acc\+\_\+x,  }\item[{double}]{acc\+\_\+z }\end{DoxyParamCaption})}
+
+
+
+Algorithm checking for back rotation during squats. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gyro\+\_\+y} & The value from the sensor on the back the y-\/axis of the gyroscope \\
+\hline
+{\em acc\+\_\+x} & The value from the sensor on the back the x-\/axis of the accelerometer \\
+\hline
+{\em acc\+\_\+z} & The value from the sensor on the back the z-\/axis of the accelerometer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 91 of file Integration\+\_\+algorithms.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92 \{}
+\DoxyCodeLine{93     \textcolor{keywordtype}{double} roll = \mbox{\hyperlink{class_integration__algorithms_a5edf31b0eb679866bc9426dcae975df5}{Integration\_algorithms::Roll}}(gyro\_y, acc\_x, acc\_z);}
+\DoxyCodeLine{94     \textcolor{keywordflow}{if} (roll < 0.2 || roll > 0.2)\{}
+\DoxyCodeLine{95         \textcolor{keywordflow}{return} 1; \textcolor{comment}{//message "Bend during exercise!"}}
+\DoxyCodeLine{96     \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{97         \textcolor{keywordflow}{return} 2; \textcolor{comment}{//message "Keep the nice posture"}}
+\DoxyCodeLine{98     \}}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}
+
+
+References Roll().
+
+
+
+Referenced by parsing\+\_\+function().
+
+\mbox{\Hypertarget{class_integration__algorithms_aa53617d2e831625774f19c186f73ed01}\label{class_integration__algorithms_aa53617d2e831625774f19c186f73ed01}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!squat\_twist\_left\_knee@{squat\_twist\_left\_knee}}
+\index{squat\_twist\_left\_knee@{squat\_twist\_left\_knee}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{squat\_twist\_left\_knee()}{squat\_twist\_left\_knee()}}
+{\footnotesize\ttfamily int Integration\+\_\+algorithms\+::squat\+\_\+twist\+\_\+left\+\_\+knee (\begin{DoxyParamCaption}\item[{double}]{gyro\+\_\+x,  }\item[{double}]{acc\+\_\+y,  }\item[{double}]{acc\+\_\+z }\end{DoxyParamCaption})}
+
+
+
+Algorithm checking for twisting of the right knee. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gyro\+\_\+x} & The value from the sensor on the left knee for the x-\/axis of the gyroscope \\
+\hline
+{\em acc\+\_\+y} & The value from the sensor on the left knee for the y-\/axis of the accelerometer \\
+\hline
+{\em acc\+\_\+z} & The value from the sensor on the left knee for the z-\/axis of the accelerometer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 127 of file Integration\+\_\+algorithms.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{128 \{}
+\DoxyCodeLine{129     \mbox{\hyperlink{class_integration__algorithms_ae12aab372ffece29e31c4001267682b0}{sensor2\_rotx}}->\mbox{\hyperlink{class_buffer_a43bc2e8725cb4f43bbf4b67d2c787fd1}{buffer}}(\mbox{\hyperlink{class_integration__algorithms_aa501e38449c081dd1ece866f5e9a4150}{Integration\_algorithms::Pitch}}(gyro\_x, acc\_y, acc\_z));}
+\DoxyCodeLine{130     \textcolor{keywordtype}{double}* rotation\_x = \mbox{\hyperlink{class_integration__algorithms_ae12aab372ffece29e31c4001267682b0}{sensor2\_rotx}}->\mbox{\hyperlink{class_buffer_a58556f015b2a2260b95a6c7005e41d45}{get\_buffer}}();}
+\DoxyCodeLine{131     \textcolor{keywordflow}{if} (abs(rotation\_x[1] - rotation\_x[0]) > 0.3)\{}
+\DoxyCodeLine{132         \textcolor{keywordflow}{return} 4; \textcolor{comment}{//wrong way}}
+\DoxyCodeLine{133     \}\{}
+\DoxyCodeLine{134         \textcolor{keywordflow}{return} 5; \textcolor{comment}{//right way}}
+\DoxyCodeLine{135     \}}
+\DoxyCodeLine{136 \}}
+
+\end{DoxyCode}
+
+
+References Pitch().
+
+\mbox{\Hypertarget{class_integration__algorithms_a536f64355f0ccce1e191aebeee30a6d0}\label{class_integration__algorithms_a536f64355f0ccce1e191aebeee30a6d0}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!squat\_twist\_right\_knee@{squat\_twist\_right\_knee}}
+\index{squat\_twist\_right\_knee@{squat\_twist\_right\_knee}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{squat\_twist\_right\_knee()}{squat\_twist\_right\_knee()}}
+{\footnotesize\ttfamily int Integration\+\_\+algorithms\+::squat\+\_\+twist\+\_\+right\+\_\+knee (\begin{DoxyParamCaption}\item[{double}]{gyro\+\_\+x,  }\item[{double}]{acc\+\_\+y,  }\item[{double}]{acc\+\_\+z }\end{DoxyParamCaption})}
+
+
+
+Algorithm checking for twisting of the right knee. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gyro\+\_\+x} & The value from the sensor on the right knee for the x-\/axis of the gyroscope \\
+\hline
+{\em acc\+\_\+y} & The value from the sensor on the right knee for the y-\/axis of the accelerometer \\
+\hline
+{\em acc\+\_\+z} & The value from the sensor on the right knee for the z-\/axis of the accelerometer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file Integration\+\_\+algorithms.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{110 \{}
+\DoxyCodeLine{111     \mbox{\hyperlink{class_integration__algorithms_a29875d9357df6ac6be6884b4dd086e99}{sensor1\_rotx}}->\mbox{\hyperlink{class_buffer_a43bc2e8725cb4f43bbf4b67d2c787fd1}{buffer}}(\mbox{\hyperlink{class_integration__algorithms_aa501e38449c081dd1ece866f5e9a4150}{Integration\_algorithms::Pitch}}(gyro\_x, acc\_y, acc\_z));}
+\DoxyCodeLine{112     \textcolor{keywordtype}{double}* rotation\_x = \mbox{\hyperlink{class_integration__algorithms_a29875d9357df6ac6be6884b4dd086e99}{sensor1\_rotx}}->\mbox{\hyperlink{class_buffer_a58556f015b2a2260b95a6c7005e41d45}{get\_buffer}}();}
+\DoxyCodeLine{113     \textcolor{keywordflow}{if} (abs(rotation\_x[1] - rotation\_x[0]) > 0.3)\{}
+\DoxyCodeLine{114         \textcolor{keywordflow}{return} 3; \textcolor{comment}{//wrong way}}
+\DoxyCodeLine{115     \}\{}
+\DoxyCodeLine{116         \textcolor{keywordflow}{return} 5; \textcolor{comment}{//right way}}
+\DoxyCodeLine{117     \}}
+\DoxyCodeLine{118 \}}
+
+\end{DoxyCode}
+
+
+References Pitch().
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_integration__algorithms_a29875d9357df6ac6be6884b4dd086e99}\label{class_integration__algorithms_a29875d9357df6ac6be6884b4dd086e99}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!sensor1\_rotx@{sensor1\_rotx}}
+\index{sensor1\_rotx@{sensor1\_rotx}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{sensor1\_rotx}{sensor1\_rotx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_buffer}{Buffer}}$\ast$ Integration\+\_\+algorithms\+::sensor1\+\_\+rotx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file Integration\+\_\+algorithms.\+h.
+
+\mbox{\Hypertarget{class_integration__algorithms_a2e6ecf3dec5dd79a83509417ba119b29}\label{class_integration__algorithms_a2e6ecf3dec5dd79a83509417ba119b29}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!sensor1\_roty@{sensor1\_roty}}
+\index{sensor1\_roty@{sensor1\_roty}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{sensor1\_roty}{sensor1\_roty}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_buffer}{Buffer}}$\ast$ Integration\+\_\+algorithms\+::sensor1\+\_\+roty\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file Integration\+\_\+algorithms.\+h.
+
+\mbox{\Hypertarget{class_integration__algorithms_ae12aab372ffece29e31c4001267682b0}\label{class_integration__algorithms_ae12aab372ffece29e31c4001267682b0}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!sensor2\_rotx@{sensor2\_rotx}}
+\index{sensor2\_rotx@{sensor2\_rotx}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{sensor2\_rotx}{sensor2\_rotx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_buffer}{Buffer}}$\ast$ Integration\+\_\+algorithms\+::sensor2\+\_\+rotx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Integration\+\_\+algorithms.\+h.
+
+\mbox{\Hypertarget{class_integration__algorithms_a7c3f8e0bdb68032f29a5226cc1728428}\label{class_integration__algorithms_a7c3f8e0bdb68032f29a5226cc1728428}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!sensor2\_roty@{sensor2\_roty}}
+\index{sensor2\_roty@{sensor2\_roty}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{sensor2\_roty}{sensor2\_roty}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_buffer}{Buffer}}$\ast$ Integration\+\_\+algorithms\+::sensor2\+\_\+roty\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file Integration\+\_\+algorithms.\+h.
+
+\mbox{\Hypertarget{class_integration__algorithms_a6a1bad9a3c085c33d6a4922a007b6a9b}\label{class_integration__algorithms_a6a1bad9a3c085c33d6a4922a007b6a9b}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!sensor3\_rotx@{sensor3\_rotx}}
+\index{sensor3\_rotx@{sensor3\_rotx}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{sensor3\_rotx}{sensor3\_rotx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_buffer}{Buffer}}$\ast$ Integration\+\_\+algorithms\+::sensor3\+\_\+rotx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 34 of file Integration\+\_\+algorithms.\+h.
+
+\mbox{\Hypertarget{class_integration__algorithms_a4170f08224c157734de64da6286bb6ea}\label{class_integration__algorithms_a4170f08224c157734de64da6286bb6ea}} 
+\index{Integration\_algorithms@{Integration\_algorithms}!sensor3\_roty@{sensor3\_roty}}
+\index{sensor3\_roty@{sensor3\_roty}!Integration\_algorithms@{Integration\_algorithms}}
+\subsubsection{\texorpdfstring{sensor3\_roty}{sensor3\_roty}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_buffer}{Buffer}}$\ast$ Integration\+\_\+algorithms\+::sensor3\+\_\+roty\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Integration\+\_\+algorithms.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/\mbox{\hyperlink{_integration__algorithms_8h}{Integration\+\_\+algorithms.\+h}}\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/\mbox{\hyperlink{_integration__algorithms_8cpp}{Integration\+\_\+algorithms.\+cpp}}\end{DoxyCompactItemize}

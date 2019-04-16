@@ -20,21 +20,17 @@ import com.synnapps.carouselview.ImageListener;
 import static com.example.trainawearapplication.ClassicSquat.showFeedback;
 
 
-public class Biceps extends AppCompatActivity {
+public class Biceps extends AppCompatActivity  implements UpdateFeedback{
     /**
      * @param mImages Array containing the drawable resources for the Carousel view showing bicep curls
      * @param mImagesTitle Holds the titles of the images
      */
     final String TAG = "Biceps";
 
-    // declare carousel parameters with 3 images
-    private int mImages[] = new int[]{
-            R.drawable.pullup1, R.drawable.pullup2, R.drawable.pullup3
-    };
-
-    private String[] mImagesTitle = new String[]{
-            "Pullup1", "Pullup2", "Pullup3"
-    };
+    UdpClientHandlerBicep udpClientHandler;
+    private final int PORT = 31415;
+    private Thread udpListener;
+    private ClientSend udpSender;
 
 
     EditText editTextAddress, editTextPort;
@@ -51,33 +47,99 @@ public class Biceps extends AppCompatActivity {
 
         Intent biceps = getIntent();
 
-        // implement Carousel - can maybe make it separate class?
-
-        CarouselView carouselView = findViewById(R.id.carousel);
-        carouselView.setPageCount(mImages.length);
-        carouselView.setImageListener(new ImageListener() {
-            @Override
-            public void setImageForPosition(int position, ImageView imageView) {
-                imageView.setImageResource(mImages[position]);
-            }
-        });
-
-        carouselView.setImageClickListener(new ImageClickListener() {
-            @Override
-            public void onClick(int position) {
-                Toast.makeText(Biceps.this, mImagesTitle[position], Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        buttonConnect =  findViewById(R.id.buttonStartBiceps);
-        buttonDisconnect =  findViewById(R.id.buttonStopBiceps);
-        textViewState = findViewById(R.id.state); //
-        textViewRx = findViewById(R.id.received); //
+        buttonConnect = findViewById(R.id.buttonStartBiceps);
+        buttonDisconnect = findViewById(R.id.buttonStopBiceps);
+        textViewState = findViewById(R.id.stateBicep); //
+        textViewRx = findViewById(R.id.receivedBicep); //
         textFeedback = findViewById(R.id.feedbackBiceps); //
 
 //        udpClientHandler = new ClassicSquat.UdpClientHandler(ClassicSquat parent);
+        udpClientHandler = new com.example.trainawearapplication.UdpClientHandlerBicep();
+
+        Log.d(TAG, "Start listening for messages");
+        udpListener = new Thread(new com.example.trainawearapplication.ClientListenBicep(PORT, textViewState, udpClientHandler));
+        udpListener.start();
+
+        udpSender = new ClientSend("255.255.255.255", PORT);
+        Log.d(TAG, "sending to " + textViewState.getText().toString());
+        udpSender.execute("train-a-wear ready");
     }
 
+    // when user presses START
+    View.OnClickListener buttonConnectOnClickListener =
+            new View.OnClickListener() {
+
+                @Override
+                public void onClick(View arg0) {
+
+                    Log.d(TAG,"Connecting");
+                    Log.d(TAG,"connect button state");
+                    buttonConnect.setEnabled(false);
+                    buttonConnect.setVisibility(View.GONE);
+                    buttonDisconnect.setEnabled(true);
+                    buttonDisconnect.setVisibility(View.VISIBLE);
+
+                    // start Send thread
+
+                    udpSender = new ClientSend(textViewState.getText().toString(), PORT);
+                    Log.d(TAG, textViewState.getText().toString());
+                    Log.d(TAG, "sending to " + textViewState.getText().toString());
+                    udpSender.execute("STARTbiceps");
+                }
+            };
+    // disconnect on button press
+    View.OnClickListener buttonDisonnectOnClickListener =
+            new View.OnClickListener() {
+
+                @Override
+                public void onClick(View arg0) {
+
+                    Log.d(TAG,"Disconnecting");
+//                    udpClientThread.stopClient();
+//                    textViewState.setText("clientEnd()");
+                    Log.d(TAG,"disconnect button state");
+                    buttonConnect.setEnabled(true);
+                    buttonConnect.setVisibility(View.VISIBLE);
+                    buttonDisconnect.setEnabled(false);
+                    buttonDisconnect.setVisibility(View.GONE);
+
+                    udpSender = new ClientSend(textViewState.getText().toString(), PORT);
+                    Log.d(TAG, "sending stop msg " + textViewState.getText().toString());
+                    udpSender.execute("STOPbiceps");
+                }
+            };
 
 
+    public static String showFeedback (String instructionDef){
+        switch (instructionDef){
+            case "0":
+                return("Ready to start");
+
+            case "1":
+                return ("Let's go!");
+
+            case "5":
+                return ("Try to keep you back in a neutral position, don't lift your hips");
+
+            case "6":
+                return ("If you keep your hips steady, the abs are working harder");
+
+            case "7":
+                return ("For an effective push up, bring your chest close to the ground");
+
+            default:
+                return("You're doing great, keep going!");
+        }
+    }
+    /**
+     * Method required by the UpdateFeedback interface
+     * @param view
+     * @param text
+     */
+
+    @Override
+    public void setViewText(TextView view, String text) {
+
+
+    }
 }

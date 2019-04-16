@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView tv = (TextView) findViewById(R.id.tv);
         Button wordpress = (Button) findViewById(R.id.buttonWordpress);
         Button insta = (Button) findViewById(R.id.buttonInsta);
+        Button tweet = (Button) findViewById(R.id.buttonTwitter);
 
         Context context = getApplicationContext();
 
@@ -49,13 +50,14 @@ public class MainActivity extends AppCompatActivity {
         //Register onClick listener
         wordpress.setOnClickListener(wordpressButtonListener);
         insta.setOnClickListener(instaButtonListener);
+        tweet.setOnClickListener(twitterButtonListener);
 
     }
 
     /**
      * @brief Linked to media
+     * This OnClickListener is linked to the train-A-wear wordpress
      */
-
     private View.OnClickListener wordpressButtonListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -64,6 +66,10 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    /**
+     * @brief Linked to media
+     * This OnClickListener is linked to the train-A-wear instagram
+     */
     private View.OnClickListener instaButtonListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -72,9 +78,20 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    /* FROM HERE OLD CODE
-    /** Called when the user taps the Setup button to transfer the message*/
+    /**
+     * @brief Linked to media
+     * This OnClickListener is linked to the train-A-wear twitter page
+     */
+    private View.OnClickListener twitterButtonListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/TrainAWear"));
+            startActivity(i);
+        }
+    };
 
+
+    /** Called when the user taps the Setup button */
     public void enterSetup (View view) {
         Intent setup = new Intent(this, Setup.class);
         startActivity(setup);
@@ -88,20 +105,19 @@ public class MainActivity extends AppCompatActivity {
         startActivity(workout);
     }
 
-
+    /** Called when user taps the "Progress" button*/
     public void enterProgress (View view){
         Intent progress = new Intent(this, Progress.class);
         startActivity(progress);
     }
 
+    /** Called when user taps the "Help" button*/
     public void enterHelpApp (View view){
         Intent helpApp = new Intent(this, HelpApp.class);
         startActivity(helpApp);
     }
 
-    /**
-     * background process for connecting to RPI and sending get request
-     */
+
 
 
 //    private class Background_get extends AsyncTask<String, Void, String>{
@@ -135,7 +151,6 @@ public class MainActivity extends AppCompatActivity {
      * @param context
      * @return Height of the screen
      */
-
     public static int getScreenHeightInDPs(Context context){
         DisplayMetrics dm = new DisplayMetrics();
         WindowManager windowManager = (WindowManager) context.getSystemService(WINDOW_SERVICE);

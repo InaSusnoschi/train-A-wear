@@ -1,0 +1,581 @@
+\hypertarget{train-_a-wear__server_8cpp}{}\section{D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/train-\/\+A-\/wear\+\_\+server.cpp File Reference}
+\label{train-_a-wear__server_8cpp}\index{D:/cloned repo trainawear/train-\/A-\/wear/Server/train-\/A-\/wear\_server.cpp@{D:/cloned repo trainawear/train-\/A-\/wear/Server/train-\/A-\/wear\_server.cpp}}
+
+
+train-\/\+A-\/wear server file.  
+
+
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$sys/ioctl.\+h$>$}\newline
+{\ttfamily \#include $<$net/if.\+h$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include \char`\"{}rapidjson/document.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rapidjson/prettywriter.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$future$>$}\newline
+{\ttfamily \#include \char`\"{}Integration\+\_\+algorithms.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structsensor__data}{sensor\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em A structure that holds the latest sensor readings, after parsing them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{train-_a-wear__server_8cpp_af7b7dc9a200cb1404c280bd500fd1551}{B\+U\+F\+F\+E\+R\+\_\+\+L\+E\+N\+G\+TH}}~1500
+\begin{DoxyCompactList}\small\item\em Maximum length of a single U\+DP packet to be read in from the socket. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{train-_a-wear__server_8cpp_a614217d263be1fb1a5f76e2ff7be19a2}{P\+O\+RT}}~31415
+\begin{DoxyCompactList}\small\item\em Default port that the server would establish a socket to listen on. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{train-_a-wear__server_8cpp_aa7a1101e9cec886e9ade667195fadb5a}{B\+R\+O\+A\+D\+C\+A\+S\+T\+\_\+\+D\+E\+L\+A\+Y\+\_\+S}}~45
+\begin{DoxyCompactList}\small\item\em Delay in seconds between successive multicast messages sent from the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{train-_a-wear__server_8cpp_a0fca5c05bd3ddbf5a153d3b9d43c25f1}{broadcast\+\_\+server}} ()
+\begin{DoxyCompactList}\small\item\em map record that holds known sensor data stored. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{train-_a-wear__server_8cpp_acdb6c6606c64b3a5b7b952f030fb5b4e}{parsing\+\_\+function}} (char $\ast$received\+J\+S\+ON)
+\begin{DoxyCompactList}\small\item\em A function that takes a pointer to J\+S\+ON formatted char array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{train-_a-wear__server_8cpp_a95b7d8dc0b0f9099cbd8370e65e36ebd}{send\+\_\+message}} (char $\ast$destination\+\_\+ip, char $\ast$message)
+\begin{DoxyCompactList}\small\item\em A generic function for sending char arrays to port 31415 at destination IP. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{train-_a-wear__server_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{train-_a-wear__server_8cpp_a0f2faa14b725237d13bb7d2e8b7e3942}{handshake}} = \char`\"{}train-\/A-\/wear online\textbackslash{}n\char`\"{}
+\begin{DoxyCompactList}\small\item\em constant char array. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{train-_a-wear__server_8cpp_aba845a1aa2054e7dadd0653a67b549f4}{phone\+\_\+handshake}} = \char`\"{}train-\/a-\/wear ready\char`\"{}
+\begin{DoxyCompactList}\small\item\em constat char array. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{train-_a-wear__server_8cpp_ac621bcfb466f3b6a6421c5f48b30ade3}{start}} = \char`\"{}S\+T\+A\+RT\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{train-_a-wear__server_8cpp_a94c0a5a6a2bfcdd03883cd7d72bbaa86}{stop}} = \char`\"{}S\+T\+OP\char`\"{}
+\item 
+mutex \mbox{\hyperlink{train-_a-wear__server_8cpp_a8068724ec29d6e66aad75c716e138db3}{mut}}
+\item 
+map$<$ string, \mbox{\hyperlink{structsensor__data}{sensor\+\_\+data}} $>$ \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensor\+Records}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+train-\/\+A-\/wear server file. 
+
+A U\+DP server that binds to port 31415 to listen for any train-\/\+A-\/wear active devices and transmit results to the coresponding phone apps.
+
+\begin{DoxyAuthor}{Author}
+Borislav Gachev 
+
+Margarita Ivanova
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+April 2019 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{train-_a-wear__server_8cpp_aa7a1101e9cec886e9ade667195fadb5a}\label{train-_a-wear__server_8cpp_aa7a1101e9cec886e9ade667195fadb5a}} 
+\index{train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}!BROADCAST\_DELAY\_S@{BROADCAST\_DELAY\_S}}
+\index{BROADCAST\_DELAY\_S@{BROADCAST\_DELAY\_S}!train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}}
+\subsubsection{\texorpdfstring{BROADCAST\_DELAY\_S}{BROADCAST\_DELAY\_S}}
+{\footnotesize\ttfamily \#define B\+R\+O\+A\+D\+C\+A\+S\+T\+\_\+\+D\+E\+L\+A\+Y\+\_\+S~45}
+
+
+
+Delay in seconds between successive multicast messages sent from the server. 
+
+
+
+Definition at line 45 of file train-\/\+A-\/wear\+\_\+server.\+cpp.
+
+\mbox{\Hypertarget{train-_a-wear__server_8cpp_af7b7dc9a200cb1404c280bd500fd1551}\label{train-_a-wear__server_8cpp_af7b7dc9a200cb1404c280bd500fd1551}} 
+\index{train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}!BUFFER\_LENGTH@{BUFFER\_LENGTH}}
+\index{BUFFER\_LENGTH@{BUFFER\_LENGTH}!train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}}
+\subsubsection{\texorpdfstring{BUFFER\_LENGTH}{BUFFER\_LENGTH}}
+{\footnotesize\ttfamily \#define B\+U\+F\+F\+E\+R\+\_\+\+L\+E\+N\+G\+TH~1500}
+
+
+
+Maximum length of a single U\+DP packet to be read in from the socket. 
+
+
+
+Definition at line 41 of file train-\/\+A-\/wear\+\_\+server.\+cpp.
+
+\mbox{\Hypertarget{train-_a-wear__server_8cpp_a614217d263be1fb1a5f76e2ff7be19a2}\label{train-_a-wear__server_8cpp_a614217d263be1fb1a5f76e2ff7be19a2}} 
+\index{train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}!PORT@{PORT}}
+\index{PORT@{PORT}!train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}}
+\subsubsection{\texorpdfstring{PORT}{PORT}}
+{\footnotesize\ttfamily \#define P\+O\+RT~31415}
+
+
+
+Default port that the server would establish a socket to listen on. 
+
+
+
+Definition at line 43 of file train-\/\+A-\/wear\+\_\+server.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{train-_a-wear__server_8cpp_a0fca5c05bd3ddbf5a153d3b9d43c25f1}\label{train-_a-wear__server_8cpp_a0fca5c05bd3ddbf5a153d3b9d43c25f1}} 
+\index{train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}!broadcast\_server@{broadcast\_server}}
+\index{broadcast\_server@{broadcast\_server}!train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}}
+\subsubsection{\texorpdfstring{broadcast\_server()}{broadcast\_server()}}
+{\footnotesize\ttfamily int broadcast\+\_\+server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+map record that holds known sensor data stored. 
+
+Sensor names are keys, \mbox{\hyperlink{structsensor__data}{sensor\+\_\+data}} structs are values. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{structsensor__data}{sensor\+\_\+data}} A thread function that sends a predefined message to Multicast IP address over U\+DP. Used for for automatic network discovery of train-\/\+A-\/wear active devices. After sending the message the function sleeps for a predefined number of seconds.
+
+\mbox{\hyperlink{train-_a-wear__server_8cpp_aa7a1101e9cec886e9ade667195fadb5a}{B\+R\+O\+A\+D\+C\+A\+S\+T\+\_\+\+D\+E\+L\+A\+Y\+\_\+S}} 
+
+\mbox{\hyperlink{train-_a-wear__server_8cpp_a0f2faa14b725237d13bb7d2e8b7e3942}{handshake}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 76 of file train-\/\+A-\/wear\+\_\+server.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76                       \{}
+\DoxyCodeLine{77     \textcolor{keywordtype}{int}                 socket\_d;}
+\DoxyCodeLine{78     \textcolor{keyword}{struct }sockaddr\_in  multicast\_addr;}
+\DoxyCodeLine{79     \textcolor{keywordtype}{int}                 broadcast = 1;}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \textcolor{comment}{// Create the socket}}
+\DoxyCodeLine{82     \textcolor{keywordflow}{if}((socket\_d = socket(AF\_INET, SOCK\_DGRAM, 0)) == -1)\{}
+\DoxyCodeLine{83         perror(\textcolor{stringliteral}{"Unable to create the multicast UDP socket."});}
+\DoxyCodeLine{84         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{85     \}}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87     \textcolor{keywordflow}{if}(setsockopt(socket\_d, SOL\_SOCKET, SO\_BROADCAST, \&broadcast, \textcolor{keyword}{sizeof}(broadcast)) < 0)\{}
+\DoxyCodeLine{88         perror(\textcolor{stringliteral}{"Error in setting multicast broadcast option"});}
+\DoxyCodeLine{89         close(socket\_d);}
+\DoxyCodeLine{90         \textcolor{keywordflow}{return} 3;}
+\DoxyCodeLine{91     \}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93     \textcolor{comment}{//Fillout the server information for multicasting to "255.255.255.255"}}
+\DoxyCodeLine{94     multicast\_addr.sin\_family       = AF\_INET;}
+\DoxyCodeLine{95     multicast\_addr.sin\_port         = htons(\mbox{\hyperlink{train-_a-wear__server_8cpp_a614217d263be1fb1a5f76e2ff7be19a2}{PORT}});}
+\DoxyCodeLine{96     multicast\_addr.sin\_addr.s\_addr  = inet\_addr(\textcolor{stringliteral}{"255.255.255.255"});}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99     \textcolor{comment}{//Run this indefinetely until the thread is closed. Sleed for BROADCAST\_DELAY\_S between executions}}
+\DoxyCodeLine{100     \textcolor{keywordflow}{for}(;;)\{}
+\DoxyCodeLine{101         \mbox{\hyperlink{train-_a-wear__server_8cpp_a8068724ec29d6e66aad75c716e138db3}{mut}}.lock();}
+\DoxyCodeLine{102         sendto(socket\_d, \mbox{\hyperlink{train-_a-wear__server_8cpp_a0f2faa14b725237d13bb7d2e8b7e3942}{handshake}}, strlen(\mbox{\hyperlink{train-_a-wear__server_8cpp_a0f2faa14b725237d13bb7d2e8b7e3942}{handshake}}), MSG\_CONFIRM, (\textcolor{keyword}{const} \textcolor{keyword}{struct} sockaddr *) \&multicast\_addr, \textcolor{keyword}{sizeof}(multicast\_addr));}
+\DoxyCodeLine{103         time\_t now\_time = chrono::system\_clock::to\_time\_t(chrono::system\_clock::now());}
+\DoxyCodeLine{104         cout << \textcolor{stringliteral}{"Broadcast sent @ "} << ctime(\&now\_time);}
+\DoxyCodeLine{105         cout << endl;}
+\DoxyCodeLine{106         \mbox{\hyperlink{train-_a-wear__server_8cpp_a8068724ec29d6e66aad75c716e138db3}{mut}}.unlock();}
+\DoxyCodeLine{107         this\_thread::sleep\_for(chrono::seconds(\mbox{\hyperlink{train-_a-wear__server_8cpp_aa7a1101e9cec886e9ade667195fadb5a}{BROADCAST\_DELAY\_S}}));}
+\DoxyCodeLine{108     \}}
+\DoxyCodeLine{109 \}}
+
+\end{DoxyCode}
+
+
+References B\+R\+O\+A\+D\+C\+A\+S\+T\+\_\+\+D\+E\+L\+A\+Y\+\_\+S, handshake, mut, and P\+O\+RT.
+
+
+
+Referenced by main().
+
+\mbox{\Hypertarget{train-_a-wear__server_8cpp_a840291bc02cba5474a4cb46a9b9566fe}\label{train-_a-wear__server_8cpp_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}!main@{main}}
+\index{main@{main}!train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Int field holding the socket descriptor
+
+Length of received packet
+
+sockaddr\+\_\+in structures for determining local IP address and receiving U\+DP packets
+
+\mbox{\hyperlink{class_buffer}{Buffer}} for holding the data from the received U\+DP packet
+
+int variable holding the flags from recv function
+
+sockaddr\+\_\+in structure holding the address of the client
+
+socklen\+\_\+t for holding the length of the client address
+
+char $\ast$ the will hold the received message from the client
+
+16-\/digit variable for holding the local machine\textquotesingle{}s IP address
+
+Structure for holding the result of I\+O\+C\+TL call
+
+Flag used for allowing sending and receiving multicast messages
+
+Holds the name of the sensor received on each transmission
+
+Holds the value of user\textquotesingle{}s phone IP address
+
+Flag that indicates if the surver should be sending data to the user or not 
+
+Definition at line 210 of file train-\/\+A-\/wear\+\_\+server.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{210               \{}
+\DoxyCodeLine{211     }
+\DoxyCodeLine{212     \textcolor{keywordtype}{int}                     fd; }
+\DoxyCodeLine{213     ssize\_t                 rlen; }
+\DoxyCodeLine{214     \textcolor{keyword}{struct }sockaddr\_in      addr, conn\_addr; }
+\DoxyCodeLine{215     \textcolor{keywordtype}{char}                    buffer[\mbox{\hyperlink{train-_a-wear__server_8cpp_af7b7dc9a200cb1404c280bd500fd1551}{BUFFER\_LENGTH}}]; }
+\DoxyCodeLine{216     \textcolor{keywordtype}{int}                     flags = 0; }
+\DoxyCodeLine{218     \textcolor{comment}{// Needed for UDP connection as per https:linux.die.net/man/3/getaddrinfo}}
+\DoxyCodeLine{219     \textcolor{keyword}{struct }sockaddr\_in      client\_addr; }
+\DoxyCodeLine{220     socklen\_t               client\_addr\_len; }
+\DoxyCodeLine{221     \textcolor{keywordtype}{char}*                   message; }
+\DoxyCodeLine{223     \textcolor{comment}{// Determining local IP}}
+\DoxyCodeLine{224     \textcolor{keywordtype}{char}            ip\_address[15]; }
+\DoxyCodeLine{225     \textcolor{keyword}{struct }ifreq    ifr; }
+\DoxyCodeLine{227     \textcolor{comment}{//Network IP discovery}}
+\DoxyCodeLine{228     \textcolor{keywordtype}{int} broadcast = 1; }
+\DoxyCodeLine{230     \textcolor{comment}{//JSON transmission variables}}
+\DoxyCodeLine{231     \textcolor{keywordtype}{string}  sensorName; }
+\DoxyCodeLine{233     \textcolor{keywordtype}{char}    ip\_phone[15]; }
+\DoxyCodeLine{234     \textcolor{keywordtype}{bool}    sendUpdates = \textcolor{keyword}{false}; }
+\DoxyCodeLine{236     fd = socket(AF\_INET, SOCK\_DGRAM, 0);}
+\DoxyCodeLine{237     ifr.ifr\_addr.sa\_family = AF\_INET;}
+\DoxyCodeLine{238     memcpy(ifr.ifr\_name, \textcolor{stringliteral}{"wlan0"}, IFNAMSIZ-1);}
+\DoxyCodeLine{239     ioctl(fd, SIOCGIFADDR, \&ifr);}
+\DoxyCodeLine{240     close(fd);}
+\DoxyCodeLine{241 }
+\DoxyCodeLine{242     strcpy(ip\_address,inet\_ntoa(((\textcolor{keyword}{struct} sockaddr\_in *)\&ifr.ifr\_addr)->sin\_addr));}
+\DoxyCodeLine{243     cout << \textcolor{stringliteral}{"Server IP Address is: "} << ip\_address << endl;}
+\DoxyCodeLine{244 }
+\DoxyCodeLine{245     \textcolor{comment}{// Create a UDP (SOCK\_DGRAM) socket}}
+\DoxyCodeLine{246     fd = socket (AF\_INET, SOCK\_DGRAM, 0);}
+\DoxyCodeLine{247     \textcolor{keywordflow}{if}(fd == -1)\{}
+\DoxyCodeLine{248         perror(\textcolor{stringliteral}{"Unable to create socket."});}
+\DoxyCodeLine{249         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{250     \}}
+\DoxyCodeLine{251 }
+\DoxyCodeLine{252 }
+\DoxyCodeLine{253     \textcolor{keywordflow}{if}(setsockopt(fd,SOL\_SOCKET,SO\_BROADCAST,\&broadcast,\textcolor{keyword}{sizeof}(broadcast)) < 0)\{}
+\DoxyCodeLine{254         perror(\textcolor{stringliteral}{"Error in setting Broadcast option"});}
+\DoxyCodeLine{255         close(fd);}
+\DoxyCodeLine{256         \textcolor{keywordflow}{return} 3;}
+\DoxyCodeLine{257     \}}
+\DoxyCodeLine{258 }
+\DoxyCodeLine{259     \textcolor{comment}{// Attempt to bind to port 31415}}
+\DoxyCodeLine{260     addr.sin\_family         = AF\_INET;}
+\DoxyCodeLine{261     addr.sin\_port           = htons(\mbox{\hyperlink{train-_a-wear__server_8cpp_a614217d263be1fb1a5f76e2ff7be19a2}{PORT}});}
+\DoxyCodeLine{262     addr.sin\_addr.s\_addr    = INADDR\_ANY;}
+\DoxyCodeLine{263 }
+\DoxyCodeLine{264     \textcolor{keywordflow}{if}(bind(fd, (\textcolor{keyword}{struct} sockaddr *) \&addr, \textcolor{keyword}{sizeof}(addr)) == -1) \{}
+\DoxyCodeLine{265         perror(\textcolor{stringliteral}{"Unable to bind to port 31415"});}
+\DoxyCodeLine{266         \textcolor{keywordflow}{return} 2;}
+\DoxyCodeLine{267     \}}
+\DoxyCodeLine{268 }
+\DoxyCodeLine{269     thread broadcast\_thread(\mbox{\hyperlink{train-_a-wear__server_8cpp_a0fca5c05bd3ddbf5a153d3b9d43c25f1}{broadcast\_server}});}
+\DoxyCodeLine{270 }
+\DoxyCodeLine{271     \textcolor{comment}{// Retrieve the data in the packet}}
+\DoxyCodeLine{272     client\_addr\_len = \textcolor{keyword}{sizeof}(\textcolor{keyword}{struct }sockaddr\_storage);}
+\DoxyCodeLine{273     \textcolor{keywordflow}{while}((rlen = recvfrom(fd, buffer, \mbox{\hyperlink{train-_a-wear__server_8cpp_af7b7dc9a200cb1404c280bd500fd1551}{BUFFER\_LENGTH}}, flags, (\textcolor{keyword}{struct} sockaddr *) \&client\_addr, \&client\_addr\_len)) > 0)\{}
+\DoxyCodeLine{274         \mbox{\hyperlink{train-_a-wear__server_8cpp_a8068724ec29d6e66aad75c716e138db3}{mut}}.lock();}
+\DoxyCodeLine{275         time\_t now\_time = chrono::system\_clock::to\_time\_t(chrono::system\_clock::now());}
+\DoxyCodeLine{276         cout << inet\_ntoa(client\_addr.sin\_addr) << \textcolor{stringliteral}{" @ "} << ctime(\&now\_time);}
+\DoxyCodeLine{277         }
+\DoxyCodeLine{278         \textcolor{comment}{// Filter out the message or print it}}
+\DoxyCodeLine{279         message = (\textcolor{keywordtype}{char}*) malloc(rlen);}
+\DoxyCodeLine{280         memcpy(message, buffer, rlen);}
+\DoxyCodeLine{281         \textcolor{keywordflow}{if}(strncmp(message, \mbox{\hyperlink{train-_a-wear__server_8cpp_a0f2faa14b725237d13bb7d2e8b7e3942}{handshake}}, strlen(\mbox{\hyperlink{train-_a-wear__server_8cpp_a0f2faa14b725237d13bb7d2e8b7e3942}{handshake}})) == 0)\{}
+\DoxyCodeLine{282             cout << \textcolor{stringliteral}{"I FOUND YOU!"} << endl;}
+\DoxyCodeLine{283             cout << endl;}
+\DoxyCodeLine{284         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(strncmp(message, \mbox{\hyperlink{train-_a-wear__server_8cpp_aba845a1aa2054e7dadd0653a67b549f4}{phone\_handshake}}, strlen(\mbox{\hyperlink{train-_a-wear__server_8cpp_aba845a1aa2054e7dadd0653a67b549f4}{phone\_handshake}})) == 0)\{}
+\DoxyCodeLine{285             strcpy(ip\_phone, inet\_ntoa(client\_addr.sin\_addr));}
+\DoxyCodeLine{286 }
+\DoxyCodeLine{287             cout << \textcolor{stringliteral}{"I FOUND A PHONE! @"} << ip\_phone << endl;}
+\DoxyCodeLine{288             \mbox{\hyperlink{train-_a-wear__server_8cpp_a95b7d8dc0b0f9099cbd8370e65e36ebd}{send\_message}}(ip\_phone, \mbox{\hyperlink{train-_a-wear__server_8cpp_a0f2faa14b725237d13bb7d2e8b7e3942}{handshake}});}
+\DoxyCodeLine{289             cout << endl;}
+\DoxyCodeLine{290         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strncmp(message, \mbox{\hyperlink{train-_a-wear__server_8cpp_ac621bcfb466f3b6a6421c5f48b30ade3}{start}}, strlen(\mbox{\hyperlink{train-_a-wear__server_8cpp_ac621bcfb466f3b6a6421c5f48b30ade3}{start}})) == 0)\{}
+\DoxyCodeLine{291             sendUpdates = \textcolor{keyword}{true};}
+\DoxyCodeLine{292         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(strncmp(message, \mbox{\hyperlink{train-_a-wear__server_8cpp_a94c0a5a6a2bfcdd03883cd7d72bbaa86}{stop}}, strlen(\mbox{\hyperlink{train-_a-wear__server_8cpp_a94c0a5a6a2bfcdd03883cd7d72bbaa86}{stop}})) == 0)\{}
+\DoxyCodeLine{293             sendUpdates = \textcolor{keyword}{false};}
+\DoxyCodeLine{294         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(sendUpdates)\{}
+\DoxyCodeLine{295             \textcolor{keywordtype}{char} mBuffer[8];}
+\DoxyCodeLine{296             sprintf(mBuffer, \textcolor{stringliteral}{"\%d"}, \mbox{\hyperlink{train-_a-wear__server_8cpp_acdb6c6606c64b3a5b7b952f030fb5b4e}{parsing\_function}}(message));}
+\DoxyCodeLine{297             \mbox{\hyperlink{train-_a-wear__server_8cpp_a95b7d8dc0b0f9099cbd8370e65e36ebd}{send\_message}}(ip\_phone, mBuffer);}
+\DoxyCodeLine{298         \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{299             cout << message << endl;}
+\DoxyCodeLine{300         \}}
+\DoxyCodeLine{301 }
+\DoxyCodeLine{302         free(message);}
+\DoxyCodeLine{303         \mbox{\hyperlink{train-_a-wear__server_8cpp_a8068724ec29d6e66aad75c716e138db3}{mut}}.unlock();}
+\DoxyCodeLine{304     \}}
+\DoxyCodeLine{305     \textcolor{comment}{// Close the socket}}
+\DoxyCodeLine{306     broadcast\_thread.join();}
+\DoxyCodeLine{307     cout << \textcolor{stringliteral}{"Broadcast thread has been stopped."} << endl;}
+\DoxyCodeLine{308     close(fd);}
+\DoxyCodeLine{309 }
+\DoxyCodeLine{310     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{311 \}}
+
+\end{DoxyCode}
+
+
+References broadcast\+\_\+server(), B\+U\+F\+F\+E\+R\+\_\+\+L\+E\+N\+G\+TH, handshake, mut, parsing\+\_\+function(), phone\+\_\+handshake, P\+O\+RT, send\+\_\+message(), start, and stop.
+
+\mbox{\Hypertarget{train-_a-wear__server_8cpp_acdb6c6606c64b3a5b7b952f030fb5b4e}\label{train-_a-wear__server_8cpp_acdb6c6606c64b3a5b7b952f030fb5b4e}} 
+\index{train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}!parsing\_function@{parsing\_function}}
+\index{parsing\_function@{parsing\_function}!train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}}
+\subsubsection{\texorpdfstring{parsing\_function()}{parsing\_function()}}
+{\footnotesize\ttfamily int parsing\+\_\+function (\begin{DoxyParamCaption}\item[{char $\ast$}]{received\+J\+S\+ON }\end{DoxyParamCaption})}
+
+
+
+A function that takes a pointer to J\+S\+ON formatted char array. 
+
+It tries to parse it or throws an error.
+
+
+\begin{DoxyParams}{Parameters}
+{\em received\+J\+S\+ON} & char $\ast$ to the J\+S\+ON string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an int representing a feedback message as a result of the integration algorithms. 
+\end{DoxyReturn}
+Document variable that holds the received J\+S\+ON documents after transmission 
+
+Definition at line 118 of file train-\/\+A-\/wear\+\_\+server.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118                                          \{}
+\DoxyCodeLine{119     \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Document}} receivedDocument; }
+\DoxyCodeLine{120     \textcolor{keywordtype}{string} sensorName;}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122     \textcolor{comment}{// Incoming data is converted to c++ string}}
+\DoxyCodeLine{123     \textcolor{comment}{// then the first occurence of \} is found, which denotes end of JSON packet.}}
+\DoxyCodeLine{124     \textcolor{comment}{// Afterwards everything up to is is copied into char * and passed to the parser.}}
+\DoxyCodeLine{125     \textcolor{keywordtype}{string} recJSON = string(receivedJSON);}
+\DoxyCodeLine{126     \textcolor{keywordtype}{int} pos = recJSON.find\_first\_of(\textcolor{stringliteral}{"\}"}) + 1;}
+\DoxyCodeLine{127     recJSON = recJSON.substr(0, pos);}
+\DoxyCodeLine{128     \textcolor{keywordtype}{char} dataToParse[pos];}
+\DoxyCodeLine{129     strcpy(dataToParse, recJSON.c\_str());}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131     \textcolor{comment}{// Proper JSON parsing}}
+\DoxyCodeLine{132     receivedDocument.\mbox{\hyperlink{classrapidjson_1_1_generic_document_aea842b533a858c9a3861451ad9e8642c}{Parse}}(dataToParse).\mbox{\hyperlink{classrapidjson_1_1_generic_document_a7607bb42b51547e44bfd4cab35d8f20e}{HasParseError}}();}
+\DoxyCodeLine{133     cout << endl << receivedJSON << endl;}
+\DoxyCodeLine{134     \textcolor{keywordflow}{if} (receivedDocument.IsObject() == 0)\{}
+\DoxyCodeLine{135         cout << receivedJSON << endl;}
+\DoxyCodeLine{136         \textcolor{keywordflow}{return} -1;}
+\DoxyCodeLine{137     \}}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139     assert(receivedDocument.HasMember(\textcolor{stringliteral}{"sensor"}));}
+\DoxyCodeLine{140     assert(receivedDocument[\textcolor{stringliteral}{"sensor"}].IsString());}
+\DoxyCodeLine{141     sensorName = receivedDocument[\textcolor{stringliteral}{"sensor"}].GetString();}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143     \textcolor{comment}{//Receiving an array of values}}
+\DoxyCodeLine{144     \textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Value}}\& aGyro = receivedDocument[\textcolor{stringliteral}{"gyro"}];}
+\DoxyCodeLine{145     \textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Value}}\& aAcce = receivedDocument[\textcolor{stringliteral}{"accel"}];}
+\DoxyCodeLine{146     \textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Value}}\& aMagn = receivedDocument[\textcolor{stringliteral}{"magnet"}];}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148     assert(aGyro.IsArray());}
+\DoxyCodeLine{149     assert(aGyro.Size() == 3);}
+\DoxyCodeLine{150     assert(aAcce.IsArray());}
+\DoxyCodeLine{151     assert(aAcce.Size() == 3);}
+\DoxyCodeLine{152     assert(aMagn.IsArray());}
+\DoxyCodeLine{153     assert(aMagn.Size() == 3);}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155     \textcolor{keywordflow}{if}(\mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}.count(sensorName) == 0)\{}
+\DoxyCodeLine{156         \mbox{\hyperlink{structsensor__data}{sensor\_data}} newRecord;}
+\DoxyCodeLine{157         \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}.emplace(sensorName, newRecord);}
+\DoxyCodeLine{158     \}}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160     \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} i = 0; i<aGyro.Size(); i++)\{}
+\DoxyCodeLine{161         \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].gyro[i]          = aGyro[i].GetDouble();}
+\DoxyCodeLine{162         \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].accelerometer[i]     = aAcce[i].GetDouble();}
+\DoxyCodeLine{163         \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].magnetometer[i]  = aMagn[i].GetDouble();}
+\DoxyCodeLine{164     \}}
+\DoxyCodeLine{165 }
+\DoxyCodeLine{166     \mbox{\hyperlink{class_integration__algorithms}{Integration\_algorithms}} obj;}
+\DoxyCodeLine{167     \textcolor{keywordtype}{int} result = obj.\mbox{\hyperlink{class_integration__algorithms_a1e3abc78c151732e013b41fa0300a6f0}{squat\_straight\_back}}(\mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].gyro[1], \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].accelerometer[0], \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].accelerometer[3]);}
+\DoxyCodeLine{168 }
+\DoxyCodeLine{169     cout << \textcolor{stringliteral}{"Sensor: "} << sensorName << endl;}
+\DoxyCodeLine{170     cout << \textcolor{stringliteral}{"Gyro: \(\backslash\)t\(\backslash\)t"} << \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].gyro[0] << \textcolor{stringliteral}{"\(\backslash\)t"} << \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].gyro[1] << \textcolor{stringliteral}{"\(\backslash\)t"} << \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].gyro [2] << endl;}
+\DoxyCodeLine{171     cout << \textcolor{stringliteral}{"Accelerometer:  "} << \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].accelerometer[0] << \textcolor{stringliteral}{"\(\backslash\)t"} << \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].accelerometer[1] << \textcolor{stringliteral}{"\(\backslash\)t"} << \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].accelerometer [2] << endl;}
+\DoxyCodeLine{172     cout << \textcolor{stringliteral}{"Gyro: \(\backslash\)t\(\backslash\)t"} << \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].magnetometer[0] << \textcolor{stringliteral}{"\(\backslash\)t"} << \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].magnetometer[1] << \textcolor{stringliteral}{"\(\backslash\)t"} << \mbox{\hyperlink{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}{sensorRecords}}[sensorName].magnetometer [2] << endl;}
+\DoxyCodeLine{173     cout << \textcolor{stringliteral}{"Result: "} << result << endl;}
+\DoxyCodeLine{174     cout << endl;}
+\DoxyCodeLine{175     \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{176 \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$\+::\+Has\+Parse\+Error(), rapidjson\+::\+Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$\+::\+Parse(), sensor\+Records, and Integration\+\_\+algorithms\+::squat\+\_\+straight\+\_\+back().
+
+
+
+Referenced by main().
+
+\mbox{\Hypertarget{train-_a-wear__server_8cpp_a95b7d8dc0b0f9099cbd8370e65e36ebd}\label{train-_a-wear__server_8cpp_a95b7d8dc0b0f9099cbd8370e65e36ebd}} 
+\index{train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}!send\_message@{send\_message}}
+\index{send\_message@{send\_message}!train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}}
+\subsubsection{\texorpdfstring{send\_message()}{send\_message()}}
+{\footnotesize\ttfamily int send\+\_\+message (\begin{DoxyParamCaption}\item[{char $\ast$}]{destination\+\_\+ip,  }\item[{char $\ast$}]{message }\end{DoxyParamCaption})}
+
+
+
+A generic function for sending char arrays to port 31415 at destination IP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destination\+\_\+ip} & Recipient IP for the text. \\
+\hline
+{\em message} & Message to be sent to target IP.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0, if succesfull, otherwise 1. 
+\end{DoxyReturn}
+
+
+Definition at line 187 of file train-\/\+A-\/wear\+\_\+server.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{187                                                        \{}
+\DoxyCodeLine{188     \textcolor{keywordtype}{int}                 socket\_d;}
+\DoxyCodeLine{189     \textcolor{keyword}{struct }sockaddr\_in  m\_addr;}
+\DoxyCodeLine{190     \textcolor{keywordtype}{int}                 broadcast = 1;}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192     \textcolor{comment}{// Create the socket}}
+\DoxyCodeLine{193     \textcolor{keywordflow}{if}((socket\_d = socket(AF\_INET, SOCK\_DGRAM, 0)) == -1)\{}
+\DoxyCodeLine{194         perror(\textcolor{stringliteral}{"Unable to create the UDP socket."});}
+\DoxyCodeLine{195         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{196     \}}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198     \textcolor{comment}{//Fillout the server information}}
+\DoxyCodeLine{199     m\_addr.sin\_family       = AF\_INET;}
+\DoxyCodeLine{200     m\_addr.sin\_port         = htons(\mbox{\hyperlink{train-_a-wear__server_8cpp_a614217d263be1fb1a5f76e2ff7be19a2}{PORT}});}
+\DoxyCodeLine{201     m\_addr.sin\_addr.s\_addr  = inet\_addr(destination\_ip); }
+\DoxyCodeLine{202 }
+\DoxyCodeLine{203 }
+\DoxyCodeLine{204     sendto(socket\_d, message, strlen(message), MSG\_CONFIRM, (\textcolor{keyword}{const} \textcolor{keyword}{struct} sockaddr *) \&m\_addr, \textcolor{keyword}{sizeof}(m\_addr));}
+\DoxyCodeLine{205     close(socket\_d);}
+\DoxyCodeLine{206     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{207 \}}
+
+\end{DoxyCode}
+
+
+References P\+O\+RT.
+
+
+
+Referenced by main().
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{train-_a-wear__server_8cpp_a0f2faa14b725237d13bb7d2e8b7e3942}\label{train-_a-wear__server_8cpp_a0f2faa14b725237d13bb7d2e8b7e3942}} 
+\index{train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}!handshake@{handshake}}
+\index{handshake@{handshake}!train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}}
+\subsubsection{\texorpdfstring{handshake}{handshake}}
+{\footnotesize\ttfamily char$\ast$ handshake = \char`\"{}train-\/A-\/wear online\textbackslash{}n\char`\"{}}
+
+
+
+constant char array. 
+
+It holds our pre-\/defined text used for handshaking between server, sensors and phones. 
+
+Definition at line 50 of file train-\/\+A-\/wear\+\_\+server.\+cpp.
+
+
+
+Referenced by broadcast\+\_\+server(), and main().
+
+\mbox{\Hypertarget{train-_a-wear__server_8cpp_a8068724ec29d6e66aad75c716e138db3}\label{train-_a-wear__server_8cpp_a8068724ec29d6e66aad75c716e138db3}} 
+\index{train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}!mut@{mut}}
+\index{mut@{mut}!train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}}
+\subsubsection{\texorpdfstring{mut}{mut}}
+{\footnotesize\ttfamily mutex mut}
+
+
+
+Definition at line 54 of file train-\/\+A-\/wear\+\_\+server.\+cpp.
+
+
+
+Referenced by broadcast\+\_\+server(), and main().
+
+\mbox{\Hypertarget{train-_a-wear__server_8cpp_aba845a1aa2054e7dadd0653a67b549f4}\label{train-_a-wear__server_8cpp_aba845a1aa2054e7dadd0653a67b549f4}} 
+\index{train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}!phone\_handshake@{phone\_handshake}}
+\index{phone\_handshake@{phone\_handshake}!train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}}
+\subsubsection{\texorpdfstring{phone\_handshake}{phone\_handshake}}
+{\footnotesize\ttfamily const char$\ast$ phone\+\_\+handshake = \char`\"{}train-\/a-\/wear ready\char`\"{}}
+
+
+
+constat char array. 
+
+Holds the value for handshaking with the phone. 
+
+Definition at line 51 of file train-\/\+A-\/wear\+\_\+server.\+cpp.
+
+
+
+Referenced by main().
+
+\mbox{\Hypertarget{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}\label{train-_a-wear__server_8cpp_ac46b8bbbac4148e54db22486817eb63d}} 
+\index{train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}!sensorRecords@{sensorRecords}}
+\index{sensorRecords@{sensorRecords}!train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}}
+\subsubsection{\texorpdfstring{sensorRecords}{sensorRecords}}
+{\footnotesize\ttfamily map$<$string, \mbox{\hyperlink{structsensor__data}{sensor\+\_\+data}}$>$ sensor\+Records}
+
+
+
+Definition at line 65 of file train-\/\+A-\/wear\+\_\+server.\+cpp.
+
+
+
+Referenced by parsing\+\_\+function().
+
+\mbox{\Hypertarget{train-_a-wear__server_8cpp_ac621bcfb466f3b6a6421c5f48b30ade3}\label{train-_a-wear__server_8cpp_ac621bcfb466f3b6a6421c5f48b30ade3}} 
+\index{train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}!start@{start}}
+\index{start@{start}!train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily const char$\ast$ start = \char`\"{}S\+T\+A\+RT\char`\"{}}
+
+
+
+Definition at line 52 of file train-\/\+A-\/wear\+\_\+server.\+cpp.
+
+
+
+Referenced by main(), and rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Parse\+Range().
+
+\mbox{\Hypertarget{train-_a-wear__server_8cpp_a94c0a5a6a2bfcdd03883cd7d72bbaa86}\label{train-_a-wear__server_8cpp_a94c0a5a6a2bfcdd03883cd7d72bbaa86}} 
+\index{train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}!stop@{stop}}
+\index{stop@{stop}!train-\/A-\/wear\_server.cpp@{train-\/A-\/wear\_server.cpp}}
+\subsubsection{\texorpdfstring{stop}{stop}}
+{\footnotesize\ttfamily const char$\ast$ stop = \char`\"{}S\+T\+OP\char`\"{}}
+
+
+
+Definition at line 53 of file train-\/\+A-\/wear\+\_\+server.\+cpp.
+
+
+
+Referenced by main().
+

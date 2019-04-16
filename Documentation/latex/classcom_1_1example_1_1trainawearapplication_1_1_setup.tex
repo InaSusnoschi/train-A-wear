@@ -1,0 +1,128 @@
+\hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_setup}{}\section{com.\+example.\+trainawearapplication.\+Setup Class Reference}
+\label{classcom_1_1example_1_1trainawearapplication_1_1_setup}\index{com.example.trainawearapplication.Setup@{com.example.trainawearapplication.Setup}}
+Inheritance diagram for com.\+example.\+trainawearapplication.\+Setup\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1example_1_1trainawearapplication_1_1_setup}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup_a52f522c34d14c93dbf7f75ff75ce606d}{on\+Create}} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+View.\+On\+Click\+Listener \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup_a6e717a2baaf80c283f516c044ae98e6c}{done\+Button\+Listener}}
+\begin{DoxyCompactList}\small\item\em Use a listener to make a line of text appear after button press. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsection*{\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup}{Setup}} Activity}
+
+This class contains the \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup}{Setup}} screen activity. This is where the user is asked to input their parameters
+
+\begin{DoxyAuthor}{Author}
+Ioana Susnoschi 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+19/03/2019 
+\end{DoxySince}
+
+
+Definition at line 28 of file Setup.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_setup_a52f522c34d14c93dbf7f75ff75ce606d}\label{classcom_1_1example_1_1trainawearapplication_1_1_setup_a52f522c34d14c93dbf7f75ff75ce606d}} 
+\index{com.example.trainawearapplication.Setup@{com.example.trainawearapplication.Setup}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!com.example.trainawearapplication.Setup@{com.example.trainawearapplication.Setup}}
+\subsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Setup.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This gets the parameters values and checks they are the right format
+
+Get the Intent that started this activity and extract the string
+
+Capture the layout\textquotesingle{}s Text\+View and set the string as its text
+
+Definition at line 39 of file Setup.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                                        \{}
+\DoxyCodeLine{40         super.onCreate(savedInstanceState);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42         setContentView(R.layout.activity\_setup);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44         height = findViewById(editHeight);}
+\DoxyCodeLine{45         weight = findViewById(R.id.editWeight);}
+\DoxyCodeLine{46         age = findViewById(editAge);}
+\DoxyCodeLine{47         \textcolor{comment}{// text watchers}}
+\DoxyCodeLine{48         height.addTextChangedListener(textWatcher);}
+\DoxyCodeLine{49         weight.addTextChangedListener(textWeightWatcher);}
+\DoxyCodeLine{50         age.addTextChangedListener(textAgeWatcher);}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52         \textcolor{comment}{// buttons}}
+\DoxyCodeLine{53         Button done = (Button)findViewById(R.id.buttonDone);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55         \textcolor{comment}{//Register onClick listener}}
+\DoxyCodeLine{56         done.setOnClickListener(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup_a6e717a2baaf80c283f516c044ae98e6c}{doneButtonListener}});}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{59         \textcolor{comment}{//height = findViewById(R.id.enterHeight);}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{65         Intent setup = getIntent();}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{70         TextView textView = findViewById(R.id.textRequest);}
+\DoxyCodeLine{71     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+R.\+layout.\+activity\+\_\+setup, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Done, com.\+example.\+trainawearapplication.\+Setup.\+done\+Button\+Listener, com.\+example.\+trainawearapplication.\+R.\+id.\+edit\+Weight, and com.\+example.\+trainawearapplication.\+R.\+id.\+text\+Request.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_setup_a6e717a2baaf80c283f516c044ae98e6c}\label{classcom_1_1example_1_1trainawearapplication_1_1_setup_a6e717a2baaf80c283f516c044ae98e6c}} 
+\index{com.example.trainawearapplication.Setup@{com.example.trainawearapplication.Setup}!doneButtonListener@{doneButtonListener}}
+\index{doneButtonListener@{doneButtonListener}!com.example.trainawearapplication.Setup@{com.example.trainawearapplication.Setup}}
+\subsubsection{\texorpdfstring{doneButtonListener}{doneButtonListener}}
+{\footnotesize\ttfamily View.\+On\+Click\+Listener com.\+example.\+trainawearapplication.\+Setup.\+done\+Button\+Listener\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} View.OnClickListener() \{}
+\DoxyCodeLine{        @Override}
+\DoxyCodeLine{        \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(View v) \{}
+\DoxyCodeLine{            TextView viewAllSet = findViewById(R.id.textAllSet);}
+\DoxyCodeLine{            }
+\DoxyCodeLine{            viewAllSet.setVisibility(View.VISIBLE);}
+\DoxyCodeLine{}
+\DoxyCodeLine{            Setup.this.finish();}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Use a listener to make a line of text appear after button press. 
+
+
+
+Definition at line 205 of file Setup.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Setup.\+on\+Create().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Phone App/app/src/main/java/com/example/trainawearapplication/\mbox{\hyperlink{_setup_8java}{Setup.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,467 @@
+\hypertarget{structrapidjson_1_1internal_1_1_diy_fp}{}\section{rapidjson\+::internal\+::Diy\+Fp Struct Reference}
+\label{structrapidjson_1_1internal_1_1_diy_fp}\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+
+
+{\ttfamily \#include $<$diyfp.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{Diy\+Fp}} ()
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a5866b49b42cee6f878de04a076dde2e4}{Diy\+Fp}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} fp, int exp)
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a88b654a1915e003c50df581b9779e193}{Diy\+Fp}} (double d)
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a5ed5b6b81f93701e5b6f1f699eafce8b}{operator-\/}} (const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \&rhs) const
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a9e2033aa6047bcb08f763a6e43c11f3b}{operator $\ast$}} (const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \&rhs) const
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_aa20a0598c891880ee34e8dca914f0117}{Normalize}} () const
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a974e356bbf967c43504e796628e61dc4}{Normalize\+Boundary}} () const
+\item 
+void \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ab1a90e2dfc01d7ac05a08c7661635b84}{Normalized\+Boundaries}} (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} $\ast$minus, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} $\ast$plus) const
+\item 
+double \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ae41b272b0beb25d936c5d79bd5fde310}{To\+Double}} () const
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}}
+\item 
+int \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a68386239b400931795ef2456d49e108d}{k\+Diy\+Significand\+Size}} = 64
+\item 
+static const int \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad0b9b0e3a66741849b9f640f839976f0}{k\+Dp\+Significand\+Size}} = 52
+\item 
+static const int \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a36911b66284d6c8fd6878857518162ab}{k\+Dp\+Exponent\+Bias}} = 0x3\+F\+F + k\+Dp\+Significand\+Size
+\item 
+static const int \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ab154a9e79d23e6670a5a4025941b4aba}{k\+Dp\+Max\+Exponent}} = 0x7\+F\+F -\/ k\+Dp\+Exponent\+Bias
+\item 
+static const int \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb36355e6aa6a23da0eff2cc36e5d8c5}{k\+Dp\+Min\+Exponent}} = -\/\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a36911b66284d6c8fd6878857518162ab}{k\+Dp\+Exponent\+Bias}}
+\item 
+static const int \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a2259484dcaec3af62763d07d4f7284cb}{k\+Dp\+Denormal\+Exponent}} = -\/\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a36911b66284d6c8fd6878857518162ab}{k\+Dp\+Exponent\+Bias}} + 1
+\item 
+static const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a9ebf259cf0143f8701ec213d1f9b0221}{k\+Dp\+Exponent\+Mask}} = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x7\+F\+F00000 ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x00000000 ))
+\item 
+static const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a2144edfd83e1ed1c91ba25a32f06040c}{k\+Dp\+Significand\+Mask}} = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x000\+F\+F\+F\+F\+F ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x\+F\+F\+F\+F\+F\+F\+F\+F ))
+\item 
+static const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a1e6bd7e15372bd4a03507e948dc2b242}{k\+Dp\+Hidden\+Bit}} = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x00100000 ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x00000000 ))
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 44 of file diyfp.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}\label{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!DiyFp@{DiyFp}}
+\index{DiyFp@{DiyFp}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{DiyFp()}{DiyFp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily rapidjson\+::internal\+::\+Diy\+Fp\+::\+Diy\+Fp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 45 of file diyfp.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 : \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}}(), \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}}() \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_a5866b49b42cee6f878de04a076dde2e4}\label{structrapidjson_1_1internal_1_1_diy_fp_a5866b49b42cee6f878de04a076dde2e4}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!DiyFp@{DiyFp}}
+\index{DiyFp@{DiyFp}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{DiyFp()}{DiyFp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily rapidjson\+::internal\+::\+Diy\+Fp\+::\+Diy\+Fp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{fp,  }\item[{int}]{exp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file diyfp.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 : \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}}(fp), \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}}(exp) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_a88b654a1915e003c50df581b9779e193}\label{structrapidjson_1_1internal_1_1_diy_fp_a88b654a1915e003c50df581b9779e193}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!DiyFp@{DiyFp}}
+\index{DiyFp@{DiyFp}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{DiyFp()}{DiyFp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily rapidjson\+::internal\+::\+Diy\+Fp\+::\+Diy\+Fp (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 49 of file diyfp.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                              \{}
+\DoxyCodeLine{50         \textcolor{keyword}{union }\{}
+\DoxyCodeLine{51             \textcolor{keywordtype}{double} d;}
+\DoxyCodeLine{52             \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} u64;}
+\DoxyCodeLine{53         \} u = \{ d \};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55         \textcolor{keywordtype}{int} biased\_e = static\_cast<int>((u.u64 \& \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a9ebf259cf0143f8701ec213d1f9b0221}{kDpExponentMask}}) >> \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad0b9b0e3a66741849b9f640f839976f0}{kDpSignificandSize}});}
+\DoxyCodeLine{56         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} significand = (u.u64 \& \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a2144edfd83e1ed1c91ba25a32f06040c}{kDpSignificandMask}});}
+\DoxyCodeLine{57         \textcolor{keywordflow}{if} (biased\_e != 0) \{}
+\DoxyCodeLine{58             \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} = significand + \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a1e6bd7e15372bd4a03507e948dc2b242}{kDpHiddenBit}};}
+\DoxyCodeLine{59             \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} = biased\_e - \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a36911b66284d6c8fd6878857518162ab}{kDpExponentBias}};}
+\DoxyCodeLine{60         \}}
+\DoxyCodeLine{61         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{62             \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} = significand;}
+\DoxyCodeLine{63             \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} = \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb36355e6aa6a23da0eff2cc36e5d8c5}{kDpMinExponent}} + 1;}
+\DoxyCodeLine{64         \}}
+\DoxyCodeLine{65     \}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_aa20a0598c891880ee34e8dca914f0117}\label{structrapidjson_1_1internal_1_1_diy_fp_aa20a0598c891880ee34e8dca914f0117}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{Normalize()}{Normalize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} rapidjson\+::internal\+::\+Diy\+Fp\+::\+Normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 102 of file diyfp.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{102                             \{}
+\DoxyCodeLine{103         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} != 0); \textcolor{comment}{// https://stackoverflow.com/a/26809183/291737}}
+\DoxyCodeLine{104 \textcolor{preprocessor}{\#if defined(\_MSC\_VER) \&\& defined(\_M\_AMD64)}}
+\DoxyCodeLine{105         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} index;}
+\DoxyCodeLine{106         \_BitScanReverse64(\&index, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}});}
+\DoxyCodeLine{107         \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{DiyFp}}(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} << (63 - index), \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} - (63 - index));}
+\DoxyCodeLine{108 \textcolor{preprocessor}{\#elif defined(\_\_GNUC\_\_) \&\& \_\_GNUC\_\_ >= 4}}
+\DoxyCodeLine{109         \textcolor{keywordtype}{int} s = \_\_builtin\_clzll(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}});}
+\DoxyCodeLine{110         \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{DiyFp}}(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} << s, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} - s);}
+\DoxyCodeLine{111 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{112         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{DiyFp}} res = *\textcolor{keyword}{this};}
+\DoxyCodeLine{113         \textcolor{keywordflow}{while} (!(res.f \& (static\_cast<uint64\_t>(1) << 63))) \{}
+\DoxyCodeLine{114             res.f <<= 1;}
+\DoxyCodeLine{115             res.e--;}
+\DoxyCodeLine{116         \}}
+\DoxyCodeLine{117         \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{118 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{119     \}}
+
+\end{DoxyCode}
+
+
+References e, f, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Grisu2(), and rapidjson\+::internal\+::\+Strtod\+Diy\+Fp().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_a974e356bbf967c43504e796628e61dc4}\label{structrapidjson_1_1internal_1_1_diy_fp_a974e356bbf967c43504e796628e61dc4}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!NormalizeBoundary@{NormalizeBoundary}}
+\index{NormalizeBoundary@{NormalizeBoundary}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{NormalizeBoundary()}{NormalizeBoundary()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} rapidjson\+::internal\+::\+Diy\+Fp\+::\+Normalize\+Boundary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 121 of file diyfp.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{121                                     \{}
+\DoxyCodeLine{122         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{DiyFp}} res = *\textcolor{keyword}{this};}
+\DoxyCodeLine{123         \textcolor{keywordflow}{while} (!(res.f \& (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a1e6bd7e15372bd4a03507e948dc2b242}{kDpHiddenBit}} << 1))) \{}
+\DoxyCodeLine{124             res.f <<= 1;}
+\DoxyCodeLine{125             res.e--;}
+\DoxyCodeLine{126         \}}
+\DoxyCodeLine{127         res.f <<= (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a68386239b400931795ef2456d49e108d}{kDiySignificandSize}} - \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad0b9b0e3a66741849b9f640f839976f0}{kDpSignificandSize}} - 2);}
+\DoxyCodeLine{128         res.e = res.e - (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a68386239b400931795ef2456d49e108d}{kDiySignificandSize}} - \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad0b9b0e3a66741849b9f640f839976f0}{kDpSignificandSize}} - 2);}
+\DoxyCodeLine{129         \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{130     \}}
+
+\end{DoxyCode}
+
+
+References e, and f.
+
+
+
+Referenced by Normalized\+Boundaries().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_ab1a90e2dfc01d7ac05a08c7661635b84}\label{structrapidjson_1_1internal_1_1_diy_fp_ab1a90e2dfc01d7ac05a08c7661635b84}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!NormalizedBoundaries@{NormalizedBoundaries}}
+\index{NormalizedBoundaries@{NormalizedBoundaries}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{NormalizedBoundaries()}{NormalizedBoundaries()}}
+{\footnotesize\ttfamily void rapidjson\+::internal\+::\+Diy\+Fp\+::\+Normalized\+Boundaries (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} $\ast$}]{minus,  }\item[{\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} $\ast$}]{plus }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 132 of file diyfp.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{132                                                                \{}
+\DoxyCodeLine{133         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{DiyFp}} pl = \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{DiyFp}}((\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} << 1) + 1, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} - 1).NormalizeBoundary();}
+\DoxyCodeLine{134         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{DiyFp}} mi = (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} == \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a1e6bd7e15372bd4a03507e948dc2b242}{kDpHiddenBit}}) ? \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{DiyFp}}((\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} << 2) - 1, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} - 2) : \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{DiyFp}}((\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} << 1) - 1, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} - 1);}
+\DoxyCodeLine{135         mi.f <<= mi.e - pl.e;}
+\DoxyCodeLine{136         mi.e = pl.e;}
+\DoxyCodeLine{137         *plus = pl;}
+\DoxyCodeLine{138         *minus = mi;}
+\DoxyCodeLine{139     \}}
+
+\end{DoxyCode}
+
+
+References e, f, and Normalize\+Boundary().
+
+
+
+Referenced by rapidjson\+::internal\+::\+Grisu2().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_a9e2033aa6047bcb08f763a6e43c11f3b}\label{structrapidjson_1_1internal_1_1_diy_fp_a9e2033aa6047bcb08f763a6e43c11f3b}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} rapidjson\+::internal\+::\+Diy\+Fp\+::operator $\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+mult\+\_\+round 
+
+Definition at line 71 of file diyfp.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71                                             \{}
+\DoxyCodeLine{72 \textcolor{preprocessor}{\#if defined(\_MSC\_VER) \&\& defined(\_M\_AMD64)}}
+\DoxyCodeLine{73         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} h;}
+\DoxyCodeLine{74         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} l = \_umul128(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}}, rhs.f, \&h);}
+\DoxyCodeLine{75         \textcolor{keywordflow}{if} (l \& (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}}(1) << 63)) \textcolor{comment}{// rounding}}
+\DoxyCodeLine{76             h++;}
+\DoxyCodeLine{77         \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{DiyFp}}(h, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} + rhs.e + 64);}
+\DoxyCodeLine{78 \textcolor{preprocessor}{\#elif (\_\_GNUC\_\_ > 4 || (\_\_GNUC\_\_ == 4 \&\& \_\_GNUC\_MINOR\_\_ >= 6)) \&\& defined(\_\_x86\_64\_\_)}}
+\DoxyCodeLine{79         \_\_extension\_\_ \textcolor{keyword}{typedef} \textcolor{keywordtype}{unsigned} \_\_int128 uint128;}
+\DoxyCodeLine{80         uint128 p = static\_cast<uint128>(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}}) * static\_cast<uint128>(rhs.f);}
+\DoxyCodeLine{81         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} h = static\_cast<uint64\_t>(p >> 64);}
+\DoxyCodeLine{82         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} l = static\_cast<uint64\_t>(p);}
+\DoxyCodeLine{83         \textcolor{keywordflow}{if} (l \& (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}}(1) << 63)) \textcolor{comment}{// rounding}}
+\DoxyCodeLine{84             h++;}
+\DoxyCodeLine{85         \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{DiyFp}}(h, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} + rhs.e + 64);}
+\DoxyCodeLine{86 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{87         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} M32 = 0xFFFFFFFF;}
+\DoxyCodeLine{88         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} = \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} >> 32;}
+\DoxyCodeLine{89         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} b = \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} \& M32;}
+\DoxyCodeLine{90         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} c = rhs.f >> 32;}
+\DoxyCodeLine{91         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} d = rhs.f \& M32;}
+\DoxyCodeLine{92         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} ac = \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} * c;}
+\DoxyCodeLine{93         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} bc = b * c;}
+\DoxyCodeLine{94         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} ad = \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} * d;}
+\DoxyCodeLine{95         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} bd = b * d;}
+\DoxyCodeLine{96         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} tmp = (bd >> 32) + (ad \& M32) + (bc \& M32);}
+\DoxyCodeLine{97         tmp += 1U << 31;  }
+\DoxyCodeLine{98         \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{DiyFp}}(ac + (ad >> 32) + (bc >> 32) + (tmp >> 32), \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} + rhs.e + 64);}
+\DoxyCodeLine{99 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{100     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::a, e, and f.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_a5ed5b6b81f93701e5b6f1f699eafce8b}\label{structrapidjson_1_1internal_1_1_diy_fp_a5ed5b6b81f93701e5b6f1f699eafce8b}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} rapidjson\+::internal\+::\+Diy\+Fp\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp}{Diy\+Fp}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 67 of file diyfp.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67                                             \{}
+\DoxyCodeLine{68         \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad72d8da57a7a1dee28c820ce02dae736}{DiyFp}}(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} - rhs.f, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}});}
+\DoxyCodeLine{69     \}}
+
+\end{DoxyCode}
+
+
+References f.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_ae41b272b0beb25d936c5d79bd5fde310}\label{structrapidjson_1_1internal_1_1_diy_fp_ae41b272b0beb25d936c5d79bd5fde310}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!ToDouble@{ToDouble}}
+\index{ToDouble@{ToDouble}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{ToDouble()}{ToDouble()}}
+{\footnotesize\ttfamily double rapidjson\+::internal\+::\+Diy\+Fp\+::\+To\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 141 of file diyfp.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{141                             \{}
+\DoxyCodeLine{142         \textcolor{keyword}{union }\{}
+\DoxyCodeLine{143             \textcolor{keywordtype}{double} d;}
+\DoxyCodeLine{144             \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} u64;}
+\DoxyCodeLine{145         \}u;}
+\DoxyCodeLine{146         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} <= \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a1e6bd7e15372bd4a03507e948dc2b242}{kDpHiddenBit}} + \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a2144edfd83e1ed1c91ba25a32f06040c}{kDpSignificandMask}});}
+\DoxyCodeLine{147         \textcolor{keywordflow}{if} (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} < \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a2259484dcaec3af62763d07d4f7284cb}{kDpDenormalExponent}}) \{}
+\DoxyCodeLine{148             \textcolor{comment}{// Underflow.}}
+\DoxyCodeLine{149             \textcolor{keywordflow}{return} 0.0;}
+\DoxyCodeLine{150         \}}
+\DoxyCodeLine{151         \textcolor{keywordflow}{if} (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} >= \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ab154a9e79d23e6670a5a4025941b4aba}{kDpMaxExponent}}) \{}
+\DoxyCodeLine{152             \textcolor{comment}{// Overflow.}}
+\DoxyCodeLine{153             \textcolor{keywordflow}{return} std::numeric\_limits<double>::infinity();}
+\DoxyCodeLine{154         \}}
+\DoxyCodeLine{155         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} be = (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} == \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a2259484dcaec3af62763d07d4f7284cb}{kDpDenormalExponent}} \&\& (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} \& \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a1e6bd7e15372bd4a03507e948dc2b242}{kDpHiddenBit}}) == 0) ? 0 :}
+\DoxyCodeLine{156             static\_cast<uint64\_t>(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}{e}} + \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a36911b66284d6c8fd6878857518162ab}{kDpExponentBias}});}
+\DoxyCodeLine{157         u.u64 = (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}{f}} \& \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a2144edfd83e1ed1c91ba25a32f06040c}{kDpSignificandMask}}) | (be << \mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_ad0b9b0e3a66741849b9f640f839976f0}{kDpSignificandSize}});}
+\DoxyCodeLine{158         \textcolor{keywordflow}{return} u.d;}
+\DoxyCodeLine{159     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Strtod\+Diy\+Fp().
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}\label{structrapidjson_1_1internal_1_1_diy_fp_adb29b66d68cb2675c06deda434bfcafb}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!e@{e}}
+\index{e@{e}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily int rapidjson\+::internal\+::\+Diy\+Fp\+::e}
+
+
+
+Definition at line 172 of file diyfp.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Digit\+Gen(), rapidjson\+::internal\+::\+Grisu2(), Normalize(), Normalize\+Boundary(), Normalized\+Boundaries(), operator $\ast$(), and rapidjson\+::internal\+::\+Strtod\+Diy\+Fp().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}\label{structrapidjson_1_1internal_1_1_diy_fp_a4d69f9f4281512c960c8bdfe9b528cdf}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!f@{f}}
+\index{f@{f}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Diy\+Fp\+::f}
+
+
+
+Definition at line 171 of file diyfp.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Digit\+Gen(), rapidjson\+::internal\+::\+Grisu2(), Normalize(), Normalize\+Boundary(), Normalized\+Boundaries(), operator $\ast$(), operator-\/(), and rapidjson\+::internal\+::\+Strtod\+Diy\+Fp().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_a68386239b400931795ef2456d49e108d}\label{structrapidjson_1_1internal_1_1_diy_fp_a68386239b400931795ef2456d49e108d}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!kDiySignificandSize@{kDiySignificandSize}}
+\index{kDiySignificandSize@{kDiySignificandSize}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{kDiySignificandSize}{kDiySignificandSize}}
+{\footnotesize\ttfamily const int rapidjson\+::internal\+::\+Diy\+Fp\+::k\+Diy\+Significand\+Size = 64\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 161 of file diyfp.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_a2259484dcaec3af62763d07d4f7284cb}\label{structrapidjson_1_1internal_1_1_diy_fp_a2259484dcaec3af62763d07d4f7284cb}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!kDpDenormalExponent@{kDpDenormalExponent}}
+\index{kDpDenormalExponent@{kDpDenormalExponent}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{kDpDenormalExponent}{kDpDenormalExponent}}
+{\footnotesize\ttfamily const int rapidjson\+::internal\+::\+Diy\+Fp\+::k\+Dp\+Denormal\+Exponent = -\/\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a36911b66284d6c8fd6878857518162ab}{k\+Dp\+Exponent\+Bias}} + 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 166 of file diyfp.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_a36911b66284d6c8fd6878857518162ab}\label{structrapidjson_1_1internal_1_1_diy_fp_a36911b66284d6c8fd6878857518162ab}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!kDpExponentBias@{kDpExponentBias}}
+\index{kDpExponentBias@{kDpExponentBias}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{kDpExponentBias}{kDpExponentBias}}
+{\footnotesize\ttfamily const int rapidjson\+::internal\+::\+Diy\+Fp\+::k\+Dp\+Exponent\+Bias = 0x3\+F\+F + k\+Dp\+Significand\+Size\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 163 of file diyfp.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_a9ebf259cf0143f8701ec213d1f9b0221}\label{structrapidjson_1_1internal_1_1_diy_fp_a9ebf259cf0143f8701ec213d1f9b0221}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!kDpExponentMask@{kDpExponentMask}}
+\index{kDpExponentMask@{kDpExponentMask}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{kDpExponentMask}{kDpExponentMask}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Diy\+Fp\+::k\+Dp\+Exponent\+Mask = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x7\+F\+F00000 ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x00000000 ))\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 167 of file diyfp.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_a1e6bd7e15372bd4a03507e948dc2b242}\label{structrapidjson_1_1internal_1_1_diy_fp_a1e6bd7e15372bd4a03507e948dc2b242}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!kDpHiddenBit@{kDpHiddenBit}}
+\index{kDpHiddenBit@{kDpHiddenBit}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{kDpHiddenBit}{kDpHiddenBit}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Diy\+Fp\+::k\+Dp\+Hidden\+Bit = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x00100000 ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x00000000 ))\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 169 of file diyfp.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_ab154a9e79d23e6670a5a4025941b4aba}\label{structrapidjson_1_1internal_1_1_diy_fp_ab154a9e79d23e6670a5a4025941b4aba}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!kDpMaxExponent@{kDpMaxExponent}}
+\index{kDpMaxExponent@{kDpMaxExponent}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{kDpMaxExponent}{kDpMaxExponent}}
+{\footnotesize\ttfamily const int rapidjson\+::internal\+::\+Diy\+Fp\+::k\+Dp\+Max\+Exponent = 0x7\+F\+F -\/ k\+Dp\+Exponent\+Bias\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 164 of file diyfp.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_adb36355e6aa6a23da0eff2cc36e5d8c5}\label{structrapidjson_1_1internal_1_1_diy_fp_adb36355e6aa6a23da0eff2cc36e5d8c5}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!kDpMinExponent@{kDpMinExponent}}
+\index{kDpMinExponent@{kDpMinExponent}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{kDpMinExponent}{kDpMinExponent}}
+{\footnotesize\ttfamily const int rapidjson\+::internal\+::\+Diy\+Fp\+::k\+Dp\+Min\+Exponent = -\/\mbox{\hyperlink{structrapidjson_1_1internal_1_1_diy_fp_a36911b66284d6c8fd6878857518162ab}{k\+Dp\+Exponent\+Bias}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 165 of file diyfp.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_a2144edfd83e1ed1c91ba25a32f06040c}\label{structrapidjson_1_1internal_1_1_diy_fp_a2144edfd83e1ed1c91ba25a32f06040c}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!kDpSignificandMask@{kDpSignificandMask}}
+\index{kDpSignificandMask@{kDpSignificandMask}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{kDpSignificandMask}{kDpSignificandMask}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Diy\+Fp\+::k\+Dp\+Significand\+Mask = ((static\+\_\+cast$<$\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}$>$( 0x000\+F\+F\+F\+F\+F ) $<$$<$ 32) $\vert$ static\+\_\+cast$<$uint64\+\_\+t$>$( 0x\+F\+F\+F\+F\+F\+F\+F\+F ))\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 168 of file diyfp.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_diy_fp_ad0b9b0e3a66741849b9f640f839976f0}\label{structrapidjson_1_1internal_1_1_diy_fp_ad0b9b0e3a66741849b9f640f839976f0}} 
+\index{rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}!kDpSignificandSize@{kDpSignificandSize}}
+\index{kDpSignificandSize@{kDpSignificandSize}!rapidjson::internal::DiyFp@{rapidjson::internal::DiyFp}}
+\subsubsection{\texorpdfstring{kDpSignificandSize}{kDpSignificandSize}}
+{\footnotesize\ttfamily const int rapidjson\+::internal\+::\+Diy\+Fp\+::k\+Dp\+Significand\+Size = 52\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 162 of file diyfp.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/internal/\mbox{\hyperlink{diyfp_8h}{diyfp.\+h}}\end{DoxyCompactItemize}

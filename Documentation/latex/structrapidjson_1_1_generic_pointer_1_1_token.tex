@@ -1,0 +1,101 @@
+\hypertarget{structrapidjson_1_1_generic_pointer_1_1_token}{}\section{rapidjson\+::Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::Token Struct Reference}
+\label{structrapidjson_1_1_generic_pointer_1_1_token}\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token}}
+
+
+A token is the basic units of internal representation.  
+
+
+
+
+{\ttfamily \#include $<$pointer.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token_aceb59c9796418c20da27b03bf1948fe8}{name}}
+\begin{DoxyCompactList}\small\item\em Name of the token. It has null character at the end but it can contain null character. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token_ad866d674dbddf9690ad571b65e968600}{length}}
+\begin{DoxyCompactList}\small\item\em Length of the name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token_a50331c9e3dedc34d2c79745b2e58fb2d}{index}}
+\begin{DoxyCompactList}\small\item\em A valid array index, if it is not equal to k\+Pointer\+Invalid\+Index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$\newline
+struct rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Token}
+
+A token is the basic units of internal representation. 
+
+A J\+S\+ON pointer string representation \char`\"{}/foo/123\char`\"{} is parsed to two tokens\+: \char`\"{}foo\char`\"{} and 123. 123 will be represented in both numeric form and string form. They are resolved according to the actual value type (object or array).
+
+For token that are not numbers, or the numeric value is out of bound (greater than limits of Size\+Type), they are only treated as string form (i.\+e. the token\textquotesingle{}s index will be equal to k\+Pointer\+Invalid\+Index).
+
+This struct is public so that user can create a Pointer without parsing and allocation, using a special constructor. 
+
+Definition at line 97 of file pointer.\+h.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_pointer_1_1_token_a50331c9e3dedc34d2c79745b2e58fb2d}\label{structrapidjson_1_1_generic_pointer_1_1_token_a50331c9e3dedc34d2c79745b2e58fb2d}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token}!index@{index}}
+\index{index@{index}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token}}
+\subsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Token\+::index}
+
+
+
+A valid array index, if it is not equal to k\+Pointer\+Invalid\+Index. 
+
+
+
+Definition at line 100 of file pointer.\+h.
+
+
+
+Referenced by rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Append().
+
+\mbox{\Hypertarget{structrapidjson_1_1_generic_pointer_1_1_token_ad866d674dbddf9690ad571b65e968600}\label{structrapidjson_1_1_generic_pointer_1_1_token_ad866d674dbddf9690ad571b65e968600}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token}!length@{length}}
+\index{length@{length}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token}}
+\subsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Token\+::length}
+
+
+
+Length of the name. 
+
+
+
+Definition at line 99 of file pointer.\+h.
+
+
+
+Referenced by rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Append().
+
+\mbox{\Hypertarget{structrapidjson_1_1_generic_pointer_1_1_token_aceb59c9796418c20da27b03bf1948fe8}\label{structrapidjson_1_1_generic_pointer_1_1_token_aceb59c9796418c20da27b03bf1948fe8}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token}!name@{name}}
+\index{name@{name}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::Token}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Token\+::name}
+
+
+
+Name of the token. It has null character at the end but it can contain null character. 
+
+
+
+Definition at line 98 of file pointer.\+h.
+
+
+
+Referenced by rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Append().
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{pointer_8h}{pointer.\+h}}\end{DoxyCompactItemize}

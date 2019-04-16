@@ -1,0 +1,395 @@
+\hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream}{}\section{rapidjson\+::Auto\+U\+T\+F\+Output\+Stream$<$ Char\+Type, Output\+Byte\+Stream $>$ Class Template Reference}
+\label{classrapidjson_1_1_auto_u_t_f_output_stream}\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+
+
+Output stream wrapper with dynamically bound encoding and automatic encoding detection.  
+
+
+
+
+{\ttfamily \#include $<$encodedstream.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Char\+Type \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a39c828ee4c5b052df7338ec7fda1a17d}{Auto\+U\+T\+F\+Output\+Stream}} (Output\+Byte\+Stream \&os, \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eb}{U\+T\+F\+Type}} type, bool put\+B\+OM)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eb}{U\+T\+F\+Type}} \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_ae01c4c0e6ac78b9bc875a9e73c63fd05}{Get\+Type}} () const
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a11ab92b78f15ccb20917887f06d6de66}{Put}} (\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}} c)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a04746e5fa16007b2cbe4be5f8d68940d}{Flush}} ()
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a89e2fba1e92b4f1408744934fcb56881}{Peek}} () const
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a0fd284bc102b7802bf5541a3169d912e}{Take}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_ac6c7dadb3851cf9e49c55273dd89937c}{Tell}} () const
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_ad3c65d2c5f94590add9bd743f09c0c63}{Put\+Begin}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a0348cb8d01546573894371d60aaaea94}{Put\+End}} (\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+::rapidjson \+::Static\+Assert\+Test$<$ sizeof(\+::rapidjson \+::S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+U\+RE$<$ bool(sizeof(typename Output\+Byte\+Stream\+::\+Ch)==1) $>$)$>$ \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_ab9516a450189bd1bde6dff768d745791}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+J\+O\+IN}}(Static\+Assert\+Typedef, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE
+\item 
+typedef void($\ast$ \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a2572eb3b4d77c0a2466ba21635ff79b5}{Put\+Func}}) (Output\+Byte\+Stream \&, \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a34efd607e963293aa860ada21a61bf72}{Auto\+U\+T\+F\+Output\+Stream}} (const \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{Auto\+U\+T\+F\+Output\+Stream}} \&)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{Auto\+U\+T\+F\+Output\+Stream}} \& \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a927efe7efab9ddc47820e4940b554d23}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{Auto\+U\+T\+F\+Output\+Stream}} \&)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_ab52009c85bdea52aa3b09020f249fbe1}{Put\+B\+OM}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Output\+Byte\+Stream $\ast$ \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a6db71fad149c823ee1eed1b04440cb1f}{os\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eb}{U\+T\+F\+Type}} \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_afd7503e0eb83f1d5f90292d2d2779ead}{type\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a2572eb3b4d77c0a2466ba21635ff79b5}{Put\+Func}} \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a8a5b6ba6993b01a9a08124fe2a8fceb1}{put\+Func\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Char\+Type, typename Output\+Byte\+Stream$>$\newline
+class rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream$<$ Char\+Type, Output\+Byte\+Stream $>$}
+
+Output stream wrapper with dynamically bound encoding and automatic encoding detection. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Char\+Type} & Type of character for writing. \\
+\hline
+{\em Output\+Byte\+Stream} & type of output byte stream to be wrapped. \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 233 of file encodedstream.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}\label{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+typedef Char\+Type \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}}}
+
+
+
+Definition at line 236 of file encodedstream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_a2572eb3b4d77c0a2466ba21635ff79b5}\label{classrapidjson_1_1_auto_u_t_f_output_stream_a2572eb3b4d77c0a2466ba21635ff79b5}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!PutFunc@{PutFunc}}
+\index{PutFunc@{PutFunc}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{PutFunc}{PutFunc}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+typedef void($\ast$ \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::Put\+Func) (Output\+Byte\+Stream \&, \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 280 of file encodedstream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_ab9516a450189bd1bde6dff768d745791}\label{classrapidjson_1_1_auto_u_t_f_output_stream_ab9516a450189bd1bde6dff768d745791}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!RAPIDJSON\_JOIN@{RAPIDJSON\_JOIN}}
+\index{RAPIDJSON\_JOIN@{RAPIDJSON\_JOIN}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_JOIN}{RAPIDJSON\_JOIN}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+typedef \+:: rapidjson \+::Static\+Assert\+Test$<$ sizeof(\+:: rapidjson \+::S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+U\+RE$<$bool( sizeof(typename Output\+Byte\+Stream\+::\+Ch) == 1 ) $>$)$>$ \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+J\+O\+IN(Static\+Assert\+Typedef, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+R\+T\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 234 of file encodedstream.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_a39c828ee4c5b052df7338ec7fda1a17d}\label{classrapidjson_1_1_auto_u_t_f_output_stream_a39c828ee4c5b052df7338ec7fda1a17d}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!AutoUTFOutputStream@{AutoUTFOutputStream}}
+\index{AutoUTFOutputStream@{AutoUTFOutputStream}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{AutoUTFOutputStream()}{AutoUTFOutputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{Auto\+U\+T\+F\+Output\+Stream}} (\begin{DoxyParamCaption}\item[{Output\+Byte\+Stream \&}]{os,  }\item[{\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eb}{U\+T\+F\+Type}}}]{type,  }\item[{bool}]{put\+B\+OM }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & output stream to be wrapped. \\
+\hline
+{\em type} & U\+TF encoding type. \\
+\hline
+{\em put\+B\+OM} & Whether to write B\+OM at the beginning of the stream. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 244 of file encodedstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{244                                                                          : \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a6db71fad149c823ee1eed1b04440cb1f}{os\_}}(\&os), \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_afd7503e0eb83f1d5f90292d2d2779ead}{type\_}}(type) \{}
+\DoxyCodeLine{245         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(type >= \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba3bda3a2e3f0ec2b7e8c5a3d5d4f60a81}{kUTF8}} \&\& type <= \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773ebad6db204b848081468878ed58bc20ce8f}{kUTF32BE}});}
+\DoxyCodeLine{246 }
+\DoxyCodeLine{247         \textcolor{comment}{// Runtime check whether the size of character type is sufficient. It only perform checks with assertion.}}
+\DoxyCodeLine{248         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_afd7503e0eb83f1d5f90292d2d2779ead}{type\_}} == \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773ebaa7ffda68d3584eb92155daf3cd1d6481}{kUTF16LE}} || \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_afd7503e0eb83f1d5f90292d2d2779ead}{type\_}} == \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba52c496755de96eee05275a423b36299d}{kUTF16BE}}) \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}}) >= 2);}
+\DoxyCodeLine{249         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_afd7503e0eb83f1d5f90292d2d2779ead}{type\_}} == \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba2ec8c855b2edacca40fa73ad307a66b4}{kUTF32LE}} || \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_afd7503e0eb83f1d5f90292d2d2779ead}{type\_}} == \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773ebad6db204b848081468878ed58bc20ce8f}{kUTF32BE}}) \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}}) >= 4);}
+\DoxyCodeLine{250 }
+\DoxyCodeLine{251         \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a2572eb3b4d77c0a2466ba21635ff79b5}{PutFunc}} f[] = \{ \mbox{\hyperlink{encodedstream_8h_a6530c8834a049a0ff230b56072df6c24}{RAPIDJSON\_ENCODINGS\_FUNC}}(\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a11ab92b78f15ccb20917887f06d6de66}{Put}}) \};}
+\DoxyCodeLine{252         \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a8a5b6ba6993b01a9a08124fe2a8fceb1}{putFunc\_}} = f[\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_afd7503e0eb83f1d5f90292d2d2779ead}{type\_}}];}
+\DoxyCodeLine{253 }
+\DoxyCodeLine{254         \textcolor{keywordflow}{if} (putBOM)}
+\DoxyCodeLine{255             \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_ab52009c85bdea52aa3b09020f249fbe1}{PutBOM}}();}
+\DoxyCodeLine{256     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+U\+T\+F16\+BE, rapidjson\+::k\+U\+T\+F16\+LE, rapidjson\+::k\+U\+T\+F32\+BE, rapidjson\+::k\+U\+T\+F32\+LE, rapidjson\+::k\+U\+T\+F8, R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+S\+\_\+\+F\+U\+NC.
+
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_a34efd607e963293aa860ada21a61bf72}\label{classrapidjson_1_1_auto_u_t_f_output_stream_a34efd607e963293aa860ada21a61bf72}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!AutoUTFOutputStream@{AutoUTFOutputStream}}
+\index{AutoUTFOutputStream@{AutoUTFOutputStream}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{AutoUTFOutputStream()}{AutoUTFOutputStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{Auto\+U\+T\+F\+Output\+Stream}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_a04746e5fa16007b2cbe4be5f8d68940d}\label{classrapidjson_1_1_auto_u_t_f_output_stream_a04746e5fa16007b2cbe4be5f8d68940d}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!Flush@{Flush}}
+\index{Flush@{Flush}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 261 of file encodedstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{261 \{ \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a6db71fad149c823ee1eed1b04440cb1f}{os\_}}->Flush(); \} }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_ae01c4c0e6ac78b9bc875a9e73c63fd05}\label{classrapidjson_1_1_auto_u_t_f_output_stream_ae01c4c0e6ac78b9bc875a9e73c63fd05}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!GetType@{GetType}}
+\index{GetType@{GetType}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eb}{U\+T\+F\+Type}} \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 258 of file encodedstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{258 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_afd7503e0eb83f1d5f90292d2d2779ead}{type\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_a927efe7efab9ddc47820e4940b554d23}\label{classrapidjson_1_1_auto_u_t_f_output_stream_a927efe7efab9ddc47820e4940b554d23}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{Auto\+U\+T\+F\+Output\+Stream}}\& \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_a89e2fba1e92b4f1408744934fcb56881}\label{classrapidjson_1_1_auto_u_t_f_output_stream_a89e2fba1e92b4f1408744934fcb56881}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!Peek@{Peek}}
+\index{Peek@{Peek}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 264 of file encodedstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{264 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0;\}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_a11ab92b78f15ccb20917887f06d6de66}\label{classrapidjson_1_1_auto_u_t_f_output_stream_a11ab92b78f15ccb20917887f06d6de66}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!Put@{Put}}
+\index{Put@{Put}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::Put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 260 of file encodedstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{260 \{ \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a8a5b6ba6993b01a9a08124fe2a8fceb1}{putFunc\_}}(*\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a6db71fad149c823ee1eed1b04440cb1f}{os\_}}, c); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_ad3c65d2c5f94590add9bd743f09c0c63}\label{classrapidjson_1_1_auto_u_t_f_output_stream_ad3c65d2c5f94590add9bd743f09c0c63}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!PutBegin@{PutBegin}}
+\index{PutBegin@{PutBegin}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{PutBegin()}{PutBegin()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::Put\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 267 of file encodedstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{267 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_ab52009c85bdea52aa3b09020f249fbe1}\label{classrapidjson_1_1_auto_u_t_f_output_stream_ab52009c85bdea52aa3b09020f249fbe1}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!PutBOM@{PutBOM}}
+\index{PutBOM@{PutBOM}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{PutBOM()}{PutBOM()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::Put\+B\+OM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 274 of file encodedstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{274                   \{ }
+\DoxyCodeLine{275         \textcolor{keyword}{typedef} void (*PutBOMFunc)(OutputByteStream\&);}
+\DoxyCodeLine{276         \textcolor{keyword}{static} \textcolor{keyword}{const} PutBOMFunc f[] = \{ \mbox{\hyperlink{encodedstream_8h_a6530c8834a049a0ff230b56072df6c24}{RAPIDJSON\_ENCODINGS\_FUNC}}(\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_ab52009c85bdea52aa3b09020f249fbe1}{PutBOM}}) \};}
+\DoxyCodeLine{277         f[\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_afd7503e0eb83f1d5f90292d2d2779ead}{type\_}}](*os\_);}
+\DoxyCodeLine{278     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+S\+\_\+\+F\+U\+NC.
+
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_a0348cb8d01546573894371d60aaaea94}\label{classrapidjson_1_1_auto_u_t_f_output_stream_a0348cb8d01546573894371d60aaaea94}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!PutEnd@{PutEnd}}
+\index{PutEnd@{PutEnd}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{PutEnd()}{PutEnd()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::Put\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 268 of file encodedstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{268 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_a0fd284bc102b7802bf5541a3169d912e}\label{classrapidjson_1_1_auto_u_t_f_output_stream_a0fd284bc102b7802bf5541a3169d912e}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!Take@{Take}}
+\index{Take@{Take}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{Take()}{Take()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_aaf40884d8f4fbf24ea040d3363c9967e}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::Take (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 265 of file encodedstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{265 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0;\}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_ac6c7dadb3851cf9e49c55273dd89937c}\label{classrapidjson_1_1_auto_u_t_f_output_stream_ac6c7dadb3851cf9e49c55273dd89937c}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!Tell@{Tell}}
+\index{Tell@{Tell}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{Tell()}{Tell()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::Tell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 266 of file encodedstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{266 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_a6db71fad149c823ee1eed1b04440cb1f}\label{classrapidjson_1_1_auto_u_t_f_output_stream_a6db71fad149c823ee1eed1b04440cb1f}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!os\_@{os\_}}
+\index{os\_@{os\_}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{os\_}{os\_}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+Output\+Byte\+Stream$\ast$ \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::os\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 282 of file encodedstream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_a8a5b6ba6993b01a9a08124fe2a8fceb1}\label{classrapidjson_1_1_auto_u_t_f_output_stream_a8a5b6ba6993b01a9a08124fe2a8fceb1}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!putFunc\_@{putFunc\_}}
+\index{putFunc\_@{putFunc\_}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{putFunc\_}{putFunc\_}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream_a2572eb3b4d77c0a2466ba21635ff79b5}{Put\+Func}} \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::put\+Func\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 284 of file encodedstream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_auto_u_t_f_output_stream_afd7503e0eb83f1d5f90292d2d2779ead}\label{classrapidjson_1_1_auto_u_t_f_output_stream_afd7503e0eb83f1d5f90292d2d2779ead}} 
+\index{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}!type\_@{type\_}}
+\index{type\_@{type\_}!rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$@{rapidjson::AutoUTFOutputStream$<$ CharType, OutputByteStream $>$}}
+\subsubsection{\texorpdfstring{type\_}{type\_}}
+{\footnotesize\ttfamily template$<$typename Char\+Type , typename Output\+Byte\+Stream $>$ \\
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eb}{U\+T\+F\+Type}} \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{rapidjson\+::\+Auto\+U\+T\+F\+Output\+Stream}}$<$ Char\+Type, Output\+Byte\+Stream $>$\+::type\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 283 of file encodedstream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{encodedstream_8h}{encodedstream.\+h}}\end{DoxyCompactItemize}

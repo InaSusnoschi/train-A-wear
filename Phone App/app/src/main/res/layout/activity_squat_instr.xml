@@ -1,45 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/geom4"
     tools:context=".SquatInstr">
-    <RelativeLayout android:id="@+id/topLayout"
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ImageView android:id="@+id/backgroundImage"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textWorkoutHeader"
+            android:layout_marginTop="24dp"
+            android:text="@string/button_instructions"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/logosquat" />
-        <ImageView android:id="@+id/gravitywell_logo"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/logodumbbell"
-            android:scaleType="centerInside" />
-    </RelativeLayout>
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintTop_toTopOf="parent"/>
 
-    <ModifiedScrollView android:id="@+id/scroller"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fadingEdge="none">
-        <LinearLayout android:id="@+id/scroller_layout"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:clickable="false"
-            android:paddingTop="330dp">
-            <LinearLayout android:id="@+id/scroller_content"
-                android:layout_width="fill_parent"
+        <LinearLayout
+            android:id="@+id/layoutBackImu"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textsquatBack"
+                style="@style/WORKOUTtexts"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:orientation="vertical"
-                android:background="@drawable/fuzzybackground">
+                android:layout_marginTop="20dp"
+                android:justificationMode="inter_word"
+                android:layout_gravity="center"
+                android:text="@string/squat_back_imu"
+                android:textSize="22dp" />
 
-                <!-- Content for upper layer goes here -->
 
-            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageSensorBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/squatbacksensor" />
         </LinearLayout>
-    </ModifiedScrollView>
-</RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutThighImu"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                android:id="@+id/textsquatThigh"
+                style="@style/WORKOUTtexts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="@string/squat_thigh_imu"
+                    android:justificationMode="inter_word"
+                android:textSize="22dp" />
+
+
+            <ImageView
+                android:id="@+id/imageSensorThigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                app:srcCompat="@drawable/squatthighsensor" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

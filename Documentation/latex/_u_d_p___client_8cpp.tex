@@ -1,0 +1,137 @@
+\hypertarget{_u_d_p___client_8cpp}{}\section{D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/\+U\+D\+P\+\_\+\+Client.cpp File Reference}
+\label{_u_d_p___client_8cpp}\index{D:/cloned repo trainawear/train-\/A-\/wear/Server/UDP\_Client.cpp@{D:/cloned repo trainawear/train-\/A-\/wear/Server/UDP\_Client.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/socket.\+h$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$sys/ioctl.\+h$>$}\newline
+{\ttfamily \#include $<$net/if.\+h$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_u_d_p___client_8cpp_a3e937c42922f7601edb17b747602c471}{M\+A\+X\+L\+I\+NE}}~1500
+\item 
+\#define \mbox{\hyperlink{_u_d_p___client_8cpp_a614217d263be1fb1a5f76e2ff7be19a2}{P\+O\+RT}}~31415
+\item 
+\#define \mbox{\hyperlink{_u_d_p___client_8cpp_a66b32ab28b717d39138f1dab1f944991}{M\+A\+X\+I\+N\+P\+UT}}~128
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_u_d_p___client_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_u_d_p___client_8cpp_a66b32ab28b717d39138f1dab1f944991}\label{_u_d_p___client_8cpp_a66b32ab28b717d39138f1dab1f944991}} 
+\index{UDP\_Client.cpp@{UDP\_Client.cpp}!MAXINPUT@{MAXINPUT}}
+\index{MAXINPUT@{MAXINPUT}!UDP\_Client.cpp@{UDP\_Client.cpp}}
+\subsubsection{\texorpdfstring{MAXINPUT}{MAXINPUT}}
+{\footnotesize\ttfamily \#define M\+A\+X\+I\+N\+P\+UT~128}
+
+
+
+Definition at line 19 of file U\+D\+P\+\_\+\+Client.\+cpp.
+
+\mbox{\Hypertarget{_u_d_p___client_8cpp_a3e937c42922f7601edb17b747602c471}\label{_u_d_p___client_8cpp_a3e937c42922f7601edb17b747602c471}} 
+\index{UDP\_Client.cpp@{UDP\_Client.cpp}!MAXLINE@{MAXLINE}}
+\index{MAXLINE@{MAXLINE}!UDP\_Client.cpp@{UDP\_Client.cpp}}
+\subsubsection{\texorpdfstring{MAXLINE}{MAXLINE}}
+{\footnotesize\ttfamily \#define M\+A\+X\+L\+I\+NE~1500}
+
+
+
+Definition at line 17 of file U\+D\+P\+\_\+\+Client.\+cpp.
+
+\mbox{\Hypertarget{_u_d_p___client_8cpp_a614217d263be1fb1a5f76e2ff7be19a2}\label{_u_d_p___client_8cpp_a614217d263be1fb1a5f76e2ff7be19a2}} 
+\index{UDP\_Client.cpp@{UDP\_Client.cpp}!PORT@{PORT}}
+\index{PORT@{PORT}!UDP\_Client.cpp@{UDP\_Client.cpp}}
+\subsubsection{\texorpdfstring{PORT}{PORT}}
+{\footnotesize\ttfamily \#define P\+O\+RT~31415}
+
+
+
+Definition at line 18 of file U\+D\+P\+\_\+\+Client.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_u_d_p___client_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{_u_d_p___client_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{UDP\_Client.cpp@{UDP\_Client.cpp}!main@{main}}
+\index{main@{main}!UDP\_Client.cpp@{UDP\_Client.cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file U\+D\+P\+\_\+\+Client.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                                  \{}
+\DoxyCodeLine{23     \textcolor{keywordtype}{int}                 fd;}
+\DoxyCodeLine{24     \textcolor{keywordtype}{char}                buffer[\mbox{\hyperlink{_u_d_p___client_8cpp_a3e937c42922f7601edb17b747602c471}{MAXLINE}}];}
+\DoxyCodeLine{25     \textcolor{keywordtype}{char}                *hello = \textcolor{stringliteral}{"Hello from the other side of the internet!\(\backslash\)n"};}
+\DoxyCodeLine{26     \textcolor{keyword}{struct }sockaddr\_in  server\_addr;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{char}                str[\mbox{\hyperlink{_u_d_p___client_8cpp_a66b32ab28b717d39138f1dab1f944991}{MAXINPUT}}]; \textcolor{comment}{//Array for reading stdin input}}
+\DoxyCodeLine{28     \textcolor{keywordtype}{char}                *destination;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{comment}{// Determine local IP by callin ioctl}}
+\DoxyCodeLine{31     \textcolor{keywordtype}{char}            ip\_address[15];}
+\DoxyCodeLine{32     \textcolor{keyword}{struct }ifreq    ifr;}
+\DoxyCodeLine{33     \textcolor{keywordtype}{int} broadcast = 1;}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     fd = socket(AF\_INET, SOCK\_DGRAM, 0); }
+\DoxyCodeLine{36     ifr.ifr\_addr.sa\_family = AF\_INET;}
+\DoxyCodeLine{37     memcpy(ifr.ifr\_name, \textcolor{stringliteral}{"wlan0"}, IFNAMSIZ-1);}
+\DoxyCodeLine{38     ioctl(fd, SIOCGIFADDR, \&ifr);}
+\DoxyCodeLine{39     close(fd);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     strcpy(ip\_address,inet\_ntoa(((\textcolor{keyword}{struct} sockaddr\_in *)\&ifr.ifr\_addr)->sin\_addr));}
+\DoxyCodeLine{42     printf(\textcolor{stringliteral}{"Client IP Address is: \%s\(\backslash\)n"}, ip\_address);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     \textcolor{comment}{// If no IP address is passed as an argument, the client defaults to localhost}}
+\DoxyCodeLine{45     \textcolor{keywordflow}{if}(argc==2)\{}
+\DoxyCodeLine{46         destination = argv[1];}
+\DoxyCodeLine{47     \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{48         destination = \textcolor{stringliteral}{"127.0.0.1"};}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     \textcolor{comment}{// Create the socket}}
+\DoxyCodeLine{52     \textcolor{keywordflow}{if}((fd = socket(AF\_INET, SOCK\_DGRAM, 0)) == -1)\{}
+\DoxyCodeLine{53         perror(\textcolor{stringliteral}{"Unable to create the UDP socket."});}
+\DoxyCodeLine{54         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{55     \}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \textcolor{keywordflow}{if}(setsockopt(fd,SOL\_SOCKET,SO\_BROADCAST,\&broadcast,\textcolor{keyword}{sizeof}(broadcast)) < 0)\{}
+\DoxyCodeLine{58         perror(\textcolor{stringliteral}{"Error in setting Broadcast option"});}
+\DoxyCodeLine{59         close(fd);}
+\DoxyCodeLine{60         \textcolor{keywordflow}{return} 3;}
+\DoxyCodeLine{61     \}}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     \textcolor{comment}{// Fillout the server information}}
+\DoxyCodeLine{64     server\_addr.sin\_family      = AF\_INET;}
+\DoxyCodeLine{65     server\_addr.sin\_port        = htons(\mbox{\hyperlink{_u_d_p___client_8cpp_a614217d263be1fb1a5f76e2ff7be19a2}{PORT}});}
+\DoxyCodeLine{66     server\_addr.sin\_addr.s\_addr = inet\_addr(destination); }
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68     \textcolor{comment}{// Send data to the server}}
+\DoxyCodeLine{69     \textcolor{keywordflow}{while}(fgets(str, \mbox{\hyperlink{_u_d_p___client_8cpp_a66b32ab28b717d39138f1dab1f944991}{MAXINPUT}}, stdin) != NULL)\{}
+\DoxyCodeLine{70         sendto(fd, str, strlen(str), MSG\_CONFIRM, (\textcolor{keyword}{const} \textcolor{keyword}{struct} sockaddr *) \&server\_addr, \textcolor{keyword}{sizeof}(server\_addr));}
+\DoxyCodeLine{71     \}}
+\DoxyCodeLine{72     }
+\DoxyCodeLine{73     printf(\textcolor{stringliteral}{"Greeting has been sent :)\(\backslash\)n"});}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75     \textcolor{comment}{// Close the socket}}
+\DoxyCodeLine{76     close(fd);}
+\DoxyCodeLine{77     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{78 \}}
+
+\end{DoxyCode}
+
+
+References M\+A\+X\+I\+N\+P\+UT, M\+A\+X\+L\+I\+NE, and P\+O\+RT.
+

@@ -1419,15 +1419,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
-     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>center</td><td>11</td><td></td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      */
     public static final int indicatorGravity=0x7f0300b8;
@@ -1466,9 +1466,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>gone</td><td>8</td><td>Completely hidden, as if the view had not been added.</td></tr>
-     * <tr><td>invisible</td><td>4</td><td>Not displayed, but taken into account during layout (space is left for it).</td></tr>
-     * <tr><td>visible</td><td>0</td><td>Visible on screen; the default value.</td></tr>
+     * <tr><td>gone</td><td>8</td><td></td></tr>
+     * <tr><td>invisible</td><td>4</td><td></td></tr>
+     * <tr><td>visible</td><td>0</td><td></td></tr>
      * </table>
      */
     public static final int indicatorVisibility=0x7f0300bc;
@@ -2120,7 +2120,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
@@ -3802,7 +3802,7 @@ public final class R {
     public static final int abouticon4=0x7f07005a;
     public static final int avd_hide_password=0x7f07005b;
     public static final int avd_show_password=0x7f07005c;
-    public static final int bitmap=0x7f07005d;
+    public static final int bicepcurl=0x7f07005d;
     public static final int bluebackground=0x7f07005e;
     public static final int design_bottom_navigation_item_background=0x7f07005f;
     public static final int design_fab_background=0x7f070060;
@@ -3815,51 +3815,57 @@ public final class R {
     public static final int fuzzybackground=0x7f070067;
     public static final int geom2=0x7f070068;
     public static final int geom4=0x7f070069;
-    public static final int ic_launcher_background=0x7f07006a;
-    public static final int ic_launcher_foreground=0x7f07006b;
-    public static final int instaicon2=0x7f07006c;
-    public static final int logocolour=0x7f07006d;
-    public static final int logodumbbell=0x7f07006e;
-    public static final int logohand2=0x7f07006f;
-    public static final int logored=0x7f070070;
-    public static final int logorun=0x7f070071;
-    public static final int logosquat=0x7f070072;
-    public static final int lunge=0x7f070073;
-    public static final int navigation_empty_icon=0x7f070074;
-    public static final int notification_action_background=0x7f070075;
-    public static final int notification_bg=0x7f070076;
-    public static final int notification_bg_low=0x7f070077;
-    public static final int notification_bg_low_normal=0x7f070078;
-    public static final int notification_bg_low_pressed=0x7f070079;
-    public static final int notification_bg_normal=0x7f07007a;
-    public static final int notification_bg_normal_pressed=0x7f07007b;
-    public static final int notification_icon_background=0x7f07007c;
-    public static final int notification_template_icon_bg=0x7f07007d;
-    public static final int notification_template_icon_low_bg=0x7f07007e;
-    public static final int notification_tile_bg=0x7f07007f;
-    public static final int notify_panel_notification_icon_bg=0x7f070080;
-    public static final int plankhigh1=0x7f070081;
-    public static final int planklow2=0x7f070082;
-    public static final int profile8=0x7f070083;
-    public static final int progress2=0x7f070084;
-    public static final int progress3=0x7f070085;
-    public static final int progressicon3=0x7f070086;
-    public static final int pullup1=0x7f070087;
-    public static final int pullup2=0x7f070088;
-    public static final int pullup3=0x7f070089;
-    public static final int runportrait4=0x7f07008a;
-    public static final int setuppic=0x7f07008b;
-    public static final int shape=0x7f07008c;
-    public static final int squatend1=0x7f07008d;
-    public static final int squatmed3=0x7f07008e;
-    public static final int squatstart1=0x7f07008f;
-    public static final int thighstretch2=0x7f070090;
-    public static final int tooltip_frame_dark=0x7f070091;
-    public static final int tooltip_frame_light=0x7f070092;
-    public static final int tree=0x7f070093;
-    public static final int twitter=0x7f070094;
-    public static final int wordpress=0x7f070095;
-    public static final int workouticon8=0x7f070096;
+    public static final int hamstring=0x7f07006a;
+    public static final int ic_launcher_background=0x7f07006b;
+    public static final int ic_launcher_foreground=0x7f07006c;
+    public static final int instaicon2=0x7f07006d;
+    public static final int logocolour=0x7f07006e;
+    public static final int logodumbbell=0x7f07006f;
+    public static final int logohand2=0x7f070070;
+    public static final int logored=0x7f070071;
+    public static final int logorun=0x7f070072;
+    public static final int logosquat=0x7f070073;
+    public static final int lunge=0x7f070074;
+    public static final int navigation_empty_icon=0x7f070075;
+    public static final int notification_action_background=0x7f070076;
+    public static final int notification_bg=0x7f070077;
+    public static final int notification_bg_low=0x7f070078;
+    public static final int notification_bg_low_normal=0x7f070079;
+    public static final int notification_bg_low_pressed=0x7f07007a;
+    public static final int notification_bg_normal=0x7f07007b;
+    public static final int notification_bg_normal_pressed=0x7f07007c;
+    public static final int notification_icon_background=0x7f07007d;
+    public static final int notification_template_icon_bg=0x7f07007e;
+    public static final int notification_template_icon_low_bg=0x7f07007f;
+    public static final int notification_tile_bg=0x7f070080;
+    public static final int notify_panel_notification_icon_bg=0x7f070081;
+    public static final int plankhigh1=0x7f070082;
+    public static final int planklow2=0x7f070083;
+    public static final int pliesquat=0x7f070084;
+    public static final int profile8=0x7f070085;
+    public static final int progress2=0x7f070086;
+    public static final int progress3=0x7f070087;
+    public static final int progressicon3=0x7f070088;
+    public static final int pullup1=0x7f070089;
+    public static final int pullup2=0x7f07008a;
+    public static final int pullup3=0x7f07008b;
+    public static final int runportrait4=0x7f07008c;
+    public static final int setup=0x7f07008d;
+    public static final int setuppic=0x7f07008e;
+    public static final int shape=0x7f07008f;
+    public static final int squatbacksensor=0x7f070090;
+    public static final int squatend1=0x7f070091;
+    public static final int squatmed3=0x7f070092;
+    public static final int squatstart1=0x7f070093;
+    public static final int squatthighsensor=0x7f070094;
+    public static final int thighstretch2=0x7f070095;
+    public static final int tooltip_frame_dark=0x7f070096;
+    public static final int tooltip_frame_light=0x7f070097;
+    public static final int tree=0x7f070098;
+    public static final int tricepstretch=0x7f070099;
+    public static final int twitter=0x7f07009a;
+    public static final int wordpress=0x7f07009b;
+    public static final int workouticon8=0x7f07009c;
   }
   public static final class id {
     public static final int ALT=0x7f080000;
@@ -3894,263 +3900,267 @@ public final class R {
     public static final int always=0x7f08001d;
     public static final int async=0x7f08001e;
     public static final int auto=0x7f08001f;
-    public static final int backgroundImage=0x7f080020;
-    public static final int barrier=0x7f080021;
-    public static final int beginning=0x7f080022;
-    public static final int blocking=0x7f080023;
-    public static final int bottom=0x7f080024;
-    public static final int button7=0x7f080025;
-    public static final int button9=0x7f080026;
-    public static final int buttonBicepsInstr=0x7f080027;
-    public static final int buttonClassicSquatInstr=0x7f080028;
-    public static final int buttonDone=0x7f080029;
-    public static final int buttonExitHelp=0x7f08002a;
-    public static final int buttonFault=0x7f08002b;
-    public static final int buttonHealth=0x7f08002c;
-    public static final int buttonHelp=0x7f08002d;
-    public static final int buttonInsta=0x7f08002e;
-    public static final int buttonMount=0x7f08002f;
-    public static final int buttonPanel=0x7f080030;
-    public static final int buttonPlankInstr=0x7f080031;
-    public static final int buttonProgress=0x7f080032;
-    public static final int buttonSetup=0x7f080033;
-    public static final int buttonSquatWeights=0x7f080034;
-    public static final int buttonStartBiceps=0x7f080035;
-    public static final int buttonStartPlank=0x7f080036;
-    public static final int buttonStartSquatClassic=0x7f080037;
-    public static final int buttonStopBiceps=0x7f080038;
-    public static final int buttonStopPlank=0x7f080039;
-    public static final int buttonStopSquatClassic=0x7f08003a;
-    public static final int buttonStretch=0x7f08003b;
-    public static final int buttonTwitter=0x7f08003c;
-    public static final int buttonWordpress=0x7f08003d;
-    public static final int buttonWorkout=0x7f08003e;
-    public static final int calDisplay=0x7f08003f;
-    public static final int cancel_action=0x7f080040;
-    public static final int carousel=0x7f080041;
-    public static final int carouselPlank=0x7f080042;
-    public static final int center=0x7f080043;
-    public static final int center_horizontal=0x7f080044;
-    public static final int center_vertical=0x7f080045;
-    public static final int chains=0x7f080046;
-    public static final int checkbox=0x7f080047;
-    public static final int chronometer=0x7f080048;
-    public static final int clip_horizontal=0x7f080049;
-    public static final int clip_vertical=0x7f08004a;
-    public static final int closeButton=0x7f08004b;
-    public static final int collapseActionView=0x7f08004c;
-    public static final int container=0x7f08004d;
-    public static final int containerViewPager=0x7f08004e;
-    public static final int contentPanel=0x7f08004f;
-    public static final int coordinator=0x7f080050;
-    public static final int custom=0x7f080051;
-    public static final int customPanel=0x7f080052;
-    public static final int decor_content_parent=0x7f080053;
-    public static final int default_activity_button=0x7f080054;
-    public static final int depth=0x7f080055;
-    public static final int design_bottom_sheet=0x7f080056;
-    public static final int design_menu_item_action_area=0x7f080057;
-    public static final int design_menu_item_action_area_stub=0x7f080058;
-    public static final int design_menu_item_text=0x7f080059;
-    public static final int design_navigation_view=0x7f08005a;
-    public static final int dimensions=0x7f08005b;
-    public static final int direct=0x7f08005c;
-    public static final int disableHome=0x7f08005d;
-    public static final int doodleBiceps=0x7f08005e;
-    public static final int doodlePlank=0x7f08005f;
-    public static final int doodleSquat=0x7f080060;
-    public static final int editAge=0x7f080061;
-    public static final int editHeight=0x7f080062;
-    public static final int editWeight=0x7f080063;
-    public static final int edit_query=0x7f080064;
-    public static final int end=0x7f080065;
-    public static final int end_padder=0x7f080066;
-    public static final int enterAlways=0x7f080067;
-    public static final int enterAlwaysCollapsed=0x7f080068;
-    public static final int exitUntilCollapsed=0x7f080069;
-    public static final int expand_activities_button=0x7f08006a;
-    public static final int expanded_menu=0x7f08006b;
-    public static final int faultLayout=0x7f08006c;
-    public static final int feedback=0x7f08006d;
-    public static final int feedbackBiceps=0x7f08006e;
-    public static final int feedbackPlank=0x7f08006f;
-    public static final int fill=0x7f080070;
-    public static final int fill_horizontal=0x7f080071;
-    public static final int fill_vertical=0x7f080072;
-    public static final int fire=0x7f080073;
-    public static final int fixed=0x7f080074;
-    public static final int flow=0x7f080075;
-    public static final int forever=0x7f080076;
-    public static final int ghost_view=0x7f080077;
-    public static final int gone=0x7f080078;
-    public static final int graph=0x7f080079;
-    public static final int gravitywell_logo=0x7f08007a;
-    public static final int groups=0x7f08007b;
-    public static final int healthLayout=0x7f08007c;
-    public static final int home=0x7f08007d;
-    public static final int homeAsUp=0x7f08007e;
-    public static final int horizontal=0x7f08007f;
-    public static final int icon=0x7f080080;
-    public static final int icon_group=0x7f080081;
-    public static final int ifRoom=0x7f080082;
-    public static final int image=0x7f080083;
-    public static final int indicator=0x7f080084;
-    public static final int info=0x7f080085;
-    public static final int invisible=0x7f080086;
-    public static final int italic=0x7f080087;
-    public static final int item_touch_helper_previous_elevation=0x7f080088;
-    public static final int largeLabel=0x7f080089;
-    public static final int layoutBiceps=0x7f08008a;
-    public static final int layoutButtons=0x7f08008b;
-    public static final int layoutCalories=0x7f08008c;
-    public static final int layoutHelpButtons=0x7f08008d;
-    public static final int layoutPlank=0x7f08008e;
-    public static final int layoutSquat=0x7f08008f;
-    public static final int left=0x7f080090;
-    public static final int line1=0x7f080091;
-    public static final int line3=0x7f080092;
-    public static final int linearFirst=0x7f080093;
-    public static final int linearMedia=0x7f080094;
-    public static final int linearSecond=0x7f080095;
-    public static final int listMode=0x7f080096;
-    public static final int list_item=0x7f080097;
-    public static final int masked=0x7f080098;
-    public static final int media_actions=0x7f080099;
-    public static final int message=0x7f08009a;
-    public static final int middle=0x7f08009b;
-    public static final int mini=0x7f08009c;
-    public static final int mountLayout=0x7f08009d;
-    public static final int multiply=0x7f08009e;
-    public static final int navigation_header_container=0x7f08009f;
-    public static final int never=0x7f0800a0;
-    public static final int none=0x7f0800a1;
-    public static final int normal=0x7f0800a2;
-    public static final int notification_background=0x7f0800a3;
-    public static final int notification_main_column=0x7f0800a4;
-    public static final int notification_main_column_container=0x7f0800a5;
-    public static final int packed=0x7f0800a6;
-    public static final int parallax=0x7f0800a7;
-    public static final int parent=0x7f0800a8;
-    public static final int parentPanel=0x7f0800a9;
-    public static final int parent_matrix=0x7f0800aa;
-    public static final int percent=0x7f0800ab;
-    public static final int pin=0x7f0800ac;
-    public static final int progress_circular=0x7f0800ad;
-    public static final int progress_horizontal=0x7f0800ae;
-    public static final int radio=0x7f0800af;
-    public static final int received=0x7f0800b0;
-    public static final int receivedPlank=0x7f0800b1;
-    public static final int right=0x7f0800b2;
-    public static final int right_icon=0x7f0800b3;
-    public static final int right_side=0x7f0800b4;
-    public static final int save_image_matrix=0x7f0800b5;
-    public static final int save_non_transition_alpha=0x7f0800b6;
-    public static final int save_scale_type=0x7f0800b7;
-    public static final int screen=0x7f0800b8;
-    public static final int scroll=0x7f0800b9;
-    public static final int scrollIndicatorDown=0x7f0800ba;
-    public static final int scrollIndicatorUp=0x7f0800bb;
-    public static final int scrollView=0x7f0800bc;
-    public static final int scrollable=0x7f0800bd;
-    public static final int scroller=0x7f0800be;
-    public static final int scroller_content=0x7f0800bf;
-    public static final int scroller_layout=0x7f0800c0;
-    public static final int search_badge=0x7f0800c1;
-    public static final int search_bar=0x7f0800c2;
-    public static final int search_button=0x7f0800c3;
-    public static final int search_close_btn=0x7f0800c4;
-    public static final int search_edit_frame=0x7f0800c5;
-    public static final int search_go_btn=0x7f0800c6;
-    public static final int search_mag_icon=0x7f0800c7;
-    public static final int search_plate=0x7f0800c8;
-    public static final int search_src_text=0x7f0800c9;
-    public static final int search_voice_btn=0x7f0800ca;
-    public static final int select_dialog_listview=0x7f0800cb;
-    public static final int shortcut=0x7f0800cc;
-    public static final int showCustom=0x7f0800cd;
-    public static final int showHome=0x7f0800ce;
-    public static final int showTitle=0x7f0800cf;
-    public static final int slide_over=0x7f0800d0;
-    public static final int smallLabel=0x7f0800d1;
-    public static final int snackbar_action=0x7f0800d2;
-    public static final int snackbar_text=0x7f0800d3;
-    public static final int snap=0x7f0800d4;
-    public static final int spacer=0x7f0800d5;
-    public static final int split_action_bar=0x7f0800d6;
-    public static final int spread=0x7f0800d7;
-    public static final int spread_inside=0x7f0800d8;
-    public static final int src_atop=0x7f0800d9;
-    public static final int src_in=0x7f0800da;
-    public static final int src_over=0x7f0800db;
-    public static final int standard=0x7f0800dc;
-    public static final int start=0x7f0800dd;
-    public static final int state=0x7f0800de;
-    public static final int statePlank=0x7f0800df;
-    public static final int status_bar_latest_event_content=0x7f0800e0;
-    public static final int stretchLayout=0x7f0800e1;
-    public static final int submenuarrow=0x7f0800e2;
-    public static final int submit_area=0x7f0800e3;
-    public static final int tabMode=0x7f0800e4;
-    public static final int tag_transition_group=0x7f0800e5;
-    public static final int text=0x7f0800e6;
-    public static final int text2=0x7f0800e7;
-    public static final int textAge=0x7f0800e8;
-    public static final int textAllSet=0x7f0800e9;
-    public static final int textFault=0x7f0800ea;
-    public static final int textFaultBody=0x7f0800eb;
-    public static final int textHealth=0x7f0800ec;
-    public static final int textHealthBody=0x7f0800ed;
-    public static final int textHeight=0x7f0800ee;
-    public static final int textHello=0x7f0800ef;
-    public static final int textHowHelp=0x7f0800f0;
-    public static final int textKcalBurned=0x7f0800f1;
-    public static final int textMount=0x7f0800f2;
-    public static final int textMountBody=0x7f0800f3;
-    public static final int textProgress=0x7f0800f4;
-    public static final int textProgressSign=0x7f0800f5;
-    public static final int textRequest=0x7f0800f6;
-    public static final int textSpacerNoButtons=0x7f0800f7;
-    public static final int textSpacerNoTitle=0x7f0800f8;
-    public static final int textStretch=0x7f0800f9;
-    public static final int textStretchH=0x7f0800fa;
-    public static final int textView10=0x7f0800fb;
-    public static final int textView9=0x7f0800fc;
-    public static final int textViewBiceps=0x7f0800fd;
-    public static final int textViewBicepsUnder=0x7f0800fe;
-    public static final int textViewPlank=0x7f0800ff;
-    public static final int textViewPlankUnder=0x7f080100;
-    public static final int textViewSquat=0x7f080101;
-    public static final int textViewSquatUnder=0x7f080102;
-    public static final int textWeight=0x7f080103;
-    public static final int textWorkoutHeader=0x7f080104;
-    public static final int text_input_password_toggle=0x7f080105;
-    public static final int textinput_counter=0x7f080106;
-    public static final int textinput_error=0x7f080107;
-    public static final int time=0x7f080108;
-    public static final int title=0x7f080109;
-    public static final int titleDividerNoCustom=0x7f08010a;
-    public static final int title_template=0x7f08010b;
-    public static final int top=0x7f08010c;
-    public static final int topLayout=0x7f08010d;
-    public static final int topPanel=0x7f08010e;
-    public static final int touch_outside=0x7f08010f;
-    public static final int transition_current_scene=0x7f080110;
-    public static final int transition_layout_save=0x7f080111;
-    public static final int transition_position=0x7f080112;
-    public static final int transition_scene_layoutid_cache=0x7f080113;
-    public static final int transition_transform=0x7f080114;
-    public static final int tv=0x7f080115;
-    public static final int uniform=0x7f080116;
-    public static final int up=0x7f080117;
-    public static final int useLogo=0x7f080118;
-    public static final int vertical=0x7f080119;
-    public static final int view_offset_helper=0x7f08011a;
-    public static final int visible=0x7f08011b;
-    public static final int welcome=0x7f08011c;
-    public static final int withText=0x7f08011d;
-    public static final int wrap=0x7f08011e;
-    public static final int wrap_content=0x7f08011f;
-    public static final int zoom=0x7f080120;
+    public static final int barrier=0x7f080020;
+    public static final int beginning=0x7f080021;
+    public static final int blocking=0x7f080022;
+    public static final int bottom=0x7f080023;
+    public static final int button7=0x7f080024;
+    public static final int buttonBicepsInstr=0x7f080025;
+    public static final int buttonClassicSquatInstr=0x7f080026;
+    public static final int buttonDone=0x7f080027;
+    public static final int buttonExitHelp=0x7f080028;
+    public static final int buttonFault=0x7f080029;
+    public static final int buttonHealth=0x7f08002a;
+    public static final int buttonHelp=0x7f08002b;
+    public static final int buttonInsta=0x7f08002c;
+    public static final int buttonMount=0x7f08002d;
+    public static final int buttonPanel=0x7f08002e;
+    public static final int buttonPlankInstr=0x7f08002f;
+    public static final int buttonPlie=0x7f080030;
+    public static final int buttonProgress=0x7f080031;
+    public static final int buttonSetup=0x7f080032;
+    public static final int buttonStartBiceps=0x7f080033;
+    public static final int buttonStartPlank=0x7f080034;
+    public static final int buttonStartSquatClassic=0x7f080035;
+    public static final int buttonStopBiceps=0x7f080036;
+    public static final int buttonStopPlank=0x7f080037;
+    public static final int buttonStopSquatClassic=0x7f080038;
+    public static final int buttonStretch=0x7f080039;
+    public static final int buttonTwitter=0x7f08003a;
+    public static final int buttonWordpress=0x7f08003b;
+    public static final int buttonWorkout=0x7f08003c;
+    public static final int calDisplay=0x7f08003d;
+    public static final int cancel_action=0x7f08003e;
+    public static final int carousel=0x7f08003f;
+    public static final int carouselPlank=0x7f080040;
+    public static final int carouselStr=0x7f080041;
+    public static final int center=0x7f080042;
+    public static final int center_horizontal=0x7f080043;
+    public static final int center_vertical=0x7f080044;
+    public static final int chains=0x7f080045;
+    public static final int checkbox=0x7f080046;
+    public static final int chronometer=0x7f080047;
+    public static final int clip_horizontal=0x7f080048;
+    public static final int clip_vertical=0x7f080049;
+    public static final int closeButton=0x7f08004a;
+    public static final int collapseActionView=0x7f08004b;
+    public static final int container=0x7f08004c;
+    public static final int containerViewPager=0x7f08004d;
+    public static final int contentPanel=0x7f08004e;
+    public static final int coordinator=0x7f08004f;
+    public static final int custom=0x7f080050;
+    public static final int customPanel=0x7f080051;
+    public static final int decor_content_parent=0x7f080052;
+    public static final int default_activity_button=0x7f080053;
+    public static final int depth=0x7f080054;
+    public static final int design_bottom_sheet=0x7f080055;
+    public static final int design_menu_item_action_area=0x7f080056;
+    public static final int design_menu_item_action_area_stub=0x7f080057;
+    public static final int design_menu_item_text=0x7f080058;
+    public static final int design_navigation_view=0x7f080059;
+    public static final int dimensions=0x7f08005a;
+    public static final int direct=0x7f08005b;
+    public static final int disableHome=0x7f08005c;
+    public static final int doodleBiceps=0x7f08005d;
+    public static final int doodlePlank=0x7f08005e;
+    public static final int doodleSquat=0x7f08005f;
+    public static final int editAge=0x7f080060;
+    public static final int editHeight=0x7f080061;
+    public static final int editWeight=0x7f080062;
+    public static final int edit_query=0x7f080063;
+    public static final int end=0x7f080064;
+    public static final int end_padder=0x7f080065;
+    public static final int enterAlways=0x7f080066;
+    public static final int enterAlwaysCollapsed=0x7f080067;
+    public static final int exitUntilCollapsed=0x7f080068;
+    public static final int expand_activities_button=0x7f080069;
+    public static final int expanded_menu=0x7f08006a;
+    public static final int faultLayout=0x7f08006b;
+    public static final int feedback=0x7f08006c;
+    public static final int feedbackBiceps=0x7f08006d;
+    public static final int feedbackPlank=0x7f08006e;
+    public static final int fill=0x7f08006f;
+    public static final int fill_horizontal=0x7f080070;
+    public static final int fill_vertical=0x7f080071;
+    public static final int fire=0x7f080072;
+    public static final int fixed=0x7f080073;
+    public static final int flow=0x7f080074;
+    public static final int forever=0x7f080075;
+    public static final int ghost_view=0x7f080076;
+    public static final int gone=0x7f080077;
+    public static final int graph=0x7f080078;
+    public static final int groups=0x7f080079;
+    public static final int healthLayout=0x7f08007a;
+    public static final int home=0x7f08007b;
+    public static final int homeAsUp=0x7f08007c;
+    public static final int horizontal=0x7f08007d;
+    public static final int icon=0x7f08007e;
+    public static final int icon_group=0x7f08007f;
+    public static final int ifRoom=0x7f080080;
+    public static final int image=0x7f080081;
+    public static final int imageBicep=0x7f080082;
+    public static final int imageSensorBack=0x7f080083;
+    public static final int imageSensorThigh=0x7f080084;
+    public static final int imageplie=0x7f080085;
+    public static final int indicator=0x7f080086;
+    public static final int info=0x7f080087;
+    public static final int invisible=0x7f080088;
+    public static final int italic=0x7f080089;
+    public static final int item_touch_helper_previous_elevation=0x7f08008a;
+    public static final int largeLabel=0x7f08008b;
+    public static final int layoutBackImu=0x7f08008c;
+    public static final int layoutBiceps=0x7f08008d;
+    public static final int layoutButtons=0x7f08008e;
+    public static final int layoutCalories=0x7f08008f;
+    public static final int layoutHelpButtons=0x7f080090;
+    public static final int layoutPlank=0x7f080091;
+    public static final int layoutSquat=0x7f080092;
+    public static final int layoutThighImu=0x7f080093;
+    public static final int left=0x7f080094;
+    public static final int line1=0x7f080095;
+    public static final int line3=0x7f080096;
+    public static final int linearFirst=0x7f080097;
+    public static final int linearMedia=0x7f080098;
+    public static final int linearSecond=0x7f080099;
+    public static final int listMode=0x7f08009a;
+    public static final int list_item=0x7f08009b;
+    public static final int masked=0x7f08009c;
+    public static final int media_actions=0x7f08009d;
+    public static final int message=0x7f08009e;
+    public static final int middle=0x7f08009f;
+    public static final int mini=0x7f0800a0;
+    public static final int mountLayout=0x7f0800a1;
+    public static final int multiply=0x7f0800a2;
+    public static final int navigation_header_container=0x7f0800a3;
+    public static final int never=0x7f0800a4;
+    public static final int none=0x7f0800a5;
+    public static final int normal=0x7f0800a6;
+    public static final int notification_background=0x7f0800a7;
+    public static final int notification_main_column=0x7f0800a8;
+    public static final int notification_main_column_container=0x7f0800a9;
+    public static final int packed=0x7f0800aa;
+    public static final int parallax=0x7f0800ab;
+    public static final int parent=0x7f0800ac;
+    public static final int parentPanel=0x7f0800ad;
+    public static final int parent_matrix=0x7f0800ae;
+    public static final int percent=0x7f0800af;
+    public static final int pin=0x7f0800b0;
+    public static final int progress_circular=0x7f0800b1;
+    public static final int progress_horizontal=0x7f0800b2;
+    public static final int radio=0x7f0800b3;
+    public static final int received=0x7f0800b4;
+    public static final int receivedBicep=0x7f0800b5;
+    public static final int receivedPlank=0x7f0800b6;
+    public static final int right=0x7f0800b7;
+    public static final int right_icon=0x7f0800b8;
+    public static final int right_side=0x7f0800b9;
+    public static final int save_image_matrix=0x7f0800ba;
+    public static final int save_non_transition_alpha=0x7f0800bb;
+    public static final int save_scale_type=0x7f0800bc;
+    public static final int screen=0x7f0800bd;
+    public static final int scroll=0x7f0800be;
+    public static final int scrollIndicatorDown=0x7f0800bf;
+    public static final int scrollIndicatorUp=0x7f0800c0;
+    public static final int scrollView=0x7f0800c1;
+    public static final int scrollable=0x7f0800c2;
+    public static final int search_badge=0x7f0800c3;
+    public static final int search_bar=0x7f0800c4;
+    public static final int search_button=0x7f0800c5;
+    public static final int search_close_btn=0x7f0800c6;
+    public static final int search_edit_frame=0x7f0800c7;
+    public static final int search_go_btn=0x7f0800c8;
+    public static final int search_mag_icon=0x7f0800c9;
+    public static final int search_plate=0x7f0800ca;
+    public static final int search_src_text=0x7f0800cb;
+    public static final int search_voice_btn=0x7f0800cc;
+    public static final int select_dialog_listview=0x7f0800cd;
+    public static final int shortcut=0x7f0800ce;
+    public static final int showCustom=0x7f0800cf;
+    public static final int showHome=0x7f0800d0;
+    public static final int showTitle=0x7f0800d1;
+    public static final int slide_over=0x7f0800d2;
+    public static final int smallLabel=0x7f0800d3;
+    public static final int snackbar_action=0x7f0800d4;
+    public static final int snackbar_text=0x7f0800d5;
+    public static final int snap=0x7f0800d6;
+    public static final int spacer=0x7f0800d7;
+    public static final int split_action_bar=0x7f0800d8;
+    public static final int spread=0x7f0800d9;
+    public static final int spread_inside=0x7f0800da;
+    public static final int src_atop=0x7f0800db;
+    public static final int src_in=0x7f0800dc;
+    public static final int src_over=0x7f0800dd;
+    public static final int standard=0x7f0800de;
+    public static final int start=0x7f0800df;
+    public static final int state=0x7f0800e0;
+    public static final int stateBicep=0x7f0800e1;
+    public static final int statePlank=0x7f0800e2;
+    public static final int status_bar_latest_event_content=0x7f0800e3;
+    public static final int stretchLayout=0x7f0800e4;
+    public static final int submenuarrow=0x7f0800e5;
+    public static final int submit_area=0x7f0800e6;
+    public static final int tabMode=0x7f0800e7;
+    public static final int tag_transition_group=0x7f0800e8;
+    public static final int text=0x7f0800e9;
+    public static final int text2=0x7f0800ea;
+    public static final int textAge=0x7f0800eb;
+    public static final int textAllSet=0x7f0800ec;
+    public static final int textFault=0x7f0800ed;
+    public static final int textFaultBody=0x7f0800ee;
+    public static final int textHealth=0x7f0800ef;
+    public static final int textHealthBody=0x7f0800f0;
+    public static final int textHeight=0x7f0800f1;
+    public static final int textHowHelp=0x7f0800f2;
+    public static final int textKcalBurned=0x7f0800f3;
+    public static final int textMount=0x7f0800f4;
+    public static final int textMountBody=0x7f0800f5;
+    public static final int textPlie=0x7f0800f6;
+    public static final int textProgress=0x7f0800f7;
+    public static final int textProgressSign=0x7f0800f8;
+    public static final int textRequest=0x7f0800f9;
+    public static final int textSpacerNoButtons=0x7f0800fa;
+    public static final int textSpacerNoTitle=0x7f0800fb;
+    public static final int textStretch=0x7f0800fc;
+    public static final int textStretchH=0x7f0800fd;
+    public static final int textView10=0x7f0800fe;
+    public static final int textView9=0x7f0800ff;
+    public static final int textViewBiceps=0x7f080100;
+    public static final int textViewBicepsUnder=0x7f080101;
+    public static final int textViewPlank=0x7f080102;
+    public static final int textViewPlankUnder=0x7f080103;
+    public static final int textViewSquat=0x7f080104;
+    public static final int textViewSquatUnder=0x7f080105;
+    public static final int textWeight=0x7f080106;
+    public static final int textWorkoutHeader=0x7f080107;
+    public static final int text_input_password_toggle=0x7f080108;
+    public static final int textinput_counter=0x7f080109;
+    public static final int textinput_error=0x7f08010a;
+    public static final int textsquatBack=0x7f08010b;
+    public static final int textsquatThigh=0x7f08010c;
+    public static final int time=0x7f08010d;
+    public static final int title=0x7f08010e;
+    public static final int titleDividerNoCustom=0x7f08010f;
+    public static final int title_template=0x7f080110;
+    public static final int top=0x7f080111;
+    public static final int topPanel=0x7f080112;
+    public static final int touch_outside=0x7f080113;
+    public static final int transition_current_scene=0x7f080114;
+    public static final int transition_layout_save=0x7f080115;
+    public static final int transition_position=0x7f080116;
+    public static final int transition_scene_layoutid_cache=0x7f080117;
+    public static final int transition_transform=0x7f080118;
+    public static final int tv=0x7f080119;
+    public static final int uniform=0x7f08011a;
+    public static final int up=0x7f08011b;
+    public static final int useLogo=0x7f08011c;
+    public static final int vertical=0x7f08011d;
+    public static final int view_offset_helper=0x7f08011e;
+    public static final int visible=0x7f08011f;
+    public static final int welcome=0x7f080120;
+    public static final int withText=0x7f080121;
+    public static final int wrap=0x7f080122;
+    public static final int wrap_content=0x7f080123;
+    public static final int zoom=0x7f080124;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -4198,45 +4208,46 @@ public final class R {
     public static final int activity_help_app=0x7f0a001d;
     public static final int activity_main=0x7f0a001e;
     public static final int activity_plank=0x7f0a001f;
-    public static final int activity_progress=0x7f0a0020;
-    public static final int activity_setup=0x7f0a0021;
-    public static final int activity_squat=0x7f0a0022;
-    public static final int activity_squat_instr=0x7f0a0023;
-    public static final int activity_workout=0x7f0a0024;
-    public static final int design_bottom_navigation_item=0x7f0a0025;
-    public static final int design_bottom_sheet_dialog=0x7f0a0026;
-    public static final int design_layout_snackbar=0x7f0a0027;
-    public static final int design_layout_snackbar_include=0x7f0a0028;
-    public static final int design_layout_tab_icon=0x7f0a0029;
-    public static final int design_layout_tab_text=0x7f0a002a;
-    public static final int design_menu_item_action_area=0x7f0a002b;
-    public static final int design_navigation_item=0x7f0a002c;
-    public static final int design_navigation_item_header=0x7f0a002d;
-    public static final int design_navigation_item_separator=0x7f0a002e;
-    public static final int design_navigation_item_subheader=0x7f0a002f;
-    public static final int design_navigation_menu=0x7f0a0030;
-    public static final int design_navigation_menu_item=0x7f0a0031;
-    public static final int design_text_input_password_icon=0x7f0a0032;
-    public static final int notification_action=0x7f0a0033;
-    public static final int notification_action_tombstone=0x7f0a0034;
-    public static final int notification_media_action=0x7f0a0035;
-    public static final int notification_media_cancel_action=0x7f0a0036;
-    public static final int notification_template_big_media=0x7f0a0037;
-    public static final int notification_template_big_media_custom=0x7f0a0038;
-    public static final int notification_template_big_media_narrow=0x7f0a0039;
-    public static final int notification_template_big_media_narrow_custom=0x7f0a003a;
-    public static final int notification_template_custom_big=0x7f0a003b;
-    public static final int notification_template_icon_group=0x7f0a003c;
-    public static final int notification_template_lines_media=0x7f0a003d;
-    public static final int notification_template_media=0x7f0a003e;
-    public static final int notification_template_media_custom=0x7f0a003f;
-    public static final int notification_template_part_chronometer=0x7f0a0040;
-    public static final int notification_template_part_time=0x7f0a0041;
-    public static final int select_dialog_item_material=0x7f0a0042;
-    public static final int select_dialog_multichoice_material=0x7f0a0043;
-    public static final int select_dialog_singlechoice_material=0x7f0a0044;
-    public static final int support_simple_spinner_dropdown_item=0x7f0a0045;
-    public static final int view_carousel=0x7f0a0046;
+    public static final int activity_plie_squat=0x7f0a0020;
+    public static final int activity_progress=0x7f0a0021;
+    public static final int activity_setup=0x7f0a0022;
+    public static final int activity_squat=0x7f0a0023;
+    public static final int activity_squat_instr=0x7f0a0024;
+    public static final int activity_workout=0x7f0a0025;
+    public static final int design_bottom_navigation_item=0x7f0a0026;
+    public static final int design_bottom_sheet_dialog=0x7f0a0027;
+    public static final int design_layout_snackbar=0x7f0a0028;
+    public static final int design_layout_snackbar_include=0x7f0a0029;
+    public static final int design_layout_tab_icon=0x7f0a002a;
+    public static final int design_layout_tab_text=0x7f0a002b;
+    public static final int design_menu_item_action_area=0x7f0a002c;
+    public static final int design_navigation_item=0x7f0a002d;
+    public static final int design_navigation_item_header=0x7f0a002e;
+    public static final int design_navigation_item_separator=0x7f0a002f;
+    public static final int design_navigation_item_subheader=0x7f0a0030;
+    public static final int design_navigation_menu=0x7f0a0031;
+    public static final int design_navigation_menu_item=0x7f0a0032;
+    public static final int design_text_input_password_icon=0x7f0a0033;
+    public static final int notification_action=0x7f0a0034;
+    public static final int notification_action_tombstone=0x7f0a0035;
+    public static final int notification_media_action=0x7f0a0036;
+    public static final int notification_media_cancel_action=0x7f0a0037;
+    public static final int notification_template_big_media=0x7f0a0038;
+    public static final int notification_template_big_media_custom=0x7f0a0039;
+    public static final int notification_template_big_media_narrow=0x7f0a003a;
+    public static final int notification_template_big_media_narrow_custom=0x7f0a003b;
+    public static final int notification_template_custom_big=0x7f0a003c;
+    public static final int notification_template_icon_group=0x7f0a003d;
+    public static final int notification_template_lines_media=0x7f0a003e;
+    public static final int notification_template_media=0x7f0a003f;
+    public static final int notification_template_media_custom=0x7f0a0040;
+    public static final int notification_template_part_chronometer=0x7f0a0041;
+    public static final int notification_template_part_time=0x7f0a0042;
+    public static final int select_dialog_item_material=0x7f0a0043;
+    public static final int select_dialog_multichoice_material=0x7f0a0044;
+    public static final int select_dialog_singlechoice_material=0x7f0a0045;
+    public static final int support_simple_spinner_dropdown_item=0x7f0a0046;
+    public static final int view_carousel=0x7f0a0047;
   }
   public static final class mipmap {
     public static final int ic_launcher=0x7f0b0000;
@@ -4312,37 +4323,39 @@ public final class R {
     public static final int search_menu_title=0x7f0c0042;
     public static final int setup_hello=0x7f0c0043;
     public static final int squatInstrHeadline=0x7f0c0044;
-    public static final int squat_classic=0x7f0c0045;
-    public static final int squat_plie=0x7f0c0046;
-    public static final int squat_stages=0x7f0c0047;
-    public static final int squat_stretch=0x7f0c0048;
-    public static final int squat_weights=0x7f0c0049;
-    public static final int status_bar_notification_info_overflow=0x7f0c004a;
-    public static final int textAge=0x7f0c004b;
-    public static final int textBiceps=0x7f0c004c;
-    public static final int textBicepsEnum=0x7f0c004d;
-    public static final int textHeight=0x7f0c004e;
-    public static final int textLunges=0x7f0c004f;
-    public static final int textLungesEnum=0x7f0c0050;
-    public static final int textPlank=0x7f0c0051;
-    public static final int textPlankEnum=0x7f0c0052;
-    public static final int textQuote=0x7f0c0053;
-    public static final int textSquat=0x7f0c0054;
-    public static final int textSquatEnum=0x7f0c0055;
-    public static final int textWeight=0x7f0c0056;
-    public static final int text_fault_body=0x7f0c0057;
-    public static final int text_fault_head=0x7f0c0058;
-    public static final int text_health_body=0x7f0c0059;
-    public static final int text_help_head=0x7f0c005a;
-    public static final int text_mount_body=0x7f0c005b;
-    public static final int text_progress=0x7f0c005c;
-    public static final int text_progress_update=0x7f0c005d;
-    public static final int title=0x7f0c005e;
-    public static final int tools_ignore_contentdescription=0x7f0c005f;
-    public static final int top_message=0x7f0c0060;
-    public static final int welcome=0x7f0c0061;
-    public static final int workoutHeadline=0x7f0c0062;
-    public static final int workout_low_text=0x7f0c0063;
+    public static final int squat_back_imu=0x7f0c0045;
+    public static final int squat_classic=0x7f0c0046;
+    public static final int squat_plie=0x7f0c0047;
+    public static final int squat_stages=0x7f0c0048;
+    public static final int squat_stretch=0x7f0c0049;
+    public static final int squat_thigh_imu=0x7f0c004a;
+    public static final int squat_weights=0x7f0c004b;
+    public static final int status_bar_notification_info_overflow=0x7f0c004c;
+    public static final int textAge=0x7f0c004d;
+    public static final int textBiceps=0x7f0c004e;
+    public static final int textBicepsEnum=0x7f0c004f;
+    public static final int textHeight=0x7f0c0050;
+    public static final int textLunges=0x7f0c0051;
+    public static final int textLungesEnum=0x7f0c0052;
+    public static final int textPlank=0x7f0c0053;
+    public static final int textPlankEnum=0x7f0c0054;
+    public static final int textQuote=0x7f0c0055;
+    public static final int textSquat=0x7f0c0056;
+    public static final int textSquatEnum=0x7f0c0057;
+    public static final int textWeight=0x7f0c0058;
+    public static final int text_fault_body=0x7f0c0059;
+    public static final int text_fault_head=0x7f0c005a;
+    public static final int text_health_body=0x7f0c005b;
+    public static final int text_help_head=0x7f0c005c;
+    public static final int text_mount_body=0x7f0c005d;
+    public static final int text_progress=0x7f0c005e;
+    public static final int text_progress_update=0x7f0c005f;
+    public static final int title=0x7f0c0060;
+    public static final int tools_ignore_contentdescription=0x7f0c0061;
+    public static final int top_message=0x7f0c0062;
+    public static final int welcome=0x7f0c0063;
+    public static final int workoutHeadline=0x7f0c0064;
+    public static final int workout_low_text=0x7f0c0065;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0d0000;
@@ -8123,15 +8136,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
-     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
-     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
-     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
-     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
-     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
-     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td></td></tr>
+     * <tr><td>center</td><td>11</td><td></td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
+     * <tr><td>end</td><td>800005</td><td></td></tr>
+     * <tr><td>left</td><td>3</td><td></td></tr>
+     * <tr><td>right</td><td>5</td><td></td></tr>
+     * <tr><td>start</td><td>800003</td><td></td></tr>
+     * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
      * @attr name com.example.trainawearapplication:indicatorGravity
@@ -8190,9 +8203,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>gone</td><td>8</td><td>Completely hidden, as if the view had not been added.</td></tr>
-     * <tr><td>invisible</td><td>4</td><td>Not displayed, but taken into account during layout (space is left for it).</td></tr>
-     * <tr><td>visible</td><td>0</td><td>Visible on screen; the default value.</td></tr>
+     * <tr><td>gone</td><td>8</td><td></td></tr>
+     * <tr><td>invisible</td><td>4</td><td></td></tr>
+     * <tr><td>visible</td><td>0</td><td></td></tr>
      * </table>
      *
      * @attr name com.example.trainawearapplication:indicatorVisibility
@@ -9859,7 +9872,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>

@@ -1,0 +1,249 @@
+\hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank}{}\section{com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank Class Reference}
+\label{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank}\index{com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}}
+Inheritance diagram for com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_af1cb478f41c794eaa377a1150009d070}{Client\+Listen\+Plank}} (int port\+Number, Text\+View field, \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank}{Udp\+Client\+Handler\+Plank}} handler)
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_adb139f918c79291e8492364927a0b945}{run}} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+Inet\+Address \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_ae4ec71dafa5b734e69c3576bda12e0b8}{server\+Addr}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_ab7af22341c89f6a1263612df9516d6e6}{send\+State}} (String state)
+\begin{DoxyCompactList}\small\item\em Used to display whether the app is connected to the socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_aa394560dfa0da718f5ca639b82795395}{port}}
+\item 
+Datagram\+Socket \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_a1834dc9b799cdf87ebf89fd34136ccfa}{udp\+Socket}}
+\item 
+Text\+View \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_a2b606ab855a6ec1cabbb5f84a0eb1de0}{display\+Field}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Client\+Listen\+Plank.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_af1cb478f41c794eaa377a1150009d070}\label{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_af1cb478f41c794eaa377a1150009d070}} 
+\index{com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}!ClientListenPlank@{ClientListenPlank}}
+\index{ClientListenPlank@{ClientListenPlank}!com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}}
+\subsubsection{\texorpdfstring{ClientListenPlank()}{ClientListenPlank()}}
+{\footnotesize\ttfamily com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+Client\+Listen\+Plank (\begin{DoxyParamCaption}\item[{int}]{port\+Number,  }\item[{Text\+View}]{field,  }\item[{\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_plank}{Udp\+Client\+Handler\+Plank}}}]{handler }\end{DoxyParamCaption})}
+
+
+
+Class constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port\+Number} & port to listen to \\
+\hline
+{\em field} & View where the messages from the server are displayed in \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_main_activity}{Main\+Activity}} \\
+\hline
+{\em handler} & This is the thread handler, employed to display messages from the server \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file Client\+Listen\+Plank.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                                                                                             \{}
+\DoxyCodeLine{41         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_aa394560dfa0da718f5ca639b82795395}{port}} = portNumber;}
+\DoxyCodeLine{42         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_a2b606ab855a6ec1cabbb5f84a0eb1de0}{displayField}} = field;}
+\DoxyCodeLine{43         this.handler = handler;}
+\DoxyCodeLine{44         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{45             \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_a1834dc9b799cdf87ebf89fd34136ccfa}{udpSocket}} = \textcolor{keyword}{new} DatagramSocket(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_aa394560dfa0da718f5ca639b82795395}{port}});}
+\DoxyCodeLine{46         \} \textcolor{keywordflow}{catch} (SocketException e) \{}
+\DoxyCodeLine{47             e.printStackTrace();}
+\DoxyCodeLine{48         \}}
+\DoxyCodeLine{49     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+display\+Field, com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+port, and com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+udp\+Socket.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_adb139f918c79291e8492364927a0b945}\label{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_adb139f918c79291e8492364927a0b945}} 
+\index{com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}!run@{run}}
+\index{run@{run}!com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is a method that runs the udp client thread. It uses a variable run that sets the current state of the thread (if it is running or stopped). While this variable is true, a socket is created to communicate with the server on the binded port and read the data from the server.
+
+Definition at line 76 of file Client\+Listen\+Plank.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76                       \{}
+\DoxyCodeLine{84         \textcolor{keywordtype}{boolean} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_adb139f918c79291e8492364927a0b945}{run}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{85         \textcolor{keywordflow}{while} (\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_adb139f918c79291e8492364927a0b945}{run}}) \{}
+\DoxyCodeLine{86             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{87                 \textcolor{keywordtype}{byte}[] message = \textcolor{keyword}{new} \textcolor{keywordtype}{byte}[8000];}
+\DoxyCodeLine{88                 DatagramPacket packet = \textcolor{keyword}{new} DatagramPacket(message,message.length);}
+\DoxyCodeLine{89                 Log.d(\textcolor{stringliteral}{"UDP client: "}, \textcolor{stringliteral}{"about to wait to receive"});}
+\DoxyCodeLine{90                 \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_a1834dc9b799cdf87ebf89fd34136ccfa}{udpSocket}}.receive(packet);}
+\DoxyCodeLine{91                 String text = \textcolor{keyword}{new} String(message, 0, packet.getLength());}
+\DoxyCodeLine{92                 Log.d(\textcolor{stringliteral}{"Received data"}, text);}
+\DoxyCodeLine{93                 Log.d(\textcolor{stringliteral}{"Remote IP: "}, packet.getAddress().toString());}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96 \textcolor{comment}{//              pass received packet (text) to handler}}
+\DoxyCodeLine{97 \textcolor{comment}{//                handler.sendMessage(}}
+\DoxyCodeLine{98 \textcolor{comment}{//                        Message.obtain(handler, UdpClientHandler.UPDATE\_MSG, text));}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100                 \textcolor{comment}{// check for handshake with the server}}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102                 \textcolor{keywordflow}{if} (\textcolor{stringliteral}{"train-A-wear online\(\backslash\)n"}.equals(text)) \{}
+\DoxyCodeLine{103                     Log.d(TAG, \textcolor{stringliteral}{"handshake received"});}
+\DoxyCodeLine{104                     handler.sendMessage(}
+\DoxyCodeLine{105                             Message.obtain(handler, UdpClientHandlerPlank.UPDATE\_STATE, packet.getAddress().toString().substring(1)));}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107                     Log.d(TAG, \textcolor{stringliteral}{"IPaddr:  "} +  packet.getAddress().toString().substring(1));}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109                     handler.sendMessage(}
+\DoxyCodeLine{110                             Message.obtain(handler, UdpClientHandlerPlank.UPDATE\_MSG, \textcolor{stringliteral}{"0"}));}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\textcolor{stringliteral}{"train-a-wear ready"}.equals(text)) \{}
+\DoxyCodeLine{113                     \textcolor{comment}{// check for own messages broadcasted to network}}
+\DoxyCodeLine{114                     Log.d(TAG, \textcolor{stringliteral}{"mirror on the wall"});}
+\DoxyCodeLine{115                     handler.sendMessage(}
+\DoxyCodeLine{116                             Message.obtain(handler, UdpClientHandlerPlank.UPDATE\_MSG, \textcolor{stringliteral}{"3"}));}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118                     Log.d(TAG, \textcolor{stringliteral}{"no shaky hands"});}
+\DoxyCodeLine{119                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{120                     \textcolor{comment}{// obtain messages from RPI}}
+\DoxyCodeLine{121                     handler.sendMessage(}
+\DoxyCodeLine{122                             Message.obtain(handler, UdpClientHandlerPlank.UPDATE\_MSG, text));}
+\DoxyCodeLine{123                 \}}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125                 \textcolor{comment}{// check for own messages broadcasted to network}}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128             \}\textcolor{keywordflow}{catch} (IOException e) \{}
+\DoxyCodeLine{129                 Log.e(\textcolor{stringliteral}{"UDP client: IOException"}, \textcolor{stringliteral}{"error: "}, e);}
+\DoxyCodeLine{130                 \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_adb139f918c79291e8492364927a0b945}{run}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{131             \}}
+\DoxyCodeLine{132         \}}
+\DoxyCodeLine{133     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+udp\+Socket, com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+U\+P\+D\+A\+T\+E\+\_\+\+M\+SG, and com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+U\+P\+D\+A\+T\+E\+\_\+\+S\+T\+A\+TE.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_ab7af22341c89f6a1263612df9516d6e6}\label{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_ab7af22341c89f6a1263612df9516d6e6}} 
+\index{com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}!sendState@{sendState}}
+\index{sendState@{sendState}!com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}}
+\subsubsection{\texorpdfstring{sendState()}{sendState()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+send\+State (\begin{DoxyParamCaption}\item[{String}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Used to display whether the app is connected to the socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & takes values connected(), disconnected, not-\/oconfigured \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file Client\+Listen\+Plank.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68                                         \{}
+\DoxyCodeLine{69         handler.sendMessage(}
+\DoxyCodeLine{70                 Message.obtain(handler,}
+\DoxyCodeLine{71                         UdpClientHandlerPlank.UPDATE\_STATE, state));}
+\DoxyCodeLine{72     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+Udp\+Client\+Handler\+Plank.\+U\+P\+D\+A\+T\+E\+\_\+\+S\+T\+A\+TE.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_a2b606ab855a6ec1cabbb5f84a0eb1de0}\label{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_a2b606ab855a6ec1cabbb5f84a0eb1de0}} 
+\index{com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}!displayField@{displayField}}
+\index{displayField@{displayField}!com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}}
+\subsubsection{\texorpdfstring{displayField}{displayField}}
+{\footnotesize\ttfamily Text\+View com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+display\+Field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Client\+Listen\+Plank.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+Client\+Listen\+Plank().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_aa394560dfa0da718f5ca639b82795395}\label{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_aa394560dfa0da718f5ca639b82795395}} 
+\index{com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}!port@{port}}
+\index{port@{port}!com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}}
+\subsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily int com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+port\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 26 of file Client\+Listen\+Plank.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+Client\+Listen\+Plank().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_ae4ec71dafa5b734e69c3576bda12e0b8}\label{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_ae4ec71dafa5b734e69c3576bda12e0b8}} 
+\index{com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}!serverAddr@{serverAddr}}
+\index{serverAddr@{serverAddr}!com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}}
+\subsubsection{\texorpdfstring{serverAddr}{serverAddr}}
+{\footnotesize\ttfamily Inet\+Address com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+server\+Addr}
+
+
+
+Definition at line 32 of file Client\+Listen\+Plank.\+java.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_a1834dc9b799cdf87ebf89fd34136ccfa}\label{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank_a1834dc9b799cdf87ebf89fd34136ccfa}} 
+\index{com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}!udpSocket@{udpSocket}}
+\index{udpSocket@{udpSocket}!com.example.trainawearapplication.ClientListenPlank@{com.example.trainawearapplication.ClientListenPlank}}
+\subsubsection{\texorpdfstring{udpSocket}{udpSocket}}
+{\footnotesize\ttfamily Datagram\+Socket com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+udp\+Socket\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 27 of file Client\+Listen\+Plank.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+Client\+Listen\+Plank(), and com.\+example.\+trainawearapplication.\+Client\+Listen\+Plank.\+run().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Phone App/app/src/main/java/com/example/trainawearapplication/\mbox{\hyperlink{_client_listen_plank_8java}{Client\+Listen\+Plank.\+java}}\end{DoxyCompactItemize}

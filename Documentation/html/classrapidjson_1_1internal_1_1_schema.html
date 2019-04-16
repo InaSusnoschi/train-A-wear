@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logosmall.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">train-A-wear
+   &#160;<span id="projectnumber">2.1</span>
    </div>
+   <div id="projectbrief">Real time feedback application with wireless connection to three IMUs</div>
   </td>
  </tr>
  </tbody>
@@ -81,11 +84,6 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="schema_8h_source.html">schema.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for rapidjson::internal::Schema&lt; SchemaDocumentType &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema__coll__graph.png" border="0" usemap="#rapidjson_1_1internal_1_1_schema_3_01_schema_document_type_01_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -627,9 +625,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::<a class="el" href="classrapidjson_1_1internal_1_1_schema.html">Schema</a> </td>
@@ -667,11 +662,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00409">409</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -776,9 +766,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::~<a class="el" href="classrapidjson_1_1internal_1_1_schema.html">Schema</a> </td>
@@ -787,11 +774,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00647">647</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -828,7 +810,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -885,7 +867,7 @@ template&lt;typename V1 , typename V2 &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -935,7 +917,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -986,7 +968,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1056,7 +1038,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1082,9 +1064,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::BeginValue </td>
@@ -1094,11 +1073,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00676">676</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1113,11 +1087,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="classrapidjson_1_1internal_1_1_schema_html_a4c25a27504d7f76db1e9a549852d9c97"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_schema.html#a4c25a27504d7f76db1e9a549852d9c97">rapidjson::internal::Schema::additionalItems_</a></div><div class="ttdeci">bool additionalItems_</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01428">schema.h:1428</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="schema_8h_source.html#l00385">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::arrayElementIndex</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a4cccd0788979b5809c583ebd75c8bc12">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::DisallowedItem()</a>, <a class="el" href="schema_8h_source.html#l00371">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::error_handler</a>, <a class="el" href="schema_8h_source.html#l00387">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::inArray</a>, <a class="el" href="schema_8h_source.html#l00116">RAPIDJSON_INVALID_KEYWORD_RETURN</a>, <a class="el" href="schema_8h_source.html#l00373">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::valueSchema</a>, and <a class="el" href="schema_8h_source.html#l00388">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::valueUniqueness</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_abc55e67708a79ef20f2d9bb969a66949_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_abc55e67708a79ef20f2d9bb969a66949_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1128,9 +1097,6 @@ Here is the call graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::Bool </td>
@@ -1150,11 +1116,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00793">793</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1201,7 +1162,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1213,11 +1174,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="classrapidjson_1_1internal_1_1_schema_html_a6cb5d8227b36b9c7b02ac57f3695884e"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_schema.html#a6cb5d8227b36b9c7b02ac57f3695884e">rapidjson::internal::Schema::maximum_</a></div><div class="ttdeci">SValue maximum_</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01436">schema.h:1436</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a7cb6baae6be998560d17e06cba8a3c0c">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::AboveMaximum()</a>, <a class="el" href="schema_8h_source.html#l00371">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::error_handler</a>, and <a class="el" href="schema_8h_source.html#l00116">RAPIDJSON_INVALID_KEYWORD_RETURN</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_a782d4890206dae9f5a6d25fc2ace2e56_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_a782d4890206dae9f5a6d25fc2ace2e56_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1252,7 +1208,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1264,11 +1220,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="classrapidjson_1_1internal_1_1_schema_html_a7edda75b81d1b8d82069308bd1511f1d"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_schema.html#a7edda75b81d1b8d82069308bd1511f1d">rapidjson::internal::Schema::GetMinimumString</a></div><div class="ttdeci">static const ValueType &amp; GetMinimumString()</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01052">schema.h:1052</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a8f2ab1e22a22bcf693d40c3c8ad39c75">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::BelowMinimum()</a>, <a class="el" href="schema_8h_source.html#l00371">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::error_handler</a>, and <a class="el" href="schema_8h_source.html#l00116">RAPIDJSON_INVALID_KEYWORD_RETURN</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_ad00261450ebdecf05a5bd4087a730550_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_ad00261450ebdecf05a5bd4087a730550_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1303,7 +1254,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1315,11 +1266,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="namespacerapidjson_html_a11fce64e721729aaf6be4a485c78f231"><div class="ttname"><a href="namespacerapidjson.html#a11fce64e721729aaf6be4a485c78f231">rapidjson::a</a></div><div class="ttdeci">const GenericPointer&lt; typename T::ValueType &gt; T2 T::AllocatorType &amp; a</div><div class="ttdef"><b>Definition:</b> <a href="pointer_8h_source.html#l01181">pointer.h:1181</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="pointer_8h_source.html#l01181">rapidjson::a</a>, <a class="el" href="schema_8h_source.html#l00371">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::error_handler</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a2dcb25e9e8550903cac1c9dd8286b7a3">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::NotMultipleOf()</a>, and <a class="el" href="schema_8h_source.html#l00116">RAPIDJSON_INVALID_KEYWORD_RETURN</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_af96186f55907a395e306cfda20a0e81c_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_af96186f55907a395e306cfda20a0e81c_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1354,7 +1300,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1380,11 +1326,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="classrapidjson_1_1internal_1_1_schema_html_a83c8784d380200d1576a1881c5532b16"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_schema.html#a83c8784d380200d1576a1881c5532b16">rapidjson::internal::Schema::type_</a></div><div class="ttdeci">unsigned type_</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01406">schema.h:1406</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a7cb6baae6be998560d17e06cba8a3c0c">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::AboveMaximum()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a8f2ab1e22a22bcf693d40c3c8ad39c75">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::BelowMinimum()</a>, <a class="el" href="schema_8h_source.html#l00371">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::error_handler</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a2dcb25e9e8550903cac1c9dd8286b7a3">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::NotMultipleOf()</a>, and <a class="el" href="schema_8h_source.html#l00116">RAPIDJSON_INVALID_KEYWORD_RETURN</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_a0c8092ad61f0487a1d460a1df817b885_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_a0c8092ad61f0487a1d460a1df817b885_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1419,7 +1360,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1445,11 +1386,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="classrapidjson_1_1internal_1_1_schema_html_a83c8784d380200d1576a1881c5532b16"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_schema.html#a83c8784d380200d1576a1881c5532b16">rapidjson::internal::Schema::type_</a></div><div class="ttdeci">unsigned type_</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01406">schema.h:1406</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a7cb6baae6be998560d17e06cba8a3c0c">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::AboveMaximum()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a8f2ab1e22a22bcf693d40c3c8ad39c75">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::BelowMinimum()</a>, <a class="el" href="schema_8h_source.html#l00371">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::error_handler</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a2dcb25e9e8550903cac1c9dd8286b7a3">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::NotMultipleOf()</a>, and <a class="el" href="schema_8h_source.html#l00116">RAPIDJSON_INVALID_KEYWORD_RETURN</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_ade6cff392d601ee17025e327f54a0c2d_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_ade6cff392d601ee17025e327f54a0c2d_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1474,7 +1410,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1497,11 +1433,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="classrapidjson_1_1internal_1_1_schema_html_ae8b6a84896bc860c0aceaf8101705134"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_schema.html#ae8b6a84896bc860c0aceaf8101705134">rapidjson::internal::Schema::CreateSchemaValidators</a></div><div class="ttdeci">void CreateSchemaValidators(Context &amp;context, const SchemaArray &amp;schemas) const</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01215">schema.h:1215</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="schema_8h_source.html#l00389">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::arrayUniqueness</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_schema_state_factory.html#a399e25fa32d89a112518edbd8f9a9616">rapidjson::internal::ISchemaStateFactory&lt; SchemaType &gt;::CreateHasher()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_schema_state_factory.html#af6301e6b139b66414e48e5ecf8f2fb87">rapidjson::internal::ISchemaStateFactory&lt; SchemaType &gt;::CreateSchemaValidator()</a>, <a class="el" href="schema_8h_source.html#l00370">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::factory</a>, <a class="el" href="schema_8h_source.html#l00375">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::hasher</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_schema_state_factory.html#a9804f3ef559cb1262a67d3a63bc1f77a">rapidjson::internal::ISchemaStateFactory&lt; SchemaType &gt;::MallocState()</a>, <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>, <a class="el" href="schema_8h_source.html#l00378">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::validatorCount</a>, and <a class="el" href="schema_8h_source.html#l00377">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::validators</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_aa8e9504b3e7bea6e6f6e80ea302c252d_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_aa8e9504b3e7bea6e6f6e80ea302c252d_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1528,7 +1459,7 @@ template&lt;typename ValueType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1539,11 +1470,6 @@ template&lt;typename ValueType &gt; </div>
 <div class="ttc" id="namespacerapidjson_html_a1a75d60792094d496b500c40776030dd"><div class="ttname"><a href="namespacerapidjson.html#a1a75d60792094d496b500c40776030dd">rapidjson::value</a></div><div class="ttdeci">const GenericPointer&lt; typename T::ValueType &gt; T2 value</div><div class="ttdef"><b>Definition:</b> <a href="pointer_8h_source.html#l01282">pointer.h:1282</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="regex_8h_source.html#l00135">rapidjson::internal::GenericRegex&lt; Encoding, Allocator &gt;::IsValid()</a>, and <a class="el" href="pointer_8h_source.html#l01282">rapidjson::value</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_aaa59d7f839bdc9765b3fb58cbf3a4060_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_aaa59d7f839bdc9765b3fb58cbf3a4060_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1578,7 +1504,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1587,11 +1513,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="fragment"><div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;                                                                                    {</div><div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="namespacerapidjson.html#a44eb33eaa523e36d466b1ced64b85c84">SizeType</a> i = 0; i &lt; schemas.count; i++)</div><div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;            context.validators[schemas.begin + i] = context.factory.CreateSchemaValidator(*schemas.schemas[i]);</div><div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;    }</div><div class="ttc" id="namespacerapidjson_html_a44eb33eaa523e36d466b1ced64b85c84"><div class="ttname"><a href="namespacerapidjson.html#a44eb33eaa523e36d466b1ced64b85c84">rapidjson::SizeType</a></div><div class="ttdeci">unsigned SizeType</div><div class="ttdoc">Size type (for string lengths, array sizes, etc.)</div><div class="ttdef"><b>Definition:</b> <a href="rapidjson_8h_source.html#l00384">rapidjson.h:384</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="schema_8h_source.html#l01085">rapidjson::internal::Schema&lt; SchemaDocumentType &gt;::SchemaArray::begin</a>, <a class="el" href="schema_8h_source.html#l01086">rapidjson::internal::Schema&lt; SchemaDocumentType &gt;::SchemaArray::count</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_schema_state_factory.html#af6301e6b139b66414e48e5ecf8f2fb87">rapidjson::internal::ISchemaStateFactory&lt; SchemaType &gt;::CreateSchemaValidator()</a>, <a class="el" href="schema_8h_source.html#l00370">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::factory</a>, <a class="el" href="schema_8h_source.html#l01084">rapidjson::internal::Schema&lt; SchemaDocumentType &gt;::SchemaArray::schemas</a>, and <a class="el" href="schema_8h_source.html#l00377">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::validators</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_ae8b6a84896bc860c0aceaf8101705134_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_ae8b6a84896bc860c0aceaf8101705134_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1626,7 +1547,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1650,11 +1571,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="classrapidjson_1_1internal_1_1_schema_html_a83c8784d380200d1576a1881c5532b16"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_schema.html#a83c8784d380200d1576a1881c5532b16">rapidjson::internal::Schema::type_</a></div><div class="ttdeci">unsigned type_</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01406">schema.h:1406</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a64fb41ff4166ee7ab77b5d874b41ab0a">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::AddExpectedType()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#af2fca4e652edbbed078270d561e548d9">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::EndDisallowedType()</a>, <a class="el" href="schema_8h_source.html#l00371">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::error_handler</a>, and <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a86596fb1c495f10fe08d598d29525ae1">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::StartDisallowedType()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_af83b48bf2e3899dc90c8d20253bd49c5_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_af83b48bf2e3899dc90c8d20253bd49c5_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1665,9 +1581,6 @@ Here is the call graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::<a class="el" href="classrapidjson_1_1internal_1_1_double.html">Double</a> </td>
@@ -1687,11 +1600,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00825">825</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1720,9 +1628,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::EndArray </td>
@@ -1742,11 +1647,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01000">1000</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1757,11 +1657,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="schema_8h_html_abf82306dd6fbd0fba9a5373b9ebe1c3c"><div class="ttname"><a href="schema_8h.html#abf82306dd6fbd0fba9a5373b9ebe1c3c">RAPIDJSON_INVALID_KEYWORD_RETURN</a></div><div class="ttdeci">#define RAPIDJSON_INVALID_KEYWORD_RETURN(keyword)</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l00116">schema.h:116</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="schema_8h_source.html#l00371">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::error_handler</a>, <a class="el" href="schema_8h_source.html#l00387">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::inArray</a>, <a class="el" href="schema_8h_source.html#l00116">RAPIDJSON_INVALID_KEYWORD_RETURN</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#af86dfc82e6b4bd727ef69fba728dd8e4">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::TooFewItems()</a>, and <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#aedeac4d4c121dba2153d22e1f38dbe70">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::TooManyItems()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_ae2beb58e80015e84b276f38b8f699bd8_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_ae2beb58e80015e84b276f38b8f699bd8_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1772,9 +1667,6 @@ Here is the call graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::EndObject </td>
@@ -1794,11 +1686,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00941">941</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1817,11 +1704,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="classrapidjson_1_1internal_1_1_schema_html_adec2b4ca79a5204c0108f812889b2b71"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_schema.html#adec2b4ca79a5204c0108f812889b2b71">rapidjson::internal::Schema::GetMaxPropertiesString</a></div><div class="ttdeci">static const ValueType &amp; GetMaxPropertiesString()</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01043">schema.h:1043</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#ac35e4dff861e437141c8c1bd5ac8ca59">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::AddDependencySchemaError()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#aba0c75f077b1f7197fbb7bcefadad8a3">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::AddMissingDependentProperty()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a65301d7c2bb6c3031d3ece06006bfc06">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::AddMissingProperty()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a473437062e5ce9daeb42c6673a33154b">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::EndDependencyErrors()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a5897d03c7cc4b221896867a712fd18ad">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::EndMissingDependentProperties()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a526d70abf63255317a748fccb20041c0">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::EndMissingProperties()</a>, <a class="el" href="schema_8h_source.html#l00371">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::error_handler</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_schema_validator.html#a5746528d0c29832b748855896ef2bcc8">rapidjson::internal::ISchemaValidator::IsValid()</a>, <a class="el" href="schema_8h_source.html#l00386">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::propertyExist</a>, <a class="el" href="schema_8h_source.html#l00116">RAPIDJSON_INVALID_KEYWORD_RETURN</a>, <a class="el" href="pointer_8h_source.html#l01204">rapidjson::source</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a953298d04037e20024b69f9032a91e62">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::StartDependencyErrors()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#aff210754c381fc2c79a3de0be7d7af23">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::StartMissingDependentProperties()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a0fd6fed1e4200795bb7f0cc29e480596">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::StartMissingProperties()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a7baac6bdae4e69e6fe187d4dbb9d27ed">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::TooFewProperties()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#af2cb1441d41085df755231be01964b5d">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::TooManyProperties()</a>, and <a class="el" href="schema_8h_source.html#l00377">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::validators</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_aa24583b99877e823ed955cf286364937_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_aa24583b99877e823ed955cf286364937_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1832,9 +1714,6 @@ Here is the call graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">RAPIDJSON_FORCEINLINE bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::EndValue </td>
@@ -1844,11 +1723,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00703">703</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1875,11 +1749,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="classrapidjson_1_1internal_1_1_schema_html_a1733fc38ee0b1db9b6d4933767a97548"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_schema.html#a1733fc38ee0b1db9b6d4933767a97548">rapidjson::internal::Schema::oneOf_</a></div><div class="ttdeci">SchemaArray oneOf_</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01404">schema.h:1404</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a25bb8e7b7c68b4556adce6a0b2be3c37">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::Disallowed()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a9b65773a1bf017098548dcec94b7bebc">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::DisallowedValue()</a>, <a class="el" href="schema_8h_source.html#l00371">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::error_handler</a>, <a class="el" href="schema_8h_source.html#l00370">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::factory</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_schema_state_factory.html#afc18fb7b00f13e9fe4505b75e0a23d5d">rapidjson::internal::ISchemaStateFactory&lt; SchemaType &gt;::GetHashCode()</a>, <a class="el" href="schema_8h_source.html#l00375">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::hasher</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_schema_validator.html#a5746528d0c29832b748855896ef2bcc8">rapidjson::internal::ISchemaValidator::IsValid()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a533d091b8167450f24d66d11783b7d69">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::NoneOf()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a4764debbb404a581a4ed962d1ae769bb">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::NotAllOf()</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a178e03c6aafa2b1c80ca08f7ebff3cd5">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::NotOneOf()</a>, <a class="el" href="schema_8h_source.html#l00384">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::objectPatternValidatorType</a>, <a class="el" href="schema_8h_source.html#l00380">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::patternPropertiesValidatorCount</a>, <a class="el" href="schema_8h_source.html#l00379">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::patternPropertiesValidators</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#af2e15dd86413c5f6553bb8eccfee7f95">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::PropertyViolations()</a>, <a class="el" href="schema_8h_source.html#l00116">RAPIDJSON_INVALID_KEYWORD_RETURN</a>, and <a class="el" href="schema_8h_source.html#l00377">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::validators</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_a6a23f4f0c794779e3e257d7b360dc8b7_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_a6a23f4f0c794779e3e257d7b360dc8b7_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1914,7 +1783,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1947,7 +1816,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1977,7 +1846,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2007,7 +1876,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2037,7 +1906,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2067,7 +1936,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2097,7 +1966,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2127,7 +1996,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2157,7 +2026,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2187,7 +2056,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2217,7 +2086,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2247,7 +2116,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2277,7 +2146,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2307,7 +2176,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2337,7 +2206,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2367,7 +2236,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2397,7 +2266,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2427,7 +2296,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2468,7 +2337,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2500,7 +2369,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2530,7 +2399,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2560,7 +2429,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2590,7 +2459,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2620,7 +2489,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2650,7 +2519,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2680,7 +2549,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2710,7 +2579,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2740,7 +2609,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2770,7 +2639,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2800,7 +2669,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2830,7 +2699,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2847,9 +2716,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classrapidjson_1_1internal_1_1_schema.html#aa54c71c41aa8a9091565d12ffe27627c">PointerType</a>&amp; <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::GetPointer </td>
@@ -2858,11 +2724,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00672">672</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -2890,7 +2751,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2920,7 +2781,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2950,7 +2811,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2980,7 +2841,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3010,7 +2871,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3027,9 +2888,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classrapidjson_1_1internal_1_1_schema.html#a9f716b06fc542c4cdb7d8d5cf463bf79">SValue</a>&amp; <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::GetURI </td>
@@ -3038,11 +2896,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00668">668</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3057,9 +2910,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::Int </td>
@@ -3079,11 +2929,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00801">801</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3099,9 +2944,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::Int64 </td>
@@ -3121,11 +2963,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00813">813</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3171,7 +3008,7 @@ template&lt;typename SchemaDocumentType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3179,11 +3016,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01145">1145</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;                                                                                  {</div><div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;        GenericRegexSearch&lt;RegexType&gt; rs(*pattern);</div><div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;        <span class="keywordflow">return</span> rs.Search(str);</div><div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;    }</div></div><!-- fragment -->
 <p class="reference">References <a class="el" href="regex_8h_source.html#l00640">rapidjson::internal::GenericRegexSearch&lt; RegexType, Allocator &gt;::Search()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_a3cccb6849671ddd73aa8225425323091_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_a3cccb6849671ddd73aa8225425323091_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -3194,9 +3026,6 @@ Here is the call graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::Key </td>
@@ -3228,11 +3057,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00892">892</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3254,11 +3078,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="classrapidjson_1_1internal_1_1_schema_html_aa4a92842eec44378f08fcbc1b93d876d"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_schema.html#aa4a92842eec44378f08fcbc1b93d876d">rapidjson::internal::Schema::GetAdditionalPropertiesString</a></div><div class="ttdeci">static const ValueType &amp; GetAdditionalPropertiesString()</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01041">schema.h:1041</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a379825933d795472c421a3998cd1c5f4">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::DisallowedProperty()</a>, <a class="el" href="schema_8h_source.html#l00371">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::error_handler</a>, <a class="el" href="schema_8h_source.html#l00382">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::patternPropertiesSchemaCount</a>, <a class="el" href="schema_8h_source.html#l00381">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::patternPropertiesSchemas</a>, <a class="el" href="schema_8h_source.html#l00386">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::propertyExist</a>, <a class="el" href="schema_8h_source.html#l00116">RAPIDJSON_INVALID_KEYWORD_RETURN</a>, <a class="el" href="schema_8h_source.html#l00383">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::valuePatternValidatorType</a>, and <a class="el" href="schema_8h_source.html#l00373">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::valueSchema</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_a815c23a7b366bfb92b07574423c045c1_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_a815c23a7b366bfb92b07574423c045c1_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -3269,9 +3088,6 @@ Here is the call graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::Null </td>
@@ -3281,11 +3097,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00785">785</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3308,9 +3119,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::StartArray </td>
@@ -3320,11 +3128,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00988">988</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3347,9 +3150,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::StartObject </td>
@@ -3359,11 +3159,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00871">871</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3383,11 +3178,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="classrapidjson_1_1internal_1_1_schema_html_af787b1cdb7ad344be3d6944782771cce"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_schema.html#af787b1cdb7ad344be3d6944782771cce">rapidjson::internal::Schema::patternPropertyCount_</a></div><div class="ttdeci">SizeType patternPropertyCount_</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01413">schema.h:1413</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="schema_8h_source.html#l00370">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::factory</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_schema_state_factory.html#a9804f3ef559cb1262a67d3a63bc1f77a">rapidjson::internal::ISchemaStateFactory&lt; SchemaType &gt;::MallocState()</a>, <a class="el" href="schema_8h_source.html#l00382">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::patternPropertiesSchemaCount</a>, <a class="el" href="schema_8h_source.html#l00381">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::patternPropertiesSchemas</a>, <a class="el" href="schema_8h_source.html#l00386">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::propertyExist</a>, and <a class="el" href="schema_8h_source.html#l00116">RAPIDJSON_INVALID_KEYWORD_RETURN</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_a64fd79498ff9e034dae8180f1f0701ce_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_a64fd79498ff9e034dae8180f1f0701ce_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -3398,9 +3188,6 @@ Here is the call graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::String </td>
@@ -3432,11 +3219,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00843">843</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3457,11 +3239,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="ttc" id="classrapidjson_1_1internal_1_1_schema_html_a83c8784d380200d1576a1881c5532b16"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_schema.html#a83c8784d380200d1576a1881c5532b16">rapidjson::internal::Schema::type_</a></div><div class="ttdeci">unsigned type_</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01406">schema.h:1406</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a67070bdbe6ed6196e6e2a9755fa76c9c">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::DoesNotMatch()</a>, <a class="el" href="schema_8h_source.html#l00371">rapidjson::internal::SchemaValidationContext&lt; SchemaDocumentType &gt;::error_handler</a>, <a class="el" href="schema_8h_source.html#l00116">RAPIDJSON_INVALID_KEYWORD_RETURN</a>, <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#a9e26e52da7914dd0a9e7a4e06db8943c">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::TooLong()</a>, and <a class="el" href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html#af13eb2448c9606f58af8cecc009bea85">rapidjson::internal::IValidationErrorHandler&lt; SchemaType &gt;::TooShort()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1internal_1_1_schema_a221dfa37eb3fb9b93c3428f3508ec0c4_cgraph.png" border="0" usemap="#classrapidjson_1_1internal_1_1_schema_a221dfa37eb3fb9b93c3428f3508ec0c4_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -3472,9 +3249,6 @@ Here is the call graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::Uint </td>
@@ -3494,11 +3268,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00807">807</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3514,9 +3283,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1internal_1_1_schema.html">rapidjson::internal::Schema</a>&lt; SchemaDocumentType &gt;::Uint64 </td>
@@ -3536,11 +3302,6 @@ template&lt;typename SchemaDocumentType &gt; </div>
           <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l00819">819</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -4644,12 +4405,12 @@ template&lt;typename SchemaDocumentType &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Server/rapidjson/<a class="el" href="schema_8h_source.html">schema.h</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Server/rapidjson/<a class="el" href="schema_8h_source.html">schema.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2019 00:37:15 for train-A-wear by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

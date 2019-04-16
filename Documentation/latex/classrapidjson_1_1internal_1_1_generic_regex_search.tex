@@ -1,0 +1,463 @@
+\hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search}{}\section{rapidjson\+::internal\+::Generic\+Regex\+Search$<$ Regex\+Type, Allocator $>$ Class Template Reference}
+\label{classrapidjson_1_1internal_1_1_generic_regex_search}\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+
+
+{\ttfamily \#include $<$regex.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Regex\+Type\+::\+Encoding\+Type \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a826672f13e4f2b5e075cc00e6c871874}{Encoding}}
+\item 
+typedef Encoding\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a3d4c81f49677604f40b1c09c4fc0a958}{Ch}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_abcdf4718410c956bbb410b68c27d72db}{Generic\+Regex\+Search}} (const Regex\+Type \&regex, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$allocator=0)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_af607e7a503906487a76fae20d98df511}{$\sim$\+Generic\+Regex\+Search}} ()
+\item 
+{\footnotesize template$<$typename Input\+Stream $>$ }\\bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_ab793f6f4e0e2065cfc1e03eae844a392}{Match}} (Input\+Stream \&is)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_ab1011ef61e8000808a4321c9f7399ffb}{Match}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a3d4c81f49677604f40b1c09c4fc0a958}{Ch}} $\ast$s)
+\item 
+{\footnotesize template$<$typename Input\+Stream $>$ }\\bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a7d048ecaaad22d0bdfa2d093dd7fcc42}{Search}} (Input\+Stream \&is)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_ab5c5a7346d4b7a05323ac587662200a3}{Search}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a3d4c81f49677604f40b1c09c4fc0a958}{Ch}} $\ast$s)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Regex\+Type\+::\+State \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a81ada00d83141d17b9aba7c2caa48353}{State}}
+\item 
+typedef Regex\+Type\+::\+Range \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a3bb3ee12c042b2266885a07226e3d6be}{Range}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Input\+Stream $>$ }\\bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a29e3ab6d7d2666a7d30a9326a992e3ea}{Search\+With\+Anchoring}} (Input\+Stream \&is, bool anchor\+Begin, bool anchor\+End)
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a637af7f840c7550b52df24346c51cac4}{Get\+State\+Set\+Size}} () const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a93bbf5cbe46e9fd9d9c3053a68b7b9e0}{Add\+State}} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&l, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} index)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_afa518b5ea6268d3ee71586142d03fec1}{Match\+Range}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} range\+Index, unsigned codepoint) const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const Regex\+Type \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_af1f9de9000f67cbdb83946f9ec63337f}{allocator\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a87eb3f0c90ca51aace1a58106a585086}{own\+Allocator\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_ac47140455dfa6fbc2dd0c1112dea363b}{state0\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a0eebdb0e441243c38a85b7e44313ca92}{state1\+\_\+}}
+\item 
+\mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a13721765fd14d32048c63b12bff5e005}{state\+Set\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$\newline
+class rapidjson\+::internal\+::\+Generic\+Regex\+Search$<$ Regex\+Type, Allocator $>$}
+
+
+
+Definition at line 79 of file regex.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_a3d4c81f49677604f40b1c09c4fc0a958}\label{classrapidjson_1_1internal_1_1_generic_regex_search_a3d4c81f49677604f40b1c09c4fc0a958}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+typedef Encoding\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a3d4c81f49677604f40b1c09c4fc0a958}{Ch}}}
+
+
+
+Definition at line 610 of file regex.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_a826672f13e4f2b5e075cc00e6c871874}\label{classrapidjson_1_1internal_1_1_generic_regex_search_a826672f13e4f2b5e075cc00e6c871874}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!Encoding@{Encoding}}
+\index{Encoding@{Encoding}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{Encoding}{Encoding}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+typedef Regex\+Type\+::\+Encoding\+Type \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a826672f13e4f2b5e075cc00e6c871874}{Encoding}}}
+
+
+
+Definition at line 609 of file regex.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_a3bb3ee12c042b2266885a07226e3d6be}\label{classrapidjson_1_1internal_1_1_generic_regex_search_a3bb3ee12c042b2266885a07226e3d6be}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!Range@{Range}}
+\index{Range@{Range}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{Range}{Range}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+typedef Regex\+Type\+::\+Range \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a3bb3ee12c042b2266885a07226e3d6be}{Range}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 651 of file regex.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_a81ada00d83141d17b9aba7c2caa48353}\label{classrapidjson_1_1internal_1_1_generic_regex_search_a81ada00d83141d17b9aba7c2caa48353}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!State@{State}}
+\index{State@{State}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+typedef Regex\+Type\+::\+State \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a81ada00d83141d17b9aba7c2caa48353}{State}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 650 of file regex.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_abcdf4718410c956bbb410b68c27d72db}\label{classrapidjson_1_1internal_1_1_generic_regex_search_abcdf4718410c956bbb410b68c27d72db}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!GenericRegexSearch@{GenericRegexSearch}}
+\index{GenericRegexSearch@{GenericRegexSearch}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericRegexSearch()}{GenericRegexSearch()}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{Generic\+Regex\+Search}} (\begin{DoxyParamCaption}\item[{const Regex\+Type \&}]{regex,  }\item[{\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$}]{allocator = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 612 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{612                                                                          : }
+\DoxyCodeLine{613         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\_}}(regex), \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_af1f9de9000f67cbdb83946f9ec63337f}{allocator\_}}(allocator), \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a87eb3f0c90ca51aace1a58106a585086}{ownAllocator\_}}(0),}
+\DoxyCodeLine{614         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_ac47140455dfa6fbc2dd0c1112dea363b}{state0\_}}(allocator, 0), \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a0eebdb0e441243c38a85b7e44313ca92}{state1\_}}(allocator, 0), \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a13721765fd14d32048c63b12bff5e005}{stateSet\_}}()}
+\DoxyCodeLine{615     \{}
+\DoxyCodeLine{616         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\_}}.IsValid());}
+\DoxyCodeLine{617         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_af1f9de9000f67cbdb83946f9ec63337f}{allocator\_}})}
+\DoxyCodeLine{618             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a87eb3f0c90ca51aace1a58106a585086}{ownAllocator\_}} = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_af1f9de9000f67cbdb83946f9ec63337f}{allocator\_}} = \mbox{\hyperlink{rapidjson_8h_abdc7cd7902748ffe6626d71c59a73c3b}{RAPIDJSON\_NEW}}(Allocator)();}
+\DoxyCodeLine{619         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a13721765fd14d32048c63b12bff5e005}{stateSet\_}} = static\_cast<unsigned*>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_af1f9de9000f67cbdb83946f9ec63337f}{allocator\_}}->Malloc(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a637af7f840c7550b52df24346c51cac4}{GetStateSetSize}}()));}
+\DoxyCodeLine{620         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_ac47140455dfa6fbc2dd0c1112dea363b}{state0\_}}.template Reserve<SizeType>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\_}}.stateCount\_);}
+\DoxyCodeLine{621         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a0eebdb0e441243c38a85b7e44313ca92}{state1\_}}.template Reserve<SizeType>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\_}}.stateCount\_);}
+\DoxyCodeLine{622     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+EW.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_af607e7a503906487a76fae20d98df511}\label{classrapidjson_1_1internal_1_1_generic_regex_search_af607e7a503906487a76fae20d98df511}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!````~GenericRegexSearch@{$\sim$GenericRegexSearch}}
+\index{````~GenericRegexSearch@{$\sim$GenericRegexSearch}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{$\sim$GenericRegexSearch()}{~GenericRegexSearch()}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::$\sim$\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{Generic\+Regex\+Search}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 624 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{624                           \{}
+\DoxyCodeLine{625         Allocator::Free(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a13721765fd14d32048c63b12bff5e005}{stateSet\_}});}
+\DoxyCodeLine{626         \mbox{\hyperlink{rapidjson_8h_a52c941c3fdd646527cdcd42aa846a28a}{RAPIDJSON\_DELETE}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a87eb3f0c90ca51aace1a58106a585086}{ownAllocator\_}});}
+\DoxyCodeLine{627     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+L\+E\+TE.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_a93bbf5cbe46e9fd9d9c3053a68b7b9e0}\label{classrapidjson_1_1internal_1_1_generic_regex_search_a93bbf5cbe46e9fd9d9c3053a68b7b9e0}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!AddState@{AddState}}
+\index{AddState@{AddState}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{AddState()}{AddState()}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Add\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{l,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 692 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{692                                                        \{}
+\DoxyCodeLine{693         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(index != \mbox{\hyperlink{namespacerapidjson_1_1internal_a5e338a291ef3558dbba9ba6eb2b346ea}{kRegexInvalidState}});}
+\DoxyCodeLine{694 }
+\DoxyCodeLine{695         \textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a81ada00d83141d17b9aba7c2caa48353}{State}}\& s = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\_}}.GetState(index);}
+\DoxyCodeLine{696         \textcolor{keywordflow}{if} (s.out1 != \mbox{\hyperlink{namespacerapidjson_1_1internal_a5e338a291ef3558dbba9ba6eb2b346ea}{kRegexInvalidState}}) \{ \textcolor{comment}{// Split}}
+\DoxyCodeLine{697             \textcolor{keywordtype}{bool} matched = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a93bbf5cbe46e9fd9d9c3053a68b7b9e0}{AddState}}(l, s.out);}
+\DoxyCodeLine{698             \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a93bbf5cbe46e9fd9d9c3053a68b7b9e0}{AddState}}(l, s.out1) || matched;}
+\DoxyCodeLine{699         \}}
+\DoxyCodeLine{700         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a13721765fd14d32048c63b12bff5e005}{stateSet\_}}[index >> 5] \& (1u << (index \& 31)))) \{}
+\DoxyCodeLine{701             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a13721765fd14d32048c63b12bff5e005}{stateSet\_}}[index >> 5] |= (1u << (index \& 31));}
+\DoxyCodeLine{702             *l.template PushUnsafe<SizeType>() = index;}
+\DoxyCodeLine{703         \}}
+\DoxyCodeLine{704         \textcolor{keywordflow}{return} s.out == \mbox{\hyperlink{namespacerapidjson_1_1internal_a5e338a291ef3558dbba9ba6eb2b346ea}{kRegexInvalidState}}; \textcolor{comment}{// by using PushUnsafe() above, we can ensure s is not validated due to reallocation.}}
+\DoxyCodeLine{705     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::internal\+::k\+Regex\+Invalid\+State, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_a637af7f840c7550b52df24346c51cac4}\label{classrapidjson_1_1internal_1_1_generic_regex_search_a637af7f840c7550b52df24346c51cac4}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!GetStateSetSize@{GetStateSetSize}}
+\index{GetStateSetSize@{GetStateSetSize}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{GetStateSetSize()}{GetStateSetSize()}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+State\+Set\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 687 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{687                                    \{}
+\DoxyCodeLine{688         \textcolor{keywordflow}{return} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\_}}.stateCount\_ + 31) / 32 * 4;}
+\DoxyCodeLine{689     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_ab793f6f4e0e2065cfc1e03eae844a392}\label{classrapidjson_1_1internal_1_1_generic_regex_search_ab793f6f4e0e2065cfc1e03eae844a392}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!Match@{Match}}
+\index{Match@{Match}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{Match()}{Match()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+template$<$typename Input\+Stream $>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Match (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is }\end{DoxyParamCaption})}
+
+
+
+Definition at line 630 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{630                                 \{}
+\DoxyCodeLine{631         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a29e3ab6d7d2666a7d30a9326a992e3ea}{SearchWithAnchoring}}(is, \textcolor{keyword}{true}, \textcolor{keyword}{true});}
+\DoxyCodeLine{632     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_ab1011ef61e8000808a4321c9f7399ffb}\label{classrapidjson_1_1internal_1_1_generic_regex_search_ab1011ef61e8000808a4321c9f7399ffb}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!Match@{Match}}
+\index{Match@{Match}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{Match()}{Match()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Match (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a3d4c81f49677604f40b1c09c4fc0a958}{Ch}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 634 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{634                             \{}
+\DoxyCodeLine{635         GenericStringStream<Encoding> is(s);}
+\DoxyCodeLine{636         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_ab793f6f4e0e2065cfc1e03eae844a392}{Match}}(is);}
+\DoxyCodeLine{637     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_afa518b5ea6268d3ee71586142d03fec1}\label{classrapidjson_1_1internal_1_1_generic_regex_search_afa518b5ea6268d3ee71586142d03fec1}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!MatchRange@{MatchRange}}
+\index{MatchRange@{MatchRange}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{MatchRange()}{MatchRange()}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Match\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{range\+Index,  }\item[{unsigned}]{codepoint }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 707 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{707                                                                    \{}
+\DoxyCodeLine{708         \textcolor{keywordtype}{bool} yes = (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\_}}.GetRange(rangeIndex).start \& RegexType::kRangeNegationFlag) == 0;}
+\DoxyCodeLine{709         \textcolor{keywordflow}{while} (rangeIndex != \mbox{\hyperlink{namespacerapidjson_1_1internal_a6198792292d27358dbe5595ecaed21d9}{kRegexInvalidRange}}) \{}
+\DoxyCodeLine{710             \textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a3bb3ee12c042b2266885a07226e3d6be}{Range}}\& r = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\_}}.GetRange(rangeIndex);}
+\DoxyCodeLine{711             \textcolor{keywordflow}{if} (codepoint >= (r.start \& ~RegexType::kRangeNegationFlag) \&\& codepoint <= r.end)}
+\DoxyCodeLine{712                 \textcolor{keywordflow}{return} yes;}
+\DoxyCodeLine{713             rangeIndex = r.next;}
+\DoxyCodeLine{714         \}}
+\DoxyCodeLine{715         \textcolor{keywordflow}{return} !yes;}
+\DoxyCodeLine{716     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::internal\+::k\+Regex\+Invalid\+Range.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_a7d048ecaaad22d0bdfa2d093dd7fcc42}\label{classrapidjson_1_1internal_1_1_generic_regex_search_a7d048ecaaad22d0bdfa2d093dd7fcc42}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!Search@{Search}}
+\index{Search@{Search}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{Search()}{Search()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+template$<$typename Input\+Stream $>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Search (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is }\end{DoxyParamCaption})}
+
+
+
+Definition at line 640 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{640                                  \{}
+\DoxyCodeLine{641         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a29e3ab6d7d2666a7d30a9326a992e3ea}{SearchWithAnchoring}}(is, \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\_}}.anchorBegin\_, \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\_}}.anchorEnd\_);}
+\DoxyCodeLine{642     \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Is\+Pattern\+Match().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_ab5c5a7346d4b7a05323ac587662200a3}\label{classrapidjson_1_1internal_1_1_generic_regex_search_ab5c5a7346d4b7a05323ac587662200a3}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!Search@{Search}}
+\index{Search@{Search}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{Search()}{Search()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Search (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a3d4c81f49677604f40b1c09c4fc0a958}{Ch}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 644 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{644                              \{}
+\DoxyCodeLine{645         GenericStringStream<Encoding> is(s);}
+\DoxyCodeLine{646         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a7d048ecaaad22d0bdfa2d093dd7fcc42}{Search}}(is);}
+\DoxyCodeLine{647     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_a29e3ab6d7d2666a7d30a9326a992e3ea}\label{classrapidjson_1_1internal_1_1_generic_regex_search_a29e3ab6d7d2666a7d30a9326a992e3ea}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!SearchWithAnchoring@{SearchWithAnchoring}}
+\index{SearchWithAnchoring@{SearchWithAnchoring}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{SearchWithAnchoring()}{SearchWithAnchoring()}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+template$<$typename Input\+Stream $>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Search\+With\+Anchoring (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{bool}]{anchor\+Begin,  }\item[{bool}]{anchor\+End }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 654 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{654                                                                                 \{}
+\DoxyCodeLine{655         DecodedStream<InputStream, Encoding> ds(is);}
+\DoxyCodeLine{656 }
+\DoxyCodeLine{657         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_ac47140455dfa6fbc2dd0c1112dea363b}{state0\_}}.Clear();}
+\DoxyCodeLine{658         Stack<Allocator> *current = \&\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_ac47140455dfa6fbc2dd0c1112dea363b}{state0\_}}, *next = \&\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a0eebdb0e441243c38a85b7e44313ca92}{state1\_}};}
+\DoxyCodeLine{659         \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} stateSetSize = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a637af7f840c7550b52df24346c51cac4}{GetStateSetSize}}();}
+\DoxyCodeLine{660         std::memset(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a13721765fd14d32048c63b12bff5e005}{stateSet\_}}, 0, stateSetSize);}
+\DoxyCodeLine{661 }
+\DoxyCodeLine{662         \textcolor{keywordtype}{bool} matched = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a93bbf5cbe46e9fd9d9c3053a68b7b9e0}{AddState}}(*current, \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\_}}.root\_);}
+\DoxyCodeLine{663         \textcolor{keywordtype}{unsigned} codepoint;}
+\DoxyCodeLine{664         \textcolor{keywordflow}{while} (!current->Empty() \&\& (codepoint = ds.Take()) != 0) \{}
+\DoxyCodeLine{665             std::memset(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a13721765fd14d32048c63b12bff5e005}{stateSet\_}}, 0, stateSetSize);}
+\DoxyCodeLine{666             next->Clear();}
+\DoxyCodeLine{667             matched = \textcolor{keyword}{false};}
+\DoxyCodeLine{668             \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}}* s = current->template Bottom<SizeType>(); s != current->template End<SizeType>(); ++s) \{}
+\DoxyCodeLine{669                 \textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a81ada00d83141d17b9aba7c2caa48353}{State}}\& sr = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\_}}.GetState(*s);}
+\DoxyCodeLine{670                 \textcolor{keywordflow}{if} (sr.codepoint == codepoint ||}
+\DoxyCodeLine{671                     sr.codepoint == RegexType::kAnyCharacterClass || }
+\DoxyCodeLine{672                     (sr.codepoint == RegexType::kRangeCharacterClass \&\& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_afa518b5ea6268d3ee71586142d03fec1}{MatchRange}}(sr.rangeStart, codepoint)))}
+\DoxyCodeLine{673                 \{}
+\DoxyCodeLine{674                     matched = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a93bbf5cbe46e9fd9d9c3053a68b7b9e0}{AddState}}(*next, sr.out) || matched;}
+\DoxyCodeLine{675                     \textcolor{keywordflow}{if} (!anchorEnd \&\& matched)}
+\DoxyCodeLine{676                         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{677                 \}}
+\DoxyCodeLine{678                 \textcolor{keywordflow}{if} (!anchorBegin)}
+\DoxyCodeLine{679                     \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a93bbf5cbe46e9fd9d9c3053a68b7b9e0}{AddState}}(*next, \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}{regex\_}}.root\_);}
+\DoxyCodeLine{680             \}}
+\DoxyCodeLine{681             \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(current, next);}
+\DoxyCodeLine{682         \}}
+\DoxyCodeLine{683 }
+\DoxyCodeLine{684         \textcolor{keywordflow}{return} matched;}
+\DoxyCodeLine{685     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::internal\+::\+Stack$<$ Allocator $>$\+::\+Empty(), rapidjson\+::internal\+::\+Swap(), and rapidjson\+::internal\+::\+Decoded\+Stream$<$ Source\+Stream, Encoding $>$\+::\+Take().
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_af1f9de9000f67cbdb83946f9ec63337f}\label{classrapidjson_1_1internal_1_1_generic_regex_search_af1f9de9000f67cbdb83946f9ec63337f}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!allocator\_@{allocator\_}}
+\index{allocator\_@{allocator\_}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{allocator\_}{allocator\_}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 719 of file regex.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_a87eb3f0c90ca51aace1a58106a585086}\label{classrapidjson_1_1internal_1_1_generic_regex_search_a87eb3f0c90ca51aace1a58106a585086}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!ownAllocator\_@{ownAllocator\_}}
+\index{ownAllocator\_@{ownAllocator\_}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{ownAllocator\_}{ownAllocator\_}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::own\+Allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 720 of file regex.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}\label{classrapidjson_1_1internal_1_1_generic_regex_search_a5b5f8158636862e5478cc22557756973}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!regex\_@{regex\_}}
+\index{regex\_@{regex\_}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{regex\_}{regex\_}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+const Regex\+Type\& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::regex\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 718 of file regex.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_ac47140455dfa6fbc2dd0c1112dea363b}\label{classrapidjson_1_1internal_1_1_generic_regex_search_ac47140455dfa6fbc2dd0c1112dea363b}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!state0\_@{state0\_}}
+\index{state0\_@{state0\_}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{state0\_}{state0\_}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}}$<$\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$>$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::state0\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 721 of file regex.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_a0eebdb0e441243c38a85b7e44313ca92}\label{classrapidjson_1_1internal_1_1_generic_regex_search_a0eebdb0e441243c38a85b7e44313ca92}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!state1\_@{state1\_}}
+\index{state1\_@{state1\_}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{state1\_}{state1\_}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}}$<$\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$>$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::state1\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 722 of file regex.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_generic_regex_search_a13721765fd14d32048c63b12bff5e005}\label{classrapidjson_1_1internal_1_1_generic_regex_search_a13721765fd14d32048c63b12bff5e005}} 
+\index{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}!stateSet\_@{stateSet\_}}
+\index{stateSet\_@{stateSet\_}!rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$@{rapidjson::internal::GenericRegexSearch$<$ RegexType, Allocator $>$}}
+\subsubsection{\texorpdfstring{stateSet\_}{stateSet\_}}
+{\footnotesize\ttfamily template$<$typename Regex\+Type, typename Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_generic_regex_search}{rapidjson\+::internal\+::\+Generic\+Regex\+Search}}$<$ Regex\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::state\+Set\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 723 of file regex.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/internal/\mbox{\hyperlink{regex_8h}{regex.\+h}}\end{DoxyCompactItemize}

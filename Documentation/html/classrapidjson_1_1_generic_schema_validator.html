@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logosmall.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">train-A-wear
+   &#160;<span id="projectnumber">2.1</span>
    </div>
+   <div id="projectbrief">Real time feedback application with wireless connection to three IMUs</div>
   </td>
  </tr>
  </tbody>
@@ -85,13 +88,14 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for rapidjson::GenericSchemaValidator&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_schema_validator__inherit__graph.png" border="0" usemap="#rapidjson_1_1_generic_schema_validator_3_01_schema_document_type_00_01_output_handler_00_01_state_allocator_01_4_inherit__map" alt="Inheritance graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for rapidjson::GenericSchemaValidator&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_schema_validator__coll__graph.png" border="0" usemap="#rapidjson_1_1_generic_schema_validator_3_01_schema_document_type_00_01_output_handler_00_01_state_allocator_01_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="classrapidjson_1_1_generic_schema_validator.png" usemap="#rapidjson::GenericSchemaValidator_3C_20SchemaDocumentType_2C_20OutputHandler_2C_20StateAllocator_20_3E_map" alt=""/>
+  <map id="rapidjson::GenericSchemaValidator_3C_20SchemaDocumentType_2C_20OutputHandler_2C_20StateAllocator_20_3E_map" name="rapidjson::GenericSchemaValidator_3C_20SchemaDocumentType_2C_20OutputHandler_2C_20StateAllocator_20_3E_map">
+<area href="classrapidjson_1_1internal_1_1_i_schema_state_factory.html" alt="rapidjson::internal::ISchemaStateFactory&lt; SchemaDocumentType::SchemaType &gt;" shape="rect" coords="0,0,543,24"/>
+<area href="classrapidjson_1_1internal_1_1_i_schema_validator.html" alt="rapidjson::internal::ISchemaValidator" shape="rect" coords="553,0,1096,24"/>
+<area href="classrapidjson_1_1internal_1_1_i_validation_error_handler.html" alt="rapidjson::internal::IValidationErrorHandler&lt; SchemaDocumentType::SchemaType &gt;" shape="rect" coords="1106,0,1649,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -646,9 +650,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::<a class="el" href="classrapidjson_1_1_generic_schema_validator.html">GenericSchemaValidator</a> </td>
@@ -680,11 +681,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructor without output handler. </p>
@@ -721,9 +717,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::<a class="el" href="classrapidjson_1_1_generic_schema_validator.html">GenericSchemaValidator</a> </td>
@@ -761,11 +754,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructor with output handler. </p>
@@ -802,9 +790,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::~<a class="el" href="classrapidjson_1_1_generic_schema_validator.html">GenericSchemaValidator</a> </td>
@@ -813,11 +798,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
@@ -830,11 +810,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <p class="reference">References <a class="el" href="rapidjson_8h_source.html#l00631">RAPIDJSON_DELETE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="schema_8h_source.html#l02163">rapidjson::GenericSchemaValidator&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::DestroySchemaValidator()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_schema_validator_ad9f00d71bf62b8983cf2514c43fb1572_icgraph.png" border="0" usemap="#classrapidjson_1_1_generic_schema_validator_ad9f00d71bf62b8983cf2514c43fb1572_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -899,7 +874,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -928,9 +903,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::AboveMaximum </td>
@@ -956,11 +928,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01892">1892</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -976,9 +943,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::AboveMaximum </td>
@@ -1004,11 +968,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01896">1896</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1024,9 +983,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::AboveMaximum </td>
@@ -1052,11 +1008,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01900">1900</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1096,7 +1047,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1117,9 +1068,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::AddDependencySchemaError </td>
@@ -1139,11 +1087,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02000">2000</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1185,7 +1128,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1238,7 +1181,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1287,7 +1230,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1304,11 +1247,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="ttc" id="classrapidjson_1_1_generic_schema_validator_html_a3238efb9d9144c2d6577362d8dc5f61b"><div class="ttname"><a href="classrapidjson_1_1_generic_schema_validator.html#a3238efb9d9144c2d6577362d8dc5f61b">rapidjson::GenericSchemaValidator::GetInvalidSchemaPointer</a></div><div class="ttdeci">PointerType GetInvalidSchemaPointer() const</div><div class="ttdoc">Gets the JSON pointer pointed to the invalid schema.</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01864">schema.h:1864</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="stringbuffer_8h_source.html#l00060">rapidjson::GenericStringBuffer&lt; Encoding, Allocator &gt;::Clear()</a>, <a class="el" href="stringbuffer_8h_source.html#l00082">rapidjson::GenericStringBuffer&lt; Encoding, Allocator &gt;::GetSize()</a>, <a class="el" href="stringbuffer_8h_source.html#l00073">rapidjson::GenericStringBuffer&lt; Encoding, Allocator &gt;::GetString()</a>, and <a class="el" href="stringbuffer_8h_source.html#l00069">rapidjson::GenericStringBuffer&lt; Encoding, Allocator &gt;::Push()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_schema_validator_a0094311f0ad58f1884855db80a1f2296_cgraph.png" border="0" usemap="#classrapidjson_1_1_generic_schema_validator_a0094311f0ad58f1884855db80a1f2296_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1319,9 +1257,6 @@ Here is the call graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::AddExpectedType </td>
@@ -1331,11 +1266,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02021">2021</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1352,9 +1282,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::AddMissingDependentProperty </td>
@@ -1364,11 +1291,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01992">1992</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1385,9 +1307,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::AddMissingProperty </td>
@@ -1397,11 +1316,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01964">1964</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1454,7 +1368,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1500,7 +1414,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1531,7 +1445,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1562,9 +1476,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::BelowMinimum </td>
@@ -1590,11 +1501,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01904">1904</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1610,9 +1516,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::BelowMinimum </td>
@@ -1638,11 +1541,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01908">1908</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1658,9 +1556,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::BelowMinimum </td>
@@ -1686,11 +1581,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01912">1912</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1706,9 +1596,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::Bool </td>
@@ -1718,11 +1605,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02104">2104</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -1754,7 +1636,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1788,7 +1670,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1824,7 +1706,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1854,7 +1736,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1884,7 +1766,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1915,7 +1797,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1948,7 +1830,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1957,11 +1839,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="fragment"><div class="line"><a name="l02163"></a><span class="lineno"> 2163</span>&#160;                                                                     {</div><div class="line"><a name="l02164"></a><span class="lineno"> 2164</span>&#160;        <a class="code" href="classrapidjson_1_1_generic_schema_validator.html#acc07bd08b00195d84bb5b83f59c593d3">GenericSchemaValidator</a>* v = static_cast&lt;GenericSchemaValidator*&gt;(validator);</div><div class="line"><a name="l02165"></a><span class="lineno"> 2165</span>&#160;        v-&gt;~GenericSchemaValidator();</div><div class="line"><a name="l02166"></a><span class="lineno"> 2166</span>&#160;        StateAllocator::Free(v);</div><div class="line"><a name="l02167"></a><span class="lineno"> 2167</span>&#160;    }</div><div class="ttc" id="classrapidjson_1_1_generic_schema_validator_html_acc07bd08b00195d84bb5b83f59c593d3"><div class="ttname"><a href="classrapidjson_1_1_generic_schema_validator.html#acc07bd08b00195d84bb5b83f59c593d3">rapidjson::GenericSchemaValidator::GenericSchemaValidator</a></div><div class="ttdeci">GenericSchemaValidator(const SchemaDocumentType &amp;schemaDocument, StateAllocator *allocator=0, size_t schemaStackCapacity=kDefaultSchemaStackCapacity, size_t documentStackCapacity=kDefaultDocumentStackCapacity)</div><div class="ttdoc">Constructor without output handler.</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l01784">schema.h:1784</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="schema_8h_source.html#l01839">rapidjson::GenericSchemaValidator&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::~GenericSchemaValidator()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_schema_validator_aec8a2e41bc8185df35ebf9ebedb52355_cgraph.png" border="0" usemap="#classrapidjson_1_1_generic_schema_validator_aec8a2e41bc8185df35ebf9ebedb52355_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1985,7 +1862,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2019,7 +1896,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2042,9 +1919,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::DisallowedProperty </td>
@@ -2064,11 +1938,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01980">1980</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -2100,7 +1969,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2120,9 +1989,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::DoesNotMatch </td>
@@ -2142,11 +2008,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01925">1925</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -2165,9 +2026,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::Double </td>
@@ -2177,11 +2035,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02109">2109</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -2224,7 +2077,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2250,9 +2103,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::EndArray </td>
@@ -2262,11 +2112,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02142">2142</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -2301,7 +2146,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2327,9 +2172,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::EndDisallowedType </td>
@@ -2339,11 +2181,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02024">2024</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -2366,9 +2203,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::EndMissingDependentProperties </td>
@@ -2378,11 +2212,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01995">1995</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -2413,7 +2242,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2439,9 +2268,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::EndObject </td>
@@ -2451,11 +2277,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02129">2129</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -2490,7 +2311,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2515,11 +2336,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="ttc" id="classrapidjson_1_1_generic_schema_validator_html_aef3aea9b0dd2710cff32aa4f49e58582"><div class="ttname"><a href="classrapidjson_1_1_generic_schema_validator.html#aef3aea9b0dd2710cff32aa4f49e58582">rapidjson::GenericSchemaValidator::schemaDocument_</a></div><div class="ttdeci">const SchemaDocumentType * schemaDocument_</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l02400">schema.h:2400</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="pointer_8h_source.html#l01181">rapidjson::a</a>, <a class="el" href="stringbuffer_8h_source.html#l00073">rapidjson::GenericStringBuffer&lt; Encoding, Allocator &gt;::GetString()</a>, <a class="el" href="rapidjson_8h_source.html#l00649">rapidjson::kArrayType</a>, and <a class="el" href="schema_8h_source.html#l00116">RAPIDJSON_INVALID_KEYWORD_RETURN</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_schema_validator_abd27044b18e400e5a25e6346b7535fbb_cgraph.png" border="0" usemap="#classrapidjson_1_1_generic_schema_validator_abd27044b18e400e5a25e6346b7535fbb_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -2544,7 +2360,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2575,7 +2391,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2604,7 +2420,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2633,7 +2449,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2649,9 +2465,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_schema_validator.html#a14216aea798d69f102987c1aae36e897">ValueType</a>&amp; <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::GetError </td>
@@ -2660,11 +2473,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Gets the error object. </p>
@@ -2673,11 +2481,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="fragment"><div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classrapidjson_1_1_generic_schema_validator.html#a7c3b67480cc73d789ba9d3b66bd7706f">error_</a>; }</div><div class="ttc" id="classrapidjson_1_1_generic_schema_validator_html_a7c3b67480cc73d789ba9d3b66bd7706f"><div class="ttname"><a href="classrapidjson_1_1_generic_schema_validator.html#a7c3b67480cc73d789ba9d3b66bd7706f">rapidjson::GenericSchemaValidator::error_</a></div><div class="ttdeci">ValueType error_</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l02407">schema.h:2407</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="schema_8h_source.html#l02451">rapidjson::SchemaValidatingReader&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;::operator()()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_schema_validator_a422c16457e512835b0d0f64ec1c81ba2_icgraph.png" border="0" usemap="#classrapidjson_1_1_generic_schema_validator_a422c16457e512835b0d0f64ec1c81ba2_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -2688,9 +2491,6 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classrapidjson_1_1_generic_schema_validator.html#a14216aea798d69f102987c1aae36e897">ValueType</a>&amp; <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::GetError </td>
@@ -2699,11 +2499,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01861">1861</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -2731,7 +2526,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2760,7 +2555,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2790,7 +2585,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2821,7 +2616,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2837,9 +2632,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_schema_validator.html#aace9622f8ebac1c386081f6d1dcd774e">PointerType</a> <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::GetInvalidDocumentPointer </td>
@@ -2848,11 +2640,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Gets the JSON pointer pointed to the invalid value. </p>
@@ -2865,11 +2652,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="ttc" id="classrapidjson_1_1internal_1_1_stack_html_ac5d92c6efa27f38e3a625bc495d95151"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_stack.html#ac5d92c6efa27f38e3a625bc495d95151">rapidjson::internal::Stack::Empty</a></div><div class="ttdeci">bool Empty() const</div><div class="ttdef"><b>Definition:</b> <a href="stack_8h_source.html#l00177">stack.h:177</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="schema_8h_source.html#l02451">rapidjson::SchemaValidatingReader&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;::operator()()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_schema_validator_a60dfb4a89593c8d3ca4c89a6202feb52_icgraph.png" border="0" usemap="#classrapidjson_1_1_generic_schema_validator_a60dfb4a89593c8d3ca4c89a6202feb52_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -2880,9 +2662,6 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classrapidjson_1_1_generic_schema_validator.html#ab5b7093443e29cf66eb7cf47f3d8583d">Ch</a>* <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::GetInvalidSchemaKeyword </td>
@@ -2891,11 +2670,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Gets the keyword of invalid schema. </p>
@@ -2906,11 +2680,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="ttc" id="classrapidjson_1_1internal_1_1_stack_html_ac5d92c6efa27f38e3a625bc495d95151"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_stack.html#ac5d92c6efa27f38e3a625bc495d95151">rapidjson::internal::Stack::Empty</a></div><div class="ttdeci">bool Empty() const</div><div class="ttdef"><b>Definition:</b> <a href="stack_8h_source.html#l00177">stack.h:177</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="schema_8h_source.html#l02451">rapidjson::SchemaValidatingReader&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;::operator()()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_schema_validator_a03bcd5497a574cffbd066d0aec2b5585_icgraph.png" border="0" usemap="#classrapidjson_1_1_generic_schema_validator_a03bcd5497a574cffbd066d0aec2b5585_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -2921,9 +2690,6 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_schema_validator.html#aace9622f8ebac1c386081f6d1dcd774e">PointerType</a> <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::GetInvalidSchemaPointer </td>
@@ -2932,11 +2698,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Gets the JSON pointer pointed to the invalid schema. </p>
@@ -2948,11 +2709,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="ttc" id="classrapidjson_1_1internal_1_1_stack_html_ac5d92c6efa27f38e3a625bc495d95151"><div class="ttname"><a href="classrapidjson_1_1internal_1_1_stack.html#ac5d92c6efa27f38e3a625bc495d95151">rapidjson::internal::Stack::Empty</a></div><div class="ttdeci">bool Empty() const</div><div class="ttdef"><b>Definition:</b> <a href="stack_8h_source.html#l00177">stack.h:177</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="schema_8h_source.html#l02451">rapidjson::SchemaValidatingReader&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;::operator()()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_schema_validator_a3238efb9d9144c2d6577362d8dc5f61b_icgraph.png" border="0" usemap="#classrapidjson_1_1_generic_schema_validator_a3238efb9d9144c2d6577362d8dc5f61b_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -2976,7 +2732,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3005,7 +2761,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3034,7 +2790,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3055,9 +2811,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::Int </td>
@@ -3067,11 +2820,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02105">2105</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3090,9 +2838,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::Int64 </td>
@@ -3102,11 +2847,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02107">2107</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3138,7 +2878,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3151,11 +2891,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="fragment"><div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classrapidjson_1_1_generic_schema_validator.html#aa44db889fe75a923df60f6ec668eac92">valid_</a>; }</div><div class="ttc" id="classrapidjson_1_1_generic_schema_validator_html_aa44db889fe75a923df60f6ec668eac92"><div class="ttname"><a href="classrapidjson_1_1_generic_schema_validator.html#aa44db889fe75a923df60f6ec668eac92">rapidjson::GenericSchemaValidator::valid_</a></div><div class="ttdeci">bool valid_</div><div class="ttdef"><b>Definition:</b> <a href="schema_8h_source.html#l02410">schema.h:2410</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="schema_8h_source.html#l02451">rapidjson::SchemaValidatingReader&lt; parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator &gt;::operator()()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_schema_validator_ad32a9ad31dbb588edaaf038ab053275b_icgraph.png" border="0" usemap="#classrapidjson_1_1_generic_schema_validator_ad32a9ad31dbb588edaaf038ab053275b_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -3166,9 +2901,6 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::Key </td>
@@ -3194,11 +2926,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02121">2121</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3235,7 +2962,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3268,7 +2995,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3286,9 +3013,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::NoneOf </td>
@@ -3308,11 +3032,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02036">2036</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3327,9 +3046,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::NotAllOf </td>
@@ -3349,11 +3065,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02031">2031</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3370,9 +3081,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::NotMultipleOf </td>
@@ -3392,11 +3100,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01883">1883</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3412,9 +3115,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::NotMultipleOf </td>
@@ -3434,11 +3134,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01886">1886</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3454,9 +3149,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::NotMultipleOf </td>
@@ -3476,11 +3168,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01889">1889</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3496,9 +3183,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::NotOneOf </td>
@@ -3518,11 +3202,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02039">2039</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3537,9 +3216,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::Null </td>
@@ -3548,11 +3224,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02103">2103</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3584,7 +3255,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3606,9 +3277,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::PropertyViolations </td>
@@ -3628,11 +3296,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01976">1976</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3663,7 +3326,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3681,9 +3344,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::RawNumber </td>
@@ -3709,11 +3369,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02110">2110</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3732,9 +3387,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::Reset </td>
@@ -3743,11 +3395,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Reset the internal states. </p>
@@ -3772,9 +3419,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::StartArray </td>
@@ -3783,11 +3427,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02136">2136</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3822,7 +3461,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3854,7 +3493,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3886,7 +3525,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3918,7 +3557,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3937,9 +3576,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::StartObject </td>
@@ -3948,11 +3584,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02115">2115</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -3974,9 +3605,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::String </td>
@@ -4002,11 +3630,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02112">2112</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -4049,7 +3672,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -4094,7 +3717,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -4115,9 +3738,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::TooLong </td>
@@ -4143,11 +3763,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01917">1917</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -4189,7 +3804,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -4234,7 +3849,7 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -4255,9 +3870,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::TooShort </td>
@@ -4283,11 +3895,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l01921">1921</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -4305,9 +3912,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::Uint </td>
@@ -4317,11 +3921,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02106">2106</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -4340,9 +3939,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHandler&lt;typename SchemaDocumentType::SchemaType::EncodingType&gt;, typename StateAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_schema_validator.html">rapidjson::GenericSchemaValidator</a>&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;::Uint64 </td>
@@ -4352,11 +3948,6 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="schema_8h_source.html#l02108">2108</a> of file <a class="el" href="schema_8h_source.html">schema.h</a>.</p>
@@ -4712,13 +4303,13 @@ template&lt;typename SchemaDocumentType, typename OutputHandler = BaseReaderHand
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Server/rapidjson/<a class="el" href="fwd_8h_source.html">fwd.h</a></li>
-<li>Server/rapidjson/<a class="el" href="schema_8h_source.html">schema.h</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Server/rapidjson/<a class="el" href="fwd_8h_source.html">fwd.h</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Server/rapidjson/<a class="el" href="schema_8h_source.html">schema.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2019 00:37:12 for train-A-wear by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

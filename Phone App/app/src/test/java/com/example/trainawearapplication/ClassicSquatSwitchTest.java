@@ -21,7 +21,6 @@ public class ClassicSquatSwitchTest {
 
     private static ClassicSquat mActivitySquat;
 
-
     private static final int TEST_CASE1 = 0;
     private static final int TEST_CASE2 = 2;
     private static TextView outputText;

@@ -1,0 +1,736 @@
+\hypertarget{classrapidjson_1_1_generic_schema_document}{}\section{rapidjson\+::Generic\+Schema\+Document$<$ ValueT, Allocator $>$ Class Template Reference}
+\label{classrapidjson_1_1_generic_schema_document}\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+
+
+J\+S\+ON schema document.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_schema_document_1_1_schema_entry}{Schema\+Entry}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_schema_document_1_1_schema_ref_entry}{Schema\+Ref\+Entry}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef ValueT \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_i_generic_remote_schema_document_provider}{I\+Generic\+Remote\+Schema\+Document\+Provider}}$<$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}} $>$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ab2764f2258889b3262eff6293d7ca015}{I\+Remote\+Schema\+Document\+Provider\+Type}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a6fc497ef6e303b3a3ecec9fefe82eade}{Allocator\+Type}}
+\item 
+typedef Value\+Type\+::\+Encoding\+Type \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a019035fd281ca52874ed434ce4f7d4d8}{Encoding\+Type}}
+\item 
+typedef Encoding\+Type\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_af9b82162834b30bdcbe93cb065d0aedd}{Ch}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema}{internal\+::\+Schema}}$<$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}} $>$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{Pointer\+Type}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}$<$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a019035fd281ca52874ed434ce4f7d4d8}{Encoding\+Type}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a72e8240701d707953bfd806cddc995b6}{U\+R\+I\+Type}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aeebf51ef6353f6a01d6f6618da6d0865}{Generic\+Schema\+Document}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&document, const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_af9b82162834b30bdcbe93cb065d0aedd}{Ch}} $\ast$uri=0, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} uri\+Length=0, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ab2764f2258889b3262eff6293d7ca015}{I\+Remote\+Schema\+Document\+Provider\+Type}} $\ast$remote\+Provider=0, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$allocator=0)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adf6f3372013227873ed392dee1e752bf}{$\sim$\+Generic\+Schema\+Document}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a72e8240701d707953bfd806cddc995b6}{U\+R\+I\+Type}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a55b013a5f3f213d198ac0205ba6ea9b0}{Get\+U\+RI}} () const
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a8b2ac6de85dc9c1fb4f4d0be4aeb2d6a}{Get\+Root}} () const
+\begin{DoxyCompactList}\small\item\em Get the root schema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a4792ceb26c9b362f8035f9b719086eec}{Generic\+Schema\+Document}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}} \&)
+\begin{DoxyCompactList}\small\item\em Prohibit copying. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a865332b0146d97f23d037866ba264bed}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}} \&)
+\begin{DoxyCompactList}\small\item\em Prohibit assignment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a0888d84375cd5bfb6ee55fe8997d4c5f}{Create\+Schema\+Recursive}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}} $\ast$$\ast$schema, const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{Pointer\+Type}} \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&v, const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&document)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ab43d0cbe1c1c2512e9a38751ef7c7776}{Create\+Schema}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}} $\ast$$\ast$schema, const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{Pointer\+Type}} \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&v, const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&document)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ad76c4e086f5052e911362f6d8b4c0e43}{Handle\+Ref\+Schema}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{Pointer\+Type}} \&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}} $\ast$$\ast$schema, const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&v, const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&document)
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ae577eb9833e3a194ecb6b832434bd67d}{Get\+Schema}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{Pointer\+Type}} \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}) const
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{Pointer\+Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a003009a11cbf409bf1ccbd546ec3c8e0}{Get\+Pointer}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}} $\ast$schema) const
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ae4ee843b9a681118eab464f25490eab9}{Get\+Typeless}} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ab2764f2258889b3262eff6293d7ca015}{I\+Remote\+Schema\+Document\+Provider\+Type}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a34513d08173e3499f3b6b906fdb7ce6a}{remote\+Provider\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a80844d6a0da89d38527883cbb19dfdac}{own\+Allocator\+\_\+}}
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb44efaa5ed363c73554de82958b4281}{root\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Root schema. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_afb1ea66bb78ed9da2285c0b946d6d181}{typeless\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb08443004b8a6978bad470f2c32f998}{schema\+Map\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ad85e2cdeb3cd92a19a4a9ac49fa24496}{schema\+Ref\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a72e8240701d707953bfd806cddc995b6}{U\+R\+I\+Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a5d27a5ae1ddf4ffd702269654168f826}{uri\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a5557711a06945d5fa29cd89104fef97c}{k\+Initial\+Schema\+Map\+Size}} = 64
+\item 
+static const size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ade647f0de2c0f37bcfd34975759e9123}{k\+Initial\+Schema\+Ref\+Size}} = 64
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a706511849688d9245fc37109f02a03c4}{internal\+::\+Schema$<$ Generic\+Schema\+Document $>$}}
+\item 
+{\footnotesize template$<$typename , typename , typename $>$ }\\class \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_afcc03e6ba8f1a819e1a028c31ad38347}{Generic\+Schema\+Validator}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename ValueT, typename Allocator = Crt\+Allocator$>$\newline
+class rapidjson\+::\+Generic\+Schema\+Document$<$ Value\+T, Allocator $>$}
+
+J\+S\+ON schema document. 
+
+A J\+S\+ON schema document is a compiled version of a J\+S\+ON schema. It is basically a tree of \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema}{internal\+::\+Schema}}.
+
+\begin{DoxyNote}{Note}
+This is an immutable class (i.\+e. its instance cannot be modified after construction). 
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em ValueT} & Type of J\+S\+ON value (e.\+g. {\ttfamily Value} ), which also determine the encoding. \\
+\hline
+{\em \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}} & \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} type for allocating memory of this document. \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 136 of file fwd.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a6fc497ef6e303b3a3ecec9fefe82eade}\label{classrapidjson_1_1_generic_schema_document_a6fc497ef6e303b3a3ecec9fefe82eade}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!AllocatorType@{AllocatorType}}
+\index{AllocatorType@{AllocatorType}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{AllocatorType}{AllocatorType}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a6fc497ef6e303b3a3ecec9fefe82eade}{Allocator\+Type}}}
+
+
+
+Definition at line 1505 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_af9b82162834b30bdcbe93cb065d0aedd}\label{classrapidjson_1_1_generic_schema_document_af9b82162834b30bdcbe93cb065d0aedd}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+typedef Encoding\+Type\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_af9b82162834b30bdcbe93cb065d0aedd}{Ch}}}
+
+
+
+Definition at line 1507 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a019035fd281ca52874ed434ce4f7d4d8}\label{classrapidjson_1_1_generic_schema_document_a019035fd281ca52874ed434ce4f7d4d8}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!EncodingType@{EncodingType}}
+\index{EncodingType@{EncodingType}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{EncodingType}{EncodingType}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+typedef Value\+Type\+::\+Encoding\+Type \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a019035fd281ca52874ed434ce4f7d4d8}{Encoding\+Type}}}
+
+
+
+Definition at line 1506 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_ab2764f2258889b3262eff6293d7ca015}\label{classrapidjson_1_1_generic_schema_document_ab2764f2258889b3262eff6293d7ca015}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!IRemoteSchemaDocumentProviderType@{IRemoteSchemaDocumentProviderType}}
+\index{IRemoteSchemaDocumentProviderType@{IRemoteSchemaDocumentProviderType}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{IRemoteSchemaDocumentProviderType}{IRemoteSchemaDocumentProviderType}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_i_generic_remote_schema_document_provider}{I\+Generic\+Remote\+Schema\+Document\+Provider}}$<$\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}}$>$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ab2764f2258889b3262eff6293d7ca015}{I\+Remote\+Schema\+Document\+Provider\+Type}}}
+
+
+
+Definition at line 1504 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}\label{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!PointerType@{PointerType}}
+\index{PointerType@{PointerType}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{PointerType}{PointerType}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$>$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{Pointer\+Type}}}
+
+
+
+Definition at line 1509 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}\label{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!SchemaType@{SchemaType}}
+\index{SchemaType@{SchemaType}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{SchemaType}{SchemaType}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema}{internal\+::\+Schema}}$<$\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}}$>$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}}}
+
+
+
+Definition at line 1508 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a72e8240701d707953bfd806cddc995b6}\label{classrapidjson_1_1_generic_schema_document_a72e8240701d707953bfd806cddc995b6}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!URIType@{URIType}}
+\index{URIType@{URIType}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{URIType}{URIType}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}$<$\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a019035fd281ca52874ed434ce4f7d4d8}{Encoding\+Type}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$>$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a72e8240701d707953bfd806cddc995b6}{U\+R\+I\+Type}}}
+
+
+
+Definition at line 1510 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}\label{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!ValueType@{ValueType}}
+\index{ValueType@{ValueType}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{ValueType}{ValueType}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+typedef ValueT \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}}}
+
+
+
+Definition at line 1503 of file schema.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_aeebf51ef6353f6a01d6f6618da6d0865}\label{classrapidjson_1_1_generic_schema_document_aeebf51ef6353f6a01d6f6618da6d0865}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!GenericSchemaDocument@{GenericSchemaDocument}}
+\index{GenericSchemaDocument@{GenericSchemaDocument}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericSchemaDocument()}{GenericSchemaDocument()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&}]{document,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_af9b82162834b30bdcbe93cb065d0aedd}{Ch}} $\ast$}]{uri = {\ttfamily 0},  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{uri\+Length = {\ttfamily 0},  }\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ab2764f2258889b3262eff6293d7ca015}{I\+Remote\+Schema\+Document\+Provider\+Type}} $\ast$}]{remote\+Provider = {\ttfamily 0},  }\item[{\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$}]{allocator = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+Compile a J\+S\+ON document into schema document.
+
+
+\begin{DoxyParams}{Parameters}
+{\em document} & A J\+S\+ON document as source. \\
+\hline
+{\em uri} & The base U\+RI of this schema document for purposes of violation reporting. \\
+\hline
+{\em uri\+Length} & Length of {\ttfamily name}, in code points. \\
+\hline
+{\em remote\+Provider} & An optional remote schema document provider for resolving remote reference. Can be null. \\
+\hline
+{\em allocator} & An optional allocator instance for allocating memory. Can be null. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1525 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1526                                                                                          :}
+\DoxyCodeLine{1527         \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a34513d08173e3499f3b6b906fdb7ce6a}{remoteProvider\_}}(remoteProvider),}
+\DoxyCodeLine{1528         \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}}(allocator),}
+\DoxyCodeLine{1529         \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a80844d6a0da89d38527883cbb19dfdac}{ownAllocator\_}}(),}
+\DoxyCodeLine{1530         \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb44efaa5ed363c73554de82958b4281}{root\_}}(),}
+\DoxyCodeLine{1531         \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_afb1ea66bb78ed9da2285c0b946d6d181}{typeless\_}}(),}
+\DoxyCodeLine{1532         \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb08443004b8a6978bad470f2c32f998}{schemaMap\_}}(allocator, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a5557711a06945d5fa29cd89104fef97c}{kInitialSchemaMapSize}}),}
+\DoxyCodeLine{1533         \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ad85e2cdeb3cd92a19a4a9ac49fa24496}{schemaRef\_}}(allocator, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ade647f0de2c0f37bcfd34975759e9123}{kInitialSchemaRefSize}})}
+\DoxyCodeLine{1534     \{}
+\DoxyCodeLine{1535         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}})}
+\DoxyCodeLine{1536             \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a80844d6a0da89d38527883cbb19dfdac}{ownAllocator\_}} = \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}} = \mbox{\hyperlink{rapidjson_8h_abdc7cd7902748ffe6626d71c59a73c3b}{RAPIDJSON\_NEW}}(Allocator)();}
+\DoxyCodeLine{1537 }
+\DoxyCodeLine{1538         \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_af9b82162834b30bdcbe93cb065d0aedd}{Ch}} noUri[1] = \{0\};}
+\DoxyCodeLine{1539         \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a5d27a5ae1ddf4ffd702269654168f826}{uri\_}}.SetString(uri ? uri : noUri, uriLength, *\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}});}
+\DoxyCodeLine{1540 }
+\DoxyCodeLine{1541         \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_afb1ea66bb78ed9da2285c0b946d6d181}{typeless\_}} = static\_cast<SchemaType*>(\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}}->Malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{SchemaType}})));}
+\DoxyCodeLine{1542         \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_afb1ea66bb78ed9da2285c0b946d6d181}{typeless\_}}) \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{SchemaType}}(\textcolor{keyword}{this}, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{PointerType}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{ValueType}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4acf030b422a32c3647c7c5973bd4dd0a9}{kObjectType}}).Move(), \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{ValueType}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4acf030b422a32c3647c7c5973bd4dd0a9}{kObjectType}}).Move(), \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}});}
+\DoxyCodeLine{1543 }
+\DoxyCodeLine{1544         \textcolor{comment}{// Generate root schema, it will call CreateSchema() to create sub-schemas,}}
+\DoxyCodeLine{1545         \textcolor{comment}{// And call AddRefSchema() if there are \$ref.}}
+\DoxyCodeLine{1546         \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a0888d84375cd5bfb6ee55fe8997d4c5f}{CreateSchemaRecursive}}(\&\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb44efaa5ed363c73554de82958b4281}{root\_}}, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{PointerType}}(), document, document);}
+\DoxyCodeLine{1547 }
+\DoxyCodeLine{1548         \textcolor{comment}{// Resolve \$ref}}
+\DoxyCodeLine{1549         \textcolor{keywordflow}{while} (!\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ad85e2cdeb3cd92a19a4a9ac49fa24496}{schemaRef\_}}.Empty()) \{}
+\DoxyCodeLine{1550             SchemaRefEntry* refEntry = \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ad85e2cdeb3cd92a19a4a9ac49fa24496}{schemaRef\_}}.template Pop<SchemaRefEntry>(1);}
+\DoxyCodeLine{1551             \textcolor{keywordflow}{if} (\textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{SchemaType}}* s = \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ae577eb9833e3a194ecb6b832434bd67d}{GetSchema}}(refEntry->target)) \{}
+\DoxyCodeLine{1552                 \textcolor{keywordflow}{if} (refEntry->schema)}
+\DoxyCodeLine{1553                     *refEntry->schema = s;}
+\DoxyCodeLine{1554 }
+\DoxyCodeLine{1555                 \textcolor{comment}{// Create entry in map if not exist}}
+\DoxyCodeLine{1556                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ae577eb9833e3a194ecb6b832434bd67d}{GetSchema}}(refEntry->source)) \{}
+\DoxyCodeLine{1557                     \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb08443004b8a6978bad470f2c32f998}{schemaMap\_}}.template Push<SchemaEntry>()) SchemaEntry(refEntry->source, const\_cast<SchemaType*>(s), \textcolor{keyword}{false}, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}});}
+\DoxyCodeLine{1558                 \}}
+\DoxyCodeLine{1559             \}}
+\DoxyCodeLine{1560             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (refEntry->schema)}
+\DoxyCodeLine{1561                 *refEntry->schema = \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_afb1ea66bb78ed9da2285c0b946d6d181}{typeless\_}};}
+\DoxyCodeLine{1562 }
+\DoxyCodeLine{1563             refEntry->~SchemaRefEntry();}
+\DoxyCodeLine{1564         \}}
+\DoxyCodeLine{1565 }
+\DoxyCodeLine{1566         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb44efaa5ed363c73554de82958b4281}{root\_}} != 0);}
+\DoxyCodeLine{1567 }
+\DoxyCodeLine{1568         \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ad85e2cdeb3cd92a19a4a9ac49fa24496}{schemaRef\_}}.ShrinkToFit(); \textcolor{comment}{// Deallocate all memory for ref}}
+\DoxyCodeLine{1569     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Object\+Type, R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+EW, rapidjson\+::\+Generic\+Schema\+Document$<$ Value\+T, Allocator $>$\+::\+Schema\+Ref\+Entry\+::schema, rapidjson\+::\+Generic\+Schema\+Document$<$ Value\+T, Allocator $>$\+::\+Schema\+Ref\+Entry\+::source, and rapidjson\+::\+Generic\+Schema\+Document$<$ Value\+T, Allocator $>$\+::\+Schema\+Ref\+Entry\+::target.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_adf6f3372013227873ed392dee1e752bf}\label{classrapidjson_1_1_generic_schema_document_adf6f3372013227873ed392dee1e752bf}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!````~GenericSchemaDocument@{$\sim$GenericSchemaDocument}}
+\index{````~GenericSchemaDocument@{$\sim$GenericSchemaDocument}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{$\sim$GenericSchemaDocument()}{~GenericSchemaDocument()}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::$\sim$\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+Definition at line 1591 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1591                              \{}
+\DoxyCodeLine{1592         \textcolor{keywordflow}{while} (!\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb08443004b8a6978bad470f2c32f998}{schemaMap\_}}.Empty())}
+\DoxyCodeLine{1593             \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb08443004b8a6978bad470f2c32f998}{schemaMap\_}}.template Pop<SchemaEntry>(1)->~SchemaEntry();}
+\DoxyCodeLine{1594 }
+\DoxyCodeLine{1595         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_afb1ea66bb78ed9da2285c0b946d6d181}{typeless\_}}) \{}
+\DoxyCodeLine{1596             \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_afb1ea66bb78ed9da2285c0b946d6d181}{typeless\_}}->~SchemaType();}
+\DoxyCodeLine{1597             Allocator::Free(\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_afb1ea66bb78ed9da2285c0b946d6d181}{typeless\_}});}
+\DoxyCodeLine{1598         \}}
+\DoxyCodeLine{1599 }
+\DoxyCodeLine{1600         \mbox{\hyperlink{rapidjson_8h_a52c941c3fdd646527cdcd42aa846a28a}{RAPIDJSON\_DELETE}}(\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a80844d6a0da89d38527883cbb19dfdac}{ownAllocator\_}});}
+\DoxyCodeLine{1601     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+L\+E\+TE.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a4792ceb26c9b362f8035f9b719086eec}\label{classrapidjson_1_1_generic_schema_document_a4792ceb26c9b362f8035f9b719086eec}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!GenericSchemaDocument@{GenericSchemaDocument}}
+\index{GenericSchemaDocument@{GenericSchemaDocument}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericSchemaDocument()}{GenericSchemaDocument()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prohibit copying. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_ab43d0cbe1c1c2512e9a38751ef7c7776}\label{classrapidjson_1_1_generic_schema_document_ab43d0cbe1c1c2512e9a38751ef7c7776}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!CreateSchema@{CreateSchema}}
+\index{CreateSchema@{CreateSchema}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{CreateSchema()}{CreateSchema()}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Create\+Schema (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}} $\ast$$\ast$}]{schema,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{Pointer\+Type}} \&}]{pointer,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&}]{v,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&}]{document }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1651 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1651                                                                                                                             \{}
+\DoxyCodeLine{1652         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.IsValid());}
+\DoxyCodeLine{1653         \textcolor{keywordflow}{if} (v.IsObject()) \{}
+\DoxyCodeLine{1654             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ad76c4e086f5052e911362f6d8b4c0e43}{HandleRefSchema}}(\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, schema, v, document)) \{}
+\DoxyCodeLine{1655                 \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{SchemaType}}* s = \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}}->Malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{SchemaType}}))) \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{SchemaType}}(\textcolor{keyword}{this}, \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, v, document, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}});}
+\DoxyCodeLine{1656                 \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb08443004b8a6978bad470f2c32f998}{schemaMap\_}}.template Push<SchemaEntry>()) SchemaEntry(\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, s, \textcolor{keyword}{true}, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}});}
+\DoxyCodeLine{1657                 \textcolor{keywordflow}{if} (schema)}
+\DoxyCodeLine{1658                     *schema = s;}
+\DoxyCodeLine{1659             \}}
+\DoxyCodeLine{1660         \}}
+\DoxyCodeLine{1661     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::pointer, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a0888d84375cd5bfb6ee55fe8997d4c5f}\label{classrapidjson_1_1_generic_schema_document_a0888d84375cd5bfb6ee55fe8997d4c5f}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!CreateSchemaRecursive@{CreateSchemaRecursive}}
+\index{CreateSchemaRecursive@{CreateSchemaRecursive}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{CreateSchemaRecursive()}{CreateSchemaRecursive()}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Create\+Schema\+Recursive (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}} $\ast$$\ast$}]{schema,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{Pointer\+Type}} \&}]{pointer,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&}]{v,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&}]{document }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1634 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1634                                                                                                                                      \{}
+\DoxyCodeLine{1635         \textcolor{keywordflow}{if} (schema)}
+\DoxyCodeLine{1636             *schema = \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_afb1ea66bb78ed9da2285c0b946d6d181}{typeless\_}};}
+\DoxyCodeLine{1637 }
+\DoxyCodeLine{1638         \textcolor{keywordflow}{if} (v.GetType() == \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4acf030b422a32c3647c7c5973bd4dd0a9}{kObjectType}}) \{}
+\DoxyCodeLine{1639             \textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{SchemaType}}* s = \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ae577eb9833e3a194ecb6b832434bd67d}{GetSchema}}(\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}});}
+\DoxyCodeLine{1640             \textcolor{keywordflow}{if} (!s)}
+\DoxyCodeLine{1641                 \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ab43d0cbe1c1c2512e9a38751ef7c7776}{CreateSchema}}(schema, \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, v, document);}
+\DoxyCodeLine{1642 }
+\DoxyCodeLine{1643             \textcolor{keywordflow}{for} (\textcolor{keyword}{typename} ValueType::ConstMemberIterator itr = v.MemberBegin(); itr != v.MemberEnd(); ++itr)}
+\DoxyCodeLine{1644                 \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a0888d84375cd5bfb6ee55fe8997d4c5f}{CreateSchemaRecursive}}(0, \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Append(itr->name, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}}), itr->value, document);}
+\DoxyCodeLine{1645         \}}
+\DoxyCodeLine{1646         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (v.GetType() == \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a058c622e1e7d59419ae58b895cbce468}{kArrayType}})}
+\DoxyCodeLine{1647             \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} i = 0; i < v.Size(); i++)}
+\DoxyCodeLine{1648                 \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a0888d84375cd5bfb6ee55fe8997d4c5f}{CreateSchemaRecursive}}(0, \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Append(i, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}}), v[i], document);}
+\DoxyCodeLine{1649     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Array\+Type, rapidjson\+::k\+Object\+Type, and rapidjson\+::pointer.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a003009a11cbf409bf1ccbd546ec3c8e0}\label{classrapidjson_1_1_generic_schema_document_a003009a11cbf409bf1ccbd546ec3c8e0}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!GetPointer@{GetPointer}}
+\index{GetPointer@{GetPointer}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{GetPointer()}{GetPointer()}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{Pointer\+Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+Pointer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}} $\ast$}]{schema }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1717 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1717                                                            \{}
+\DoxyCodeLine{1718         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} SchemaEntry* target = \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb08443004b8a6978bad470f2c32f998}{schemaMap\_}}.template Bottom<SchemaEntry>(); target != \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb08443004b8a6978bad470f2c32f998}{schemaMap\_}}.template End<SchemaEntry>(); ++target)}
+\DoxyCodeLine{1719             \textcolor{keywordflow}{if} (schema == target->schema)}
+\DoxyCodeLine{1720                 \textcolor{keywordflow}{return} target->pointer;}
+\DoxyCodeLine{1721         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{PointerType}}();}
+\DoxyCodeLine{1722     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a8b2ac6de85dc9c1fb4f4d0be4aeb2d6a}\label{classrapidjson_1_1_generic_schema_document_a8b2ac6de85dc9c1fb4f4d0be4aeb2d6a}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!GetRoot@{GetRoot}}
+\index{GetRoot@{GetRoot}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{GetRoot()}{GetRoot()}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the root schema. 
+
+
+
+Definition at line 1606 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1606 \{ \textcolor{keywordflow}{return} *\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb44efaa5ed363c73554de82958b4281}{root\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_ae577eb9833e3a194ecb6b832434bd67d}\label{classrapidjson_1_1_generic_schema_document_ae577eb9833e3a194ecb6b832434bd67d}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!GetSchema@{GetSchema}}
+\index{GetSchema@{GetSchema}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{GetSchema()}{GetSchema()}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+Schema (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{Pointer\+Type}} \&}]{pointer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1710 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1710                                                                   \{}
+\DoxyCodeLine{1711         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} SchemaEntry* target = \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb08443004b8a6978bad470f2c32f998}{schemaMap\_}}.template Bottom<SchemaEntry>(); target != \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb08443004b8a6978bad470f2c32f998}{schemaMap\_}}.template End<SchemaEntry>(); ++target)}
+\DoxyCodeLine{1712             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}} == target->pointer)}
+\DoxyCodeLine{1713                 \textcolor{keywordflow}{return} target->schema;}
+\DoxyCodeLine{1714         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{1715     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::pointer.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_ae4ee843b9a681118eab464f25490eab9}\label{classrapidjson_1_1_generic_schema_document_ae4ee843b9a681118eab464f25490eab9}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!GetTypeless@{GetTypeless}}
+\index{GetTypeless@{GetTypeless}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{GetTypeless()}{GetTypeless()}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+Typeless (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1724 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1724 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_afb1ea66bb78ed9da2285c0b946d6d181}{typeless\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a55b013a5f3f213d198ac0205ba6ea9b0}\label{classrapidjson_1_1_generic_schema_document_a55b013a5f3f213d198ac0205ba6ea9b0}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!GetURI@{GetURI}}
+\index{GetURI@{GetURI}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{GetURI()}{GetURI()}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a72e8240701d707953bfd806cddc995b6}{U\+R\+I\+Type}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+U\+RI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1603 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1603 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a5d27a5ae1ddf4ffd702269654168f826}{uri\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_ad76c4e086f5052e911362f6d8b4c0e43}\label{classrapidjson_1_1_generic_schema_document_ad76c4e086f5052e911362f6d8b4c0e43}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!HandleRefSchema@{HandleRefSchema}}
+\index{HandleRefSchema@{HandleRefSchema}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{HandleRefSchema()}{HandleRefSchema()}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Handle\+Ref\+Schema (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{Pointer\+Type}} \&}]{source,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}} $\ast$$\ast$}]{schema,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&}]{v,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{Value\+Type}} \&}]{document }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1663 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1663                                                                                                                               \{}
+\DoxyCodeLine{1664         \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_af9b82162834b30bdcbe93cb065d0aedd}{Ch}} kRefString[] = \{ \textcolor{charliteral}{'\$'}, \textcolor{charliteral}{'r'}, \textcolor{charliteral}{'e'}, \textcolor{charliteral}{'f'}, \textcolor{charliteral}{'\(\backslash\)0'} \};}
+\DoxyCodeLine{1665         \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{ValueType}} kRefValue(kRefString, 4);}
+\DoxyCodeLine{1666 }
+\DoxyCodeLine{1667         \textcolor{keyword}{typename} ValueType::ConstMemberIterator itr = v.FindMember(kRefValue);}
+\DoxyCodeLine{1668         \textcolor{keywordflow}{if} (itr == v.MemberEnd())}
+\DoxyCodeLine{1669             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{1670 }
+\DoxyCodeLine{1671         \textcolor{keywordflow}{if} (itr->value.IsString()) \{}
+\DoxyCodeLine{1672             \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} len = itr->value.GetStringLength();}
+\DoxyCodeLine{1673             \textcolor{keywordflow}{if} (len > 0) \{}
+\DoxyCodeLine{1674                 \textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_af9b82162834b30bdcbe93cb065d0aedd}{Ch}}* s = itr->value.GetString();}
+\DoxyCodeLine{1675                 \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} i = 0;}
+\DoxyCodeLine{1676                 \textcolor{keywordflow}{while} (i < len \&\& s[i] != \textcolor{charliteral}{'\#'}) \textcolor{comment}{// Find the first \#}}
+\DoxyCodeLine{1677                     i++;}
+\DoxyCodeLine{1678 }
+\DoxyCodeLine{1679                 \textcolor{keywordflow}{if} (i > 0) \{ \textcolor{comment}{// Remote reference, resolve immediately}}
+\DoxyCodeLine{1680                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a34513d08173e3499f3b6b906fdb7ce6a}{remoteProvider\_}}) \{}
+\DoxyCodeLine{1681                         \textcolor{keywordflow}{if} (\textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aeebf51ef6353f6a01d6f6618da6d0865}{GenericSchemaDocument}}* remoteDocument = \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a34513d08173e3499f3b6b906fdb7ce6a}{remoteProvider\_}}->\mbox{\hyperlink{classrapidjson_1_1_i_generic_remote_schema_document_provider_a41dc360abb19df5a09c1ed1a83ec683c}{GetRemoteDocument}}(s, i)) \{}
+\DoxyCodeLine{1682                             \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{PointerType}} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}(\&s[i], len - i, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}});}
+\DoxyCodeLine{1683                             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.IsValid()) \{}
+\DoxyCodeLine{1684                                 \textcolor{keywordflow}{if} (\textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{SchemaType}}* sc = remoteDocument->GetSchema(\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}})) \{}
+\DoxyCodeLine{1685                                     \textcolor{keywordflow}{if} (schema)}
+\DoxyCodeLine{1686                                         *schema = sc;}
+\DoxyCodeLine{1687                                     \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_adb08443004b8a6978bad470f2c32f998}{schemaMap\_}}.template Push<SchemaEntry>()) SchemaEntry(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, const\_cast<SchemaType*>(sc), \textcolor{keyword}{false}, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}});}
+\DoxyCodeLine{1688                                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{1689                                 \}}
+\DoxyCodeLine{1690                             \}}
+\DoxyCodeLine{1691                         \}}
+\DoxyCodeLine{1692                     \}}
+\DoxyCodeLine{1693                 \}}
+\DoxyCodeLine{1694                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (s[i] == \textcolor{charliteral}{'\#'}) \{ \textcolor{comment}{// Local reference, defer resolution}}
+\DoxyCodeLine{1695                     \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a61540c0f8aa542760ae03257a0e6dab7}{PointerType}} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}(\&s[i], len - i, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}});}
+\DoxyCodeLine{1696                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.IsValid()) \{}
+\DoxyCodeLine{1697                         \textcolor{keywordflow}{if} (\textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a87eb1db271e7f57442802a5f4f6178f3}{ValueType}}* nv = \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Get(document))}
+\DoxyCodeLine{1698                             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ad76c4e086f5052e911362f6d8b4c0e43}{HandleRefSchema}}(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, schema, *nv, document))}
+\DoxyCodeLine{1699                                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{1700 }
+\DoxyCodeLine{1701                         \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ad85e2cdeb3cd92a19a4a9ac49fa24496}{schemaRef\_}}.template Push<SchemaRefEntry>()) SchemaRefEntry(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, schema, \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}{allocator\_}});}
+\DoxyCodeLine{1702                         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{1703                     \}}
+\DoxyCodeLine{1704                 \}}
+\DoxyCodeLine{1705             \}}
+\DoxyCodeLine{1706         \}}
+\DoxyCodeLine{1707         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{1708     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::pointer, and rapidjson\+::source.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a865332b0146d97f23d037866ba264bed}\label{classrapidjson_1_1_generic_schema_document_a865332b0146d97f23d037866ba264bed}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prohibit assignment. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_afcc03e6ba8f1a819e1a028c31ad38347}\label{classrapidjson_1_1_generic_schema_document_afcc03e6ba8f1a819e1a028c31ad38347}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!GenericSchemaValidator@{GenericSchemaValidator}}
+\index{GenericSchemaValidator@{GenericSchemaValidator}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericSchemaValidator}{GenericSchemaValidator}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+template$<$typename , typename , typename $>$ \\
+friend class \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator}{Generic\+Schema\+Validator}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 1513 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a706511849688d9245fc37109f02a03c4}\label{classrapidjson_1_1_generic_schema_document_a706511849688d9245fc37109f02a03c4}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!internal::Schema$<$ GenericSchemaDocument $>$@{internal::Schema$<$ GenericSchemaDocument $>$}}
+\index{internal::Schema$<$ GenericSchemaDocument $>$@{internal::Schema$<$ GenericSchemaDocument $>$}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{internal::Schema$<$ GenericSchemaDocument $>$}{internal::Schema< GenericSchemaDocument >}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+friend class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema}{internal\+::\+Schema}}$<$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}} $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 1511 of file schema.\+h.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}\label{classrapidjson_1_1_generic_schema_document_a2e08550dc68553144a6d8d1cdde89011}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!allocator\_@{allocator\_}}
+\index{allocator\_@{allocator\_}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{allocator\_}{allocator\_}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1730 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a5557711a06945d5fa29cd89104fef97c}\label{classrapidjson_1_1_generic_schema_document_a5557711a06945d5fa29cd89104fef97c}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!kInitialSchemaMapSize@{kInitialSchemaMapSize}}
+\index{kInitialSchemaMapSize@{kInitialSchemaMapSize}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{kInitialSchemaMapSize}{kInitialSchemaMapSize}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+const size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::k\+Initial\+Schema\+Map\+Size = 64\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 1726 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_ade647f0de2c0f37bcfd34975759e9123}\label{classrapidjson_1_1_generic_schema_document_ade647f0de2c0f37bcfd34975759e9123}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!kInitialSchemaRefSize@{kInitialSchemaRefSize}}
+\index{kInitialSchemaRefSize@{kInitialSchemaRefSize}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{kInitialSchemaRefSize}{kInitialSchemaRefSize}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+const size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::k\+Initial\+Schema\+Ref\+Size = 64\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 1727 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a80844d6a0da89d38527883cbb19dfdac}\label{classrapidjson_1_1_generic_schema_document_a80844d6a0da89d38527883cbb19dfdac}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!ownAllocator\_@{ownAllocator\_}}
+\index{ownAllocator\_@{ownAllocator\_}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{ownAllocator\_}{ownAllocator\_}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::own\+Allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1731 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a34513d08173e3499f3b6b906fdb7ce6a}\label{classrapidjson_1_1_generic_schema_document_a34513d08173e3499f3b6b906fdb7ce6a}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!remoteProvider\_@{remoteProvider\_}}
+\index{remoteProvider\_@{remoteProvider\_}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{remoteProvider\_}{remoteProvider\_}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_ab2764f2258889b3262eff6293d7ca015}{I\+Remote\+Schema\+Document\+Provider\+Type}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::remote\+Provider\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1729 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_adb44efaa5ed363c73554de82958b4281}\label{classrapidjson_1_1_generic_schema_document_adb44efaa5ed363c73554de82958b4281}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!root\_@{root\_}}
+\index{root\_@{root\_}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{root\_}{root\_}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::root\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Root schema. 
+
+
+
+Definition at line 1732 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_adb08443004b8a6978bad470f2c32f998}\label{classrapidjson_1_1_generic_schema_document_adb08443004b8a6978bad470f2c32f998}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!schemaMap\_@{schemaMap\_}}
+\index{schemaMap\_@{schemaMap\_}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{schemaMap\_}{schemaMap\_}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$>$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::schema\+Map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1734 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_ad85e2cdeb3cd92a19a4a9ac49fa24496}\label{classrapidjson_1_1_generic_schema_document_ad85e2cdeb3cd92a19a4a9ac49fa24496}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!schemaRef\_@{schemaRef\_}}
+\index{schemaRef\_@{schemaRef\_}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{schemaRef\_}{schemaRef\_}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$>$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::schema\+Ref\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1735 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_afb1ea66bb78ed9da2285c0b946d6d181}\label{classrapidjson_1_1_generic_schema_document_afb1ea66bb78ed9da2285c0b946d6d181}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!typeless\_@{typeless\_}}
+\index{typeless\_@{typeless\_}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{typeless\_}{typeless\_}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_aaf4e7f371de938025f7ed4be3b83266e}{Schema\+Type}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::typeless\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1733 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_schema_document_a5d27a5ae1ddf4ffd702269654168f826}\label{classrapidjson_1_1_generic_schema_document_a5d27a5ae1ddf4ffd702269654168f826}} 
+\index{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}!uri\_@{uri\_}}
+\index{uri\_@{uri\_}!rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$@{rapidjson::GenericSchemaDocument$<$ ValueT, Allocator $>$}}
+\subsubsection{\texorpdfstring{uri\_}{uri\_}}
+{\footnotesize\ttfamily template$<$typename ValueT , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document_a72e8240701d707953bfd806cddc995b6}{U\+R\+I\+Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document}}$<$ ValueT, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::uri\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1736 of file schema.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{fwd_8h}{fwd.\+h}}\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{schema_8h}{schema.\+h}}\end{DoxyCompactItemize}

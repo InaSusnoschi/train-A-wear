@@ -25,9 +25,9 @@ var menudata={children:[
 {text:"Main Page",url:"index.html"},
 {text:"Related Pages",url:"pages.html"},
 {text:"Modules",url:"modules.html"},
-{text:"Namespaces",url:"namespaces.html",children:[
-{text:"Namespace List",url:"namespaces.html"},
-{text:"Namespace Members",url:"namespacemembers.html",children:[
+{text:"Packages",url:"namespaces.html",children:[
+{text:"Packages",url:"namespaces.html"},
+{text:"Package Functions",url:"namespacemembers.html",children:[
 {text:"All",url:"namespacemembers.html",children:[
 {text:"a",url:"namespacemembers.html#index_a"},
 {text:"c",url:"namespacemembers.html#index_c"},
@@ -67,7 +67,7 @@ var menudata={children:[
 {text:"Data Structures",url:"annotated.html",children:[
 {text:"Data Structures",url:"annotated.html"},
 {text:"Data Structure Index",url:"classes.html"},
-{text:"Class Hierarchy",url:"inherits.html"},
+{text:"Class Hierarchy",url:"hierarchy.html"},
 {text:"Data Fields",url:"functions.html",children:[
 {text:"All",url:"functions.html",children:[
 {text:"a",url:"functions.html#index_a"},

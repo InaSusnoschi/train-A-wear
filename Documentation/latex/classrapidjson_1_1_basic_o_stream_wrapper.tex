@@ -1,0 +1,283 @@
+\hypertarget{classrapidjson_1_1_basic_o_stream_wrapper}{}\section{rapidjson\+::Basic\+O\+Stream\+Wrapper$<$ Stream\+Type $>$ Class Template Reference}
+\label{classrapidjson_1_1_basic_o_stream_wrapper}\index{rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}}
+
+
+Wrapper of {\ttfamily std\+::basic\+\_\+ostream} into Rapid\+J\+S\+ON\textquotesingle{}s \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept.  
+
+
+
+
+{\ttfamily \#include $<$ostreamwrapper.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Stream\+Type\+::char\+\_\+type \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a615d4f601af4c039c9087a50578226b0}{Ch}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a68222d18ea4a16917b374ca53f78bbcd}{Basic\+O\+Stream\+Wrapper}} (Stream\+Type \&stream)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_ae4e99bf009dd43c7e760eebae4e732ac}{Put}} (\mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a615d4f601af4c039c9087a50578226b0}{Ch}} c)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a4d981433f0df0fbcaed206d11642b183}{Flush}} ()
+\item 
+char \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_ac3baaf203553871fbd849368e1b5526e}{Peek}} () const
+\item 
+char \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a4ea92ceb4c1fae9cdd1912f2ab07dd73}{Take}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a6bf51fa9e5692dceaf98b0cceba3f7e2}{Tell}} () const
+\item 
+char $\ast$ \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a0d9c9c5d11e53ea486cf555fb43d6fe2}{Put\+Begin}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a8e1c33024d08945a32b85aeba87dca82}{Put\+End}} (char $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a9a5759c12a6496917b1776dade393730}{Basic\+O\+Stream\+Wrapper}} (const \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{Basic\+O\+Stream\+Wrapper}} \&)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{Basic\+O\+Stream\+Wrapper}} \& \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a7c64e252845130e2d77dc5f934c305a7}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{Basic\+O\+Stream\+Wrapper}} \&)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Stream\+Type \& \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a35af4b2c8ccfb61d87200d57e6f17076}{stream\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Stream\+Type$>$\newline
+class rapidjson\+::\+Basic\+O\+Stream\+Wrapper$<$ Stream\+Type $>$}
+
+Wrapper of {\ttfamily std\+::basic\+\_\+ostream} into Rapid\+J\+S\+ON\textquotesingle{}s \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept. 
+
+The classes can be wrapped including but not limited to\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily std\+::ostringstream} 
+\item {\ttfamily std\+::stringstream} 
+\item {\ttfamily std\+::wpstringstream} 
+\item {\ttfamily std\+::wstringstream} 
+\item {\ttfamily std\+::ifstream} 
+\item {\ttfamily std\+::fstream} 
+\item {\ttfamily std\+::wofstream} 
+\item {\ttfamily std\+::wfstream} 
+\end{DoxyItemize}
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Stream\+Type} & Class derived from {\ttfamily std\+::basic\+\_\+ostream}. \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 45 of file ostreamwrapper.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_o_stream_wrapper_a615d4f601af4c039c9087a50578226b0}\label{classrapidjson_1_1_basic_o_stream_wrapper_a615d4f601af4c039c9087a50578226b0}} 
+\index{rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+typedef Stream\+Type\+::char\+\_\+type \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{rapidjson\+::\+Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::\mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a615d4f601af4c039c9087a50578226b0}{Ch}}}
+
+
+
+Definition at line 47 of file ostreamwrapper.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_o_stream_wrapper_a68222d18ea4a16917b374ca53f78bbcd}\label{classrapidjson_1_1_basic_o_stream_wrapper_a68222d18ea4a16917b374ca53f78bbcd}} 
+\index{rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}!BasicOStreamWrapper@{BasicOStreamWrapper}}
+\index{BasicOStreamWrapper@{BasicOStreamWrapper}!rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{BasicOStreamWrapper()}{BasicOStreamWrapper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{rapidjson\+::\+Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::\mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{Basic\+O\+Stream\+Wrapper}} (\begin{DoxyParamCaption}\item[{Stream\+Type \&}]{stream }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file ostreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48 : \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a35af4b2c8ccfb61d87200d57e6f17076}{stream\_}}(stream) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_o_stream_wrapper_a9a5759c12a6496917b1776dade393730}\label{classrapidjson_1_1_basic_o_stream_wrapper_a9a5759c12a6496917b1776dade393730}} 
+\index{rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}!BasicOStreamWrapper@{BasicOStreamWrapper}}
+\index{BasicOStreamWrapper@{BasicOStreamWrapper}!rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{BasicOStreamWrapper()}{BasicOStreamWrapper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{rapidjson\+::\+Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::\mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{Basic\+O\+Stream\+Wrapper}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_o_stream_wrapper_a4d981433f0df0fbcaed206d11642b183}\label{classrapidjson_1_1_basic_o_stream_wrapper_a4d981433f0df0fbcaed206d11642b183}} 
+\index{rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}!Flush@{Flush}}
+\index{Flush@{Flush}!rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{rapidjson\+::\+Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 54 of file ostreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54                  \{}
+\DoxyCodeLine{55         \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a35af4b2c8ccfb61d87200d57e6f17076}{stream\_}}.flush();}
+\DoxyCodeLine{56     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_o_stream_wrapper_a7c64e252845130e2d77dc5f934c305a7}\label{classrapidjson_1_1_basic_o_stream_wrapper_a7c64e252845130e2d77dc5f934c305a7}} 
+\index{rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{Basic\+O\+Stream\+Wrapper}}\& \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{rapidjson\+::\+Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_o_stream_wrapper_ac3baaf203553871fbd849368e1b5526e}\label{classrapidjson_1_1_basic_o_stream_wrapper_ac3baaf203553871fbd849368e1b5526e}} 
+\index{rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}!Peek@{Peek}}
+\index{Peek@{Peek}!rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+char \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{rapidjson\+::\+Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 59 of file ostreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_o_stream_wrapper_ae4e99bf009dd43c7e760eebae4e732ac}\label{classrapidjson_1_1_basic_o_stream_wrapper_ae4e99bf009dd43c7e760eebae4e732ac}} 
+\index{rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}!Put@{Put}}
+\index{Put@{Put}!rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{rapidjson\+::\+Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a615d4f601af4c039c9087a50578226b0}{Ch}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 50 of file ostreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                    \{}
+\DoxyCodeLine{51         \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper_a35af4b2c8ccfb61d87200d57e6f17076}{stream\_}}.put(c);}
+\DoxyCodeLine{52     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_o_stream_wrapper_a0d9c9c5d11e53ea486cf555fb43d6fe2}\label{classrapidjson_1_1_basic_o_stream_wrapper_a0d9c9c5d11e53ea486cf555fb43d6fe2}} 
+\index{rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}!PutBegin@{PutBegin}}
+\index{PutBegin@{PutBegin}!rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{PutBegin()}{PutBegin()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+char$\ast$ \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{rapidjson\+::\+Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Put\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 62 of file ostreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_o_stream_wrapper_a8e1c33024d08945a32b85aeba87dca82}\label{classrapidjson_1_1_basic_o_stream_wrapper_a8e1c33024d08945a32b85aeba87dca82}} 
+\index{rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}!PutEnd@{PutEnd}}
+\index{PutEnd@{PutEnd}!rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{PutEnd()}{PutEnd()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{rapidjson\+::\+Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Put\+End (\begin{DoxyParamCaption}\item[{char $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 63 of file ostreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_o_stream_wrapper_a4ea92ceb4c1fae9cdd1912f2ab07dd73}\label{classrapidjson_1_1_basic_o_stream_wrapper_a4ea92ceb4c1fae9cdd1912f2ab07dd73}} 
+\index{rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}!Take@{Take}}
+\index{Take@{Take}!rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Take()}{Take()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+char \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{rapidjson\+::\+Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Take (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 60 of file ostreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_o_stream_wrapper_a6bf51fa9e5692dceaf98b0cceba3f7e2}\label{classrapidjson_1_1_basic_o_stream_wrapper_a6bf51fa9e5692dceaf98b0cceba3f7e2}} 
+\index{rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}!Tell@{Tell}}
+\index{Tell@{Tell}!rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Tell()}{Tell()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{rapidjson\+::\+Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Tell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 61 of file ostreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_o_stream_wrapper_a35af4b2c8ccfb61d87200d57e6f17076}\label{classrapidjson_1_1_basic_o_stream_wrapper_a35af4b2c8ccfb61d87200d57e6f17076}} 
+\index{rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}!stream\_@{stream\_}}
+\index{stream\_@{stream\_}!rapidjson::BasicOStreamWrapper$<$ StreamType $>$@{rapidjson::BasicOStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{stream\_}{stream\_}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+Stream\+Type\& \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{rapidjson\+::\+Basic\+O\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::stream\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 69 of file ostreamwrapper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{ostreamwrapper_8h}{ostreamwrapper.\+h}}\end{DoxyCompactItemize}

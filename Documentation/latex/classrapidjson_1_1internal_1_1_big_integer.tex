@@ -1,0 +1,747 @@
+\hypertarget{classrapidjson_1_1internal_1_1_big_integer}{}\section{rapidjson\+::internal\+::Big\+Integer Class Reference}
+\label{classrapidjson_1_1internal_1_1_big_integer}\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+
+
+{\ttfamily \#include $<$biginteger.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a062d319ca53cf00c0ca9b52fbaf4976d}{Big\+Integer}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \&rhs)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_aa181bc80ab4638c4eec147cac1516d4e}{Big\+Integer}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} u)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a8a62a7693c0ac5f0394557ad36449e1f}{Big\+Integer}} (const char $\ast$decimals, size\+\_\+t length)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a578cf1ad8e1e0bfedf2dc9be73562a31}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \&rhs)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_acb27796a1f617fc8ca1734852f9049e7}{operator=}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} u)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_ab313deab130f74afda260cbc7f150c56}{operator+=}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} u)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_aaaa5b1b2600d4de61f8303c516376925}{operator $\ast$=}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} u)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_aa0861877d91cc136b1a96d821acc335e}{operator $\ast$=}} (\mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} u)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a40e01848b5849e12f7bb89c9939c877e}{operator$<$$<$=}} (size\+\_\+t shift)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_af8a7061cd878d855c22a80dd48a44b15}{operator==}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \&rhs) const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_afcc8c8b661e70648683f11c4211df380}{operator==}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}} rhs) const
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a60c5fbdcd9992177d25bda441e5d49bb}{Multiply\+Pow5}} (unsigned exp)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a23baf787c5ab4a2992bed7f7e260ed9e}{Difference}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \&rhs, \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} $\ast$out) const
+\item 
+int \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a4fe28d5e962cd9ad471536508ce47fdb}{Compare}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \&rhs) const
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a2eabd50da3448f21c61cc0ba487a4b17}{Get\+Count}} () const
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_af6712b16f2f289ab2b37b7c712baf557}{Get\+Digit}} (size\+\_\+t index) const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a5db6206954723ed86afaf937a3b9dd5c}{Is\+Zero}} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_ae57bd085399181c535bdc25798d77542}{Append\+Decimal64}} (const char $\ast$begin, const char $\ast$end)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a2dc125d5ff140b3f63de36e59e223d93}{Push\+Back}} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}} digit)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_ad51eecf2efb0a806db48913f9dcb13a6}{Parse\+Uint64}} (const char $\ast$begin, const char $\ast$end)
+\item 
+static \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a58f2555329537d758530430c5baf1e49}{Mul\+Add64}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}, \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} b, \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} k, \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} $\ast$out\+High)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\+\_\+}} \mbox{[}\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_aad4550b1fb2215bbbdc92f1773bc988c}{k\+Capacity}}\mbox{]}
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_aef84cafb23eff42fdca40ef9d9fc7f98}{k\+Bit\+Count}} = 3328
+\item 
+static const size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_aad4550b1fb2215bbbdc92f1773bc988c}{k\+Capacity}} = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_aef84cafb23eff42fdca40ef9d9fc7f98}{k\+Bit\+Count}} / sizeof(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}})
+\item 
+static const size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a947ac91b3471b15a442e9c90db566658}{k\+Type\+Bit}} = sizeof(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}}) $\ast$ 8
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file biginteger.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}\label{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!Type@{Type}}
+\index{Type@{Type}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{rapidjson\+::internal\+::\+Big\+Integer\+::\+Type}}}
+
+
+
+Definition at line 30 of file biginteger.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a062d319ca53cf00c0ca9b52fbaf4976d}\label{classrapidjson_1_1internal_1_1_big_integer_a062d319ca53cf00c0ca9b52fbaf4976d}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!BigInteger@{BigInteger}}
+\index{BigInteger@{BigInteger}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{BigInteger()}{BigInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily rapidjson\+::internal\+::\+Big\+Integer\+::\+Big\+Integer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 32 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{32                                       : \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}}(rhs.count\_) \{}
+\DoxyCodeLine{33         std::memcpy(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}, rhs.digits\_, \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}}));}
+\DoxyCodeLine{34     \}}
+
+\end{DoxyCode}
+
+
+References digits\+\_\+.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_aa181bc80ab4638c4eec147cac1516d4e}\label{classrapidjson_1_1internal_1_1_big_integer_aa181bc80ab4638c4eec147cac1516d4e}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!BigInteger@{BigInteger}}
+\index{BigInteger@{BigInteger}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{BigInteger()}{BigInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily rapidjson\+::internal\+::\+Big\+Integer\+::\+Big\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{u }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 36 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36                                     : \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}}(1) \{}
+\DoxyCodeLine{37         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[0] = u;}
+\DoxyCodeLine{38     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a8a62a7693c0ac5f0394557ad36449e1f}\label{classrapidjson_1_1internal_1_1_big_integer_a8a62a7693c0ac5f0394557ad36449e1f}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!BigInteger@{BigInteger}}
+\index{BigInteger@{BigInteger}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{BigInteger()}{BigInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily rapidjson\+::internal\+::\+Big\+Integer\+::\+Big\+Integer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{decimals,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Definition at line 40 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                                                     : \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}}(1) \{}
+\DoxyCodeLine{41         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(length > 0);}
+\DoxyCodeLine{42         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[0] = 0;}
+\DoxyCodeLine{43         \textcolor{keywordtype}{size\_t} i = 0;}
+\DoxyCodeLine{44         \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} kMaxDigitPerIteration = 19;  \textcolor{comment}{// 2\string^64 = 18446744073709551616 > 10\string^19}}
+\DoxyCodeLine{45         \textcolor{keywordflow}{while} (length >= kMaxDigitPerIteration) \{}
+\DoxyCodeLine{46             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_ae57bd085399181c535bdc25798d77542}{AppendDecimal64}}(decimals + i, decimals + i + kMaxDigitPerIteration);}
+\DoxyCodeLine{47             length -= kMaxDigitPerIteration;}
+\DoxyCodeLine{48             i += kMaxDigitPerIteration;}
+\DoxyCodeLine{49         \}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         \textcolor{keywordflow}{if} (length > 0)}
+\DoxyCodeLine{52             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_ae57bd085399181c535bdc25798d77542}{AppendDecimal64}}(decimals + i, decimals + i + length);}
+\DoxyCodeLine{53     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_ae57bd085399181c535bdc25798d77542}\label{classrapidjson_1_1internal_1_1_big_integer_ae57bd085399181c535bdc25798d77542}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!AppendDecimal64@{AppendDecimal64}}
+\index{AppendDecimal64@{AppendDecimal64}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{AppendDecimal64()}{AppendDecimal64()}}
+{\footnotesize\ttfamily void rapidjson\+::internal\+::\+Big\+Integer\+::\+Append\+Decimal64 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{begin,  }\item[{const char $\ast$}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 224 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{224                                                              \{}
+\DoxyCodeLine{225         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} u = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_ad51eecf2efb0a806db48913f9dcb13a6}{ParseUint64}}(begin, end);}
+\DoxyCodeLine{226         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a5db6206954723ed86afaf937a3b9dd5c}{IsZero}}())}
+\DoxyCodeLine{227             *\textcolor{keyword}{this} = u;}
+\DoxyCodeLine{228         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{229             \textcolor{keywordtype}{unsigned} exp = static\_cast<unsigned>(end - begin);}
+\DoxyCodeLine{230             (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a60c5fbdcd9992177d25bda441e5d49bb}{MultiplyPow5}}(exp) <<= exp) += u;   \textcolor{comment}{// *this = *this * 10\string^exp + u}}
+\DoxyCodeLine{231         \}}
+\DoxyCodeLine{232     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a4fe28d5e962cd9ad471536508ce47fdb}\label{classrapidjson_1_1internal_1_1_big_integer_a4fe28d5e962cd9ad471536508ce47fdb}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!Compare@{Compare}}
+\index{Compare@{Compare}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{Compare()}{Compare()}}
+{\footnotesize\ttfamily int rapidjson\+::internal\+::\+Big\+Integer\+::\+Compare (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 208 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{208                                              \{}
+\DoxyCodeLine{209         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} != rhs.count\_)}
+\DoxyCodeLine{210             \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} < rhs.count\_ ? -1 : 1;}
+\DoxyCodeLine{211 }
+\DoxyCodeLine{212         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}}; i-- > 0;)}
+\DoxyCodeLine{213             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[i] != rhs.digits\_[i])}
+\DoxyCodeLine{214                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[i] < rhs.digits\_[i] ? -1 : 1;}
+\DoxyCodeLine{215 }
+\DoxyCodeLine{216         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{217     \}}
+
+\end{DoxyCode}
+
+
+References count\+\_\+, and digits\+\_\+.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Check\+Within\+Half\+U\+L\+P().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a23baf787c5ab4a2992bed7f7e260ed9e}\label{classrapidjson_1_1internal_1_1_big_integer_a23baf787c5ab4a2992bed7f7e260ed9e}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!Difference@{Difference}}
+\index{Difference@{Difference}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{Difference()}{Difference()}}
+{\footnotesize\ttfamily bool rapidjson\+::internal\+::\+Big\+Integer\+::\+Difference (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \&}]{rhs,  }\item[{\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} $\ast$}]{out }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 186 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{186                                                                   \{}
+\DoxyCodeLine{187         \textcolor{keywordtype}{int} cmp = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a4fe28d5e962cd9ad471536508ce47fdb}{Compare}}(rhs);}
+\DoxyCodeLine{188         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(cmp != 0);}
+\DoxyCodeLine{189         \textcolor{keyword}{const} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a062d319ca53cf00c0ca9b52fbaf4976d}{BigInteger}} *\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}, *b;  \textcolor{comment}{// Makes a > b}}
+\DoxyCodeLine{190         \textcolor{keywordtype}{bool} ret;}
+\DoxyCodeLine{191         \textcolor{keywordflow}{if} (cmp < 0) \{ \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} = \&rhs; b = \textcolor{keyword}{this}; ret = \textcolor{keyword}{true}; \}}
+\DoxyCodeLine{192         \textcolor{keywordflow}{else}         \{ \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} = \textcolor{keyword}{this}; b = \&rhs; ret = \textcolor{keyword}{false}; \}}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}} borrow = 0;}
+\DoxyCodeLine{195         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}->count\_; i++) \{}
+\DoxyCodeLine{196             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}} d = \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}->digits\_[i] - borrow;}
+\DoxyCodeLine{197             \textcolor{keywordflow}{if} (i < b->\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}})}
+\DoxyCodeLine{198                 d -= b->digits\_[i];}
+\DoxyCodeLine{199             borrow = (d > \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}->digits\_[i]) ? 1 : 0;}
+\DoxyCodeLine{200             out->digits\_[i] = d;}
+\DoxyCodeLine{201             \textcolor{keywordflow}{if} (d != 0)}
+\DoxyCodeLine{202                 out->count\_ = i + 1;}
+\DoxyCodeLine{203         \}}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205         \textcolor{keywordflow}{return} ret;}
+\DoxyCodeLine{206     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::a, count\+\_\+, digits\+\_\+, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Check\+Within\+Half\+U\+L\+P().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a2eabd50da3448f21c61cc0ba487a4b17}\label{classrapidjson_1_1internal_1_1_big_integer_a2eabd50da3448f21c61cc0ba487a4b17}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!GetCount@{GetCount}}
+\index{GetCount@{GetCount}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{GetCount()}{GetCount()}}
+{\footnotesize\ttfamily size\+\_\+t rapidjson\+::internal\+::\+Big\+Integer\+::\+Get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 219 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{219 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_af6712b16f2f289ab2b37b7c712baf557}\label{classrapidjson_1_1internal_1_1_big_integer_af6712b16f2f289ab2b37b7c712baf557}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!GetDigit@{GetDigit}}
+\index{GetDigit@{GetDigit}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{GetDigit()}{GetDigit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}} rapidjson\+::internal\+::\+Big\+Integer\+::\+Get\+Digit (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 220 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{220 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(index < \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}}); \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[index]; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a5db6206954723ed86afaf937a3b9dd5c}\label{classrapidjson_1_1internal_1_1_big_integer_a5db6206954723ed86afaf937a3b9dd5c}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!IsZero@{IsZero}}
+\index{IsZero@{IsZero}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{IsZero()}{IsZero()}}
+{\footnotesize\ttfamily bool rapidjson\+::internal\+::\+Big\+Integer\+::\+Is\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 221 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{221 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} == 1 \&\& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[0] == 0; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a58f2555329537d758530430c5baf1e49}\label{classrapidjson_1_1internal_1_1_big_integer_a58f2555329537d758530430c5baf1e49}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!MulAdd64@{MulAdd64}}
+\index{MulAdd64@{MulAdd64}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{MulAdd64()}{MulAdd64()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Big\+Integer\+::\+Mul\+Add64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{a,  }\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{b,  }\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{k,  }\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} $\ast$}]{out\+High }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 249 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{249                                                                                     \{}
+\DoxyCodeLine{250 \textcolor{preprocessor}{\#if defined(\_MSC\_VER) \&\& defined(\_M\_AMD64)}}
+\DoxyCodeLine{251         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} low = \_umul128(\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}, b, outHigh) + k;}
+\DoxyCodeLine{252         \textcolor{keywordflow}{if} (low < k)}
+\DoxyCodeLine{253             (*outHigh)++;}
+\DoxyCodeLine{254         \textcolor{keywordflow}{return} low;}
+\DoxyCodeLine{255 \textcolor{preprocessor}{\#elif (\_\_GNUC\_\_ > 4 || (\_\_GNUC\_\_ == 4 \&\& \_\_GNUC\_MINOR\_\_ >= 6)) \&\& defined(\_\_x86\_64\_\_)}}
+\DoxyCodeLine{256         \_\_extension\_\_ \textcolor{keyword}{typedef} \textcolor{keywordtype}{unsigned} \_\_int128 uint128;}
+\DoxyCodeLine{257         uint128 p = static\_cast<uint128>(\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}) * static\_cast<uint128>(b);}
+\DoxyCodeLine{258         p += k;}
+\DoxyCodeLine{259         *outHigh = static\_cast<uint64\_t>(p >> 64);}
+\DoxyCodeLine{260         \textcolor{keywordflow}{return} static\_cast<uint64\_t>(p);}
+\DoxyCodeLine{261 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{262         \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} a0 = \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} \& 0xFFFFFFFF, a1 = \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}} >> 32, b0 = b \& 0xFFFFFFFF, b1 = b >> 32;}
+\DoxyCodeLine{263         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} x0 = a0 * b0, x1 = a0 * b1, x2 = a1 * b0, x3 = a1 * b1;}
+\DoxyCodeLine{264         x1 += (x0 >> 32); \textcolor{comment}{// can't give carry}}
+\DoxyCodeLine{265         x1 += x2;}
+\DoxyCodeLine{266         \textcolor{keywordflow}{if} (x1 < x2)}
+\DoxyCodeLine{267             x3 += (static\_cast<uint64\_t>(1) << 32);}
+\DoxyCodeLine{268         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} lo = (x1 << 32) + (x0 \& 0xFFFFFFFF);}
+\DoxyCodeLine{269         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} hi = x3 + (x1 >> 32);}
+\DoxyCodeLine{270 }
+\DoxyCodeLine{271         lo += k;}
+\DoxyCodeLine{272         \textcolor{keywordflow}{if} (lo < k)}
+\DoxyCodeLine{273             hi++;}
+\DoxyCodeLine{274         *outHigh = hi;}
+\DoxyCodeLine{275         \textcolor{keywordflow}{return} lo;}
+\DoxyCodeLine{276 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{277     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::a.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a60c5fbdcd9992177d25bda441e5d49bb}\label{classrapidjson_1_1internal_1_1_big_integer_a60c5fbdcd9992177d25bda441e5d49bb}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!MultiplyPow5@{MultiplyPow5}}
+\index{MultiplyPow5@{MultiplyPow5}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{MultiplyPow5()}{MultiplyPow5()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}}\& rapidjson\+::internal\+::\+Big\+Integer\+::\+Multiply\+Pow5 (\begin{DoxyParamCaption}\item[{unsigned}]{exp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 162 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162                                            \{}
+\DoxyCodeLine{163         \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\_t}} kPow5[12] = \{}
+\DoxyCodeLine{164             5,}
+\DoxyCodeLine{165             5 * 5,}
+\DoxyCodeLine{166             5 * 5 * 5,}
+\DoxyCodeLine{167             5 * 5 * 5 * 5,}
+\DoxyCodeLine{168             5 * 5 * 5 * 5 * 5,}
+\DoxyCodeLine{169             5 * 5 * 5 * 5 * 5 * 5,}
+\DoxyCodeLine{170             5 * 5 * 5 * 5 * 5 * 5 * 5,}
+\DoxyCodeLine{171             5 * 5 * 5 * 5 * 5 * 5 * 5 * 5,}
+\DoxyCodeLine{172             5 * 5 * 5 * 5 * 5 * 5 * 5 * 5 * 5,}
+\DoxyCodeLine{173             5 * 5 * 5 * 5 * 5 * 5 * 5 * 5 * 5 * 5,}
+\DoxyCodeLine{174             5 * 5 * 5 * 5 * 5 * 5 * 5 * 5 * 5 * 5 * 5,}
+\DoxyCodeLine{175             5 * 5 * 5 * 5 * 5 * 5 * 5 * 5 * 5 * 5 * 5 * 5}
+\DoxyCodeLine{176         \};}
+\DoxyCodeLine{177         \textcolor{keywordflow}{if} (exp == 0) \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{178         \textcolor{keywordflow}{for} (; exp >= 27; exp -= 27) *\textcolor{keyword}{this} *= \mbox{\hyperlink{rapidjson_8h_aaee1245f375a71be1ac9b8a07ba5fb8f}{RAPIDJSON\_UINT64\_C2}}(0X6765C793, 0XFA10079D); \textcolor{comment}{// 5\string^27}}
+\DoxyCodeLine{179         \textcolor{keywordflow}{for} (; exp >= 13; exp -= 13) *\textcolor{keyword}{this} *= static\_cast<uint32\_t>(1220703125u); \textcolor{comment}{// 5\string^13}}
+\DoxyCodeLine{180         \textcolor{keywordflow}{if} (exp > 0)                 *\textcolor{keyword}{this} *= kPow5[exp - 1];}
+\DoxyCodeLine{181         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{182     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+U\+I\+N\+T64\+\_\+\+C2.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Check\+Within\+Half\+U\+L\+P().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_aaaa5b1b2600d4de61f8303c516376925}\label{classrapidjson_1_1internal_1_1_big_integer_aaaa5b1b2600d4de61f8303c516376925}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!operator $\ast$=@{operator $\ast$=}}
+\index{operator $\ast$=@{operator $\ast$=}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{operator $\ast$=()}{operator *=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}}\& rapidjson\+::internal\+::\+Big\+Integer\+::operator $\ast$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{u }\end{DoxyParamCaption})}
+
+
+
+Definition at line 87 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87                                        \{}
+\DoxyCodeLine{88         \textcolor{keywordflow}{if} (u == 0) \textcolor{keywordflow}{return} *\textcolor{keyword}{this} = 0;}
+\DoxyCodeLine{89         \textcolor{keywordflow}{if} (u == 1) \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{90         \textcolor{keywordflow}{if} (*\textcolor{keyword}{this} == 1) \textcolor{keywordflow}{return} *\textcolor{keyword}{this} = u;}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} k = 0;}
+\DoxyCodeLine{93         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}}; i++) \{}
+\DoxyCodeLine{94             \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} hi;}
+\DoxyCodeLine{95             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[i] = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a58f2555329537d758530430c5baf1e49}{MulAdd64}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[i], u, k, \&hi);}
+\DoxyCodeLine{96             k = hi;}
+\DoxyCodeLine{97         \}}
+\DoxyCodeLine{98         }
+\DoxyCodeLine{99         \textcolor{keywordflow}{if} (k > 0)}
+\DoxyCodeLine{100             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a2dc125d5ff140b3f63de36e59e223d93}{PushBack}}(k);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{103     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_aa0861877d91cc136b1a96d821acc335e}\label{classrapidjson_1_1internal_1_1_big_integer_aa0861877d91cc136b1a96d821acc335e}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!operator $\ast$=@{operator $\ast$=}}
+\index{operator $\ast$=@{operator $\ast$=}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{operator $\ast$=()}{operator *=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}}\& rapidjson\+::internal\+::\+Big\+Integer\+::operator $\ast$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{u }\end{DoxyParamCaption})}
+
+
+
+Definition at line 105 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{105                                        \{}
+\DoxyCodeLine{106         \textcolor{keywordflow}{if} (u == 0) \textcolor{keywordflow}{return} *\textcolor{keyword}{this} = 0;}
+\DoxyCodeLine{107         \textcolor{keywordflow}{if} (u == 1) \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{108         \textcolor{keywordflow}{if} (*\textcolor{keyword}{this} == 1) \textcolor{keywordflow}{return} *\textcolor{keyword}{this} = u;}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} k = 0;}
+\DoxyCodeLine{111         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}}; i++) \{}
+\DoxyCodeLine{112             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} c = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[i] >> 32;}
+\DoxyCodeLine{113             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} d = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[i] \& 0xFFFFFFFF;}
+\DoxyCodeLine{114             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} uc = u * c;}
+\DoxyCodeLine{115             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} ud = u * d;}
+\DoxyCodeLine{116             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} p0 = ud + k;}
+\DoxyCodeLine{117             \textcolor{keyword}{const} \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} p1 = uc + (p0 >> 32);}
+\DoxyCodeLine{118             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[i] = (p0 \& 0xFFFFFFFF) | (p1 << 32);}
+\DoxyCodeLine{119             k = p1 >> 32;}
+\DoxyCodeLine{120         \}}
+\DoxyCodeLine{121         }
+\DoxyCodeLine{122         \textcolor{keywordflow}{if} (k > 0)}
+\DoxyCodeLine{123             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a2dc125d5ff140b3f63de36e59e223d93}{PushBack}}(k);}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{126     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_ab313deab130f74afda260cbc7f150c56}\label{classrapidjson_1_1internal_1_1_big_integer_ab313deab130f74afda260cbc7f150c56}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}}\& rapidjson\+::internal\+::\+Big\+Integer\+::operator+= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{u }\end{DoxyParamCaption})}
+
+
+
+Definition at line 70 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                                        \{}
+\DoxyCodeLine{71         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}} backup = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[0];}
+\DoxyCodeLine{72         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[0] += u;}
+\DoxyCodeLine{73         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} - 1; i++) \{}
+\DoxyCodeLine{74             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[i] >= backup)}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{return} *\textcolor{keyword}{this}; \textcolor{comment}{// no carry}}
+\DoxyCodeLine{76             backup = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[i + 1];}
+\DoxyCodeLine{77             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[i + 1] += 1;}
+\DoxyCodeLine{78         \}}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80         \textcolor{comment}{// Last carry}}
+\DoxyCodeLine{81         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} - 1] < backup)}
+\DoxyCodeLine{82             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a2dc125d5ff140b3f63de36e59e223d93}{PushBack}}(1);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{85     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a40e01848b5849e12f7bb89c9939c877e}\label{classrapidjson_1_1internal_1_1_big_integer_a40e01848b5849e12f7bb89c9939c877e}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!operator$<$$<$=@{operator$<$$<$=}}
+\index{operator$<$$<$=@{operator$<$$<$=}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{operator$<$$<$=()}{operator<<=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}}\& rapidjson\+::internal\+::\+Big\+Integer\+::operator$<$$<$= (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{shift }\end{DoxyParamCaption})}
+
+
+
+Definition at line 128 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{128                                           \{}
+\DoxyCodeLine{129         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a5db6206954723ed86afaf937a3b9dd5c}{IsZero}}() || shift == 0) \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131         \textcolor{keywordtype}{size\_t} offset = shift / \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a947ac91b3471b15a442e9c90db566658}{kTypeBit}};}
+\DoxyCodeLine{132         \textcolor{keywordtype}{size\_t} interShift = shift \% \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a947ac91b3471b15a442e9c90db566658}{kTypeBit}};}
+\DoxyCodeLine{133         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} + offset <= \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_aad4550b1fb2215bbbdc92f1773bc988c}{kCapacity}});}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135         \textcolor{keywordflow}{if} (interShift == 0) \{}
+\DoxyCodeLine{136             std::memmove(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}} + offset, \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}, \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}}));}
+\DoxyCodeLine{137             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} += offset;}
+\DoxyCodeLine{138         \}}
+\DoxyCodeLine{139         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{140             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}}] = 0;}
+\DoxyCodeLine{141             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}}; i > 0; i--)}
+\DoxyCodeLine{142                 \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[i + offset] = (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[i] << interShift) | (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[i - 1] >> (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a947ac91b3471b15a442e9c90db566658}{kTypeBit}} - interShift));}
+\DoxyCodeLine{143             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[offset] = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[0] << interShift;}
+\DoxyCodeLine{144             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} += offset;}
+\DoxyCodeLine{145             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}}])}
+\DoxyCodeLine{146                 \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}}++;}
+\DoxyCodeLine{147         \}}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149         std::memset(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}, 0, offset * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}}));}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{152     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a578cf1ad8e1e0bfedf2dc9be73562a31}\label{classrapidjson_1_1internal_1_1_big_integer_a578cf1ad8e1e0bfedf2dc9be73562a31}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}}\& rapidjson\+::internal\+::\+Big\+Integer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56     \{}
+\DoxyCodeLine{57         \textcolor{keywordflow}{if} (\textcolor{keyword}{this} != \&rhs) \{}
+\DoxyCodeLine{58             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} = rhs.count\_;}
+\DoxyCodeLine{59             std::memcpy(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}, rhs.digits\_, \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}}));}
+\DoxyCodeLine{60         \}}
+\DoxyCodeLine{61         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{62     \}}
+
+\end{DoxyCode}
+
+
+References count\+\_\+, and digits\+\_\+.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_acb27796a1f617fc8ca1734852f9049e7}\label{classrapidjson_1_1internal_1_1_big_integer_acb27796a1f617fc8ca1734852f9049e7}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}}\& rapidjson\+::internal\+::\+Big\+Integer\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{u }\end{DoxyParamCaption})}
+
+
+
+Definition at line 64 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                       \{}
+\DoxyCodeLine{65         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[0] = u;            }
+\DoxyCodeLine{66         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} = 1;}
+\DoxyCodeLine{67         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{68     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_af8a7061cd878d855c22a80dd48a44b15}\label{classrapidjson_1_1internal_1_1_big_integer_af8a7061cd878d855c22a80dd48a44b15}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!operator==@{operator==}}
+\index{operator==@{operator==}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool rapidjson\+::internal\+::\+Big\+Integer\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 154 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{154                                                  \{}
+\DoxyCodeLine{155         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} == rhs.count\_ \&\& std::memcmp(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}, rhs.digits\_, \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}})) == 0;}
+\DoxyCodeLine{156     \}}
+
+\end{DoxyCode}
+
+
+References count\+\_\+, and digits\+\_\+.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_afcc8c8b661e70648683f11c4211df380}\label{classrapidjson_1_1internal_1_1_big_integer_afcc8c8b661e70648683f11c4211df380}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!operator==@{operator==}}
+\index{operator==@{operator==}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool rapidjson\+::internal\+::\+Big\+Integer\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}}}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 158 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{158                                           \{}
+\DoxyCodeLine{159         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} == 1 \&\& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[0] == rhs;}
+\DoxyCodeLine{160     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_ad51eecf2efb0a806db48913f9dcb13a6}\label{classrapidjson_1_1internal_1_1_big_integer_ad51eecf2efb0a806db48913f9dcb13a6}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!ParseUint64@{ParseUint64}}
+\index{ParseUint64@{ParseUint64}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{ParseUint64()}{ParseUint64()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} rapidjson\+::internal\+::\+Big\+Integer\+::\+Parse\+Uint64 (\begin{DoxyParamCaption}\item[{const char $\ast$}]{begin,  }\item[{const char $\ast$}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 239 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{239                                                                     \{}
+\DoxyCodeLine{240         \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} r = 0;}
+\DoxyCodeLine{241         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keywordtype}{char}* p = begin; p != end; ++p) \{}
+\DoxyCodeLine{242             \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(*p >= \textcolor{charliteral}{'0'} \&\& *p <= \textcolor{charliteral}{'9'});}
+\DoxyCodeLine{243             r = r * 10u + static\_cast<unsigned>(*p - \textcolor{charliteral}{'0'});}
+\DoxyCodeLine{244         \}}
+\DoxyCodeLine{245         \textcolor{keywordflow}{return} r;}
+\DoxyCodeLine{246     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a2dc125d5ff140b3f63de36e59e223d93}\label{classrapidjson_1_1internal_1_1_big_integer_a2dc125d5ff140b3f63de36e59e223d93}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!PushBack@{PushBack}}
+\index{PushBack@{PushBack}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{PushBack()}{PushBack()}}
+{\footnotesize\ttfamily void rapidjson\+::internal\+::\+Big\+Integer\+::\+Push\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}}}]{digit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 234 of file biginteger.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{234                               \{}
+\DoxyCodeLine{235         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}} < \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_aad4550b1fb2215bbbdc92f1773bc988c}{kCapacity}});}
+\DoxyCodeLine{236         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}{digits\_}}[\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}{count\_}}++] = digit;}
+\DoxyCodeLine{237     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}\label{classrapidjson_1_1internal_1_1_big_integer_a510e118f1ffc7fad2c6b8632b58c4cd4}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!count\_@{count\_}}
+\index{count\_@{count\_}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{count\_}{count\_}}
+{\footnotesize\ttfamily size\+\_\+t rapidjson\+::internal\+::\+Big\+Integer\+::count\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 284 of file biginteger.\+h.
+
+
+
+Referenced by Compare(), Difference(), operator=(), and operator==().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}\label{classrapidjson_1_1internal_1_1_big_integer_a42354d197985345d984dd0ab5de739d4}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!digits\_@{digits\_}}
+\index{digits\_@{digits\_}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{digits\_}{digits\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}} rapidjson\+::internal\+::\+Big\+Integer\+::digits\+\_\+\mbox{[}\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_aad4550b1fb2215bbbdc92f1773bc988c}{k\+Capacity}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 283 of file biginteger.\+h.
+
+
+
+Referenced by Big\+Integer(), Compare(), Difference(), operator=(), and operator==().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_aef84cafb23eff42fdca40ef9d9fc7f98}\label{classrapidjson_1_1internal_1_1_big_integer_aef84cafb23eff42fdca40ef9d9fc7f98}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!kBitCount@{kBitCount}}
+\index{kBitCount@{kBitCount}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{kBitCount}{kBitCount}}
+{\footnotesize\ttfamily const size\+\_\+t rapidjson\+::internal\+::\+Big\+Integer\+::k\+Bit\+Count = 3328\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 279 of file biginteger.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_aad4550b1fb2215bbbdc92f1773bc988c}\label{classrapidjson_1_1internal_1_1_big_integer_aad4550b1fb2215bbbdc92f1773bc988c}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!kCapacity@{kCapacity}}
+\index{kCapacity@{kCapacity}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{kCapacity}{kCapacity}}
+{\footnotesize\ttfamily const size\+\_\+t rapidjson\+::internal\+::\+Big\+Integer\+::k\+Capacity = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_aef84cafb23eff42fdca40ef9d9fc7f98}{k\+Bit\+Count}} / sizeof(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 280 of file biginteger.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_big_integer_a947ac91b3471b15a442e9c90db566658}\label{classrapidjson_1_1internal_1_1_big_integer_a947ac91b3471b15a442e9c90db566658}} 
+\index{rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}!kTypeBit@{kTypeBit}}
+\index{kTypeBit@{kTypeBit}!rapidjson::internal::BigInteger@{rapidjson::internal::BigInteger}}
+\subsubsection{\texorpdfstring{kTypeBit}{kTypeBit}}
+{\footnotesize\ttfamily const size\+\_\+t rapidjson\+::internal\+::\+Big\+Integer\+::k\+Type\+Bit = sizeof(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_big_integer_a37d8e8c111f0d76fa07bb4da4790514d}{Type}}) $\ast$ 8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 281 of file biginteger.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/internal/\mbox{\hyperlink{biginteger_8h}{biginteger.\+h}}\end{DoxyCompactItemize}

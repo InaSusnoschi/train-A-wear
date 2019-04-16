@@ -1,0 +1,118 @@
+\hypertarget{classrapidjson_1_1_crt_allocator}{}\section{rapidjson\+::Crt\+Allocator Class Reference}
+\label{classrapidjson_1_1_crt_allocator}\index{rapidjson::CrtAllocator@{rapidjson::CrtAllocator}}
+
+
+C-\/runtime library allocator.  
+
+
+
+
+{\ttfamily \#include $<$allocators.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{classrapidjson_1_1_crt_allocator_aa3dab0aa1b00fc5b6e6cf29708e6667f}{Malloc}} (size\+\_\+t size)
+\item 
+void $\ast$ \mbox{\hyperlink{classrapidjson_1_1_crt_allocator_a5378ce42f3fe244f8826d85757271ed0}{Realloc}} (void $\ast$original\+Ptr, size\+\_\+t original\+Size, size\+\_\+t new\+Size)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classrapidjson_1_1_crt_allocator_aae4f8a67d7815485fa70b0094e8dbc19}{Free}} (void $\ast$ptr)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const bool \mbox{\hyperlink{classrapidjson_1_1_crt_allocator_a86a87b7d63be73268c333a7f70f21d24}{k\+Need\+Free}} = true
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C-\/runtime library allocator. 
+
+This class is just wrapper for standard C library memory routines. \begin{DoxyNote}{Note}
+implements \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} concept 
+\end{DoxyNote}
+
+
+Definition at line 75 of file allocators.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_crt_allocator_aae4f8a67d7815485fa70b0094e8dbc19}\label{classrapidjson_1_1_crt_allocator_aae4f8a67d7815485fa70b0094e8dbc19}} 
+\index{rapidjson::CrtAllocator@{rapidjson::CrtAllocator}!Free@{Free}}
+\index{Free@{Free}!rapidjson::CrtAllocator@{rapidjson::CrtAllocator}}
+\subsubsection{\texorpdfstring{Free()}{Free()}}
+{\footnotesize\ttfamily static void rapidjson\+::\+Crt\+Allocator\+::\+Free (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 92 of file allocators.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92 \{ std::free(ptr); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_crt_allocator_aa3dab0aa1b00fc5b6e6cf29708e6667f}\label{classrapidjson_1_1_crt_allocator_aa3dab0aa1b00fc5b6e6cf29708e6667f}} 
+\index{rapidjson::CrtAllocator@{rapidjson::CrtAllocator}!Malloc@{Malloc}}
+\index{Malloc@{Malloc}!rapidjson::CrtAllocator@{rapidjson::CrtAllocator}}
+\subsubsection{\texorpdfstring{Malloc()}{Malloc()}}
+{\footnotesize\ttfamily void$\ast$ rapidjson\+::\+Crt\+Allocator\+::\+Malloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 78 of file allocators.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                               \{ }
+\DoxyCodeLine{79         \textcolor{keywordflow}{if} (size) \textcolor{comment}{//  behavior of malloc(0) is implementation defined.}}
+\DoxyCodeLine{80             \textcolor{keywordflow}{return} std::malloc(size);}
+\DoxyCodeLine{81         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{82             \textcolor{keywordflow}{return} NULL; \textcolor{comment}{// standardize to returning NULL.}}
+\DoxyCodeLine{83     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_crt_allocator_a5378ce42f3fe244f8826d85757271ed0}\label{classrapidjson_1_1_crt_allocator_a5378ce42f3fe244f8826d85757271ed0}} 
+\index{rapidjson::CrtAllocator@{rapidjson::CrtAllocator}!Realloc@{Realloc}}
+\index{Realloc@{Realloc}!rapidjson::CrtAllocator@{rapidjson::CrtAllocator}}
+\subsubsection{\texorpdfstring{Realloc()}{Realloc()}}
+{\footnotesize\ttfamily void$\ast$ rapidjson\+::\+Crt\+Allocator\+::\+Realloc (\begin{DoxyParamCaption}\item[{void $\ast$}]{original\+Ptr,  }\item[{size\+\_\+t}]{original\+Size,  }\item[{size\+\_\+t}]{new\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 84 of file allocators.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84                                                                           \{}
+\DoxyCodeLine{85         (void)originalSize;}
+\DoxyCodeLine{86         \textcolor{keywordflow}{if} (newSize == 0) \{}
+\DoxyCodeLine{87             std::free(originalPtr);}
+\DoxyCodeLine{88             \textcolor{keywordflow}{return} NULL;}
+\DoxyCodeLine{89         \}}
+\DoxyCodeLine{90         \textcolor{keywordflow}{return} std::realloc(originalPtr, newSize);}
+\DoxyCodeLine{91     \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_crt_allocator_a86a87b7d63be73268c333a7f70f21d24}\label{classrapidjson_1_1_crt_allocator_a86a87b7d63be73268c333a7f70f21d24}} 
+\index{rapidjson::CrtAllocator@{rapidjson::CrtAllocator}!kNeedFree@{kNeedFree}}
+\index{kNeedFree@{kNeedFree}!rapidjson::CrtAllocator@{rapidjson::CrtAllocator}}
+\subsubsection{\texorpdfstring{kNeedFree}{kNeedFree}}
+{\footnotesize\ttfamily const bool rapidjson\+::\+Crt\+Allocator\+::k\+Need\+Free = true\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 77 of file allocators.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{allocators_8h}{allocators.\+h}}\end{DoxyCompactItemize}

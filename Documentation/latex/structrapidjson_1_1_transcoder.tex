@@ -1,0 +1,111 @@
+\hypertarget{structrapidjson_1_1_transcoder}{}\section{rapidjson\+::Transcoder$<$ Source\+Encoding, Target\+Encoding $>$ Struct Template Reference}
+\label{structrapidjson_1_1_transcoder}\index{rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$@{rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$}}
+
+
+\mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} conversion.  
+
+
+
+
+{\ttfamily \#include $<$encodings.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Input\+Stream , typename Output\+Stream $>$ }\\static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{structrapidjson_1_1_transcoder_a3a1de7069d3cf7f1d4f4e2f96ceb7664}{Transcode}} (Input\+Stream \&is, Output\+Stream \&os)
+\begin{DoxyCompactList}\small\item\em Take one Unicode codepoint from source encoding, convert it to target encoding and put it to the output stream. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Input\+Stream , typename Output\+Stream $>$ }\\static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{structrapidjson_1_1_transcoder_a43f7d4e8a24db9d09958b9be41257033}{Transcode\+Unsafe}} (Input\+Stream \&is, Output\+Stream \&os)
+\item 
+{\footnotesize template$<$typename Input\+Stream , typename Output\+Stream $>$ }\\static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{structrapidjson_1_1_transcoder_ae9178e512e99394a38785e73927140da}{Validate}} (Input\+Stream \&is, Output\+Stream \&os)
+\begin{DoxyCompactList}\small\item\em Validate one Unicode codepoint from an encoded stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Source\+Encoding, typename Target\+Encoding$>$\newline
+struct rapidjson\+::\+Transcoder$<$ Source\+Encoding, Target\+Encoding $>$}
+
+\mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} conversion. 
+
+Definition at line 658 of file encodings.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_transcoder_a3a1de7069d3cf7f1d4f4e2f96ceb7664}\label{structrapidjson_1_1_transcoder_a3a1de7069d3cf7f1d4f4e2f96ceb7664}} 
+\index{rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$@{rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$}!Transcode@{Transcode}}
+\index{Transcode@{Transcode}!rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$@{rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$}}
+\subsubsection{\texorpdfstring{Transcode()}{Transcode()}}
+{\footnotesize\ttfamily template$<$typename Source\+Encoding, typename Target\+Encoding$>$ \\
+template$<$typename Input\+Stream , typename Output\+Stream $>$ \\
+static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{structrapidjson_1_1_transcoder}{rapidjson\+::\+Transcoder}}$<$ Source\+Encoding, Target\+Encoding $>$\+::Transcode (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{Output\+Stream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Take one Unicode codepoint from source encoding, convert it to target encoding and put it to the output stream. 
+
+
+
+Definition at line 661 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{661                                                                                    \{}
+\DoxyCodeLine{662         \textcolor{keywordtype}{unsigned} codepoint;}
+\DoxyCodeLine{663         \textcolor{keywordflow}{if} (!SourceEncoding::Decode(is, \&codepoint))}
+\DoxyCodeLine{664             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{665         TargetEncoding::Encode(os, codepoint);}
+\DoxyCodeLine{666         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{667     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_transcoder_a43f7d4e8a24db9d09958b9be41257033}\label{structrapidjson_1_1_transcoder_a43f7d4e8a24db9d09958b9be41257033}} 
+\index{rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$@{rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$}!TranscodeUnsafe@{TranscodeUnsafe}}
+\index{TranscodeUnsafe@{TranscodeUnsafe}!rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$@{rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$}}
+\subsubsection{\texorpdfstring{TranscodeUnsafe()}{TranscodeUnsafe()}}
+{\footnotesize\ttfamily template$<$typename Source\+Encoding, typename Target\+Encoding$>$ \\
+template$<$typename Input\+Stream , typename Output\+Stream $>$ \\
+static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{structrapidjson_1_1_transcoder}{rapidjson\+::\+Transcoder}}$<$ Source\+Encoding, Target\+Encoding $>$\+::Transcode\+Unsafe (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{Output\+Stream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 670 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{670                                                                                          \{}
+\DoxyCodeLine{671         \textcolor{keywordtype}{unsigned} codepoint;}
+\DoxyCodeLine{672         \textcolor{keywordflow}{if} (!SourceEncoding::Decode(is, \&codepoint))}
+\DoxyCodeLine{673             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{674         TargetEncoding::EncodeUnsafe(os, codepoint);}
+\DoxyCodeLine{675         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{676     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_transcoder_ae9178e512e99394a38785e73927140da}\label{structrapidjson_1_1_transcoder_ae9178e512e99394a38785e73927140da}} 
+\index{rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$@{rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$}!Validate@{Validate}}
+\index{Validate@{Validate}!rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$@{rapidjson::Transcoder$<$ SourceEncoding, TargetEncoding $>$}}
+\subsubsection{\texorpdfstring{Validate()}{Validate()}}
+{\footnotesize\ttfamily template$<$typename Source\+Encoding, typename Target\+Encoding$>$ \\
+template$<$typename Input\+Stream , typename Output\+Stream $>$ \\
+static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{structrapidjson_1_1_transcoder}{rapidjson\+::\+Transcoder}}$<$ Source\+Encoding, Target\+Encoding $>$\+::Validate (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{Output\+Stream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Validate one Unicode codepoint from an encoded stream. 
+
+
+
+Definition at line 680 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{680                                                                                   \{}
+\DoxyCodeLine{681         \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1_transcoder_a3a1de7069d3cf7f1d4f4e2f96ceb7664}{Transcode}}(is, os);   \textcolor{comment}{// Since source/target encoding is different, must transcode.}}
+\DoxyCodeLine{682     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{encodings_8h}{encodings.\+h}}\end{DoxyCompactItemize}

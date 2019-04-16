@@ -1,0 +1,34 @@
+\hypertarget{strtod_8h}{}\section{D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/internal/strtod.h File Reference}
+\label{strtod_8h}\index{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/internal/strtod.h@{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/internal/strtod.h}}
+{\ttfamily \#include \char`\"{}ieee754.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}biginteger.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}diyfp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pow10.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$climits$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacerapidjson}{rapidjson}}
+\begin{DoxyCompactList}\small\item\em main Rapid\+J\+S\+ON namespace \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacerapidjson_1_1internal}{rapidjson\+::internal}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{namespacerapidjson_1_1internal_aadfc08b386baffa85f618e0ef0e2f188}{rapidjson\+::internal\+::\+Fast\+Path}} (double significand, int exp)
+\item 
+double \mbox{\hyperlink{namespacerapidjson_1_1internal_a0173579d8f2b3724583f64758beb8e69}{rapidjson\+::internal\+::\+Strtod\+Normal\+Precision}} (double d, int p)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespacerapidjson_1_1internal_a7d72423e8173159a0d90cac2f2ef6b8a}{rapidjson\+::internal\+::\+Min3}} (T a, T b, T c)
+\item 
+int \mbox{\hyperlink{namespacerapidjson_1_1internal_a1c9faaa8ff1461a84ee35c04c7b926c5}{rapidjson\+::internal\+::\+Check\+Within\+Half\+U\+LP}} (double b, const Big\+Integer \&d, int d\+Exp)
+\item 
+bool \mbox{\hyperlink{namespacerapidjson_1_1internal_acfd06fe2a2709ad372a373f0921e9571}{rapidjson\+::internal\+::\+Strtod\+Fast}} (double d, int p, double $\ast$result)
+\item 
+bool \mbox{\hyperlink{namespacerapidjson_1_1internal_a2005b2ac382e70120987b7889476d01f}{rapidjson\+::internal\+::\+Strtod\+Diy\+Fp}} (const char $\ast$decimals, int d\+Len, int d\+Exp, double $\ast$result)
+\item 
+double \mbox{\hyperlink{namespacerapidjson_1_1internal_aeb0c7910094111c91cd31339bf707950}{rapidjson\+::internal\+::\+Strtod\+Big\+Integer}} (double approx, const char $\ast$decimals, int d\+Len, int d\+Exp)
+\item 
+double \mbox{\hyperlink{namespacerapidjson_1_1internal_afdec628bd595f8aca4ff74ec9e3c88f2}{rapidjson\+::internal\+::\+Strtod\+Full\+Precision}} (double d, int p, const char $\ast$decimals, size\+\_\+t length, size\+\_\+t decimal\+Position, int exp)
+\end{DoxyCompactItemize}

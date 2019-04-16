@@ -1,0 +1,42 @@
+\hypertarget{classrapidjson_1_1_handler}{}\section{rapidjson\+::Handler Class Reference}
+\label{classrapidjson_1_1_handler}\index{rapidjson::Handler@{rapidjson::Handler}}
+
+
+Concept for receiving events from \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{Generic\+Reader}} upon parsing. The functions return true if no error occurs. If they return false, the event publisher should terminate the process.  
+
+
+
+
+{\ttfamily \#include $<$reader.\+h$>$}
+
+
+
+\subsection{Detailed Description}
+Concept for receiving events from \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{Generic\+Reader}} upon parsing. The functions return true if no error occurs. If they return false, the event publisher should terminate the process. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{concept Handler \{}
+\DoxyCodeLine{    \textcolor{keyword}{typename} Ch;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} Null();}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} Bool(\textcolor{keywordtype}{bool} b);}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} Int(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} Uint(\textcolor{keywordtype}{unsigned} i);}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} Int64(\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\_t}} i);}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} Uint64(\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\_t}} i);}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} Double(\textcolor{keywordtype}{double} d);}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} RawNumber(\textcolor{keyword}{const} Ch* str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} length, \textcolor{keywordtype}{bool} copy);}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} String(\textcolor{keyword}{const} Ch* str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} length, \textcolor{keywordtype}{bool} copy);}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} StartObject();}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} Key(\textcolor{keyword}{const} Ch* str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} length, \textcolor{keywordtype}{bool} copy);}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} EndObject(\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} memberCount);}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} StartArray();}
+\DoxyCodeLine{    \textcolor{keywordtype}{bool} EndArray(\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} elementCount);}
+\DoxyCodeLine{\};}
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{reader_8h}{reader.\+h}}\end{DoxyCompactItemize}

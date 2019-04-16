@@ -1,0 +1,2063 @@
+\hypertarget{namespacerapidjson}{}\section{rapidjson Namespace Reference}
+\label{namespacerapidjson}\index{rapidjson@{rapidjson}}
+
+
+main Rapid\+J\+S\+ON namespace  
+
+
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacerapidjson_1_1internal}{internal}}
+\end{DoxyCompactItemize}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}
+\begin{DoxyCompactList}\small\item\em Concept for allocating, resizing and freeing memory block. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{A\+S\+C\+II}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{A\+S\+C\+II}} encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_auto_u_t_f}{Auto\+U\+TF}}
+\begin{DoxyCompactList}\small\item\em Dynamically select encoding according to stream\textquotesingle{}s runtime-\/specified U\+TF encoding type. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_input_stream}{Auto\+U\+T\+F\+Input\+Stream}}
+\begin{DoxyCompactList}\small\item\em Input stream wrapper with dynamically bound encoding and automatic encoding detection. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{Auto\+U\+T\+F\+Output\+Stream}}
+\begin{DoxyCompactList}\small\item\em Output stream wrapper with dynamically bound encoding and automatic encoding detection. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{Base\+Reader\+Handler}}
+\begin{DoxyCompactList}\small\item\em Default implementation of \mbox{\hyperlink{classrapidjson_1_1_handler}{Handler}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}}
+\begin{DoxyCompactList}\small\item\em Wrapper of {\ttfamily std\+::basic\+\_\+istream} into Rapid\+J\+S\+ON\textquotesingle{}s \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{Basic\+O\+Stream\+Wrapper}}
+\begin{DoxyCompactList}\small\item\em Wrapper of {\ttfamily std\+::basic\+\_\+ostream} into Rapid\+J\+S\+ON\textquotesingle{}s \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_crt_allocator}{Crt\+Allocator}}
+\begin{DoxyCompactList}\small\item\em C-\/runtime library allocator. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper}{Cursor\+Stream\+Wrapper}}
+\begin{DoxyCompactList}\small\item\em Cursor stream wrapper for counting line and column number if error exists. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_encoded_input_stream}{Encoded\+Input\+Stream}}
+\begin{DoxyCompactList}\small\item\em Input byte stream wrapper with a statically bound encoding. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_encoded_input_stream_3_01_u_t_f8_3_4_00_01_memory_stream_01_4}{Encoded\+Input\+Stream$<$ U\+T\+F8$<$$>$, Memory\+Stream $>$}}
+\begin{DoxyCompactList}\small\item\em Specialized for \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} \mbox{\hyperlink{structrapidjson_1_1_memory_stream}{Memory\+Stream}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_encoded_output_stream}{Encoded\+Output\+Stream}}
+\begin{DoxyCompactList}\small\item\em Output byte stream wrapper with statically bound encoding. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}
+\begin{DoxyCompactList}\small\item\em Concept for encoding of Unicode characters. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_file_read_stream}{File\+Read\+Stream}}
+\begin{DoxyCompactList}\small\item\em File byte stream for input using fread(). \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_file_write_stream}{File\+Write\+Stream}}
+\begin{DoxyCompactList}\small\item\em Wrapper of C file stream for output using fwrite(). \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_array}{Generic\+Array}}
+\begin{DoxyCompactList}\small\item\em Helper class for accessing Value of array type. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}
+\begin{DoxyCompactList}\small\item\em A document for parsing J\+S\+ON text as D\+OM. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{Generic\+Insitu\+String\+Stream}}
+\begin{DoxyCompactList}\small\item\em A read-\/write string stream. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_member}{Generic\+Member}}
+\begin{DoxyCompactList}\small\item\em Name-\/value pair in a J\+S\+ON object value. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_member_iterator}{Generic\+Member\+Iterator}}
+\begin{DoxyCompactList}\small\item\em (Constant) member iterator for a J\+S\+ON object value \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{Generic\+Memory\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Represents an in-\/memory output byte stream. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_object}{Generic\+Object}}
+\begin{DoxyCompactList}\small\item\em Helper class for accessing Value of object type. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}
+\begin{DoxyCompactList}\small\item\em Represents a J\+S\+ON Pointer. Use Pointer for \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding and default allocator. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{Generic\+Reader}}
+\begin{DoxyCompactList}\small\item\em S\+A\+X-\/style J\+S\+ON parser. Use \mbox{\hyperlink{namespacerapidjson_ad5310edd1226f5b3ea82dc0d4d3740c6}{Reader}} for \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding and default allocator. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}}
+\begin{DoxyCompactList}\small\item\em J\+S\+ON schema document. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator}{Generic\+Schema\+Validator}}
+\begin{DoxyCompactList}\small\item\em J\+S\+ON Schema Validator. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_stream_wrapper}{Generic\+Stream\+Wrapper}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} Wrapper. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Represents an in-\/memory output stream. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_string_ref}{Generic\+String\+Ref}}
+\begin{DoxyCompactList}\small\item\em Reference to a constant string (not taking a copy) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{Generic\+String\+Stream}}
+\begin{DoxyCompactList}\small\item\em Read-\/only string stream. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}
+\begin{DoxyCompactList}\small\item\em Represents a J\+S\+ON value. Use Value for \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding and default allocator. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_handler}{Handler}}
+\begin{DoxyCompactList}\small\item\em Concept for receiving events from \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{Generic\+Reader}} upon parsing. The functions return true if no error occurs. If they return false, the event publisher should terminate the process. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_i_generic_remote_schema_document_provider}{I\+Generic\+Remote\+Schema\+Document\+Provider}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{Memory\+Pool\+Allocator}}
+\begin{DoxyCompactList}\small\item\em Default memory allocator used by the parser and D\+OM. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_memory_stream}{Memory\+Stream}}
+\begin{DoxyCompactList}\small\item\em Represents an in-\/memory input byte stream. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}}
+\begin{DoxyCompactList}\small\item\em Result of parsing (wraps Parse\+Error\+Code) \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classrapidjson_1_1_writer}{Writer}} with indentation and spacing. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{Schema\+Validating\+Reader}}
+\begin{DoxyCompactList}\small\item\em A helper class for parsing with validation. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}}
+\begin{DoxyCompactList}\small\item\em Concept for reading and writing characters. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_stream_traits}{Stream\+Traits}}
+\begin{DoxyCompactList}\small\item\em Provides additional information for stream. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_stream_traits_3_01_generic_insitu_string_stream_3_01_encoding_01_4_01_4}{Stream\+Traits$<$ Generic\+Insitu\+String\+Stream$<$ Encoding $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_stream_traits_3_01_generic_string_stream_3_01_encoding_01_4_01_4}{Stream\+Traits$<$ Generic\+String\+Stream$<$ Encoding $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_transcoder}{Transcoder}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} conversion. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_transcoder_3_01_encoding_00_01_encoding_01_4}{Transcoder$<$ Encoding, Encoding $>$}}
+\begin{DoxyCompactList}\small\item\em Specialization of \mbox{\hyperlink{structrapidjson_1_1_transcoder}{Transcoder}} with same source and target encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f16}{U\+T\+F16}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/16 encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_b_e}{U\+T\+F16\+BE}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/16 big endian encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_l_e}{U\+T\+F16\+LE}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/16 little endian encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f32}{U\+T\+F32}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/32 encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f32_b_e}{U\+T\+F32\+BE}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/32 big endian encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f32_l_e}{U\+T\+F32\+LE}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/32 little endian enocoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/8 encoding. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_writer}{Writer}}
+\begin{DoxyCompactList}\small\item\em J\+S\+ON writer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$$>$ $>$ \mbox{\hyperlink{namespacerapidjson_aa65fc9fb381b2cbc54f98673eadd6505}{Value}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}} with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$$>$ $>$ \mbox{\hyperlink{namespacerapidjson_ace11b5b575baf1cccd5ba5f8586dcdc8}{Document}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding. \end{DoxyCompactList}\item 
+typedef const char $\ast$($\ast$ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gafde34fb0f573d1b551b566cc03e294fb}{Get\+Parse\+Error\+Func}}) (\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}})
+\begin{DoxyCompactList}\small\item\em Function pointer type of Get\+Parse\+Error(). \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{Generic\+String\+Stream}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$ char $>$ $>$ \mbox{\hyperlink{namespacerapidjson_a021f77051e9f85188fc2f71ff5a15ebc}{String\+Stream}}
+\begin{DoxyCompactList}\small\item\em String stream with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$ char $>$ $>$ \mbox{\hyperlink{namespacerapidjson_a64e957c8d9d7cd15b193ffc31410038e}{Insitu\+String\+Stream}}
+\begin{DoxyCompactList}\small\item\em Insitu string stream with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$ char $>$, \mbox{\hyperlink{classrapidjson_1_1_crt_allocator}{Crt\+Allocator}} $>$ \mbox{\hyperlink{namespacerapidjson_ac0765ea91f41539645c4b78689d03f21}{String\+Buffer}}
+\begin{DoxyCompactList}\small\item\em String buffer with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{Generic\+Memory\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_crt_allocator}{Crt\+Allocator}} $>$ \mbox{\hyperlink{namespacerapidjson_acb643b9055e7988f4cb89ce4f7e6b115}{Memory\+Buffer}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{Generic\+Reader}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$ char $>$, \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$ char $>$, \mbox{\hyperlink{classrapidjson_1_1_crt_allocator}{Crt\+Allocator}} $>$ \mbox{\hyperlink{namespacerapidjson_ad5310edd1226f5b3ea82dc0d4d3740c6}{Reader}}
+\begin{DoxyCompactList}\small\item\em Reader with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding and default allocator. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ \mbox{\hyperlink{namespacerapidjson_aa65fc9fb381b2cbc54f98673eadd6505}{Value}}, \mbox{\hyperlink{classrapidjson_1_1_crt_allocator}{Crt\+Allocator}} $>$ \mbox{\hyperlink{namespacerapidjson_a080910f74d2f5046e6724280159cf374}{Pointer}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} for Value (U\+T\+F-\/8, default allocator). \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}}$<$ \mbox{\hyperlink{namespacerapidjson_aa65fc9fb381b2cbc54f98673eadd6505}{Value}}, \mbox{\hyperlink{classrapidjson_1_1_crt_allocator}{Crt\+Allocator}} $>$ \mbox{\hyperlink{namespacerapidjson_a52bbb5d64d1319495089e1713a0653cf}{Schema\+Document}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}} using Value type. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_i_generic_remote_schema_document_provider}{I\+Generic\+Remote\+Schema\+Document\+Provider}}$<$ \mbox{\hyperlink{namespacerapidjson_a52bbb5d64d1319495089e1713a0653cf}{Schema\+Document}} $>$ \mbox{\hyperlink{namespacerapidjson_af91eb8eea47b79d75b23e29fa9c0abb5}{I\+Remote\+Schema\+Document\+Provider}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classrapidjson_1_1_i_generic_remote_schema_document_provider}{I\+Generic\+Remote\+Schema\+Document\+Provider}} using Schema\+Document. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator}{Generic\+Schema\+Validator}}$<$ \mbox{\hyperlink{namespacerapidjson_a52bbb5d64d1319495089e1713a0653cf}{Schema\+Document}}, \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{Base\+Reader\+Handler}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$ char $>$, void $>$, \mbox{\hyperlink{classrapidjson_1_1_crt_allocator}{Crt\+Allocator}} $>$ \mbox{\hyperlink{namespacerapidjson_a38dbb50c156f67adc0a70548d5572ccf}{Schema\+Validator}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}}$<$ std\+::istream $>$ \mbox{\hyperlink{namespacerapidjson_a4cb54f68bd71aed41b1b26137a7dab84}{I\+Stream\+Wrapper}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}}$<$ std\+::wistream $>$ \mbox{\hyperlink{namespacerapidjson_a65a9e5d58bff23a6c446cc7722080320}{W\+I\+Stream\+Wrapper}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{Basic\+O\+Stream\+Wrapper}}$<$ std\+::ostream $>$ \mbox{\hyperlink{namespacerapidjson_a15f55e221e1d336afab91cc69c258187}{O\+Stream\+Wrapper}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{Basic\+O\+Stream\+Wrapper}}$<$ std\+::wostream $>$ \mbox{\hyperlink{namespacerapidjson_aed3cb4533d7293644a01ec707cf8282d}{W\+O\+Stream\+Wrapper}}
+\item 
+typedef unsigned \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}
+\begin{DoxyCompactList}\small\item\em Size type (for string lengths, array sizes, etc.) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eb}{U\+T\+F\+Type}} \{ \newline
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba3bda3a2e3f0ec2b7e8c5a3d5d4f60a81}{k\+U\+T\+F8}} = 0, 
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773ebaa7ffda68d3584eb92155daf3cd1d6481}{k\+U\+T\+F16\+LE}} = 1, 
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba52c496755de96eee05275a423b36299d}{k\+U\+T\+F16\+BE}} = 2, 
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba2ec8c855b2edacca40fa73ad307a66b4}{k\+U\+T\+F32\+LE}} = 3, 
+\newline
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773ebad6db204b848081468878ed58bc20ce8f}{k\+U\+T\+F32\+BE}} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em Runtime-\/specified U\+TF encoding type of a stream. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} \{ \newline
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a86a60b723dca32df5debab2c3db4235f}{k\+Parse\+Error\+None}} = 0, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a06183076357ebd9eca228666f614c286}{k\+Parse\+Error\+Document\+Empty}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a2022599bcd4f64d58885a026f95751d5}{k\+Parse\+Error\+Document\+Root\+Not\+Singular}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60ab7fa69bce0c393cf3a2b6065111f2f57}{k\+Parse\+Error\+Value\+Invalid}}, 
+\newline
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60ab707b848425668e765def25554735242}{k\+Parse\+Error\+Object\+Miss\+Name}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a58e952084a0dfdbc5630f624252aef5c}{k\+Parse\+Error\+Object\+Miss\+Colon}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a2a81a684f39fc882ec99f07e86343f73}{k\+Parse\+Error\+Object\+Miss\+Comma\+Or\+Curly\+Bracket}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a1a4ac97731f997e9591b40f98ecd9f93}{k\+Parse\+Error\+Array\+Miss\+Comma\+Or\+Square\+Bracket}}, 
+\newline
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a23c38bf88b8448555c0eb41e1735bd92}{k\+Parse\+Error\+String\+Unicode\+Escape\+Invalid\+Hex}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a636209a2e516fbdb4db5ad0a83a6b386}{k\+Parse\+Error\+String\+Unicode\+Surrogate\+Invalid}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a8dd0af5e6103a6503c61c38cb2b0bab9}{k\+Parse\+Error\+String\+Escape\+Invalid}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60af7daa91caa53abb881ea231a874a4f40}{k\+Parse\+Error\+String\+Miss\+Quotation\+Mark}}, 
+\newline
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a62ce0f5c74e4ab34ac325d2adda8fa8f}{k\+Parse\+Error\+String\+Invalid\+Encoding}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a240cebadea89f7282ab263b5a22c9805}{k\+Parse\+Error\+Number\+Too\+Big}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60ac840ece3ba6874fe6f16c01ebb71031f}{k\+Parse\+Error\+Number\+Miss\+Fraction}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a28a1c720ae63560780ccd992dc999ab7}{k\+Parse\+Error\+Number\+Miss\+Exponent}}, 
+\newline
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60ab250f87c3d8454c579364b5a0f697a50}{k\+Parse\+Error\+Termination}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a7abf1a337294d984a3f4d18b5843fb24}{k\+Parse\+Error\+Unspecific\+Syntax\+Error}}
+ \}
+\begin{DoxyCompactList}\small\item\em Error code of parsing. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gade540ee4cc2a416c23b8ee2c12393c7b}{Pointer\+Parse\+Error\+Code}} \{ \newline
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba9094f236b2ec70c42f1ea91dffc1e39b}{k\+Pointer\+Parse\+Error\+None}} = 0, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba2f2f8b238e201b7d540e8914bbfd2bed}{k\+Pointer\+Parse\+Error\+Token\+Must\+Begin\+With\+Solidus}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba907c9fe4e541b257513e3a18635379f7}{k\+Pointer\+Parse\+Error\+Invalid\+Escape}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba29831a02b8ee23a05d552b47f4d64d28}{k\+Pointer\+Parse\+Error\+Invalid\+Percent\+Encoding}}, 
+\newline
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7bae244a98f53279fda5a750f847b81c54f}{k\+Pointer\+Parse\+Error\+Character\+Must\+Percent\+Encode}}
+ \}
+\begin{DoxyCompactList}\small\item\em Error code of parsing. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4b}{Pretty\+Format\+Options}} \{ \mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4ba8164b0d4993439856171585b9cf3adc0}{k\+Format\+Default}} = 0, 
+\mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4ba64b0f8a37ab3125118682046ff06500f}{k\+Format\+Single\+Line\+Array}} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Combination of Pretty\+Writer format flags. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{Type}} \{ \newline
+\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a952871e4326b527154fc8aac1ac1f6ff}{k\+Null\+Type}} = 0, 
+\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a9f2e7047832dce1029551b5de0f05607}{k\+False\+Type}} = 1, 
+\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a80d9f25b083abce45edbfdd3ba006c8e}{k\+True\+Type}} = 2, 
+\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4acf030b422a32c3647c7c5973bd4dd0a9}{k\+Object\+Type}} = 3, 
+\newline
+\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a058c622e1e7d59419ae58b895cbce468}{k\+Array\+Type}} = 4, 
+\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4ad6379da3dc04b83a591992bfb9fabba7}{k\+String\+Type}} = 5, 
+\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4abe572cb44ce198e467ccf9d63d50d82a}{k\+Number\+Type}} = 6
+ \}
+\begin{DoxyCompactList}\small\item\em Type of J\+S\+ON value. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9}{Parse\+Flag}} \{ \newline
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af2c7fa21e9e7656e467bd71079ac8fb0}{k\+Parse\+No\+Flags}} = 0, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a02748971d6ea0c5e22c69b8aa7f344ea}{k\+Parse\+Insitu\+Flag}} = 1, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a3df81f75479da8e052393f92cbec394b}{k\+Parse\+Validate\+Encoding\+Flag}} = 2, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a7923686c8bdb7614699f1fb1bb615bb2}{k\+Parse\+Iterative\+Flag}} = 4, 
+\newline
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af84c60868704433b80aa51a62e042bb1}{k\+Parse\+Stop\+When\+Done\+Flag}} = 8, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9adf80892cdfa076b2d1a7dd9530e15cb0}{k\+Parse\+Full\+Precision\+Flag}} = 16, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9ab5d719b36aac626135d5d622d0d837c1}{k\+Parse\+Comments\+Flag}} = 32, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a13981c0b803803f59d7a01aef3dfc987}{k\+Parse\+Numbers\+As\+Strings\+Flag}} = 64, 
+\newline
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af8b8470221dbc6046a40ff31d758ceec}{k\+Parse\+Trailing\+Commas\+Flag}} = 128, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a857894ab51cafa62956e9c9f0dafc4d8}{k\+Parse\+Nan\+And\+Inf\+Flag}} = 256, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835}{k\+Parse\+Default\+Flags}} = k\+Parse\+No\+Flags
+ \}
+\begin{DoxyCompactList}\small\item\em Combination of parse\+Flags. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19}{Write\+Flag}} \{ \mbox{\hyperlink{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19ae971aa1fc0ae64c8f3d2b47fd802846a}{k\+Write\+No\+Flags}} = 0, 
+\mbox{\hyperlink{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19ac1b5e17278b060e9e866df075c104c10}{k\+Write\+Validate\+Encoding\+Flag}} = 1, 
+\mbox{\hyperlink{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19a3adbca1d31ad845ff4e9d742280cce39}{k\+Write\+Nan\+And\+Inf\+Flag}} = 2, 
+\mbox{\hyperlink{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19a5b5ca665afdfa828a74ae5755c67a226}{k\+Write\+Default\+Flags}} = k\+Write\+No\+Flags
+ \}
+\begin{DoxyCompactList}\small\item\em Combination of write\+Flags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Char\+Type $>$ }\\\mbox{\hyperlink{structrapidjson_1_1_generic_string_ref}{Generic\+String\+Ref}}$<$ Char\+Type $>$ \mbox{\hyperlink{namespacerapidjson_aa6b9fd9f6aa49405a574c362ba9af6b5}{String\+Ref}} (const Char\+Type $\ast$str)
+\begin{DoxyCompactList}\small\item\em Mark a character pointer as constant string. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Char\+Type $>$ }\\\mbox{\hyperlink{structrapidjson_1_1_generic_string_ref}{Generic\+String\+Ref}}$<$ Char\+Type $>$ \mbox{\hyperlink{namespacerapidjson_a578c51ab574a50a9c760b9da7c7562f2}{String\+Ref}} (const Char\+Type $\ast$str, size\+\_\+t length)
+\begin{DoxyCompactList}\small\item\em Mark a character pointer as constant string. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Stream $>$ }\\void \mbox{\hyperlink{namespacerapidjson_a0a774dcffe8ae07686f459ae017d2f20}{Put\+Unsafe}} (\mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} \&stream, typename Stream\+::\+Ch c)
+\begin{DoxyCompactList}\small\item\em Write character to a stream, presuming buffer is reserved. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gae982013498511a0ef3c2a3d2069adb4f}{Get\+Parse\+Error\+\_\+\+En}} (\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} parse\+Error\+Code)
+\begin{DoxyCompactList}\small\item\em Maps error code of parsing into error message. \end{DoxyCompactList}\item 
+{\footnotesize template$<$$>$ }\\void \mbox{\hyperlink{namespacerapidjson_a1ac13bac5976fc06587e00fc0bcfb32a}{PutN}} (\mbox{\hyperlink{classrapidjson_1_1_file_write_stream}{File\+Write\+Stream}} \&stream, char c, size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Implement specialized version of \mbox{\hyperlink{namespacerapidjson_a1ac13bac5976fc06587e00fc0bcfb32a}{Put\+N()}} with memset() for better performance. \end{DoxyCompactList}\item 
+{\footnotesize template$<$$>$ }\\void \mbox{\hyperlink{namespacerapidjson_aba27b0c8dcf724aa2b288a24fda0811b}{PutN}} (\mbox{\hyperlink{namespacerapidjson_acb643b9055e7988f4cb89ce4f7e6b115}{Memory\+Buffer}} \&memory\+Buffer, char c, size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Implement specialized version of \mbox{\hyperlink{namespacerapidjson_a1ac13bac5976fc06587e00fc0bcfb32a}{Put\+N()}} with memset() for better performance. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Input\+Stream $>$ }\\void \mbox{\hyperlink{namespacerapidjson_a6efb0f4d2a6f81477a59718d42e9464a}{Skip\+Whitespace}} (Input\+Stream \&is)
+\begin{DoxyCompactList}\small\item\em Skip the J\+S\+ON white spaces in a stream. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{namespacerapidjson_a946a04b733bc148c13e7b3b0721cabcc}{Skip\+Whitespace}} (const char $\ast$p, const char $\ast$end)
+\item 
+{\footnotesize template$<$typename Stream $>$ }\\void \mbox{\hyperlink{namespacerapidjson_a820f77efccfbb749bd15fe4822d2c740}{Put\+Reserve}} (\mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} \&stream, size\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Reserve n characters for writing to a stream. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Stream , typename Ch $>$ }\\void \mbox{\hyperlink{namespacerapidjson_a1d49d2cab617858b53a1db23b1759f43}{PutN}} (\mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} \&stream, Ch c, size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Put N copies of a character to a stream. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Encoding , typename Allocator $>$ }\\void \mbox{\hyperlink{namespacerapidjson_ab38d4a353d3577fdedd8171316af80b3}{Put\+Reserve}} (\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&stream, size\+\_\+t count)
+\item 
+{\footnotesize template$<$typename Encoding , typename Allocator $>$ }\\void \mbox{\hyperlink{namespacerapidjson_ad338901177ac5feb414a9e620bfbd717}{Put\+Unsafe}} (\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&stream, typename Encoding\+::\+Ch c)
+\item 
+{\footnotesize template$<$$>$ }\\void \mbox{\hyperlink{namespacerapidjson_a9d43be9c033dc49738b713fe6fbafecf}{PutN}} (\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$$>$ $>$ \&stream, char c, size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Implement specialized version of \mbox{\hyperlink{namespacerapidjson_a1ac13bac5976fc06587e00fc0bcfb32a}{Put\+N()}} with memset() for better performance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{namespacerapidjson_a7c5fc5aced6a3cde477b80699a3f13d7}{k\+Pointer\+Invalid\+Index}} = $\sim$\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}(0)
+\begin{DoxyCompactList}\small\item\em Represents an invalid index in \mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token}{Generic\+Pointer\+::\+Token}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Helper functions for Generic\+Pointer}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \& \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ T2 \mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{default\+Value}}
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ T2 T\+::\+Allocator\+Type \& \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}
+\item 
+const Char\+Type(\& \mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}} )\mbox{[}N\mbox{]}
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ T2 \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a6cc308180c1a10dc918da0192aed8fb7}{Create\+Value\+By\+Pointer}} (T \&root, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_abb3b041f41b39df3f4219803eb31947e}{Create\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_afea8374e37ec67d3d1f08eb8c109f40c}{Create\+Value\+By\+Pointer}} (Document\+Type \&document, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}})
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a7bebd7d041eb5f91245401c674bc1776}{Create\+Value\+By\+Pointer}} (Document\+Type \&document, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]})
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type $\ast$ \mbox{\hyperlink{namespacerapidjson_a1e54debf2cebf89b4e810cb9a22bfa3b}{Get\+Value\+By\+Pointer}} (T \&root, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, size\+\_\+t $\ast$unresolved\+Token\+Index=0)
+\item 
+{\footnotesize template$<$typename T $>$ }\\const T\+::\+Value\+Type $\ast$ \mbox{\hyperlink{namespacerapidjson_a6ca286bdc96a69351dcaaa55dea8c03a}{Get\+Value\+By\+Pointer}} (const T \&root, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, size\+\_\+t $\ast$unresolved\+Token\+Index=0)
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type $\ast$ \mbox{\hyperlink{namespacerapidjson_a24060eafc78078b03c2db84fef65b5dd}{Get\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, size\+\_\+t $\ast$unresolved\+Token\+Index=0)
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\const T\+::\+Value\+Type $\ast$ \mbox{\hyperlink{namespacerapidjson_acca88ad99e931abf827f11d324174e9a}{Get\+Value\+By\+Pointer}} (const T \&root, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, size\+\_\+t $\ast$unresolved\+Token\+Index=0)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_aa33a1f9cd33ac3f6f2af3f90028fee6e}{Get\+Value\+By\+Pointer\+With\+Default}} (T \&root, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, const typename T\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{default\+Value}}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a43b1387c2ed5f7dc204d06ffaa9c55d0}{Get\+Value\+By\+Pointer\+With\+Default}} (T \&root, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, const typename T\+::\+Ch $\ast$\mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{default\+Value}}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename T , typename T2 $>$ }\\\mbox{\hyperlink{namespacerapidjson_ad218ff941d55a64aaaea0c8658d4462f}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}} ((internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T2 $>$, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value}{internal\+::\+Is\+Generic\+Value}}$<$ T2 $>$ $>$),(typename T\+::\+Value\+Type \&)) \mbox{\hyperlink{namespacerapidjson_aa33a1f9cd33ac3f6f2af3f90028fee6e}{Get\+Value\+By\+Pointer\+With\+Default}}(T \&root
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a4dba118d81ceb01ff22efb3e5e988dc1}{Get\+Value\+By\+Pointer\+With\+Default}} (T \&root, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, const typename T\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{default\+Value}}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_ac91ec0a49e7d5f976da9a1775b1ec501}{Get\+Value\+By\+Pointer\+With\+Default}} (T \&root, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, const typename T\+::\+Ch $\ast$\mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{default\+Value}}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N, typename T2 $>$ }\\\mbox{\hyperlink{namespacerapidjson_ac23c133f2ee48521a2754090454de12b}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}} ((internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T2 $>$, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value}{internal\+::\+Is\+Generic\+Value}}$<$ T2 $>$ $>$),(typename T\+::\+Value\+Type \&)) \mbox{\hyperlink{namespacerapidjson_aa33a1f9cd33ac3f6f2af3f90028fee6e}{Get\+Value\+By\+Pointer\+With\+Default}}(T \&root
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a9e32c018d38a174601d6770be7052f08}{Get\+Value\+By\+Pointer\+With\+Default}} (Document\+Type \&document, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, const typename Document\+Type\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{default\+Value}})
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a77cbd080374924fd75a24cedb2a017b2}{Get\+Value\+By\+Pointer\+With\+Default}} (Document\+Type \&document, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, const typename Document\+Type\+::\+Ch $\ast$\mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{default\+Value}})
+\item 
+{\footnotesize template$<$typename Document\+Type , typename T2 $>$ }\\\mbox{\hyperlink{namespacerapidjson_adcea79de1892e918329700f98dfd6ce2}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}} ((internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T2 $>$, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value}{internal\+::\+Is\+Generic\+Value}}$<$ T2 $>$ $>$),(typename Document\+Type\+::\+Value\+Type \&)) \mbox{\hyperlink{namespacerapidjson_aa33a1f9cd33ac3f6f2af3f90028fee6e}{Get\+Value\+By\+Pointer\+With\+Default}}(Document\+Type \&document
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a82e20f8de529ed67a6533df54a31bb04}{Get\+Value\+By\+Pointer\+With\+Default}} (Document\+Type \&document, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, const typename Document\+Type\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{default\+Value}})
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a47212072cc0fe34a06c00a6a993b9752}{Get\+Value\+By\+Pointer\+With\+Default}} (Document\+Type \&document, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, const typename Document\+Type\+::\+Ch $\ast$\mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{default\+Value}})
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N, typename T2 $>$ }\\\mbox{\hyperlink{namespacerapidjson_a00b64457f91e8bf7f82465d7b80613b0}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}} ((internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T2 $>$, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value}{internal\+::\+Is\+Generic\+Value}}$<$ T2 $>$ $>$),(typename Document\+Type\+::\+Value\+Type \&)) \mbox{\hyperlink{namespacerapidjson_aa33a1f9cd33ac3f6f2af3f90028fee6e}{Get\+Value\+By\+Pointer\+With\+Default}}(Document\+Type \&document
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_af52a32038d7db6bd0916e79408bd5bbc}{Set\+Value\+By\+Pointer}} (T \&root, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, typename T\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a0cd01a20b4256bd943f02fe255e7cc32}{Set\+Value\+By\+Pointer}} (T \&root, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, const typename T\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a03c2d060d62936bab0fe4b89f7205a8d}{Set\+Value\+By\+Pointer}} (T \&root, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, const typename T\+::\+Ch $\ast$\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_aeb9fb9b3b5c8377b0155bca9aeb40a51}{Set\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, typename T\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a4c7a1df544ef6745922b7311cbbe98f0}{Set\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, const typename T\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_aa637a04f8fc74722bb5aabb0b9567432}{Set\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, const typename T\+::\+Ch $\ast$\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a7ee672e29015d1884533b23769c49dee}{Set\+Value\+By\+Pointer}} (Document\+Type \&document, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, typename Document\+Type\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}})
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a17434145e27de11a23d116f832e62b0e}{Set\+Value\+By\+Pointer}} (Document\+Type \&document, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, const typename Document\+Type\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}})
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_ae1ed433d2762ea314c3936e0e7b3259b}{Set\+Value\+By\+Pointer}} (Document\+Type \&document, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, const typename Document\+Type\+::\+Ch $\ast$\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}})
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_aa4a6b91e9ba841920a3eebf7966219ec}{Set\+Value\+By\+Pointer}} (Document\+Type \&document, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, typename Document\+Type\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}})
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a903c53365983ea6b11b1e37bcd613a40}{Set\+Value\+By\+Pointer}} (Document\+Type \&document, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, const typename Document\+Type\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}})
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_add1fda95f27ace1ba362b2f8ca29b6ff}{Set\+Value\+By\+Pointer}} (Document\+Type \&document, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, const typename Document\+Type\+::\+Ch $\ast$\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}})
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_af27fbadfe9c823485374a6b426e3bf1f}{Swap\+Value\+By\+Pointer}} (T \&root, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, typename T\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a54ef9e175c0a22c8dc894dd001063b43}{Swap\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, typename T\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, typename T\+::\+Allocator\+Type \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a8e7fefa7eb27b5093f8f14439718aae3}{Swap\+Value\+By\+Pointer}} (Document\+Type \&document, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}, typename Document\+Type\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}})
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_adb20ad4981c389a8007b5e58b901c558}{Swap\+Value\+By\+Pointer}} (Document\+Type \&document, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]}, typename Document\+Type\+::\+Value\+Type \&\mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}})
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{namespacerapidjson_adaa0d9adc977720a77aa263a6dedc308}{Erase\+Value\+By\+Pointer}} (T \&root, const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&\mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}})
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\bool \mbox{\hyperlink{namespacerapidjson_aecef95f2fb3b7418031aeda5558072c5}{Erase\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}})\mbox{[}N\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+main Rapid\+J\+S\+ON namespace 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_ga743a79d3af927391fe3eb5c979136899}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacerapidjson_ace11b5b575baf1cccd5ba5f8586dcdc8}\label{namespacerapidjson_ace11b5b575baf1cccd5ba5f8586dcdc8}} 
+\index{rapidjson@{rapidjson}!Document@{Document}}
+\index{Document@{Document}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{Document}{Document}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$ char $>$, \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{Memory\+Pool\+Allocator}}$<$ \mbox{\hyperlink{classrapidjson_1_1_crt_allocator}{Crt\+Allocator}} $>$, \mbox{\hyperlink{classrapidjson_1_1_crt_allocator}{Crt\+Allocator}} $>$ \mbox{\hyperlink{namespacerapidjson_ace11b5b575baf1cccd5ba5f8586dcdc8}{rapidjson\+::\+Document}}}
+
+
+
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding. 
+
+
+
+Definition at line 2506 of file document.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_a64e957c8d9d7cd15b193ffc31410038e}\label{namespacerapidjson_a64e957c8d9d7cd15b193ffc31410038e}} 
+\index{rapidjson@{rapidjson}!InsituStringStream@{InsituStringStream}}
+\index{InsituStringStream@{InsituStringStream}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{InsituStringStream}{InsituStringStream}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{Generic\+Insitu\+String\+Stream}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$$>$ $>$ \mbox{\hyperlink{namespacerapidjson_a64e957c8d9d7cd15b193ffc31410038e}{rapidjson\+::\+Insitu\+String\+Stream}}}
+
+
+
+Insitu string stream with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding. 
+
+
+
+Definition at line 52 of file fwd.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_af91eb8eea47b79d75b23e29fa9c0abb5}\label{namespacerapidjson_af91eb8eea47b79d75b23e29fa9c0abb5}} 
+\index{rapidjson@{rapidjson}!IRemoteSchemaDocumentProvider@{IRemoteSchemaDocumentProvider}}
+\index{IRemoteSchemaDocumentProvider@{IRemoteSchemaDocumentProvider}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{IRemoteSchemaDocumentProvider}{IRemoteSchemaDocumentProvider}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1_i_generic_remote_schema_document_provider}{I\+Generic\+Remote\+Schema\+Document\+Provider}}$<$ \mbox{\hyperlink{namespacerapidjson_a52bbb5d64d1319495089e1713a0653cf}{Schema\+Document}} $>$ \mbox{\hyperlink{namespacerapidjson_af91eb8eea47b79d75b23e29fa9c0abb5}{rapidjson\+::\+I\+Remote\+Schema\+Document\+Provider}}}
+
+
+
+\mbox{\hyperlink{classrapidjson_1_1_i_generic_remote_schema_document_provider}{I\+Generic\+Remote\+Schema\+Document\+Provider}} using Schema\+Document. 
+
+
+
+Definition at line 139 of file fwd.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_a4cb54f68bd71aed41b1b26137a7dab84}\label{namespacerapidjson_a4cb54f68bd71aed41b1b26137a7dab84}} 
+\index{rapidjson@{rapidjson}!IStreamWrapper@{IStreamWrapper}}
+\index{IStreamWrapper@{IStreamWrapper}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{IStreamWrapper}{IStreamWrapper}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}}$<$std\+::istream$>$ \mbox{\hyperlink{namespacerapidjson_a4cb54f68bd71aed41b1b26137a7dab84}{rapidjson\+::\+I\+Stream\+Wrapper}}}
+
+
+
+Definition at line 119 of file istreamwrapper.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_acb643b9055e7988f4cb89ce4f7e6b115}\label{namespacerapidjson_acb643b9055e7988f4cb89ce4f7e6b115}} 
+\index{rapidjson@{rapidjson}!MemoryBuffer@{MemoryBuffer}}
+\index{MemoryBuffer@{MemoryBuffer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{MemoryBuffer}{MemoryBuffer}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{Generic\+Memory\+Buffer}} \mbox{\hyperlink{namespacerapidjson_acb643b9055e7988f4cb89ce4f7e6b115}{rapidjson\+::\+Memory\+Buffer}}}
+
+
+
+Definition at line 74 of file fwd.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_a15f55e221e1d336afab91cc69c258187}\label{namespacerapidjson_a15f55e221e1d336afab91cc69c258187}} 
+\index{rapidjson@{rapidjson}!OStreamWrapper@{OStreamWrapper}}
+\index{OStreamWrapper@{OStreamWrapper}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{OStreamWrapper}{OStreamWrapper}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{Basic\+O\+Stream\+Wrapper}}$<$std\+::ostream$>$ \mbox{\hyperlink{namespacerapidjson_a15f55e221e1d336afab91cc69c258187}{rapidjson\+::\+O\+Stream\+Wrapper}}}
+
+
+
+Definition at line 72 of file ostreamwrapper.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_a080910f74d2f5046e6724280159cf374}\label{namespacerapidjson_a080910f74d2f5046e6724280159cf374}} 
+\index{rapidjson@{rapidjson}!Pointer@{Pointer}}
+\index{Pointer@{Pointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{Pointer}{Pointer}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ \mbox{\hyperlink{namespacerapidjson_aa65fc9fb381b2cbc54f98673eadd6505}{Value}} $>$ \mbox{\hyperlink{namespacerapidjson_a080910f74d2f5046e6724280159cf374}{rapidjson\+::\+Pointer}}}
+
+
+
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} for Value (U\+T\+F-\/8, default allocator). 
+
+
+
+Definition at line 126 of file fwd.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_ad5310edd1226f5b3ea82dc0d4d3740c6}\label{namespacerapidjson_ad5310edd1226f5b3ea82dc0d4d3740c6}} 
+\index{rapidjson@{rapidjson}!Reader@{Reader}}
+\index{Reader@{Reader}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{Reader}{Reader}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{Generic\+Reader}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$$>$, \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$$>$ $>$ \mbox{\hyperlink{namespacerapidjson_ad5310edd1226f5b3ea82dc0d4d3740c6}{rapidjson\+::\+Reader}}}
+
+
+
+Reader with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding and default allocator. 
+
+
+
+Definition at line 88 of file fwd.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_a52bbb5d64d1319495089e1713a0653cf}\label{namespacerapidjson_a52bbb5d64d1319495089e1713a0653cf}} 
+\index{rapidjson@{rapidjson}!SchemaDocument@{SchemaDocument}}
+\index{SchemaDocument@{SchemaDocument}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SchemaDocument}{SchemaDocument}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}}$<$ \mbox{\hyperlink{namespacerapidjson_aa65fc9fb381b2cbc54f98673eadd6505}{Value}} $>$ \mbox{\hyperlink{namespacerapidjson_a52bbb5d64d1319495089e1713a0653cf}{rapidjson\+::\+Schema\+Document}}}
+
+
+
+\mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{Generic\+Schema\+Document}} using Value type. 
+
+
+
+Definition at line 136 of file fwd.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_a38dbb50c156f67adc0a70548d5572ccf}\label{namespacerapidjson_a38dbb50c156f67adc0a70548d5572ccf}} 
+\index{rapidjson@{rapidjson}!SchemaValidator@{SchemaValidator}}
+\index{SchemaValidator@{SchemaValidator}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SchemaValidator}{SchemaValidator}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator}{Generic\+Schema\+Validator}}$<$ \mbox{\hyperlink{namespacerapidjson_a52bbb5d64d1319495089e1713a0653cf}{Schema\+Document}} $>$ \mbox{\hyperlink{namespacerapidjson_a38dbb50c156f67adc0a70548d5572ccf}{rapidjson\+::\+Schema\+Validator}}}
+
+
+
+Definition at line 145 of file fwd.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}\label{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}} 
+\index{rapidjson@{rapidjson}!SizeType@{SizeType}}
+\index{SizeType@{SizeType}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SizeType}{SizeType}}
+{\footnotesize\ttfamily typedef unsigned \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{rapidjson\+::\+Size\+Type}}}
+
+
+
+Size type (for string lengths, array sizes, etc.) 
+
+Rapid\+J\+S\+ON uses 32-\/bit array/string indices even on 64-\/bit platforms, instead of using {\ttfamily size\+\_\+t}. Users may override the Size\+Type by defining R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+\_\+\+S\+I\+Z\+E\+T\+Y\+P\+E\+D\+E\+F\+I\+NE. 
+
+Definition at line 384 of file rapidjson.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_ac0765ea91f41539645c4b78689d03f21}\label{namespacerapidjson_ac0765ea91f41539645c4b78689d03f21}} 
+\index{rapidjson@{rapidjson}!StringBuffer@{StringBuffer}}
+\index{StringBuffer@{StringBuffer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{StringBuffer}{StringBuffer}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$$>$ $>$ \mbox{\hyperlink{namespacerapidjson_ac0765ea91f41539645c4b78689d03f21}{rapidjson\+::\+String\+Buffer}}}
+
+
+
+String buffer with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding. 
+
+
+
+Definition at line 59 of file fwd.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_a021f77051e9f85188fc2f71ff5a15ebc}\label{namespacerapidjson_a021f77051e9f85188fc2f71ff5a15ebc}} 
+\index{rapidjson@{rapidjson}!StringStream@{StringStream}}
+\index{StringStream@{StringStream}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{StringStream}{StringStream}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{Generic\+String\+Stream}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$$>$ $>$ \mbox{\hyperlink{namespacerapidjson_a021f77051e9f85188fc2f71ff5a15ebc}{rapidjson\+::\+String\+Stream}}}
+
+
+
+String stream with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding. 
+
+
+
+Definition at line 47 of file fwd.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_aa65fc9fb381b2cbc54f98673eadd6505}\label{namespacerapidjson_aa65fc9fb381b2cbc54f98673eadd6505}} 
+\index{rapidjson@{rapidjson}!Value@{Value}}
+\index{Value@{Value}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{Value}{Value}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$ char $>$, \mbox{\hyperlink{classrapidjson_1_1_memory_pool_allocator}{Memory\+Pool\+Allocator}}$<$ \mbox{\hyperlink{classrapidjson_1_1_crt_allocator}{Crt\+Allocator}} $>$ $>$ \mbox{\hyperlink{namespacerapidjson_aa65fc9fb381b2cbc54f98673eadd6505}{rapidjson\+::\+Value}}}
+
+
+
+\mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}} with \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding. 
+
+
+
+Definition at line 2110 of file document.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_a65a9e5d58bff23a6c446cc7722080320}\label{namespacerapidjson_a65a9e5d58bff23a6c446cc7722080320}} 
+\index{rapidjson@{rapidjson}!WIStreamWrapper@{WIStreamWrapper}}
+\index{WIStreamWrapper@{WIStreamWrapper}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{WIStreamWrapper}{WIStreamWrapper}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}}$<$std\+::wistream$>$ \mbox{\hyperlink{namespacerapidjson_a65a9e5d58bff23a6c446cc7722080320}{rapidjson\+::\+W\+I\+Stream\+Wrapper}}}
+
+
+
+Definition at line 120 of file istreamwrapper.\+h.
+
+\mbox{\Hypertarget{namespacerapidjson_aed3cb4533d7293644a01ec707cf8282d}\label{namespacerapidjson_aed3cb4533d7293644a01ec707cf8282d}} 
+\index{rapidjson@{rapidjson}!WOStreamWrapper@{WOStreamWrapper}}
+\index{WOStreamWrapper@{WOStreamWrapper}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{WOStreamWrapper}{WOStreamWrapper}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrapidjson_1_1_basic_o_stream_wrapper}{Basic\+O\+Stream\+Wrapper}}$<$std\+::wostream$>$ \mbox{\hyperlink{namespacerapidjson_aed3cb4533d7293644a01ec707cf8282d}{rapidjson\+::\+W\+O\+Stream\+Wrapper}}}
+
+
+
+Definition at line 73 of file ostreamwrapper.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9}\label{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9}} 
+\index{rapidjson@{rapidjson}!ParseFlag@{ParseFlag}}
+\index{ParseFlag@{ParseFlag}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{ParseFlag}{ParseFlag}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9}{rapidjson\+::\+Parse\+Flag}}}
+
+
+
+Combination of parse\+Flags. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classrapidjson_1_1_generic_reader_ac9c540b77de19661f6f45e04b9b0937b}{Reader\+::\+Parse}}, \mbox{\hyperlink{classrapidjson_1_1_generic_document_aea842b533a858c9a3861451ad9e8642c}{Document\+::\+Parse}}, \mbox{\hyperlink{classrapidjson_1_1_generic_document_a7ba626bf84eb45a9bca0b7723bf47f3f}{Document\+::\+Parse\+Insitu}}, \mbox{\hyperlink{classrapidjson_1_1_generic_document_a3ae97682cf04685c7db9d89ebc399b85}{Document\+::\+Parse\+Stream}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kParseNoFlags@{kParseNoFlags}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kParseNoFlags@{kParseNoFlags}}}\mbox{\Hypertarget{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af2c7fa21e9e7656e467bd71079ac8fb0}\label{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af2c7fa21e9e7656e467bd71079ac8fb0}} 
+k\+Parse\+No\+Flags&No flags are set. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kParseInsituFlag@{kParseInsituFlag}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kParseInsituFlag@{kParseInsituFlag}}}\mbox{\Hypertarget{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a02748971d6ea0c5e22c69b8aa7f344ea}\label{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a02748971d6ea0c5e22c69b8aa7f344ea}} 
+k\+Parse\+Insitu\+Flag&In-\/situ(destructive) parsing. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kParseValidateEncodingFlag@{kParseValidateEncodingFlag}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kParseValidateEncodingFlag@{kParseValidateEncodingFlag}}}\mbox{\Hypertarget{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a3df81f75479da8e052393f92cbec394b}\label{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a3df81f75479da8e052393f92cbec394b}} 
+k\+Parse\+Validate\+Encoding\+Flag&Validate encoding of J\+S\+ON strings. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kParseIterativeFlag@{kParseIterativeFlag}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kParseIterativeFlag@{kParseIterativeFlag}}}\mbox{\Hypertarget{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a7923686c8bdb7614699f1fb1bb615bb2}\label{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a7923686c8bdb7614699f1fb1bb615bb2}} 
+k\+Parse\+Iterative\+Flag&Iterative(constant complexity in terms of function call stack size) parsing. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kParseStopWhenDoneFlag@{kParseStopWhenDoneFlag}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kParseStopWhenDoneFlag@{kParseStopWhenDoneFlag}}}\mbox{\Hypertarget{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af84c60868704433b80aa51a62e042bb1}\label{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af84c60868704433b80aa51a62e042bb1}} 
+k\+Parse\+Stop\+When\+Done\+Flag&After parsing a complete J\+S\+ON root from stream, stop further processing the rest of stream. When this flag is used, parser will not generate k\+Parse\+Error\+Document\+Root\+Not\+Singular error. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kParseFullPrecisionFlag@{kParseFullPrecisionFlag}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kParseFullPrecisionFlag@{kParseFullPrecisionFlag}}}\mbox{\Hypertarget{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9adf80892cdfa076b2d1a7dd9530e15cb0}\label{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9adf80892cdfa076b2d1a7dd9530e15cb0}} 
+k\+Parse\+Full\+Precision\+Flag&Parse number in full precision (but slower). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kParseCommentsFlag@{kParseCommentsFlag}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kParseCommentsFlag@{kParseCommentsFlag}}}\mbox{\Hypertarget{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9ab5d719b36aac626135d5d622d0d837c1}\label{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9ab5d719b36aac626135d5d622d0d837c1}} 
+k\+Parse\+Comments\+Flag&Allow one-\/line (//) and multi-\/line (/$\ast$$\ast$/) comments. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kParseNumbersAsStringsFlag@{kParseNumbersAsStringsFlag}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kParseNumbersAsStringsFlag@{kParseNumbersAsStringsFlag}}}\mbox{\Hypertarget{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a13981c0b803803f59d7a01aef3dfc987}\label{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a13981c0b803803f59d7a01aef3dfc987}} 
+k\+Parse\+Numbers\+As\+Strings\+Flag&Parse all numbers (ints/doubles) as strings. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kParseTrailingCommasFlag@{kParseTrailingCommasFlag}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kParseTrailingCommasFlag@{kParseTrailingCommasFlag}}}\mbox{\Hypertarget{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af8b8470221dbc6046a40ff31d758ceec}\label{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af8b8470221dbc6046a40ff31d758ceec}} 
+k\+Parse\+Trailing\+Commas\+Flag&Allow trailing commas at the end of objects and arrays. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kParseNanAndInfFlag@{kParseNanAndInfFlag}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kParseNanAndInfFlag@{kParseNanAndInfFlag}}}\mbox{\Hypertarget{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a857894ab51cafa62956e9c9f0dafc4d8}\label{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a857894ab51cafa62956e9c9f0dafc4d8}} 
+k\+Parse\+Nan\+And\+Inf\+Flag&Allow parsing NaN, Inf, Infinity, -\/Inf and -\/Infinity as doubles. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kParseDefaultFlags@{kParseDefaultFlags}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kParseDefaultFlags@{kParseDefaultFlags}}}\mbox{\Hypertarget{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835}\label{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835}} 
+k\+Parse\+Default\+Flags&Default parse flags. Can be customized by defining R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+L\+A\+GS. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 145 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{145                \{}
+\DoxyCodeLine{146     \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af2c7fa21e9e7656e467bd71079ac8fb0}{kParseNoFlags}} = 0,              }
+\DoxyCodeLine{147     \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a02748971d6ea0c5e22c69b8aa7f344ea}{kParseInsituFlag}} = 1,           }
+\DoxyCodeLine{148     \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a3df81f75479da8e052393f92cbec394b}{kParseValidateEncodingFlag}} = 2, }
+\DoxyCodeLine{149     \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a7923686c8bdb7614699f1fb1bb615bb2}{kParseIterativeFlag}} = 4,        }
+\DoxyCodeLine{150     \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af84c60868704433b80aa51a62e042bb1}{kParseStopWhenDoneFlag}} = 8,     }
+\DoxyCodeLine{151     \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9adf80892cdfa076b2d1a7dd9530e15cb0}{kParseFullPrecisionFlag}} = 16,   }
+\DoxyCodeLine{152     \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9ab5d719b36aac626135d5d622d0d837c1}{kParseCommentsFlag}} = 32,        }
+\DoxyCodeLine{153     \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a13981c0b803803f59d7a01aef3dfc987}{kParseNumbersAsStringsFlag}} = 64,    }
+\DoxyCodeLine{154     \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af8b8470221dbc6046a40ff31d758ceec}{kParseTrailingCommasFlag}} = 128, }
+\DoxyCodeLine{155     \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a857894ab51cafa62956e9c9f0dafc4d8}{kParseNanAndInfFlag}} = 256,      }
+\DoxyCodeLine{156     \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835}{kParseDefaultFlags}} = \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_ga77005e892e6601599beaf421b0395c31}{RAPIDJSON\_PARSE\_DEFAULT\_FLAGS}}  }
+\DoxyCodeLine{157 \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4b}\label{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4b}} 
+\index{rapidjson@{rapidjson}!PrettyFormatOptions@{PrettyFormatOptions}}
+\index{PrettyFormatOptions@{PrettyFormatOptions}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{PrettyFormatOptions}{PrettyFormatOptions}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4b}{rapidjson\+::\+Pretty\+Format\+Options}}}
+
+
+
+Combination of \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}} format flags. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_acde6176577f29869e28a4f3c4a251090}{Pretty\+Writer\+::\+Set\+Format\+Options}} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kFormatDefault@{kFormatDefault}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kFormatDefault@{kFormatDefault}}}\mbox{\Hypertarget{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4ba8164b0d4993439856171585b9cf3adc0}\label{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4ba8164b0d4993439856171585b9cf3adc0}} 
+k\+Format\+Default&Default pretty formatting. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kFormatSingleLineArray@{kFormatSingleLineArray}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kFormatSingleLineArray@{kFormatSingleLineArray}}}\mbox{\Hypertarget{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4ba64b0f8a37ab3125118682046ff06500f}\label{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4ba64b0f8a37ab3125118682046ff06500f}} 
+k\+Format\+Single\+Line\+Array&Format arrays on a single line. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 35 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35                          \{}
+\DoxyCodeLine{36     \mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4ba8164b0d4993439856171585b9cf3adc0}{kFormatDefault}} = 0,         }
+\DoxyCodeLine{37     \mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4ba64b0f8a37ab3125118682046ff06500f}{kFormatSingleLineArray}} = 1  }
+\DoxyCodeLine{38 \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}\label{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}} 
+\index{rapidjson@{rapidjson}!Type@{Type}}
+\index{Type@{Type}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{rapidjson\+::\+Type}}}
+
+
+
+Type of J\+S\+ON value. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNullType@{kNullType}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kNullType@{kNullType}}}\mbox{\Hypertarget{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a952871e4326b527154fc8aac1ac1f6ff}\label{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a952871e4326b527154fc8aac1ac1f6ff}} 
+k\+Null\+Type&null \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kFalseType@{kFalseType}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kFalseType@{kFalseType}}}\mbox{\Hypertarget{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a9f2e7047832dce1029551b5de0f05607}\label{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a9f2e7047832dce1029551b5de0f05607}} 
+k\+False\+Type&false \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kTrueType@{kTrueType}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kTrueType@{kTrueType}}}\mbox{\Hypertarget{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a80d9f25b083abce45edbfdd3ba006c8e}\label{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a80d9f25b083abce45edbfdd3ba006c8e}} 
+k\+True\+Type&true \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kObjectType@{kObjectType}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kObjectType@{kObjectType}}}\mbox{\Hypertarget{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4acf030b422a32c3647c7c5973bd4dd0a9}\label{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4acf030b422a32c3647c7c5973bd4dd0a9}} 
+k\+Object\+Type&object \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kArrayType@{kArrayType}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kArrayType@{kArrayType}}}\mbox{\Hypertarget{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a058c622e1e7d59419ae58b895cbce468}\label{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a058c622e1e7d59419ae58b895cbce468}} 
+k\+Array\+Type&array \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kStringType@{kStringType}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kStringType@{kStringType}}}\mbox{\Hypertarget{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4ad6379da3dc04b83a591992bfb9fabba7}\label{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4ad6379da3dc04b83a591992bfb9fabba7}} 
+k\+String\+Type&string \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kNumberType@{kNumberType}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kNumberType@{kNumberType}}}\mbox{\Hypertarget{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4abe572cb44ce198e467ccf9d63d50d82a}\label{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4abe572cb44ce198e467ccf9d63d50d82a}} 
+k\+Number\+Type&number \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 644 of file rapidjson.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{644           \{}
+\DoxyCodeLine{645     \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a952871e4326b527154fc8aac1ac1f6ff}{kNullType}} = 0,      }
+\DoxyCodeLine{646     \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a9f2e7047832dce1029551b5de0f05607}{kFalseType}} = 1,     }
+\DoxyCodeLine{647     \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a80d9f25b083abce45edbfdd3ba006c8e}{kTrueType}} = 2,      }
+\DoxyCodeLine{648     \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4acf030b422a32c3647c7c5973bd4dd0a9}{kObjectType}} = 3,    }
+\DoxyCodeLine{649     \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a058c622e1e7d59419ae58b895cbce468}{kArrayType}} = 4,     }
+\DoxyCodeLine{650     \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4ad6379da3dc04b83a591992bfb9fabba7}{kStringType}} = 5,    }
+\DoxyCodeLine{651     \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4abe572cb44ce198e467ccf9d63d50d82a}{kNumberType}} = 6     }
+\DoxyCodeLine{652 \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eb}\label{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eb}} 
+\index{rapidjson@{rapidjson}!UTFType@{UTFType}}
+\index{UTFType@{UTFType}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{UTFType}{UTFType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eb}{rapidjson\+::\+U\+T\+F\+Type}}}
+
+
+
+Runtime-\/specified U\+TF encoding type of a stream. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kUTF8@{kUTF8}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kUTF8@{kUTF8}}}\mbox{\Hypertarget{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba3bda3a2e3f0ec2b7e8c5a3d5d4f60a81}\label{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba3bda3a2e3f0ec2b7e8c5a3d5d4f60a81}} 
+k\+U\+T\+F8&U\+T\+F-\/8. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kUTF16LE@{kUTF16LE}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kUTF16LE@{kUTF16LE}}}\mbox{\Hypertarget{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773ebaa7ffda68d3584eb92155daf3cd1d6481}\label{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773ebaa7ffda68d3584eb92155daf3cd1d6481}} 
+k\+U\+T\+F16\+LE&U\+T\+F-\/16 little endian. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kUTF16BE@{kUTF16BE}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kUTF16BE@{kUTF16BE}}}\mbox{\Hypertarget{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba52c496755de96eee05275a423b36299d}\label{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba52c496755de96eee05275a423b36299d}} 
+k\+U\+T\+F16\+BE&U\+T\+F-\/16 big endian. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kUTF32LE@{kUTF32LE}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kUTF32LE@{kUTF32LE}}}\mbox{\Hypertarget{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba2ec8c855b2edacca40fa73ad307a66b4}\label{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba2ec8c855b2edacca40fa73ad307a66b4}} 
+k\+U\+T\+F32\+LE&U\+T\+F-\/32 little endian. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kUTF32BE@{kUTF32BE}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kUTF32BE@{kUTF32BE}}}\mbox{\Hypertarget{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773ebad6db204b848081468878ed58bc20ce8f}\label{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773ebad6db204b848081468878ed58bc20ce8f}} 
+k\+U\+T\+F32\+BE&U\+T\+F-\/32 big endian. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 603 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{603              \{}
+\DoxyCodeLine{604     \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba3bda3a2e3f0ec2b7e8c5a3d5d4f60a81}{kUTF8}} = 0,      }
+\DoxyCodeLine{605     \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773ebaa7ffda68d3584eb92155daf3cd1d6481}{kUTF16LE}} = 1,   }
+\DoxyCodeLine{606     \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba52c496755de96eee05275a423b36299d}{kUTF16BE}} = 2,   }
+\DoxyCodeLine{607     \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba2ec8c855b2edacca40fa73ad307a66b4}{kUTF32LE}} = 3,   }
+\DoxyCodeLine{608     \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773ebad6db204b848081468878ed58bc20ce8f}{kUTF32BE}} = 4    }
+\DoxyCodeLine{609 \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19}\label{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19}} 
+\index{rapidjson@{rapidjson}!WriteFlag@{WriteFlag}}
+\index{WriteFlag@{WriteFlag}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{WriteFlag}{WriteFlag}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19}{rapidjson\+::\+Write\+Flag}}}
+
+
+
+Combination of write\+Flags. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kWriteNoFlags@{kWriteNoFlags}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kWriteNoFlags@{kWriteNoFlags}}}\mbox{\Hypertarget{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19ae971aa1fc0ae64c8f3d2b47fd802846a}\label{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19ae971aa1fc0ae64c8f3d2b47fd802846a}} 
+k\+Write\+No\+Flags&No flags are set. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kWriteValidateEncodingFlag@{kWriteValidateEncodingFlag}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kWriteValidateEncodingFlag@{kWriteValidateEncodingFlag}}}\mbox{\Hypertarget{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19ac1b5e17278b060e9e866df075c104c10}\label{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19ac1b5e17278b060e9e866df075c104c10}} 
+k\+Write\+Validate\+Encoding\+Flag&Validate encoding of J\+S\+ON strings. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kWriteNanAndInfFlag@{kWriteNanAndInfFlag}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kWriteNanAndInfFlag@{kWriteNanAndInfFlag}}}\mbox{\Hypertarget{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19a3adbca1d31ad845ff4e9d742280cce39}\label{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19a3adbca1d31ad845ff4e9d742280cce39}} 
+k\+Write\+Nan\+And\+Inf\+Flag&Allow writing of Infinity, -\/Infinity and NaN. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kWriteDefaultFlags@{kWriteDefaultFlags}!rapidjson@{rapidjson}}\index{rapidjson@{rapidjson}!kWriteDefaultFlags@{kWriteDefaultFlags}}}\mbox{\Hypertarget{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19a5b5ca665afdfa828a74ae5755c67a226}\label{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19a5b5ca665afdfa828a74ae5755c67a226}} 
+k\+Write\+Default\+Flags&Default write flags. Can be customized by defining R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+W\+R\+I\+T\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+L\+A\+GS. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 65 of file writer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                \{}
+\DoxyCodeLine{66     \mbox{\hyperlink{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19ae971aa1fc0ae64c8f3d2b47fd802846a}{kWriteNoFlags}} = 0,              }
+\DoxyCodeLine{67     \mbox{\hyperlink{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19ac1b5e17278b060e9e866df075c104c10}{kWriteValidateEncodingFlag}} = 1, }
+\DoxyCodeLine{68     \mbox{\hyperlink{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19a3adbca1d31ad845ff4e9d742280cce39}{kWriteNanAndInfFlag}} = 2,        }
+\DoxyCodeLine{69     \mbox{\hyperlink{namespacerapidjson_ad28b1de6aee37e92fc31792dd6dd6b19a5b5ca665afdfa828a74ae5755c67a226}{kWriteDefaultFlags}} = \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_ga1975595e2f1dc20a2d4859f340ac88c6}{RAPIDJSON\_WRITE\_DEFAULT\_FLAGS}}  }
+\DoxyCodeLine{70 \};}
+
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacerapidjson_a6cc308180c1a10dc918da0192aed8fb7}\label{namespacerapidjson_a6cc308180c1a10dc918da0192aed8fb7}} 
+\index{rapidjson@{rapidjson}!CreateValueByPointer@{CreateValueByPointer}}
+\index{CreateValueByPointer@{CreateValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{CreateValueByPointer()}{CreateValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Create\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1117 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1117                                                                                                                                    \{}
+\DoxyCodeLine{1118     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Create(root, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1119 \}}
+
+\end{DoxyCode}
+
+
+References a, and pointer.
+
+\mbox{\Hypertarget{namespacerapidjson_abb3b041f41b39df3f4219803eb31947e}\label{namespacerapidjson_abb3b041f41b39df3f4219803eb31947e}} 
+\index{rapidjson@{rapidjson}!CreateValueByPointer@{CreateValueByPointer}}
+\index{CreateValueByPointer@{CreateValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{CreateValueByPointer()}{CreateValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Create\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1122 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1122                                                                                                            \{}
+\DoxyCodeLine{1123     \textcolor{keywordflow}{return} GenericPointer<typename T::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).Create(root, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1124 \}}
+
+\end{DoxyCode}
+
+
+References a, and source.
+
+\mbox{\Hypertarget{namespacerapidjson_afea8374e37ec67d3d1f08eb8c109f40c}\label{namespacerapidjson_afea8374e37ec67d3d1f08eb8c109f40c}} 
+\index{rapidjson@{rapidjson}!CreateValueByPointer@{CreateValueByPointer}}
+\index{CreateValueByPointer@{CreateValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{CreateValueByPointer()}{CreateValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type $>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Create\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&}]{pointer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1129 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1129                                                                                                                                             \{}
+\DoxyCodeLine{1130     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Create(document);}
+\DoxyCodeLine{1131 \}}
+
+\end{DoxyCode}
+
+
+References pointer.
+
+\mbox{\Hypertarget{namespacerapidjson_a7bebd7d041eb5f91245401c674bc1776}\label{namespacerapidjson_a7bebd7d041eb5f91245401c674bc1776}} 
+\index{rapidjson@{rapidjson}!CreateValueByPointer@{CreateValueByPointer}}
+\index{CreateValueByPointer@{CreateValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{CreateValueByPointer()}{CreateValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Create\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1134 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1134                                                                                                          \{}
+\DoxyCodeLine{1135     \textcolor{keywordflow}{return} GenericPointer<typename DocumentType::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).Create(document);}
+\DoxyCodeLine{1136 \}}
+
+\end{DoxyCode}
+
+
+References source.
+
+\mbox{\Hypertarget{namespacerapidjson_adaa0d9adc977720a77aa263a6dedc308}\label{namespacerapidjson_adaa0d9adc977720a77aa263a6dedc308}} 
+\index{rapidjson@{rapidjson}!EraseValueByPointer@{EraseValueByPointer}}
+\index{EraseValueByPointer@{EraseValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{EraseValueByPointer()}{EraseValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool rapidjson\+::\+Erase\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&}]{pointer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1397 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1397                                                                                       \{}
+\DoxyCodeLine{1398     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Erase(root);}
+\DoxyCodeLine{1399 \}}
+
+\end{DoxyCode}
+
+
+References pointer.
+
+\mbox{\Hypertarget{namespacerapidjson_aecef95f2fb3b7418031aeda5558072c5}\label{namespacerapidjson_aecef95f2fb3b7418031aeda5558072c5}} 
+\index{rapidjson@{rapidjson}!EraseValueByPointer@{EraseValueByPointer}}
+\index{EraseValueByPointer@{EraseValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{EraseValueByPointer()}{EraseValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ \\
+bool rapidjson\+::\+Erase\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1402 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1402                                                               \{}
+\DoxyCodeLine{1403     \textcolor{keywordflow}{return} GenericPointer<typename T::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).Erase(root);}
+\DoxyCodeLine{1404 \}}
+
+\end{DoxyCode}
+
+
+References source.
+
+\mbox{\Hypertarget{namespacerapidjson_a1e54debf2cebf89b4e810cb9a22bfa3b}\label{namespacerapidjson_a1e54debf2cebf89b4e810cb9a22bfa3b}} 
+\index{rapidjson@{rapidjson}!GetValueByPointer@{GetValueByPointer}}
+\index{GetValueByPointer@{GetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{GetValueByPointer()}{GetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\+::\+Value\+Type$\ast$ rapidjson\+::\+Get\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{size\+\_\+t $\ast$}]{unresolved\+Token\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1141 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1141                                                                                                                                       \{}
+\DoxyCodeLine{1142     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Get(root, unresolvedTokenIndex);}
+\DoxyCodeLine{1143 \}}
+
+\end{DoxyCode}
+
+
+References pointer.
+
+\mbox{\Hypertarget{namespacerapidjson_a6ca286bdc96a69351dcaaa55dea8c03a}\label{namespacerapidjson_a6ca286bdc96a69351dcaaa55dea8c03a}} 
+\index{rapidjson@{rapidjson}!GetValueByPointer@{GetValueByPointer}}
+\index{GetValueByPointer@{GetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{GetValueByPointer()}{GetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T\+::\+Value\+Type$\ast$ rapidjson\+::\+Get\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{const T \&}]{root,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{size\+\_\+t $\ast$}]{unresolved\+Token\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1146 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1146                                                                                                                                                   \{}
+\DoxyCodeLine{1147     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Get(root, unresolvedTokenIndex);}
+\DoxyCodeLine{1148 \}}
+
+\end{DoxyCode}
+
+
+References pointer.
+
+\mbox{\Hypertarget{namespacerapidjson_a24060eafc78078b03c2db84fef65b5dd}\label{namespacerapidjson_a24060eafc78078b03c2db84fef65b5dd}} 
+\index{rapidjson@{rapidjson}!GetValueByPointer@{GetValueByPointer}}
+\index{GetValueByPointer@{GetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{GetValueByPointer()}{GetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ \\
+T\+::\+Value\+Type$\ast$ rapidjson\+::\+Get\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{size\+\_\+t $\ast$}]{unresolved\+Token\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1151 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1151                                                                                                                \{}
+\DoxyCodeLine{1152     \textcolor{keywordflow}{return} GenericPointer<typename T::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).Get(root, unresolvedTokenIndex);}
+\DoxyCodeLine{1153 \}}
+
+\end{DoxyCode}
+
+
+References source.
+
+\mbox{\Hypertarget{namespacerapidjson_acca88ad99e931abf827f11d324174e9a}\label{namespacerapidjson_acca88ad99e931abf827f11d324174e9a}} 
+\index{rapidjson@{rapidjson}!GetValueByPointer@{GetValueByPointer}}
+\index{GetValueByPointer@{GetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{GetValueByPointer()}{GetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ \\
+const T\+::\+Value\+Type$\ast$ rapidjson\+::\+Get\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{const T \&}]{root,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{size\+\_\+t $\ast$}]{unresolved\+Token\+Index = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1156 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1156                                                                                                                           \{}
+\DoxyCodeLine{1157     \textcolor{keywordflow}{return} GenericPointer<typename T::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).Get(root, unresolvedTokenIndex);}
+\DoxyCodeLine{1158 \}}
+
+\end{DoxyCode}
+
+
+References source.
+
+\mbox{\Hypertarget{namespacerapidjson_aa33a1f9cd33ac3f6f2af3f90028fee6e}\label{namespacerapidjson_aa33a1f9cd33ac3f6f2af3f90028fee6e}} 
+\index{rapidjson@{rapidjson}!GetValueByPointerWithDefault@{GetValueByPointerWithDefault}}
+\index{GetValueByPointerWithDefault@{GetValueByPointerWithDefault}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{GetValueByPointerWithDefault()}{GetValueByPointerWithDefault()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{const typename T\+::\+Value\+Type \&}]{default\+Value,  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1163 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1163                                                                                                                                                                                     \{}
+\DoxyCodeLine{1164     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.GetWithDefault(root, \mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{defaultValue}}, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1165 \}}
+
+\end{DoxyCode}
+
+
+References a, default\+Value, and pointer.
+
+\mbox{\Hypertarget{namespacerapidjson_a43b1387c2ed5f7dc204d06ffaa9c55d0}\label{namespacerapidjson_a43b1387c2ed5f7dc204d06ffaa9c55d0}} 
+\index{rapidjson@{rapidjson}!GetValueByPointerWithDefault@{GetValueByPointerWithDefault}}
+\index{GetValueByPointerWithDefault@{GetValueByPointerWithDefault}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{GetValueByPointerWithDefault()}{GetValueByPointerWithDefault()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{const typename T\+::\+Ch $\ast$}]{default\+Value,  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1168 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1168                                                                                                                                                                              \{}
+\DoxyCodeLine{1169     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.GetWithDefault(root, \mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{defaultValue}}, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1170 \}}
+
+\end{DoxyCode}
+
+
+References a, default\+Value, and pointer.
+
+\mbox{\Hypertarget{namespacerapidjson_a4dba118d81ceb01ff22efb3e5e988dc1}\label{namespacerapidjson_a4dba118d81ceb01ff22efb3e5e988dc1}} 
+\index{rapidjson@{rapidjson}!GetValueByPointerWithDefault@{GetValueByPointerWithDefault}}
+\index{GetValueByPointerWithDefault@{GetValueByPointerWithDefault}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{GetValueByPointerWithDefault()}{GetValueByPointerWithDefault()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{const typename T\+::\+Value\+Type \&}]{default\+Value,  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1186 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1186                                                                                                                                                             \{}
+\DoxyCodeLine{1187     \textcolor{keywordflow}{return} GenericPointer<typename T::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).GetWithDefault(root, \mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{defaultValue}}, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1188 \}}
+
+\end{DoxyCode}
+
+
+References a, default\+Value, and source.
+
+\mbox{\Hypertarget{namespacerapidjson_ac91ec0a49e7d5f976da9a1775b1ec501}\label{namespacerapidjson_ac91ec0a49e7d5f976da9a1775b1ec501}} 
+\index{rapidjson@{rapidjson}!GetValueByPointerWithDefault@{GetValueByPointerWithDefault}}
+\index{GetValueByPointerWithDefault@{GetValueByPointerWithDefault}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{GetValueByPointerWithDefault()}{GetValueByPointerWithDefault()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{const typename T\+::\+Ch $\ast$}]{default\+Value,  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1191 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1191                                                                                                                                                      \{}
+\DoxyCodeLine{1192     \textcolor{keywordflow}{return} GenericPointer<typename T::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).GetWithDefault(root, \mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{defaultValue}}, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1193 \}}
+
+\end{DoxyCode}
+
+
+References a, default\+Value, and source.
+
+\mbox{\Hypertarget{namespacerapidjson_a9e32c018d38a174601d6770be7052f08}\label{namespacerapidjson_a9e32c018d38a174601d6770be7052f08}} 
+\index{rapidjson@{rapidjson}!GetValueByPointerWithDefault@{GetValueByPointerWithDefault}}
+\index{GetValueByPointerWithDefault@{GetValueByPointerWithDefault}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{GetValueByPointerWithDefault()}{GetValueByPointerWithDefault()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type $>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{const typename Document\+Type\+::\+Value\+Type \&}]{default\+Value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1211 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1211                                                                                                                                                                                                         \{}
+\DoxyCodeLine{1212     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.GetWithDefault(document, \mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{defaultValue}});}
+\DoxyCodeLine{1213 \}}
+
+\end{DoxyCode}
+
+
+References default\+Value, and pointer.
+
+\mbox{\Hypertarget{namespacerapidjson_a77cbd080374924fd75a24cedb2a017b2}\label{namespacerapidjson_a77cbd080374924fd75a24cedb2a017b2}} 
+\index{rapidjson@{rapidjson}!GetValueByPointerWithDefault@{GetValueByPointerWithDefault}}
+\index{GetValueByPointerWithDefault@{GetValueByPointerWithDefault}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{GetValueByPointerWithDefault()}{GetValueByPointerWithDefault()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type $>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{const typename Document\+Type\+::\+Ch $\ast$}]{default\+Value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1216 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1216                                                                                                                                                                                                  \{}
+\DoxyCodeLine{1217     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.GetWithDefault(document, \mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{defaultValue}});}
+\DoxyCodeLine{1218 \}}
+
+\end{DoxyCode}
+
+
+References default\+Value, and pointer.
+
+\mbox{\Hypertarget{namespacerapidjson_a82e20f8de529ed67a6533df54a31bb04}\label{namespacerapidjson_a82e20f8de529ed67a6533df54a31bb04}} 
+\index{rapidjson@{rapidjson}!GetValueByPointerWithDefault@{GetValueByPointerWithDefault}}
+\index{GetValueByPointerWithDefault@{GetValueByPointerWithDefault}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{GetValueByPointerWithDefault()}{GetValueByPointerWithDefault()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{const typename Document\+Type\+::\+Value\+Type \&}]{default\+Value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1234 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1234                                                                                                                                                                      \{}
+\DoxyCodeLine{1235     \textcolor{keywordflow}{return} GenericPointer<typename DocumentType::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).GetWithDefault(document, \mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{defaultValue}});}
+\DoxyCodeLine{1236 \}}
+
+\end{DoxyCode}
+
+
+References default\+Value, and source.
+
+\mbox{\Hypertarget{namespacerapidjson_a47212072cc0fe34a06c00a6a993b9752}\label{namespacerapidjson_a47212072cc0fe34a06c00a6a993b9752}} 
+\index{rapidjson@{rapidjson}!GetValueByPointerWithDefault@{GetValueByPointerWithDefault}}
+\index{GetValueByPointerWithDefault@{GetValueByPointerWithDefault}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{GetValueByPointerWithDefault()}{GetValueByPointerWithDefault()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{const typename Document\+Type\+::\+Ch $\ast$}]{default\+Value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1239 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1239                                                                                                                                                               \{}
+\DoxyCodeLine{1240     \textcolor{keywordflow}{return} GenericPointer<typename DocumentType::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).GetWithDefault(document, \mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{defaultValue}});}
+\DoxyCodeLine{1241 \}}
+
+\end{DoxyCode}
+
+
+References default\+Value, and source.
+
+\mbox{\Hypertarget{namespacerapidjson_aba27b0c8dcf724aa2b288a24fda0811b}\label{namespacerapidjson_aba27b0c8dcf724aa2b288a24fda0811b}} 
+\index{rapidjson@{rapidjson}!PutN@{PutN}}
+\index{PutN@{PutN}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{PutN()}{PutN()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$$>$ \\
+void rapidjson\+::\+PutN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_acb643b9055e7988f4cb89ce4f7e6b115}{Memory\+Buffer}} \&}]{memory\+Buffer,  }\item[{char}]{c,  }\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+Implement specialized version of \mbox{\hyperlink{namespacerapidjson_a1ac13bac5976fc06587e00fc0bcfb32a}{Put\+N()}} with memset() for better performance. 
+
+
+
+Definition at line 64 of file memorybuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                                                \{}
+\DoxyCodeLine{65     std::memset(memoryBuffer.stack\_.Push<\textcolor{keywordtype}{char}>(n), c, n * \textcolor{keyword}{sizeof}(c));}
+\DoxyCodeLine{66 \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Generic\+Memory\+Buffer$<$ Allocator $>$\+::stack\+\_\+.
+
+\mbox{\Hypertarget{namespacerapidjson_a1ac13bac5976fc06587e00fc0bcfb32a}\label{namespacerapidjson_a1ac13bac5976fc06587e00fc0bcfb32a}} 
+\index{rapidjson@{rapidjson}!PutN@{PutN}}
+\index{PutN@{PutN}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{PutN()}{PutN()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$$>$ \\
+void rapidjson\+::\+PutN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_file_write_stream}{File\+Write\+Stream}} \&}]{stream,  }\item[{char}]{c,  }\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+Implement specialized version of \mbox{\hyperlink{namespacerapidjson_a1ac13bac5976fc06587e00fc0bcfb32a}{Put\+N()}} with memset() for better performance. 
+
+
+
+Definition at line 94 of file filewritestream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94                                                             \{}
+\DoxyCodeLine{95     stream.PutN(c, n);}
+\DoxyCodeLine{96 \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+File\+Write\+Stream\+::\+Put\+N().
+
+
+
+Referenced by rapidjson\+::\+Pretty\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Indent().
+
+\mbox{\Hypertarget{namespacerapidjson_a1d49d2cab617858b53a1db23b1759f43}\label{namespacerapidjson_a1d49d2cab617858b53a1db23b1759f43}} 
+\index{rapidjson@{rapidjson}!PutN@{PutN}}
+\index{PutN@{PutN}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{PutN()}{PutN()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename Stream , typename Ch $>$ \\
+void rapidjson\+::\+PutN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} \&}]{stream,  }\item[{Ch}]{c,  }\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+Put N copies of a character to a stream. 
+
+
+
+Definition at line 97 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97                                                  \{}
+\DoxyCodeLine{98     \mbox{\hyperlink{namespacerapidjson_a820f77efccfbb749bd15fe4822d2c740}{PutReserve}}(stream, n);}
+\DoxyCodeLine{99     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < n; i++)}
+\DoxyCodeLine{100         \mbox{\hyperlink{namespacerapidjson_a0a774dcffe8ae07686f459ae017d2f20}{PutUnsafe}}(stream, c);}
+\DoxyCodeLine{101 \}}
+
+\end{DoxyCode}
+
+
+References Put\+Reserve(), and Put\+Unsafe().
+
+\mbox{\Hypertarget{namespacerapidjson_a9d43be9c033dc49738b713fe6fbafecf}\label{namespacerapidjson_a9d43be9c033dc49738b713fe6fbafecf}} 
+\index{rapidjson@{rapidjson}!PutN@{PutN}}
+\index{PutN@{PutN}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{PutN()}{PutN()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$$>$ \\
+void rapidjson\+::\+PutN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}}$<$$>$ $>$ \&}]{stream,  }\item[{char}]{c,  }\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+Implement specialized version of \mbox{\hyperlink{namespacerapidjson_a1ac13bac5976fc06587e00fc0bcfb32a}{Put\+N()}} with memset() for better performance. 
+
+
+
+Definition at line 111 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111                                                                          \{}
+\DoxyCodeLine{112     std::memset(stream.stack\_.Push<\textcolor{keywordtype}{char}>(n), c, n * \textcolor{keyword}{sizeof}(c));}
+\DoxyCodeLine{113 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerapidjson_a820f77efccfbb749bd15fe4822d2c740}\label{namespacerapidjson_a820f77efccfbb749bd15fe4822d2c740}} 
+\index{rapidjson@{rapidjson}!PutReserve@{PutReserve}}
+\index{PutReserve@{PutReserve}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{PutReserve()}{PutReserve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Stream $>$ \\
+void rapidjson\+::\+Put\+Reserve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} \&}]{stream,  }\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+
+
+Reserve n characters for writing to a stream. 
+
+
+
+Definition at line 84 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84                                                      \{}
+\DoxyCodeLine{85     (void)stream;}
+\DoxyCodeLine{86     (void)count;}
+\DoxyCodeLine{87 \}}
+
+\end{DoxyCode}
+
+
+Referenced by Put\+N(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Bool(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Double(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Int(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Int64(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Null(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Raw\+Value(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+String(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Uint(), and rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Uint64().
+
+\mbox{\Hypertarget{namespacerapidjson_ab38d4a353d3577fdedd8171316af80b3}\label{namespacerapidjson_ab38d4a353d3577fdedd8171316af80b3}} 
+\index{rapidjson@{rapidjson}!PutReserve@{PutReserve}}
+\index{PutReserve@{PutReserve}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{PutReserve()}{PutReserve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator $>$ \\
+void rapidjson\+::\+Put\+Reserve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{stream,  }\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 100 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100                                                                                        \{}
+\DoxyCodeLine{101     stream.Reserve(count);}
+\DoxyCodeLine{102 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerapidjson_ad338901177ac5feb414a9e620bfbd717}\label{namespacerapidjson_ad338901177ac5feb414a9e620bfbd717}} 
+\index{rapidjson@{rapidjson}!PutUnsafe@{PutUnsafe}}
+\index{PutUnsafe@{PutUnsafe}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{PutUnsafe()}{PutUnsafe()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator $>$ \\
+void rapidjson\+::\+Put\+Unsafe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{stream,  }\item[{typename Encoding\+::\+Ch}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 105 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{105                                                                                                \{}
+\DoxyCodeLine{106     stream.PutUnsafe(c);}
+\DoxyCodeLine{107 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerapidjson_a0a774dcffe8ae07686f459ae017d2f20}\label{namespacerapidjson_a0a774dcffe8ae07686f459ae017d2f20}} 
+\index{rapidjson@{rapidjson}!PutUnsafe@{PutUnsafe}}
+\index{PutUnsafe@{PutUnsafe}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{PutUnsafe()}{PutUnsafe()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Stream $>$ \\
+void rapidjson\+::\+Put\+Unsafe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} \&}]{stream,  }\item[{typename Stream\+::\+Ch}]{c }\end{DoxyParamCaption})}
+
+
+
+Write character to a stream, presuming buffer is reserved. 
+
+
+
+Definition at line 91 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                                                            \{}
+\DoxyCodeLine{92     stream.Put(c);}
+\DoxyCodeLine{93 \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::\+U\+T\+F8$<$ Char\+Type $>$\+::\+Encode\+Unsafe(), rapidjson\+::\+U\+T\+F16$<$ Char\+Type $>$\+::\+Encode\+Unsafe(), rapidjson\+::\+U\+T\+F32$<$ Char\+Type $>$\+::\+Encode\+Unsafe(), rapidjson\+::\+A\+S\+C\+I\+I$<$ Char\+Type $>$\+::\+Encode\+Unsafe(), Put\+N(), rapidjson\+::\+Transcoder$<$ Encoding, Encoding $>$\+::\+Transcode\+Unsafe(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Bool(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Double(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Int(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Int64(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Null(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+String(), rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Uint(), and rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Uint64().
+
+\mbox{\Hypertarget{namespacerapidjson_ad218ff941d55a64aaaea0c8658d4462f}\label{namespacerapidjson_ad218ff941d55a64aaaea0c8658d4462f}} 
+\index{rapidjson@{rapidjson}!RAPIDJSON\_DISABLEIF\_RETURN@{RAPIDJSON\_DISABLEIF\_RETURN}}
+\index{RAPIDJSON\_DISABLEIF\_RETURN@{RAPIDJSON\_DISABLEIF\_RETURN}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_DISABLEIF\_RETURN()}{RAPIDJSON\_DISABLEIF\_RETURN()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename T2 $>$ \\
+rapidjson\+::\+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN (\begin{DoxyParamCaption}\item[{(internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T2 $>$, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value}{internal\+::\+Is\+Generic\+Value}}$<$ T2 $>$ $>$)}]{,  }\item[{(typename T\+::\+Value\+Type \&)}]{ }\end{DoxyParamCaption}) \&}
+
+\mbox{\Hypertarget{namespacerapidjson_ac23c133f2ee48521a2754090454de12b}\label{namespacerapidjson_ac23c133f2ee48521a2754090454de12b}} 
+\index{rapidjson@{rapidjson}!RAPIDJSON\_DISABLEIF\_RETURN@{RAPIDJSON\_DISABLEIF\_RETURN}}
+\index{RAPIDJSON\_DISABLEIF\_RETURN@{RAPIDJSON\_DISABLEIF\_RETURN}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_DISABLEIF\_RETURN()}{RAPIDJSON\_DISABLEIF\_RETURN()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename Char\+Type , size\+\_\+t N, typename T2 $>$ \\
+rapidjson\+::\+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN (\begin{DoxyParamCaption}\item[{(internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T2 $>$, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value}{internal\+::\+Is\+Generic\+Value}}$<$ T2 $>$ $>$)}]{,  }\item[{(typename T\+::\+Value\+Type \&)}]{ }\end{DoxyParamCaption}) \&}
+
+\mbox{\Hypertarget{namespacerapidjson_adcea79de1892e918329700f98dfd6ce2}\label{namespacerapidjson_adcea79de1892e918329700f98dfd6ce2}} 
+\index{rapidjson@{rapidjson}!RAPIDJSON\_DISABLEIF\_RETURN@{RAPIDJSON\_DISABLEIF\_RETURN}}
+\index{RAPIDJSON\_DISABLEIF\_RETURN@{RAPIDJSON\_DISABLEIF\_RETURN}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_DISABLEIF\_RETURN()}{RAPIDJSON\_DISABLEIF\_RETURN()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type , typename T2 $>$ \\
+rapidjson\+::\+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN (\begin{DoxyParamCaption}\item[{(internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T2 $>$, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value}{internal\+::\+Is\+Generic\+Value}}$<$ T2 $>$ $>$)}]{,  }\item[{(typename Document\+Type\+::\+Value\+Type \&)}]{ }\end{DoxyParamCaption}) \&}
+
+\mbox{\Hypertarget{namespacerapidjson_a00b64457f91e8bf7f82465d7b80613b0}\label{namespacerapidjson_a00b64457f91e8bf7f82465d7b80613b0}} 
+\index{rapidjson@{rapidjson}!RAPIDJSON\_DISABLEIF\_RETURN@{RAPIDJSON\_DISABLEIF\_RETURN}}
+\index{RAPIDJSON\_DISABLEIF\_RETURN@{RAPIDJSON\_DISABLEIF\_RETURN}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_DISABLEIF\_RETURN()}{RAPIDJSON\_DISABLEIF\_RETURN()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N, typename T2 $>$ \\
+rapidjson\+::\+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN (\begin{DoxyParamCaption}\item[{(internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T2 $>$, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_is_generic_value}{internal\+::\+Is\+Generic\+Value}}$<$ T2 $>$ $>$)}]{,  }\item[{(typename Document\+Type\+::\+Value\+Type \&)}]{ }\end{DoxyParamCaption}) \&}
+
+\mbox{\Hypertarget{namespacerapidjson_af52a32038d7db6bd0916e79408bd5bbc}\label{namespacerapidjson_af52a32038d7db6bd0916e79408bd5bbc}} 
+\index{rapidjson@{rapidjson}!SetValueByPointer@{SetValueByPointer}}
+\index{SetValueByPointer@{SetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SetValueByPointer()}{SetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/12]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Set\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{typename T\+::\+Value\+Type \&}]{value,  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1259 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1259                                                                                                                                                             \{}
+\DoxyCodeLine{1260     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Set(root, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1261 \}}
+
+\end{DoxyCode}
+
+
+References a, pointer, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_a0cd01a20b4256bd943f02fe255e7cc32}\label{namespacerapidjson_a0cd01a20b4256bd943f02fe255e7cc32}} 
+\index{rapidjson@{rapidjson}!SetValueByPointer@{SetValueByPointer}}
+\index{SetValueByPointer@{SetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SetValueByPointer()}{SetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/12]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Set\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{const typename T\+::\+Value\+Type \&}]{value,  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1264 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1264                                                                                                                                                                   \{}
+\DoxyCodeLine{1265     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Set(root, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1266 \}}
+
+\end{DoxyCode}
+
+
+References a, pointer, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_a03c2d060d62936bab0fe4b89f7205a8d}\label{namespacerapidjson_a03c2d060d62936bab0fe4b89f7205a8d}} 
+\index{rapidjson@{rapidjson}!SetValueByPointer@{SetValueByPointer}}
+\index{SetValueByPointer@{SetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SetValueByPointer()}{SetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/12]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Set\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{const typename T\+::\+Ch $\ast$}]{value,  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1269 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1269                                                                                                                                                            \{}
+\DoxyCodeLine{1270     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Set(root, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1271 \}}
+
+\end{DoxyCode}
+
+
+References a, pointer, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_aeb9fb9b3b5c8377b0155bca9aeb40a51}\label{namespacerapidjson_aeb9fb9b3b5c8377b0155bca9aeb40a51}} 
+\index{rapidjson@{rapidjson}!SetValueByPointer@{SetValueByPointer}}
+\index{SetValueByPointer@{SetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SetValueByPointer()}{SetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/12]}}
+{\footnotesize\ttfamily template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Set\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{typename T\+::\+Value\+Type \&}]{value,  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1287 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1287                                                                                                                                     \{}
+\DoxyCodeLine{1288     \textcolor{keywordflow}{return} GenericPointer<typename T::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).Set(root, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1289 \}}
+
+\end{DoxyCode}
+
+
+References a, source, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_a4c7a1df544ef6745922b7311cbbe98f0}\label{namespacerapidjson_a4c7a1df544ef6745922b7311cbbe98f0}} 
+\index{rapidjson@{rapidjson}!SetValueByPointer@{SetValueByPointer}}
+\index{SetValueByPointer@{SetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SetValueByPointer()}{SetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [5/12]}}
+{\footnotesize\ttfamily template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Set\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{const typename T\+::\+Value\+Type \&}]{value,  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1292 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1292                                                                                                                                           \{}
+\DoxyCodeLine{1293     \textcolor{keywordflow}{return} GenericPointer<typename T::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).Set(root, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1294 \}}
+
+\end{DoxyCode}
+
+
+References a, source, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_aa637a04f8fc74722bb5aabb0b9567432}\label{namespacerapidjson_aa637a04f8fc74722bb5aabb0b9567432}} 
+\index{rapidjson@{rapidjson}!SetValueByPointer@{SetValueByPointer}}
+\index{SetValueByPointer@{SetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SetValueByPointer()}{SetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [6/12]}}
+{\footnotesize\ttfamily template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Set\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{const typename T\+::\+Ch $\ast$}]{value,  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1297 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1297                                                                                                                                    \{}
+\DoxyCodeLine{1298     \textcolor{keywordflow}{return} GenericPointer<typename T::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).Set(root, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1299 \}}
+
+\end{DoxyCode}
+
+
+References a, source, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_a7ee672e29015d1884533b23769c49dee}\label{namespacerapidjson_a7ee672e29015d1884533b23769c49dee}} 
+\index{rapidjson@{rapidjson}!SetValueByPointer@{SetValueByPointer}}
+\index{SetValueByPointer@{SetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SetValueByPointer()}{SetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [7/12]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type $>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Set\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{typename Document\+Type\+::\+Value\+Type \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1317 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1317                                                                                                                                                                                 \{}
+\DoxyCodeLine{1318     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Set(document, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}});}
+\DoxyCodeLine{1319 \}}
+
+\end{DoxyCode}
+
+
+References pointer, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_a17434145e27de11a23d116f832e62b0e}\label{namespacerapidjson_a17434145e27de11a23d116f832e62b0e}} 
+\index{rapidjson@{rapidjson}!SetValueByPointer@{SetValueByPointer}}
+\index{SetValueByPointer@{SetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SetValueByPointer()}{SetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [8/12]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type $>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Set\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{const typename Document\+Type\+::\+Value\+Type \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1322 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1322                                                                                                                                                                                       \{}
+\DoxyCodeLine{1323     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Set(document, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}});}
+\DoxyCodeLine{1324 \}}
+
+\end{DoxyCode}
+
+
+References pointer, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_ae1ed433d2762ea314c3936e0e7b3259b}\label{namespacerapidjson_ae1ed433d2762ea314c3936e0e7b3259b}} 
+\index{rapidjson@{rapidjson}!SetValueByPointer@{SetValueByPointer}}
+\index{SetValueByPointer@{SetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SetValueByPointer()}{SetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [9/12]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type $>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Set\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{const typename Document\+Type\+::\+Ch $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1327 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1327                                                                                                                                                                                \{}
+\DoxyCodeLine{1328     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Set(document, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}});}
+\DoxyCodeLine{1329 \}}
+
+\end{DoxyCode}
+
+
+References pointer, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_aa4a6b91e9ba841920a3eebf7966219ec}\label{namespacerapidjson_aa4a6b91e9ba841920a3eebf7966219ec}} 
+\index{rapidjson@{rapidjson}!SetValueByPointer@{SetValueByPointer}}
+\index{SetValueByPointer@{SetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SetValueByPointer()}{SetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [10/12]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Set\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{typename Document\+Type\+::\+Value\+Type \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1345 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1345                                                                                                                                              \{}
+\DoxyCodeLine{1346     \textcolor{keywordflow}{return} GenericPointer<typename DocumentType::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).Set(document, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}});}
+\DoxyCodeLine{1347 \}}
+
+\end{DoxyCode}
+
+
+References source, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_a903c53365983ea6b11b1e37bcd613a40}\label{namespacerapidjson_a903c53365983ea6b11b1e37bcd613a40}} 
+\index{rapidjson@{rapidjson}!SetValueByPointer@{SetValueByPointer}}
+\index{SetValueByPointer@{SetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SetValueByPointer()}{SetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [11/12]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Set\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{const typename Document\+Type\+::\+Value\+Type \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1350 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1350                                                                                                                                                    \{}
+\DoxyCodeLine{1351     \textcolor{keywordflow}{return} GenericPointer<typename DocumentType::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).Set(document, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}});}
+\DoxyCodeLine{1352 \}}
+
+\end{DoxyCode}
+
+
+References source, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_add1fda95f27ace1ba362b2f8ca29b6ff}\label{namespacerapidjson_add1fda95f27ace1ba362b2f8ca29b6ff}} 
+\index{rapidjson@{rapidjson}!SetValueByPointer@{SetValueByPointer}}
+\index{SetValueByPointer@{SetValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SetValueByPointer()}{SetValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [12/12]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Set\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{const typename Document\+Type\+::\+Ch $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1355 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1355                                                                                                                                             \{}
+\DoxyCodeLine{1356     \textcolor{keywordflow}{return} GenericPointer<typename DocumentType::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).Set(document, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}});}
+\DoxyCodeLine{1357 \}}
+
+\end{DoxyCode}
+
+
+References source, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_a6efb0f4d2a6f81477a59718d42e9464a}\label{namespacerapidjson_a6efb0f4d2a6f81477a59718d42e9464a}} 
+\index{rapidjson@{rapidjson}!SkipWhitespace@{SkipWhitespace}}
+\index{SkipWhitespace@{SkipWhitespace}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SkipWhitespace()}{SkipWhitespace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Input\+Stream $>$ \\
+void rapidjson\+::\+Skip\+Whitespace (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is }\end{DoxyParamCaption})}
+
+
+
+Skip the J\+S\+ON white spaces in a stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & A input stream for skipping white spaces. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function has S\+S\+E2/\+S\+S\+E4.\+2 specialization. 
+\end{DoxyNote}
+
+
+Definition at line 264 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{264                                      \{}
+\DoxyCodeLine{265     internal::StreamLocalCopy<InputStream> copy(is);}
+\DoxyCodeLine{266     InputStream\& s(copy.s);}
+\DoxyCodeLine{267 }
+\DoxyCodeLine{268     \textcolor{keyword}{typename} InputStream::Ch c;}
+\DoxyCodeLine{269     \textcolor{keywordflow}{while} ((c = s.Peek()) == \textcolor{charliteral}{' '} || c == \textcolor{charliteral}{'\(\backslash\)n'} || c == \textcolor{charliteral}{'\(\backslash\)r'} || c == \textcolor{charliteral}{'\(\backslash\)t'})}
+\DoxyCodeLine{270         s.Take();}
+\DoxyCodeLine{271 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerapidjson_a946a04b733bc148c13e7b3b0721cabcc}\label{namespacerapidjson_a946a04b733bc148c13e7b3b0721cabcc}} 
+\index{rapidjson@{rapidjson}!SkipWhitespace@{SkipWhitespace}}
+\index{SkipWhitespace@{SkipWhitespace}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SkipWhitespace()}{SkipWhitespace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const char$\ast$ rapidjson\+::\+Skip\+Whitespace (\begin{DoxyParamCaption}\item[{const char $\ast$}]{p,  }\item[{const char $\ast$}]{end }\end{DoxyParamCaption})}
+
+
+
+Definition at line 273 of file reader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{273                                                                   \{}
+\DoxyCodeLine{274     \textcolor{keywordflow}{while} (p != end \&\& (*p == \textcolor{charliteral}{' '} || *p == \textcolor{charliteral}{'\(\backslash\)n'} || *p == \textcolor{charliteral}{'\(\backslash\)r'} || *p == \textcolor{charliteral}{'\(\backslash\)t'}))}
+\DoxyCodeLine{275         ++p;}
+\DoxyCodeLine{276     \textcolor{keywordflow}{return} p;}
+\DoxyCodeLine{277 \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\+Skip\+Whitespace\+And\+Comments().
+
+\mbox{\Hypertarget{namespacerapidjson_aa6b9fd9f6aa49405a574c362ba9af6b5}\label{namespacerapidjson_aa6b9fd9f6aa49405a574c362ba9af6b5}} 
+\index{rapidjson@{rapidjson}!StringRef@{StringRef}}
+\index{StringRef@{StringRef}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{StringRef()}{StringRef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Char\+Type $>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_string_ref}{Generic\+String\+Ref}}$<$ Char\+Type $>$ String\+Ref (\begin{DoxyParamCaption}\item[{const Char\+Type $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Mark a character pointer as constant string. 
+
+Mark a plain character pointer as a \char`\"{}string literal\char`\"{}. This function can be used to avoid copying a character string to be referenced as a value in a J\+S\+ON \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}} object, if the string\textquotesingle{}s lifetime is known to be valid long enough. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Char\+Type} & Character type of the string \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Constant string, lifetime assumed to be longer than the use of the string in e.\+g. a \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structrapidjson_1_1_generic_string_ref}{Generic\+String\+Ref}} string reference object
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classrapidjson_1_1_generic_value_a65bfc3073fa80ee5eba8e985abe2f941}{Generic\+Value\+::\+Generic\+Value(\+String\+Ref\+Type)}}, \mbox{\hyperlink{classrapidjson_1_1_generic_value_aecc9d0a6aafe31f4fdf9f6e75e5f089c}{Generic\+Value\+::operator=(\+String\+Ref\+Type)}}, Generic\+Value\+::\+Set\+String(\+String\+Ref\+Type), Generic\+Value\+::\+Push\+Back(\+String\+Ref\+Type, Allocator\&), Generic\+Value\+::\+Add\+Member 
+\end{DoxySeeAlso}
+
+
+Definition at line 364 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{364                                                                  \{}
+\DoxyCodeLine{365     \textcolor{keywordflow}{return} GenericStringRef<CharType>(str);}
+\DoxyCodeLine{366 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacerapidjson_a578c51ab574a50a9c760b9da7c7562f2}\label{namespacerapidjson_a578c51ab574a50a9c760b9da7c7562f2}} 
+\index{rapidjson@{rapidjson}!StringRef@{StringRef}}
+\index{StringRef@{StringRef}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{StringRef()}{StringRef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Char\+Type $>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_string_ref}{Generic\+String\+Ref}}$<$ Char\+Type $>$ String\+Ref (\begin{DoxyParamCaption}\item[{const Char\+Type $\ast$}]{str,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Mark a character pointer as constant string. 
+
+Mark a plain character pointer as a \char`\"{}string literal\char`\"{}. This function can be used to avoid copying a character string to be referenced as a value in a J\+S\+ON \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}} object, if the string\textquotesingle{}s lifetime is known to be valid long enough.
+
+This version has better performance with supplied length, and also supports string containing null characters.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Char\+Type} & character type of the string \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Constant string, lifetime assumed to be longer than the use of the string in e.\+g. a \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}} \\
+\hline
+{\em length} & The length of source string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structrapidjson_1_1_generic_string_ref}{Generic\+String\+Ref}} string reference object 
+\end{DoxyReturn}
+
+
+Definition at line 384 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{384                                                                                 \{}
+\DoxyCodeLine{385     \textcolor{keywordflow}{return} GenericStringRef<CharType>(str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}}(length));}
+\DoxyCodeLine{386 \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::\+Generic\+Value$<$ Encoding\+Type, Allocator $>$\+::\+Generic\+Value().
+
+\mbox{\Hypertarget{namespacerapidjson_af27fbadfe9c823485374a6b426e3bf1f}\label{namespacerapidjson_af27fbadfe9c823485374a6b426e3bf1f}} 
+\index{rapidjson@{rapidjson}!SwapValueByPointer@{SwapValueByPointer}}
+\index{SwapValueByPointer@{SwapValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SwapValueByPointer()}{SwapValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Swap\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{typename T\+::\+Value\+Type \&}]{value,  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1375 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1375                                                                                                                                                              \{}
+\DoxyCodeLine{1376     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Swap(root, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1377 \}}
+
+\end{DoxyCode}
+
+
+References a, pointer, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_a54ef9e175c0a22c8dc894dd001063b43}\label{namespacerapidjson_a54ef9e175c0a22c8dc894dd001063b43}} 
+\index{rapidjson@{rapidjson}!SwapValueByPointer@{SwapValueByPointer}}
+\index{SwapValueByPointer@{SwapValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SwapValueByPointer()}{SwapValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ \\
+T\+::\+Value\+Type\& rapidjson\+::\+Swap\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{T \&}]{root,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{typename T\+::\+Value\+Type \&}]{value,  }\item[{typename T\+::\+Allocator\+Type \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1380 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1380                                                                                                                                      \{}
+\DoxyCodeLine{1381     \textcolor{keywordflow}{return} GenericPointer<typename T::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).Swap(root, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}}, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}});}
+\DoxyCodeLine{1382 \}}
+
+\end{DoxyCode}
+
+
+References a, source, rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Swap(), and value.
+
+\mbox{\Hypertarget{namespacerapidjson_a8e7fefa7eb27b5093f8f14439718aae3}\label{namespacerapidjson_a8e7fefa7eb27b5093f8f14439718aae3}} 
+\index{rapidjson@{rapidjson}!SwapValueByPointer@{SwapValueByPointer}}
+\index{SwapValueByPointer@{SwapValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SwapValueByPointer()}{SwapValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type $>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Swap\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \&}]{pointer,  }\item[{typename Document\+Type\+::\+Value\+Type \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1385 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1385                                                                                                                                                                                  \{}
+\DoxyCodeLine{1386     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Swap(document, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}});}
+\DoxyCodeLine{1387 \}}
+
+\end{DoxyCode}
+
+
+References pointer, and value.
+
+\mbox{\Hypertarget{namespacerapidjson_adb20ad4981c389a8007b5e58b901c558}\label{namespacerapidjson_adb20ad4981c389a8007b5e58b901c558}} 
+\index{rapidjson@{rapidjson}!SwapValueByPointer@{SwapValueByPointer}}
+\index{SwapValueByPointer@{SwapValueByPointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{SwapValueByPointer()}{SwapValueByPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ \\
+Document\+Type\+::\+Value\+Type\& rapidjson\+::\+Swap\+Value\+By\+Pointer (\begin{DoxyParamCaption}\item[{Document\+Type \&}]{document,  }\item[{const Char\+Type(\&)}]{source\mbox{[}\+N\mbox{]},  }\item[{typename Document\+Type\+::\+Value\+Type \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1390 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1390                                                                                                                                               \{}
+\DoxyCodeLine{1391     \textcolor{keywordflow}{return} GenericPointer<typename DocumentType::ValueType>(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, N - 1).Swap(document, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}});}
+\DoxyCodeLine{1392 \}}
+
+\end{DoxyCode}
+
+
+References source, rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Swap(), and value.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}\label{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}} 
+\index{rapidjson@{rapidjson}!a@{a}}
+\index{a@{a}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename T\+::\+Value\+Type $>$ T2 T\+::\+Allocator\+Type \& rapidjson\+::a}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.GetWithDefault(root, \mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{defaultValue}}, \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}})}
+
+\end{DoxyCode}
+
+
+Definition at line 1181 of file pointer.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Add\+Unique\+Element(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Double\+Multiple\+Of(), Create\+Value\+By\+Pointer(), rapidjson\+::internal\+::\+Big\+Integer\+::\+Difference(), rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\+End\+Value(), rapidjson\+::\+Generic\+Value$<$ Encoding\+Type, Allocator $>$\+::\+Generic\+Value(), Get\+Value\+By\+Pointer\+With\+Default(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Min(), rapidjson\+::internal\+::\+Min3(), rapidjson\+::internal\+::\+Big\+Integer\+::\+Mul\+Add64(), rapidjson\+::internal\+::\+Diy\+Fp\+::operator $\ast$(), rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\+Pop\+Schema(), rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, const typename Value\+Type\+::\+Ch $\ast$ $>$\+::\+Set(), Set\+Value\+By\+Pointer(), rapidjson\+::internal\+::\+Strtod\+Big\+Integer(), rapidjson\+::internal\+::\+Swap(), Swap\+Value\+By\+Pointer(), rapidjson\+::internal\+::u32toa(), and rapidjson\+::internal\+::u64toa().
+
+\mbox{\Hypertarget{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}\label{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}} 
+\index{rapidjson@{rapidjson}!defaultValue@{defaultValue}}
+\index{defaultValue@{defaultValue}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{defaultValue}{defaultValue}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ T2 rapidjson\+::default\+Value}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.GetWithDefault(document, \mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{defaultValue}})}
+
+\end{DoxyCode}
+
+
+Definition at line 1181 of file pointer.\+h.
+
+
+
+Referenced by Get\+Value\+By\+Pointer\+With\+Default().
+
+\mbox{\Hypertarget{namespacerapidjson_a7c5fc5aced6a3cde477b80699a3f13d7}\label{namespacerapidjson_a7c5fc5aced6a3cde477b80699a3f13d7}} 
+\index{rapidjson@{rapidjson}!kPointerInvalidIndex@{kPointerInvalidIndex}}
+\index{kPointerInvalidIndex@{kPointerInvalidIndex}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{kPointerInvalidIndex}{kPointerInvalidIndex}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} rapidjson\+::k\+Pointer\+Invalid\+Index = $\sim$\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}(0)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Represents an invalid index in \mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token}{Generic\+Pointer\+::\+Token}}. 
+
+
+
+Definition at line 31 of file pointer.\+h.
+
+
+
+Referenced by rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Append().
+
+\mbox{\Hypertarget{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}\label{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}} 
+\index{rapidjson@{rapidjson}!pointer@{pointer}}
+\index{pointer@{pointer}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ \& rapidjson\+::pointer}
+
+
+
+Definition at line 1181 of file pointer.\+h.
+
+
+
+Referenced by rapidjson\+::\+Generic\+Schema\+Document$<$ Value\+T, Allocator $>$\+::\+Create\+Schema(), rapidjson\+::\+Generic\+Schema\+Document$<$ Value\+T, Allocator $>$\+::\+Create\+Schema\+Recursive(), Create\+Value\+By\+Pointer(), Erase\+Value\+By\+Pointer(), rapidjson\+::\+Generic\+Schema\+Document$<$ Value\+T, Allocator $>$\+::\+Get\+Schema(), Get\+Value\+By\+Pointer(), Get\+Value\+By\+Pointer\+With\+Default(), rapidjson\+::\+Generic\+Schema\+Document$<$ Value\+T, Allocator $>$\+::\+Handle\+Ref\+Schema(), Set\+Value\+By\+Pointer(), and Swap\+Value\+By\+Pointer().
+
+\mbox{\Hypertarget{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}\label{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}} 
+\index{rapidjson@{rapidjson}!source@{source}}
+\index{source@{source}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily const Char\+Type(\& rapidjson\+::source}
+
+
+
+Definition at line 1204 of file pointer.\+h.
+
+
+
+Referenced by Create\+Value\+By\+Pointer(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object(), Erase\+Value\+By\+Pointer(), rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Generic\+Pointer(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Generic\+Regex(), Get\+Value\+By\+Pointer(), Get\+Value\+By\+Pointer\+With\+Default(), rapidjson\+::\+Generic\+Schema\+Document$<$ Value\+T, Allocator $>$\+::\+Handle\+Ref\+Schema(), Set\+Value\+By\+Pointer(), and Swap\+Value\+By\+Pointer().
+
+\mbox{\Hypertarget{namespacerapidjson_a1a75d60792094d496b500c40776030dd}\label{namespacerapidjson_a1a75d60792094d496b500c40776030dd}} 
+\index{rapidjson@{rapidjson}!value@{value}}
+\index{value@{value}!rapidjson@{rapidjson}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ typename Document\+Type\+::\+Value\+Type $>$ T2 rapidjson\+::value}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{pointer}}.Set(document, \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{value}})}
+
+\end{DoxyCode}
+
+
+Definition at line 1282 of file pointer.\+h.
+
+
+
+Referenced by rapidjson\+::\+Generic\+Object$<$ Const, Value\+T $>$\+::\+Add\+Member(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Assign\+If\+Exist(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Create\+Pattern(), rapidjson\+::internal\+::dtoa(), rapidjson\+::\+Generic\+Value$<$ Encoding\+Type, Allocator $>$\+::\+Generic\+Value(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Get\+Member(), rapidjson\+::internal\+::\+Grisu2(), rapidjson\+::internal\+::i32toa(), rapidjson\+::internal\+::i64toa(), rapidjson\+::\+Generic\+Array$<$ Const, Value\+T $>$\+::\+Push\+Back(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Schema(), Set\+Value\+By\+Pointer(), Swap\+Value\+By\+Pointer(), rapidjson\+::internal\+::u32toa(), and rapidjson\+::internal\+::u64toa().
+

@@ -1,0 +1,151 @@
+\hypertarget{classrapidjson_1_1internal_1_1_i_schema_state_factory}{}\section{rapidjson\+::internal\+::I\+Schema\+State\+Factory$<$ Schema\+Type $>$ Class Template Reference}
+\label{classrapidjson_1_1internal_1_1_i_schema_state_factory}\index{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}}
+
+
+{\ttfamily \#include $<$schema.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_a2f91d2ea192049dd2087a73768f55934}{$\sim$\+I\+Schema\+State\+Factory}} ()
+\item 
+virtual \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_af6301e6b139b66414e48e5ecf8f2fb87}{Create\+Schema\+Validator}} (const Schema\+Type \&)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_ac4a27b4a68e9910e2cde81e9ffc0f3a9}{Destroy\+Schema\+Validator}} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$validator)=0
+\item 
+virtual void $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_a399e25fa32d89a112518edbd8f9a9616}{Create\+Hasher}} ()=0
+\item 
+virtual \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_afc18fb7b00f13e9fe4505b75e0a23d5d}{Get\+Hash\+Code}} (void $\ast$hasher)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_abda4f78e5673367fd2bc51c1743d8620}{Destrory\+Hasher}} (void $\ast$hasher)=0
+\item 
+virtual void $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_a9804f3ef559cb1262a67d3a63bc1f77a}{Malloc\+State}} (size\+\_\+t size)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_af986c4556f9fbec6980648f0021d31d8}{Free\+State}} (void $\ast$p)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Schema\+Type$>$\newline
+class rapidjson\+::internal\+::\+I\+Schema\+State\+Factory$<$ Schema\+Type $>$}
+
+
+
+Definition at line 147 of file schema.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_schema_state_factory_a2f91d2ea192049dd2087a73768f55934}\label{classrapidjson_1_1internal_1_1_i_schema_state_factory_a2f91d2ea192049dd2087a73768f55934}} 
+\index{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}!````~ISchemaStateFactory@{$\sim$ISchemaStateFactory}}
+\index{````~ISchemaStateFactory@{$\sim$ISchemaStateFactory}!rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{$\sim$ISchemaStateFactory()}{~ISchemaStateFactory()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory}{rapidjson\+::internal\+::\+I\+Schema\+State\+Factory}}$<$ Schema\+Type $>$\+::$\sim$\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory}{I\+Schema\+State\+Factory}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 149 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{149 \{\}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_schema_state_factory_a399e25fa32d89a112518edbd8f9a9616}\label{classrapidjson_1_1internal_1_1_i_schema_state_factory_a399e25fa32d89a112518edbd8f9a9616}} 
+\index{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}!CreateHasher@{CreateHasher}}
+\index{CreateHasher@{CreateHasher}!rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{CreateHasher()}{CreateHasher()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory}{rapidjson\+::internal\+::\+I\+Schema\+State\+Factory}}$<$ Schema\+Type $>$\+::Create\+Hasher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_aec2362f03fb6edc575d9bb50d4f99c94}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Create\+Parallel\+Validator().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_schema_state_factory_af6301e6b139b66414e48e5ecf8f2fb87}\label{classrapidjson_1_1internal_1_1_i_schema_state_factory_af6301e6b139b66414e48e5ecf8f2fb87}} 
+\index{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}!CreateSchemaValidator@{CreateSchemaValidator}}
+\index{CreateSchemaValidator@{CreateSchemaValidator}!rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{CreateSchemaValidator()}{CreateSchemaValidator()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory}{rapidjson\+::internal\+::\+I\+Schema\+State\+Factory}}$<$ Schema\+Type $>$\+::Create\+Schema\+Validator (\begin{DoxyParamCaption}\item[{const Schema\+Type \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_ae5b23d65482201d75072b958308d9d7b}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Create\+Parallel\+Validator(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Create\+Schema\+Validators().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_schema_state_factory_abda4f78e5673367fd2bc51c1743d8620}\label{classrapidjson_1_1internal_1_1_i_schema_state_factory_abda4f78e5673367fd2bc51c1743d8620}} 
+\index{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}!DestroryHasher@{DestroryHasher}}
+\index{DestroryHasher@{DestroryHasher}!rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{DestroryHasher()}{DestroryHasher()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory}{rapidjson\+::internal\+::\+I\+Schema\+State\+Factory}}$<$ Schema\+Type $>$\+::Destrory\+Hasher (\begin{DoxyParamCaption}\item[{void $\ast$}]{hasher }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_af7620c515a7ea2f75ff300cfbf9916cf}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_schema_state_factory_ac4a27b4a68e9910e2cde81e9ffc0f3a9}\label{classrapidjson_1_1internal_1_1_i_schema_state_factory_ac4a27b4a68e9910e2cde81e9ffc0f3a9}} 
+\index{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}!DestroySchemaValidator@{DestroySchemaValidator}}
+\index{DestroySchemaValidator@{DestroySchemaValidator}!rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{DestroySchemaValidator()}{DestroySchemaValidator()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory}{rapidjson\+::internal\+::\+I\+Schema\+State\+Factory}}$<$ Schema\+Type $>$\+::Destroy\+Schema\+Validator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$}]{validator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_schema_state_factory_af986c4556f9fbec6980648f0021d31d8}\label{classrapidjson_1_1internal_1_1_i_schema_state_factory_af986c4556f9fbec6980648f0021d31d8}} 
+\index{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}!FreeState@{FreeState}}
+\index{FreeState@{FreeState}!rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{FreeState()}{FreeState()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory}{rapidjson\+::internal\+::\+I\+Schema\+State\+Factory}}$<$ Schema\+Type $>$\+::Free\+State (\begin{DoxyParamCaption}\item[{void $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_acd4ac0e7042c9ab63e5b9e443dbc0d14}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_schema_state_factory_afc18fb7b00f13e9fe4505b75e0a23d5d}\label{classrapidjson_1_1internal_1_1_i_schema_state_factory_afc18fb7b00f13e9fe4505b75e0a23d5d}} 
+\index{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual \mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory}{rapidjson\+::internal\+::\+I\+Schema\+State\+Factory}}$<$ Schema\+Type $>$\+::Get\+Hash\+Code (\begin{DoxyParamCaption}\item[{void $\ast$}]{hasher }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_a8d24483082f9b4b2b3f35bff78c66529}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_schema_state_factory_a9804f3ef559cb1262a67d3a63bc1f77a}\label{classrapidjson_1_1internal_1_1_i_schema_state_factory_a9804f3ef559cb1262a67d3a63bc1f77a}} 
+\index{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}!MallocState@{MallocState}}
+\index{MallocState@{MallocState}!rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$@{rapidjson::internal::ISchemaStateFactory$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{MallocState()}{MallocState()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory}{rapidjson\+::internal\+::\+I\+Schema\+State\+Factory}}$<$ Schema\+Type $>$\+::Malloc\+State (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_a73d58da18b6e77665daaa977852f205c}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Create\+Parallel\+Validator(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Start\+Object().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{schema_8h}{schema.\+h}}\end{DoxyCompactItemize}

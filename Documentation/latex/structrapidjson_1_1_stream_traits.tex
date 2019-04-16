@@ -1,0 +1,61 @@
+\hypertarget{structrapidjson_1_1_stream_traits}{}\section{rapidjson\+::Stream\+Traits$<$ Stream $>$ Struct Template Reference}
+\label{structrapidjson_1_1_stream_traits}\index{rapidjson::StreamTraits$<$ Stream $>$@{rapidjson::StreamTraits$<$ Stream $>$}}
+
+
+Provides additional information for stream.  
+
+
+
+
+{\ttfamily \#include $<$stream.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{structrapidjson_1_1_stream_traits_aea5a3f90ea4fd2a1b9c9c9954294474daf6f7f81d1e208f1041e618b57e0d3828}{copy\+Optimization}} = 0
+ \}
+\begin{DoxyCompactList}\small\item\em Whether to make local copy of stream for optimization during parsing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Stream$>$\newline
+struct rapidjson\+::\+Stream\+Traits$<$ Stream $>$}
+
+Provides additional information for stream. 
+
+By using traits pattern, this type provides a default configuration for stream. For custom stream, this type can be specialized for other configuration. See T\+E\+S\+T(\+Reader, Custom\+String\+Stream) in readertest.\+cpp for example. 
+
+Definition at line 73 of file stream.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_stream_traits_aea5a3f90ea4fd2a1b9c9c9954294474d}\label{structrapidjson_1_1_stream_traits_aea5a3f90ea4fd2a1b9c9c9954294474d}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily template$<$typename Stream $>$ \\
+anonymous enum}
+
+
+
+Whether to make local copy of stream for optimization during parsing. 
+
+By default, for safety, streams do not use local copy optimization. \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} that can be copied fast should specialize this, like Stream\+Traits$<$\+String\+Stream$>$. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{copyOptimization@{copyOptimization}!rapidjson::StreamTraits$<$ Stream $>$@{rapidjson::StreamTraits$<$ Stream $>$}}\index{rapidjson::StreamTraits$<$ Stream $>$@{rapidjson::StreamTraits$<$ Stream $>$}!copyOptimization@{copyOptimization}}}\mbox{\Hypertarget{structrapidjson_1_1_stream_traits_aea5a3f90ea4fd2a1b9c9c9954294474daf6f7f81d1e208f1041e618b57e0d3828}\label{structrapidjson_1_1_stream_traits_aea5a3f90ea4fd2a1b9c9c9954294474daf6f7f81d1e208f1041e618b57e0d3828}} 
+copy\+Optimization&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 79 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79 \{ \mbox{\hyperlink{structrapidjson_1_1_stream_traits_aea5a3f90ea4fd2a1b9c9c9954294474daf6f7f81d1e208f1041e618b57e0d3828}{copyOptimization}} = 0 \};}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{stream_8h}{stream.\+h}}\end{DoxyCompactItemize}

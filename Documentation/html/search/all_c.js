@@ -95,8 +95,6 @@ var searchData=
   ['meta',['META',['../classcom_1_1example_1_1trainawearapplication_1_1_r_1_1id.html#a40344700e81ce1250d67eb03772b472d',1,'com::example::trainawearapplication::R::id']]],
   ['meta_2eh',['meta.h',['../meta_8h.html',1,'']]],
   ['middle',['middle',['../classcom_1_1example_1_1trainawearapplication_1_1_r_1_1id.html#a86689f130af73b24ca7c4fba28f1ea78',1,'com::example::trainawearapplication::R::id']]],
-  ['mimages',['mImages',['../classcom_1_1example_1_1trainawearapplication_1_1_biceps.html#a48759c12a8068afab742cfdafa76772a',1,'com::example::trainawearapplication::Biceps']]],
-  ['mimagestitle',['mImagesTitle',['../classcom_1_1example_1_1trainawearapplication_1_1_biceps.html#acc5fba9ec43f042ed263e515defce14e',1,'com::example::trainawearapplication::Biceps']]],
   ['min',['Min',['../classrapidjson_1_1internal_1_1_generic_regex.html#a03202b58856e5d43fbb6e8e7546a0bd6',1,'rapidjson::internal::GenericRegex']]],
   ['min3',['Min3',['../namespacerapidjson_1_1internal.html#a7d72423e8173159a0d90cac2f2ef6b8a',1,'rapidjson::internal']]],
   ['mini',['mini',['../classandroid_1_1support_1_1design_1_1_r_1_1id.html#a88811cbf51e1d607ab0468ba99937bd6',1,'android.support.design.R.id.mini()'],['../classcom_1_1example_1_1trainawearapplication_1_1_r_1_1id.html#af16854273b240b72cedbb40e2121a505',1,'com.example.trainawearapplication.R.id.mini()']]],

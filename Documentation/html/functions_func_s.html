@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logosmall.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">train-A-wear
+   &#160;<span id="projectnumber">2.1</span>
    </div>
+   <div id="projectbrief">Real time feedback application with wireless connection to three IMUs</div>
   </td>
  </tr>
  </tbody>
@@ -96,16 +99,18 @@ $(function() {
 </li>
 <li>sendState()
 : <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_client_listen.html#ab1d26a5c46561734eef258d64a6d7723">com.example.trainawearapplication.ClientListen</a>
+, <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_client_listen_bicep.html#a1a9854e6d93822ec317a1e4e2ef781cb">com.example.trainawearapplication.ClientListenBicep</a>
+, <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_client_listen_plank.html#ab7af22341c89f6a1263612df9516d6e6">com.example.trainawearapplication.ClientListenPlank</a>
 </li>
 <li>Set()
-: <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01bool_01_4.html#abb346f12bdc124b5f431c37d28d7ca52">rapidjson::internal::TypeHelper&lt; ValueType, bool &gt;</a>
+: <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01bool_01_4.html#a3902ac38924f6456609c30807e3a97bc">rapidjson::internal::TypeHelper&lt; ValueType, bool &gt;</a>
 , <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01const_01typename_01_value_type_1_1_ch_01_5_01_4.html#a160c27c3120a9e6e4efcb8dd1134c020">rapidjson::internal::TypeHelper&lt; ValueType, const typename ValueType::Ch * &gt;</a>
 , <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01double_01_4.html#ae1d0e8fd88d75c2340cf596ccb0fb073">rapidjson::internal::TypeHelper&lt; ValueType, double &gt;</a>
 , <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01float_01_4.html#ad3257d54813e8a95416bc1de39cc6641">rapidjson::internal::TypeHelper&lt; ValueType, float &gt;</a>
-, <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01int_01_4.html#ae9fc7bfa4b6df0f17c38f0a4398bdf9b">rapidjson::internal::TypeHelper&lt; ValueType, int &gt;</a>
+, <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01int_01_4.html#a662c9fe5a48e36ccaf7db5c56980f6d3">rapidjson::internal::TypeHelper&lt; ValueType, int &gt;</a>
 , <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01int64__t_01_4.html#a5351e560f637ba8726420c5cc1e1051d">rapidjson::internal::TypeHelper&lt; ValueType, int64_t &gt;</a>
-, <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01typename_01_value_type_1_1_array_01_4.html#acb9d4877fddc5f954c4f83cd11af61b1">rapidjson::internal::TypeHelper&lt; ValueType, typename ValueType::Array &gt;</a>
-, <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01typename_01_value_type_1_1_object_01_4.html#a8ec60af2de27c82c647f771c3e9014fe">rapidjson::internal::TypeHelper&lt; ValueType, typename ValueType::Object &gt;</a>
+, <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01typename_01_value_type_1_1_array_01_4.html#a332763c2bd550da67a7342ade4cee2c3">rapidjson::internal::TypeHelper&lt; ValueType, typename ValueType::Array &gt;</a>
+, <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01typename_01_value_type_1_1_object_01_4.html#a3bd0cf8fab770a63df903486a8781aef">rapidjson::internal::TypeHelper&lt; ValueType, typename ValueType::Object &gt;</a>
 , <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01uint64__t_01_4.html#ac16c03a1229998f3a0bdf7a2d7715981">rapidjson::internal::TypeHelper&lt; ValueType, uint64_t &gt;</a>
 , <a class="el" href="structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4.html#a3cc029a3c205f00f62e20fd3cb8f1321">rapidjson::internal::TypeHelper&lt; ValueType, unsigned &gt;</a>
 , <a class="el" href="structrapidjson_1_1_parse_result.html#a40c0bd4d6c535c57acbb5c2e656bea38">rapidjson::ParseResult</a>
@@ -148,12 +153,14 @@ $(function() {
 : <a class="el" href="classrapidjson_1_1_generic_value.html#a248bab30562a4197cea0474d7f0ce835">rapidjson::GenericValue&lt; Encoding, Allocator &gt;</a>
 </li>
 <li>setViewText()
-: <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_classic_squat.html#ab193e39e2f1255fd88d0508cfe7a63ff">com.example.trainawearapplication.ClassicSquat</a>
+: <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_biceps.html#a6e1ab1b99cd05b29fb7346b0642b7d0e">com.example.trainawearapplication.Biceps</a>
+, <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_classic_squat.html#ab193e39e2f1255fd88d0508cfe7a63ff">com.example.trainawearapplication.ClassicSquat</a>
 , <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_plank.html#a4d4a46b71ced8fe89023ccbf14d17f77">com.example.trainawearapplication.Plank</a>
 , <a class="el" href="interfacecom_1_1example_1_1trainawearapplication_1_1_update_feedback.html#a7a026880188b11aca6d8184d57e699e8">com.example.trainawearapplication.UpdateFeedback</a>
 </li>
 <li>showFeedback()
-: <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_classic_squat.html#a1904cfcfcc9d0e3f1256202a8f7ad33e">com.example.trainawearapplication.ClassicSquat</a>
+: <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_biceps.html#ad9e0fdf8309b31736b338a3b29079b24">com.example.trainawearapplication.Biceps</a>
+, <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_classic_squat.html#a1904cfcfcc9d0e3f1256202a8f7ad33e">com.example.trainawearapplication.ClassicSquat</a>
 , <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_plank.html#a14343873d9ff489757bebbad97adbaf1">com.example.trainawearapplication.Plank</a>
 </li>
 <li>ShrinkToFit()
@@ -249,7 +256,7 @@ $(function() {
 , <a class="el" href="classrapidjson_1_1_generic_schema_validator.html#a92a6d2ba413cfd05cb2122fc119efd46">rapidjson::GenericSchemaValidator&lt; SchemaDocumentType, OutputHandler, StateAllocator &gt;</a>
 , <a class="el" href="classrapidjson_1_1internal_1_1_hasher.html#aced1f3880cf976d0a8844451bfe1b817">rapidjson::internal::Hasher&lt; Encoding, Allocator &gt;</a>
 , <a class="el" href="classrapidjson_1_1internal_1_1_schema.html#a221dfa37eb3fb9b93c3428f3508ec0c4">rapidjson::internal::Schema&lt; SchemaDocumentType &gt;</a>
-, <a class="el" href="classrapidjson_1_1_pretty_writer.html#a363c2280393e27e19bceb8d015c2832c">rapidjson::PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;</a>
+, <a class="el" href="classrapidjson_1_1_pretty_writer.html#af3c6ad244ef86efafa62ff3b3dd8e25b">rapidjson::PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;</a>
 , <a class="el" href="classrapidjson_1_1_writer.html#a3cddcb5176054f559d0d552a3ff8789b">rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;</a>
 </li>
 <li>StringEqual()
@@ -300,7 +307,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2019 00:37:21 for train-A-wear by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

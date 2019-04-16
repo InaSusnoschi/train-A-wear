@@ -1,0 +1,155 @@
+\hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_help_app}{}\section{com.\+example.\+trainawearapplication.\+Help\+App Class Reference}
+\label{classcom_1_1example_1_1trainawearapplication_1_1_help_app}\index{com.example.trainawearapplication.HelpApp@{com.example.trainawearapplication.HelpApp}}
+
+
+The \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_help_app}{Help\+App}} activity contains four expandable views with more information on the app and system.  
+
+
+Inheritance diagram for com.\+example.\+trainawearapplication.\+Help\+App\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1example_1_1trainawearapplication_1_1_help_app}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_help_app_a8fb144074fe5f839efbbdbfb16edd528}{on\+Create}} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_help_app_a409e91221d680c3d801ea24a3f58fcdc}{stretch\+Images}} \mbox{[}$\,$\mbox{]}
+\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_help_app_a3f603b19da94b591732a36617c2eb91d}{stretch\+Images\+Title}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_help_app}{Help\+App}} activity contains four expandable views with more information on the app and system. 
+
+\begin{DoxyAuthor}{Author}
+Ioana Susnoschi 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+2019-\/04-\/13 
+\end{DoxySince}
+
+
+Definition at line 26 of file Help\+App.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_help_app_a8fb144074fe5f839efbbdbfb16edd528}\label{classcom_1_1example_1_1trainawearapplication_1_1_help_app_a8fb144074fe5f839efbbdbfb16edd528}} 
+\index{com.example.trainawearapplication.HelpApp@{com.example.trainawearapplication.HelpApp}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!com.example.trainawearapplication.HelpApp@{com.example.trainawearapplication.HelpApp}}
+\subsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Help\+App.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 43 of file Help\+App.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                                        \{}
+\DoxyCodeLine{44         super.onCreate(savedInstanceState);}
+\DoxyCodeLine{45         setContentView(R.layout.activity\_help\_app);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47         Intent helpApp = getIntent();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49         linearLayoutFault = findViewById(R.id.faultLayout);}
+\DoxyCodeLine{50         linearLayoutMount = findViewById(R.id.mountLayout);}
+\DoxyCodeLine{51         linearLayoutHealth = findViewById(R.id.healthLayout);}
+\DoxyCodeLine{52         linearLayoutStretch = findViewById(R.id.stretchLayout);}
+\DoxyCodeLine{53         layoutHelpButtons = findViewById(R.id.layoutHelpButtons);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55         buttonFault = findViewById(R.id.buttonFault) ;}
+\DoxyCodeLine{56         buttonMount =  findViewById(R.id.buttonMount) ;}
+\DoxyCodeLine{57         buttonHealth =  findViewById(R.id.buttonHealth) ;}
+\DoxyCodeLine{58         buttonStretch = findViewById(R.id.buttonStretch);}
+\DoxyCodeLine{59         buttonExit = findViewById(R.id.buttonExitHelp);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61         buttonFault.setOnClickListener(buttonFaultyOnClickListener);}
+\DoxyCodeLine{62         buttonMount.setOnClickListener(buttonMountOnClickListener);}
+\DoxyCodeLine{63         buttonHealth.setOnClickListener(buttonHealthOnClickListener);}
+\DoxyCodeLine{64         buttonStretch.setOnClickListener(buttonStretchOnClickListener);}
+\DoxyCodeLine{65         buttonExit.setOnClickListener(buttonExitPress);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67         \textcolor{comment}{// set carousel view}}
+\DoxyCodeLine{68         CarouselView carouselView = findViewById(R.id.carouselStr);}
+\DoxyCodeLine{69         carouselView.setPageCount(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_help_app_a409e91221d680c3d801ea24a3f58fcdc}{stretchImages}}.length);}
+\DoxyCodeLine{70         carouselView.setImageListener(\textcolor{keyword}{new} ImageListener() \{}
+\DoxyCodeLine{71             @Override}
+\DoxyCodeLine{72             \textcolor{keyword}{public} \textcolor{keywordtype}{void} setImageForPosition(\textcolor{keywordtype}{int} position, ImageView imageView) \{}
+\DoxyCodeLine{73                 imageView.setImageResource(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_help_app_a409e91221d680c3d801ea24a3f58fcdc}{stretchImages}}[position]);}
+\DoxyCodeLine{74             \}}
+\DoxyCodeLine{75         \});}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77         carouselView.setImageClickListener(\textcolor{keyword}{new} ImageClickListener() \{}
+\DoxyCodeLine{78             @Override}
+\DoxyCodeLine{79             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(\textcolor{keywordtype}{int} position) \{}
+\DoxyCodeLine{80                 Toast.makeText(HelpApp.this, \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_help_app_a3f603b19da94b591732a36617c2eb91d}{stretchImagesTitle}}[position], Toast.LENGTH\_SHORT).show();}
+\DoxyCodeLine{81             \}}
+\DoxyCodeLine{82         \});}
+\DoxyCodeLine{83     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+R.\+layout.\+activity\+\_\+help\+\_\+app, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Exit\+Help, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Fault, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Health, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Mount, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Stretch, com.\+example.\+trainawearapplication.\+R.\+id.\+carousel\+Str, com.\+example.\+trainawearapplication.\+R.\+id.\+fault\+Layout, com.\+example.\+trainawearapplication.\+R.\+id.\+health\+Layout, com.\+example.\+trainawearapplication.\+R.\+id.\+layout\+Help\+Buttons, com.\+example.\+trainawearapplication.\+R.\+id.\+mount\+Layout, com.\+example.\+trainawearapplication.\+Help\+App.\+stretch\+Images, com.\+example.\+trainawearapplication.\+Help\+App.\+stretch\+Images\+Title, and com.\+example.\+trainawearapplication.\+R.\+id.\+stretch\+Layout.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_help_app_a409e91221d680c3d801ea24a3f58fcdc}\label{classcom_1_1example_1_1trainawearapplication_1_1_help_app_a409e91221d680c3d801ea24a3f58fcdc}} 
+\index{com.example.trainawearapplication.HelpApp@{com.example.trainawearapplication.HelpApp}!stretchImages@{stretchImages}}
+\index{stretchImages@{stretchImages}!com.example.trainawearapplication.HelpApp@{com.example.trainawearapplication.HelpApp}}
+\subsubsection{\texorpdfstring{stretchImages}{stretchImages}}
+{\footnotesize\ttfamily int com.\+example.\+trainawearapplication.\+Help\+App.\+stretch\+Images\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} \textcolor{keywordtype}{int}[]\{}
+\DoxyCodeLine{            R.drawable.tricepstretch, R.drawable.lunge, R.drawable.hamstring}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line 33 of file Help\+App.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Help\+App.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_help_app_a3f603b19da94b591732a36617c2eb91d}\label{classcom_1_1example_1_1trainawearapplication_1_1_help_app_a3f603b19da94b591732a36617c2eb91d}} 
+\index{com.example.trainawearapplication.HelpApp@{com.example.trainawearapplication.HelpApp}!stretchImagesTitle@{stretchImagesTitle}}
+\index{stretchImagesTitle@{stretchImagesTitle}!com.example.trainawearapplication.HelpApp@{com.example.trainawearapplication.HelpApp}}
+\subsubsection{\texorpdfstring{stretchImagesTitle}{stretchImagesTitle}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} com.\+example.\+trainawearapplication.\+Help\+App.\+stretch\+Images\+Title\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Str1"}, \textcolor{stringliteral}{"Str2"}, \textcolor{stringliteral}{"Str3"}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line 37 of file Help\+App.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Help\+App.\+on\+Create().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Phone App/app/src/main/java/com/example/trainawearapplication/\mbox{\hyperlink{_help_app_8java}{Help\+App.\+java}}\end{DoxyCompactItemize}

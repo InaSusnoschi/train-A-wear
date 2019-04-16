@@ -1,0 +1,142 @@
+\hypertarget{structrapidjson_1_1_generic_value_1_1_short_string}{}\section{rapidjson\+::Generic\+Value$<$ Encoding, Allocator $>$\+::Short\+String Struct Reference}
+\label{structrapidjson_1_1_generic_value_1_1_short_string}\index{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}}
+
+
+{\ttfamily \#include $<$document.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a78cfea23edd64c3767922023807ced64}{Max\+Chars}} = sizeof(static\+\_\+cast$<$Flag$\ast$$>$(0)-\/$>$payload) / sizeof(Ch), 
+\mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a8e7b3228397abe6824e515799763198f}{Max\+Size}} = Max\+Chars -\/ 1, 
+\mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815ac9ee3c47d8cbe0265c8bc0d5da4e08d9}{Len\+Pos}} = Max\+Size
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_ac39a049dc7bca3f337ed858686065752}{Set\+Length}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} len)
+\item 
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a554140e81e30bb27c92b1074b0f34c0e}{Get\+Length}} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a0ab90809c60e2106deadbc74ce9e6f3b}{Usable}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} len)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_af01f91b1cd1ed9a53a7dc2eb9022c1e0}{str}} \mbox{[}\mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a78cfea23edd64c3767922023807ced64}{Max\+Chars}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Encoding, typename Allocator = Memory\+Pool\+Allocator$<$$>$$>$\newline
+struct rapidjson\+::\+Generic\+Value$<$ Encoding, Allocator $>$\+::\+Short\+String}
+
+
+
+Definition at line 1970 of file document.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815}\label{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Memory\+Pool\+Allocator$<$$>$$>$ \\
+anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MaxChars@{MaxChars}!rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}}\index{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}!MaxChars@{MaxChars}}}\mbox{\Hypertarget{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a78cfea23edd64c3767922023807ced64}\label{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a78cfea23edd64c3767922023807ced64}} 
+Max\+Chars&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MaxSize@{MaxSize}!rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}}\index{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}!MaxSize@{MaxSize}}}\mbox{\Hypertarget{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a8e7b3228397abe6824e515799763198f}\label{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a8e7b3228397abe6824e515799763198f}} 
+Max\+Size&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LenPos@{LenPos}!rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}}\index{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}!LenPos@{LenPos}}}\mbox{\Hypertarget{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815ac9ee3c47d8cbe0265c8bc0d5da4e08d9}\label{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815ac9ee3c47d8cbe0265c8bc0d5da4e08d9}} 
+Len\+Pos&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 1971 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1971 \{ \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a78cfea23edd64c3767922023807ced64}{MaxChars}} = \textcolor{keyword}{sizeof}(static\_cast<Flag*>(0)->payload) / \textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}}), \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a8e7b3228397abe6824e515799763198f}{MaxSize}} = \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a78cfea23edd64c3767922023807ced64}{MaxChars}} - 1, \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815ac9ee3c47d8cbe0265c8bc0d5da4e08d9}{LenPos}} = \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a8e7b3228397abe6824e515799763198f}{MaxSize}} \};}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_value_1_1_short_string_a554140e81e30bb27c92b1074b0f34c0e}\label{structrapidjson_1_1_generic_value_1_1_short_string_a554140e81e30bb27c92b1074b0f34c0e}} 
+\index{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}!GetLength@{GetLength}}
+\index{GetLength@{GetLength}!rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}}
+\subsubsection{\texorpdfstring{GetLength()}{GetLength()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Memory\+Pool\+Allocator$<$$>$$>$ \\
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{classrapidjson_1_1_generic_value}{rapidjson\+::\+Generic\+Value}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Short\+String\+::\+Get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1976 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1976 \{ \textcolor{keywordflow}{return}  static\_cast<SizeType>(\mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a8e7b3228397abe6824e515799763198f}{MaxSize}} -  \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_af01f91b1cd1ed9a53a7dc2eb9022c1e0}{str}}[\mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815ac9ee3c47d8cbe0265c8bc0d5da4e08d9}{LenPos}}]); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_value_1_1_short_string_ac39a049dc7bca3f337ed858686065752}\label{structrapidjson_1_1_generic_value_1_1_short_string_ac39a049dc7bca3f337ed858686065752}} 
+\index{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}!SetLength@{SetLength}}
+\index{SetLength@{SetLength}!rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}}
+\subsubsection{\texorpdfstring{SetLength()}{SetLength()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Memory\+Pool\+Allocator$<$$>$$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_generic_value}{rapidjson\+::\+Generic\+Value}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Short\+String\+::\+Set\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{len }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1975 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1975 \{ \mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_af01f91b1cd1ed9a53a7dc2eb9022c1e0}{str}}[\mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815ac9ee3c47d8cbe0265c8bc0d5da4e08d9}{LenPos}}] = static\_cast<Ch>(\mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a8e7b3228397abe6824e515799763198f}{MaxSize}} -  len); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_value_1_1_short_string_a0ab90809c60e2106deadbc74ce9e6f3b}\label{structrapidjson_1_1_generic_value_1_1_short_string_a0ab90809c60e2106deadbc74ce9e6f3b}} 
+\index{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}!Usable@{Usable}}
+\index{Usable@{Usable}!rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}}
+\subsubsection{\texorpdfstring{Usable()}{Usable()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Memory\+Pool\+Allocator$<$$>$$>$ \\
+static bool \mbox{\hyperlink{classrapidjson_1_1_generic_value}{rapidjson\+::\+Generic\+Value}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Short\+String\+::\+Usable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 1974 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1974 \{ \textcolor{keywordflow}{return}                       (\mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a8e7b3228397abe6824e515799763198f}{MaxSize}} >= len); \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_value_1_1_short_string_af01f91b1cd1ed9a53a7dc2eb9022c1e0}\label{structrapidjson_1_1_generic_value_1_1_short_string_af01f91b1cd1ed9a53a7dc2eb9022c1e0}} 
+\index{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}!str@{str}}
+\index{str@{str}!rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString@{rapidjson::GenericValue$<$ Encoding, Allocator $>$::ShortString}}
+\subsubsection{\texorpdfstring{str}{str}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Memory\+Pool\+Allocator$<$$>$$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_generic_value}{rapidjson\+::\+Generic\+Value}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Short\+String\+::str\mbox{[}\mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_short_string_a77aa02281a84b131e4d4eb3a13146815a78cfea23edd64c3767922023807ced64}{Max\+Chars}}\mbox{]}}
+
+
+
+Definition at line 1972 of file document.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{document_8h}{document.\+h}}\end{DoxyCompactItemize}

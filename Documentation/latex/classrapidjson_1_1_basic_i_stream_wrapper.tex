@@ -1,0 +1,494 @@
+\hypertarget{classrapidjson_1_1_basic_i_stream_wrapper}{}\section{rapidjson\+::Basic\+I\+Stream\+Wrapper$<$ Stream\+Type $>$ Class Template Reference}
+\label{classrapidjson_1_1_basic_i_stream_wrapper}\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+
+
+Wrapper of {\ttfamily std\+::basic\+\_\+istream} into Rapid\+J\+S\+ON\textquotesingle{}s \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept.  
+
+
+
+
+{\ttfamily \#include $<$istreamwrapper.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Stream\+Type\+::char\+\_\+type \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a2b4e069522fa9119685f1cee836e5cfa}{Basic\+I\+Stream\+Wrapper}} (Stream\+Type \&stream)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_acd380a93ccc01d02aef95ea2a926e154}{Basic\+I\+Stream\+Wrapper}} (Stream\+Type \&stream, char $\ast$buffer, size\+\_\+t buffer\+Size)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_adfae250fbfdf7dda0ee9b3895758e767}{Peek}} () const
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_ac803b6494e23a3432c6da1ba9cb9abdc}{Take}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a298096361d0d34706ba68af0a68e389f}{Tell}} () const
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_af020a73e0739581f784b68c1f5adb385}{Put}} (\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}})
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_ab787ec1bce9ec0e4ddc42cde173d3ab1}{Flush}} ()
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5175c92fadc5278b215bad1822b62267}{Put\+Begin}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a06939b6b8f349a611e6dd8ed82274a76}{Put\+End}} (\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} $\ast$)
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_afaece8ea8d7b73abc0d4942070b41f8a}{Peek4}} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a8b44c77148a3770fa71560447f043b78}{Basic\+I\+Stream\+Wrapper}} ()
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a0736c7200a15d6887d5b3b9abef91caf}{Basic\+I\+Stream\+Wrapper}} (const \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}} \&)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}} \& \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5d6ec3d7776d701bce59a2d1277f7e93}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}} \&)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_ae4076aa45a6de62d24b02843d8f7bb9e}{Read}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Stream\+Type \& \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aa2da48b0eedc0c1e4352e6130a7d57e0}{stream\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a43ca5844d6d394f13b176880f094adca}{peek\+Buffer\+\_\+}} \mbox{[}4\mbox{]}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a475db978c2e0154b96f9c95657d71ed7}{buffer\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a16cd252a0d7d2f78cba2c75f80667879}{buffer\+Size\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_ac6b35e0c1251a30cc985b39d13b9aa00}{buffer\+Last\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a45d81a28f9445f497e38b8aab759a0b3}{current\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aa31e373a95bd662b7fcb3347e83419b9}{read\+Count\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aac23edc96c35ef363d11d4806109284a}{count\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Number of characters read. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a444e02a06ab6e7ccedb19a8a28b06bb7}{eof\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Stream\+Type$>$\newline
+class rapidjson\+::\+Basic\+I\+Stream\+Wrapper$<$ Stream\+Type $>$}
+
+Wrapper of {\ttfamily std\+::basic\+\_\+istream} into Rapid\+J\+S\+ON\textquotesingle{}s \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept. 
+
+The classes can be wrapped including but not limited to\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily std\+::istringstream} 
+\item {\ttfamily std\+::stringstream} 
+\item {\ttfamily std\+::wistringstream} 
+\item {\ttfamily std\+::wstringstream} 
+\item {\ttfamily std\+::ifstream} 
+\item {\ttfamily std\+::fstream} 
+\item {\ttfamily std\+::wifstream} 
+\item {\ttfamily std\+::wfstream} 
+\end{DoxyItemize}
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Stream\+Type} & Class derived from {\ttfamily std\+::basic\+\_\+istream}. \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 49 of file istreamwrapper.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}\label{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+typedef Stream\+Type\+::char\+\_\+type \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}}}
+
+
+
+Definition at line 51 of file istreamwrapper.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_a2b4e069522fa9119685f1cee836e5cfa}\label{classrapidjson_1_1_basic_i_stream_wrapper_a2b4e069522fa9119685f1cee836e5cfa}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!BasicIStreamWrapper@{BasicIStreamWrapper}}
+\index{BasicIStreamWrapper@{BasicIStreamWrapper}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{BasicIStreamWrapper()}{BasicIStreamWrapper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}} (\begin{DoxyParamCaption}\item[{Stream\+Type \&}]{stream }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & stream opened for read. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 57 of file istreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57                                             : \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aa2da48b0eedc0c1e4352e6130a7d57e0}{stream\_}}(stream), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a475db978c2e0154b96f9c95657d71ed7}{buffer\_}}(\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a43ca5844d6d394f13b176880f094adca}{peekBuffer\_}}), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a16cd252a0d7d2f78cba2c75f80667879}{bufferSize\_}}(4), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_ac6b35e0c1251a30cc985b39d13b9aa00}{bufferLast\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a45d81a28f9445f497e38b8aab759a0b3}{current\_}}(\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a475db978c2e0154b96f9c95657d71ed7}{buffer\_}}), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aa31e373a95bd662b7fcb3347e83419b9}{readCount\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aac23edc96c35ef363d11d4806109284a}{count\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a444e02a06ab6e7ccedb19a8a28b06bb7}{eof\_}}(\textcolor{keyword}{false}) \{ }
+\DoxyCodeLine{58         \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_ae4076aa45a6de62d24b02843d8f7bb9e}{Read}}();}
+\DoxyCodeLine{59     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_acd380a93ccc01d02aef95ea2a926e154}\label{classrapidjson_1_1_basic_i_stream_wrapper_acd380a93ccc01d02aef95ea2a926e154}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!BasicIStreamWrapper@{BasicIStreamWrapper}}
+\index{BasicIStreamWrapper@{BasicIStreamWrapper}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{BasicIStreamWrapper()}{BasicIStreamWrapper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}} (\begin{DoxyParamCaption}\item[{Stream\+Type \&}]{stream,  }\item[{char $\ast$}]{buffer,  }\item[{size\+\_\+t}]{buffer\+Size }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & stream opened for read. \\
+\hline
+{\em buffer} & user-\/supplied buffer. \\
+\hline
+{\em buffer\+Size} & size of buffer in bytes. Must $>$=4 bytes. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 67 of file istreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67                                                                              : \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aa2da48b0eedc0c1e4352e6130a7d57e0}{stream\_}}(stream), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a475db978c2e0154b96f9c95657d71ed7}{buffer\_}}(buffer), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a16cd252a0d7d2f78cba2c75f80667879}{bufferSize\_}}(bufferSize), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_ac6b35e0c1251a30cc985b39d13b9aa00}{bufferLast\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a45d81a28f9445f497e38b8aab759a0b3}{current\_}}(\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a475db978c2e0154b96f9c95657d71ed7}{buffer\_}}), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aa31e373a95bd662b7fcb3347e83419b9}{readCount\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aac23edc96c35ef363d11d4806109284a}{count\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a444e02a06ab6e7ccedb19a8a28b06bb7}{eof\_}}(\textcolor{keyword}{false}) \{ }
+\DoxyCodeLine{68         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(bufferSize >= 4);}
+\DoxyCodeLine{69         \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_ae4076aa45a6de62d24b02843d8f7bb9e}{Read}}();}
+\DoxyCodeLine{70     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_a8b44c77148a3770fa71560447f043b78}\label{classrapidjson_1_1_basic_i_stream_wrapper_a8b44c77148a3770fa71560447f043b78}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!BasicIStreamWrapper@{BasicIStreamWrapper}}
+\index{BasicIStreamWrapper@{BasicIStreamWrapper}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{BasicIStreamWrapper()}{BasicIStreamWrapper()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_a0736c7200a15d6887d5b3b9abef91caf}\label{classrapidjson_1_1_basic_i_stream_wrapper_a0736c7200a15d6887d5b3b9abef91caf}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!BasicIStreamWrapper@{BasicIStreamWrapper}}
+\index{BasicIStreamWrapper@{BasicIStreamWrapper}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{BasicIStreamWrapper()}{BasicIStreamWrapper()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_ab787ec1bce9ec0e4ddc42cde173d3ab1}\label{classrapidjson_1_1_basic_i_stream_wrapper_ab787ec1bce9ec0e4ddc42cde173d3ab1}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!Flush@{Flush}}
+\index{Flush@{Flush}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 78 of file istreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \} }
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_a5d6ec3d7776d701bce59a2d1277f7e93}\label{classrapidjson_1_1_basic_i_stream_wrapper_a5d6ec3d7776d701bce59a2d1277f7e93}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}}\& \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_adfae250fbfdf7dda0ee9b3895758e767}\label{classrapidjson_1_1_basic_i_stream_wrapper_adfae250fbfdf7dda0ee9b3895758e767}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!Peek@{Peek}}
+\index{Peek@{Peek}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 72 of file istreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72 \{ \textcolor{keywordflow}{return} *\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a45d81a28f9445f497e38b8aab759a0b3}{current\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_afaece8ea8d7b73abc0d4942070b41f8a}\label{classrapidjson_1_1_basic_i_stream_wrapper_afaece8ea8d7b73abc0d4942070b41f8a}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!Peek4@{Peek4}}
+\index{Peek4@{Peek4}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Peek4()}{Peek4()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Peek4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 83 of file istreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                             \{}
+\DoxyCodeLine{84         \textcolor{keywordflow}{return} (\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a45d81a28f9445f497e38b8aab759a0b3}{current\_}} + 4 - !\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a444e02a06ab6e7ccedb19a8a28b06bb7}{eof\_}} <= \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_ac6b35e0c1251a30cc985b39d13b9aa00}{bufferLast\_}}) ? \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a45d81a28f9445f497e38b8aab759a0b3}{current\_}} : 0;}
+\DoxyCodeLine{85     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_af020a73e0739581f784b68c1f5adb385}\label{classrapidjson_1_1_basic_i_stream_wrapper_af020a73e0739581f784b68c1f5adb385}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!Put@{Put}}
+\index{Put@{Put}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 77 of file istreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_a5175c92fadc5278b215bad1822b62267}\label{classrapidjson_1_1_basic_i_stream_wrapper_a5175c92fadc5278b215bad1822b62267}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!PutBegin@{PutBegin}}
+\index{PutBegin@{PutBegin}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{PutBegin()}{PutBegin()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Put\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 79 of file istreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_a06939b6b8f349a611e6dd8ed82274a76}\label{classrapidjson_1_1_basic_i_stream_wrapper_a06939b6b8f349a611e6dd8ed82274a76}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!PutEnd@{PutEnd}}
+\index{PutEnd@{PutEnd}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{PutEnd()}{PutEnd()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Put\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 80 of file istreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_ae4076aa45a6de62d24b02843d8f7bb9e}\label{classrapidjson_1_1_basic_i_stream_wrapper_ae4076aa45a6de62d24b02843d8f7bb9e}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!Read@{Read}}
+\index{Read@{Read}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 92 of file istreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92                 \{}
+\DoxyCodeLine{93         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a45d81a28f9445f497e38b8aab759a0b3}{current\_}} < \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_ac6b35e0c1251a30cc985b39d13b9aa00}{bufferLast\_}})}
+\DoxyCodeLine{94             ++\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a45d81a28f9445f497e38b8aab759a0b3}{current\_}};}
+\DoxyCodeLine{95         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a444e02a06ab6e7ccedb19a8a28b06bb7}{eof\_}}) \{}
+\DoxyCodeLine{96             \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aac23edc96c35ef363d11d4806109284a}{count\_}} += \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aa31e373a95bd662b7fcb3347e83419b9}{readCount\_}};}
+\DoxyCodeLine{97             \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aa31e373a95bd662b7fcb3347e83419b9}{readCount\_}} = \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a16cd252a0d7d2f78cba2c75f80667879}{bufferSize\_}};}
+\DoxyCodeLine{98             \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_ac6b35e0c1251a30cc985b39d13b9aa00}{bufferLast\_}} = \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a475db978c2e0154b96f9c95657d71ed7}{buffer\_}} + \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aa31e373a95bd662b7fcb3347e83419b9}{readCount\_}} - 1;}
+\DoxyCodeLine{99             \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a45d81a28f9445f497e38b8aab759a0b3}{current\_}} = \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a475db978c2e0154b96f9c95657d71ed7}{buffer\_}};}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aa2da48b0eedc0c1e4352e6130a7d57e0}{stream\_}}.read(\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a475db978c2e0154b96f9c95657d71ed7}{buffer\_}}, static\_cast<std::streamsize>(\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a16cd252a0d7d2f78cba2c75f80667879}{bufferSize\_}}))) \{}
+\DoxyCodeLine{102                 \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aa31e373a95bd662b7fcb3347e83419b9}{readCount\_}} = static\_cast<size\_t>(\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aa2da48b0eedc0c1e4352e6130a7d57e0}{stream\_}}.gcount());}
+\DoxyCodeLine{103                 *(\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_ac6b35e0c1251a30cc985b39d13b9aa00}{bufferLast\_}} = \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a475db978c2e0154b96f9c95657d71ed7}{buffer\_}} + \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aa31e373a95bd662b7fcb3347e83419b9}{readCount\_}}) = \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{104                 \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a444e02a06ab6e7ccedb19a8a28b06bb7}{eof\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{105             \}}
+\DoxyCodeLine{106         \}}
+\DoxyCodeLine{107     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_ac803b6494e23a3432c6da1ba9cb9abdc}\label{classrapidjson_1_1_basic_i_stream_wrapper_ac803b6494e23a3432c6da1ba9cb9abdc}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!Take@{Take}}
+\index{Take@{Take}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Take()}{Take()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Take (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 73 of file istreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73 \{ \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} c = *\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a45d81a28f9445f497e38b8aab759a0b3}{current\_}}; \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_ae4076aa45a6de62d24b02843d8f7bb9e}{Read}}(); \textcolor{keywordflow}{return} c; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_a298096361d0d34706ba68af0a68e389f}\label{classrapidjson_1_1_basic_i_stream_wrapper_a298096361d0d34706ba68af0a68e389f}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!Tell@{Tell}}
+\index{Tell@{Tell}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{Tell()}{Tell()}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::Tell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 74 of file istreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_aac23edc96c35ef363d11d4806109284a}{count\_}} + static\_cast<size\_t>(\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a45d81a28f9445f497e38b8aab759a0b3}{current\_}} - \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a475db978c2e0154b96f9c95657d71ed7}{buffer\_}}); \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_a475db978c2e0154b96f9c95657d71ed7}\label{classrapidjson_1_1_basic_i_stream_wrapper_a475db978c2e0154b96f9c95657d71ed7}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!buffer\_@{buffer\_}}
+\index{buffer\_@{buffer\_}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{buffer\_}{buffer\_}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::buffer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 110 of file istreamwrapper.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_ac6b35e0c1251a30cc985b39d13b9aa00}\label{classrapidjson_1_1_basic_i_stream_wrapper_ac6b35e0c1251a30cc985b39d13b9aa00}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!bufferLast\_@{bufferLast\_}}
+\index{bufferLast\_@{bufferLast\_}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{bufferLast\_}{bufferLast\_}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::buffer\+Last\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 112 of file istreamwrapper.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_a16cd252a0d7d2f78cba2c75f80667879}\label{classrapidjson_1_1_basic_i_stream_wrapper_a16cd252a0d7d2f78cba2c75f80667879}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!bufferSize\_@{bufferSize\_}}
+\index{bufferSize\_@{bufferSize\_}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{bufferSize\_}{bufferSize\_}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::buffer\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 111 of file istreamwrapper.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_aac23edc96c35ef363d11d4806109284a}\label{classrapidjson_1_1_basic_i_stream_wrapper_aac23edc96c35ef363d11d4806109284a}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!count\_@{count\_}}
+\index{count\_@{count\_}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{count\_}{count\_}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::count\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of characters read. 
+
+
+
+Definition at line 115 of file istreamwrapper.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_a45d81a28f9445f497e38b8aab759a0b3}\label{classrapidjson_1_1_basic_i_stream_wrapper_a45d81a28f9445f497e38b8aab759a0b3}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!current\_@{current\_}}
+\index{current\_@{current\_}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{current\_}{current\_}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::current\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 113 of file istreamwrapper.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_a444e02a06ab6e7ccedb19a8a28b06bb7}\label{classrapidjson_1_1_basic_i_stream_wrapper_a444e02a06ab6e7ccedb19a8a28b06bb7}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!eof\_@{eof\_}}
+\index{eof\_@{eof\_}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{eof\_}{eof\_}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::eof\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 116 of file istreamwrapper.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_a43ca5844d6d394f13b176880f094adca}\label{classrapidjson_1_1_basic_i_stream_wrapper_a43ca5844d6d394f13b176880f094adca}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!peekBuffer\_@{peekBuffer\_}}
+\index{peekBuffer\_@{peekBuffer\_}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{peekBuffer\_}{peekBuffer\_}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper_a5fd972d8cd20b90ba0772aeebf122597}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::peek\+Buffer\+\_\+\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 110 of file istreamwrapper.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_aa31e373a95bd662b7fcb3347e83419b9}\label{classrapidjson_1_1_basic_i_stream_wrapper_aa31e373a95bd662b7fcb3347e83419b9}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!readCount\_@{readCount\_}}
+\index{readCount\_@{readCount\_}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{readCount\_}{readCount\_}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::read\+Count\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 114 of file istreamwrapper.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_basic_i_stream_wrapper_aa2da48b0eedc0c1e4352e6130a7d57e0}\label{classrapidjson_1_1_basic_i_stream_wrapper_aa2da48b0eedc0c1e4352e6130a7d57e0}} 
+\index{rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}!stream\_@{stream\_}}
+\index{stream\_@{stream\_}!rapidjson::BasicIStreamWrapper$<$ StreamType $>$@{rapidjson::BasicIStreamWrapper$<$ StreamType $>$}}
+\subsubsection{\texorpdfstring{stream\_}{stream\_}}
+{\footnotesize\ttfamily template$<$typename Stream\+Type $>$ \\
+Stream\+Type\& \mbox{\hyperlink{classrapidjson_1_1_basic_i_stream_wrapper}{rapidjson\+::\+Basic\+I\+Stream\+Wrapper}}$<$ Stream\+Type $>$\+::stream\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 109 of file istreamwrapper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{istreamwrapper_8h}{istreamwrapper.\+h}}\end{DoxyCompactItemize}

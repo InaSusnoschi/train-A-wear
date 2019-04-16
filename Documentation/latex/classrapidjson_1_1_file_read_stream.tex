@@ -1,0 +1,392 @@
+\hypertarget{classrapidjson_1_1_file_read_stream}{}\section{rapidjson\+::File\+Read\+Stream Class Reference}
+\label{classrapidjson_1_1_file_read_stream}\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+
+
+File byte stream for input using fread().  
+
+
+
+
+{\ttfamily \#include $<$filereadstream.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}}
+\begin{DoxyCompactList}\small\item\em Character type (byte). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a72b610ada5d86e8977a2bc1f2f4c0808}{File\+Read\+Stream}} (std\+::\+F\+I\+LE $\ast$fp, char $\ast$buffer, size\+\_\+t buffer\+Size)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_ac1ae71d3abf9de0da0fcd02f4a4a91e1}{Peek}} () const
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a96ccdf2feca81ad57ccfd489ffeaf84b}{Take}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a100ae611dab44b2533e3a13d409c8234}{Tell}} () const
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a581c9287a3d0df4db997276be40c1d29}{Put}} (\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}})
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a1b3ae0fe7ad88d8c9c1fac7854d1d7ec}{Flush}} ()
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a5230a74fccebd3bc41f5e455e3cf7777}{Put\+Begin}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a3160ea8b9906840ef690a07784b97acf}{Put\+End}} (\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}} $\ast$)
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a905873a05053d1415f73c5c05c732b32}{Peek4}} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a0384a7f4c9d329feff973e70ad702365}{Read}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::\+F\+I\+LE $\ast$ \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_accd951049f91a32dd700414754584200}{fp\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2f3504c8367c843d1f11a21c7547dafb}{buffer\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_ad05522d27865a351ae61e006b753cbd1}{buffer\+Size\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2cee7bdbbb0b2675076873bc93a3cb65}{buffer\+Last\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2677bd57c31c6488e2b1b8559240a105}{current\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2e36a566d23ef19ffa4eb16e0a390cff}{read\+Count\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_aa9f5c84ba27299caf94ef0022f8d9464}{count\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Number of characters read. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_adee210f3c66e6a05a61379b1e6835f09}{eof\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File byte stream for input using fread(). 
+
+\begin{DoxyNote}{Note}
+implements \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept 
+\end{DoxyNote}
+
+
+Definition at line 34 of file filereadstream.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}\label{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily typedef char \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{rapidjson\+::\+File\+Read\+Stream\+::\+Ch}}}
+
+
+
+Character type (byte). 
+
+
+
+Definition at line 36 of file filereadstream.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a72b610ada5d86e8977a2bc1f2f4c0808}\label{classrapidjson_1_1_file_read_stream_a72b610ada5d86e8977a2bc1f2f4c0808}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!FileReadStream@{FileReadStream}}
+\index{FileReadStream@{FileReadStream}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{FileReadStream()}{FileReadStream()}}
+{\footnotesize\ttfamily rapidjson\+::\+File\+Read\+Stream\+::\+File\+Read\+Stream (\begin{DoxyParamCaption}\item[{std\+::\+F\+I\+LE $\ast$}]{fp,  }\item[{char $\ast$}]{buffer,  }\item[{size\+\_\+t}]{buffer\+Size }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fp} & File pointer opened for read. \\
+\hline
+{\em buffer} & user-\/supplied buffer. \\
+\hline
+{\em buffer\+Size} & size of buffer in bytes. Must $>$=4 bytes. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file filereadstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                                                  : \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_accd951049f91a32dd700414754584200}{fp\_}}(fp), \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2f3504c8367c843d1f11a21c7547dafb}{buffer\_}}(buffer), \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_ad05522d27865a351ae61e006b753cbd1}{bufferSize\_}}(bufferSize), \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2cee7bdbbb0b2675076873bc93a3cb65}{bufferLast\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2677bd57c31c6488e2b1b8559240a105}{current\_}}(\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2f3504c8367c843d1f11a21c7547dafb}{buffer\_}}), \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2e36a566d23ef19ffa4eb16e0a390cff}{readCount\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_aa9f5c84ba27299caf94ef0022f8d9464}{count\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_adee210f3c66e6a05a61379b1e6835f09}{eof\_}}(\textcolor{keyword}{false}) \{ }
+\DoxyCodeLine{45         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_accd951049f91a32dd700414754584200}{fp\_}} != 0);}
+\DoxyCodeLine{46         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(bufferSize >= 4);}
+\DoxyCodeLine{47         \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a0384a7f4c9d329feff973e70ad702365}{Read}}();}
+\DoxyCodeLine{48     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a1b3ae0fe7ad88d8c9c1fac7854d1d7ec}\label{classrapidjson_1_1_file_read_stream_a1b3ae0fe7ad88d8c9c1fac7854d1d7ec}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!Flush@{Flush}}
+\index{Flush@{Flush}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily void rapidjson\+::\+File\+Read\+Stream\+::\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 56 of file filereadstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \} }
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_ac1ae71d3abf9de0da0fcd02f4a4a91e1}\label{classrapidjson_1_1_file_read_stream_ac1ae71d3abf9de0da0fcd02f4a4a91e1}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!Peek@{Peek}}
+\index{Peek@{Peek}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}} rapidjson\+::\+File\+Read\+Stream\+::\+Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 50 of file filereadstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50 \{ \textcolor{keywordflow}{return} *\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2677bd57c31c6488e2b1b8559240a105}{current\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a905873a05053d1415f73c5c05c732b32}\label{classrapidjson_1_1_file_read_stream_a905873a05053d1415f73c5c05c732b32}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!Peek4@{Peek4}}
+\index{Peek4@{Peek4}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{Peek4()}{Peek4()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}}$\ast$ rapidjson\+::\+File\+Read\+Stream\+::\+Peek4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 61 of file filereadstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                             \{}
+\DoxyCodeLine{62         \textcolor{keywordflow}{return} (\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2677bd57c31c6488e2b1b8559240a105}{current\_}} + 4 - !\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_adee210f3c66e6a05a61379b1e6835f09}{eof\_}} <= \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2cee7bdbbb0b2675076873bc93a3cb65}{bufferLast\_}}) ? \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2677bd57c31c6488e2b1b8559240a105}{current\_}} : 0;}
+\DoxyCodeLine{63     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a581c9287a3d0df4db997276be40c1d29}\label{classrapidjson_1_1_file_read_stream_a581c9287a3d0df4db997276be40c1d29}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!Put@{Put}}
+\index{Put@{Put}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily void rapidjson\+::\+File\+Read\+Stream\+::\+Put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file filereadstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a5230a74fccebd3bc41f5e455e3cf7777}\label{classrapidjson_1_1_file_read_stream_a5230a74fccebd3bc41f5e455e3cf7777}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!PutBegin@{PutBegin}}
+\index{PutBegin@{PutBegin}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{PutBegin()}{PutBegin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}}$\ast$ rapidjson\+::\+File\+Read\+Stream\+::\+Put\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 57 of file filereadstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a3160ea8b9906840ef690a07784b97acf}\label{classrapidjson_1_1_file_read_stream_a3160ea8b9906840ef690a07784b97acf}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!PutEnd@{PutEnd}}
+\index{PutEnd@{PutEnd}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{PutEnd()}{PutEnd()}}
+{\footnotesize\ttfamily size\+\_\+t rapidjson\+::\+File\+Read\+Stream\+::\+Put\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 58 of file filereadstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a0384a7f4c9d329feff973e70ad702365}\label{classrapidjson_1_1_file_read_stream_a0384a7f4c9d329feff973e70ad702365}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!Read@{Read}}
+\index{Read@{Read}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily void rapidjson\+::\+File\+Read\+Stream\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 66 of file filereadstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                 \{}
+\DoxyCodeLine{67         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2677bd57c31c6488e2b1b8559240a105}{current\_}} < \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2cee7bdbbb0b2675076873bc93a3cb65}{bufferLast\_}})}
+\DoxyCodeLine{68             ++\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2677bd57c31c6488e2b1b8559240a105}{current\_}};}
+\DoxyCodeLine{69         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_adee210f3c66e6a05a61379b1e6835f09}{eof\_}}) \{}
+\DoxyCodeLine{70             \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_aa9f5c84ba27299caf94ef0022f8d9464}{count\_}} += \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2e36a566d23ef19ffa4eb16e0a390cff}{readCount\_}};}
+\DoxyCodeLine{71             \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2e36a566d23ef19ffa4eb16e0a390cff}{readCount\_}} = std::fread(\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2f3504c8367c843d1f11a21c7547dafb}{buffer\_}}, 1, \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_ad05522d27865a351ae61e006b753cbd1}{bufferSize\_}}, \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_accd951049f91a32dd700414754584200}{fp\_}});}
+\DoxyCodeLine{72             \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2cee7bdbbb0b2675076873bc93a3cb65}{bufferLast\_}} = \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2f3504c8367c843d1f11a21c7547dafb}{buffer\_}} + \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2e36a566d23ef19ffa4eb16e0a390cff}{readCount\_}} - 1;}
+\DoxyCodeLine{73             \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2677bd57c31c6488e2b1b8559240a105}{current\_}} = \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2f3504c8367c843d1f11a21c7547dafb}{buffer\_}};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2e36a566d23ef19ffa4eb16e0a390cff}{readCount\_}} < \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_ad05522d27865a351ae61e006b753cbd1}{bufferSize\_}}) \{}
+\DoxyCodeLine{76                 \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2f3504c8367c843d1f11a21c7547dafb}{buffer\_}}[\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2e36a566d23ef19ffa4eb16e0a390cff}{readCount\_}}] = \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{77                 ++\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2cee7bdbbb0b2675076873bc93a3cb65}{bufferLast\_}};}
+\DoxyCodeLine{78                 \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_adee210f3c66e6a05a61379b1e6835f09}{eof\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{79             \}}
+\DoxyCodeLine{80         \}}
+\DoxyCodeLine{81     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a96ccdf2feca81ad57ccfd489ffeaf84b}\label{classrapidjson_1_1_file_read_stream_a96ccdf2feca81ad57ccfd489ffeaf84b}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!Take@{Take}}
+\index{Take@{Take}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{Take()}{Take()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}} rapidjson\+::\+File\+Read\+Stream\+::\+Take (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 51 of file filereadstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{ \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}} c = *\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2677bd57c31c6488e2b1b8559240a105}{current\_}}; \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a0384a7f4c9d329feff973e70ad702365}{Read}}(); \textcolor{keywordflow}{return} c; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a100ae611dab44b2533e3a13d409c8234}\label{classrapidjson_1_1_file_read_stream_a100ae611dab44b2533e3a13d409c8234}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!Tell@{Tell}}
+\index{Tell@{Tell}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{Tell()}{Tell()}}
+{\footnotesize\ttfamily size\+\_\+t rapidjson\+::\+File\+Read\+Stream\+::\+Tell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 52 of file filereadstream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_aa9f5c84ba27299caf94ef0022f8d9464}{count\_}} + static\_cast<size\_t>(\mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2677bd57c31c6488e2b1b8559240a105}{current\_}} - \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a2f3504c8367c843d1f11a21c7547dafb}{buffer\_}}); \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a2f3504c8367c843d1f11a21c7547dafb}\label{classrapidjson_1_1_file_read_stream_a2f3504c8367c843d1f11a21c7547dafb}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!buffer\_@{buffer\_}}
+\index{buffer\_@{buffer\_}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{buffer\_}{buffer\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}}$\ast$ rapidjson\+::\+File\+Read\+Stream\+::buffer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 84 of file filereadstream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a2cee7bdbbb0b2675076873bc93a3cb65}\label{classrapidjson_1_1_file_read_stream_a2cee7bdbbb0b2675076873bc93a3cb65}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!bufferLast\_@{bufferLast\_}}
+\index{bufferLast\_@{bufferLast\_}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{bufferLast\_}{bufferLast\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}}$\ast$ rapidjson\+::\+File\+Read\+Stream\+::buffer\+Last\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 86 of file filereadstream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_ad05522d27865a351ae61e006b753cbd1}\label{classrapidjson_1_1_file_read_stream_ad05522d27865a351ae61e006b753cbd1}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!bufferSize\_@{bufferSize\_}}
+\index{bufferSize\_@{bufferSize\_}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{bufferSize\_}{bufferSize\_}}
+{\footnotesize\ttfamily size\+\_\+t rapidjson\+::\+File\+Read\+Stream\+::buffer\+Size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 85 of file filereadstream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_aa9f5c84ba27299caf94ef0022f8d9464}\label{classrapidjson_1_1_file_read_stream_aa9f5c84ba27299caf94ef0022f8d9464}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!count\_@{count\_}}
+\index{count\_@{count\_}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{count\_}{count\_}}
+{\footnotesize\ttfamily size\+\_\+t rapidjson\+::\+File\+Read\+Stream\+::count\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of characters read. 
+
+
+
+Definition at line 89 of file filereadstream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a2677bd57c31c6488e2b1b8559240a105}\label{classrapidjson_1_1_file_read_stream_a2677bd57c31c6488e2b1b8559240a105}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!current\_@{current\_}}
+\index{current\_@{current\_}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{current\_}{current\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1_file_read_stream_a4a5f34875b40d22def206c9a09ecd929}{Ch}}$\ast$ rapidjson\+::\+File\+Read\+Stream\+::current\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 87 of file filereadstream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_adee210f3c66e6a05a61379b1e6835f09}\label{classrapidjson_1_1_file_read_stream_adee210f3c66e6a05a61379b1e6835f09}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!eof\_@{eof\_}}
+\index{eof\_@{eof\_}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{eof\_}{eof\_}}
+{\footnotesize\ttfamily bool rapidjson\+::\+File\+Read\+Stream\+::eof\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 90 of file filereadstream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_accd951049f91a32dd700414754584200}\label{classrapidjson_1_1_file_read_stream_accd951049f91a32dd700414754584200}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!fp\_@{fp\_}}
+\index{fp\_@{fp\_}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{fp\_}{fp\_}}
+{\footnotesize\ttfamily std\+::\+F\+I\+LE$\ast$ rapidjson\+::\+File\+Read\+Stream\+::fp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 83 of file filereadstream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_read_stream_a2e36a566d23ef19ffa4eb16e0a390cff}\label{classrapidjson_1_1_file_read_stream_a2e36a566d23ef19ffa4eb16e0a390cff}} 
+\index{rapidjson::FileReadStream@{rapidjson::FileReadStream}!readCount\_@{readCount\_}}
+\index{readCount\_@{readCount\_}!rapidjson::FileReadStream@{rapidjson::FileReadStream}}
+\subsubsection{\texorpdfstring{readCount\_}{readCount\_}}
+{\footnotesize\ttfamily size\+\_\+t rapidjson\+::\+File\+Read\+Stream\+::read\+Count\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 88 of file filereadstream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{filereadstream_8h}{filereadstream.\+h}}\end{DoxyCompactItemize}

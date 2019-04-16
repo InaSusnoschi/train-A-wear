@@ -1,0 +1,33 @@
+\hypertarget{stream_8h}{}\section{D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/stream.h File Reference}
+\label{stream_8h}\index{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/stream.h@{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/stream.h}}
+{\ttfamily \#include \char`\"{}rapidjson.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}encodings.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_stream_traits}{rapidjson\+::\+Stream\+Traits$<$ Stream $>$}}
+\begin{DoxyCompactList}\small\item\em Provides additional information for stream. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_stream_wrapper}{rapidjson\+::\+Generic\+Stream\+Wrapper$<$ Input\+Stream, Encoding $>$}}
+\begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} Wrapper. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{rapidjson\+::\+Generic\+String\+Stream$<$ Encoding $>$}}
+\begin{DoxyCompactList}\small\item\em Read-\/only string stream. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_stream_traits_3_01_generic_string_stream_3_01_encoding_01_4_01_4}{rapidjson\+::\+Stream\+Traits$<$ Generic\+String\+Stream$<$ Encoding $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_insitu_string_stream}{rapidjson\+::\+Generic\+Insitu\+String\+Stream$<$ Encoding $>$}}
+\begin{DoxyCompactList}\small\item\em A read-\/write string stream. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_stream_traits_3_01_generic_insitu_string_stream_3_01_encoding_01_4_01_4}{rapidjson\+::\+Stream\+Traits$<$ Generic\+Insitu\+String\+Stream$<$ Encoding $>$ $>$}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacerapidjson}{rapidjson}}
+\begin{DoxyCompactList}\small\item\em main Rapid\+J\+S\+ON namespace \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Stream $>$ }\\void \mbox{\hyperlink{namespacerapidjson_a820f77efccfbb749bd15fe4822d2c740}{rapidjson\+::\+Put\+Reserve}} (Stream \&stream, size\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Reserve n characters for writing to a stream. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Stream $>$ }\\void \mbox{\hyperlink{namespacerapidjson_a0a774dcffe8ae07686f459ae017d2f20}{rapidjson\+::\+Put\+Unsafe}} (Stream \&stream, typename Stream\+::\+Ch c)
+\begin{DoxyCompactList}\small\item\em Write character to a stream, presuming buffer is reserved. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Stream , typename Ch $>$ }\\void \mbox{\hyperlink{namespacerapidjson_a1d49d2cab617858b53a1db23b1759f43}{rapidjson\+::\+PutN}} (Stream \&stream, Ch c, size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em Put N copies of a character to a stream. \end{DoxyCompactList}\end{DoxyCompactItemize}

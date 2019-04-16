@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logosmall.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">train-A-wear
+   &#160;<span id="projectnumber">2.1</span>
    </div>
+   <div id="projectbrief">Real time feedback application with wireless connection to three IMUs</div>
   </td>
  </tr>
  </tbody>
@@ -75,13 +78,9 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for com.example.trainawearapplication.Setup:</div>
 <div class="dyncontent">
-<div class="center"><img src="classcom_1_1example_1_1trainawearapplication_1_1_setup__inherit__graph.png" border="0" usemap="#com_8example_8trainawearapplication_8_setup_inherit__map" alt="Inheritance graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for com.example.trainawearapplication.Setup:</div>
-<div class="dyncontent">
-<div class="center"><img src="classcom_1_1example_1_1trainawearapplication_1_1_setup__coll__graph.png" border="0" usemap="#com_8example_8trainawearapplication_8_setup_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="classcom_1_1example_1_1trainawearapplication_1_1_setup.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -91,6 +90,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a6e717a2baaf80c283f516c044ae98e6c"><td class="memItemLeft" align="right" valign="top">View.OnClickListener&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_setup.html#a6e717a2baaf80c283f516c044ae98e6c">doneButtonListener</a></td></tr>
+<tr class="memdesc:a6e717a2baaf80c283f516c044ae98e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use a listener to make a line of text appear after button press.  <a href="#a6e717a2baaf80c283f516c044ae98e6c">More...</a><br /></td></tr>
 <tr class="separator:a6e717a2baaf80c283f516c044ae98e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -100,7 +100,7 @@ Private Attributes</h2></td></tr>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>19/03/2019 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_setup_8java_source.html#l00029">29</a> of file <a class="el" href="_setup_8java_source.html">Setup.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_setup_8java_source.html#l00028">28</a> of file <a class="el" href="_setup_8java_source.html">Setup.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a52f522c34d14c93dbf7f75ff75ce606d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52f522c34d14c93dbf7f75ff75ce606d">&#9670;&nbsp;</a></span>onCreate()</h2>
@@ -121,15 +121,18 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This gets the parameters values and checks they are the right format</p>
+<p>Get the Intent that started this activity and extract the string</p>
+<p>Capture the layout's TextView and set the string as its text</p>
 
-<p class="definition">Definition at line <a class="el" href="_setup_8java_source.html#l00038">38</a> of file <a class="el" href="_setup_8java_source.html">Setup.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                       {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        super.onCreate(savedInstanceState);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//        setContentView(R.layout.activity_display_message);</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        height = findViewById(R.id.editHeight);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        weight = findViewById(R.id.editWeight);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        age = findViewById(R.id.editAge);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// text watchers</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        height.addTextChangedListener(textHeightWatcher);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        weight.addTextChangedListener(textWeightWatcher);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        age.addTextChangedListener(textAgeWatcher);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">// buttons</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        Button done = (Button)findViewById(R.id.buttonDone);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">//Register onClick listener</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        done.setOnClickListener(<a class="code" href="classcom_1_1example_1_1trainawearapplication_1_1_setup.html#a6e717a2baaf80c283f516c044ae98e6c">doneButtonListener</a>);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        Intent setup = getIntent();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;         <span class="comment">// Capture the layout&#39;s TextView and set the string as its text</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        TextView textView = findViewById(R.id.textRequest);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div><div class="ttc" id="classcom_1_1example_1_1trainawearapplication_1_1_setup_html_a6e717a2baaf80c283f516c044ae98e6c"><div class="ttname"><a href="classcom_1_1example_1_1trainawearapplication_1_1_setup.html#a6e717a2baaf80c283f516c044ae98e6c">com.example.trainawearapplication.Setup.doneButtonListener</a></div><div class="ttdeci">View.OnClickListener doneButtonListener</div><div class="ttdef"><b>Definition:</b> <a href="_setup_8java_source.html#l00194">Setup.java:194</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_setup_8java_source.html#l00039">39</a> of file <a class="el" href="_setup_8java_source.html">Setup.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                       {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        super.onCreate(savedInstanceState);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        setContentView(R.layout.activity_setup);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        height = findViewById(editHeight);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        weight = findViewById(R.id.editWeight);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        age = findViewById(editAge);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// text watchers</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        height.addTextChangedListener(textWatcher);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        weight.addTextChangedListener(textWeightWatcher);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        age.addTextChangedListener(textAgeWatcher);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// buttons</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        Button done = (Button)findViewById(R.id.buttonDone);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">//Register onClick listener</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        done.setOnClickListener(<a class="code" href="classcom_1_1example_1_1trainawearapplication_1_1_setup.html#a6e717a2baaf80c283f516c044ae98e6c">doneButtonListener</a>);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">//height = findViewById(R.id.enterHeight);</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        Intent setup = getIntent();</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        TextView textView = findViewById(R.id.textRequest);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div><div class="ttc" id="classcom_1_1example_1_1trainawearapplication_1_1_setup_html_a6e717a2baaf80c283f516c044ae98e6c"><div class="ttname"><a href="classcom_1_1example_1_1trainawearapplication_1_1_setup.html#a6e717a2baaf80c283f516c044ae98e6c">com.example.trainawearapplication.Setup.doneButtonListener</a></div><div class="ttdeci">View.OnClickListener doneButtonListener</div><div class="ttdoc">Use a listener to make a line of text appear after button press.</div><div class="ttdef"><b>Definition:</b> <a href="_setup_8java_source.html#l00205">Setup.java:205</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="com_2example_2trainawearapplication_2_r_8java_source.html#l03906">com.example.trainawearapplication.R.id.buttonDone</a>, <a class="el" href="_setup_8java_source.html#l00194">com.example.trainawearapplication.Setup.doneButtonListener</a>, <a class="el" href="com_2example_2trainawearapplication_2_r_8java_source.html#l03962">com.example.trainawearapplication.R.id.editAge</a>, <a class="el" href="com_2example_2trainawearapplication_2_r_8java_source.html#l03963">com.example.trainawearapplication.R.id.editHeight</a>, <a class="el" href="com_2example_2trainawearapplication_2_r_8java_source.html#l03964">com.example.trainawearapplication.R.id.editWeight</a>, and <a class="el" href="com_2example_2trainawearapplication_2_r_8java_source.html#l04111">com.example.trainawearapplication.R.id.textRequest</a>.</p>
+<p class="reference">References <a class="el" href="process_debug_resources_2r_2com_2example_2trainawearapplication_2_r_8java_source.html#l04213">com.example.trainawearapplication.R.layout.activity_setup</a>, <a class="el" href="process_debug_resources_2r_2com_2example_2trainawearapplication_2_r_8java_source.html#l03910">com.example.trainawearapplication.R.id.buttonDone</a>, <a class="el" href="_setup_8java_source.html#l00205">com.example.trainawearapplication.Setup.doneButtonListener</a>, <a class="el" href="process_debug_resources_2r_2com_2example_2trainawearapplication_2_r_8java_source.html#l03969">com.example.trainawearapplication.R.id.editWeight</a>, and <a class="el" href="process_debug_resources_2r_2com_2example_2trainawearapplication_2_r_8java_source.html#l04120">com.example.trainawearapplication.R.id.textRequest</a>.</p>
 
 </div>
 </div>
@@ -153,21 +156,22 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> View.OnClickListener() {</div><div class="line">        @Override</div><div class="line">        <span class="keyword">public</span> <span class="keywordtype">void</span> onClick(View v) {</div><div class="line">            TextView viewAllSet = findViewById(R.id.textAllSet);</div><div class="line">            </div><div class="line">            viewAllSet.setVisibility(View.VISIBLE);</div><div class="line"></div><div class="line">            Setup.this.finish();</div><div class="line">        }</div><div class="line">    }</div></div><!-- fragment --><p>Use a listener to make a line of text appear after button press </p>
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> View.OnClickListener() {</div><div class="line">        @Override</div><div class="line">        <span class="keyword">public</span> <span class="keywordtype">void</span> onClick(View v) {</div><div class="line">            TextView viewAllSet = findViewById(R.id.textAllSet);</div><div class="line">            </div><div class="line">            viewAllSet.setVisibility(View.VISIBLE);</div><div class="line"></div><div class="line">            Setup.this.finish();</div><div class="line">        }</div><div class="line">    }</div></div><!-- fragment -->
+<p>Use a listener to make a line of text appear after button press. </p>
 
-<p class="definition">Definition at line <a class="el" href="_setup_8java_source.html#l00194">194</a> of file <a class="el" href="_setup_8java_source.html">Setup.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_setup_8java_source.html#l00205">205</a> of file <a class="el" href="_setup_8java_source.html">Setup.java</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_setup_8java_source.html#l00038">com.example.trainawearapplication.Setup.onCreate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_setup_8java_source.html#l00039">com.example.trainawearapplication.Setup.onCreate()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Phone App/app/src/main/java/com/example/trainawearapplication/<a class="el" href="_setup_8java_source.html">Setup.java</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Phone App/app/src/main/java/com/example/trainawearapplication/<a class="el" href="_setup_8java_source.html">Setup.java</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2019 00:37:09 for train-A-wear by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

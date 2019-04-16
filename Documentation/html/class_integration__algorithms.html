@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logosmall.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">train-A-wear
+   &#160;<span id="projectnumber">2.1</span>
    </div>
+   <div id="projectbrief">Real time feedback application with wireless connection to three IMUs</div>
   </td>
  </tr>
  </tbody>
@@ -70,11 +73,6 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_integration__algorithms_8h_source.html">Integration_algorithms.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for Integration_algorithms:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_integration__algorithms__coll__graph.png" border="0" usemap="#_integration__algorithms_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -260,11 +258,6 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">double</span> pitch;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">double</span> dt = 0.01;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    pitch += gyro_x * dt;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">double</span> acc_correction_x = atan2f(acc_y, acc_z)*180/M_PI;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (acc_correction_x &gt;180.0){</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        acc_correction_x -=(double)360.0;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="class_integration__algorithms.html#a0966fe666b2c99a384c7a138a6817ece">complementary_filter</a>(&amp;pitch, acc_correction_x);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> pitch;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div><div class="ttc" id="class_integration__algorithms_html_a0966fe666b2c99a384c7a138a6817ece"><div class="ttname"><a href="class_integration__algorithms.html#a0966fe666b2c99a384c7a138a6817ece">Integration_algorithms::complementary_filter</a></div><div class="ttdeci">void complementary_filter(double *angle, double acc)</div><div class="ttdoc">Function to create a filtered version of the calculated change of rotation.</div><div class="ttdef"><b>Definition:</b> <a href="_integration__algorithms_8cpp_source.html#l00039">Integration_algorithms.cpp:39</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_integration__algorithms_8cpp_source.html#l00127">squat_twist_left_knee()</a>, and <a class="el" href="_integration__algorithms_8cpp_source.html#l00109">squat_twist_right_knee()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_integration__algorithms_aa501e38449c081dd1ece866f5e9a4150_icgraph.png" border="0" usemap="#class_integration__algorithms_aa501e38449c081dd1ece866f5e9a4150_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -314,11 +307,6 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;{</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_integration__algorithms.html#a5edf31b0eb679866bc9426dcae975df5">Roll</a> = <a class="code" href="class_integration__algorithms.html#a5edf31b0eb679866bc9426dcae975df5">Integration_algorithms::Roll</a>(gyro_y, acc_x, acc_z);</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_integration__algorithms.html#a5edf31b0eb679866bc9426dcae975df5">Roll</a> &gt; 0){</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> 6; <span class="comment">//message &quot;Straighten you back during exercise!&quot;</span></div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    } <span class="keywordflow">else</span>{</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">return</span> 7; <span class="comment">//message &quot;Keep the nice posture&quot;</span></div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div><div class="ttc" id="class_integration__algorithms_html_a5edf31b0eb679866bc9426dcae975df5"><div class="ttname"><a href="class_integration__algorithms.html#a5edf31b0eb679866bc9426dcae975df5">Integration_algorithms::Roll</a></div><div class="ttdeci">double Roll(double gyro_y, double acc_x, double acc_z)</div><div class="ttdoc">Calculation of the roll (y-axis sensor rotation)</div><div class="ttdef"><b>Definition:</b> <a href="_integration__algorithms_8cpp_source.html#l00051">Integration_algorithms.cpp:51</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_integration__algorithms_8cpp_source.html#l00051">Roll()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_integration__algorithms_a19e62aed96ce9fd9c784e39924cc6617_cgraph.png" border="0" usemap="#class_integration__algorithms_a19e62aed96ce9fd9c784e39924cc6617_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -393,11 +381,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_buffer_html_a43bc2e8725cb4f43bbf4b67d2c787fd1"><div class="ttname"><a href="class_buffer.html#a43bc2e8725cb4f43bbf4b67d2c787fd1">Buffer::buffer</a></div><div class="ttdeci">void buffer(double value2)</div><div class="ttdoc">Buffer functionality.</div><div class="ttdef"><b>Definition:</b> <a href="_buffer_8cpp_source.html#l00055">Buffer.cpp:55</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_integration__algorithms_8cpp_source.html#l00051">Roll()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_integration__algorithms_a859df296a5fb433f665796823db4b401_cgraph.png" border="0" usemap="#class_integration__algorithms_a859df296a5fb433f665796823db4b401_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -472,11 +455,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_buffer_html_a43bc2e8725cb4f43bbf4b67d2c787fd1"><div class="ttname"><a href="class_buffer.html#a43bc2e8725cb4f43bbf4b67d2c787fd1">Buffer::buffer</a></div><div class="ttdeci">void buffer(double value2)</div><div class="ttdoc">Buffer functionality.</div><div class="ttdef"><b>Definition:</b> <a href="_buffer_8cpp_source.html#l00055">Buffer.cpp:55</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_integration__algorithms_8cpp_source.html#l00051">Roll()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_integration__algorithms_a4e11a75d0b52af4a46d1f18a6e6693f3_cgraph.png" border="0" usemap="#class_integration__algorithms_a4e11a75d0b52af4a46d1f18a6e6693f3_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -526,11 +504,6 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">double</span> roll;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">double</span> dt = 0.01;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    roll += gyro_y * dt;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">double</span> acc_correction_y = atan2f(acc_z, acc_x) *180/M_PI;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_integration__algorithms.html#a0966fe666b2c99a384c7a138a6817ece">complementary_filter</a>(&amp;roll, acc_correction_y);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> roll;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="ttc" id="class_integration__algorithms_html_a0966fe666b2c99a384c7a138a6817ece"><div class="ttname"><a href="class_integration__algorithms.html#a0966fe666b2c99a384c7a138a6817ece">Integration_algorithms::complementary_filter</a></div><div class="ttdeci">void complementary_filter(double *angle, double acc)</div><div class="ttdoc">Function to create a filtered version of the calculated change of rotation.</div><div class="ttdef"><b>Definition:</b> <a href="_integration__algorithms_8cpp_source.html#l00039">Integration_algorithms.cpp:39</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="_integration__algorithms_8cpp_source.html#l00145">plank_bend_back()</a>, <a class="el" href="_integration__algorithms_8cpp_source.html#l00190">pushup_knee_back()</a>, <a class="el" href="_integration__algorithms_8cpp_source.html#l00166">pushup_shoulder_back()</a>, and <a class="el" href="_integration__algorithms_8cpp_source.html#l00091">squat_straight_back()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_integration__algorithms_a5edf31b0eb679866bc9426dcae975df5_icgraph.png" border="0" usemap="#class_integration__algorithms_a5edf31b0eb679866bc9426dcae975df5_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -582,16 +555,6 @@ Here is the caller graph for this function:</div>
 <p class="reference">References <a class="el" href="_integration__algorithms_8cpp_source.html#l00051">Roll()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="train-_a-wear__server_8cpp_source.html#l00118">parsing_function()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_integration__algorithms_a1e3abc78c151732e013b41fa0300a6f0_cgraph.png" border="0" usemap="#class_integration__algorithms_a1e3abc78c151732e013b41fa0300a6f0_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_integration__algorithms_a1e3abc78c151732e013b41fa0300a6f0_icgraph.png" border="0" usemap="#class_integration__algorithms_a1e3abc78c151732e013b41fa0300a6f0_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -644,11 +607,6 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="class_buffer_html_a43bc2e8725cb4f43bbf4b67d2c787fd1"><div class="ttname"><a href="class_buffer.html#a43bc2e8725cb4f43bbf4b67d2c787fd1">Buffer::buffer</a></div><div class="ttdeci">void buffer(double value2)</div><div class="ttdoc">Buffer functionality.</div><div class="ttdef"><b>Definition:</b> <a href="_buffer_8cpp_source.html#l00055">Buffer.cpp:55</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_integration__algorithms_8cpp_source.html#l00069">Pitch()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_integration__algorithms_aa53617d2e831625774f19c186f73ed01_cgraph.png" border="0" usemap="#class_integration__algorithms_aa53617d2e831625774f19c186f73ed01_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -701,11 +659,6 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="class_buffer_html_a43bc2e8725cb4f43bbf4b67d2c787fd1"><div class="ttname"><a href="class_buffer.html#a43bc2e8725cb4f43bbf4b67d2c787fd1">Buffer::buffer</a></div><div class="ttdeci">void buffer(double value2)</div><div class="ttdoc">Buffer functionality.</div><div class="ttdef"><b>Definition:</b> <a href="_buffer_8cpp_source.html#l00055">Buffer.cpp:55</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_integration__algorithms_8cpp_source.html#l00069">Pitch()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_integration__algorithms_a536f64355f0ccce1e191aebeee30a6d0_cgraph.png" border="0" usemap="#class_integration__algorithms_a536f64355f0ccce1e191aebeee30a6d0_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -855,13 +808,13 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Server/<a class="el" href="_integration__algorithms_8h_source.html">Integration_algorithms.h</a></li>
-<li>Server/<a class="el" href="_integration__algorithms_8cpp_source.html">Integration_algorithms.cpp</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Server/<a class="el" href="_integration__algorithms_8h_source.html">Integration_algorithms.h</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Server/<a class="el" href="_integration__algorithms_8cpp_source.html">Integration_algorithms.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2019 00:37:02 for train-A-wear by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

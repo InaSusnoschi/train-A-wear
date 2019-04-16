@@ -1,0 +1,392 @@
+\hypertarget{classrapidjson_1_1_generic_string_buffer}{}\section{rapidjson\+::Generic\+String\+Buffer$<$ Encoding, Allocator $>$ Class Template Reference}
+\label{classrapidjson_1_1_generic_string_buffer}\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+
+
+Represents an in-\/memory output stream.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Encoding\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}{Ch}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a96f9ddc4322573a15d086f29197a3d1b}{Generic\+String\+Buffer}} (\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$allocator=0, size\+\_\+t capacity=\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a56159d25a431109a2873e9455178eff0}{k\+Default\+Capacity}})
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a495081cfdd864623565606daf02f1187}{Put}} (\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}{Ch}} c)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a35733ffe70f63b28857b8d738b2ffad7}{Put\+Unsafe}} (\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}{Ch}} c)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_aabe024dd7fc2ea0a0c929d7eea3d0b32}{Flush}} ()
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a614af5a72984c88bd5a65e2bc233d310}{Clear}} ()
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a7e688f68b88820655f717d3cc352b842}{Shrink\+To\+Fit}} ()
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_ae70a632053e258c7c431e0e35b095c84}{Reserve}} (size\+\_\+t count)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_aa848ba1b8220afb4103d8099cbd6d3ff}{Push}} (size\+\_\+t count)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_acfdf31dc9458a63e4d6544d3079c8d2e}{Push\+Unsafe}} (size\+\_\+t count)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_afb41bae09405ddd9aa9250ac47ab235e}{Pop}} (size\+\_\+t count)
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a520c0f75424762ea44ebf6ecdd1931d8}{Get\+String}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a9d830ec37a4ba0fba3b523c90aaf8b42}{Get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get the size of string in bytes in the string buffer. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a0a114be213152d570a2d9fde7a28fe11}{Get\+Length}} () const
+\begin{DoxyCompactList}\small\item\em Get the length of string in Ch in the string buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a56159d25a431109a2873e9455178eff0}{k\+Default\+Capacity}} = 256
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_aad265ddd331096e501d0ec577afa441f}{Generic\+String\+Buffer}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}} \&)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_af183e859f15b23e59afe2cad176b81ed}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$\newline
+class rapidjson\+::\+Generic\+String\+Buffer$<$ Encoding, Allocator $>$}
+
+Represents an in-\/memory output stream. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}} & \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} of the stream. \\
+\hline
+{\em \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}} & type for allocating memory buffer. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyNote}{Note}
+implements \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept 
+\end{DoxyNote}
+
+
+Definition at line 59 of file fwd.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}\label{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+typedef Encoding\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}{Ch}}}
+
+
+
+Definition at line 43 of file stringbuffer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_a96f9ddc4322573a15d086f29197a3d1b}\label{classrapidjson_1_1_generic_string_buffer_a96f9ddc4322573a15d086f29197a3d1b}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!GenericStringBuffer@{GenericStringBuffer}}
+\index{GenericStringBuffer@{GenericStringBuffer}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericStringBuffer()}{GenericStringBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$}]{allocator = {\ttfamily 0},  }\item[{size\+\_\+t}]{capacity = {\ttfamily \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a56159d25a431109a2873e9455178eff0}{k\+Default\+Capacity}}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 45 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 : \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}(allocator, capacity) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_aad265ddd331096e501d0ec577afa441f}\label{classrapidjson_1_1_generic_string_buffer_aad265ddd331096e501d0ec577afa441f}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!GenericStringBuffer@{GenericStringBuffer}}
+\index{GenericStringBuffer@{GenericStringBuffer}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericStringBuffer()}{GenericStringBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_a614af5a72984c88bd5a65e2bc233d310}\label{classrapidjson_1_1_generic_string_buffer_a614af5a72984c88bd5a65e2bc233d310}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 60 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60 \{ \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.Clear(); \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\+Add\+Error\+Location().
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_aabe024dd7fc2ea0a0c929d7eea3d0b32}\label{classrapidjson_1_1_generic_string_buffer_aabe024dd7fc2ea0a0c929d7eea3d0b32}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!Flush@{Flush}}
+\index{Flush@{Flush}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 58 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_a0a114be213152d570a2d9fde7a28fe11}\label{classrapidjson_1_1_generic_string_buffer_a0a114be213152d570a2d9fde7a28fe11}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!GetLength@{GetLength}}
+\index{GetLength@{GetLength}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{GetLength()}{GetLength()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the length of string in Ch in the string buffer. 
+
+
+
+Definition at line 85 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.GetSize() / \textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}{Ch}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_a9d830ec37a4ba0fba3b523c90aaf8b42}\label{classrapidjson_1_1_generic_string_buffer_a9d830ec37a4ba0fba3b523c90aaf8b42}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{GetSize()}{GetSize()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the size of string in bytes in the string buffer. 
+
+
+
+Definition at line 82 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{82 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.GetSize(); \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\+Add\+Error\+Location().
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_a520c0f75424762ea44ebf6ecdd1931d8}\label{classrapidjson_1_1_generic_string_buffer_a520c0f75424762ea44ebf6ecdd1931d8}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!GetString@{GetString}}
+\index{GetString@{GetString}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{GetString()}{GetString()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}{Ch}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 73 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                                 \{}
+\DoxyCodeLine{74         \textcolor{comment}{// Push and pop a null terminator. This is safe.}}
+\DoxyCodeLine{75         *\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.template Push<Ch>() = \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{76         \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.template Pop<Ch>(1);}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.template Bottom<Ch>();}
+\DoxyCodeLine{79     \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\+Add\+Error\+Location(), and rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\+End\+Value().
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_af183e859f15b23e59afe2cad176b81ed}\label{classrapidjson_1_1_generic_string_buffer_af183e859f15b23e59afe2cad176b81ed}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_afb41bae09405ddd9aa9250ac47ab235e}\label{classrapidjson_1_1_generic_string_buffer_afb41bae09405ddd9aa9250ac47ab235e}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!Pop@{Pop}}
+\index{Pop@{Pop}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{Pop()}{Pop()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Pop (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 71 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71 \{ \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.template Pop<Ch>(count); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_aa848ba1b8220afb4103d8099cbd6d3ff}\label{classrapidjson_1_1_generic_string_buffer_aa848ba1b8220afb4103d8099cbd6d3ff}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!Push@{Push}}
+\index{Push@{Push}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{Push()}{Push()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}{Ch}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Push (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 69 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.template Push<Ch>(count); \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\+Add\+Error\+Location().
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_acfdf31dc9458a63e4d6544d3079c8d2e}\label{classrapidjson_1_1_generic_string_buffer_acfdf31dc9458a63e4d6544d3079c8d2e}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!PushUnsafe@{PushUnsafe}}
+\index{PushUnsafe@{PushUnsafe}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{PushUnsafe()}{PushUnsafe()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}{Ch}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Push\+Unsafe (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 70 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.template PushUnsafe<Ch>(count); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_a495081cfdd864623565606daf02f1187}\label{classrapidjson_1_1_generic_string_buffer_a495081cfdd864623565606daf02f1187}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!Put@{Put}}
+\index{Put@{Put}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}{Ch}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 56 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56 \{ *\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.template Push<Ch>() = c; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_a35733ffe70f63b28857b8d738b2ffad7}\label{classrapidjson_1_1_generic_string_buffer_a35733ffe70f63b28857b8d738b2ffad7}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!PutUnsafe@{PutUnsafe}}
+\index{PutUnsafe@{PutUnsafe}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{PutUnsafe()}{PutUnsafe()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Put\+Unsafe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a315f6f4528438a19d5a93eac3e2c99f0}{Ch}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 57 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57 \{ *\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.template PushUnsafe<Ch>() = c; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_ae70a632053e258c7c431e0e35b095c84}\label{classrapidjson_1_1_generic_string_buffer_ae70a632053e258c7c431e0e35b095c84}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!Reserve@{Reserve}}
+\index{Reserve@{Reserve}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{Reserve()}{Reserve()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Reserve (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 68 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68 \{ \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.template Reserve<Ch>(count); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_a7e688f68b88820655f717d3cc352b842}\label{classrapidjson_1_1_generic_string_buffer_a7e688f68b88820655f717d3cc352b842}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!ShrinkToFit@{ShrinkToFit}}
+\index{ShrinkToFit@{ShrinkToFit}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{ShrinkToFit()}{ShrinkToFit()}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Shrink\+To\+Fit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 61 of file stringbuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                        \{}
+\DoxyCodeLine{62         \textcolor{comment}{// Push and pop a null terminator. This is safe.}}
+\DoxyCodeLine{63         *\mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.template Push<Ch>() = \textcolor{charliteral}{'\(\backslash\)0'};}
+\DoxyCodeLine{64         \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.ShrinkToFit();}
+\DoxyCodeLine{65         \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}{stack\_}}.template Pop<Ch>(1);}
+\DoxyCodeLine{66     \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_a56159d25a431109a2873e9455178eff0}\label{classrapidjson_1_1_generic_string_buffer_a56159d25a431109a2873e9455178eff0}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!kDefaultCapacity@{kDefaultCapacity}}
+\index{kDefaultCapacity@{kDefaultCapacity}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{kDefaultCapacity}{kDefaultCapacity}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+const size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::k\+Default\+Capacity = 256\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 87 of file stringbuffer.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}\label{classrapidjson_1_1_generic_string_buffer_a061b1ffdcd0d660d98ab4a8e3ab49975}} 
+\index{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}!stack\_@{stack\_}}
+\index{stack\_@{stack\_}!rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$@{rapidjson::GenericStringBuffer$<$ Encoding, Allocator $>$}}
+\subsubsection{\texorpdfstring{stack\_}{stack\_}}
+{\footnotesize\ttfamily template$<$typename Encoding, typename Allocator = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$>$ \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer}{rapidjson\+::\+Generic\+String\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::stack\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}}
+
+
+
+Definition at line 88 of file stringbuffer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{fwd_8h}{fwd.\+h}}\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{stringbuffer_8h}{stringbuffer.\+h}}\end{DoxyCompactItemize}

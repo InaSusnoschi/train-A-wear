@@ -1,0 +1,547 @@
+\hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context}{}\section{rapidjson\+::internal\+::Schema\+Validation\+Context$<$ Schema\+Document\+Type $>$ Struct Template Reference}
+\label{structrapidjson_1_1internal_1_1_schema_validation_context}\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+
+
+{\ttfamily \#include $<$schema.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46}{Pattern\+Validator\+Type}} \{ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46a1a5c44675a684036e353728f8cf61fd3}{k\+Pattern\+Validator\+Only}}, 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46adaf39d34934210fad7ea0771c8876a1b}{k\+Pattern\+Validator\+With\+Property}}, 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46a50fa90fbc765277164e15f6fdc851601}{k\+Pattern\+Validator\+With\+Additional\+Property}}
+ \}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema}{Schema}}$<$ Schema\+Document\+Type $>$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory}{I\+Schema\+State\+Factory}}$<$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}} $>$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a1065fcde55a4928092fd576743e68e99}{Schema\+Validator\+Factory\+Type}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{I\+Validation\+Error\+Handler}}$<$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}} $>$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_aca18580c026f47ce432a5a53b71c8d24}{Error\+Handler\+Type}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema_a3979a9083c598195927c08c6e3ba91d1}{Schema\+Type\+::\+Value\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a8089ea7252f656960c85a840c3f7e311}{Value\+Type}}
+\item 
+typedef Value\+Type\+::\+Ch \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_aeb3b15fcfda759e506a5da83c6f782ca}{Ch}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a85e6773fa24ec01896db90c5998cb71d}{Schema\+Validation\+Context}} (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a1065fcde55a4928092fd576743e68e99}{Schema\+Validator\+Factory\+Type}} \&f, \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_aca18580c026f47ce432a5a53b71c8d24}{Error\+Handler\+Type}} \&eh, const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}} $\ast$s)
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae6837600fd9fb8c6824e17f4f24af900}{$\sim$\+Schema\+Validation\+Context}} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a1065fcde55a4928092fd576743e68e99}{Schema\+Validator\+Factory\+Type}} \& \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad94e31d9986a4ee521a0c51d74717242}{factory}}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_aca18580c026f47ce432a5a53b71c8d24}{Error\+Handler\+Type}} \& \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a593510056ace8236513cb3d705838ae0}{error\+\_\+handler}}
+\item 
+const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a20a1543637d494e7d8727051448ec2af}{schema}}
+\item 
+const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_af00ced23554e0b9c84e8750c97143f60}{value\+Schema}}
+\item 
+const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_aeb3b15fcfda759e506a5da83c6f782ca}{Ch}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a42b7f2d6a85cb43b3cdeac057a4279be}{invalid\+Keyword}}
+\item 
+void $\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ac70bbdca3f5f1be8ba2bc0ab6eeb6b91}{hasher}}
+\item 
+void $\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a864b6194684c5ab61e1566cc1e994411}{array\+Element\+Hash\+Codes}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$$\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_af81c4efa8d41dd9608d5bd23075bac4a}{validators}}
+\item 
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_af0b50fe8a859345d00a95f35f49da6a2}{validator\+Count}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$$\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ac1ef51413d015e814223227170831ca5}{pattern\+Properties\+Validators}}
+\item 
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_aa3667e09c6e60a240fc6d5b2644df991}{pattern\+Properties\+Validator\+Count}}
+\item 
+const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}} $\ast$$\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a92bb00a40fb188bbc782513796192c69}{pattern\+Properties\+Schemas}}
+\item 
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae1f553f9034c58f30bce6d7129941d3f}{pattern\+Properties\+Schema\+Count}}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46}{Pattern\+Validator\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a00dbd559e72f4bb12fc201c49ffa35c4}{value\+Pattern\+Validator\+Type}}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46}{Pattern\+Validator\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a39123245bbc6137fa49827014f9e7f3e}{object\+Pattern\+Validator\+Type}}
+\item 
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a4a3c34e71ec6acd43b56eb596cd137f0}{array\+Element\+Index}}
+\item 
+bool $\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a4faf6b9b5d50a677792b462a16bb14a1}{property\+Exist}}
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a8b4cf20c9cdc97355640dbccee95f3e1}{in\+Array}}
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a8b8495d77b512073f13ae4f7c6122b96}{value\+Uniqueness}}
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a3b892aef49ef30846a2fb97abb1d0a6c}{array\+Uniqueness}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Schema\+Document\+Type$>$\newline
+struct rapidjson\+::internal\+::\+Schema\+Validation\+Context$<$ Schema\+Document\+Type $>$}
+
+
+
+Definition at line 316 of file schema.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_aeb3b15fcfda759e506a5da83c6f782ca}\label{structrapidjson_1_1internal_1_1_schema_validation_context_aeb3b15fcfda759e506a5da83c6f782ca}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+typedef Value\+Type\+::\+Ch \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_aeb3b15fcfda759e506a5da83c6f782ca}{Ch}}}
+
+
+
+Definition at line 321 of file schema.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_aca18580c026f47ce432a5a53b71c8d24}\label{structrapidjson_1_1internal_1_1_schema_validation_context_aca18580c026f47ce432a5a53b71c8d24}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!ErrorHandlerType@{ErrorHandlerType}}
+\index{ErrorHandlerType@{ErrorHandlerType}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{ErrorHandlerType}{ErrorHandlerType}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{I\+Validation\+Error\+Handler}}$<$\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}}$>$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_aca18580c026f47ce432a5a53b71c8d24}{Error\+Handler\+Type}}}
+
+
+
+Definition at line 319 of file schema.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}\label{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!SchemaType@{SchemaType}}
+\index{SchemaType@{SchemaType}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{SchemaType}{SchemaType}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema}{Schema}}$<$Schema\+Document\+Type$>$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}}}
+
+
+
+Definition at line 317 of file schema.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a1065fcde55a4928092fd576743e68e99}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a1065fcde55a4928092fd576743e68e99}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!SchemaValidatorFactoryType@{SchemaValidatorFactoryType}}
+\index{SchemaValidatorFactoryType@{SchemaValidatorFactoryType}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{SchemaValidatorFactoryType}{SchemaValidatorFactoryType}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory}{I\+Schema\+State\+Factory}}$<$\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}}$>$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a1065fcde55a4928092fd576743e68e99}{Schema\+Validator\+Factory\+Type}}}
+
+
+
+Definition at line 318 of file schema.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a8089ea7252f656960c85a840c3f7e311}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a8089ea7252f656960c85a840c3f7e311}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!ValueType@{ValueType}}
+\index{ValueType@{ValueType}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{ValueType}{ValueType}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema_a3979a9083c598195927c08c6e3ba91d1}{Schema\+Type\+::\+Value\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a8089ea7252f656960c85a840c3f7e311}{Value\+Type}}}
+
+
+
+Definition at line 320 of file schema.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46}\label{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!PatternValidatorType@{PatternValidatorType}}
+\index{PatternValidatorType@{PatternValidatorType}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{PatternValidatorType}{PatternValidatorType}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+enum \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46}{rapidjson\+::internal\+::\+Schema\+Validation\+Context\+::\+Pattern\+Validator\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kPatternValidatorOnly@{kPatternValidatorOnly}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!kPatternValidatorOnly@{kPatternValidatorOnly}}}\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46a1a5c44675a684036e353728f8cf61fd3}\label{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46a1a5c44675a684036e353728f8cf61fd3}} 
+k\+Pattern\+Validator\+Only&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kPatternValidatorWithProperty@{kPatternValidatorWithProperty}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!kPatternValidatorWithProperty@{kPatternValidatorWithProperty}}}\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46adaf39d34934210fad7ea0771c8876a1b}\label{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46adaf39d34934210fad7ea0771c8876a1b}} 
+k\+Pattern\+Validator\+With\+Property&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kPatternValidatorWithAdditionalProperty@{kPatternValidatorWithAdditionalProperty}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!kPatternValidatorWithAdditionalProperty@{kPatternValidatorWithAdditionalProperty}}}\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46a50fa90fbc765277164e15f6fdc851601}\label{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46a50fa90fbc765277164e15f6fdc851601}} 
+k\+Pattern\+Validator\+With\+Additional\+Property&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 323 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{323                               \{}
+\DoxyCodeLine{324         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46a1a5c44675a684036e353728f8cf61fd3}{kPatternValidatorOnly}},}
+\DoxyCodeLine{325         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46adaf39d34934210fad7ea0771c8876a1b}{kPatternValidatorWithProperty}},}
+\DoxyCodeLine{326         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46a50fa90fbc765277164e15f6fdc851601}{kPatternValidatorWithAdditionalProperty}}}
+\DoxyCodeLine{327     \};}
+
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a85e6773fa24ec01896db90c5998cb71d}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a85e6773fa24ec01896db90c5998cb71d}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!SchemaValidationContext@{SchemaValidationContext}}
+\index{SchemaValidationContext@{SchemaValidationContext}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{SchemaValidationContext()}{SchemaValidationContext()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{Schema\+Validation\+Context}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a1065fcde55a4928092fd576743e68e99}{Schema\+Validator\+Factory\+Type}} \&}]{f,  }\item[{\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_aca18580c026f47ce432a5a53b71c8d24}{Error\+Handler\+Type}} \&}]{eh,  }\item[{const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 329 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{329                                                                                                       :}
+\DoxyCodeLine{330         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad94e31d9986a4ee521a0c51d74717242}{factory}}(f),}
+\DoxyCodeLine{331         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a593510056ace8236513cb3d705838ae0}{error\_handler}}(eh),}
+\DoxyCodeLine{332         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a20a1543637d494e7d8727051448ec2af}{schema}}(s),}
+\DoxyCodeLine{333         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_af00ced23554e0b9c84e8750c97143f60}{valueSchema}}(),}
+\DoxyCodeLine{334         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a42b7f2d6a85cb43b3cdeac057a4279be}{invalidKeyword}}(),}
+\DoxyCodeLine{335         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ac70bbdca3f5f1be8ba2bc0ab6eeb6b91}{hasher}}(),}
+\DoxyCodeLine{336         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a864b6194684c5ab61e1566cc1e994411}{arrayElementHashCodes}}(),}
+\DoxyCodeLine{337         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_af81c4efa8d41dd9608d5bd23075bac4a}{validators}}(),}
+\DoxyCodeLine{338         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_af0b50fe8a859345d00a95f35f49da6a2}{validatorCount}}(),}
+\DoxyCodeLine{339         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ac1ef51413d015e814223227170831ca5}{patternPropertiesValidators}}(),}
+\DoxyCodeLine{340         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_aa3667e09c6e60a240fc6d5b2644df991}{patternPropertiesValidatorCount}}(),}
+\DoxyCodeLine{341         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a92bb00a40fb188bbc782513796192c69}{patternPropertiesSchemas}}(),}
+\DoxyCodeLine{342         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae1f553f9034c58f30bce6d7129941d3f}{patternPropertiesSchemaCount}}(),}
+\DoxyCodeLine{343         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a00dbd559e72f4bb12fc201c49ffa35c4}{valuePatternValidatorType}}(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46a1a5c44675a684036e353728f8cf61fd3}{kPatternValidatorOnly}}),}
+\DoxyCodeLine{344         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a4faf6b9b5d50a677792b462a16bb14a1}{propertyExist}}(),}
+\DoxyCodeLine{345         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a8b4cf20c9cdc97355640dbccee95f3e1}{inArray}}(\textcolor{keyword}{false}),}
+\DoxyCodeLine{346         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a8b8495d77b512073f13ae4f7c6122b96}{valueUniqueness}}(\textcolor{keyword}{false}),}
+\DoxyCodeLine{347         \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a3b892aef49ef30846a2fb97abb1d0a6c}{arrayUniqueness}}(\textcolor{keyword}{false})}
+\DoxyCodeLine{348     \{}
+\DoxyCodeLine{349     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_ae6837600fd9fb8c6824e17f4f24af900}\label{structrapidjson_1_1internal_1_1_schema_validation_context_ae6837600fd9fb8c6824e17f4f24af900}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!````~SchemaValidationContext@{$\sim$SchemaValidationContext}}
+\index{````~SchemaValidationContext@{$\sim$SchemaValidationContext}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{$\sim$SchemaValidationContext()}{~SchemaValidationContext()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::$\sim$\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{Schema\+Validation\+Context}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 351 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{351                                \{}
+\DoxyCodeLine{352         \textcolor{keywordflow}{if} (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ac70bbdca3f5f1be8ba2bc0ab6eeb6b91}{hasher}})}
+\DoxyCodeLine{353             \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad94e31d9986a4ee521a0c51d74717242}{factory}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_abda4f78e5673367fd2bc51c1743d8620}{DestroryHasher}}(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ac70bbdca3f5f1be8ba2bc0ab6eeb6b91}{hasher}});}
+\DoxyCodeLine{354         \textcolor{keywordflow}{if} (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_af81c4efa8d41dd9608d5bd23075bac4a}{validators}}) \{}
+\DoxyCodeLine{355             \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} i = 0; i < \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_af0b50fe8a859345d00a95f35f49da6a2}{validatorCount}}; i++)}
+\DoxyCodeLine{356                 \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad94e31d9986a4ee521a0c51d74717242}{factory}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_ac4a27b4a68e9910e2cde81e9ffc0f3a9}{DestroySchemaValidator}}(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_af81c4efa8d41dd9608d5bd23075bac4a}{validators}}[i]);}
+\DoxyCodeLine{357             \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad94e31d9986a4ee521a0c51d74717242}{factory}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_af986c4556f9fbec6980648f0021d31d8}{FreeState}}(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_af81c4efa8d41dd9608d5bd23075bac4a}{validators}});}
+\DoxyCodeLine{358         \}}
+\DoxyCodeLine{359         \textcolor{keywordflow}{if} (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ac1ef51413d015e814223227170831ca5}{patternPropertiesValidators}}) \{}
+\DoxyCodeLine{360             \textcolor{keywordflow}{for} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} i = 0; i < \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_aa3667e09c6e60a240fc6d5b2644df991}{patternPropertiesValidatorCount}}; i++)}
+\DoxyCodeLine{361                 \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad94e31d9986a4ee521a0c51d74717242}{factory}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_ac4a27b4a68e9910e2cde81e9ffc0f3a9}{DestroySchemaValidator}}(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ac1ef51413d015e814223227170831ca5}{patternPropertiesValidators}}[i]);}
+\DoxyCodeLine{362             \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad94e31d9986a4ee521a0c51d74717242}{factory}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_af986c4556f9fbec6980648f0021d31d8}{FreeState}}(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ac1ef51413d015e814223227170831ca5}{patternPropertiesValidators}});}
+\DoxyCodeLine{363         \}}
+\DoxyCodeLine{364         \textcolor{keywordflow}{if} (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a92bb00a40fb188bbc782513796192c69}{patternPropertiesSchemas}})}
+\DoxyCodeLine{365             \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad94e31d9986a4ee521a0c51d74717242}{factory}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_af986c4556f9fbec6980648f0021d31d8}{FreeState}}(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a92bb00a40fb188bbc782513796192c69}{patternPropertiesSchemas}});}
+\DoxyCodeLine{366         \textcolor{keywordflow}{if} (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a4faf6b9b5d50a677792b462a16bb14a1}{propertyExist}})}
+\DoxyCodeLine{367             \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad94e31d9986a4ee521a0c51d74717242}{factory}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory_af986c4556f9fbec6980648f0021d31d8}{FreeState}}(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a4faf6b9b5d50a677792b462a16bb14a1}{propertyExist}});}
+\DoxyCodeLine{368     \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a864b6194684c5ab61e1566cc1e994411}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a864b6194684c5ab61e1566cc1e994411}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!arrayElementHashCodes@{arrayElementHashCodes}}
+\index{arrayElementHashCodes@{arrayElementHashCodes}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{arrayElementHashCodes}{arrayElementHashCodes}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+void$\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::array\+Element\+Hash\+Codes}
+
+
+
+Definition at line 376 of file schema.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a4a3c34e71ec6acd43b56eb596cd137f0}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a4a3c34e71ec6acd43b56eb596cd137f0}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!arrayElementIndex@{arrayElementIndex}}
+\index{arrayElementIndex@{arrayElementIndex}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{arrayElementIndex}{arrayElementIndex}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::array\+Element\+Index}
+
+
+
+Definition at line 385 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Begin\+Value(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Start\+Array().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a3b892aef49ef30846a2fb97abb1d0a6c}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a3b892aef49ef30846a2fb97abb1d0a6c}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!arrayUniqueness@{arrayUniqueness}}
+\index{arrayUniqueness@{arrayUniqueness}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{arrayUniqueness}{arrayUniqueness}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::array\+Uniqueness}
+
+
+
+Definition at line 389 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Create\+Parallel\+Validator().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a593510056ace8236513cb3d705838ae0}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a593510056ace8236513cb3d705838ae0}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!error\_handler@{error\_handler}}
+\index{error\_handler@{error\_handler}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{error\_handler}{error\_handler}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_aca18580c026f47ce432a5a53b71c8d24}{Error\+Handler\+Type}}\& \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::error\+\_\+handler}
+
+
+
+Definition at line 371 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Begin\+Value(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Double\+Maximum(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Double\+Minimum(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Double\+Multiple\+Of(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Int(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Uint(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Disallowed\+Type(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Array(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Key(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+String().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_ad94e31d9986a4ee521a0c51d74717242}\label{structrapidjson_1_1internal_1_1_schema_validation_context_ad94e31d9986a4ee521a0c51d74717242}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!factory@{factory}}
+\index{factory@{factory}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{factory}{factory}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_a1065fcde55a4928092fd576743e68e99}{Schema\+Validator\+Factory\+Type}}\& \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::factory}
+
+
+
+Definition at line 370 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Create\+Parallel\+Validator(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Create\+Schema\+Validators(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Start\+Object().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_ac70bbdca3f5f1be8ba2bc0ab6eeb6b91}\label{structrapidjson_1_1internal_1_1_schema_validation_context_ac70bbdca3f5f1be8ba2bc0ab6eeb6b91}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!hasher@{hasher}}
+\index{hasher@{hasher}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{hasher}{hasher}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+void$\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::hasher}
+
+
+
+Definition at line 375 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Create\+Parallel\+Validator(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a8b4cf20c9cdc97355640dbccee95f3e1}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a8b4cf20c9cdc97355640dbccee95f3e1}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!inArray@{inArray}}
+\index{inArray@{inArray}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{inArray}{inArray}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::in\+Array}
+
+
+
+Definition at line 387 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Begin\+Value(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Array(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Start\+Array().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a42b7f2d6a85cb43b3cdeac057a4279be}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a42b7f2d6a85cb43b3cdeac057a4279be}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!invalidKeyword@{invalidKeyword}}
+\index{invalidKeyword@{invalidKeyword}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{invalidKeyword}{invalidKeyword}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_aeb3b15fcfda759e506a5da83c6f782ca}{Ch}}$\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::invalid\+Keyword}
+
+
+
+Definition at line 374 of file schema.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a39123245bbc6137fa49827014f9e7f3e}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a39123245bbc6137fa49827014f9e7f3e}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!objectPatternValidatorType@{objectPatternValidatorType}}
+\index{objectPatternValidatorType@{objectPatternValidatorType}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{objectPatternValidatorType}{objectPatternValidatorType}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46}{Pattern\+Validator\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::object\+Pattern\+Validator\+Type}
+
+
+
+Definition at line 384 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_ae1f553f9034c58f30bce6d7129941d3f}\label{structrapidjson_1_1internal_1_1_schema_validation_context_ae1f553f9034c58f30bce6d7129941d3f}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!patternPropertiesSchemaCount@{patternPropertiesSchemaCount}}
+\index{patternPropertiesSchemaCount@{patternPropertiesSchemaCount}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{patternPropertiesSchemaCount}{patternPropertiesSchemaCount}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::pattern\+Properties\+Schema\+Count}
+
+
+
+Definition at line 382 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Key(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Start\+Object().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a92bb00a40fb188bbc782513796192c69}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a92bb00a40fb188bbc782513796192c69}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!patternPropertiesSchemas@{patternPropertiesSchemas}}
+\index{patternPropertiesSchemas@{patternPropertiesSchemas}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{patternPropertiesSchemas}{patternPropertiesSchemas}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}}$\ast$$\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::pattern\+Properties\+Schemas}
+
+
+
+Definition at line 381 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Key(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Start\+Object().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_aa3667e09c6e60a240fc6d5b2644df991}\label{structrapidjson_1_1internal_1_1_schema_validation_context_aa3667e09c6e60a240fc6d5b2644df991}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!patternPropertiesValidatorCount@{patternPropertiesValidatorCount}}
+\index{patternPropertiesValidatorCount@{patternPropertiesValidatorCount}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{patternPropertiesValidatorCount}{patternPropertiesValidatorCount}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::pattern\+Properties\+Validator\+Count}
+
+
+
+Definition at line 380 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_ac1ef51413d015e814223227170831ca5}\label{structrapidjson_1_1internal_1_1_schema_validation_context_ac1ef51413d015e814223227170831ca5}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!patternPropertiesValidators@{patternPropertiesValidators}}
+\index{patternPropertiesValidators@{patternPropertiesValidators}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{patternPropertiesValidators}{patternPropertiesValidators}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}}$\ast$$\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::pattern\+Properties\+Validators}
+
+
+
+Definition at line 379 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a4faf6b9b5d50a677792b462a16bb14a1}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a4faf6b9b5d50a677792b462a16bb14a1}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!propertyExist@{propertyExist}}
+\index{propertyExist@{propertyExist}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{propertyExist}{propertyExist}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+bool$\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::property\+Exist}
+
+
+
+Definition at line 386 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Key(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Start\+Object().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a20a1543637d494e7d8727051448ec2af}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a20a1543637d494e7d8727051448ec2af}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!schema@{schema}}
+\index{schema@{schema}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{schema}{schema}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}}$\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::schema}
+
+
+
+Definition at line 372 of file schema.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_af0b50fe8a859345d00a95f35f49da6a2}\label{structrapidjson_1_1internal_1_1_schema_validation_context_af0b50fe8a859345d00a95f35f49da6a2}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!validatorCount@{validatorCount}}
+\index{validatorCount@{validatorCount}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{validatorCount}{validatorCount}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::validator\+Count}
+
+
+
+Definition at line 378 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Create\+Parallel\+Validator().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_af81c4efa8d41dd9608d5bd23075bac4a}\label{structrapidjson_1_1internal_1_1_schema_validation_context_af81c4efa8d41dd9608d5bd23075bac4a}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!validators@{validators}}
+\index{validators@{validators}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{validators}{validators}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}}$\ast$$\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::validators}
+
+
+
+Definition at line 377 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Create\+Parallel\+Validator(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Create\+Schema\+Validators(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a00dbd559e72f4bb12fc201c49ffa35c4}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a00dbd559e72f4bb12fc201c49ffa35c4}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!valuePatternValidatorType@{valuePatternValidatorType}}
+\index{valuePatternValidatorType@{valuePatternValidatorType}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{valuePatternValidatorType}{valuePatternValidatorType}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ad47d3576f164e17986132a570f721a46}{Pattern\+Validator\+Type}} \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::value\+Pattern\+Validator\+Type}
+
+
+
+Definition at line 383 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Key().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_af00ced23554e0b9c84e8750c97143f60}\label{structrapidjson_1_1internal_1_1_schema_validation_context_af00ced23554e0b9c84e8750c97143f60}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!valueSchema@{valueSchema}}
+\index{valueSchema@{valueSchema}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{valueSchema}{valueSchema}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+const \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context_ae7fc7012fdcdb1b0141b73842c814644}{Schema\+Type}}$\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::value\+Schema}
+
+
+
+Definition at line 373 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Begin\+Value(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Key().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_validation_context_a8b8495d77b512073f13ae4f7c6122b96}\label{structrapidjson_1_1internal_1_1_schema_validation_context_a8b8495d77b512073f13ae4f7c6122b96}} 
+\index{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}!valueUniqueness@{valueUniqueness}}
+\index{valueUniqueness@{valueUniqueness}!rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$@{rapidjson::internal::SchemaValidationContext$<$ SchemaDocumentType $>$}}
+\subsubsection{\texorpdfstring{valueUniqueness}{valueUniqueness}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+bool \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context}}$<$ Schema\+Document\+Type $>$\+::value\+Uniqueness}
+
+
+
+Definition at line 388 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Begin\+Value().
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{schema_8h}{schema.\+h}}\end{DoxyCompactItemize}

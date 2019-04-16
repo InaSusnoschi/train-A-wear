@@ -1,0 +1,278 @@
+\hypertarget{structrapidjson_1_1_generic_memory_buffer}{}\section{rapidjson\+::Generic\+Memory\+Buffer$<$ Allocator $>$ Struct Template Reference}
+\label{structrapidjson_1_1_generic_memory_buffer}\index{rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}}
+
+
+Represents an in-\/memory output byte stream.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a7c2ccd0d38df6d3cb3abd5aed9e100f8}{Ch}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a56c70223d8897e245df31e22a1fea60f}{Generic\+Memory\+Buffer}} (\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$allocator=0, size\+\_\+t capacity=\mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_abaa207fb3f94da48b0c91755828f98b3}{k\+Default\+Capacity}})
+\item 
+void \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a882b45865eb98aa84241ef8b87bae96d}{Put}} (\mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a7c2ccd0d38df6d3cb3abd5aed9e100f8}{Ch}} c)
+\item 
+void \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a66a3e80663d94506cab0117777486a06}{Flush}} ()
+\item 
+void \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a1b2639889f687f0f6f1b90181918f273}{Clear}} ()
+\item 
+void \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_af10d96902f7aea2eae23269c11398fbb}{Shrink\+To\+Fit}} ()
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a7c2ccd0d38df6d3cb3abd5aed9e100f8}{Ch}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a070ea27ab1e80df671ced9edb7d03150}{Push}} (size\+\_\+t count)
+\item 
+void \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_abcbad3bf8a20a90b6b586e63b07aed40}{Pop}} (size\+\_\+t count)
+\item 
+const \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a7c2ccd0d38df6d3cb3abd5aed9e100f8}{Ch}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a2c05ddb3b37a57fc941d7b377e95b67a}{Get\+Buffer}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a67f68c4192d6f1a7a90315f5c9bf2930}{Get\+Size}} () const
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a80a159ebb64cee80b5e7fc37f971d5a5}{stack\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_abaa207fb3f94da48b0c91755828f98b3}{k\+Default\+Capacity}} = 256
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Allocator = Crt\+Allocator$>$\newline
+struct rapidjson\+::\+Generic\+Memory\+Buffer$<$ Allocator $>$}
+
+Represents an in-\/memory output byte stream. 
+
+This class is mainly for being wrapped by \mbox{\hyperlink{classrapidjson_1_1_encoded_output_stream}{Encoded\+Output\+Stream}} or \mbox{\hyperlink{classrapidjson_1_1_auto_u_t_f_output_stream}{Auto\+U\+T\+F\+Output\+Stream}}.
+
+It is similar to File\+Write\+Buffer but the destination is an in-\/memory buffer instead of a file.
+
+Differences between Memory\+Buffer and String\+Buffer\+:
+\begin{DoxyEnumerate}
+\item String\+Buffer has \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} but Memory\+Buffer is only a byte buffer.
+\item \mbox{\hyperlink{classrapidjson_1_1_generic_string_buffer_a520c0f75424762ea44ebf6ecdd1931d8}{String\+Buffer\+::\+Get\+String()}} returns a null-\/terminated string. \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a2c05ddb3b37a57fc941d7b377e95b67a}{Memory\+Buffer\+::\+Get\+Buffer()}} returns a buffer without terminator.
+\end{DoxyEnumerate}
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}} & type for allocating memory buffer. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyNote}{Note}
+implements \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept 
+\end{DoxyNote}
+
+
+Definition at line 74 of file fwd.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_memory_buffer_a7c2ccd0d38df6d3cb3abd5aed9e100f8}\label{structrapidjson_1_1_generic_memory_buffer_a7c2ccd0d38df6d3cb3abd5aed9e100f8}} 
+\index{rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Allocator  = Crt\+Allocator$>$ \\
+typedef char \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{rapidjson\+::\+Generic\+Memory\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a7c2ccd0d38df6d3cb3abd5aed9e100f8}{Ch}}}
+
+
+
+Definition at line 38 of file memorybuffer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_memory_buffer_a56c70223d8897e245df31e22a1fea60f}\label{structrapidjson_1_1_generic_memory_buffer_a56c70223d8897e245df31e22a1fea60f}} 
+\index{rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}!GenericMemoryBuffer@{GenericMemoryBuffer}}
+\index{GenericMemoryBuffer@{GenericMemoryBuffer}!rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericMemoryBuffer()}{GenericMemoryBuffer()}}
+{\footnotesize\ttfamily template$<$typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{rapidjson\+::\+Generic\+Memory\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{Generic\+Memory\+Buffer}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$}]{allocator = {\ttfamily 0},  }\item[{size\+\_\+t}]{capacity = {\ttfamily \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_abaa207fb3f94da48b0c91755828f98b3}{k\+Default\+Capacity}}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 40 of file memorybuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40 : \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a80a159ebb64cee80b5e7fc37f971d5a5}{stack\_}}(allocator, capacity) \{\}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_memory_buffer_a1b2639889f687f0f6f1b90181918f273}\label{structrapidjson_1_1_generic_memory_buffer_a1b2639889f687f0f6f1b90181918f273}} 
+\index{rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename Allocator  = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{rapidjson\+::\+Generic\+Memory\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 45 of file memorybuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{ \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a80a159ebb64cee80b5e7fc37f971d5a5}{stack\_}}.Clear(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_memory_buffer_a66a3e80663d94506cab0117777486a06}\label{structrapidjson_1_1_generic_memory_buffer_a66a3e80663d94506cab0117777486a06}} 
+\index{rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}!Flush@{Flush}}
+\index{Flush@{Flush}!rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily template$<$typename Allocator  = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{rapidjson\+::\+Generic\+Memory\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file memorybuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_memory_buffer_a2c05ddb3b37a57fc941d7b377e95b67a}\label{structrapidjson_1_1_generic_memory_buffer_a2c05ddb3b37a57fc941d7b377e95b67a}} 
+\index{rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}!GetBuffer@{GetBuffer}}
+\index{GetBuffer@{GetBuffer}!rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{GetBuffer()}{GetBuffer()}}
+{\footnotesize\ttfamily template$<$typename Allocator  = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a7c2ccd0d38df6d3cb3abd5aed9e100f8}{Ch}}$\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{rapidjson\+::\+Generic\+Memory\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 50 of file memorybuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                                 \{}
+\DoxyCodeLine{51         \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a80a159ebb64cee80b5e7fc37f971d5a5}{stack\_}}.template Bottom<Ch>();}
+\DoxyCodeLine{52     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_memory_buffer_a67f68c4192d6f1a7a90315f5c9bf2930}\label{structrapidjson_1_1_generic_memory_buffer_a67f68c4192d6f1a7a90315f5c9bf2930}} 
+\index{rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{GetSize()}{GetSize()}}
+{\footnotesize\ttfamily template$<$typename Allocator  = Crt\+Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{rapidjson\+::\+Generic\+Memory\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 54 of file memorybuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a80a159ebb64cee80b5e7fc37f971d5a5}{stack\_}}.GetSize(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_memory_buffer_abcbad3bf8a20a90b6b586e63b07aed40}\label{structrapidjson_1_1_generic_memory_buffer_abcbad3bf8a20a90b6b586e63b07aed40}} 
+\index{rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}!Pop@{Pop}}
+\index{Pop@{Pop}!rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Pop()}{Pop()}}
+{\footnotesize\ttfamily template$<$typename Allocator  = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{rapidjson\+::\+Generic\+Memory\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Pop (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file memorybuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48 \{ \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a80a159ebb64cee80b5e7fc37f971d5a5}{stack\_}}.template Pop<Ch>(count); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_memory_buffer_a070ea27ab1e80df671ced9edb7d03150}\label{structrapidjson_1_1_generic_memory_buffer_a070ea27ab1e80df671ced9edb7d03150}} 
+\index{rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}!Push@{Push}}
+\index{Push@{Push}!rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Push()}{Push()}}
+{\footnotesize\ttfamily template$<$typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a7c2ccd0d38df6d3cb3abd5aed9e100f8}{Ch}}$\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{rapidjson\+::\+Generic\+Memory\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Push (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file memorybuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a80a159ebb64cee80b5e7fc37f971d5a5}{stack\_}}.template Push<Ch>(count); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_memory_buffer_a882b45865eb98aa84241ef8b87bae96d}\label{structrapidjson_1_1_generic_memory_buffer_a882b45865eb98aa84241ef8b87bae96d}} 
+\index{rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}!Put@{Put}}
+\index{Put@{Put}!rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily template$<$typename Allocator  = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{rapidjson\+::\+Generic\+Memory\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a7c2ccd0d38df6d3cb3abd5aed9e100f8}{Ch}}}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file memorybuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42 \{ *\mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a80a159ebb64cee80b5e7fc37f971d5a5}{stack\_}}.template Push<Ch>() = c; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_memory_buffer_af10d96902f7aea2eae23269c11398fbb}\label{structrapidjson_1_1_generic_memory_buffer_af10d96902f7aea2eae23269c11398fbb}} 
+\index{rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}!ShrinkToFit@{ShrinkToFit}}
+\index{ShrinkToFit@{ShrinkToFit}!rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{ShrinkToFit()}{ShrinkToFit()}}
+{\footnotesize\ttfamily template$<$typename Allocator  = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{rapidjson\+::\+Generic\+Memory\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Shrink\+To\+Fit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 46 of file memorybuffer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{ \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer_a80a159ebb64cee80b5e7fc37f971d5a5}{stack\_}}.ShrinkToFit(); \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_memory_buffer_abaa207fb3f94da48b0c91755828f98b3}\label{structrapidjson_1_1_generic_memory_buffer_abaa207fb3f94da48b0c91755828f98b3}} 
+\index{rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}!kDefaultCapacity@{kDefaultCapacity}}
+\index{kDefaultCapacity@{kDefaultCapacity}!rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{kDefaultCapacity}{kDefaultCapacity}}
+{\footnotesize\ttfamily template$<$typename Allocator  = Crt\+Allocator$>$ \\
+const size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{rapidjson\+::\+Generic\+Memory\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::k\+Default\+Capacity = 256\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 56 of file memorybuffer.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1_generic_memory_buffer_a80a159ebb64cee80b5e7fc37f971d5a5}\label{structrapidjson_1_1_generic_memory_buffer_a80a159ebb64cee80b5e7fc37f971d5a5}} 
+\index{rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}!stack\_@{stack\_}}
+\index{stack\_@{stack\_}!rapidjson::GenericMemoryBuffer$<$ Allocator $>$@{rapidjson::GenericMemoryBuffer$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{stack\_}{stack\_}}
+{\footnotesize\ttfamily template$<$typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$>$ \mbox{\hyperlink{structrapidjson_1_1_generic_memory_buffer}{rapidjson\+::\+Generic\+Memory\+Buffer}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::stack\+\_\+\hspace{0.3cm}{\ttfamily [mutable]}}
+
+
+
+Definition at line 57 of file memorybuffer.\+h.
+
+
+
+Referenced by rapidjson\+::\+Put\+N().
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{fwd_8h}{fwd.\+h}}\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{memorybuffer_8h}{memorybuffer.\+h}}\end{DoxyCompactItemize}

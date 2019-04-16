@@ -1,0 +1,278 @@
+\hypertarget{schema_8h}{}\section{D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/schema.h File Reference}
+\label{schema_8h}\index{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/schema.h@{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/schema.h}}
+{\ttfamily \#include \char`\"{}document.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pointer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stringbuffer.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include \char`\"{}internal/regex.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document$<$ Value\+T, Allocator $>$}}
+\begin{DoxyCompactList}\small\item\em J\+S\+ON schema document. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema}{rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{rapidjson\+::internal\+::\+I\+Schema\+Validator}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_state_factory}{rapidjson\+::internal\+::\+I\+Schema\+State\+Factory$<$ Schema\+Type $>$}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Type $>$}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_hasher}{rapidjson\+::internal\+::\+Hasher$<$ Encoding, Allocator $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_hasher_1_1_number}{rapidjson\+::internal\+::\+Hasher$<$ Encoding, Allocator $>$\+::\+Number}}
+\item 
+union \mbox{\hyperlink{unionrapidjson_1_1internal_1_1_hasher_1_1_number_1_1_u}{rapidjson\+::internal\+::\+Hasher$<$ Encoding, Allocator $>$\+::\+Number\+::U}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_validation_context}{rapidjson\+::internal\+::\+Schema\+Validation\+Context$<$ Schema\+Document\+Type $>$}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema}{rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_1_1_schema_array}{rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Schema\+Array}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_1_1_property}{rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Property}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property}{rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Pattern\+Property}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_token_helper}{rapidjson\+::internal\+::\+Token\+Helper$<$ Stack, Ch $>$}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1internal_1_1_token_helper_3_01_stack_00_01char_01_4}{rapidjson\+::internal\+::\+Token\+Helper$<$ Stack, char $>$}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_i_generic_remote_schema_document_provider}{rapidjson\+::\+I\+Generic\+Remote\+Schema\+Document\+Provider$<$ Schema\+Document\+Type $>$}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_schema_document}{rapidjson\+::\+Generic\+Schema\+Document$<$ Value\+T, Allocator $>$}}
+\begin{DoxyCompactList}\small\item\em J\+S\+ON schema document. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_schema_document_1_1_schema_ref_entry}{rapidjson\+::\+Generic\+Schema\+Document$<$ Value\+T, Allocator $>$\+::\+Schema\+Ref\+Entry}}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_schema_document_1_1_schema_entry}{rapidjson\+::\+Generic\+Schema\+Document$<$ Value\+T, Allocator $>$\+::\+Schema\+Entry}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}
+\begin{DoxyCompactList}\small\item\em J\+S\+ON Schema Validator. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$}}
+\begin{DoxyCompactList}\small\item\em A helper class for parsing with validation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacerapidjson}{rapidjson}}
+\begin{DoxyCompactList}\small\item\em main Rapid\+J\+S\+ON namespace \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacerapidjson_1_1internal}{rapidjson\+::internal}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{schema_8h_a6b8264e3ff82da125826f173a42c67e9}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+R\+E\+G\+EX}}~1
+\item 
+\#define \mbox{\hyperlink{schema_8h_a9486b808605189c7ee677bb41d52f368}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+U\+S\+E\+\_\+\+S\+T\+D\+R\+E\+G\+EX}}~0
+\item 
+\#define \mbox{\hyperlink{schema_8h_a67269b1317b737ca47bcf5636091db1e}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+H\+A\+S\+\_\+\+R\+E\+G\+EX}}~1
+\item 
+\#define \mbox{\hyperlink{schema_8h_a40c690b6fd0b7ae8d8484b613255cc72}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+V\+E\+R\+B\+O\+SE}}~0
+\item 
+\#define \mbox{\hyperlink{schema_8h_a876f2526fe0190b8c5b44dfc77c5b259}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+K\+E\+Y\+W\+O\+R\+D\+\_\+\+V\+E\+R\+B\+O\+SE}}(keyword)
+\item 
+\#define \mbox{\hyperlink{schema_8h_abf82306dd6fbd0fba9a5373b9ebe1c3c}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+K\+E\+Y\+W\+O\+R\+D\+\_\+\+R\+E\+T\+U\+RN}}(keyword)
+\item 
+\#define \mbox{\hyperlink{schema_8h_ab63115d6dc8a0c74d5fb0d66f217cabb}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+}}(name, ...)
+\item 
+\#define \mbox{\hyperlink{schema_8h_ab63115d6dc8a0c74d5fb0d66f217cabb}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+}}(name, ...)
+\item 
+\#define \mbox{\hyperlink{schema_8h_a722c98cfe486c35d086ea33144f4a3b8}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E\+\_\+}}()
+\item 
+\#define \mbox{\hyperlink{schema_8h_a25701b28a823cc7621f1e01ae7031007}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+}}(method,  arg1)
+\item 
+\#define \mbox{\hyperlink{schema_8h_af17aaed9cdb88ac6faa2b7ca7029da63}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+P\+A\+R\+A\+L\+L\+E\+L\+\_\+}}(method,  arg2)
+\item 
+\#define \mbox{\hyperlink{schema_8h_ab1cb400ef08159e3e417f03c8adefaff}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+E\+N\+D\+\_\+}}(method,  arg2)~return valid\+\_\+ = End\+Value() \&\& (!output\+Handler\+\_\+ $\vert$$\vert$ output\+Handler\+\_\+-\/$>$method arg2)
+\item 
+\#define \mbox{\hyperlink{schema_8h_a8c347782f5ba7abab760e5dbc5795c41}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+}}(method,  arg1,  arg2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{schema_8h_abf82306dd6fbd0fba9a5373b9ebe1c3c}\label{schema_8h_abf82306dd6fbd0fba9a5373b9ebe1c3c}} 
+\index{schema.h@{schema.h}!RAPIDJSON\_INVALID\_KEYWORD\_RETURN@{RAPIDJSON\_INVALID\_KEYWORD\_RETURN}}
+\index{RAPIDJSON\_INVALID\_KEYWORD\_RETURN@{RAPIDJSON\_INVALID\_KEYWORD\_RETURN}!schema.h@{schema.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_INVALID\_KEYWORD\_RETURN}{RAPIDJSON\_INVALID\_KEYWORD\_RETURN}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+K\+E\+Y\+W\+O\+R\+D\+\_\+\+R\+E\+T\+U\+RN(\begin{DoxyParamCaption}\item[{}]{keyword }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{RAPIDJSON\_MULTILINEMACRO\_BEGIN\(\backslash\)}
+\DoxyCodeLine{    context.invalidKeyword = keyword.GetString();\(\backslash\)}
+\DoxyCodeLine{    RAPIDJSON\_INVALID\_KEYWORD\_VERBOSE(keyword.GetString());\(\backslash\)}
+\DoxyCodeLine{    return \textcolor{keyword}{false};\(\backslash\)}
+\DoxyCodeLine{RAPIDJSON\_MULTILINEMACRO\_END}
+
+\end{DoxyCode}
+
+
+Definition at line 116 of file schema.\+h.
+
+\mbox{\Hypertarget{schema_8h_a876f2526fe0190b8c5b44dfc77c5b259}\label{schema_8h_a876f2526fe0190b8c5b44dfc77c5b259}} 
+\index{schema.h@{schema.h}!RAPIDJSON\_INVALID\_KEYWORD\_VERBOSE@{RAPIDJSON\_INVALID\_KEYWORD\_VERBOSE}}
+\index{RAPIDJSON\_INVALID\_KEYWORD\_VERBOSE@{RAPIDJSON\_INVALID\_KEYWORD\_VERBOSE}!schema.h@{schema.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_INVALID\_KEYWORD\_VERBOSE}{RAPIDJSON\_INVALID\_KEYWORD\_VERBOSE}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+K\+E\+Y\+W\+O\+R\+D\+\_\+\+V\+E\+R\+B\+O\+SE(\begin{DoxyParamCaption}\item[{}]{keyword }\end{DoxyParamCaption})}
+
+
+
+Definition at line 113 of file schema.\+h.
+
+\mbox{\Hypertarget{schema_8h_a25701b28a823cc7621f1e01ae7031007}\label{schema_8h_a25701b28a823cc7621f1e01ae7031007}} 
+\index{schema.h@{schema.h}!RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_@{RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_}}
+\index{RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_@{RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_}!schema.h@{schema.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_}{RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+(\begin{DoxyParamCaption}\item[{}]{method,  }\item[{}]{arg1 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (!valid\_) \textcolor{keywordflow}{return} \textcolor{keyword}{false}; \(\backslash\)}
+\DoxyCodeLine{    if (!BeginValue() || !CurrentSchema().method arg1) \{\(\backslash\)}
+\DoxyCodeLine{        RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_VERBOSE\_();\(\backslash\)}
+\DoxyCodeLine{        return valid\_ = \textcolor{keyword}{false};\(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line 2076 of file schema.\+h.
+
+\mbox{\Hypertarget{schema_8h_a722c98cfe486c35d086ea33144f4a3b8}\label{schema_8h_a722c98cfe486c35d086ea33144f4a3b8}} 
+\index{schema.h@{schema.h}!RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_VERBOSE\_@{RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_VERBOSE\_}}
+\index{RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_VERBOSE\_@{RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_VERBOSE\_}!schema.h@{schema.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_VERBOSE\_}{RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_VERBOSE\_}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+B\+E\+G\+I\+N\+\_\+\+V\+E\+R\+B\+O\+S\+E\+\_\+(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2073 of file schema.\+h.
+
+\mbox{\Hypertarget{schema_8h_ab1cb400ef08159e3e417f03c8adefaff}\label{schema_8h_ab1cb400ef08159e3e417f03c8adefaff}} 
+\index{schema.h@{schema.h}!RAPIDJSON\_SCHEMA\_HANDLE\_END\_@{RAPIDJSON\_SCHEMA\_HANDLE\_END\_}}
+\index{RAPIDJSON\_SCHEMA\_HANDLE\_END\_@{RAPIDJSON\_SCHEMA\_HANDLE\_END\_}!schema.h@{schema.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_SCHEMA\_HANDLE\_END\_}{RAPIDJSON\_SCHEMA\_HANDLE\_END\_}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+E\+N\+D\+\_\+(\begin{DoxyParamCaption}\item[{}]{method,  }\item[{}]{arg2 }\end{DoxyParamCaption})~return valid\+\_\+ = End\+Value() \&\& (!output\+Handler\+\_\+ $\vert$$\vert$ output\+Handler\+\_\+-\/$>$method arg2)}
+
+
+
+Definition at line 2095 of file schema.\+h.
+
+\mbox{\Hypertarget{schema_8h_af17aaed9cdb88ac6faa2b7ca7029da63}\label{schema_8h_af17aaed9cdb88ac6faa2b7ca7029da63}} 
+\index{schema.h@{schema.h}!RAPIDJSON\_SCHEMA\_HANDLE\_PARALLEL\_@{RAPIDJSON\_SCHEMA\_HANDLE\_PARALLEL\_}}
+\index{RAPIDJSON\_SCHEMA\_HANDLE\_PARALLEL\_@{RAPIDJSON\_SCHEMA\_HANDLE\_PARALLEL\_}!schema.h@{schema.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_SCHEMA\_HANDLE\_PARALLEL\_}{RAPIDJSON\_SCHEMA\_HANDLE\_PARALLEL\_}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+P\+A\+R\+A\+L\+L\+E\+L\+\_\+(\begin{DoxyParamCaption}\item[{}]{method,  }\item[{}]{arg2 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{for} (Context* context = schemaStack\_.template Bottom<Context>(); context != schemaStack\_.template End<Context>(); context++) \{\(\backslash\)}
+\DoxyCodeLine{        if (context->hasher)\(\backslash\)}
+\DoxyCodeLine{            static\_cast<HasherType*>(context->hasher)->method arg2;\(\backslash\)}
+\DoxyCodeLine{        if (context->validators)\(\backslash\)}
+\DoxyCodeLine{            for (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} i\_ = 0; i\_ < context->validatorCount; i\_++)\(\backslash\)}
+\DoxyCodeLine{                static\_cast<GenericSchemaValidator*>(context->validators[i\_])->method arg2;\(\backslash\)}
+\DoxyCodeLine{        if (context->patternPropertiesValidators)\(\backslash\)}
+\DoxyCodeLine{            for (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}} i\_ = 0; i\_ < context->patternPropertiesValidatorCount; i\_++)\(\backslash\)}
+\DoxyCodeLine{                static\_cast<GenericSchemaValidator*>(context->patternPropertiesValidators[i\_])->method arg2;\(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line 2083 of file schema.\+h.
+
+\mbox{\Hypertarget{schema_8h_a8c347782f5ba7abab760e5dbc5795c41}\label{schema_8h_a8c347782f5ba7abab760e5dbc5795c41}} 
+\index{schema.h@{schema.h}!RAPIDJSON\_SCHEMA\_HANDLE\_VALUE\_@{RAPIDJSON\_SCHEMA\_HANDLE\_VALUE\_}}
+\index{RAPIDJSON\_SCHEMA\_HANDLE\_VALUE\_@{RAPIDJSON\_SCHEMA\_HANDLE\_VALUE\_}!schema.h@{schema.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_SCHEMA\_HANDLE\_VALUE\_}{RAPIDJSON\_SCHEMA\_HANDLE\_VALUE\_}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+V\+A\+L\+U\+E\+\_\+(\begin{DoxyParamCaption}\item[{}]{method,  }\item[{}]{arg1,  }\item[{}]{arg2 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{schema_8h_a25701b28a823cc7621f1e01ae7031007}{RAPIDJSON\_SCHEMA\_HANDLE\_BEGIN\_}}   (method, arg1);\(\backslash\)}
+\DoxyCodeLine{    RAPIDJSON\_SCHEMA\_HANDLE\_PARALLEL\_(method, arg2);\(\backslash\)}
+\DoxyCodeLine{    RAPIDJSON\_SCHEMA\_HANDLE\_END\_     (method, arg2)}
+
+\end{DoxyCode}
+
+
+Definition at line 2098 of file schema.\+h.
+
+\mbox{\Hypertarget{schema_8h_a67269b1317b737ca47bcf5636091db1e}\label{schema_8h_a67269b1317b737ca47bcf5636091db1e}} 
+\index{schema.h@{schema.h}!RAPIDJSON\_SCHEMA\_HAS\_REGEX@{RAPIDJSON\_SCHEMA\_HAS\_REGEX}}
+\index{RAPIDJSON\_SCHEMA\_HAS\_REGEX@{RAPIDJSON\_SCHEMA\_HAS\_REGEX}!schema.h@{schema.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_SCHEMA\_HAS\_REGEX}{RAPIDJSON\_SCHEMA\_HAS\_REGEX}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+H\+A\+S\+\_\+\+R\+E\+G\+EX~1}
+
+
+
+Definition at line 42 of file schema.\+h.
+
+\mbox{\Hypertarget{schema_8h_a6b8264e3ff82da125826f173a42c67e9}\label{schema_8h_a6b8264e3ff82da125826f173a42c67e9}} 
+\index{schema.h@{schema.h}!RAPIDJSON\_SCHEMA\_USE\_INTERNALREGEX@{RAPIDJSON\_SCHEMA\_USE\_INTERNALREGEX}}
+\index{RAPIDJSON\_SCHEMA\_USE\_INTERNALREGEX@{RAPIDJSON\_SCHEMA\_USE\_INTERNALREGEX}!schema.h@{schema.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_SCHEMA\_USE\_INTERNALREGEX}{RAPIDJSON\_SCHEMA\_USE\_INTERNALREGEX}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+R\+E\+G\+EX~1}
+
+
+
+Definition at line 24 of file schema.\+h.
+
+\mbox{\Hypertarget{schema_8h_a9486b808605189c7ee677bb41d52f368}\label{schema_8h_a9486b808605189c7ee677bb41d52f368}} 
+\index{schema.h@{schema.h}!RAPIDJSON\_SCHEMA\_USE\_STDREGEX@{RAPIDJSON\_SCHEMA\_USE\_STDREGEX}}
+\index{RAPIDJSON\_SCHEMA\_USE\_STDREGEX@{RAPIDJSON\_SCHEMA\_USE\_STDREGEX}!schema.h@{schema.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_SCHEMA\_USE\_STDREGEX}{RAPIDJSON\_SCHEMA\_USE\_STDREGEX}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+U\+S\+E\+\_\+\+S\+T\+D\+R\+E\+G\+EX~0}
+
+
+
+Definition at line 32 of file schema.\+h.
+
+\mbox{\Hypertarget{schema_8h_a40c690b6fd0b7ae8d8484b613255cc72}\label{schema_8h_a40c690b6fd0b7ae8d8484b613255cc72}} 
+\index{schema.h@{schema.h}!RAPIDJSON\_SCHEMA\_VERBOSE@{RAPIDJSON\_SCHEMA\_VERBOSE}}
+\index{RAPIDJSON\_SCHEMA\_VERBOSE@{RAPIDJSON\_SCHEMA\_VERBOSE}!schema.h@{schema.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_SCHEMA\_VERBOSE}{RAPIDJSON\_SCHEMA\_VERBOSE}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+V\+E\+R\+B\+O\+SE~0}
+
+
+
+Definition at line 48 of file schema.\+h.
+
+\mbox{\Hypertarget{schema_8h_ab63115d6dc8a0c74d5fb0d66f217cabb}\label{schema_8h_ab63115d6dc8a0c74d5fb0d66f217cabb}} 
+\index{schema.h@{schema.h}!RAPIDJSON\_STRING\_@{RAPIDJSON\_STRING\_}}
+\index{RAPIDJSON\_STRING\_@{RAPIDJSON\_STRING\_}!schema.h@{schema.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_STRING\_}{RAPIDJSON\_STRING\_}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+(\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static} \textcolor{keyword}{const} ValueType\& Get\#\#name\#\#String() \{\(\backslash\)}
+\DoxyCodeLine{        static \textcolor{keyword}{const} Ch s[] = \{ \_\_VA\_ARGS\_\_, \textcolor{charliteral}{'\(\backslash\)0'} \};\(\backslash\)}
+\DoxyCodeLine{        static \textcolor{keyword}{const} ValueType v(s, static\_cast<SizeType>(\textcolor{keyword}{sizeof}(s) / \textcolor{keyword}{sizeof}(Ch) - 1));\(\backslash\)}
+\DoxyCodeLine{        return v;\(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line 2047 of file schema.\+h.
+
+\mbox{\Hypertarget{schema_8h_ab63115d6dc8a0c74d5fb0d66f217cabb}\label{schema_8h_ab63115d6dc8a0c74d5fb0d66f217cabb}} 
+\index{schema.h@{schema.h}!RAPIDJSON\_STRING\_@{RAPIDJSON\_STRING\_}}
+\index{RAPIDJSON\_STRING\_@{RAPIDJSON\_STRING\_}!schema.h@{schema.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_STRING\_}{RAPIDJSON\_STRING\_}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+(\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{static} \textcolor{keyword}{const} StringRefType\& Get\#\#name\#\#String() \{\(\backslash\)}
+\DoxyCodeLine{        static \textcolor{keyword}{const} Ch s[] = \{ \_\_VA\_ARGS\_\_, \textcolor{charliteral}{'\(\backslash\)0'} \};\(\backslash\)}
+\DoxyCodeLine{        static \textcolor{keyword}{const} StringRefType v(s, static\_cast<SizeType>(\textcolor{keyword}{sizeof}(s) / \textcolor{keyword}{sizeof}(Ch) - 1)); \(\backslash\)}
+\DoxyCodeLine{        return v;\(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line 2047 of file schema.\+h.
+

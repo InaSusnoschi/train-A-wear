@@ -1,0 +1,1352 @@
+\hypertarget{classrapidjson_1_1_generic_document}{}\section{rapidjson\+::Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$ Class Template Reference}
+\label{classrapidjson_1_1_generic_document}\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+
+
+A document for parsing J\+S\+ON text as D\+OM.  
+
+
+
+
+{\ttfamily \#include $<$document.\+h$>$}
+
+Inheritance diagram for rapidjson\+::Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrapidjson_1_1_generic_document}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_document_1_1_clear_stack_on_exit}{Clear\+Stack\+On\+Exit}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Encoding\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1_generic_document_a8367a827588dd91d02e21ef945bec9f5}{Ch}}
+\begin{DoxyCompactList}\small\item\em Character type derived from \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{Value\+Type}}
+\begin{DoxyCompactList}\small\item\em Value type of the document. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} \mbox{\hyperlink{classrapidjson_1_1_generic_document_a4c85243a28c9dcf2d1357da00fcaa773}{Allocator\+Type}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} type from template parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_document_aa52c3016961f25ecd989d82839bce4e5}{Generic\+Document}} (\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{Type}} type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$allocator=0, size\+\_\+t stack\+Capacity=\mbox{\hyperlink{classrapidjson_1_1_generic_document_a557c989fcf60e58100c189555c47aa5a}{k\+Default\+Stack\+Capacity}}, Stack\+Allocator $\ast$stack\+Allocator=0)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_document_a82b27e7b228eb46a23f99720063ab4fb}{Generic\+Document}} (\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$allocator=0, size\+\_\+t stack\+Capacity=\mbox{\hyperlink{classrapidjson_1_1_generic_document_a557c989fcf60e58100c189555c47aa5a}{k\+Default\+Stack\+Capacity}}, Stack\+Allocator $\ast$stack\+Allocator=0)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_document_a09b1953e1610e182ddcf050b346957b2}{$\sim$\+Generic\+Document}} ()
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_abf1cbab989b856f9d260787b2575750b}{Swap}} (\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \&rhs) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\begin{DoxyCompactList}\small\item\em Exchange the contents of this document with those of another. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Generator $>$ }\\\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_a63e18887979da500ece6f0bd10d29b64}{Populate}} (Generator \&g)
+\begin{DoxyCompactList}\small\item\em Populate this document by a generator which produces S\+AX events. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_ad92c6cd025d411258d1f2ad890e2ee3f}{Get\+Allocator}} ()
+\begin{DoxyCompactList}\small\item\em Get the allocator of this document. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_document_a153e5a065ca9660673974f9df203be4b}{Get\+Stack\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Get the capacity of stack in bytes. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_ab53214e81f7402edbe57829cb1ee6c87}{Null}} ()
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_a847c975112d3d392a678e5d5b3b8f622}{Bool}} (bool b)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_abadda08ccb7404576e74104916329c21}{Int}} (int i)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_a56f3b745a657f2171e6a354b5652a445}{Uint}} (unsigned i)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_a133a57e6fa510655e2933decc7361ccc}{Int64}} (\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}} i)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_a3b56cdb811eea58932dcb1e425263831}{Uint64}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} i)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_a332d4082d24364fba781dc3d263b4202}{Double}} (double d)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_a278e93a502e19762fdfc337875ca34f8}{Raw\+Number}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} length, bool copy)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_aeab83624e94e75f3f9faa18e0c74ba20}{String}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} length, bool copy)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_acdbdf67f126b45fcf3c7029bdaa930d8}{Start\+Object}} ()
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_a4bc59e7ec43a909af155c18e7f948f40}{Key}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} length, bool copy)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_abe5944e40f6a374645a92b4a77bc3b6e}{End\+Object}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} member\+Count)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_a5ea841518170c19b896c53dc255fae41}{Start\+Array}} ()
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_a544d48e416efb239698e1a55b09aad73}{End\+Array}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} element\+Count)
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Parse from stream}\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$unsigned parse\+Flags, typename Source\+Encoding , typename Input\+Stream $>$ }\\\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_a3ae97682cf04685c7db9d89ebc399b85}{Parse\+Stream}} (Input\+Stream \&is)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from an input stream (with \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} conversion) \end{DoxyCompactList}\item 
+{\footnotesize template$<$unsigned parse\+Flags, typename Input\+Stream $>$ }\\\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_ae4ee7d86b8c906c83dbe15e57eb6ac6a}{Parse\+Stream}} (Input\+Stream \&is)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from an input stream. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Input\+Stream $>$ }\\\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_acf96a3c7fd61486d049c701b1fe5d414}{Parse\+Stream}} (Input\+Stream \&is)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from an input stream (with \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835}{k\+Parse\+Default\+Flags}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Parse in-\/place from mutable string}\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$unsigned parse\+Flags$>$ }\\\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_a7ba626bf84eb45a9bca0b7723bf47f3f}{Parse\+Insitu}} (\mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$str)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from a mutable string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_af061c039a990c2970dc31e5626149367}{Parse\+Insitu}} (\mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$str)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from a mutable string (with \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835}{k\+Parse\+Default\+Flags}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Parse from read-\/only string}\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$unsigned parse\+Flags, typename Source\+Encoding $>$ }\\\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_aea842b533a858c9a3861451ad9e8642c}{Parse}} (const typename Source\+Encoding\+::\+Ch $\ast$str)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from a read-\/only string (with \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} conversion) \end{DoxyCompactList}\item 
+{\footnotesize template$<$unsigned parse\+Flags$>$ }\\\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_a42c35e2f64c288f14b74fec2792500c8}{Parse}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$str)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from a read-\/only string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_ab031375318d133f83a114314b75703de}{Parse}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$str)
+\begin{DoxyCompactList}\small\item\em Parse J\+S\+ON text from a read-\/only string (with \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835}{k\+Parse\+Default\+Flags}}) \end{DoxyCompactList}\item 
+{\footnotesize template$<$unsigned parse\+Flags, typename Source\+Encoding $>$ }\\\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_ab5b308584e4bea9f59e0ba32ebd22b16}{Parse}} (const typename Source\+Encoding\+::\+Ch $\ast$str, size\+\_\+t length)
+\item 
+{\footnotesize template$<$unsigned parse\+Flags$>$ }\\\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_aca5ed8f26946f49dc4b7b4143ea6398c}{Parse}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$str, size\+\_\+t length)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_a0bdf1d5fc1f6305af484b0269d72a93e}{Parse}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$str, size\+\_\+t length)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Handling parse errors}\par
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document_a7607bb42b51547e44bfd4cab35d8f20e}{Has\+Parse\+Error}} () const
+\begin{DoxyCompactList}\small\item\em Whether a parse error has occurred in the last parsing. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} \mbox{\hyperlink{classrapidjson_1_1_generic_document_ab94c280c079a6837a24951cb4d8f337b}{Get\+Parse\+Error}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} of last parsing. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_document_af532179ca5ad5434a5e8af63f5da4c5f}{Get\+Error\+Offset}} () const
+\begin{DoxyCompactList}\small\item\em Get the position of last parsing error in input, 0 otherwise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_document_a36d19989c9221b27036675455516a974}{operator Parse\+Result}} () const
+\begin{DoxyCompactList}\small\item\em Implicit conversion to get the last parse result. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_document_a64e1c6b526d02fd5ccb90bfc9fc80794}{Generic\+Document}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \&)
+\begin{DoxyCompactList}\small\item\em Prohibit copying. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_document_ac57a2144909e74461503bca560b1269c}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \&)
+\begin{DoxyCompactList}\small\item\em Prohibit assignment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_document_aadd2423ddd54a26e915803fa5b7d8416}{Clear\+Stack}} ()
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_document_a5ad487dd87d5af6a390d3b4fa2401876}{Destroy}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_document_a3ea1933117950ae8d39ead0774c14f12}{allocator\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_document_af49b3668cb0b5a0561e5f26194ef2e31}{own\+Allocator\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$ Stack\+Allocator $>$ \mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\+\_\+}}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} \mbox{\hyperlink{classrapidjson_1_1_generic_document_a43e4cc449e68b2fb6ea6732b6a83d69e}{parse\+Result\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_document_a557c989fcf60e58100c189555c47aa5a}{k\+Default\+Stack\+Capacity}} = 1024
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename , typename $>$ }\\class \mbox{\hyperlink{classrapidjson_1_1_generic_document_a899449e1a645b5e377af059fb61113d8}{Generic\+Value}}
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_document_a0d63efcc43758ac3aed77e868233369d}{swap}} (\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}, \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} \&b) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\begin{DoxyCompactList}\small\item\em free-\/standing swap function helper \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Encoding, typename Allocator = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator = Crt\+Allocator$>$\newline
+class rapidjson\+::\+Generic\+Document$<$ Encoding, Allocator, Stack\+Allocator $>$}
+
+A document for parsing J\+S\+ON text as D\+OM. 
+
+\begin{DoxyNote}{Note}
+implements \mbox{\hyperlink{classrapidjson_1_1_handler}{Handler}} concept 
+\end{DoxyNote}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}} & \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} for both parsing and string storage. \\
+\hline
+{\em \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}} & \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} for allocating memory for the D\+OM \\
+\hline
+{\em Stack\+Allocator} & \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} for allocating memory for stack during parsing. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyWarning}{Warning}
+Although \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} inherits from \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}, the A\+PI does {\bfseries{not}} provide any virtual functions, especially no virtual destructor. To avoid memory leaks, do not {\ttfamily delete} a \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} object via a pointer to a \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}. 
+\end{DoxyWarning}
+
+
+Definition at line 57 of file document.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a4c85243a28c9dcf2d1357da00fcaa773}\label{classrapidjson_1_1_generic_document_a4c85243a28c9dcf2d1357da00fcaa773}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!AllocatorType@{AllocatorType}}
+\index{AllocatorType@{AllocatorType}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{AllocatorType}{AllocatorType}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_value_a5d47340c96346c5028fee4c9068d783d}{Allocator\+Type}}}
+
+
+
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} type from template parameter. 
+
+
+
+Definition at line 2128 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a8367a827588dd91d02e21ef945bec9f5}\label{classrapidjson_1_1_generic_document_a8367a827588dd91d02e21ef945bec9f5}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+typedef Encoding\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}}}
+
+
+
+Character type derived from \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}. 
+
+
+
+Definition at line 2126 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}\label{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!ValueType@{ValueType}}
+\index{ValueType@{ValueType}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{ValueType}{ValueType}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}$<$\mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$>$ \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_value_ad2935191ab28c2c2e472b739a9d58202}{Value\+Type}}}
+
+
+
+Value type of the document. 
+
+
+
+Definition at line 2127 of file document.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_aa52c3016961f25ecd989d82839bce4e5}\label{classrapidjson_1_1_generic_document_aa52c3016961f25ecd989d82839bce4e5}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!GenericDocument@{GenericDocument}}
+\index{GenericDocument@{GenericDocument}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{GenericDocument()}{GenericDocument()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{Type}}}]{type,  }\item[{\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$}]{allocator = {\ttfamily 0},  }\item[{size\+\_\+t}]{stack\+Capacity = {\ttfamily \mbox{\hyperlink{classrapidjson_1_1_generic_document_a557c989fcf60e58100c189555c47aa5a}{k\+Default\+Stack\+Capacity}}},  }\item[{Stack\+Allocator $\ast$}]{stack\+Allocator = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+Creates an empty document of specified type. 
+\begin{DoxyParams}{Parameters}
+{\em type} & Mandatory type of object to create. \\
+\hline
+{\em allocator} & Optional allocator for allocating memory. \\
+\hline
+{\em stack\+Capacity} & Optional initial capacity of stack in bytes. \\
+\hline
+{\em stack\+Allocator} & Optional allocator for allocating memory for stack. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 2137 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2137                                                                                                                                                     :}
+\DoxyCodeLine{2138         GenericValue<Encoding, Allocator>(type),  \mbox{\hyperlink{classrapidjson_1_1_generic_document_a3ea1933117950ae8d39ead0774c14f12}{allocator\_}}(allocator), \mbox{\hyperlink{classrapidjson_1_1_generic_document_af49b3668cb0b5a0561e5f26194ef2e31}{ownAllocator\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}(stackAllocator, stackCapacity), \mbox{\hyperlink{classrapidjson_1_1_generic_document_a43e4cc449e68b2fb6ea6732b6a83d69e}{parseResult\_}}()}
+\DoxyCodeLine{2139     \{}
+\DoxyCodeLine{2140         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classrapidjson_1_1_generic_document_a3ea1933117950ae8d39ead0774c14f12}{allocator\_}})}
+\DoxyCodeLine{2141             \mbox{\hyperlink{classrapidjson_1_1_generic_document_af49b3668cb0b5a0561e5f26194ef2e31}{ownAllocator\_}} = \mbox{\hyperlink{classrapidjson_1_1_generic_document_a3ea1933117950ae8d39ead0774c14f12}{allocator\_}} = \mbox{\hyperlink{rapidjson_8h_abdc7cd7902748ffe6626d71c59a73c3b}{RAPIDJSON\_NEW}}(Allocator)();}
+\DoxyCodeLine{2142     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+EW.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a82b27e7b228eb46a23f99720063ab4fb}\label{classrapidjson_1_1_generic_document_a82b27e7b228eb46a23f99720063ab4fb}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!GenericDocument@{GenericDocument}}
+\index{GenericDocument@{GenericDocument}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{GenericDocument()}{GenericDocument()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$}]{allocator = {\ttfamily 0},  }\item[{size\+\_\+t}]{stack\+Capacity = {\ttfamily \mbox{\hyperlink{classrapidjson_1_1_generic_document_a557c989fcf60e58100c189555c47aa5a}{k\+Default\+Stack\+Capacity}}},  }\item[{Stack\+Allocator $\ast$}]{stack\+Allocator = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Creates an empty document which type is Null. 
+\begin{DoxyParams}{Parameters}
+{\em allocator} & Optional allocator for allocating memory. \\
+\hline
+{\em stack\+Capacity} & Optional initial capacity of stack in bytes. \\
+\hline
+{\em stack\+Allocator} & Optional allocator for allocating memory for stack. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 2150 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2150                                                                                                                                 : }
+\DoxyCodeLine{2151         \mbox{\hyperlink{classrapidjson_1_1_generic_document_a3ea1933117950ae8d39ead0774c14f12}{allocator\_}}(allocator), \mbox{\hyperlink{classrapidjson_1_1_generic_document_af49b3668cb0b5a0561e5f26194ef2e31}{ownAllocator\_}}(0), \mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}(stackAllocator, stackCapacity), \mbox{\hyperlink{classrapidjson_1_1_generic_document_a43e4cc449e68b2fb6ea6732b6a83d69e}{parseResult\_}}()}
+\DoxyCodeLine{2152     \{}
+\DoxyCodeLine{2153         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classrapidjson_1_1_generic_document_a3ea1933117950ae8d39ead0774c14f12}{allocator\_}})}
+\DoxyCodeLine{2154             \mbox{\hyperlink{classrapidjson_1_1_generic_document_af49b3668cb0b5a0561e5f26194ef2e31}{ownAllocator\_}} = \mbox{\hyperlink{classrapidjson_1_1_generic_document_a3ea1933117950ae8d39ead0774c14f12}{allocator\_}} = \mbox{\hyperlink{rapidjson_8h_abdc7cd7902748ffe6626d71c59a73c3b}{RAPIDJSON\_NEW}}(Allocator)();}
+\DoxyCodeLine{2155     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+EW.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a09b1953e1610e182ddcf050b346957b2}\label{classrapidjson_1_1_generic_document_a09b1953e1610e182ddcf050b346957b2}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!````~GenericDocument@{$\sim$GenericDocument}}
+\index{````~GenericDocument@{$\sim$GenericDocument}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{$\sim$GenericDocument()}{~GenericDocument()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::$\sim$\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2172 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2172                        \{}
+\DoxyCodeLine{2173         \mbox{\hyperlink{classrapidjson_1_1_generic_document_a5ad487dd87d5af6a390d3b4fa2401876}{Destroy}}();}
+\DoxyCodeLine{2174     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a64e1c6b526d02fd5ccb90bfc9fc80794}\label{classrapidjson_1_1_generic_document_a64e1c6b526d02fd5ccb90bfc9fc80794}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!GenericDocument@{GenericDocument}}
+\index{GenericDocument@{GenericDocument}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{GenericDocument()}{GenericDocument()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prohibit copying. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a847c975112d3d392a678e5d5b3b8f622}\label{classrapidjson_1_1_generic_document_a847c975112d3d392a678e5d5b3b8f622}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Bool@{Bool}}
+\index{Bool@{Bool}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Bool()}{Bool()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Bool (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2438 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2438 \{ \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Push<ValueType>()) \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}(b); \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_aadd2423ddd54a26e915803fa5b7d8416}\label{classrapidjson_1_1_generic_document_aadd2423ddd54a26e915803fa5b7d8416}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!ClearStack@{ClearStack}}
+\index{ClearStack@{ClearStack}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{ClearStack()}{ClearStack()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Clear\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2485 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2485                       \{}
+\DoxyCodeLine{2486         \textcolor{keywordflow}{if} (Allocator::kNeedFree)}
+\DoxyCodeLine{2487             \textcolor{keywordflow}{while} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a9379b6a185340ef704a0a78e39366fd6}{GetSize}}() > 0)    \textcolor{comment}{// Here assumes all elements in stack array are GenericValue (Member is actually 2 GenericValue objects)}}
+\DoxyCodeLine{2488                 (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Pop<ValueType>(1))->~\mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}();}
+\DoxyCodeLine{2489         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{2490             \mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a3ca75baf72a1d4e33024fad61e722063}{Clear}}();}
+\DoxyCodeLine{2491         \mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_ac0f6b58689374b5ac55337720676ac4e}{ShrinkToFit}}();}
+\DoxyCodeLine{2492     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a5ad487dd87d5af6a390d3b4fa2401876}\label{classrapidjson_1_1_generic_document_a5ad487dd87d5af6a390d3b4fa2401876}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2494 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2494                    \{}
+\DoxyCodeLine{2495         \mbox{\hyperlink{rapidjson_8h_a52c941c3fdd646527cdcd42aa846a28a}{RAPIDJSON\_DELETE}}(\mbox{\hyperlink{classrapidjson_1_1_generic_document_af49b3668cb0b5a0561e5f26194ef2e31}{ownAllocator\_}});}
+\DoxyCodeLine{2496     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+L\+E\+TE.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a332d4082d24364fba781dc3d263b4202}\label{classrapidjson_1_1_generic_document_a332d4082d24364fba781dc3d263b4202}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Double@{Double}}
+\index{Double@{Double}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Double()}{Double()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Double (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2443 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2443 \{ \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Push<ValueType>()) \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}(d); \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a544d48e416efb239698e1a55b09aad73}\label{classrapidjson_1_1_generic_document_a544d48e416efb239698e1a55b09aad73}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!EndArray@{EndArray}}
+\index{EndArray@{EndArray}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{EndArray()}{EndArray()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::End\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{element\+Count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2473 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2473                                          \{}
+\DoxyCodeLine{2474         \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}* elements = \mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Pop<ValueType>(elementCount);}
+\DoxyCodeLine{2475         \mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Top<ValueType>()->SetArrayRaw(elements, elementCount, \mbox{\hyperlink{classrapidjson_1_1_generic_document_ad92c6cd025d411258d1f2ad890e2ee3f}{GetAllocator}}());}
+\DoxyCodeLine{2476         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{2477     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_abe5944e40f6a374645a92b4a77bc3b6e}\label{classrapidjson_1_1_generic_document_abe5944e40f6a374645a92b4a77bc3b6e}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!EndObject@{EndObject}}
+\index{EndObject@{EndObject}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{EndObject()}{EndObject()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::End\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{member\+Count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2465 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2465                                          \{}
+\DoxyCodeLine{2466         \textcolor{keyword}{typename} \mbox{\hyperlink{classrapidjson_1_1_generic_value_a0220ddebe2f023fa75b643a50e90e559}{ValueType::Member}}* members = \mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Pop<typename ValueType::Member>(memberCount);}
+\DoxyCodeLine{2467         \mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Top<ValueType>()->SetObjectRaw(members, memberCount, \mbox{\hyperlink{classrapidjson_1_1_generic_document_ad92c6cd025d411258d1f2ad890e2ee3f}{GetAllocator}}());}
+\DoxyCodeLine{2468         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{2469     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_ad92c6cd025d411258d1f2ad890e2ee3f}\label{classrapidjson_1_1_generic_document_ad92c6cd025d411258d1f2ad890e2ee3f}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!GetAllocator@{GetAllocator}}
+\index{GetAllocator@{GetAllocator}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{GetAllocator()}{GetAllocator()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Get\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the allocator of this document. 
+
+
+
+Definition at line 2412 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2412                               \{}
+\DoxyCodeLine{2413         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1_generic_document_a3ea1933117950ae8d39ead0774c14f12}{allocator\_}});}
+\DoxyCodeLine{2414         \textcolor{keywordflow}{return} *\mbox{\hyperlink{classrapidjson_1_1_generic_document_a3ea1933117950ae8d39ead0774c14f12}{allocator\_}};}
+\DoxyCodeLine{2415     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_af532179ca5ad5434a5e8af63f5da4c5f}\label{classrapidjson_1_1_generic_document_af532179ca5ad5434a5e8af63f5da4c5f}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!GetErrorOffset@{GetErrorOffset}}
+\index{GetErrorOffset@{GetErrorOffset}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{GetErrorOffset()}{GetErrorOffset()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Get\+Error\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the position of last parsing error in input, 0 otherwise. 
+
+
+
+Definition at line 2394 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2394 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_document_a43e4cc449e68b2fb6ea6732b6a83d69e}{parseResult\_}}.\mbox{\hyperlink{structrapidjson_1_1_parse_result_a85036788b0cfd1c676900de6f8260bd6}{Offset}}(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_ab94c280c079a6837a24951cb4d8f337b}\label{classrapidjson_1_1_generic_document_ab94c280c079a6837a24951cb4d8f337b}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!GetParseError@{GetParseError}}
+\index{GetParseError@{GetParseError}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{GetParseError()}{GetParseError()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Get\+Parse\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} of last parsing. 
+
+
+
+Definition at line 2391 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2391 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_document_a43e4cc449e68b2fb6ea6732b6a83d69e}{parseResult\_}}.\mbox{\hyperlink{structrapidjson_1_1_parse_result_a3c6a1f7b7dc21363a255eb10a3c0e00e}{Code}}(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a153e5a065ca9660673974f9df203be4b}\label{classrapidjson_1_1_generic_document_a153e5a065ca9660673974f9df203be4b}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!GetStackCapacity@{GetStackCapacity}}
+\index{GetStackCapacity@{GetStackCapacity}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{GetStackCapacity()}{GetStackCapacity()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Get\+Stack\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the capacity of stack in bytes. 
+
+
+
+Definition at line 2418 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2418 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a280f80cf4d173edbec3feba59468a149}{GetCapacity}}(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a7607bb42b51547e44bfd4cab35d8f20e}\label{classrapidjson_1_1_generic_document_a7607bb42b51547e44bfd4cab35d8f20e}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!HasParseError@{HasParseError}}
+\index{HasParseError@{HasParseError}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{HasParseError()}{HasParseError()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Has\+Parse\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Whether a parse error has occurred in the last parsing. 
+
+
+
+Definition at line 2388 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2388 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_document_a43e4cc449e68b2fb6ea6732b6a83d69e}{parseResult\_}}.\mbox{\hyperlink{structrapidjson_1_1_parse_result_ab6d87c6ce9c849f35e902fbe23f485c4}{IsError}}(); \}}
+
+\end{DoxyCode}
+
+
+Referenced by parsing\+\_\+function().
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_abadda08ccb7404576e74104916329c21}\label{classrapidjson_1_1_generic_document_abadda08ccb7404576e74104916329c21}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Int@{Int}}
+\index{Int@{Int}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Int()}{Int()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Int (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2439 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2439 \{ \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Push<ValueType>()) \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}(i); \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a133a57e6fa510655e2933decc7361ccc}\label{classrapidjson_1_1_generic_document_a133a57e6fa510655e2933decc7361ccc}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Int64@{Int64}}
+\index{Int64@{Int64}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Int64()}{Int64()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Int64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}}}]{i }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2441 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2441 \{ \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Push<ValueType>()) \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}(i); \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a4bc59e7ec43a909af155c18e7f948f40}\label{classrapidjson_1_1_generic_document_a4bc59e7ec43a909af155c18e7f948f40}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Key@{Key}}
+\index{Key@{Key}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Key()}{Key()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$}]{str,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{length,  }\item[{bool}]{copy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2463 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2463 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_document_aeab83624e94e75f3f9faa18e0c74ba20}{String}}(str, length, copy); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_ab53214e81f7402edbe57829cb1ee6c87}\label{classrapidjson_1_1_generic_document_ab53214e81f7402edbe57829cb1ee6c87}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Null@{Null}}
+\index{Null@{Null}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Null()}{Null()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2437 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2437 \{ \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Push<ValueType>()) \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}(); \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a36d19989c9221b27036675455516a974}\label{classrapidjson_1_1_generic_document_a36d19989c9221b27036675455516a974}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!operator ParseResult@{operator ParseResult}}
+\index{operator ParseResult@{operator ParseResult}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{operator ParseResult()}{operator ParseResult()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::operator \mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Implicit conversion to get the last parse result. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} of the last parse operation
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespacerapidjson_ace11b5b575baf1cccd5ba5f8586dcdc8}{Document}} doc;}
+\DoxyCodeLine{ParseResult ok = doc.Parse(json);}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (!ok)}
+\DoxyCodeLine{  printf( \textcolor{stringliteral}{"JSON parse error: \%s (\%u)\(\backslash\)n"}, \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gae982013498511a0ef3c2a3d2069adb4f}{GetParseError\_En}}(ok.Code()), ok.Offset());}
+\end{DoxyCode}
+ 
+
+Definition at line 2408 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2408 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_document_a43e4cc449e68b2fb6ea6732b6a83d69e}{parseResult\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_ac57a2144909e74461503bca560b1269c}\label{classrapidjson_1_1_generic_document_ac57a2144909e74461503bca560b1269c}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prohibit assignment. 
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_aea842b533a858c9a3861451ad9e8642c}\label{classrapidjson_1_1_generic_document_aea842b533a858c9a3861451ad9e8642c}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Parse@{Parse}}
+\index{Parse@{Parse}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+template$<$unsigned parse\+Flags, typename Source\+Encoding $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Parse (\begin{DoxyParamCaption}\item[{const typename Source\+Encoding\+::\+Ch $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Parse J\+S\+ON text from a read-\/only string (with \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} conversion) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em parse\+Flags} & Combination of \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9}{Parse\+Flag}} (must not contain \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a02748971d6ea0c5e22c69b8aa7f344ea}{k\+Parse\+Insitu\+Flag}}). \\
+\hline
+{\em Source\+Encoding} & Transcoding from input \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Read-\/only zero-\/terminated string to be parsed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 2325 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2325                                                                  \{}
+\DoxyCodeLine{2326         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(!(parseFlags \& \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a02748971d6ea0c5e22c69b8aa7f344ea}{kParseInsituFlag}}));}
+\DoxyCodeLine{2327         GenericStringStream<SourceEncoding> s(str);}
+\DoxyCodeLine{2328         \textcolor{keywordflow}{return} ParseStream<parseFlags, SourceEncoding>(s);}
+\DoxyCodeLine{2329     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Parse\+Insitu\+Flag, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+Referenced by parsing\+\_\+function().
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a42c35e2f64c288f14b74fec2792500c8}\label{classrapidjson_1_1_generic_document_a42c35e2f64c288f14b74fec2792500c8}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Parse@{Parse}}
+\index{Parse@{Parse}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+template$<$unsigned parse\+Flags$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Parse (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Parse J\+S\+ON text from a read-\/only string. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em parse\+Flags} & Combination of \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9}{Parse\+Flag}} (must not contain \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a02748971d6ea0c5e22c69b8aa7f344ea}{k\+Parse\+Insitu\+Flag}}). \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Read-\/only zero-\/terminated string to be parsed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 2336 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2336                                           \{}
+\DoxyCodeLine{2337         \textcolor{keywordflow}{return} Parse<parseFlags, Encoding>(str);}
+\DoxyCodeLine{2338     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_ab031375318d133f83a114314b75703de}\label{classrapidjson_1_1_generic_document_ab031375318d133f83a114314b75703de}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Parse@{Parse}}
+\index{Parse@{Parse}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Parse (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Parse J\+S\+ON text from a read-\/only string (with \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835}{k\+Parse\+Default\+Flags}}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Read-\/only zero-\/terminated string to be parsed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 2343 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2343                                           \{}
+\DoxyCodeLine{2344         \textcolor{keywordflow}{return} Parse<kParseDefaultFlags>(str);}
+\DoxyCodeLine{2345     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_ab5b308584e4bea9f59e0ba32ebd22b16}\label{classrapidjson_1_1_generic_document_ab5b308584e4bea9f59e0ba32ebd22b16}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Parse@{Parse}}
+\index{Parse@{Parse}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+template$<$unsigned parse\+Flags, typename Source\+Encoding $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Parse (\begin{DoxyParamCaption}\item[{const typename Source\+Encoding\+::\+Ch $\ast$}]{str,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2348 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2348                                                                                 \{}
+\DoxyCodeLine{2349         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(!(parseFlags \& \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a02748971d6ea0c5e22c69b8aa7f344ea}{kParseInsituFlag}}));}
+\DoxyCodeLine{2350         MemoryStream ms(reinterpret\_cast<const char*>(str), length * \textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} SourceEncoding::Ch));}
+\DoxyCodeLine{2351         EncodedInputStream<SourceEncoding, MemoryStream> is(ms);}
+\DoxyCodeLine{2352         ParseStream<parseFlags, SourceEncoding>(is);}
+\DoxyCodeLine{2353         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{2354     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Parse\+Insitu\+Flag, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_aca5ed8f26946f49dc4b7b4143ea6398c}\label{classrapidjson_1_1_generic_document_aca5ed8f26946f49dc4b7b4143ea6398c}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Parse@{Parse}}
+\index{Parse@{Parse}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+template$<$unsigned parse\+Flags$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Parse (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$}]{str,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2357 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2357                                                          \{}
+\DoxyCodeLine{2358         \textcolor{keywordflow}{return} Parse<parseFlags, Encoding>(str, length);}
+\DoxyCodeLine{2359     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a0bdf1d5fc1f6305af484b0269d72a93e}\label{classrapidjson_1_1_generic_document_a0bdf1d5fc1f6305af484b0269d72a93e}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Parse@{Parse}}
+\index{Parse@{Parse}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Parse (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$}]{str,  }\item[{size\+\_\+t}]{length }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2361 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2361                                                          \{}
+\DoxyCodeLine{2362         \textcolor{keywordflow}{return} Parse<kParseDefaultFlags>(str, length);}
+\DoxyCodeLine{2363     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a7ba626bf84eb45a9bca0b7723bf47f3f}\label{classrapidjson_1_1_generic_document_a7ba626bf84eb45a9bca0b7723bf47f3f}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!ParseInsitu@{ParseInsitu}}
+\index{ParseInsitu@{ParseInsitu}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{ParseInsitu()}{ParseInsitu()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+template$<$unsigned parse\+Flags$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Parse\+Insitu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Parse J\+S\+ON text from a mutable string. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em parse\+Flags} & Combination of \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9}{Parse\+Flag}}. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Mutable zero-\/terminated string to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The document itself for fluent A\+PI. 
+\end{DoxyReturn}
+
+
+Definition at line 2302 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2302                                           \{}
+\DoxyCodeLine{2303         GenericInsituStringStream<Encoding> s(str);}
+\DoxyCodeLine{2304         \textcolor{keywordflow}{return} ParseStream<parseFlags | kParseInsituFlag>(s);}
+\DoxyCodeLine{2305     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_af061c039a990c2970dc31e5626149367}\label{classrapidjson_1_1_generic_document_af061c039a990c2970dc31e5626149367}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!ParseInsitu@{ParseInsitu}}
+\index{ParseInsitu@{ParseInsitu}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{ParseInsitu()}{ParseInsitu()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Parse\+Insitu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Parse J\+S\+ON text from a mutable string (with \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835}{k\+Parse\+Default\+Flags}}) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Mutable zero-\/terminated string to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The document itself for fluent A\+PI. 
+\end{DoxyReturn}
+
+
+Definition at line 2311 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2311                                           \{}
+\DoxyCodeLine{2312         \textcolor{keywordflow}{return} ParseInsitu<kParseDefaultFlags>(str);}
+\DoxyCodeLine{2313     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a3ae97682cf04685c7db9d89ebc399b85}\label{classrapidjson_1_1_generic_document_a3ae97682cf04685c7db9d89ebc399b85}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!ParseStream@{ParseStream}}
+\index{ParseStream@{ParseStream}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{ParseStream()}{ParseStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+template$<$unsigned parse\+Flags, typename Source\+Encoding , typename Input\+Stream $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Parse\+Stream (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is }\end{DoxyParamCaption})}
+
+
+
+Parse J\+S\+ON text from an input stream (with \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} conversion) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em parse\+Flags} & Combination of \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9}{Parse\+Flag}}. \\
+\hline
+{\em Source\+Encoding} & \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} of input stream \\
+\hline
+{\em Input\+Stream} & Type of input stream, implementing \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Input stream to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The document itself for fluent A\+PI. 
+\end{DoxyReturn}
+
+
+Definition at line 2259 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2259                                                   \{}
+\DoxyCodeLine{2260         GenericReader<SourceEncoding, Encoding, StackAllocator> reader(}
+\DoxyCodeLine{2261             \mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a2167273a8e50c7d7fc9749d8f246c12c}{HasAllocator}}() ? \&\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_adb7cca61d3d77dd12189027882470e0c}{GetAllocator}}() : 0);}
+\DoxyCodeLine{2262         ClearStackOnExit scope(*\textcolor{keyword}{this});}
+\DoxyCodeLine{2263         \mbox{\hyperlink{classrapidjson_1_1_generic_document_a43e4cc449e68b2fb6ea6732b6a83d69e}{parseResult\_}} = reader.template Parse<parseFlags>(is, *\textcolor{keyword}{this});}
+\DoxyCodeLine{2264         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a43e4cc449e68b2fb6ea6732b6a83d69e}{parseResult\_}}) \{}
+\DoxyCodeLine{2265             \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a9379b6a185340ef704a0a78e39366fd6}{GetSize}}() == \textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}})); \textcolor{comment}{// Got one and only one root object}}
+\DoxyCodeLine{2266             \mbox{\hyperlink{classrapidjson_1_1_generic_value_ae8bcedd951f50b69786aaaa1828e9fac}{ValueType::operator=}}(*\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Pop<ValueType>(1));\textcolor{comment}{// Move value from stack to document}}
+\DoxyCodeLine{2267         \}}
+\DoxyCodeLine{2268         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{2269     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_ae4ee7d86b8c906c83dbe15e57eb6ac6a}\label{classrapidjson_1_1_generic_document_ae4ee7d86b8c906c83dbe15e57eb6ac6a}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!ParseStream@{ParseStream}}
+\index{ParseStream@{ParseStream}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{ParseStream()}{ParseStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+template$<$unsigned parse\+Flags, typename Input\+Stream $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Parse\+Stream (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is }\end{DoxyParamCaption})}
+
+
+
+Parse J\+S\+ON text from an input stream. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em parse\+Flags} & Combination of \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9}{Parse\+Flag}}. \\
+\hline
+{\em Input\+Stream} & Type of input stream, implementing \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Input stream to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The document itself for fluent A\+PI. 
+\end{DoxyReturn}
+
+
+Definition at line 2278 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2278                                                   \{}
+\DoxyCodeLine{2279         \textcolor{keywordflow}{return} ParseStream<parseFlags, Encoding, InputStream>(is);}
+\DoxyCodeLine{2280     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_acf96a3c7fd61486d049c701b1fe5d414}\label{classrapidjson_1_1_generic_document_acf96a3c7fd61486d049c701b1fe5d414}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!ParseStream@{ParseStream}}
+\index{ParseStream@{ParseStream}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{ParseStream()}{ParseStream()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+template$<$typename Input\+Stream $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Parse\+Stream (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is }\end{DoxyParamCaption})}
+
+
+
+Parse J\+S\+ON text from an input stream (with \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835}{k\+Parse\+Default\+Flags}}) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Input\+Stream} & Type of input stream, implementing \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Input stream to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The document itself for fluent A\+PI. 
+\end{DoxyReturn}
+
+
+Definition at line 2288 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2288                                                   \{}
+\DoxyCodeLine{2289         \textcolor{keywordflow}{return} ParseStream<kParseDefaultFlags, Encoding, InputStream>(is);}
+\DoxyCodeLine{2290     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a63e18887979da500ece6f0bd10d29b64}\label{classrapidjson_1_1_generic_document_a63e18887979da500ece6f0bd10d29b64}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Populate@{Populate}}
+\index{Populate@{Populate}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Populate()}{Populate()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+template$<$typename Generator $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Populate (\begin{DoxyParamCaption}\item[{Generator \&}]{g }\end{DoxyParamCaption})}
+
+
+
+Populate this document by a generator which produces S\+AX events. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Generator} & A functor with {\ttfamily bool f(\+Handler)} prototype. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Generator functor which sends S\+AX events to the parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The document itself for fluent A\+PI. 
+\end{DoxyReturn}
+
+
+Definition at line 2239 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2239                                             \{}
+\DoxyCodeLine{2240         ClearStackOnExit scope(*\textcolor{keyword}{this});}
+\DoxyCodeLine{2241         \textcolor{keywordflow}{if} (g(*\textcolor{keyword}{this})) \{}
+\DoxyCodeLine{2242             \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a9379b6a185340ef704a0a78e39366fd6}{GetSize}}() == \textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}})); \textcolor{comment}{// Got one and only one root object}}
+\DoxyCodeLine{2243             \mbox{\hyperlink{classrapidjson_1_1_generic_value_ae8bcedd951f50b69786aaaa1828e9fac}{ValueType::operator=}}(*\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Pop<ValueType>(1));\textcolor{comment}{// Move value from stack to document}}
+\DoxyCodeLine{2244         \}}
+\DoxyCodeLine{2245         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{2246     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a278e93a502e19762fdfc337875ca34f8}\label{classrapidjson_1_1_generic_document_a278e93a502e19762fdfc337875ca34f8}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!RawNumber@{RawNumber}}
+\index{RawNumber@{RawNumber}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{RawNumber()}{RawNumber()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Raw\+Number (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$}]{str,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{length,  }\item[{bool}]{copy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2445 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2445                                                               \{ }
+\DoxyCodeLine{2446         \textcolor{keywordflow}{if} (copy) }
+\DoxyCodeLine{2447             \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Push<ValueType>()) \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}(str, length, \mbox{\hyperlink{classrapidjson_1_1_generic_document_ad92c6cd025d411258d1f2ad890e2ee3f}{GetAllocator}}());}
+\DoxyCodeLine{2448         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{2449             \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Push<ValueType>()) \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}(str, length);}
+\DoxyCodeLine{2450         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{2451     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a5ea841518170c19b896c53dc255fae41}\label{classrapidjson_1_1_generic_document_a5ea841518170c19b896c53dc255fae41}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!StartArray@{StartArray}}
+\index{StartArray@{StartArray}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{StartArray()}{StartArray()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Start\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2471 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2471 \{ \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Push<ValueType>()) \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a058c622e1e7d59419ae58b895cbce468}{kArrayType}}); \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Array\+Type.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_acdbdf67f126b45fcf3c7029bdaa930d8}\label{classrapidjson_1_1_generic_document_acdbdf67f126b45fcf3c7029bdaa930d8}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!StartObject@{StartObject}}
+\index{StartObject@{StartObject}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{StartObject()}{StartObject()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Start\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2461 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2461 \{ \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Push<ValueType>()) \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4acf030b422a32c3647c7c5973bd4dd0a9}{kObjectType}}); \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Object\+Type.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_aeab83624e94e75f3f9faa18e0c74ba20}\label{classrapidjson_1_1_generic_document_aeab83624e94e75f3f9faa18e0c74ba20}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!String@{String}}
+\index{String@{String}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::\mbox{\hyperlink{structrapidjson_1_1_generic_value_1_1_string}{String}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_value_adcdbc7fa85a9a41b78966d7e0dcc2ac4}{Ch}} $\ast$}]{str,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{length,  }\item[{bool}]{copy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2453 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2453                                                            \{ }
+\DoxyCodeLine{2454         \textcolor{keywordflow}{if} (copy) }
+\DoxyCodeLine{2455             \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Push<ValueType>()) \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}(str, length, \mbox{\hyperlink{classrapidjson_1_1_generic_document_ad92c6cd025d411258d1f2ad890e2ee3f}{GetAllocator}}());}
+\DoxyCodeLine{2456         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{2457             \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Push<ValueType>()) \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}(str, length);}
+\DoxyCodeLine{2458         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{2459     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_abf1cbab989b856f9d260787b2575750b}\label{classrapidjson_1_1_generic_document_abf1cbab989b856f9d260787b2575750b}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Swap@{Swap}}
+\index{Swap@{Swap}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Exchange the contents of this document with those of another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & Another document. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Constant complexity. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+Generic\+Value\+::\+Swap 
+\end{DoxySeeAlso}
+
+
+Definition at line 2206 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2206                                                                    \{}
+\DoxyCodeLine{2207         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{ValueType::Swap}}(rhs);}
+\DoxyCodeLine{2208         \mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_ae45ca5eb4e96402169dcd0bd1bd011bf}{Swap}}(rhs.stack\_);}
+\DoxyCodeLine{2209         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1_generic_document_a3ea1933117950ae8d39ead0774c14f12}{allocator\_}}, rhs.allocator\_);}
+\DoxyCodeLine{2210         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1_generic_document_af49b3668cb0b5a0561e5f26194ef2e31}{ownAllocator\_}}, rhs.ownAllocator\_);}
+\DoxyCodeLine{2211         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1_generic_document_a43e4cc449e68b2fb6ea6732b6a83d69e}{parseResult\_}}, rhs.parseResult\_);}
+\DoxyCodeLine{2212         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{2213     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::internal\+::\+Swap().
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a56f3b745a657f2171e6a354b5652a445}\label{classrapidjson_1_1_generic_document_a56f3b745a657f2171e6a354b5652a445}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Uint@{Uint}}
+\index{Uint@{Uint}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Uint()}{Uint()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Uint (\begin{DoxyParamCaption}\item[{unsigned}]{i }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2440 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2440 \{ \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Push<ValueType>()) \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}(i); \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a3b56cdb811eea58932dcb1e425263831}\label{classrapidjson_1_1_generic_document_a3b56cdb811eea58932dcb1e425263831}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!Uint64@{Uint64}}
+\index{Uint64@{Uint64}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Uint64()}{Uint64()}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::Uint64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{i }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2442 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2442 \{ \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}{stack\_}}.template Push<ValueType>()) \mbox{\hyperlink{classrapidjson_1_1_generic_document_a41bbec044c421e870a9d355075d741bc}{ValueType}}(i); \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \}}
+
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a899449e1a645b5e377af059fb61113d8}\label{classrapidjson_1_1_generic_document_a899449e1a645b5e377af059fb61113d8}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!GenericValue@{GenericValue}}
+\index{GenericValue@{GenericValue}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{GenericValue}{GenericValue}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+template$<$typename , typename $>$ \\
+friend class \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 2433 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a0d63efcc43758ac3aed77e868233369d}\label{classrapidjson_1_1_generic_document_a0d63efcc43758ac3aed77e868233369d}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!swap@{swap}}
+\index{swap@{swap}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{swap}{swap}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+void swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$ \&}]{a,  }\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+free-\/standing swap function helper 
+
+Helper function to enable support for common swap implementation pattern based on {\ttfamily std\+::swap\+:} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{classrapidjson_1_1_generic_document_a0d63efcc43758ac3aed77e868233369d}{swap}}(MyClass\& \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}, MyClass\& b) \{}
+\DoxyCodeLine{    \textcolor{keyword}{using} std::swap;}
+\DoxyCodeLine{    \mbox{\hyperlink{classrapidjson_1_1_generic_document_a0d63efcc43758ac3aed77e868233369d}{swap}}(\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}.doc, b.doc);}
+\DoxyCodeLine{    \textcolor{comment}{// ...}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classrapidjson_1_1_generic_document_abf1cbab989b856f9d260787b2575750b}{Swap()}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 2231 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2231 \{ \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}.Swap(b); \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a3ea1933117950ae8d39ead0774c14f12}\label{classrapidjson_1_1_generic_document_a3ea1933117950ae8d39ead0774c14f12}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!allocator\_@{allocator\_}}
+\index{allocator\_@{allocator\_}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{allocator\_}{allocator\_}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2499 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a557c989fcf60e58100c189555c47aa5a}\label{classrapidjson_1_1_generic_document_a557c989fcf60e58100c189555c47aa5a}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!kDefaultStackCapacity@{kDefaultStackCapacity}}
+\index{kDefaultStackCapacity@{kDefaultStackCapacity}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{kDefaultStackCapacity}{kDefaultStackCapacity}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::k\+Default\+Stack\+Capacity = 1024\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 2498 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_af49b3668cb0b5a0561e5f26194ef2e31}\label{classrapidjson_1_1_generic_document_af49b3668cb0b5a0561e5f26194ef2e31}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!ownAllocator\_@{ownAllocator\_}}
+\index{ownAllocator\_@{ownAllocator\_}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{ownAllocator\_}{ownAllocator\_}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::own\+Allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2500 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a43e4cc449e68b2fb6ea6732b6a83d69e}\label{classrapidjson_1_1_generic_document_a43e4cc449e68b2fb6ea6732b6a83d69e}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!parseResult\_@{parseResult\_}}
+\index{parseResult\_@{parseResult\_}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{parseResult\_}{parseResult\_}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::parse\+Result\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2502 of file document.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}\label{classrapidjson_1_1_generic_document_a21961da965bca1d65007e0b55ca639a8}} 
+\index{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}!stack\_@{stack\_}}
+\index{stack\_@{stack\_}!rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$@{rapidjson::GenericDocument$<$ Encoding, Allocator, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{stack\_}{stack\_}}
+{\footnotesize\ttfamily template$<$typename Encoding , typename Allocator  = Memory\+Pool\+Allocator$<$$>$, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{internal\+::\+Stack}}$<$Stack\+Allocator$>$ \mbox{\hyperlink{classrapidjson_1_1_generic_document}{rapidjson\+::\+Generic\+Document}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}, Stack\+Allocator $>$\+::stack\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2501 of file document.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{document_8h}{document.\+h}}\end{DoxyCompactItemize}

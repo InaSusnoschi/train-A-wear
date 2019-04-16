@@ -1,0 +1,124 @@
+\hypertarget{pointer_8h}{}\section{D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/pointer.h File Reference}
+\label{pointer_8h}\index{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/pointer.h@{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/pointer.h}}
+{\ttfamily \#include \char`\"{}document.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal/itoa.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$}}
+\begin{DoxyCompactList}\small\item\em Represents a J\+S\+ON Pointer. Use Pointer for \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding and default allocator. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token}{rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Token}}
+\begin{DoxyCompactList}\small\item\em A token is the basic units of internal representation. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream}{rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Percent\+Encode\+Stream$<$ Output\+Stream $>$}}
+\begin{DoxyCompactList}\small\item\em A helper stream to encode character (U\+T\+F-\/8 code unit) into percent-\/encoded sequence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacerapidjson}{rapidjson}}
+\begin{DoxyCompactList}\small\item\em main Rapid\+J\+S\+ON namespace \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gade540ee4cc2a416c23b8ee2c12393c7b}{rapidjson\+::\+Pointer\+Parse\+Error\+Code}} \{ \newline
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba9094f236b2ec70c42f1ea91dffc1e39b}{rapidjson\+::k\+Pointer\+Parse\+Error\+None}} = 0, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba2f2f8b238e201b7d540e8914bbfd2bed}{rapidjson\+::k\+Pointer\+Parse\+Error\+Token\+Must\+Begin\+With\+Solidus}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba907c9fe4e541b257513e3a18635379f7}{rapidjson\+::k\+Pointer\+Parse\+Error\+Invalid\+Escape}}, 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba29831a02b8ee23a05d552b47f4d64d28}{rapidjson\+::k\+Pointer\+Parse\+Error\+Invalid\+Percent\+Encoding}}, 
+\newline
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7bae244a98f53279fda5a750f847b81c54f}{rapidjson\+::k\+Pointer\+Parse\+Error\+Character\+Must\+Percent\+Encode}}
+ \}
+\begin{DoxyCompactList}\small\item\em Error code of parsing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const Size\+Type \mbox{\hyperlink{namespacerapidjson_a7c5fc5aced6a3cde477b80699a3f13d7}{rapidjson\+::k\+Pointer\+Invalid\+Index}} = $\sim$Size\+Type(0)
+\begin{DoxyCompactList}\small\item\em Represents an invalid index in \mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token}{Generic\+Pointer\+::\+Token}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Helper functions for Generic\+Pointer}
+\begin{DoxyCompactItemize}
+\item 
+const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ \& \mbox{\hyperlink{namespacerapidjson_aa5b8c07c8721afe6870a0210820ea19d}{rapidjson\+::pointer}}
+\item 
+const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ T2 \mbox{\hyperlink{namespacerapidjson_a1591a36fec4c563e57394458a2fc508d}{rapidjson\+::default\+Value}}
+\item 
+const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ T2 T\+::\+Allocator\+Type \& \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{rapidjson\+::a}}
+\item 
+const Char\+Type(\& \mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{rapidjson\+::source}} )\mbox{[}N\mbox{]}
+\item 
+const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ T2 \mbox{\hyperlink{namespacerapidjson_a1a75d60792094d496b500c40776030dd}{rapidjson\+::value}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a6cc308180c1a10dc918da0192aed8fb7}{rapidjson\+::\+Create\+Value\+By\+Pointer}} (T \&root, const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ \&pointer, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_abb3b041f41b39df3f4219803eb31947e}{rapidjson\+::\+Create\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&source)\mbox{[}N\mbox{]}, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_afea8374e37ec67d3d1f08eb8c109f40c}{rapidjson\+::\+Create\+Value\+By\+Pointer}} (Document\+Type \&document, const Generic\+Pointer$<$ typename Document\+Type\+::\+Value\+Type $>$ \&pointer)
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a7bebd7d041eb5f91245401c674bc1776}{rapidjson\+::\+Create\+Value\+By\+Pointer}} (Document\+Type \&document, const Char\+Type(\&source)\mbox{[}N\mbox{]})
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type $\ast$ \mbox{\hyperlink{namespacerapidjson_a1e54debf2cebf89b4e810cb9a22bfa3b}{rapidjson\+::\+Get\+Value\+By\+Pointer}} (T \&root, const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ \&pointer, size\+\_\+t $\ast$unresolved\+Token\+Index=0)
+\item 
+{\footnotesize template$<$typename T $>$ }\\const T\+::\+Value\+Type $\ast$ \mbox{\hyperlink{namespacerapidjson_a6ca286bdc96a69351dcaaa55dea8c03a}{rapidjson\+::\+Get\+Value\+By\+Pointer}} (const T \&root, const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ \&pointer, size\+\_\+t $\ast$unresolved\+Token\+Index=0)
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type $\ast$ \mbox{\hyperlink{namespacerapidjson_a24060eafc78078b03c2db84fef65b5dd}{rapidjson\+::\+Get\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&source)\mbox{[}N\mbox{]}, size\+\_\+t $\ast$unresolved\+Token\+Index=0)
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\const T\+::\+Value\+Type $\ast$ \mbox{\hyperlink{namespacerapidjson_acca88ad99e931abf827f11d324174e9a}{rapidjson\+::\+Get\+Value\+By\+Pointer}} (const T \&root, const Char\+Type(\&source)\mbox{[}N\mbox{]}, size\+\_\+t $\ast$unresolved\+Token\+Index=0)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_aa33a1f9cd33ac3f6f2af3f90028fee6e}{rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default}} (T \&root, const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ \&pointer, const typename T\+::\+Value\+Type \&default\+Value, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a43b1387c2ed5f7dc204d06ffaa9c55d0}{rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default}} (T \&root, const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ \&pointer, const typename T\+::\+Ch $\ast$default\+Value, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename T , typename T2 $>$ }\\\mbox{\hyperlink{namespacerapidjson_ad218ff941d55a64aaaea0c8658d4462f}{rapidjson\+::\+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}} ((internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T2 $>$, internal\+::\+Is\+Generic\+Value$<$ T2 $>$ $>$),(typename T\+::\+Value\+Type \&)) Get\+Value\+By\+Pointer\+With\+Default(T \&root
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a4dba118d81ceb01ff22efb3e5e988dc1}{rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default}} (T \&root, const Char\+Type(\&source)\mbox{[}N\mbox{]}, const typename T\+::\+Value\+Type \&default\+Value, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_ac91ec0a49e7d5f976da9a1775b1ec501}{rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default}} (T \&root, const Char\+Type(\&source)\mbox{[}N\mbox{]}, const typename T\+::\+Ch $\ast$default\+Value, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N, typename T2 $>$ }\\\mbox{\hyperlink{namespacerapidjson_ac23c133f2ee48521a2754090454de12b}{rapidjson\+::\+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}} ((internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T2 $>$, internal\+::\+Is\+Generic\+Value$<$ T2 $>$ $>$),(typename T\+::\+Value\+Type \&)) Get\+Value\+By\+Pointer\+With\+Default(T \&root
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a9e32c018d38a174601d6770be7052f08}{rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default}} (Document\+Type \&document, const Generic\+Pointer$<$ typename Document\+Type\+::\+Value\+Type $>$ \&pointer, const typename Document\+Type\+::\+Value\+Type \&default\+Value)
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a77cbd080374924fd75a24cedb2a017b2}{rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default}} (Document\+Type \&document, const Generic\+Pointer$<$ typename Document\+Type\+::\+Value\+Type $>$ \&pointer, const typename Document\+Type\+::\+Ch $\ast$default\+Value)
+\item 
+{\footnotesize template$<$typename Document\+Type , typename T2 $>$ }\\\mbox{\hyperlink{namespacerapidjson_adcea79de1892e918329700f98dfd6ce2}{rapidjson\+::\+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}} ((internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T2 $>$, internal\+::\+Is\+Generic\+Value$<$ T2 $>$ $>$),(typename Document\+Type\+::\+Value\+Type \&)) Get\+Value\+By\+Pointer\+With\+Default(Document\+Type \&document
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a82e20f8de529ed67a6533df54a31bb04}{rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default}} (Document\+Type \&document, const Char\+Type(\&source)\mbox{[}N\mbox{]}, const typename Document\+Type\+::\+Value\+Type \&default\+Value)
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a47212072cc0fe34a06c00a6a993b9752}{rapidjson\+::\+Get\+Value\+By\+Pointer\+With\+Default}} (Document\+Type \&document, const Char\+Type(\&source)\mbox{[}N\mbox{]}, const typename Document\+Type\+::\+Ch $\ast$default\+Value)
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N, typename T2 $>$ }\\\mbox{\hyperlink{namespacerapidjson_a00b64457f91e8bf7f82465d7b80613b0}{rapidjson\+::\+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}} ((internal\+::\+Or\+Expr$<$ internal\+::\+Is\+Pointer$<$ T2 $>$, internal\+::\+Is\+Generic\+Value$<$ T2 $>$ $>$),(typename Document\+Type\+::\+Value\+Type \&)) Get\+Value\+By\+Pointer\+With\+Default(Document\+Type \&document
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_af52a32038d7db6bd0916e79408bd5bbc}{rapidjson\+::\+Set\+Value\+By\+Pointer}} (T \&root, const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ \&pointer, typename T\+::\+Value\+Type \&value, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a0cd01a20b4256bd943f02fe255e7cc32}{rapidjson\+::\+Set\+Value\+By\+Pointer}} (T \&root, const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ \&pointer, const typename T\+::\+Value\+Type \&value, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a03c2d060d62936bab0fe4b89f7205a8d}{rapidjson\+::\+Set\+Value\+By\+Pointer}} (T \&root, const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ \&pointer, const typename T\+::\+Ch $\ast$value, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_aeb9fb9b3b5c8377b0155bca9aeb40a51}{rapidjson\+::\+Set\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&source)\mbox{[}N\mbox{]}, typename T\+::\+Value\+Type \&value, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a4c7a1df544ef6745922b7311cbbe98f0}{rapidjson\+::\+Set\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&source)\mbox{[}N\mbox{]}, const typename T\+::\+Value\+Type \&value, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_aa637a04f8fc74722bb5aabb0b9567432}{rapidjson\+::\+Set\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&source)\mbox{[}N\mbox{]}, const typename T\+::\+Ch $\ast$value, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a7ee672e29015d1884533b23769c49dee}{rapidjson\+::\+Set\+Value\+By\+Pointer}} (Document\+Type \&document, const Generic\+Pointer$<$ typename Document\+Type\+::\+Value\+Type $>$ \&pointer, typename Document\+Type\+::\+Value\+Type \&value)
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a17434145e27de11a23d116f832e62b0e}{rapidjson\+::\+Set\+Value\+By\+Pointer}} (Document\+Type \&document, const Generic\+Pointer$<$ typename Document\+Type\+::\+Value\+Type $>$ \&pointer, const typename Document\+Type\+::\+Value\+Type \&value)
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_ae1ed433d2762ea314c3936e0e7b3259b}{rapidjson\+::\+Set\+Value\+By\+Pointer}} (Document\+Type \&document, const Generic\+Pointer$<$ typename Document\+Type\+::\+Value\+Type $>$ \&pointer, const typename Document\+Type\+::\+Ch $\ast$value)
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_aa4a6b91e9ba841920a3eebf7966219ec}{rapidjson\+::\+Set\+Value\+By\+Pointer}} (Document\+Type \&document, const Char\+Type(\&source)\mbox{[}N\mbox{]}, typename Document\+Type\+::\+Value\+Type \&value)
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a903c53365983ea6b11b1e37bcd613a40}{rapidjson\+::\+Set\+Value\+By\+Pointer}} (Document\+Type \&document, const Char\+Type(\&source)\mbox{[}N\mbox{]}, const typename Document\+Type\+::\+Value\+Type \&value)
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_add1fda95f27ace1ba362b2f8ca29b6ff}{rapidjson\+::\+Set\+Value\+By\+Pointer}} (Document\+Type \&document, const Char\+Type(\&source)\mbox{[}N\mbox{]}, const typename Document\+Type\+::\+Ch $\ast$value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_af27fbadfe9c823485374a6b426e3bf1f}{rapidjson\+::\+Swap\+Value\+By\+Pointer}} (T \&root, const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ \&pointer, typename T\+::\+Value\+Type \&value, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\T\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a54ef9e175c0a22c8dc894dd001063b43}{rapidjson\+::\+Swap\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&source)\mbox{[}N\mbox{]}, typename T\+::\+Value\+Type \&value, typename T\+::\+Allocator\+Type \&a)
+\item 
+{\footnotesize template$<$typename Document\+Type $>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_a8e7fefa7eb27b5093f8f14439718aae3}{rapidjson\+::\+Swap\+Value\+By\+Pointer}} (Document\+Type \&document, const Generic\+Pointer$<$ typename Document\+Type\+::\+Value\+Type $>$ \&pointer, typename Document\+Type\+::\+Value\+Type \&value)
+\item 
+{\footnotesize template$<$typename Document\+Type , typename Char\+Type , size\+\_\+t N$>$ }\\Document\+Type\+::\+Value\+Type \& \mbox{\hyperlink{namespacerapidjson_adb20ad4981c389a8007b5e58b901c558}{rapidjson\+::\+Swap\+Value\+By\+Pointer}} (Document\+Type \&document, const Char\+Type(\&source)\mbox{[}N\mbox{]}, typename Document\+Type\+::\+Value\+Type \&value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{namespacerapidjson_adaa0d9adc977720a77aa263a6dedc308}{rapidjson\+::\+Erase\+Value\+By\+Pointer}} (T \&root, const Generic\+Pointer$<$ typename T\+::\+Value\+Type $>$ \&pointer)
+\item 
+{\footnotesize template$<$typename T , typename Char\+Type , size\+\_\+t N$>$ }\\bool \mbox{\hyperlink{namespacerapidjson_aecef95f2fb3b7418031aeda5558072c5}{rapidjson\+::\+Erase\+Value\+By\+Pointer}} (T \&root, const Char\+Type(\&source)\mbox{[}N\mbox{]})
+\end{DoxyCompactItemize}

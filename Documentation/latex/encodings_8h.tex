@@ -1,0 +1,116 @@
+\hypertarget{encodings_8h}{}\section{D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/encodings.h File Reference}
+\label{encodings_8h}\index{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/encodings.h@{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/encodings.h}}
+{\ttfamily \#include \char`\"{}rapidjson.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{rapidjson\+::\+U\+T\+F8$<$ Char\+Type $>$}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/8 encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f16}{rapidjson\+::\+U\+T\+F16$<$ Char\+Type $>$}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/16 encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_l_e}{rapidjson\+::\+U\+T\+F16\+L\+E$<$ Char\+Type $>$}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/16 little endian encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f16_b_e}{rapidjson\+::\+U\+T\+F16\+B\+E$<$ Char\+Type $>$}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/16 big endian encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f32}{rapidjson\+::\+U\+T\+F32$<$ Char\+Type $>$}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/32 encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f32_l_e}{rapidjson\+::\+U\+T\+F32\+L\+E$<$ Char\+Type $>$}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/32 little endian enocoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_u_t_f32_b_e}{rapidjson\+::\+U\+T\+F32\+B\+E$<$ Char\+Type $>$}}
+\begin{DoxyCompactList}\small\item\em U\+T\+F-\/32 big endian encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{rapidjson\+::\+A\+S\+C\+I\+I$<$ Char\+Type $>$}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{A\+S\+C\+II}} encoding. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_auto_u_t_f}{rapidjson\+::\+Auto\+U\+T\+F$<$ Char\+Type $>$}}
+\begin{DoxyCompactList}\small\item\em Dynamically select encoding according to stream\textquotesingle{}s runtime-\/specified U\+TF encoding type. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_transcoder}{rapidjson\+::\+Transcoder$<$ Source\+Encoding, Target\+Encoding $>$}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} conversion. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_transcoder_3_01_encoding_00_01_encoding_01_4}{rapidjson\+::\+Transcoder$<$ Encoding, Encoding $>$}}
+\begin{DoxyCompactList}\small\item\em Specialization of \mbox{\hyperlink{structrapidjson_1_1_transcoder}{Transcoder}} with same source and target encoding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacerapidjson}{rapidjson}}
+\begin{DoxyCompactList}\small\item\em main Rapid\+J\+S\+ON namespace \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{encodings_8h_a3c5bc66bef12c668f05bbd4df5690171}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+C\+O\+PY}}()~c = is.\+Take(); $\ast$codepoint = ($\ast$codepoint $<$$<$ 6) $\vert$ (static\+\_\+cast$<$unsigned char$>$(c) \& 0x3\+Fu)
+\item 
+\#define \mbox{\hyperlink{encodings_8h_ad84116656b63c4b8d43a2264db620a4b}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+T\+R\+A\+NS}}(mask)~result \&= ((Get\+Range(static\+\_\+cast$<$unsigned char$>$(c)) \& mask) != 0)
+\item 
+\#define \mbox{\hyperlink{encodings_8h_aaa13dc9e0effa5edff532c344b5b35f7}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+T\+A\+IL}}()~\mbox{\hyperlink{encodings_8h_a3c5bc66bef12c668f05bbd4df5690171}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+C\+O\+PY}}(); \mbox{\hyperlink{encodings_8h_ad84116656b63c4b8d43a2264db620a4b}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+T\+R\+A\+NS}}(0x70)
+\item 
+\#define \mbox{\hyperlink{encodings_8h_a3c5bc66bef12c668f05bbd4df5690171}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+C\+O\+PY}}()~os.\+Put(c = is.\+Take())
+\item 
+\#define \mbox{\hyperlink{encodings_8h_ad84116656b63c4b8d43a2264db620a4b}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+T\+R\+A\+NS}}(mask)~result \&= ((Get\+Range(static\+\_\+cast$<$unsigned char$>$(c)) \& mask) != 0)
+\item 
+\#define \mbox{\hyperlink{encodings_8h_aaa13dc9e0effa5edff532c344b5b35f7}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+T\+A\+IL}}()~\mbox{\hyperlink{encodings_8h_a3c5bc66bef12c668f05bbd4df5690171}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+C\+O\+PY}}(); \mbox{\hyperlink{encodings_8h_ad84116656b63c4b8d43a2264db620a4b}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+T\+R\+A\+NS}}(0x70)
+\item 
+\#define \mbox{\hyperlink{encodings_8h_a6530c8834a049a0ff230b56072df6c24}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+S\+\_\+\+F\+U\+NC}}(x)~U\+T\+F8$<$Ch$>$\+::x, U\+T\+F16\+LE$<$Ch$>$\+::x, U\+T\+F16\+BE$<$Ch$>$\+::x, U\+T\+F32\+LE$<$Ch$>$\+::x, U\+T\+F32\+BE$<$Ch$>$\+::x
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eb}{rapidjson\+::\+U\+T\+F\+Type}} \{ \newline
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba3bda3a2e3f0ec2b7e8c5a3d5d4f60a81}{rapidjson\+::k\+U\+T\+F8}} = 0, 
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773ebaa7ffda68d3584eb92155daf3cd1d6481}{rapidjson\+::k\+U\+T\+F16\+LE}} = 1, 
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba52c496755de96eee05275a423b36299d}{rapidjson\+::k\+U\+T\+F16\+BE}} = 2, 
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773eba2ec8c855b2edacca40fa73ad307a66b4}{rapidjson\+::k\+U\+T\+F32\+LE}} = 3, 
+\newline
+\mbox{\hyperlink{namespacerapidjson_a4aacabc0f8cea1cd628f466d890773ebad6db204b848081468878ed58bc20ce8f}{rapidjson\+::k\+U\+T\+F32\+BE}} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em Runtime-\/specified U\+TF encoding type of a stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Stream $>$ }\\void \mbox{\hyperlink{namespacerapidjson_a0a774dcffe8ae07686f459ae017d2f20}{rapidjson\+::\+Put\+Unsafe}} (Stream \&stream, typename Stream\+::\+Ch c)
+\begin{DoxyCompactList}\small\item\em Write character to a stream, presuming buffer is reserved. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{encodings_8h_a3c5bc66bef12c668f05bbd4df5690171}\label{encodings_8h_a3c5bc66bef12c668f05bbd4df5690171}} 
+\index{encodings.h@{encodings.h}!RAPIDJSON\_COPY@{RAPIDJSON\_COPY}}
+\index{RAPIDJSON\_COPY@{RAPIDJSON\_COPY}!encodings.h@{encodings.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_COPY}{RAPIDJSON\_COPY}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+C\+O\+PY(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~c = is.\+Take(); $\ast$codepoint = ($\ast$codepoint $<$$<$ 6) $\vert$ (static\+\_\+cast$<$unsigned char$>$(c) \& 0x3\+Fu)}
+
+\mbox{\Hypertarget{encodings_8h_a3c5bc66bef12c668f05bbd4df5690171}\label{encodings_8h_a3c5bc66bef12c668f05bbd4df5690171}} 
+\index{encodings.h@{encodings.h}!RAPIDJSON\_COPY@{RAPIDJSON\_COPY}}
+\index{RAPIDJSON\_COPY@{RAPIDJSON\_COPY}!encodings.h@{encodings.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_COPY}{RAPIDJSON\_COPY}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+C\+O\+PY(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~os.\+Put(c = is.\+Take())}
+
+\mbox{\Hypertarget{encodings_8h_a6530c8834a049a0ff230b56072df6c24}\label{encodings_8h_a6530c8834a049a0ff230b56072df6c24}} 
+\index{encodings.h@{encodings.h}!RAPIDJSON\_ENCODINGS\_FUNC@{RAPIDJSON\_ENCODINGS\_FUNC}}
+\index{RAPIDJSON\_ENCODINGS\_FUNC@{RAPIDJSON\_ENCODINGS\_FUNC}!encodings.h@{encodings.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_ENCODINGS\_FUNC}{RAPIDJSON\_ENCODINGS\_FUNC}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+E\+N\+C\+O\+D\+I\+N\+G\+S\+\_\+\+F\+U\+NC(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~U\+T\+F8$<$Ch$>$\+::x, U\+T\+F16\+LE$<$Ch$>$\+::x, U\+T\+F16\+BE$<$Ch$>$\+::x, U\+T\+F32\+LE$<$Ch$>$\+::x, U\+T\+F32\+BE$<$Ch$>$\+::x}
+
+
+
+Definition at line 620 of file encodings.\+h.
+
+\mbox{\Hypertarget{encodings_8h_aaa13dc9e0effa5edff532c344b5b35f7}\label{encodings_8h_aaa13dc9e0effa5edff532c344b5b35f7}} 
+\index{encodings.h@{encodings.h}!RAPIDJSON\_TAIL@{RAPIDJSON\_TAIL}}
+\index{RAPIDJSON\_TAIL@{RAPIDJSON\_TAIL}!encodings.h@{encodings.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_TAIL}{RAPIDJSON\_TAIL}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+T\+A\+IL(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{encodings_8h_a3c5bc66bef12c668f05bbd4df5690171}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+C\+O\+PY}}(); \mbox{\hyperlink{encodings_8h_ad84116656b63c4b8d43a2264db620a4b}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+T\+R\+A\+NS}}(0x70)}
+
+\mbox{\Hypertarget{encodings_8h_aaa13dc9e0effa5edff532c344b5b35f7}\label{encodings_8h_aaa13dc9e0effa5edff532c344b5b35f7}} 
+\index{encodings.h@{encodings.h}!RAPIDJSON\_TAIL@{RAPIDJSON\_TAIL}}
+\index{RAPIDJSON\_TAIL@{RAPIDJSON\_TAIL}!encodings.h@{encodings.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_TAIL}{RAPIDJSON\_TAIL}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+T\+A\+IL(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\mbox{\hyperlink{encodings_8h_a3c5bc66bef12c668f05bbd4df5690171}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+C\+O\+PY}}(); \mbox{\hyperlink{encodings_8h_ad84116656b63c4b8d43a2264db620a4b}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+T\+R\+A\+NS}}(0x70)}
+
+\mbox{\Hypertarget{encodings_8h_ad84116656b63c4b8d43a2264db620a4b}\label{encodings_8h_ad84116656b63c4b8d43a2264db620a4b}} 
+\index{encodings.h@{encodings.h}!RAPIDJSON\_TRANS@{RAPIDJSON\_TRANS}}
+\index{RAPIDJSON\_TRANS@{RAPIDJSON\_TRANS}!encodings.h@{encodings.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_TRANS}{RAPIDJSON\_TRANS}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+T\+R\+A\+NS(\begin{DoxyParamCaption}\item[{}]{mask }\end{DoxyParamCaption})~result \&= ((Get\+Range(static\+\_\+cast$<$unsigned char$>$(c)) \& mask) != 0)}
+
+\mbox{\Hypertarget{encodings_8h_ad84116656b63c4b8d43a2264db620a4b}\label{encodings_8h_ad84116656b63c4b8d43a2264db620a4b}} 
+\index{encodings.h@{encodings.h}!RAPIDJSON\_TRANS@{RAPIDJSON\_TRANS}}
+\index{RAPIDJSON\_TRANS@{RAPIDJSON\_TRANS}!encodings.h@{encodings.h}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_TRANS}{RAPIDJSON\_TRANS}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+T\+R\+A\+NS(\begin{DoxyParamCaption}\item[{}]{mask }\end{DoxyParamCaption})~result \&= ((Get\+Range(static\+\_\+cast$<$unsigned char$>$(c)) \& mask) != 0)}
+

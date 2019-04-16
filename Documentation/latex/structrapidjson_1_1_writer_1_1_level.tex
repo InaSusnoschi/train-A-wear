@@ -1,0 +1,98 @@
+\hypertarget{structrapidjson_1_1_writer_1_1_level}{}\section{rapidjson\+::Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Level Struct Reference}
+\label{structrapidjson_1_1_writer_1_1_level}\index{rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level@{rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level}}
+
+
+Information for each nested level.  
+
+
+
+
+{\ttfamily \#include $<$writer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_writer_1_1_level_aa12b98bd13c621e6a19cdb67d118f510}{Level}} (bool in\+Array\+\_\+)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_writer_1_1_level_a5d17bdfa9ded5de72f5f91175cc3e36b}{value\+Count}}
+\begin{DoxyCompactList}\small\item\em number of values in this level \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_writer_1_1_level_a59255e3b1d371161f7c894503cfd6bec}{in\+Array}}
+\begin{DoxyCompactList}\small\item\em true if in array, otherwise in object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Output\+Stream, typename Source\+Encoding = U\+T\+F8$<$$>$, typename Target\+Encoding = U\+T\+F8$<$$>$, typename Stack\+Allocator = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$\newline
+struct rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Level}
+
+Information for each nested level. 
+
+Definition at line 287 of file writer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_writer_1_1_level_aa12b98bd13c621e6a19cdb67d118f510}\label{structrapidjson_1_1_writer_1_1_level_aa12b98bd13c621e6a19cdb67d118f510}} 
+\index{rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level@{rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level}!Level@{Level}}
+\index{Level@{Level}!rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level@{rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level}}
+\subsubsection{\texorpdfstring{Level()}{Level()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_writer}{rapidjson\+::\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Level\+::\+Level (\begin{DoxyParamCaption}\item[{bool}]{in\+Array\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 288 of file writer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{288 : \mbox{\hyperlink{structrapidjson_1_1_writer_1_1_level_a5d17bdfa9ded5de72f5f91175cc3e36b}{valueCount}}(0), \mbox{\hyperlink{structrapidjson_1_1_writer_1_1_level_a59255e3b1d371161f7c894503cfd6bec}{inArray}}(inArray\_) \{\}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_writer_1_1_level_a59255e3b1d371161f7c894503cfd6bec}\label{structrapidjson_1_1_writer_1_1_level_a59255e3b1d371161f7c894503cfd6bec}} 
+\index{rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level@{rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level}!inArray@{inArray}}
+\index{inArray@{inArray}!rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level@{rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level}}
+\subsubsection{\texorpdfstring{inArray}{inArray}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_writer}{rapidjson\+::\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Level\+::in\+Array}
+
+
+
+true if in array, otherwise in object 
+
+
+
+Definition at line 290 of file writer.\+h.
+
+
+
+Referenced by rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Prefix(), and rapidjson\+::\+Pretty\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Pretty\+Prefix().
+
+\mbox{\Hypertarget{structrapidjson_1_1_writer_1_1_level_a5d17bdfa9ded5de72f5f91175cc3e36b}\label{structrapidjson_1_1_writer_1_1_level_a5d17bdfa9ded5de72f5f91175cc3e36b}} 
+\index{rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level@{rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level}!valueCount@{valueCount}}
+\index{valueCount@{valueCount}!rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level@{rapidjson::Writer$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$::Level}}
+\subsubsection{\texorpdfstring{valueCount}{valueCount}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_writer}{rapidjson\+::\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Level\+::value\+Count}
+
+
+
+number of values in this level 
+
+
+
+Definition at line 289 of file writer.\+h.
+
+
+
+Referenced by rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Prefix(), and rapidjson\+::\+Pretty\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Pretty\+Prefix().
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{writer_8h}{writer.\+h}}\end{DoxyCompactItemize}

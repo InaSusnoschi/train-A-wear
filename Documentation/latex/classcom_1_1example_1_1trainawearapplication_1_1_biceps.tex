@@ -1,0 +1,201 @@
+\hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps}{}\section{com.\+example.\+trainawearapplication.\+Biceps Class Reference}
+\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps}\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+Inheritance diagram for com.\+example.\+trainawearapplication.\+Biceps\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.766562cm]{classcom_1_1example_1_1trainawearapplication_1_1_biceps}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a6e1ab1b99cd05b29fb7346b0642b7d0e}{set\+View\+Text}} (Text\+View view, String text)
+\begin{DoxyCompactList}\small\item\em Method required by the \mbox{\hyperlink{interfacecom_1_1example_1_1trainawearapplication_1_1_update_feedback}{Update\+Feedback}} interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_ad9e0fdf8309b31736b338a3b29079b24}{show\+Feedback}} (String instruction\+Def)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_abcdfd60742e9da12033fad625275ca4f}{on\+Create}} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_adb998a91a1fac06d100f9c192df14bbe}{P\+O\+RT}} = 31415
+\item 
+Thread \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a066fa540c01d0299cab5c4a1a2cf2f5f}{udp\+Listener}}
+\item 
+\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send}{Client\+Send}} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_acfb63670051beb8e048beea485e8576a}{udp\+Sender}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file Biceps.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps_abcdfd60742e9da12033fad625275ca4f}\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps_abcdfd60742e9da12033fad625275ca4f}} 
+\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+\subsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Biceps.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 44 of file Biceps.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                                        \{}
+\DoxyCodeLine{45         super.onCreate(savedInstanceState);}
+\DoxyCodeLine{46         setContentView(R.layout.activity\_biceps);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48         Intent biceps = getIntent();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50         buttonConnect = findViewById(R.id.buttonStartBiceps);}
+\DoxyCodeLine{51         buttonDisconnect = findViewById(R.id.buttonStopBiceps);}
+\DoxyCodeLine{52         textViewState = findViewById(R.id.stateBicep); \textcolor{comment}{//}}
+\DoxyCodeLine{53         textViewRx = findViewById(R.id.receivedBicep); \textcolor{comment}{//}}
+\DoxyCodeLine{54         textFeedback = findViewById(R.id.feedbackBiceps); \textcolor{comment}{//}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{comment}{//        udpClientHandler = new ClassicSquat.UdpClientHandler(ClassicSquat parent);}}
+\DoxyCodeLine{57         udpClientHandler = \textcolor{keyword}{new} \mbox{\hyperlink{namespacecom}{com}}.\mbox{\hyperlink{namespacecom_1_1example}{example}}.\mbox{\hyperlink{namespacecom_1_1example_1_1trainawearapplication}{trainawearapplication}}.\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler_bicep}{UdpClientHandlerBicep}}();}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59         Log.d(TAG, \textcolor{stringliteral}{"Start listening for messages"});}
+\DoxyCodeLine{60         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a066fa540c01d0299cab5c4a1a2cf2f5f}{udpListener}} = \textcolor{keyword}{new} Thread(\textcolor{keyword}{new} \mbox{\hyperlink{namespacecom}{com}}.\mbox{\hyperlink{namespacecom_1_1example}{example}}.\mbox{\hyperlink{namespacecom_1_1example_1_1trainawearapplication}{trainawearapplication}}.\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen_bicep}{ClientListenBicep}}(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_adb998a91a1fac06d100f9c192df14bbe}{PORT}}, textViewState, udpClientHandler));}
+\DoxyCodeLine{61         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a066fa540c01d0299cab5c4a1a2cf2f5f}{udpListener}}.start();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_acfb63670051beb8e048beea485e8576a}{udpSender}} = \textcolor{keyword}{new} ClientSend(\textcolor{stringliteral}{"255.255.255.255"}, \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_adb998a91a1fac06d100f9c192df14bbe}{PORT}});}
+\DoxyCodeLine{64         Log.d(TAG, \textcolor{stringliteral}{"sending to "} + textViewState.getText().toString());}
+\DoxyCodeLine{65         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_biceps_acfb63670051beb8e048beea485e8576a}{udpSender}}.execute(\textcolor{stringliteral}{"train-a-wear ready"});}
+\DoxyCodeLine{66     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+R.\+layout.\+activity\+\_\+biceps, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Start\+Biceps, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Stop\+Biceps, com.\+example.\+trainawearapplication.\+R.\+id.\+feedback\+Biceps, com.\+example.\+trainawearapplication.\+Biceps.\+P\+O\+RT, com.\+example.\+trainawearapplication.\+R.\+id.\+received\+Bicep, com.\+example.\+trainawearapplication.\+R.\+id.\+state\+Bicep, com.\+example.\+trainawearapplication.\+Biceps.\+udp\+Listener, and com.\+example.\+trainawearapplication.\+Biceps.\+udp\+Sender.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a6e1ab1b99cd05b29fb7346b0642b7d0e}\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a6e1ab1b99cd05b29fb7346b0642b7d0e}} 
+\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}!setViewText@{setViewText}}
+\index{setViewText@{setViewText}!com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+\subsubsection{\texorpdfstring{setViewText()}{setViewText()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Biceps.\+set\+View\+Text (\begin{DoxyParamCaption}\item[{Text\+View}]{view,  }\item[{String}]{text }\end{DoxyParamCaption})}
+
+
+
+Method required by the \mbox{\hyperlink{interfacecom_1_1example_1_1trainawearapplication_1_1_update_feedback}{Update\+Feedback}} interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view} & \\
+\hline
+{\em text} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1example_1_1trainawearapplication_1_1_update_feedback_a7a026880188b11aca6d8184d57e699e8}{com.\+example.\+trainawearapplication.\+Update\+Feedback}}.
+
+
+
+Definition at line 141 of file Biceps.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{141                                                         \{}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps_ad9e0fdf8309b31736b338a3b29079b24}\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps_ad9e0fdf8309b31736b338a3b29079b24}} 
+\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}!showFeedback@{showFeedback}}
+\index{showFeedback@{showFeedback}!com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+\subsubsection{\texorpdfstring{showFeedback()}{showFeedback()}}
+{\footnotesize\ttfamily static String com.\+example.\+trainawearapplication.\+Biceps.\+show\+Feedback (\begin{DoxyParamCaption}\item[{String}]{instruction\+Def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 113 of file Biceps.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{113                                                              \{}
+\DoxyCodeLine{114         \textcolor{keywordflow}{switch} (instructionDef)\{}
+\DoxyCodeLine{115             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"0"}:}
+\DoxyCodeLine{116                 \textcolor{keywordflow}{return}(\textcolor{stringliteral}{"Ready to start"});}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"1"}:}
+\DoxyCodeLine{119                 \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"Let's go!"});}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"5"}:}
+\DoxyCodeLine{122                 \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"Try to keep you back in a neutral position, don't lift your hips"});}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"6"}:}
+\DoxyCodeLine{125                 \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"If you keep your hips steady, the abs are working harder"});}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"7"}:}
+\DoxyCodeLine{128                 \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"For an effective push up, bring your chest close to the ground"});}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{131                 \textcolor{keywordflow}{return}(\textcolor{stringliteral}{"You're doing great, keep going!"});}
+\DoxyCodeLine{132         \}}
+\DoxyCodeLine{133     \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps_adb998a91a1fac06d100f9c192df14bbe}\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps_adb998a91a1fac06d100f9c192df14bbe}} 
+\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}!PORT@{PORT}}
+\index{PORT@{PORT}!com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+\subsubsection{\texorpdfstring{PORT}{PORT}}
+{\footnotesize\ttfamily final int com.\+example.\+trainawearapplication.\+Biceps.\+P\+O\+RT = 31415\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file Biceps.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Biceps.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a066fa540c01d0299cab5c4a1a2cf2f5f}\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps_a066fa540c01d0299cab5c4a1a2cf2f5f}} 
+\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}!udpListener@{udpListener}}
+\index{udpListener@{udpListener}!com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+\subsubsection{\texorpdfstring{udpListener}{udpListener}}
+{\footnotesize\ttfamily Thread com.\+example.\+trainawearapplication.\+Biceps.\+udp\+Listener\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Biceps.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Biceps.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_biceps_acfb63670051beb8e048beea485e8576a}\label{classcom_1_1example_1_1trainawearapplication_1_1_biceps_acfb63670051beb8e048beea485e8576a}} 
+\index{com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}!udpSender@{udpSender}}
+\index{udpSender@{udpSender}!com.example.trainawearapplication.Biceps@{com.example.trainawearapplication.Biceps}}
+\subsubsection{\texorpdfstring{udpSender}{udpSender}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send}{Client\+Send}} com.\+example.\+trainawearapplication.\+Biceps.\+udp\+Sender\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file Biceps.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Biceps.\+on\+Create().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Phone App/app/src/main/java/com/example/trainawearapplication/\mbox{\hyperlink{_biceps_8java}{Biceps.\+java}}\end{DoxyCompactItemize}

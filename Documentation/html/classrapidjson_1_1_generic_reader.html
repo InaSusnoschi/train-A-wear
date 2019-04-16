@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logosmall.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">train-A-wear
+   &#160;<span id="projectnumber">2.1</span>
    </div>
+   <div id="projectbrief">Real time feedback application with wireless connection to three IMUs</div>
   </td>
  </tr>
  </tbody>
@@ -84,11 +87,6 @@ $(function() {
  <a href="classrapidjson_1_1_generic_reader.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="fwd_8h_source.html">fwd.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for rapidjson::GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_reader__coll__graph.png" border="0" usemap="#rapidjson_1_1_generic_reader_3_01_source_encoding_00_01_target_encoding_00_01_stack_allocator_01_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -435,9 +433,6 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_reader.html">rapidjson::GenericReader</a>&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::<a class="el" href="classrapidjson_1_1_generic_reader.html">GenericReader</a> </td>
@@ -457,11 +452,6 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructor. </p>
@@ -530,7 +520,7 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -574,7 +564,7 @@ template&lt;typename InputStream &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -593,9 +583,6 @@ template&lt;typename InputStream &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">size_t <a class="el" href="classrapidjson_1_1_generic_reader.html">rapidjson::GenericReader</a>&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::GetErrorOffset </td>
@@ -604,11 +591,6 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the position of last parsing error in input, 0 otherwise. </p>
@@ -626,9 +608,6 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s.html#ga7d3acf640886b1f2552dc8c4cd6dea60">ParseErrorCode</a> <a class="el" href="classrapidjson_1_1_generic_reader.html">rapidjson::GenericReader</a>&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::GetParseErrorCode </td>
@@ -637,11 +616,6 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the <a class="el" href="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s.html#ga7d3acf640886b1f2552dc8c4cd6dea60">ParseErrorCode</a> of last parsing. </p>
@@ -685,7 +659,7 @@ template&lt;typename InputStream &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -723,9 +697,6 @@ template&lt;typename InputStream &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_reader.html">rapidjson::GenericReader</a>&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::HasParseError </td>
@@ -734,11 +705,6 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Whether a parse error has occurred in the last parsing. </p>
@@ -770,7 +736,7 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -801,7 +767,7 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -844,7 +810,7 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -863,11 +829,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
 <div class="ttc" id="structrapidjson_1_1_parse_result_html_a17c9f7f81675283393222658d613000f"><div class="ttname"><a href="structrapidjson_1_1_parse_result.html#a17c9f7f81675283393222658d613000f">rapidjson::ParseResult::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Reset error code.</div><div class="ttdef"><b>Definition:</b> <a href="error_8h_source.html#l00134">error.h:134</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="error_8h_source.html#l00134">rapidjson::ParseResult::Clear()</a>, and <a class="el" href="reader_8h_source.html#l00150">rapidjson::kParseStopWhenDoneFlag</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_reader_ad133a9a441857a1beaac20802b83abe5_cgraph.png" border="0" usemap="#classrapidjson_1_1_generic_reader_ad133a9a441857a1beaac20802b83abe5_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -878,9 +839,6 @@ Here is the call graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">RAPIDJSON_FORCEINLINE bool <a class="el" href="classrapidjson_1_1_generic_reader.html">rapidjson::GenericReader</a>&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::IterativeParseComplete </td>
@@ -889,11 +847,6 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Check if token-by-token parsing JSON text is complete. </p>
@@ -912,9 +865,6 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllocator = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_generic_reader.html">rapidjson::GenericReader</a>&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::IterativeParseInit </td>
@@ -923,11 +873,6 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Initialize JSON text token-by-token parsing. </p>
@@ -949,9 +894,6 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
 template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllocator = CrtAllocator&gt; </div>
 <div class="memtemplate">
 template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_reader.html">rapidjson::GenericReader</a>&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::IterativeParseNext </td>
@@ -971,11 +913,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Parse one token from JSON text. </p>
@@ -1054,9 +991,6 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
 template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllocator = CrtAllocator&gt; </div>
 <div class="memtemplate">
 template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structrapidjson_1_1_parse_result.html">ParseResult</a> <a class="el" href="classrapidjson_1_1_generic_reader.html">rapidjson::GenericReader</a>&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::Parse </td>
@@ -1076,11 +1010,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Parse JSON text. </p>
@@ -1124,9 +1053,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
 template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllocator = CrtAllocator&gt; </div>
 <div class="memtemplate">
 template&lt;typename InputStream , typename Handler &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structrapidjson_1_1_parse_result.html">ParseResult</a> <a class="el" href="classrapidjson_1_1_generic_reader.html">rapidjson::GenericReader</a>&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::Parse </td>
@@ -1146,11 +1072,6 @@ template&lt;typename InputStream , typename Handler &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Parse JSON text (with <a class="el" href="namespacerapidjson.html#a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835">kParseDefaultFlags</a>) </p>
@@ -1207,7 +1128,7 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1259,7 +1180,7 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1310,7 +1231,7 @@ template&lt;typename InputStream &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1357,7 +1278,7 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1408,7 +1329,7 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1437,11 +1358,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
 <div class="ttc" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_html_gabeba18d612187bad2ac62aed9276d47c"><div class="ttname"><a href="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g.html#gabeba18d612187bad2ac62aed9276d47c">RAPIDJSON_ASSERT</a></div><div class="ttdeci">#define RAPIDJSON_ASSERT(x)</div><div class="ttdoc">Assertion.</div><div class="ttdef"><b>Definition:</b> <a href="rapidjson_8h_source.html#l00406">rapidjson.h:406</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="error_8h_source.html#l00086">rapidjson::kParseErrorNumberMissExponent</a>, <a class="el" href="error_8h_source.html#l00085">rapidjson::kParseErrorNumberMissFraction</a>, <a class="el" href="error_8h_source.html#l00084">rapidjson::kParseErrorNumberTooBig</a>, <a class="el" href="error_8h_source.html#l00088">rapidjson::kParseErrorTermination</a>, <a class="el" href="error_8h_source.html#l00070">rapidjson::kParseErrorValueInvalid</a>, <a class="el" href="reader_8h_source.html#l00151">rapidjson::kParseFullPrecisionFlag</a>, <a class="el" href="reader_8h_source.html#l00147">rapidjson::kParseInsituFlag</a>, <a class="el" href="reader_8h_source.html#l00155">rapidjson::kParseNanAndInfFlag</a>, <a class="el" href="reader_8h_source.html#l00153">rapidjson::kParseNumbersAsStringsFlag</a>, <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>, <a class="el" href="rapidjson_8h_source.html#l00463">RAPIDJSON_LIKELY</a>, <a class="el" href="reader_8h_source.html#l00118">RAPIDJSON_PARSE_ERROR</a>, <a class="el" href="rapidjson_8h_source.html#l00289">RAPIDJSON_UINT64_C2</a>, <a class="el" href="rapidjson_8h_source.html#l00476">RAPIDJSON_UNLIKELY</a>, <a class="el" href="strtod_8h_source.html#l00226">rapidjson::internal::StrtodFullPrecision()</a>, and <a class="el" href="strtod_8h_source.html#l00037">rapidjson::internal::StrtodNormalPrecision()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_reader_a1f7c934e3dad52ecdbd451fb39bb2db6_cgraph.png" border="0" usemap="#classrapidjson_1_1_generic_reader_a1f7c934e3dad52ecdbd451fb39bb2db6_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1478,7 +1394,7 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1538,7 +1454,7 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1553,11 +1469,6 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
 <div class="ttc" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_html_gabeba18d612187bad2ac62aed9276d47c"><div class="ttname"><a href="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g.html#gabeba18d612187bad2ac62aed9276d47c">RAPIDJSON_ASSERT</a></div><div class="ttdeci">#define RAPIDJSON_ASSERT(x)</div><div class="ttdoc">Assertion.</div><div class="ttdef"><b>Definition:</b> <a href="rapidjson_8h_source.html#l00406">rapidjson.h:406</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="error_8h_source.html#l00088">rapidjson::kParseErrorTermination</a>, <a class="el" href="reader_8h_source.html#l00147">rapidjson::kParseInsituFlag</a>, <a class="el" href="reader_8h_source.html#l00941">rapidjson::GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::StackStream&lt; CharType &gt;::Length()</a>, <a class="el" href="reader_8h_source.html#l00943">rapidjson::GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::StackStream&lt; CharType &gt;::Pop()</a>, <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>, <a class="el" href="reader_8h_source.html#l00118">RAPIDJSON_PARSE_ERROR</a>, and <a class="el" href="rapidjson_8h_source.html#l00476">RAPIDJSON_UNLIKELY</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_reader_ac8b138efb06521b899fde5cf7355d4f9_cgraph.png" border="0" usemap="#classrapidjson_1_1_generic_reader_ac8b138efb06521b899fde5cf7355d4f9_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1594,7 +1505,7 @@ template&lt;unsigned parseFlags, typename SEncoding , typename TEncoding , typen
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1653,7 +1564,7 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1704,7 +1615,7 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1744,7 +1655,7 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1800,7 +1711,7 @@ template&lt;typename InputStream , typename OutputStream &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1840,7 +1751,7 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1874,7 +1785,7 @@ template&lt;unsigned parseFlags, typename InputStream &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1889,11 +1800,6 @@ template&lt;unsigned parseFlags, typename InputStream &gt; </div>
 <div class="ttc" id="namespacerapidjson_html_a81379eb4e94a0386d71d15fda882ebc9ab5d719b36aac626135d5d622d0d837c1"><div class="ttname"><a href="namespacerapidjson.html#a81379eb4e94a0386d71d15fda882ebc9ab5d719b36aac626135d5d622d0d837c1">rapidjson::kParseCommentsFlag</a></div><div class="ttdoc">Allow one-line (//) and multi-line (/**/) comments.</div><div class="ttdef"><b>Definition:</b> <a href="reader_8h_source.html#l00152">reader.h:152</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="reader_8h_source.html#l00152">rapidjson::kParseCommentsFlag</a>, <a class="el" href="error_8h_source.html#l00089">rapidjson::kParseErrorUnspecificSyntaxError</a>, <a class="el" href="rapidjson_8h_source.html#l00463">RAPIDJSON_LIKELY</a>, <a class="el" href="reader_8h_source.html#l00118">RAPIDJSON_PARSE_ERROR</a>, <a class="el" href="rapidjson_8h_source.html#l00476">RAPIDJSON_UNLIKELY</a>, and <a class="el" href="reader_8h_source.html#l00273">rapidjson::SkipWhitespace()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_reader_abfaf691ef4052e50a8af243df04bcf8f_cgraph.png" border="0" usemap="#classrapidjson_1_1_generic_reader_abfaf691ef4052e50a8af243df04bcf8f_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1918,7 +1824,7 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1990,7 +1896,7 @@ template&lt;unsigned parseFlags, typename InputStream , typename Handler &gt; </
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2136,13 +2042,13 @@ template&lt;typename SourceEncoding, typename TargetEncoding, typename StackAllo
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Server/rapidjson/<a class="el" href="fwd_8h_source.html">fwd.h</a></li>
-<li>Server/rapidjson/<a class="el" href="reader_8h_source.html">reader.h</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Server/rapidjson/<a class="el" href="fwd_8h_source.html">fwd.h</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Server/rapidjson/<a class="el" href="reader_8h_source.html">reader.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2019 00:37:12 for train-A-wear by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

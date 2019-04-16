@@ -1,0 +1,99 @@
+\hypertarget{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4}{}\section{rapidjson\+::internal\+::Type\+Helper$<$ Value\+Type, unsigned $>$ Struct Template Reference}
+\label{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4}\index{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$@{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$}}
+
+
+{\ttfamily \#include $<$document.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4_a53c6c0255d1c31f244fd10bad39fc06c}{Is}} (const Value\+Type \&v)
+\item 
+static unsigned \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4_a2f0943339b32d24609226023515daffc}{Get}} (const Value\+Type \&v)
+\item 
+static Value\+Type \& \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4_a3cc029a3c205f00f62e20fd3cb8f1321}{Set}} (Value\+Type \&v, unsigned data)
+\item 
+static Value\+Type \& \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4_a98a525bf701d284915de8ab65cbc51e6}{Set}} (Value\+Type \&v, unsigned data, typename Value\+Type\+::\+Allocator\+Type \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Value\+Type$>$\newline
+struct rapidjson\+::internal\+::\+Type\+Helper$<$ Value\+Type, unsigned $>$}
+
+
+
+Definition at line 448 of file document.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4_a2f0943339b32d24609226023515daffc}\label{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4_a2f0943339b32d24609226023515daffc}} 
+\index{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$@{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$}!Get@{Get}}
+\index{Get@{Get}!rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$@{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$}}
+\subsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+static unsigned \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper}{rapidjson\+::internal\+::\+Type\+Helper}}$<$ Value\+Type, unsigned $>$\+::Get (\begin{DoxyParamCaption}\item[{const Value\+Type \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 450 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{450 \{ \textcolor{keywordflow}{return} v.GetUint(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4_a53c6c0255d1c31f244fd10bad39fc06c}\label{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4_a53c6c0255d1c31f244fd10bad39fc06c}} 
+\index{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$@{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$}!Is@{Is}}
+\index{Is@{Is}!rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$@{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$}}
+\subsubsection{\texorpdfstring{Is()}{Is()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+static bool \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper}{rapidjson\+::internal\+::\+Type\+Helper}}$<$ Value\+Type, unsigned $>$\+::Is (\begin{DoxyParamCaption}\item[{const Value\+Type \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 449 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{449 \{ \textcolor{keywordflow}{return} v.IsUint(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4_a3cc029a3c205f00f62e20fd3cb8f1321}\label{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4_a3cc029a3c205f00f62e20fd3cb8f1321}} 
+\index{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$@{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$}!Set@{Set}}
+\index{Set@{Set}!rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$@{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+static Value\+Type\& \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper}{rapidjson\+::internal\+::\+Type\+Helper}}$<$ Value\+Type, unsigned $>$\+::Set (\begin{DoxyParamCaption}\item[{Value\+Type \&}]{v,  }\item[{unsigned}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 451 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{451 \{ \textcolor{keywordflow}{return} v.SetUint(data); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4_a98a525bf701d284915de8ab65cbc51e6}\label{structrapidjson_1_1internal_1_1_type_helper_3_01_value_type_00_01unsigned_01_4_a98a525bf701d284915de8ab65cbc51e6}} 
+\index{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$@{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$}!Set@{Set}}
+\index{Set@{Set}!rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$@{rapidjson::internal::TypeHelper$<$ ValueType, unsigned $>$}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type $>$ \\
+static Value\+Type\& \mbox{\hyperlink{structrapidjson_1_1internal_1_1_type_helper}{rapidjson\+::internal\+::\+Type\+Helper}}$<$ Value\+Type, unsigned $>$\+::Set (\begin{DoxyParamCaption}\item[{Value\+Type \&}]{v,  }\item[{unsigned}]{data,  }\item[{typename Value\+Type\+::\+Allocator\+Type \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 452 of file document.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{452 \{ \textcolor{keywordflow}{return} v.SetUint(data); \}}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{document_8h}{document.\+h}}\end{DoxyCompactItemize}

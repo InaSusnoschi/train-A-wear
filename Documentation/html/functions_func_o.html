@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logosmall.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">train-A-wear
+   &#160;<span id="projectnumber">2.1</span>
    </div>
+   <div id="projectbrief">Real time feedback application with wireless connection to three IMUs</div>
   </td>
  </tr>
  </tbody>
@@ -76,6 +79,7 @@ $(function() {
 , <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_help_app.html#a8fb144074fe5f839efbbdbfb16edd528">com.example.trainawearapplication.HelpApp</a>
 , <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_main_activity.html#ab22dede000985c356ec6d4419f3d2825">com.example.trainawearapplication.MainActivity</a>
 , <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_plank.html#a8071af6c71d817914e58bd99b92c0904">com.example.trainawearapplication.Plank</a>
+, <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_plie_squat.html#a3125f76f7d64ff641f8f07e2b8d5c3a7">com.example.trainawearapplication.PlieSquat</a>
 , <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_progress.html#a839ad2f2cb526d70b32c517f54400f36">com.example.trainawearapplication.Progress</a>
 , <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_setup.html#a52f522c34d14c93dbf7f75ff75ce606d">com.example.trainawearapplication.Setup</a>
 , <a class="el" href="classcom_1_1example_1_1trainawearapplication_1_1_squat.html#a2ee401e1a295432f8196e77dcca9df5f">com.example.trainawearapplication.Squat</a>
@@ -119,7 +123,7 @@ $(function() {
 , <a class="el" href="classrapidjson_1_1internal_1_1_big_integer.html#ab313deab130f74afda260cbc7f150c56">rapidjson::internal::BigInteger</a>
 </li>
 <li>operator-()
-: <a class="el" href="classrapidjson_1_1_generic_member_iterator.html#a36f7e485594c44a81a7c501cafb1cbf7">rapidjson::GenericMemberIterator&lt; Const, Encoding, Allocator &gt;</a>
+: <a class="el" href="classrapidjson_1_1_generic_member_iterator.html#abfad2c34a97f82178cbf9464e958e2c2">rapidjson::GenericMemberIterator&lt; Const, Encoding, Allocator &gt;</a>
 , <a class="el" href="structrapidjson_1_1internal_1_1_diy_fp.html#a5ed5b6b81f93701e5b6f1f699eafce8b">rapidjson::internal::DiyFp</a>
 </li>
 <li>operator--()
@@ -162,8 +166,8 @@ $(function() {
 , <a class="el" href="classrapidjson_1_1_generic_schema_document.html#a865332b0146d97f23d037866ba264bed">rapidjson::GenericSchemaDocument&lt; ValueT, Allocator &gt;</a>
 , <a class="el" href="classrapidjson_1_1_generic_string_buffer.html#af183e859f15b23e59afe2cad176b81ed">rapidjson::GenericStringBuffer&lt; Encoding, Allocator &gt;</a>
 , <a class="el" href="structrapidjson_1_1_generic_string_ref.html#a54f516a5ada5bba4a8cfca18d779fa45">rapidjson::GenericStringRef&lt; CharType &gt;</a>
-, <a class="el" href="classrapidjson_1_1_generic_value.html#aecc9d0a6aafe31f4fdf9f6e75e5f089c">rapidjson::GenericValue&lt; Encoding, Allocator &gt;</a>
-, <a class="el" href="classrapidjson_1_1internal_1_1_big_integer.html#acb27796a1f617fc8ca1734852f9049e7">rapidjson::internal::BigInteger</a>
+, <a class="el" href="classrapidjson_1_1_generic_value.html#ae8bcedd951f50b69786aaaa1828e9fac">rapidjson::GenericValue&lt; Encoding, Allocator &gt;</a>
+, <a class="el" href="classrapidjson_1_1internal_1_1_big_integer.html#a578cf1ad8e1e0bfedf2dc9be73562a31">rapidjson::internal::BigInteger</a>
 , <a class="el" href="classrapidjson_1_1internal_1_1_stack.html#a7d0b83798d0c29b50103841fe61ba7d9">rapidjson::internal::Stack&lt; Allocator &gt;</a>
 , <a class="el" href="classrapidjson_1_1internal_1_1_stream_local_copy_3_01_stream_00_010_01_4.html#a37cdd0351d00b5d6b1568bc4b043f380">rapidjson::internal::StreamLocalCopy&lt; Stream, 0 &gt;</a>
 , <a class="el" href="classrapidjson_1_1internal_1_1_stream_local_copy_3_01_stream_00_011_01_4.html#a9b34a0f36fe1eca7cad1bb443720f4ea">rapidjson::internal::StreamLocalCopy&lt; Stream, 1 &gt;</a>
@@ -174,7 +178,7 @@ $(function() {
 <li>operator==()
 : <a class="el" href="classrapidjson_1_1_generic_member_iterator.html#a874f8e34f3ae9889e9380feb36582779">rapidjson::GenericMemberIterator&lt; Const, Encoding, Allocator &gt;</a>
 , <a class="el" href="classrapidjson_1_1internal_1_1_big_integer.html#afcc8c8b661e70648683f11c4211df380">rapidjson::internal::BigInteger</a>
-, <a class="el" href="structrapidjson_1_1_parse_result.html#a53e838c5114c4770b01ba5fb4fe2ec09">rapidjson::ParseResult</a>
+, <a class="el" href="structrapidjson_1_1_parse_result.html#a512e065514f0c55c539ef70033a3f508">rapidjson::ParseResult</a>
 </li>
 <li>operator&gt;()
 : <a class="el" href="classrapidjson_1_1_generic_member_iterator.html#afeb581725f6ae68ed508803e73295a14">rapidjson::GenericMemberIterator&lt; Const, Encoding, Allocator &gt;</a>
@@ -185,13 +189,13 @@ $(function() {
 <li>operator[]()
 : <a class="el" href="classrapidjson_1_1_generic_array.html#ae3455ca0429fa330cb981c78fab473c0">rapidjson::GenericArray&lt; Const, ValueT &gt;</a>
 , <a class="el" href="classrapidjson_1_1_generic_member_iterator.html#a76a73a0206437a1318bb93af83f0b7ec">rapidjson::GenericMemberIterator&lt; Const, Encoding, Allocator &gt;</a>
-, <a class="el" href="classrapidjson_1_1_generic_object.html#a920c32f4acd1f8a896c467777452595a">rapidjson::GenericObject&lt; Const, ValueT &gt;</a>
+, <a class="el" href="classrapidjson_1_1_generic_object.html#a158d16b9052e356436211158f2fb0638">rapidjson::GenericObject&lt; Const, ValueT &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2019 00:37:21 for train-A-wear by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

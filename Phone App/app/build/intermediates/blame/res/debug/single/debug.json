@@ -112,6 +112,10 @@
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\3e7e846581e3a726fbf49a21482c2a29\\res\\layout\\notification_media_action.xml"
     },
     {
+        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_squatbacksensor.jpg.flat",
+        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\drawable-xxxhdpi\\squatbacksensor.jpg"
+    },
+    {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logosquat.png.flat",
         "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\drawable\\logosquat.png"
     },
@@ -420,12 +424,16 @@
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6dc8e0410981cbdee955b782011d6c6d\\res\\color-v23\\abc_tint_default.xml"
     },
     {
-        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_squatmed3.jpg.flat",
-        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\drawable-xxxhdpi\\squatmed3.jpg"
+        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_pliesquat.jpg.flat",
+        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\drawable-xxxhdpi\\pliesquat.jpg"
     },
     {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_text_cursor_material.xml.flat",
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6dc8e0410981cbdee955b782011d6c6d\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_squatmed3.jpg.flat",
+        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\drawable-xxxhdpi\\squatmed3.jpg"
     },
     {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_progress.xml.flat",
@@ -486,6 +494,10 @@
     {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6dc8e0410981cbdee955b782011d6c6d\\res\\color-v23\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_tricepstretch.jpg.flat",
+        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\drawable-xxxhdpi\\tricepstretch.jpg"
     },
     {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_light.xml.flat",
@@ -580,28 +592,28 @@
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\729afbd3ebf9383c3fd3c0486070f722\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bitmap.png.flat",
-        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\drawable\\bitmap.png"
+        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6dc8e0410981cbdee955b782011d6c6d\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_out.xml.flat",
+        "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\4df1cd110349643e79cc4d885b639214\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },
     {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\729afbd3ebf9383c3fd3c0486070f722\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_out.xml.flat",
-        "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\4df1cd110349643e79cc4d885b639214\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
-    },
-    {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_borderless_material.xml.flat",
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6dc8e0410981cbdee955b782011d6c6d\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_hamstring.jpg.flat",
+        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\drawable-xxxhdpi\\hamstring.jpg"
     },
     {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -680,6 +692,10 @@
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6dc8e0410981cbdee955b782011d6c6d\\res\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bicepcurl.jpg.flat",
+        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\drawable\\bicepcurl.jpg"
+    },
+    {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6dc8e0410981cbdee955b782011d6c6d\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
     },
@@ -718,6 +734,10 @@
     {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6dc8e0410981cbdee955b782011d6c6d\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_setuppic.jpg.flat",
+        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\drawable-xxxhdpi\\setuppic.jpg"
     },
     {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
@@ -926,6 +946,10 @@
     {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_light.xml.flat",
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6dc8e0410981cbdee955b782011d6c6d\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_setup.png.flat",
+        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\drawable-xxxhdpi\\setup.png"
     },
     {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action.xml.flat",
@@ -1532,6 +1556,10 @@
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\4df1cd110349643e79cc4d885b639214\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     },
     {
+        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_plie_squat.xml.flat",
+        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\layout\\activity_plie_squat.xml"
+    },
+    {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\ioana\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\6dc8e0410981cbdee955b782011d6c6d\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -1866,6 +1894,10 @@
     {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_squatthighsensor.jpg.flat",
+        "source": "D:\\Firstapp\\TrainAwearapplication\\app\\src\\main\\res\\drawable-xxxhdpi\\squatthighsensor.jpg"
     },
     {
         "merged": "D:\\Firstapp\\TrainAwearapplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",

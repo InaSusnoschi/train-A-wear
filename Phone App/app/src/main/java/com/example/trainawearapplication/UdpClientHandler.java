@@ -18,6 +18,12 @@ import static com.example.trainawearapplication.ClassicSquat.textViewState;
  */
 
 public class UdpClientHandler extends android.os.Handler{
+    /**
+     * @param UPDATE_STATE Parameter that is used to display the IP address in a text field in
+     *                     ClassicSquat activity
+     * @param UPDATE_MSG    Parameter that is used to display the incoming message in a text field
+     *                      in ClassicSquat activity
+     */
 
     final String TAG = "UdpClientHandler";
 
@@ -25,8 +31,7 @@ public class UdpClientHandler extends android.os.Handler{
 
     public static final int UPDATE_STATE = 0;
     public static final int UPDATE_MSG = 1;
-    public static final int UPDATE_PLANK = 2;
-    public static final int UPDATE_END = 3;
+//    public static final int UPDATE_END = 3;
     private MainActivity parent;
 
     /**

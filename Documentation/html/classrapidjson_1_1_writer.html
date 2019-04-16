@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logosmall.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">train-A-wear
+   &#160;<span id="projectnumber">2.1</span>
    </div>
+   <div id="projectbrief">Real time feedback application with wireless connection to three IMUs</div>
   </td>
  </tr>
  </tbody>
@@ -86,13 +89,12 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer__inherit__graph.png" border="0" usemap="#rapidjson_1_1_writer_3_01_output_stream_00_01_source_encoding_00_01_target_encoding_00_01_stack_allocator_00_01write_flags_01_4_inherit__map" alt="Inheritance graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer__coll__graph.png" border="0" usemap="#rapidjson_1_1_writer_3_01_output_stream_00_01_source_encoding_00_01_target_encoding_00_01_stack_allocator_00_01write_flags_01_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="classrapidjson_1_1_writer.png" usemap="#rapidjson::Writer_3C_20OutputStream_2C_20SourceEncoding_2C_20TargetEncoding_2C_20StackAllocator_2C_20writeFlags_20_3E_map" alt=""/>
+  <map id="rapidjson::Writer_3C_20OutputStream_2C_20SourceEncoding_2C_20TargetEncoding_2C_20StackAllocator_2C_20writeFlags_20_3E_map" name="rapidjson::Writer_3C_20OutputStream_2C_20SourceEncoding_2C_20TargetEncoding_2C_20StackAllocator_2C_20writeFlags_20_3E_map">
+<area href="classrapidjson_1_1_pretty_writer.html" title="Writer with indentation and spacing." alt="rapidjson::PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;" shape="rect" coords="0,56,596,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -324,7 +326,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -379,7 +381,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -429,9 +431,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Bool </td>
@@ -441,11 +440,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00182">182</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -466,9 +460,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Double </td>
@@ -478,11 +469,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Writes the given <code>double</code> value to the stream. </p>
@@ -511,9 +497,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::EndArray </td>
@@ -523,11 +506,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00245">245</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -548,9 +526,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::EndObject </td>
@@ -560,11 +535,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00230">230</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -599,7 +569,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -621,9 +591,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Flush </td>
@@ -632,11 +599,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Flush the output stream. </p>
@@ -654,9 +616,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::GetMaxDecimalPlaces </td>
@@ -665,11 +624,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00147">147</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -684,9 +638,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Int </td>
@@ -696,11 +647,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00183">183</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -720,9 +666,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Int64 </td>
@@ -732,11 +675,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00185">185</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -756,9 +694,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::IsComplete </td>
@@ -767,11 +702,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Checks whether the output is a complete JSON. </p>
@@ -791,9 +721,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Key </td>
@@ -819,11 +746,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00221">221</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -838,9 +760,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Key </td>
@@ -850,11 +769,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00259">259</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -864,16 +778,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <p class="reference">References <a class="el" href="writer_8h_source.html#l00259">rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Key()</a>, and <a class="el" href="strfunc_8h_source.html#l00031">rapidjson::internal::StrLen()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="writer_8h_source.html#l00259">rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Key()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_adb7804b54bcd5e71c69ec219652787d5_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_adb7804b54bcd5e71c69ec219652787d5_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_adb7804b54bcd5e71c69ec219652787d5_icgraph.png" border="0" usemap="#classrapidjson_1_1_writer_adb7804b54bcd5e71c69ec219652787d5_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -884,9 +788,6 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Null </td>
@@ -895,11 +796,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00181">181</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -961,7 +857,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -986,9 +882,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::RawNumber </td>
@@ -1014,11 +907,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00195">195</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -1039,9 +927,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::RawValue </td>
@@ -1067,11 +952,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Write a raw JSON value. </p>
@@ -1102,9 +982,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Reset </td>
@@ -1114,11 +991,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Reset the writer with a new stream. </p>
@@ -1169,7 +1041,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1178,11 +1050,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="fragment"><div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                                                                                          {</div><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g.html#ga5dc14176a9e71ace282404b0bcda57a1">RAPIDJSON_LIKELY</a>(is.Tell() &lt; length);</div><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    }</div><div class="ttc" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_html_ga5dc14176a9e71ace282404b0bcda57a1"><div class="ttname"><a href="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g.html#ga5dc14176a9e71ace282404b0bcda57a1">RAPIDJSON_LIKELY</a></div><div class="ttdeci">#define RAPIDJSON_LIKELY(x)</div><div class="ttdoc">Compiler branching hint for expression with high probability to be true.</div><div class="ttdef"><b>Definition:</b> <a href="rapidjson_8h_source.html#l00463">rapidjson.h:463</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="rapidjson_8h_source.html#l00463">RAPIDJSON_LIKELY</a>, and <a class="el" href="stream_8h_source.html#l00161">rapidjson::GenericStringStream&lt; Encoding &gt;::Tell()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_a2d5599f972475793e391559db2de1061_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_a2d5599f972475793e391559db2de1061_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1193,9 +1060,6 @@ Here is the call graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::SetMaxDecimalPlaces </td>
@@ -1205,11 +1069,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Sets the maximum number of decimal places for double output. </p>
@@ -1228,9 +1087,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::StartArray </td>
@@ -1239,11 +1095,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00239">239</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -1263,9 +1114,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::StartObject </td>
@@ -1274,11 +1122,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00215">215</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -1298,9 +1141,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::String </td>
@@ -1326,11 +1166,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00202">202</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -1351,9 +1186,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::String </td>
@@ -1363,11 +1195,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Simpler but slower overload. </p>
@@ -1379,16 +1206,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <p class="reference">References <a class="el" href="writer_8h_source.html#l00258">rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::String()</a>, and <a class="el" href="strfunc_8h_source.html#l00031">rapidjson::internal::StrLen()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="writer_8h_source.html#l00258">rapidjson::Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::String()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_a849e2b675a2b868699a14d45c7396f24_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_a849e2b675a2b868699a14d45c7396f24_cgraph" alt=""/></div>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_a849e2b675a2b868699a14d45c7396f24_icgraph.png" border="0" usemap="#classrapidjson_1_1_writer_a849e2b675a2b868699a14d45c7396f24_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1399,9 +1216,6 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Uint </td>
@@ -1411,11 +1225,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00184">184</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -1435,9 +1244,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typename TargetEncoding  = UTF8&lt;&gt;, typename StackAllocator  = CrtAllocator, unsigned writeFlags = kWriteDefaultFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_writer.html">rapidjson::Writer</a>&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;::Uint64 </td>
@@ -1447,11 +1253,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="writer_8h_source.html#l00186">186</a> of file <a class="el" href="writer_8h_source.html">writer.h</a>.</p>
@@ -1485,7 +1286,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1496,11 +1297,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="ttc" id="namespacerapidjson_html_a0a774dcffe8ae07686f459ae017d2f20"><div class="ttname"><a href="namespacerapidjson.html#a0a774dcffe8ae07686f459ae017d2f20">rapidjson::PutUnsafe</a></div><div class="ttdeci">void PutUnsafe(Stream &amp;stream, typename Stream::Ch c)</div><div class="ttdoc">Write character to a stream, presuming buffer is reserved.</div><div class="ttdef"><b>Definition:</b> <a href="stream_8h_source.html#l00091">stream.h:91</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="stream_8h_source.html#l00084">rapidjson::PutReserve()</a>, and <a class="el" href="stream_8h_source.html#l00091">rapidjson::PutUnsafe()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_a09c1a50dd2d6de4e8d59e6c8ecf62460_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_a09c1a50dd2d6de4e8d59e6c8ecf62460_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1525,7 +1321,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1539,11 +1335,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="ttc" id="namespacerapidjson_html_ad28b1de6aee37e92fc31792dd6dd6b19a3adbca1d31ad845ff4e9d742280cce39"><div class="ttname"><a href="namespacerapidjson.html#ad28b1de6aee37e92fc31792dd6dd6b19a3adbca1d31ad845ff4e9d742280cce39">rapidjson::kWriteNanAndInfFlag</a></div><div class="ttdoc">Allow writing of Infinity, -Infinity and NaN.</div><div class="ttdef"><b>Definition:</b> <a href="writer_8h_source.html#l00068">writer.h:68</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="dtoa_8h_source.html#l00216">rapidjson::internal::dtoa()</a>, <a class="el" href="writer_8h_source.html#l00068">rapidjson::kWriteNanAndInfFlag</a>, <a class="el" href="stream_8h_source.html#l00084">rapidjson::PutReserve()</a>, and <a class="el" href="stream_8h_source.html#l00091">rapidjson::PutUnsafe()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_ad8cdd06dfdf1731a2148e859b828979c_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_ad8cdd06dfdf1731a2148e859b828979c_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1568,7 +1359,7 @@ template&lt;&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1583,11 +1374,6 @@ template&lt;&gt; </div>
 <div class="ttc" id="namespacerapidjson_html_ad28b1de6aee37e92fc31792dd6dd6b19a3adbca1d31ad845ff4e9d742280cce39"><div class="ttname"><a href="namespacerapidjson.html#ad28b1de6aee37e92fc31792dd6dd6b19a3adbca1d31ad845ff4e9d742280cce39">rapidjson::kWriteNanAndInfFlag</a></div><div class="ttdoc">Allow writing of Infinity, -Infinity and NaN.</div><div class="ttdef"><b>Definition:</b> <a href="writer_8h_source.html#l00068">writer.h:68</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="dtoa_8h_source.html#l00216">rapidjson::internal::dtoa()</a>, <a class="el" href="writer_8h_source.html#l00069">rapidjson::kWriteDefaultFlags</a>, <a class="el" href="writer_8h_source.html#l00068">rapidjson::kWriteNanAndInfFlag</a>, <a class="el" href="stream_8h_source.html#l00084">rapidjson::PutReserve()</a>, and <a class="el" href="stream_8h_source.html#l00091">rapidjson::PutUnsafe()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_a7d18f380070f825f48a494c8213adf9c_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_a7d18f380070f825f48a494c8213adf9c_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1611,7 +1397,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1641,7 +1427,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1672,7 +1458,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1684,11 +1470,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="ttc" id="namespacerapidjson_html_a0a774dcffe8ae07686f459ae017d2f20"><div class="ttname"><a href="namespacerapidjson.html#a0a774dcffe8ae07686f459ae017d2f20">rapidjson::PutUnsafe</a></div><div class="ttdeci">void PutUnsafe(Stream &amp;stream, typename Stream::Ch c)</div><div class="ttdoc">Write character to a stream, presuming buffer is reserved.</div><div class="ttdef"><b>Definition:</b> <a href="stream_8h_source.html#l00091">stream.h:91</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="itoa_8h_source.html#l00115">rapidjson::internal::i32toa()</a>, <a class="el" href="stream_8h_source.html#l00084">rapidjson::PutReserve()</a>, and <a class="el" href="stream_8h_source.html#l00091">rapidjson::PutUnsafe()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_aca40d77c14bf6911c03b5d4b23283e02_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_aca40d77c14bf6911c03b5d4b23283e02_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1713,7 +1494,7 @@ template&lt;&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1723,11 +1504,6 @@ template&lt;&gt; </div>
 <div class="ttc" id="classrapidjson_1_1_writer_html_a1370d3fd6728d4f0b3f20d734bb27eaf"><div class="ttname"><a href="classrapidjson_1_1_writer.html#a1370d3fd6728d4f0b3f20d734bb27eaf">rapidjson::Writer::os_</a></div><div class="ttdeci">OutputStream * os_</div><div class="ttdef"><b>Definition:</b> <a href="writer_8h_source.html#l00499">writer.h:499</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="itoa_8h_source.html#l00115">rapidjson::internal::i32toa()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_ab2ccb801bfd355ecc03a3a3ba5eb7392_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_ab2ccb801bfd355ecc03a3a3ba5eb7392_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1752,7 +1528,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1764,11 +1540,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="ttc" id="namespacerapidjson_html_a0a774dcffe8ae07686f459ae017d2f20"><div class="ttname"><a href="namespacerapidjson.html#a0a774dcffe8ae07686f459ae017d2f20">rapidjson::PutUnsafe</a></div><div class="ttdeci">void PutUnsafe(Stream &amp;stream, typename Stream::Ch c)</div><div class="ttdoc">Write character to a stream, presuming buffer is reserved.</div><div class="ttdef"><b>Definition:</b> <a href="stream_8h_source.html#l00091">stream.h:91</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="itoa_8h_source.html#l00294">rapidjson::internal::i64toa()</a>, <a class="el" href="stream_8h_source.html#l00084">rapidjson::PutReserve()</a>, and <a class="el" href="stream_8h_source.html#l00091">rapidjson::PutUnsafe()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_aada3d510b7637fd0e9e8b3cbad093c2e_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_aada3d510b7637fd0e9e8b3cbad093c2e_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1793,7 +1564,7 @@ template&lt;&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1803,11 +1574,6 @@ template&lt;&gt; </div>
 <div class="ttc" id="classrapidjson_1_1_writer_html_a1370d3fd6728d4f0b3f20d734bb27eaf"><div class="ttname"><a href="classrapidjson_1_1_writer.html#a1370d3fd6728d4f0b3f20d734bb27eaf">rapidjson::Writer::os_</a></div><div class="ttdeci">OutputStream * os_</div><div class="ttdef"><b>Definition:</b> <a href="writer_8h_source.html#l00499">writer.h:499</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="itoa_8h_source.html#l00294">rapidjson::internal::i64toa()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_a91d238a4532d08363f97f37d3626632b_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_a91d238a4532d08363f97f37d3626632b_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1831,7 +1597,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1842,11 +1608,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="ttc" id="namespacerapidjson_html_a0a774dcffe8ae07686f459ae017d2f20"><div class="ttname"><a href="namespacerapidjson.html#a0a774dcffe8ae07686f459ae017d2f20">rapidjson::PutUnsafe</a></div><div class="ttdeci">void PutUnsafe(Stream &amp;stream, typename Stream::Ch c)</div><div class="ttdoc">Write character to a stream, presuming buffer is reserved.</div><div class="ttdef"><b>Definition:</b> <a href="stream_8h_source.html#l00091">stream.h:91</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="stream_8h_source.html#l00084">rapidjson::PutReserve()</a>, and <a class="el" href="stream_8h_source.html#l00091">rapidjson::PutUnsafe()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_af8275fa2332a8c7774aa4c8a3655afd5_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_af8275fa2332a8c7774aa4c8a3655afd5_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1881,7 +1642,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1897,11 +1658,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="ttc" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_html_gabeba18d612187bad2ac62aed9276d47c"><div class="ttname"><a href="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g.html#gabeba18d612187bad2ac62aed9276d47c">RAPIDJSON_ASSERT</a></div><div class="ttdeci">#define RAPIDJSON_ASSERT(x)</div><div class="ttdoc">Assertion.</div><div class="ttdef"><b>Definition:</b> <a href="rapidjson_8h_source.html#l00406">rapidjson.h:406</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="writer_8h_source.html#l00067">rapidjson::kWriteValidateEncodingFlag</a>, <a class="el" href="stream_8h_source.html#l00159">rapidjson::GenericStringStream&lt; Encoding &gt;::Peek()</a>, <a class="el" href="stream_8h_source.html#l00084">rapidjson::PutReserve()</a>, <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>, <a class="el" href="rapidjson_8h_source.html#l00463">RAPIDJSON_LIKELY</a>, <a class="el" href="rapidjson_8h_source.html#l00476">RAPIDJSON_UNLIKELY</a>, and <a class="el" href="stream_8h_source.html#l00161">rapidjson::GenericStringStream&lt; Encoding &gt;::Tell()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_a60b50a90fa1cfd525e14c37c36b9998d_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_a60b50a90fa1cfd525e14c37c36b9998d_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1925,7 +1681,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1955,7 +1711,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1996,7 +1752,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2015,11 +1771,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="ttc" id="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_html_gabeba18d612187bad2ac62aed9276d47c"><div class="ttname"><a href="group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g.html#gabeba18d612187bad2ac62aed9276d47c">RAPIDJSON_ASSERT</a></div><div class="ttdeci">#define RAPIDJSON_ASSERT(x)</div><div class="ttdoc">Assertion.</div><div class="ttdef"><b>Definition:</b> <a href="rapidjson_8h_source.html#l00406">rapidjson.h:406</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="writer_8h_source.html#l00067">rapidjson::kWriteValidateEncodingFlag</a>, <a class="el" href="stream_8h_source.html#l00159">rapidjson::GenericStringStream&lt; Encoding &gt;::Peek()</a>, <a class="el" href="stream_8h_source.html#l00084">rapidjson::PutReserve()</a>, <a class="el" href="stream_8h_source.html#l00091">rapidjson::PutUnsafe()</a>, <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>, <a class="el" href="rapidjson_8h_source.html#l00476">RAPIDJSON_UNLIKELY</a>, <a class="el" href="stream_8h_source.html#l00160">rapidjson::GenericStringStream&lt; Encoding &gt;::Take()</a>, and <a class="el" href="writer_8h.html#ae2c492a0a464591893d4255ea26d5e3a">Z16</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_a95860b89f9a9eea9d4336f0023c497ce_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_a95860b89f9a9eea9d4336f0023c497ce_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -2044,7 +1795,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2056,11 +1807,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="ttc" id="namespacerapidjson_html_a0a774dcffe8ae07686f459ae017d2f20"><div class="ttname"><a href="namespacerapidjson.html#a0a774dcffe8ae07686f459ae017d2f20">rapidjson::PutUnsafe</a></div><div class="ttdeci">void PutUnsafe(Stream &amp;stream, typename Stream::Ch c)</div><div class="ttdoc">Write character to a stream, presuming buffer is reserved.</div><div class="ttdef"><b>Definition:</b> <a href="stream_8h_source.html#l00091">stream.h:91</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="stream_8h_source.html#l00084">rapidjson::PutReserve()</a>, <a class="el" href="stream_8h_source.html#l00091">rapidjson::PutUnsafe()</a>, and <a class="el" href="itoa_8h_source.html#l00039">rapidjson::internal::u32toa()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_a9255fff8cc9476048f14a1ee7dbd9937_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_a9255fff8cc9476048f14a1ee7dbd9937_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -2085,7 +1831,7 @@ template&lt;&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2095,11 +1841,6 @@ template&lt;&gt; </div>
 <div class="ttc" id="classrapidjson_1_1_writer_html_a1370d3fd6728d4f0b3f20d734bb27eaf"><div class="ttname"><a href="classrapidjson_1_1_writer.html#a1370d3fd6728d4f0b3f20d734bb27eaf">rapidjson::Writer::os_</a></div><div class="ttdeci">OutputStream * os_</div><div class="ttdef"><b>Definition:</b> <a href="writer_8h_source.html#l00499">writer.h:499</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="itoa_8h_source.html#l00039">rapidjson::internal::u32toa()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_ab7c08a743fff55d9f09dc58f0a75e67f_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_ab7c08a743fff55d9f09dc58f0a75e67f_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -2124,7 +1865,7 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2136,11 +1877,6 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 <div class="ttc" id="namespacerapidjson_html_a0a774dcffe8ae07686f459ae017d2f20"><div class="ttname"><a href="namespacerapidjson.html#a0a774dcffe8ae07686f459ae017d2f20">rapidjson::PutUnsafe</a></div><div class="ttdeci">void PutUnsafe(Stream &amp;stream, typename Stream::Ch c)</div><div class="ttdoc">Write character to a stream, presuming buffer is reserved.</div><div class="ttdef"><b>Definition:</b> <a href="stream_8h_source.html#l00091">stream.h:91</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="stream_8h_source.html#l00084">rapidjson::PutReserve()</a>, <a class="el" href="stream_8h_source.html#l00091">rapidjson::PutUnsafe()</a>, and <a class="el" href="itoa_8h_source.html#l00126">rapidjson::internal::u64toa()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_a341c2665f6564467dab9787bbbaee2fe_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_a341c2665f6564467dab9787bbbaee2fe_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -2165,7 +1901,7 @@ template&lt;&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2175,11 +1911,6 @@ template&lt;&gt; </div>
 <div class="ttc" id="namespacerapidjson_1_1internal_html_af565c1edf212e5e41b8a51c3973e38cb"><div class="ttname"><a href="namespacerapidjson_1_1internal.html#af565c1edf212e5e41b8a51c3973e38cb">rapidjson::internal::u64toa</a></div><div class="ttdeci">char * u64toa(uint64_t value, char *buffer)</div><div class="ttdef"><b>Definition:</b> <a href="itoa_8h_source.html#l00126">itoa.h:126</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="itoa_8h_source.html#l00126">rapidjson::internal::u64toa()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_writer_a474abb8f7b704f1ef7c00bbe2a2e01b6_cgraph.png" border="0" usemap="#classrapidjson_1_1_writer_a474abb8f7b704f1ef7c00bbe2a2e01b6_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -2341,13 +2072,13 @@ template&lt;typename OutputStream , typename SourceEncoding  = UTF8&lt;&gt;, typ
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Server/rapidjson/<a class="el" href="fwd_8h_source.html">fwd.h</a></li>
-<li>Server/rapidjson/<a class="el" href="writer_8h_source.html">writer.h</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Server/rapidjson/<a class="el" href="fwd_8h_source.html">fwd.h</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Server/rapidjson/<a class="el" href="writer_8h_source.html">writer.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2019 00:37:14 for train-A-wear by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

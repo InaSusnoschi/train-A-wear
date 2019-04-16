@@ -1,0 +1,100 @@
+\hypertarget{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream}{}\section{rapidjson\+::Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::Percent\+Encode\+Stream$<$ Output\+Stream $>$ Class Template Reference}
+\label{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream}\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$}}
+
+
+A helper stream to encode character (U\+T\+F-\/8 code unit) into percent-\/encoded sequence.  
+
+
+
+
+{\ttfamily \#include $<$pointer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream_a0f6b987045d96e83d6daf5f675588a2e}{Percent\+Encode\+Stream}} (Output\+Stream \&os)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream_af3a6e9027fa1ce50198aa97e3f102523}{Put}} (char c)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Output\+Stream \& \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream_a83bfa0776440f9fc090afb99f5da9516}{os\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$\newline
+template$<$typename Output\+Stream$>$\newline
+class rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Percent\+Encode\+Stream$<$ Output\+Stream $>$}
+
+A helper stream to encode character (U\+T\+F-\/8 code unit) into percent-\/encoded sequence. 
+
+Definition at line 1085 of file pointer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream_a0f6b987045d96e83d6daf5f675588a2e}\label{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream_a0f6b987045d96e83d6daf5f675588a2e}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$}!PercentEncodeStream@{PercentEncodeStream}}
+\index{PercentEncodeStream@{PercentEncodeStream}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$}}
+\subsubsection{\texorpdfstring{PercentEncodeStream()}{PercentEncodeStream()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+template$<$typename Output\+Stream $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream}{Percent\+Encode\+Stream}}$<$ Output\+Stream $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream}{Percent\+Encode\+Stream}} (\begin{DoxyParamCaption}\item[{Output\+Stream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1087 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1087 : \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream_a83bfa0776440f9fc090afb99f5da9516}{os\_}}(os) \{\}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream_af3a6e9027fa1ce50198aa97e3f102523}\label{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream_af3a6e9027fa1ce50198aa97e3f102523}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$}!Put@{Put}}
+\index{Put@{Put}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+template$<$typename Output\+Stream $>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream}{Percent\+Encode\+Stream}}$<$ Output\+Stream $>$\+::Put (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1088 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1088                          \{ \textcolor{comment}{// UTF-8 must be byte}}
+\DoxyCodeLine{1089             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} u = static\_cast<unsigned char>(c);}
+\DoxyCodeLine{1090             \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{char} hexDigits[16] = \{ \textcolor{charliteral}{'0'}, \textcolor{charliteral}{'1'}, \textcolor{charliteral}{'2'}, \textcolor{charliteral}{'3'}, \textcolor{charliteral}{'4'}, \textcolor{charliteral}{'5'}, \textcolor{charliteral}{'6'}, \textcolor{charliteral}{'7'}, \textcolor{charliteral}{'8'}, \textcolor{charliteral}{'9'}, \textcolor{charliteral}{'A'}, \textcolor{charliteral}{'B'}, \textcolor{charliteral}{'C'}, \textcolor{charliteral}{'D'}, \textcolor{charliteral}{'E'}, \textcolor{charliteral}{'F'} \};}
+\DoxyCodeLine{1091             \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream_a83bfa0776440f9fc090afb99f5da9516}{os\_}}.Put(\textcolor{charliteral}{'\%'});}
+\DoxyCodeLine{1092             \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream_a83bfa0776440f9fc090afb99f5da9516}{os\_}}.Put(static\_cast<typename OutputStream::Ch>(hexDigits[u >> 4]));}
+\DoxyCodeLine{1093             \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream_a83bfa0776440f9fc090afb99f5da9516}{os\_}}.Put(static\_cast<typename OutputStream::Ch>(hexDigits[u \& 15]));}
+\DoxyCodeLine{1094         \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream_a83bfa0776440f9fc090afb99f5da9516}\label{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream_a83bfa0776440f9fc090afb99f5da9516}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$}!os\_@{os\_}}
+\index{os\_@{os\_}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$::PercentEncodeStream$<$ OutputStream $>$}}
+\subsubsection{\texorpdfstring{os\_}{os\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+template$<$typename Output\+Stream $>$ \\
+Output\+Stream\& \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream}{Percent\+Encode\+Stream}}$<$ Output\+Stream $>$\+::os\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1096 of file pointer.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{pointer_8h}{pointer.\+h}}\end{DoxyCompactItemize}

@@ -22,6 +22,8 @@ public class ClassicSquat extends AppCompatActivity implements UpdateFeedback{
      * @param mImages Array containing the drawable resources for the Carousel view showing bicep curls
      * @param mImagesTitle Holds the titles of the images
      * @thread udpListener listens to messages from the server continuously
+     * @param PORT Port number. 31415 - sounds familiar, Pi?
+     * @param udpSender object
      *
      */
 
@@ -185,29 +187,25 @@ public class ClassicSquat extends AppCompatActivity implements UpdateFeedback{
             case "1":
                 return ("Let's go!");
 
-            case "2":
+            case "3":
                 return("Knees caving in: Keep your knees in line with your toes");
 
-            case "3":
+            case "2":
                 return("Your back is bending, keep it straight while tensing your abs");
 
             case "4":
-                return ("Bring the weight down slowly and increase speed when lifting");
-
-            case "5":
-                return ("Try to keep you back in a neutral position, don't lift your hips");
-
-            case "6":
-                return ("If you keep your hips steady, the abs are working harder");
-
-            case "7":
-                return ("For an effective push up, bring your chest close to the ground");
+                return ("It looks like your form is asymmetrical when lowering in squat");
 
             default:
                 return("You're doing great, keep going!");
         }
     }
 
+    /**
+     * Method required by the UpdateFeedback interface
+     * @param view updates the specified textView
+     * @param text String that corresponds to the feedback in showFeedback method
+     */
     @Override
     public void setViewText(TextView view, String text) {
         view.setText(text);

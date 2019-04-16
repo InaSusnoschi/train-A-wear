@@ -22,6 +22,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.trainawearapplication.PlieSquat" />
         <activity
             android:name="com.example.trainawearapplication.Biceps"
             android:parentActivityName="com.example.trainawearapplication.Workout" >

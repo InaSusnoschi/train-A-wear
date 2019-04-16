@@ -1,0 +1,100 @@
+\hypertarget{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property}{}\section{rapidjson\+::internal\+::Schema$<$ Schema\+Document\+Type $>$\+::Pattern\+Property Struct Reference}
+\label{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property}\index{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty@{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_a19a12a85a9b124f81c442f9743523b05}{Pattern\+Property}} ()
+\item 
+\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_a7084ac2952c345091d0d9ec1880feecc}{$\sim$\+Pattern\+Property}} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema_a62e03be17971648a9d614244ffcb0f10}{Schema\+Type}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_aebf1636280c09538973ebfb33387d4c8}{schema}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema_a2c16b06523df78f5c354e9a68da90e23}{Regex\+Type}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_a2ba2fa4b3800d452e6282c9815ad5a85}{pattern}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Schema\+Document\+Type$>$\newline
+struct rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Pattern\+Property}
+
+
+
+Definition at line 1384 of file schema.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_a19a12a85a9b124f81c442f9743523b05}\label{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_a19a12a85a9b124f81c442f9743523b05}} 
+\index{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty@{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty}!PatternProperty@{PatternProperty}}
+\index{PatternProperty@{PatternProperty}!rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty@{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty}}
+\subsubsection{\texorpdfstring{PatternProperty()}{PatternProperty()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema}{rapidjson\+::internal\+::\+Schema}}$<$ Schema\+Document\+Type $>$\+::Pattern\+Property\+::\+Pattern\+Property (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1385 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1385 : \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_aebf1636280c09538973ebfb33387d4c8}{schema}}(), \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_a2ba2fa4b3800d452e6282c9815ad5a85}{pattern}}() \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_a7084ac2952c345091d0d9ec1880feecc}\label{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_a7084ac2952c345091d0d9ec1880feecc}} 
+\index{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty@{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty}!````~PatternProperty@{$\sim$PatternProperty}}
+\index{````~PatternProperty@{$\sim$PatternProperty}!rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty@{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty}}
+\subsubsection{\texorpdfstring{$\sim$PatternProperty()}{~PatternProperty()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema}{rapidjson\+::internal\+::\+Schema}}$<$ Schema\+Document\+Type $>$\+::Pattern\+Property\+::$\sim$\+Pattern\+Property (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1386 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1386                            \{ }
+\DoxyCodeLine{1387             \textcolor{keywordflow}{if} (\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_a2ba2fa4b3800d452e6282c9815ad5a85}{pattern}}) \{}
+\DoxyCodeLine{1388                 \mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_a2ba2fa4b3800d452e6282c9815ad5a85}{pattern}}->~RegexType();}
+\DoxyCodeLine{1389                 AllocatorType::Free(\mbox{\hyperlink{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_a2ba2fa4b3800d452e6282c9815ad5a85}{pattern}});}
+\DoxyCodeLine{1390             \}}
+\DoxyCodeLine{1391         \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_a2ba2fa4b3800d452e6282c9815ad5a85}\label{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_a2ba2fa4b3800d452e6282c9815ad5a85}} 
+\index{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty@{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty}!pattern@{pattern}}
+\index{pattern@{pattern}!rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty@{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty}}
+\subsubsection{\texorpdfstring{pattern}{pattern}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema_a2c16b06523df78f5c354e9a68da90e23}{Regex\+Type}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema}{rapidjson\+::internal\+::\+Schema}}$<$ Schema\+Document\+Type $>$\+::Pattern\+Property\+::pattern}
+
+
+
+Definition at line 1393 of file schema.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Schema().
+
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_aebf1636280c09538973ebfb33387d4c8}\label{structrapidjson_1_1internal_1_1_schema_1_1_pattern_property_aebf1636280c09538973ebfb33387d4c8}} 
+\index{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty@{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty}!schema@{schema}}
+\index{schema@{schema}!rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty@{rapidjson::internal::Schema$<$ SchemaDocumentType $>$::PatternProperty}}
+\subsubsection{\texorpdfstring{schema}{schema}}
+{\footnotesize\ttfamily template$<$typename Schema\+Document\+Type $>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema_a62e03be17971648a9d614244ffcb0f10}{Schema\+Type}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_schema}{rapidjson\+::internal\+::\+Schema}}$<$ Schema\+Document\+Type $>$\+::Pattern\+Property\+::schema}
+
+
+
+Definition at line 1392 of file schema.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{schema_8h}{schema.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\hypertarget{classrapidjson_1_1_encoding}{}\section{rapidjson\+::Encoding Class Reference}
+\label{classrapidjson_1_1_encoding}\index{rapidjson::Encoding@{rapidjson::Encoding}}
+
+
+Concept for encoding of Unicode characters.  
+
+
+
+
+{\ttfamily \#include $<$encodings.\+h$>$}
+
+
+
+\subsection{Detailed Description}
+Concept for encoding of Unicode characters. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{concept Encoding \{}
+\DoxyCodeLine{    \textcolor{keyword}{typename} Ch;    }
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{enum} \{ supportUnicode = 1 \}; \textcolor{comment}{// or 0 if not supporting unicode}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{template}<\textcolor{keyword}{typename} OutputStream>}
+\DoxyCodeLine{    \textcolor{keyword}{static} \textcolor{keywordtype}{void} Encode(OutputStream\& os, \textcolor{keywordtype}{unsigned} codepoint);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{template} <\textcolor{keyword}{typename} InputStream>}
+\DoxyCodeLine{    \textcolor{keyword}{static} \textcolor{keywordtype}{bool} Decode(InputStream\& is, \textcolor{keywordtype}{unsigned}* codepoint);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{template} <\textcolor{keyword}{typename} InputStream, \textcolor{keyword}{typename} OutputStream>}
+\DoxyCodeLine{    \textcolor{keyword}{static} \textcolor{keywordtype}{bool} Validate(InputStream\& is, OutputStream\& os);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// The following functions are deal with byte streams.}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{template} <\textcolor{keyword}{typename} InputByteStream>}
+\DoxyCodeLine{    \textcolor{keyword}{static} CharType TakeBOM(InputByteStream\& is);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{template} <\textcolor{keyword}{typename} InputByteStream>}
+\DoxyCodeLine{    \textcolor{keyword}{static} Ch Take(InputByteStream\& is);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{template} <\textcolor{keyword}{typename} OutputByteStream>}
+\DoxyCodeLine{    \textcolor{keyword}{static} \textcolor{keywordtype}{void} PutBOM(OutputByteStream\& os);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{template} <\textcolor{keyword}{typename} OutputByteStream>}
+\DoxyCodeLine{    \textcolor{keyword}{static} \textcolor{keywordtype}{void} Put(OutputByteStream\& os, Ch c);}
+\DoxyCodeLine{\};}
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{encodings_8h}{encodings.\+h}}\end{DoxyCompactItemize}

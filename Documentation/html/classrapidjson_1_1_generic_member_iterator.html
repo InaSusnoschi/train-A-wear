@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logosmall.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">train-A-wear
+   &#160;<span id="projectnumber">2.1</span>
    </div>
+   <div id="projectbrief">Real time feedback application with wireless connection to three IMUs</div>
   </td>
  </tr>
  </tbody>
@@ -81,11 +84,6 @@ $(function() {
  <a href="classrapidjson_1_1_generic_member_iterator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="document_8h_source.html">document.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for rapidjson::GenericMemberIterator&lt; Const, Encoding, Allocator &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_member_iterator__coll__graph.png" border="0" usemap="#rapidjson_1_1_generic_member_iterator_3_01_const_00_01_encoding_00_01_allocator_01_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -489,9 +487,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::<a class="el" href="classrapidjson_1_1_generic_member_iterator.html">GenericMemberIterator</a> </td>
@@ -500,11 +495,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Default constructor (singular value) </p>
@@ -522,9 +512,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::<a class="el" href="classrapidjson_1_1_generic_member_iterator.html">GenericMemberIterator</a> </td>
@@ -534,11 +521,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Iterator conversions to more const. </p>
@@ -582,7 +564,7 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -602,9 +584,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html#abe27838f8dc71fdb38028ef27ae0b4f2">Reference</a> <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator * </td>
@@ -613,11 +592,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00188">188</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -632,9 +606,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator!= </td>
@@ -644,11 +615,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00179">179</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -665,9 +631,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html#a37091c3dd8470486ef5188f3c1108653">Iterator</a> <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator+ </td>
@@ -677,11 +640,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00169">169</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -697,9 +655,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html#a37091c3dd8470486ef5188f3c1108653">Iterator</a>&amp; <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator++ </td>
@@ -708,11 +663,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00161">161</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -727,9 +677,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html#a37091c3dd8470486ef5188f3c1108653">Iterator</a> <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator++ </td>
@@ -739,11 +686,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00163">163</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -759,9 +701,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html#a37091c3dd8470486ef5188f3c1108653">Iterator</a>&amp; <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator+= </td>
@@ -771,11 +710,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00172">172</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -790,9 +724,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html#a37091c3dd8470486ef5188f3c1108653">Iterator</a> <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator- </td>
@@ -802,11 +733,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00170">170</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -822,9 +748,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html#aff2739a9265639a7a4be8c3e6216b31a">DifferenceType</a> <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator- </td>
@@ -834,11 +757,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Distance. </p>
@@ -857,9 +775,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html#a37091c3dd8470486ef5188f3c1108653">Iterator</a>&amp; <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator-- </td>
@@ -868,11 +783,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00162">162</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -887,9 +797,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html#a37091c3dd8470486ef5188f3c1108653">Iterator</a> <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator-- </td>
@@ -899,11 +806,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00164">164</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -919,9 +821,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html#a37091c3dd8470486ef5188f3c1108653">Iterator</a>&amp; <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator-= </td>
@@ -931,11 +830,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00173">173</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -950,9 +844,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html#aa9d53504374c7c6bdf46775482c5b107">Pointer</a> <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator-&gt; </td>
@@ -961,11 +852,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00189">189</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -980,9 +866,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator&lt; </td>
@@ -992,11 +875,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00182">182</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1013,9 +891,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator&lt;= </td>
@@ -1025,11 +900,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00180">180</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1046,9 +916,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html#a37091c3dd8470486ef5188f3c1108653">Iterator</a>&amp; <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator= </td>
@@ -1058,11 +925,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00157">157</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1079,9 +941,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator== </td>
@@ -1091,11 +950,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00178">178</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1112,9 +966,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator&gt; </td>
@@ -1124,11 +975,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00183">183</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1145,9 +991,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator&gt;= </td>
@@ -1157,11 +1000,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00181">181</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1178,9 +1016,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_member_iterator.html#abe27838f8dc71fdb38028ef27ae0b4f2">Reference</a> <a class="el" href="classrapidjson_1_1_generic_member_iterator.html">rapidjson::GenericMemberIterator</a>&lt; Const, <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a> &gt;::operator[] </td>
@@ -1190,11 +1025,6 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l00190">190</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1289,12 +1119,12 @@ template&lt;bool Const, typename Encoding , typename Allocator &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Server/rapidjson/<a class="el" href="document_8h_source.html">document.h</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Server/rapidjson/<a class="el" href="document_8h_source.html">document.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2019 00:37:11 for train-A-wear by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

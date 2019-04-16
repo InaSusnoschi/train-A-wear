@@ -34,8 +34,8 @@
     <string name="textBicepsEnum">Get control over your rhythm &amp; range of motion</string>
     <string name="textLunges">Lunges</string>
     <string name="textLungesEnum">Front and back leg monitoring</string>
-    <string name="textPlank">Plank&amp;Pushup</string>
-    <string name="textPlankEnum">Back position: increase core strength</string>
+    <string name="textPlank">Plank &amp;\n Pushups</string>
+    <string name="textPlankEnum">Back position for core strength</string>
     <string name="enterWeight">(Kg)</string>
     <string name="enterHeight">(cm)</string>
     <string name="enterAge">y.o.</string>
@@ -59,6 +59,8 @@
     <string name="squat_plie">Plie</string>
     <string name="squat_weights">Weights</string>
     <string name="squat_stages">Squat stages</string>
+    <string name="squat_back_imu">Use the long strap to place one IMU on your back, as indicated</string>
+    <string name="squat_thigh_imu">With the medium strap, fix another IMU above your knee, pointing with the logo sideways</string>
     <string name="button_instructions">Wear it &amp; go</string>
     <string name="squatInstrHeadline">Instructions and Setup</string>
     <string name="calories_burned">Calories burned</string>

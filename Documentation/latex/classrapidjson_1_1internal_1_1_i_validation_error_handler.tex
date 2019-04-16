@@ -1,0 +1,589 @@
+\hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler}{}\section{rapidjson\+::internal\+::I\+Validation\+Error\+Handler$<$ Schema\+Type $>$ Class Template Reference}
+\label{classrapidjson_1_1internal_1_1_i_validation_error_handler}\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+
+
+{\ttfamily \#include $<$schema.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Schema\+Type\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a02c672a313401138fd08504062f3d1d0}{Ch}}
+\item 
+typedef Schema\+Type\+::\+S\+Value \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a54f99921bac27dbcdab23ac6833ef862}{$\sim$\+I\+Validation\+Error\+Handler}} ()
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a2dcb25e9e8550903cac1c9dd8286b7a3}{Not\+Multiple\+Of}} (\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}} actual, const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&expected)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a253234dc0dc3d1b47b486cf157377cc2}{Not\+Multiple\+Of}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} actual, const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&expected)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_ae0f755b69029d325a3acb78290b6017c}{Not\+Multiple\+Of}} (double actual, const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&expected)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a7cb6baae6be998560d17e06cba8a3c0c}{Above\+Maximum}} (\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}} actual, const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&expected, bool exclusive)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_af0a7dcbd3f67cef69afb718be0221323}{Above\+Maximum}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} actual, const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&expected, bool exclusive)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a134465169804f03198dcd528a158a68c}{Above\+Maximum}} (double actual, const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&expected, bool exclusive)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8f2ab1e22a22bcf693d40c3c8ad39c75}{Below\+Minimum}} (\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}} actual, const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&expected, bool exclusive)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a903f5f9cff1fdd68139903ff394a1205}{Below\+Minimum}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} actual, const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&expected, bool exclusive)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a135b3fb482df1b3241f679ffa53b2f57}{Below\+Minimum}} (double actual, const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&expected, bool exclusive)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a9e26e52da7914dd0a9e7a4e06db8943c}{Too\+Long}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a02c672a313401138fd08504062f3d1d0}{Ch}} $\ast$str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} length, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} expected)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_af13eb2448c9606f58af8cecc009bea85}{Too\+Short}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a02c672a313401138fd08504062f3d1d0}{Ch}} $\ast$str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} length, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} expected)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a67070bdbe6ed6196e6e2a9755fa76c9c}{Does\+Not\+Match}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a02c672a313401138fd08504062f3d1d0}{Ch}} $\ast$str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} length)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a4cccd0788979b5809c583ebd75c8bc12}{Disallowed\+Item}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} index)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_af86dfc82e6b4bd727ef69fba728dd8e4}{Too\+Few\+Items}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} actual\+Count, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} expected\+Count)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_aedeac4d4c121dba2153d22e1f38dbe70}{Too\+Many\+Items}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} actual\+Count, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} expected\+Count)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_aab9c02cddc12ea284c53d83193322e49}{Duplicate\+Items}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} index1, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} index2)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_af2cb1441d41085df755231be01964b5d}{Too\+Many\+Properties}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} actual\+Count, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} expected\+Count)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a7baac6bdae4e69e6fe187d4dbb9d27ed}{Too\+Few\+Properties}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} actual\+Count, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} expected\+Count)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a0fd6fed1e4200795bb7f0cc29e480596}{Start\+Missing\+Properties}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a65301d7c2bb6c3031d3ece06006bfc06}{Add\+Missing\+Property}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&name)=0
+\item 
+virtual bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a526d70abf63255317a748fccb20041c0}{End\+Missing\+Properties}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_af2e15dd86413c5f6553bb8eccfee7f95}{Property\+Violations}} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$$\ast$subvalidators, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} count)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a379825933d795472c421a3998cd1c5f4}{Disallowed\+Property}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a02c672a313401138fd08504062f3d1d0}{Ch}} $\ast$name, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} length)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a953298d04037e20024b69f9032a91e62}{Start\+Dependency\+Errors}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_aff210754c381fc2c79a3de0be7d7af23}{Start\+Missing\+Dependent\+Properties}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_aba0c75f077b1f7197fbb7bcefadad8a3}{Add\+Missing\+Dependent\+Property}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&target\+Name)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a5897d03c7cc4b221896867a712fd18ad}{End\+Missing\+Dependent\+Properties}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&source\+Name)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_ac35e4dff861e437141c8c1bd5ac8ca59}{Add\+Dependency\+Schema\+Error}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&souce\+Name, \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$subvalidator)=0
+\item 
+virtual bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a473437062e5ce9daeb42c6673a33154b}{End\+Dependency\+Errors}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a9b65773a1bf017098548dcec94b7bebc}{Disallowed\+Value}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a86596fb1c495f10fe08d598d29525ae1}{Start\+Disallowed\+Type}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a64fb41ff4166ee7ab77b5d874b41ab0a}{Add\+Expected\+Type}} (const typename Schema\+Type\+::\+Value\+Type \&expected\+Type)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_af2fca4e652edbbed078270d561e548d9}{End\+Disallowed\+Type}} (const typename Schema\+Type\+::\+Value\+Type \&actual\+Type)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a4764debbb404a581a4ed962d1ae769bb}{Not\+All\+Of}} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$$\ast$subvalidators, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} count)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a533d091b8167450f24d66d11783b7d69}{None\+Of}} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$$\ast$subvalidators, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} count)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a178e03c6aafa2b1c80ca08f7ebff3cd5}{Not\+One\+Of}} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$$\ast$subvalidators, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} count)=0
+\item 
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a25bb8e7b7c68b4556adce6a0b2be3c37}{Disallowed}} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Schema\+Type$>$\newline
+class rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler$<$ Schema\+Type $>$}
+
+
+
+Definition at line 163 of file schema.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a02c672a313401138fd08504062f3d1d0}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a02c672a313401138fd08504062f3d1d0}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+typedef Schema\+Type\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a02c672a313401138fd08504062f3d1d0}{Ch}}}
+
+
+
+Definition at line 165 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!SValue@{SValue}}
+\index{SValue@{SValue}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{SValue}{SValue}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+typedef Schema\+Type\+::\+S\+Value \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}}}
+
+
+
+Definition at line 166 of file schema.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a54f99921bac27dbcdab23ac6833ef862}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a54f99921bac27dbcdab23ac6833ef862}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!````~IValidationErrorHandler@{$\sim$IValidationErrorHandler}}
+\index{````~IValidationErrorHandler@{$\sim$IValidationErrorHandler}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{$\sim$IValidationErrorHandler()}{~IValidationErrorHandler()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::$\sim$\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{I\+Validation\+Error\+Handler}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 168 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{168 \{\}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a7cb6baae6be998560d17e06cba8a3c0c}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a7cb6baae6be998560d17e06cba8a3c0c}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!AboveMaximum@{AboveMaximum}}
+\index{AboveMaximum@{AboveMaximum}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{AboveMaximum()}{AboveMaximum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Above\+Maximum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}}}]{actual,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&}]{expected,  }\item[{bool}]{exclusive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Double\+Maximum(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Int(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Uint().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_af0a7dcbd3f67cef69afb718be0221323}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_af0a7dcbd3f67cef69afb718be0221323}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!AboveMaximum@{AboveMaximum}}
+\index{AboveMaximum@{AboveMaximum}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{AboveMaximum()}{AboveMaximum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Above\+Maximum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{actual,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&}]{expected,  }\item[{bool}]{exclusive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a134465169804f03198dcd528a158a68c}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a134465169804f03198dcd528a158a68c}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!AboveMaximum@{AboveMaximum}}
+\index{AboveMaximum@{AboveMaximum}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{AboveMaximum()}{AboveMaximum()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Above\+Maximum (\begin{DoxyParamCaption}\item[{double}]{actual,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&}]{expected,  }\item[{bool}]{exclusive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_ac35e4dff861e437141c8c1bd5ac8ca59}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_ac35e4dff861e437141c8c1bd5ac8ca59}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!AddDependencySchemaError@{AddDependencySchemaError}}
+\index{AddDependencySchemaError@{AddDependencySchemaError}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{AddDependencySchemaError()}{AddDependencySchemaError()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Add\+Dependency\+Schema\+Error (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&}]{souce\+Name,  }\item[{\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$}]{subvalidator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a64fb41ff4166ee7ab77b5d874b41ab0a}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a64fb41ff4166ee7ab77b5d874b41ab0a}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!AddExpectedType@{AddExpectedType}}
+\index{AddExpectedType@{AddExpectedType}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{AddExpectedType()}{AddExpectedType()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Add\+Expected\+Type (\begin{DoxyParamCaption}\item[{const typename Schema\+Type\+::\+Value\+Type \&}]{expected\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Disallowed\+Type().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_aba0c75f077b1f7197fbb7bcefadad8a3}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_aba0c75f077b1f7197fbb7bcefadad8a3}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!AddMissingDependentProperty@{AddMissingDependentProperty}}
+\index{AddMissingDependentProperty@{AddMissingDependentProperty}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{AddMissingDependentProperty()}{AddMissingDependentProperty()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Add\+Missing\+Dependent\+Property (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&}]{target\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a65301d7c2bb6c3031d3ece06006bfc06}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a65301d7c2bb6c3031d3ece06006bfc06}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!AddMissingProperty@{AddMissingProperty}}
+\index{AddMissingProperty@{AddMissingProperty}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{AddMissingProperty()}{AddMissingProperty()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Add\+Missing\+Property (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8f2ab1e22a22bcf693d40c3c8ad39c75}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8f2ab1e22a22bcf693d40c3c8ad39c75}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!BelowMinimum@{BelowMinimum}}
+\index{BelowMinimum@{BelowMinimum}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{BelowMinimum()}{BelowMinimum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Below\+Minimum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}}}]{actual,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&}]{expected,  }\item[{bool}]{exclusive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Double\+Minimum(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Int(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Uint().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a903f5f9cff1fdd68139903ff394a1205}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a903f5f9cff1fdd68139903ff394a1205}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!BelowMinimum@{BelowMinimum}}
+\index{BelowMinimum@{BelowMinimum}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{BelowMinimum()}{BelowMinimum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Below\+Minimum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{actual,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&}]{expected,  }\item[{bool}]{exclusive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a135b3fb482df1b3241f679ffa53b2f57}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a135b3fb482df1b3241f679ffa53b2f57}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!BelowMinimum@{BelowMinimum}}
+\index{BelowMinimum@{BelowMinimum}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{BelowMinimum()}{BelowMinimum()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Below\+Minimum (\begin{DoxyParamCaption}\item[{double}]{actual,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&}]{expected,  }\item[{bool}]{exclusive }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a25bb8e7b7c68b4556adce6a0b2be3c37}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a25bb8e7b7c68b4556adce6a0b2be3c37}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!Disallowed@{Disallowed}}
+\index{Disallowed@{Disallowed}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{Disallowed()}{Disallowed()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Disallowed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_a73838d75ed8f38e20f3b6798b4a56db5}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a4cccd0788979b5809c583ebd75c8bc12}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a4cccd0788979b5809c583ebd75c8bc12}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!DisallowedItem@{DisallowedItem}}
+\index{DisallowedItem@{DisallowedItem}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{DisallowedItem()}{DisallowedItem()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Disallowed\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_ab4bd946cbdce3e9207aa58f204b0abd0}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Begin\+Value().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a379825933d795472c421a3998cd1c5f4}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a379825933d795472c421a3998cd1c5f4}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!DisallowedProperty@{DisallowedProperty}}
+\index{DisallowedProperty@{DisallowedProperty}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{DisallowedProperty()}{DisallowedProperty()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Disallowed\+Property (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a02c672a313401138fd08504062f3d1d0}{Ch}} $\ast$}]{name,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Key().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a9b65773a1bf017098548dcec94b7bebc}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a9b65773a1bf017098548dcec94b7bebc}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!DisallowedValue@{DisallowedValue}}
+\index{DisallowedValue@{DisallowedValue}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{DisallowedValue()}{DisallowedValue()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Disallowed\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_a5dd6854ff499756cc6f5bc20b24b5feb}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a67070bdbe6ed6196e6e2a9755fa76c9c}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a67070bdbe6ed6196e6e2a9755fa76c9c}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!DoesNotMatch@{DoesNotMatch}}
+\index{DoesNotMatch@{DoesNotMatch}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{DoesNotMatch()}{DoesNotMatch()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Does\+Not\+Match (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a02c672a313401138fd08504062f3d1d0}{Ch}} $\ast$}]{str,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+String().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_aab9c02cddc12ea284c53d83193322e49}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_aab9c02cddc12ea284c53d83193322e49}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!DuplicateItems@{DuplicateItems}}
+\index{DuplicateItems@{DuplicateItems}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{DuplicateItems()}{DuplicateItems()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Duplicate\+Items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{index1,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{index2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_a7ad5d50a8df51dd51012bd3a525b0366}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a473437062e5ce9daeb42c6673a33154b}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a473437062e5ce9daeb42c6673a33154b}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!EndDependencyErrors@{EndDependencyErrors}}
+\index{EndDependencyErrors@{EndDependencyErrors}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{EndDependencyErrors()}{EndDependencyErrors()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::End\+Dependency\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_aea5bba6aaf0847e58c3787e91baf2674}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_af2fca4e652edbbed078270d561e548d9}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_af2fca4e652edbbed078270d561e548d9}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!EndDisallowedType@{EndDisallowedType}}
+\index{EndDisallowedType@{EndDisallowedType}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{EndDisallowedType()}{EndDisallowedType()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::End\+Disallowed\+Type (\begin{DoxyParamCaption}\item[{const typename Schema\+Type\+::\+Value\+Type \&}]{actual\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Disallowed\+Type().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a5897d03c7cc4b221896867a712fd18ad}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a5897d03c7cc4b221896867a712fd18ad}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!EndMissingDependentProperties@{EndMissingDependentProperties}}
+\index{EndMissingDependentProperties@{EndMissingDependentProperties}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{EndMissingDependentProperties()}{EndMissingDependentProperties()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::End\+Missing\+Dependent\+Properties (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&}]{source\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a526d70abf63255317a748fccb20041c0}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a526d70abf63255317a748fccb20041c0}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!EndMissingProperties@{EndMissingProperties}}
+\index{EndMissingProperties@{EndMissingProperties}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{EndMissingProperties()}{EndMissingProperties()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::End\+Missing\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_a981efd4aab86914496aa4f6f5b343c41}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a533d091b8167450f24d66d11783b7d69}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a533d091b8167450f24d66d11783b7d69}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!NoneOf@{NoneOf}}
+\index{NoneOf@{NoneOf}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{NoneOf()}{NoneOf()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::None\+Of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$$\ast$}]{subvalidators,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a4764debbb404a581a4ed962d1ae769bb}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a4764debbb404a581a4ed962d1ae769bb}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!NotAllOf@{NotAllOf}}
+\index{NotAllOf@{NotAllOf}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{NotAllOf()}{NotAllOf()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Not\+All\+Of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$$\ast$}]{subvalidators,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a2dcb25e9e8550903cac1c9dd8286b7a3}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a2dcb25e9e8550903cac1c9dd8286b7a3}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!NotMultipleOf@{NotMultipleOf}}
+\index{NotMultipleOf@{NotMultipleOf}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{NotMultipleOf()}{NotMultipleOf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Not\+Multiple\+Of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}}}]{actual,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&}]{expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Double\+Multiple\+Of(), rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Int(), and rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Check\+Uint().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a253234dc0dc3d1b47b486cf157377cc2}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a253234dc0dc3d1b47b486cf157377cc2}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!NotMultipleOf@{NotMultipleOf}}
+\index{NotMultipleOf@{NotMultipleOf}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{NotMultipleOf()}{NotMultipleOf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Not\+Multiple\+Of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{actual,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&}]{expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_ae0f755b69029d325a3acb78290b6017c}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_ae0f755b69029d325a3acb78290b6017c}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!NotMultipleOf@{NotMultipleOf}}
+\index{NotMultipleOf@{NotMultipleOf}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{NotMultipleOf()}{NotMultipleOf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Not\+Multiple\+Of (\begin{DoxyParamCaption}\item[{double}]{actual,  }\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a8a2aaf7eb28a3ce7ed81689141f3af1f}{S\+Value}} \&}]{expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a178e03c6aafa2b1c80ca08f7ebff3cd5}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a178e03c6aafa2b1c80ca08f7ebff3cd5}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!NotOneOf@{NotOneOf}}
+\index{NotOneOf@{NotOneOf}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{NotOneOf()}{NotOneOf()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Not\+One\+Of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$$\ast$}]{subvalidators,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_af2e15dd86413c5f6553bb8eccfee7f95}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_af2e15dd86413c5f6553bb8eccfee7f95}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!PropertyViolations@{PropertyViolations}}
+\index{PropertyViolations@{PropertyViolations}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{PropertyViolations()}{PropertyViolations()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Property\+Violations (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_schema_validator}{I\+Schema\+Validator}} $\ast$$\ast$}]{subvalidators,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Value().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a953298d04037e20024b69f9032a91e62}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a953298d04037e20024b69f9032a91e62}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!StartDependencyErrors@{StartDependencyErrors}}
+\index{StartDependencyErrors@{StartDependencyErrors}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{StartDependencyErrors()}{StartDependencyErrors()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Start\+Dependency\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_a980ede674d2e3383266ce3f11e998ff2}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a86596fb1c495f10fe08d598d29525ae1}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a86596fb1c495f10fe08d598d29525ae1}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!StartDisallowedType@{StartDisallowedType}}
+\index{StartDisallowedType@{StartDisallowedType}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{StartDisallowedType()}{StartDisallowedType()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Start\+Disallowed\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_a6032d1e04492a898ff2134006bd9d675}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+Disallowed\+Type().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_aff210754c381fc2c79a3de0be7d7af23}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_aff210754c381fc2c79a3de0be7d7af23}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!StartMissingDependentProperties@{StartMissingDependentProperties}}
+\index{StartMissingDependentProperties@{StartMissingDependentProperties}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{StartMissingDependentProperties()}{StartMissingDependentProperties()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Start\+Missing\+Dependent\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_a4b376874448fc49abb14f88044ea6cde}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a0fd6fed1e4200795bb7f0cc29e480596}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a0fd6fed1e4200795bb7f0cc29e480596}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!StartMissingProperties@{StartMissingProperties}}
+\index{StartMissingProperties@{StartMissingProperties}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{StartMissingProperties()}{StartMissingProperties()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Start\+Missing\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_ae2689c5db02a0f47bc986393c6a3f4ce}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_af86dfc82e6b4bd727ef69fba728dd8e4}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_af86dfc82e6b4bd727ef69fba728dd8e4}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!TooFewItems@{TooFewItems}}
+\index{TooFewItems@{TooFewItems}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{TooFewItems()}{TooFewItems()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Too\+Few\+Items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{actual\+Count,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{expected\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_a96614fd25cd28294486f9212d49807eb}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Array().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a7baac6bdae4e69e6fe187d4dbb9d27ed}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a7baac6bdae4e69e6fe187d4dbb9d27ed}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!TooFewProperties@{TooFewProperties}}
+\index{TooFewProperties@{TooFewProperties}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{TooFewProperties()}{TooFewProperties()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Too\+Few\+Properties (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{actual\+Count,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{expected\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_aa7c129bc7d97e65c23e8d6733c331a9d}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_a9e26e52da7914dd0a9e7a4e06db8943c}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_a9e26e52da7914dd0a9e7a4e06db8943c}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!TooLong@{TooLong}}
+\index{TooLong@{TooLong}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{TooLong()}{TooLong()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Too\+Long (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a02c672a313401138fd08504062f3d1d0}{Ch}} $\ast$}]{str,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{length,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+String().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_aedeac4d4c121dba2153d22e1f38dbe70}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_aedeac4d4c121dba2153d22e1f38dbe70}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!TooManyItems@{TooManyItems}}
+\index{TooManyItems@{TooManyItems}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{TooManyItems()}{TooManyItems()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Too\+Many\+Items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{actual\+Count,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{expected\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_a17d9808adb5cdd5e9a253b309b10b570}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Array().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_af2cb1441d41085df755231be01964b5d}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_af2cb1441d41085df755231be01964b5d}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!TooManyProperties@{TooManyProperties}}
+\index{TooManyProperties@{TooManyProperties}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{TooManyProperties()}{TooManyProperties()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Too\+Many\+Properties (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{actual\+Count,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{expected\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classrapidjson_1_1_generic_schema_validator_acbaaa6d63ebdd11b8526fe4c7d6ba3cf}{rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$}}.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+End\+Object().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_i_validation_error_handler_af13eb2448c9606f58af8cecc009bea85}\label{classrapidjson_1_1internal_1_1_i_validation_error_handler_af13eb2448c9606f58af8cecc009bea85}} 
+\index{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}!TooShort@{TooShort}}
+\index{TooShort@{TooShort}!rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$@{rapidjson::internal::IValidationErrorHandler$<$ SchemaType $>$}}
+\subsubsection{\texorpdfstring{TooShort()}{TooShort()}}
+{\footnotesize\ttfamily template$<$typename Schema\+Type$>$ \\
+virtual void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler}{rapidjson\+::internal\+::\+I\+Validation\+Error\+Handler}}$<$ Schema\+Type $>$\+::Too\+Short (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_i_validation_error_handler_a02c672a313401138fd08504062f3d1d0}{Ch}} $\ast$}]{str,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{length,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Referenced by rapidjson\+::internal\+::\+Schema$<$ Schema\+Document\+Type $>$\+::\+String().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{schema_8h}{schema.\+h}}\end{DoxyCompactItemize}

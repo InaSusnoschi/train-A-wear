@@ -1,0 +1,153 @@
+\hypertarget{classrapidjson_1_1internal_1_1_decoded_stream}{}\section{rapidjson\+::internal\+::Decoded\+Stream$<$ Source\+Stream, Encoding $>$ Class Template Reference}
+\label{classrapidjson_1_1internal_1_1_decoded_stream}\index{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$@{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$}}
+
+
+{\ttfamily \#include $<$regex.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_ac8562bb70e02fd6cf179917fb244ea04}{Decoded\+Stream}} (Source\+Stream \&ss)
+\item 
+unsigned \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a28a389478d1981546e6259c8cf0f2377}{Peek}} ()
+\item 
+unsigned \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a1fd014dd83e153369ecad40886093685}{Take}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a42d12efc1b9b4dca1214e01326e693cf}{Decode}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Source\+Stream \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a3ea2b140a9dac55ea82ad7423454139f}{ss\+\_\+}}
+\item 
+unsigned \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a3a10e5ba9d127706d9168e2ce6d3811c}{codepoint\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Source\+Stream, typename Encoding$>$\newline
+class rapidjson\+::internal\+::\+Decoded\+Stream$<$ Source\+Stream, Encoding $>$}
+
+
+
+Definition at line 51 of file regex.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_decoded_stream_ac8562bb70e02fd6cf179917fb244ea04}\label{classrapidjson_1_1internal_1_1_decoded_stream_ac8562bb70e02fd6cf179917fb244ea04}} 
+\index{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$@{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$}!DecodedStream@{DecodedStream}}
+\index{DecodedStream@{DecodedStream}!rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$@{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$}}
+\subsubsection{\texorpdfstring{DecodedStream()}{DecodedStream()}}
+{\footnotesize\ttfamily template$<$typename Source\+Stream, typename Encoding$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream}{rapidjson\+::internal\+::\+Decoded\+Stream}}$<$ Source\+Stream, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream}{Decoded\+Stream}} (\begin{DoxyParamCaption}\item[{Source\+Stream \&}]{ss }\end{DoxyParamCaption})}
+
+
+
+Definition at line 53 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53 : \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a3ea2b140a9dac55ea82ad7423454139f}{ss\_}}(ss), \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a3a10e5ba9d127706d9168e2ce6d3811c}{codepoint\_}}() \{ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a42d12efc1b9b4dca1214e01326e693cf}{Decode}}(); \}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_decoded_stream_a42d12efc1b9b4dca1214e01326e693cf}\label{classrapidjson_1_1internal_1_1_decoded_stream_a42d12efc1b9b4dca1214e01326e693cf}} 
+\index{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$@{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$}!Decode@{Decode}}
+\index{Decode@{Decode}!rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$@{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$}}
+\subsubsection{\texorpdfstring{Decode()}{Decode()}}
+{\footnotesize\ttfamily template$<$typename Source\+Stream, typename Encoding$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream}{rapidjson\+::internal\+::\+Decoded\+Stream}}$<$ Source\+Stream, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Decode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 63 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63                   \{}
+\DoxyCodeLine{64         \textcolor{keywordflow}{if} (!Encoding::Decode(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a3ea2b140a9dac55ea82ad7423454139f}{ss\_}}, \&\mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a3a10e5ba9d127706d9168e2ce6d3811c}{codepoint\_}}))}
+\DoxyCodeLine{65             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a3a10e5ba9d127706d9168e2ce6d3811c}{codepoint\_}} = 0;}
+\DoxyCodeLine{66     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_decoded_stream_a28a389478d1981546e6259c8cf0f2377}\label{classrapidjson_1_1internal_1_1_decoded_stream_a28a389478d1981546e6259c8cf0f2377}} 
+\index{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$@{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$}!Peek@{Peek}}
+\index{Peek@{Peek}!rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$@{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$}}
+\subsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily template$<$typename Source\+Stream, typename Encoding$>$ \\
+unsigned \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream}{rapidjson\+::internal\+::\+Decoded\+Stream}}$<$ Source\+Stream, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 54 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a3a10e5ba9d127706d9168e2ce6d3811c}{codepoint\_}}; \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Parse(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Parse\+Range(), and rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Parse\+Unsigned().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_decoded_stream_a1fd014dd83e153369ecad40886093685}\label{classrapidjson_1_1internal_1_1_decoded_stream_a1fd014dd83e153369ecad40886093685}} 
+\index{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$@{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$}!Take@{Take}}
+\index{Take@{Take}!rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$@{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$}}
+\subsubsection{\texorpdfstring{Take()}{Take()}}
+{\footnotesize\ttfamily template$<$typename Source\+Stream, typename Encoding$>$ \\
+unsigned \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream}{rapidjson\+::internal\+::\+Decoded\+Stream}}$<$ Source\+Stream, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Take (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file regex.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                     \{}
+\DoxyCodeLine{56         \textcolor{keywordtype}{unsigned} c = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a3a10e5ba9d127706d9168e2ce6d3811c}{codepoint\_}};}
+\DoxyCodeLine{57         \textcolor{keywordflow}{if} (c) \textcolor{comment}{// No further decoding when '\(\backslash\)0'}}
+\DoxyCodeLine{58             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream_a42d12efc1b9b4dca1214e01326e693cf}{Decode}}();}
+\DoxyCodeLine{59         \textcolor{keywordflow}{return} c;}
+\DoxyCodeLine{60     \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Character\+Escape(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Parse(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Parse\+Range(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Parse\+Unsigned(), and rapidjson\+::internal\+::\+Generic\+Regex\+Search$<$ Regex\+Type, Allocator $>$\+::\+Search\+With\+Anchoring().
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_decoded_stream_a3a10e5ba9d127706d9168e2ce6d3811c}\label{classrapidjson_1_1internal_1_1_decoded_stream_a3a10e5ba9d127706d9168e2ce6d3811c}} 
+\index{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$@{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$}!codepoint\_@{codepoint\_}}
+\index{codepoint\_@{codepoint\_}!rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$@{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$}}
+\subsubsection{\texorpdfstring{codepoint\_}{codepoint\_}}
+{\footnotesize\ttfamily template$<$typename Source\+Stream, typename Encoding$>$ \\
+unsigned \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream}{rapidjson\+::internal\+::\+Decoded\+Stream}}$<$ Source\+Stream, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::codepoint\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 69 of file regex.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_decoded_stream_a3ea2b140a9dac55ea82ad7423454139f}\label{classrapidjson_1_1internal_1_1_decoded_stream_a3ea2b140a9dac55ea82ad7423454139f}} 
+\index{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$@{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$}!ss\_@{ss\_}}
+\index{ss\_@{ss\_}!rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$@{rapidjson::internal::DecodedStream$<$ SourceStream, Encoding $>$}}
+\subsubsection{\texorpdfstring{ss\_}{ss\_}}
+{\footnotesize\ttfamily template$<$typename Source\+Stream, typename Encoding$>$ \\
+Source\+Stream\& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_decoded_stream}{rapidjson\+::internal\+::\+Decoded\+Stream}}$<$ Source\+Stream, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::ss\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 68 of file regex.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/internal/\mbox{\hyperlink{regex_8h}{regex.\+h}}\end{DoxyCompactItemize}

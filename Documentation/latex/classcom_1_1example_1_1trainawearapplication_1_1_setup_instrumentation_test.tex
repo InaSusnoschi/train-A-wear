@@ -1,0 +1,130 @@
+\hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test}{}\section{com.\+example.\+trainawearapplication.\+Setup\+Instrumentation\+Test Class Reference}
+\label{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test}\index{com.example.trainawearapplication.SetupInstrumentationTest@{com.example.trainawearapplication.SetupInstrumentationTest}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a4dbc2cfc0d101616f6c60f075bc55d58}{login\+\_\+success}} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+final Activity\+Test\+Rule$<$ \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup}{Setup}} $>$ \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_ac9f8d1c61d6707efca17625aa2c3ca28}{activity\+Activity\+Test\+Rule}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a969cc5898cf6bdc58207c1944f573a78}{height\+\_\+tobe\+\_\+typed}} = \char`\"{}160\char`\"{}
+\item 
+String \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a09706ee1f2c90e4a5ea3edb460714adb}{weight}} = \char`\"{}60\char`\"{}
+\item 
+String \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a8c73f8c3f826243e4d875a7e5a9898ff}{age}} = \char`\"{}25\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file Setup\+Instrumentation\+Test.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a4dbc2cfc0d101616f6c60f075bc55d58}\label{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a4dbc2cfc0d101616f6c60f075bc55d58}} 
+\index{com.example.trainawearapplication.SetupInstrumentationTest@{com.example.trainawearapplication.SetupInstrumentationTest}!login\_success@{login\_success}}
+\index{login\_success@{login\_success}!com.example.trainawearapplication.SetupInstrumentationTest@{com.example.trainawearapplication.SetupInstrumentationTest}}
+\subsubsection{\texorpdfstring{login\_success()}{login\_success()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Setup\+Instrumentation\+Test.\+login\+\_\+success (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file Setup\+Instrumentation\+Test.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                \{}
+\DoxyCodeLine{38         \textcolor{comment}{//always launch your activity. No need to declare intent so it can be null}}
+\DoxyCodeLine{39         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_ac9f8d1c61d6707efca17625aa2c3ca28}{activityActivityTestRule}}.launchActivity(\textcolor{keyword}{null});}
+\DoxyCodeLine{40         Log.e(\textcolor{stringliteral}{"@Test"},\textcolor{stringliteral}{"Performing login success test"});}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42         \textcolor{comment}{//iterate through various buttons, text fields etc,}}
+\DoxyCodeLine{43         \textcolor{comment}{// //but always remember that activities need to be tested in sequence}}
+\DoxyCodeLine{44         \textcolor{comment}{// and always from the first step until the last one you want to test}}
+\DoxyCodeLine{45         Espresso.onView((withId(R.id.editHeight)))}
+\DoxyCodeLine{46                 .perform(ViewActions.typeText(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a969cc5898cf6bdc58207c1944f573a78}{height\_tobe\_typed}}));}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48         Espresso.onView(withId(R.id.editWeight))}
+\DoxyCodeLine{49                 .perform(ViewActions.typeText(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a09706ee1f2c90e4a5ea3edb460714adb}{weight}}));}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         Espresso.onView(withId(R.id.editAge))}
+\DoxyCodeLine{52                 .perform(ViewActions.typeText(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a8c73f8c3f826243e4d875a7e5a9898ff}{age}}));}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54         Espresso.onView(withId(R.id.buttonDone))}
+\DoxyCodeLine{55                 .perform(ViewActions.click());}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57         \textcolor{comment}{//checking for a text being displayed is needs to have a matcher for the text and a matcher for the view}}
+\DoxyCodeLine{58         \textcolor{comment}{//in this case check(matches(withText will check the text}}
+\DoxyCodeLine{59         \textcolor{comment}{//and check(matches(isDisplayed() will validate the view which contains the text is displayed}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61        \textcolor{comment}{/* Espresso.onView(withId(R.id.textAllSet)).check(matches(withText(R.string.ready)))}}
+\DoxyCodeLine{62 \textcolor{comment}{                .check(matches(isDisplayed()));*/}}
+\DoxyCodeLine{63     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Done, com.\+example.\+trainawearapplication.\+R.\+id.\+edit\+Age, com.\+example.\+trainawearapplication.\+R.\+id.\+edit\+Height, and com.\+example.\+trainawearapplication.\+R.\+id.\+edit\+Weight.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_ac9f8d1c61d6707efca17625aa2c3ca28}\label{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_ac9f8d1c61d6707efca17625aa2c3ca28}} 
+\index{com.example.trainawearapplication.SetupInstrumentationTest@{com.example.trainawearapplication.SetupInstrumentationTest}!activityActivityTestRule@{activityActivityTestRule}}
+\index{activityActivityTestRule@{activityActivityTestRule}!com.example.trainawearapplication.SetupInstrumentationTest@{com.example.trainawearapplication.SetupInstrumentationTest}}
+\subsubsection{\texorpdfstring{activityActivityTestRule}{activityActivityTestRule}}
+{\footnotesize\ttfamily final Activity\+Test\+Rule$<$\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_setup}{Setup}}$>$ com.\+example.\+trainawearapplication.\+Setup\+Instrumentation\+Test.\+activity\+Activity\+Test\+Rule}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            \textcolor{keyword}{new} ActivityTestRule<>(Setup.class)}
+
+\end{DoxyCode}
+
+
+Definition at line 26 of file Setup\+Instrumentation\+Test.\+java.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a8c73f8c3f826243e4d875a7e5a9898ff}\label{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a8c73f8c3f826243e4d875a7e5a9898ff}} 
+\index{com.example.trainawearapplication.SetupInstrumentationTest@{com.example.trainawearapplication.SetupInstrumentationTest}!age@{age}}
+\index{age@{age}!com.example.trainawearapplication.SetupInstrumentationTest@{com.example.trainawearapplication.SetupInstrumentationTest}}
+\subsubsection{\texorpdfstring{age}{age}}
+{\footnotesize\ttfamily String com.\+example.\+trainawearapplication.\+Setup\+Instrumentation\+Test.\+age = \char`\"{}25\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Setup\+Instrumentation\+Test.\+java.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a969cc5898cf6bdc58207c1944f573a78}\label{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a969cc5898cf6bdc58207c1944f573a78}} 
+\index{com.example.trainawearapplication.SetupInstrumentationTest@{com.example.trainawearapplication.SetupInstrumentationTest}!height\_tobe\_typed@{height\_tobe\_typed}}
+\index{height\_tobe\_typed@{height\_tobe\_typed}!com.example.trainawearapplication.SetupInstrumentationTest@{com.example.trainawearapplication.SetupInstrumentationTest}}
+\subsubsection{\texorpdfstring{height\_tobe\_typed}{height\_tobe\_typed}}
+{\footnotesize\ttfamily String com.\+example.\+trainawearapplication.\+Setup\+Instrumentation\+Test.\+height\+\_\+tobe\+\_\+typed = \char`\"{}160\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file Setup\+Instrumentation\+Test.\+java.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a09706ee1f2c90e4a5ea3edb460714adb}\label{classcom_1_1example_1_1trainawearapplication_1_1_setup_instrumentation_test_a09706ee1f2c90e4a5ea3edb460714adb}} 
+\index{com.example.trainawearapplication.SetupInstrumentationTest@{com.example.trainawearapplication.SetupInstrumentationTest}!weight@{weight}}
+\index{weight@{weight}!com.example.trainawearapplication.SetupInstrumentationTest@{com.example.trainawearapplication.SetupInstrumentationTest}}
+\subsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily String com.\+example.\+trainawearapplication.\+Setup\+Instrumentation\+Test.\+weight = \char`\"{}60\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file Setup\+Instrumentation\+Test.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Phone App/app/src/android\+Test/java/com/example/trainawearapplication/\mbox{\hyperlink{_setup_instrumentation_test_8java}{Setup\+Instrumentation\+Test.\+java}}\end{DoxyCompactItemize}

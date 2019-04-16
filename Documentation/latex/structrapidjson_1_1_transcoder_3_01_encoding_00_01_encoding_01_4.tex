@@ -1,0 +1,101 @@
+\hypertarget{structrapidjson_1_1_transcoder_3_01_encoding_00_01_encoding_01_4}{}\section{rapidjson\+::Transcoder$<$ Encoding, Encoding $>$ Struct Template Reference}
+\label{structrapidjson_1_1_transcoder_3_01_encoding_00_01_encoding_01_4}\index{rapidjson::Transcoder$<$ Encoding, Encoding $>$@{rapidjson::Transcoder$<$ Encoding, Encoding $>$}}
+
+
+Specialization of \mbox{\hyperlink{structrapidjson_1_1_transcoder}{Transcoder}} with same source and target encoding.  
+
+
+
+
+{\ttfamily \#include $<$encodings.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Input\+Stream , typename Output\+Stream $>$ }\\static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{structrapidjson_1_1_transcoder_3_01_encoding_00_01_encoding_01_4_a4c5e8e01daad553a941f5ea79c4a7339}{Transcode}} (Input\+Stream \&is, Output\+Stream \&os)
+\item 
+{\footnotesize template$<$typename Input\+Stream , typename Output\+Stream $>$ }\\static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{structrapidjson_1_1_transcoder_3_01_encoding_00_01_encoding_01_4_a9c948b02461065bf29e804f3450d693c}{Transcode\+Unsafe}} (Input\+Stream \&is, Output\+Stream \&os)
+\item 
+{\footnotesize template$<$typename Input\+Stream , typename Output\+Stream $>$ }\\static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{structrapidjson_1_1_transcoder_3_01_encoding_00_01_encoding_01_4_ab95578d89524b757c72c246e7e663417}{Validate}} (Input\+Stream \&is, Output\+Stream \&os)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Encoding$>$\newline
+struct rapidjson\+::\+Transcoder$<$ Encoding, Encoding $>$}
+
+Specialization of \mbox{\hyperlink{structrapidjson_1_1_transcoder}{Transcoder}} with same source and target encoding. 
+
+Definition at line 691 of file encodings.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_transcoder_3_01_encoding_00_01_encoding_01_4_a4c5e8e01daad553a941f5ea79c4a7339}\label{structrapidjson_1_1_transcoder_3_01_encoding_00_01_encoding_01_4_a4c5e8e01daad553a941f5ea79c4a7339}} 
+\index{rapidjson::Transcoder$<$ Encoding, Encoding $>$@{rapidjson::Transcoder$<$ Encoding, Encoding $>$}!Transcode@{Transcode}}
+\index{Transcode@{Transcode}!rapidjson::Transcoder$<$ Encoding, Encoding $>$@{rapidjson::Transcoder$<$ Encoding, Encoding $>$}}
+\subsubsection{\texorpdfstring{Transcode()}{Transcode()}}
+{\footnotesize\ttfamily template$<$typename Encoding $>$ \\
+template$<$typename Input\+Stream , typename Output\+Stream $>$ \\
+static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{structrapidjson_1_1_transcoder}{rapidjson\+::\+Transcoder}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Transcode (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{Output\+Stream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 693 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{693                                                                                    \{}
+\DoxyCodeLine{694         os.Put(is.Take());  \textcolor{comment}{// Just copy one code unit. This semantic is different from primary template class.}}
+\DoxyCodeLine{695         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{696     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_transcoder_3_01_encoding_00_01_encoding_01_4_a9c948b02461065bf29e804f3450d693c}\label{structrapidjson_1_1_transcoder_3_01_encoding_00_01_encoding_01_4_a9c948b02461065bf29e804f3450d693c}} 
+\index{rapidjson::Transcoder$<$ Encoding, Encoding $>$@{rapidjson::Transcoder$<$ Encoding, Encoding $>$}!TranscodeUnsafe@{TranscodeUnsafe}}
+\index{TranscodeUnsafe@{TranscodeUnsafe}!rapidjson::Transcoder$<$ Encoding, Encoding $>$@{rapidjson::Transcoder$<$ Encoding, Encoding $>$}}
+\subsubsection{\texorpdfstring{TranscodeUnsafe()}{TranscodeUnsafe()}}
+{\footnotesize\ttfamily template$<$typename Encoding $>$ \\
+template$<$typename Input\+Stream , typename Output\+Stream $>$ \\
+static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{structrapidjson_1_1_transcoder}{rapidjson\+::\+Transcoder}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Transcode\+Unsafe (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{Output\+Stream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 699 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{699                                                                                          \{}
+\DoxyCodeLine{700         \mbox{\hyperlink{namespacerapidjson_a0a774dcffe8ae07686f459ae017d2f20}{PutUnsafe}}(os, is.Take());  \textcolor{comment}{// Just copy one code unit. This semantic is different from primary template class.}}
+\DoxyCodeLine{701         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{702     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Put\+Unsafe().
+
+\mbox{\Hypertarget{structrapidjson_1_1_transcoder_3_01_encoding_00_01_encoding_01_4_ab95578d89524b757c72c246e7e663417}\label{structrapidjson_1_1_transcoder_3_01_encoding_00_01_encoding_01_4_ab95578d89524b757c72c246e7e663417}} 
+\index{rapidjson::Transcoder$<$ Encoding, Encoding $>$@{rapidjson::Transcoder$<$ Encoding, Encoding $>$}!Validate@{Validate}}
+\index{Validate@{Validate}!rapidjson::Transcoder$<$ Encoding, Encoding $>$@{rapidjson::Transcoder$<$ Encoding, Encoding $>$}}
+\subsubsection{\texorpdfstring{Validate()}{Validate()}}
+{\footnotesize\ttfamily template$<$typename Encoding $>$ \\
+template$<$typename Input\+Stream , typename Output\+Stream $>$ \\
+static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE bool \mbox{\hyperlink{structrapidjson_1_1_transcoder}{rapidjson\+::\+Transcoder}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}}, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Validate (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{Output\+Stream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 705 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{705                                                                                   \{}
+\DoxyCodeLine{706         \textcolor{keywordflow}{return} Encoding::Validate(is, os);  \textcolor{comment}{// source/target encoding are the same}}
+\DoxyCodeLine{707     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{encodings_8h}{encodings.\+h}}\end{DoxyCompactItemize}

@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logosmall.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">train-A-wear
+   &#160;<span id="projectnumber">2.1</span>
    </div>
+   <div id="projectbrief">Real time feedback application with wireless connection to three IMUs</div>
   </td>
  </tr>
  </tbody>
@@ -79,11 +82,6 @@ $(function() {
  <a href="structrapidjson_1_1_parse_result.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="error_8h_source.html">error.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for rapidjson::ParseResult:</div>
-<div class="dyncontent">
-<div class="center"><img src="structrapidjson_1_1_parse_result__coll__graph.png" border="0" usemap="#rapidjson_1_1_parse_result_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -170,9 +168,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">rapidjson::ParseResult::ParseResult </td>
@@ -181,11 +176,6 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Default constructor, no error. </p>
@@ -202,9 +192,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">rapidjson::ParseResult::ParseResult </td>
@@ -224,11 +211,6 @@ Friends</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructor to set an error. </p>
@@ -245,9 +227,6 @@ Friends</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void rapidjson::ParseResult::Clear </td>
@@ -256,11 +235,6 @@ Friends</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Reset error code. </p>
@@ -272,11 +246,6 @@ Friends</h2></td></tr>
 <p class="reference">References <a class="el" href="error_8h_source.html#l00065">rapidjson::kParseErrorNone</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="reader_8h_source.html#l02176">rapidjson::GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::IterativeParse()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="structrapidjson_1_1_parse_result_a17c9f7f81675283393222658d613000f_icgraph.png" border="0" usemap="#structrapidjson_1_1_parse_result_a17c9f7f81675283393222658d613000f_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -285,9 +254,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s.html#ga7d3acf640886b1f2552dc8c4cd6dea60">ParseErrorCode</a> rapidjson::ParseResult::Code </td>
@@ -296,11 +262,6 @@ Here is the caller graph for this function:</div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the error code. </p>
@@ -315,9 +276,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool rapidjson::ParseResult::IsError </td>
@@ -326,11 +284,6 @@ Here is the caller graph for this function:</div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Whether the result is an error. </p>
@@ -348,9 +301,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">size_t rapidjson::ParseResult::Offset </td>
@@ -359,11 +309,6 @@ Here is the caller graph for this function:</div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the error offset, if <a class="el" href="structrapidjson_1_1_parse_result.html#ab6d87c6ce9c849f35e902fbe23f485c4">IsError()</a>, 0 otherwise. </p>
@@ -378,9 +323,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">rapidjson::ParseResult::operator <a class="el" href="structrapidjson_1_1_parse_result.html#aff2daa285445bba8f76578ea274e34a3">BooleanType</a> </td>
@@ -389,11 +331,6 @@ Here is the caller graph for this function:</div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Explicit conversion to <code>bool</code>, returns <code>true</code>, iff !<a class="el" href="structrapidjson_1_1_parse_result.html#ab6d87c6ce9c849f35e902fbe23f485c4">IsError()</a>. </p>
@@ -408,9 +345,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool rapidjson::ParseResult::operator!= </td>
@@ -420,11 +354,6 @@ Here is the caller graph for this function:</div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="error_8h_source.html#l00129">129</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
@@ -436,9 +365,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool rapidjson::ParseResult::operator!= </td>
@@ -448,11 +374,6 @@ Here is the caller graph for this function:</div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="error_8h_source.html#l00130">130</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
@@ -464,9 +385,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool rapidjson::ParseResult::operator== </td>
@@ -476,11 +394,6 @@ Here is the caller graph for this function:</div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="error_8h_source.html#l00125">125</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
@@ -495,9 +408,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool rapidjson::ParseResult::operator== </td>
@@ -507,11 +417,6 @@ Here is the caller graph for this function:</div>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="error_8h_source.html#l00126">126</a> of file <a class="el" href="error_8h_source.html">error.h</a>.</p>
@@ -524,9 +429,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void rapidjson::ParseResult::Set </td>
@@ -546,11 +448,6 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Update error code and offset. </p>
@@ -690,12 +587,12 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>Server/rapidjson/error/<a class="el" href="error_8h_source.html">error.h</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Server/rapidjson/error/<a class="el" href="error_8h_source.html">error.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2019 00:37:13 for train-A-wear by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

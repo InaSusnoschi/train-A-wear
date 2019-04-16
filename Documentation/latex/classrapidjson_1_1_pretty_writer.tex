@@ -1,0 +1,835 @@
+\hypertarget{classrapidjson_1_1_pretty_writer}{}\section{rapidjson\+::Pretty\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$ Class Template Reference}
+\label{classrapidjson_1_1_pretty_writer}\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+
+
+\mbox{\hyperlink{classrapidjson_1_1_writer}{Writer}} with indentation and spacing.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+Inheritance diagram for rapidjson\+::Pretty\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.854305cm]{classrapidjson_1_1_pretty_writer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_writer}{Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$ \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a792881200bdf51add62117617e66bd49}{Base}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_writer_a2cf973937ca1110293bf1350fac2a6d6}{Base\+::\+Ch}} \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a688d7ebf5c8015e423b7a970afc8e0a0}{Pretty\+Writer}} (Output\+Stream \&os, Stack\+Allocator $\ast$allocator=0, size\+\_\+t level\+Depth=\mbox{\hyperlink{classrapidjson_1_1_writer_a9acc453af3bfddea0bf001e022ae411c}{Base\+::k\+Default\+Level\+Depth}})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a2872cf0f442e07fd823846432c0d3923}{Pretty\+Writer}} (Stack\+Allocator $\ast$allocator=0, size\+\_\+t level\+Depth=\mbox{\hyperlink{classrapidjson_1_1_writer_a9acc453af3bfddea0bf001e022ae411c}{Base\+::k\+Default\+Level\+Depth}})
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}} \& \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a121686c29ca7fe071fa4108c46955ff0}{Set\+Indent}} (\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} indent\+Char, unsigned indent\+Char\+Count)
+\begin{DoxyCompactList}\small\item\em Set custom indentation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}} \& \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_acde6176577f29869e28a4f3c4a251090}{Set\+Format\+Options}} (\mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4b}{Pretty\+Format\+Options}} options)
+\begin{DoxyCompactList}\small\item\em Set pretty writer formatting options. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a3136e3426a5d06e5da50f6e6aab8a5be}{Raw\+Value}} (const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} $\ast$json, size\+\_\+t length, \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{Type}} type)
+\begin{DoxyCompactList}\small\item\em Write a raw J\+S\+ON value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Implementation of Handler}\par
+{\em \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classrapidjson_1_1_handler}{Handler}} 
+\end{DoxySeeAlso}
+}\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_afb049092845d2c0168f1570cf4ad66bc}{Null}} ()
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_ab4507239564501014bed4375bdebc630}{Bool}} (bool b)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a631a35ee8006c1c218ce78e3d919c927}{Int}} (int i)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a93a81e65915f0b607a2f69b2d9728c39}{Uint}} (unsigned u)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aebdf6ed7eeb5e953b941239384d3a4e1}{Int64}} (\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}} i64)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a3a2d3bf5af1edf76b4d2c6b1fdf08d26}{Uint64}} (\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}} u64)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a912576054f9ebf5c614e42981f8404ce}{Double}} (double d)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a1189fbfd7e57207be1d5dc36d3d4b385}{Raw\+Number}} (const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} $\ast$str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} length, bool copy=false)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_af3c6ad244ef86efafa62ff3b3dd8e25b}{String}} (const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} $\ast$str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} length, bool copy=false)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_ac043c4de0728cdfa8739af94560bddc3}{Start\+Object}} ()
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aec6183f368bb54310a41e0e1e00bf329}{Key}} (const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} $\ast$str, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} length, bool copy=false)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_ab53444ec4b12be2152bd712c24ec5193}{End\+Object}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} member\+Count=0)
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_ad12f40eaec2b43158cee716dbd88c393}{Start\+Array}} ()
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a6c8958810f5cd764de9a8fbe6fb63095}{End\+Array}} (\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} member\+Count=0)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Convenience extensions}\par
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a363c2280393e27e19bceb8d015c2832c}{String}} (const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} $\ast$str)
+\begin{DoxyCompactList}\small\item\em Simpler but slower overload. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a0b7000c10be5b1e24920ce27a7ba7f6a}{Key}} (const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} $\ast$str)
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}{Pretty\+Prefix}} (\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{Type}} type)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aa0bfa813b170d7fc27f1b370388861e4}{Write\+Indent}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_ad5492530262115dee2b44fc7682ddc07}{indent\+Char\+\_\+}}
+\item 
+unsigned \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a8b4afa26067dcc84e3940bdde08e59f1}{indent\+Char\+Count\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4b}{Pretty\+Format\+Options}} \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a27c46a2b1fd7a0c1cb518ba9c0f998cf}{format\+Options\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a446ed5e4236460e172e85edca73ffce5}{Pretty\+Writer}} (const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}} \&)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}} \& \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a7bddd65e00443bdcecb4eff722dd0728}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}} \&)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Output\+Stream, typename Source\+Encoding = U\+T\+F8$<$$>$, typename Target\+Encoding = U\+T\+F8$<$$>$, typename Stack\+Allocator = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$\newline
+class rapidjson\+::\+Pretty\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$}
+
+\mbox{\hyperlink{classrapidjson_1_1_writer}{Writer}} with indentation and spacing. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Output\+Stream} & Type of output os. \\
+\hline
+{\em Source\+Encoding} & \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} of source string. \\
+\hline
+{\em Target\+Encoding} & \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} of output stream. \\
+\hline
+{\em Stack\+Allocator} & Type of allocator for allocating memory of stack. \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 100 of file fwd.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a792881200bdf51add62117617e66bd49}\label{classrapidjson_1_1_pretty_writer_a792881200bdf51add62117617e66bd49}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!Base@{Base}}
+\index{Base@{Base}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{Base}{Base}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_writer}{Writer}}$<$Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags$>$ \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a792881200bdf51add62117617e66bd49}{Base}}}
+
+
+
+Definition at line 50 of file prettywriter.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}\label{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_writer_a2cf973937ca1110293bf1350fac2a6d6}{Base\+::\+Ch}} \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}}}
+
+
+
+Definition at line 51 of file prettywriter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a688d7ebf5c8015e423b7a970afc8e0a0}\label{classrapidjson_1_1_pretty_writer_a688d7ebf5c8015e423b7a970afc8e0a0}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!PrettyWriter@{PrettyWriter}}
+\index{PrettyWriter@{PrettyWriter}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{PrettyWriter()}{PrettyWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}} (\begin{DoxyParamCaption}\item[{Output\+Stream \&}]{os,  }\item[{Stack\+Allocator $\ast$}]{allocator = {\ttfamily 0},  }\item[{size\+\_\+t}]{level\+Depth = {\ttfamily \mbox{\hyperlink{classrapidjson_1_1_writer_a9acc453af3bfddea0bf001e022ae411c}{Base\+::k\+Default\+Level\+Depth}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Output stream. \\
+\hline
+{\em allocator} & User supplied allocator. If it is null, it will create a private one. \\
+\hline
+{\em level\+Depth} & Initial capacity of stack. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                                                                                                                        : }
+\DoxyCodeLine{59         \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a792881200bdf51add62117617e66bd49}{Base}}(os, allocator, levelDepth), \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_ad5492530262115dee2b44fc7682ddc07}{indentChar\_}}(\textcolor{charliteral}{' '}), \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a8b4afa26067dcc84e3940bdde08e59f1}{indentCharCount\_}}(4), \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a27c46a2b1fd7a0c1cb518ba9c0f998cf}{formatOptions\_}}(\mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4ba8164b0d4993439856171585b9cf3adc0}{kFormatDefault}}) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a2872cf0f442e07fd823846432c0d3923}\label{classrapidjson_1_1_pretty_writer_a2872cf0f442e07fd823846432c0d3923}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!PrettyWriter@{PrettyWriter}}
+\index{PrettyWriter@{PrettyWriter}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{PrettyWriter()}{PrettyWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}} (\begin{DoxyParamCaption}\item[{Stack\+Allocator $\ast$}]{allocator = {\ttfamily 0},  }\item[{size\+\_\+t}]{level\+Depth = {\ttfamily \mbox{\hyperlink{classrapidjson_1_1_writer_a9acc453af3bfddea0bf001e022ae411c}{Base\+::k\+Default\+Level\+Depth}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line 62 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62                                                                                                      : }
+\DoxyCodeLine{63         \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a792881200bdf51add62117617e66bd49}{Base}}(allocator, levelDepth), \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_ad5492530262115dee2b44fc7682ddc07}{indentChar\_}}(\textcolor{charliteral}{' '}), \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a8b4afa26067dcc84e3940bdde08e59f1}{indentCharCount\_}}(4) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a446ed5e4236460e172e85edca73ffce5}\label{classrapidjson_1_1_pretty_writer_a446ed5e4236460e172e85edca73ffce5}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!PrettyWriter@{PrettyWriter}}
+\index{PrettyWriter@{PrettyWriter}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{PrettyWriter()}{PrettyWriter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_ab4507239564501014bed4375bdebc630}\label{classrapidjson_1_1_pretty_writer_ab4507239564501014bed4375bdebc630}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!Bool@{Bool}}
+\index{Bool@{Bool}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{Bool()}{Bool()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Bool (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+Definition at line 96 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{96 \{ \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}{PrettyPrefix}}(b ? \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a80d9f25b083abce45edbfdd3ba006c8e}{kTrueType}} : \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a9f2e7047832dce1029551b5de0f05607}{kFalseType}}); \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_writer_adca78a0b05864d1c903f9afa955f3b07}{Base::EndValue}}(\mbox{\hyperlink{classrapidjson_1_1_writer_a09c1a50dd2d6de4e8d59e6c8ecf62460}{Base::WriteBool}}(b)); \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+False\+Type, and rapidjson\+::k\+True\+Type.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a912576054f9ebf5c614e42981f8404ce}\label{classrapidjson_1_1_pretty_writer_a912576054f9ebf5c614e42981f8404ce}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!Double@{Double}}
+\index{Double@{Double}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{Double()}{Double()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Double (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})}
+
+
+
+Definition at line 101 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101 \{ \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}{PrettyPrefix}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4abe572cb44ce198e467ccf9d63d50d82a}{kNumberType}}); \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_writer_adca78a0b05864d1c903f9afa955f3b07}{Base::EndValue}}(\mbox{\hyperlink{classrapidjson_1_1_writer_ad8cdd06dfdf1731a2148e859b828979c}{Base::WriteDouble}}(d)); \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Number\+Type.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a6c8958810f5cd764de9a8fbe6fb63095}\label{classrapidjson_1_1_pretty_writer_a6c8958810f5cd764de9a8fbe6fb63095}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!EndArray@{EndArray}}
+\index{EndArray@{EndArray}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{EndArray()}{EndArray()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::End\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{member\+Count = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 163 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{163                                             \{}
+\DoxyCodeLine{164         (void)memberCount;}
+\DoxyCodeLine{165         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.GetSize() >= \textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} Base::Level));}
+\DoxyCodeLine{166         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.\textcolor{keyword}{template} Top<typename Base::Level>()->inArray);}
+\DoxyCodeLine{167         \textcolor{keywordtype}{bool} empty = \mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.template Pop<typename Base::Level>(1)->valueCount == 0;}
+\DoxyCodeLine{168 }
+\DoxyCodeLine{169         \textcolor{keywordflow}{if} (!empty \&\& !(\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a27c46a2b1fd7a0c1cb518ba9c0f998cf}{formatOptions\_}} \& \mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4ba64b0f8a37ab3125118682046ff06500f}{kFormatSingleLineArray}})) \{}
+\DoxyCodeLine{170             \mbox{\hyperlink{classrapidjson_1_1_writer_a1370d3fd6728d4f0b3f20d734bb27eaf}{Base::os\_}}->Put(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{171             \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aa0bfa813b170d7fc27f1b370388861e4}{WriteIndent}}();}
+\DoxyCodeLine{172         \}}
+\DoxyCodeLine{173         \textcolor{keywordtype}{bool} ret = \mbox{\hyperlink{classrapidjson_1_1_writer_adca78a0b05864d1c903f9afa955f3b07}{Base::EndValue}}(\mbox{\hyperlink{classrapidjson_1_1_writer_a60939802ba2dfdd19754f20bda553a26}{Base::WriteEndArray}}());}
+\DoxyCodeLine{174         (void)ret;}
+\DoxyCodeLine{175         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(ret == \textcolor{keyword}{true});}
+\DoxyCodeLine{176         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.Empty()) \textcolor{comment}{// end of json text}}
+\DoxyCodeLine{177             \mbox{\hyperlink{classrapidjson_1_1_writer_a72cefd18d176bc12a53adb3185c51ca7}{Base::Flush}}();}
+\DoxyCodeLine{178         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{179     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Format\+Single\+Line\+Array, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_ab53444ec4b12be2152bd712c24ec5193}\label{classrapidjson_1_1_pretty_writer_ab53444ec4b12be2152bd712c24ec5193}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!EndObject@{EndObject}}
+\index{EndObject@{EndObject}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{EndObject()}{EndObject()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::End\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{member\+Count = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 137 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{137                                              \{}
+\DoxyCodeLine{138         (void)memberCount;}
+\DoxyCodeLine{139         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.GetSize() >= \textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} Base::Level)); \textcolor{comment}{// not inside an Object}}
+\DoxyCodeLine{140         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(!\mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.\textcolor{keyword}{template} Top<typename Base::Level>()->inArray); \textcolor{comment}{// currently inside an Array, not Object}}
+\DoxyCodeLine{141         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(0 == \mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.\textcolor{keyword}{template} Top<typename Base::Level>()->valueCount \% 2); \textcolor{comment}{// Object has a Key without a Value}}
+\DoxyCodeLine{142        }
+\DoxyCodeLine{143         \textcolor{keywordtype}{bool} empty = \mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.template Pop<typename Base::Level>(1)->valueCount == 0;}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145         \textcolor{keywordflow}{if} (!empty) \{}
+\DoxyCodeLine{146             \mbox{\hyperlink{classrapidjson_1_1_writer_a1370d3fd6728d4f0b3f20d734bb27eaf}{Base::os\_}}->Put(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{147             \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aa0bfa813b170d7fc27f1b370388861e4}{WriteIndent}}();}
+\DoxyCodeLine{148         \}}
+\DoxyCodeLine{149         \textcolor{keywordtype}{bool} ret = \mbox{\hyperlink{classrapidjson_1_1_writer_adca78a0b05864d1c903f9afa955f3b07}{Base::EndValue}}(\mbox{\hyperlink{classrapidjson_1_1_writer_afc5bc83bdf5fda810c8fe200cdda12b5}{Base::WriteEndObject}}());}
+\DoxyCodeLine{150         (void)ret;}
+\DoxyCodeLine{151         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(ret == \textcolor{keyword}{true});}
+\DoxyCodeLine{152         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.Empty()) \textcolor{comment}{// end of json text}}
+\DoxyCodeLine{153             \mbox{\hyperlink{classrapidjson_1_1_writer_a72cefd18d176bc12a53adb3185c51ca7}{Base::Flush}}();}
+\DoxyCodeLine{154         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{155     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a631a35ee8006c1c218ce78e3d919c927}\label{classrapidjson_1_1_pretty_writer_a631a35ee8006c1c218ce78e3d919c927}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!Int@{Int}}
+\index{Int@{Int}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{Int()}{Int()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Int (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Definition at line 97 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97 \{ \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}{PrettyPrefix}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4abe572cb44ce198e467ccf9d63d50d82a}{kNumberType}}); \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_writer_adca78a0b05864d1c903f9afa955f3b07}{Base::EndValue}}(\mbox{\hyperlink{classrapidjson_1_1_writer_aca40d77c14bf6911c03b5d4b23283e02}{Base::WriteInt}}(i)); \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Number\+Type.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_aebdf6ed7eeb5e953b941239384d3a4e1}\label{classrapidjson_1_1_pretty_writer_aebdf6ed7eeb5e953b941239384d3a4e1}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!Int64@{Int64}}
+\index{Int64@{Int64}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{Int64()}{Int64()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Int64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_a414156feea104f8f75b4ed9e3121b2f6}{int64\+\_\+t}}}]{i64 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 99 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{99 \{ \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}{PrettyPrefix}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4abe572cb44ce198e467ccf9d63d50d82a}{kNumberType}}); \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_writer_adca78a0b05864d1c903f9afa955f3b07}{Base::EndValue}}(\mbox{\hyperlink{classrapidjson_1_1_writer_aada3d510b7637fd0e9e8b3cbad093c2e}{Base::WriteInt64}}(i64)); \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Number\+Type.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_aec6183f368bb54310a41e0e1e00bf329}\label{classrapidjson_1_1_pretty_writer_aec6183f368bb54310a41e0e1e00bf329}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!Key@{Key}}
+\index{Key@{Key}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{Key()}{Key()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} $\ast$}]{str,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{length,  }\item[{bool}]{copy = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 129 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{129 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_af3c6ad244ef86efafa62ff3b3dd8e25b}{String}}(str, length, copy); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a0b7000c10be5b1e24920ce27a7ba7f6a}\label{classrapidjson_1_1_pretty_writer_a0b7000c10be5b1e24920ce27a7ba7f6a}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!Key@{Key}}
+\index{Key@{Key}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{Key()}{Key()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Definition at line 188 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{188 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aec6183f368bb54310a41e0e1e00bf329}{Key}}(str, \mbox{\hyperlink{namespacerapidjson_1_1internal_abe45d9242ecab3b9b58117961f57dc2f}{internal::StrLen}}(str)); \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Pretty\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Key(), and rapidjson\+::internal\+::\+Str\+Len().
+
+
+
+Referenced by rapidjson\+::\+Pretty\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Key().
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_afb049092845d2c0168f1570cf4ad66bc}\label{classrapidjson_1_1_pretty_writer_afb049092845d2c0168f1570cf4ad66bc}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!Null@{Null}}
+\index{Null@{Null}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{Null()}{Null()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 95 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95 \{ \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}{PrettyPrefix}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a952871e4326b527154fc8aac1ac1f6ff}{kNullType}});   \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_writer_adca78a0b05864d1c903f9afa955f3b07}{Base::EndValue}}(\mbox{\hyperlink{classrapidjson_1_1_writer_af8275fa2332a8c7774aa4c8a3655afd5}{Base::WriteNull}}()); \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Null\+Type.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a7bddd65e00443bdcecb4eff722dd0728}\label{classrapidjson_1_1_pretty_writer_a7bddd65e00443bdcecb4eff722dd0728}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}}\& \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}\label{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!PrettyPrefix@{PrettyPrefix}}
+\index{PrettyPrefix@{PrettyPrefix}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{PrettyPrefix()}{PrettyPrefix()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Pretty\+Prefix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 208 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{208                                  \{}
+\DoxyCodeLine{209         (void)type;}
+\DoxyCodeLine{210         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.GetSize() != 0) \{ \textcolor{comment}{// this value is not at root}}
+\DoxyCodeLine{211             \textcolor{keyword}{typename} Base::Level* level = \mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.template Top<typename Base::Level>();}
+\DoxyCodeLine{212 }
+\DoxyCodeLine{213             \textcolor{keywordflow}{if} (level->inArray) \{}
+\DoxyCodeLine{214                 \textcolor{keywordflow}{if} (level->valueCount > 0) \{}
+\DoxyCodeLine{215                     \mbox{\hyperlink{classrapidjson_1_1_writer_a1370d3fd6728d4f0b3f20d734bb27eaf}{Base::os\_}}->Put(\textcolor{charliteral}{','}); \textcolor{comment}{// add comma if it is not the first element in array}}
+\DoxyCodeLine{216                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a27c46a2b1fd7a0c1cb518ba9c0f998cf}{formatOptions\_}} \& \mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4ba64b0f8a37ab3125118682046ff06500f}{kFormatSingleLineArray}})}
+\DoxyCodeLine{217                         \mbox{\hyperlink{classrapidjson_1_1_writer_a1370d3fd6728d4f0b3f20d734bb27eaf}{Base::os\_}}->Put(\textcolor{charliteral}{' '});}
+\DoxyCodeLine{218                 \}}
+\DoxyCodeLine{219 }
+\DoxyCodeLine{220                 \textcolor{keywordflow}{if} (!(\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a27c46a2b1fd7a0c1cb518ba9c0f998cf}{formatOptions\_}} \& \mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4ba64b0f8a37ab3125118682046ff06500f}{kFormatSingleLineArray}})) \{}
+\DoxyCodeLine{221                     \mbox{\hyperlink{classrapidjson_1_1_writer_a1370d3fd6728d4f0b3f20d734bb27eaf}{Base::os\_}}->Put(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{222                     \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aa0bfa813b170d7fc27f1b370388861e4}{WriteIndent}}();}
+\DoxyCodeLine{223                 \}}
+\DoxyCodeLine{224             \}}
+\DoxyCodeLine{225             \textcolor{keywordflow}{else} \{  \textcolor{comment}{// in object}}
+\DoxyCodeLine{226                 \textcolor{keywordflow}{if} (level->valueCount > 0) \{}
+\DoxyCodeLine{227                     \textcolor{keywordflow}{if} (level->valueCount \% 2 == 0) \{}
+\DoxyCodeLine{228                         \mbox{\hyperlink{classrapidjson_1_1_writer_a1370d3fd6728d4f0b3f20d734bb27eaf}{Base::os\_}}->Put(\textcolor{charliteral}{','});}
+\DoxyCodeLine{229                         \mbox{\hyperlink{classrapidjson_1_1_writer_a1370d3fd6728d4f0b3f20d734bb27eaf}{Base::os\_}}->Put(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{230                     \}}
+\DoxyCodeLine{231                     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{232                         \mbox{\hyperlink{classrapidjson_1_1_writer_a1370d3fd6728d4f0b3f20d734bb27eaf}{Base::os\_}}->Put(\textcolor{charliteral}{':'});}
+\DoxyCodeLine{233                         \mbox{\hyperlink{classrapidjson_1_1_writer_a1370d3fd6728d4f0b3f20d734bb27eaf}{Base::os\_}}->Put(\textcolor{charliteral}{' '});}
+\DoxyCodeLine{234                     \}}
+\DoxyCodeLine{235                 \}}
+\DoxyCodeLine{236                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{237                     \mbox{\hyperlink{classrapidjson_1_1_writer_a1370d3fd6728d4f0b3f20d734bb27eaf}{Base::os\_}}->Put(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{238 }
+\DoxyCodeLine{239                 \textcolor{keywordflow}{if} (level->valueCount \% 2 == 0)}
+\DoxyCodeLine{240                     \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aa0bfa813b170d7fc27f1b370388861e4}{WriteIndent}}();}
+\DoxyCodeLine{241             \}}
+\DoxyCodeLine{242             \textcolor{keywordflow}{if} (!level->inArray \&\& level->valueCount \% 2 == 0)}
+\DoxyCodeLine{243                 \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(type == \mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4ad6379da3dc04b83a591992bfb9fabba7}{kStringType}});  \textcolor{comment}{// if it's in object, then even number should be a name}}
+\DoxyCodeLine{244             level->valueCount++;}
+\DoxyCodeLine{245         \}}
+\DoxyCodeLine{246         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{247             \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(!\mbox{\hyperlink{classrapidjson_1_1_writer_ac374605d753f26912b8462fc478e4b3e}{Base::hasRoot\_}});  \textcolor{comment}{// Should only has one and only one root.}}
+\DoxyCodeLine{248             \mbox{\hyperlink{classrapidjson_1_1_writer_ac374605d753f26912b8462fc478e4b3e}{Base::hasRoot\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{249         \}}
+\DoxyCodeLine{250     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Level\+::in\+Array, rapidjson\+::k\+Format\+Single\+Line\+Array, rapidjson\+::k\+String\+Type, R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT, and rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Level\+::value\+Count.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a1189fbfd7e57207be1d5dc36d3d4b385}\label{classrapidjson_1_1_pretty_writer_a1189fbfd7e57207be1d5dc36d3d4b385}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!RawNumber@{RawNumber}}
+\index{RawNumber@{RawNumber}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{RawNumber()}{RawNumber()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Raw\+Number (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} $\ast$}]{str,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{length,  }\item[{bool}]{copy = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 103 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{103                                                                       \{}
+\DoxyCodeLine{104         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(str != 0);}
+\DoxyCodeLine{105         (void)copy;}
+\DoxyCodeLine{106         \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}{PrettyPrefix}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4abe572cb44ce198e467ccf9d63d50d82a}{kNumberType}});}
+\DoxyCodeLine{107         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_writer_adca78a0b05864d1c903f9afa955f3b07}{Base::EndValue}}(\mbox{\hyperlink{classrapidjson_1_1_writer_a95860b89f9a9eea9d4336f0023c497ce}{Base::WriteString}}(str, length));}
+\DoxyCodeLine{108     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Number\+Type, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a3136e3426a5d06e5da50f6e6aab8a5be}\label{classrapidjson_1_1_pretty_writer_a3136e3426a5d06e5da50f6e6aab8a5be}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!RawValue@{RawValue}}
+\index{RawValue@{RawValue}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{RawValue()}{RawValue()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Raw\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} $\ast$}]{json,  }\item[{size\+\_\+t}]{length,  }\item[{\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Write a raw J\+S\+ON value. 
+
+For user to write a stringified J\+S\+ON as a value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & A well-\/formed J\+S\+ON value. It should not contain null character within \mbox{[}0, length -\/ 1\mbox{]} range. \\
+\hline
+{\em length} & Length of the json. \\
+\hline
+{\em type} & Type of the root of json. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+When using \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a3136e3426a5d06e5da50f6e6aab8a5be}{Pretty\+Writer\+::\+Raw\+Value()}}, the result json may not be indented correctly. 
+\end{DoxyNote}
+
+
+Definition at line 201 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{201                                                             \{}
+\DoxyCodeLine{202         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(json != 0);}
+\DoxyCodeLine{203         \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}{PrettyPrefix}}(type);}
+\DoxyCodeLine{204         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_writer_adca78a0b05864d1c903f9afa955f3b07}{Base::EndValue}}(\mbox{\hyperlink{classrapidjson_1_1_writer_a60b50a90fa1cfd525e14c37c36b9998d}{Base::WriteRawValue}}(json, length));}
+\DoxyCodeLine{205     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_acde6176577f29869e28a4f3c4a251090}\label{classrapidjson_1_1_pretty_writer_acde6176577f29869e28a4f3c4a251090}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!SetFormatOptions@{SetFormatOptions}}
+\index{SetFormatOptions@{SetFormatOptions}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{SetFormatOptions()}{SetFormatOptions()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}}\& \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Set\+Format\+Options (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4b}{Pretty\+Format\+Options}}}]{options }\end{DoxyParamCaption})}
+
+
+
+Set pretty writer formatting options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & Formatting options. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 85 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85                                                                 \{}
+\DoxyCodeLine{86         \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a27c46a2b1fd7a0c1cb518ba9c0f998cf}{formatOptions\_}} = options;}
+\DoxyCodeLine{87         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{88     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a121686c29ca7fe071fa4108c46955ff0}\label{classrapidjson_1_1_pretty_writer_a121686c29ca7fe071fa4108c46955ff0}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!SetIndent@{SetIndent}}
+\index{SetIndent@{SetIndent}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{SetIndent()}{SetIndent()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{Pretty\+Writer}}\& \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Set\+Indent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}}}]{indent\+Char,  }\item[{unsigned}]{indent\+Char\+Count }\end{DoxyParamCaption})}
+
+
+
+Set custom indentation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indent\+Char} & Character for indentation. Must be whitespace character (\textquotesingle{} \textquotesingle{}, \textquotesingle{}\textbackslash{}t\textquotesingle{}, \textquotesingle{}\textbackslash{}n\textquotesingle{}, \textquotesingle{}\textbackslash{}r\textquotesingle{}). \\
+\hline
+{\em indent\+Char\+Count} & Number of indent characters for each indentation level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The default indentation is 4 spaces. 
+\end{DoxyNote}
+
+
+Definition at line 75 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75                                                                      \{}
+\DoxyCodeLine{76         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(indentChar == \textcolor{charliteral}{' '} || indentChar == \textcolor{charliteral}{'\(\backslash\)t'} || indentChar == \textcolor{charliteral}{'\(\backslash\)n'} || indentChar == \textcolor{charliteral}{'\(\backslash\)r'});}
+\DoxyCodeLine{77         \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_ad5492530262115dee2b44fc7682ddc07}{indentChar\_}} = indentChar;}
+\DoxyCodeLine{78         \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a8b4afa26067dcc84e3940bdde08e59f1}{indentCharCount\_}} = indentCharCount;}
+\DoxyCodeLine{79         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{80     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_ad12f40eaec2b43158cee716dbd88c393}\label{classrapidjson_1_1_pretty_writer_ad12f40eaec2b43158cee716dbd88c393}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!StartArray@{StartArray}}
+\index{StartArray@{StartArray}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{StartArray()}{StartArray()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Start\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 157 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{157                       \{}
+\DoxyCodeLine{158         \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}{PrettyPrefix}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4a058c622e1e7d59419ae58b895cbce468}{kArrayType}});}
+\DoxyCodeLine{159         \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.template Push<typename Base::Level>()) \textcolor{keyword}{typename} Base::Level(\textcolor{keyword}{true});}
+\DoxyCodeLine{160         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_writer_a1221be4404ddaddc9605725e69dc7e53}{Base::WriteStartArray}}();}
+\DoxyCodeLine{161     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Array\+Type.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_ac043c4de0728cdfa8739af94560bddc3}\label{classrapidjson_1_1_pretty_writer_ac043c4de0728cdfa8739af94560bddc3}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!StartObject@{StartObject}}
+\index{StartObject@{StartObject}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{StartObject()}{StartObject()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Start\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 123 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{123                        \{}
+\DoxyCodeLine{124         \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}{PrettyPrefix}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4acf030b422a32c3647c7c5973bd4dd0a9}{kObjectType}});}
+\DoxyCodeLine{125         \textcolor{keyword}{new} (\mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.template Push<typename Base::Level>()) \textcolor{keyword}{typename} Base::Level(\textcolor{keyword}{false});}
+\DoxyCodeLine{126         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_writer_aed07aaa7245d5e607933a75c634921f9}{Base::WriteStartObject}}();}
+\DoxyCodeLine{127     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Object\+Type.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_af3c6ad244ef86efafa62ff3b3dd8e25b}\label{classrapidjson_1_1_pretty_writer_af3c6ad244ef86efafa62ff3b3dd8e25b}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!String@{String}}
+\index{String@{String}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{String()}{String()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} $\ast$}]{str,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{length,  }\item[{bool}]{copy = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 110 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{110                                                                    \{}
+\DoxyCodeLine{111         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(str != 0);}
+\DoxyCodeLine{112         (void)copy;}
+\DoxyCodeLine{113         \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}{PrettyPrefix}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4ad6379da3dc04b83a591992bfb9fabba7}{kStringType}});}
+\DoxyCodeLine{114         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_writer_adca78a0b05864d1c903f9afa955f3b07}{Base::EndValue}}(\mbox{\hyperlink{classrapidjson_1_1_writer_a95860b89f9a9eea9d4336f0023c497ce}{Base::WriteString}}(str, length));}
+\DoxyCodeLine{115     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+String\+Type, and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a363c2280393e27e19bceb8d015c2832c}\label{classrapidjson_1_1_pretty_writer_a363c2280393e27e19bceb8d015c2832c}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!String@{String}}
+\index{String@{String}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{String()}{String()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Simpler but slower overload. 
+
+
+
+Definition at line 187 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{187 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_af3c6ad244ef86efafa62ff3b3dd8e25b}{String}}(str, \mbox{\hyperlink{namespacerapidjson_1_1internal_abe45d9242ecab3b9b58117961f57dc2f}{internal::StrLen}}(str)); \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Pretty\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+String(), and rapidjson\+::internal\+::\+Str\+Len().
+
+
+
+Referenced by rapidjson\+::\+Pretty\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+String().
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a93a81e65915f0b607a2f69b2d9728c39}\label{classrapidjson_1_1_pretty_writer_a93a81e65915f0b607a2f69b2d9728c39}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!Uint@{Uint}}
+\index{Uint@{Uint}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{Uint()}{Uint()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Uint (\begin{DoxyParamCaption}\item[{unsigned}]{u }\end{DoxyParamCaption})}
+
+
+
+Definition at line 98 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{98 \{ \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}{PrettyPrefix}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4abe572cb44ce198e467ccf9d63d50d82a}{kNumberType}}); \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_writer_adca78a0b05864d1c903f9afa955f3b07}{Base::EndValue}}(\mbox{\hyperlink{classrapidjson_1_1_writer_a9255fff8cc9476048f14a1ee7dbd9937}{Base::WriteUint}}(u)); \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Number\+Type.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a3a2d3bf5af1edf76b4d2c6b1fdf08d26}\label{classrapidjson_1_1_pretty_writer_a3a2d3bf5af1edf76b4d2c6b1fdf08d26}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!Uint64@{Uint64}}
+\index{Uint64@{Uint64}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{Uint64()}{Uint64()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Uint64 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{stdint_8h_aec6fcb673ff035718c238c8c9d544c47}{uint64\+\_\+t}}}]{u64 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 100 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100 \{ \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_aff11c26086470359ef3ab1142515441c}{PrettyPrefix}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4abe572cb44ce198e467ccf9d63d50d82a}{kNumberType}}); \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_writer_adca78a0b05864d1c903f9afa955f3b07}{Base::EndValue}}(\mbox{\hyperlink{classrapidjson_1_1_writer_a341c2665f6564467dab9787bbbaee2fe}{Base::WriteUint64}}(u64));  \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Number\+Type.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_aa0bfa813b170d7fc27f1b370388861e4}\label{classrapidjson_1_1_pretty_writer_aa0bfa813b170d7fc27f1b370388861e4}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!WriteIndent@{WriteIndent}}
+\index{WriteIndent@{WriteIndent}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{WriteIndent()}{WriteIndent()}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::Write\+Indent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 252 of file prettywriter.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{252                         \{}
+\DoxyCodeLine{253         \textcolor{keywordtype}{size\_t} count = (\mbox{\hyperlink{classrapidjson_1_1_writer_a939007778b53074132750d9eccfdc5a2}{Base::level\_stack\_}}.\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a9379b6a185340ef704a0a78e39366fd6}{GetSize}}() / \textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} Base::Level)) * \mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a8b4afa26067dcc84e3940bdde08e59f1}{indentCharCount\_}};}
+\DoxyCodeLine{254         \mbox{\hyperlink{namespacerapidjson_a1ac13bac5976fc06587e00fc0bcfb32a}{PutN}}(*\mbox{\hyperlink{classrapidjson_1_1_writer_a1370d3fd6728d4f0b3f20d734bb27eaf}{Base::os\_}}, static\_cast<typename OutputStream::Ch>(\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_ad5492530262115dee2b44fc7682ddc07}{indentChar\_}}), count);}
+\DoxyCodeLine{255     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Put\+N().
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a27c46a2b1fd7a0c1cb518ba9c0f998cf}\label{classrapidjson_1_1_pretty_writer_a27c46a2b1fd7a0c1cb518ba9c0f998cf}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!formatOptions\_@{formatOptions\_}}
+\index{formatOptions\_@{formatOptions\_}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{formatOptions\_}{formatOptions\_}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+\mbox{\hyperlink{namespacerapidjson_a084b31753ef2edefdeca8a5374eccc4b}{Pretty\+Format\+Options}} \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::format\+Options\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 259 of file prettywriter.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_ad5492530262115dee2b44fc7682ddc07}\label{classrapidjson_1_1_pretty_writer_ad5492530262115dee2b44fc7682ddc07}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!indentChar\_@{indentChar\_}}
+\index{indentChar\_@{indentChar\_}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{indentChar\_}{indentChar\_}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_pretty_writer_a74a38902073aa599c8bcc6a3ca6126d0}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::indent\+Char\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 257 of file prettywriter.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_pretty_writer_a8b4afa26067dcc84e3940bdde08e59f1}\label{classrapidjson_1_1_pretty_writer_a8b4afa26067dcc84e3940bdde08e59f1}} 
+\index{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}!indentCharCount\_@{indentCharCount\_}}
+\index{indentCharCount\_@{indentCharCount\_}!rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$@{rapidjson::PrettyWriter$<$ OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags $>$}}
+\subsubsection{\texorpdfstring{indentCharCount\_}{indentCharCount\_}}
+{\footnotesize\ttfamily template$<$typename Output\+Stream , typename Source\+Encoding  = U\+T\+F8$<$$>$, typename Target\+Encoding  = U\+T\+F8$<$$>$, typename Stack\+Allocator  = Crt\+Allocator, unsigned write\+Flags = k\+Write\+Default\+Flags$>$ \\
+unsigned \mbox{\hyperlink{classrapidjson_1_1_pretty_writer}{rapidjson\+::\+Pretty\+Writer}}$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::indent\+Char\+Count\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 258 of file prettywriter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{fwd_8h}{fwd.\+h}}\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{prettywriter_8h}{prettywriter.\+h}}\end{DoxyCompactItemize}

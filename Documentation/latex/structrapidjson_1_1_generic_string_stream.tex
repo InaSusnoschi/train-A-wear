@@ -1,0 +1,276 @@
+\hypertarget{structrapidjson_1_1_generic_string_stream}{}\section{rapidjson\+::Generic\+String\+Stream$<$ Encoding $>$ Struct Template Reference}
+\label{structrapidjson_1_1_generic_string_stream}\index{rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}}
+
+
+Read-\/only string stream.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Encoding\+::\+Ch \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_ab160d646f4560d7b95f3fd816c3aac9a}{Generic\+String\+Stream}} (const \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}} $\ast$src)
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}} \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_aa941b18ff3849494ca3692a8688500da}{Peek}} () const
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}} \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a56bb2351836bace23555f4dc5abf57b1}{Take}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a7b0cfaa0a08c80fa30140ba5679001c0}{Tell}} () const
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_aca059ce7c89211420513940db8a52668}{Put\+Begin}} ()
+\item 
+void \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a9a515c0ba83ad9029d1560952584cd2e}{Put}} (\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}})
+\item 
+void \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a5c7a3e097eb461b9cec5976576ecb9e4}{Flush}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a105adc6eec3483f90f6f2cf57aa81c12}{Put\+End}} (\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a9a38a9d5b1ce782cacd4ec1bdf87fc2d}{src\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Current read position. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}} $\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a2556705b0a0fd6393862efe6db025b32}{head\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Original head of the string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Encoding$>$\newline
+struct rapidjson\+::\+Generic\+String\+Stream$<$ Encoding $>$}
+
+Read-\/only string stream. 
+
+\begin{DoxyNote}{Note}
+implements \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept 
+\end{DoxyNote}
+
+
+Definition at line 47 of file fwd.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}\label{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}} 
+\index{rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+typedef Encoding\+::\+Ch \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{rapidjson\+::\+Generic\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}}}
+
+
+
+Definition at line 155 of file stream.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_string_stream_ab160d646f4560d7b95f3fd816c3aac9a}\label{structrapidjson_1_1_generic_string_stream_ab160d646f4560d7b95f3fd816c3aac9a}} 
+\index{rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}!GenericStringStream@{GenericStringStream}}
+\index{GenericStringStream@{GenericStringStream}!rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{GenericStringStream()}{GenericStringStream()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{rapidjson\+::\+Generic\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{Generic\+String\+Stream}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}} $\ast$}]{src }\end{DoxyParamCaption})}
+
+
+
+Definition at line 157 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{157 : \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a9a38a9d5b1ce782cacd4ec1bdf87fc2d}{src\_}}(src), \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a2556705b0a0fd6393862efe6db025b32}{head\_}}(src) \{\}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_string_stream_a5c7a3e097eb461b9cec5976576ecb9e4}\label{structrapidjson_1_1_generic_string_stream_a5c7a3e097eb461b9cec5976576ecb9e4}} 
+\index{rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}!Flush@{Flush}}
+\index{Flush@{Flush}!rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+void \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{rapidjson\+::\+Generic\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 165 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{165 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_generic_string_stream_aa941b18ff3849494ca3692a8688500da}\label{structrapidjson_1_1_generic_string_stream_aa941b18ff3849494ca3692a8688500da}} 
+\index{rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}!Peek@{Peek}}
+\index{Peek@{Peek}!rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}} \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{rapidjson\+::\+Generic\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 159 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{159 \{ \textcolor{keywordflow}{return} *\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a9a38a9d5b1ce782cacd4ec1bdf87fc2d}{src\_}}; \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Raw\+Value(), and rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+String().
+
+\mbox{\Hypertarget{structrapidjson_1_1_generic_string_stream_a9a515c0ba83ad9029d1560952584cd2e}\label{structrapidjson_1_1_generic_string_stream_a9a515c0ba83ad9029d1560952584cd2e}} 
+\index{rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}!Put@{Put}}
+\index{Put@{Put}!rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+void \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{rapidjson\+::\+Generic\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 164 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{164 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_generic_string_stream_aca059ce7c89211420513940db8a52668}\label{structrapidjson_1_1_generic_string_stream_aca059ce7c89211420513940db8a52668}} 
+\index{rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}!PutBegin@{PutBegin}}
+\index{PutBegin@{PutBegin}!rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{PutBegin()}{PutBegin()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}}$\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{rapidjson\+::\+Generic\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Put\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 163 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{163 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_generic_string_stream_a105adc6eec3483f90f6f2cf57aa81c12}\label{structrapidjson_1_1_generic_string_stream_a105adc6eec3483f90f6f2cf57aa81c12}} 
+\index{rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}!PutEnd@{PutEnd}}
+\index{PutEnd@{PutEnd}!rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{PutEnd()}{PutEnd()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{rapidjson\+::\+Generic\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Put\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 166 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{166 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_generic_string_stream_a56bb2351836bace23555f4dc5abf57b1}\label{structrapidjson_1_1_generic_string_stream_a56bb2351836bace23555f4dc5abf57b1}} 
+\index{rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}!Take@{Take}}
+\index{Take@{Take}!rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Take()}{Take()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}} \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{rapidjson\+::\+Generic\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Take (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 160 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{160 \{ \textcolor{keywordflow}{return} *\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a9a38a9d5b1ce782cacd4ec1bdf87fc2d}{src\_}}++; \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+String().
+
+\mbox{\Hypertarget{structrapidjson_1_1_generic_string_stream_a7b0cfaa0a08c80fa30140ba5679001c0}\label{structrapidjson_1_1_generic_string_stream_a7b0cfaa0a08c80fa30140ba5679001c0}} 
+\index{rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}!Tell@{Tell}}
+\index{Tell@{Tell}!rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{Tell()}{Tell()}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{rapidjson\+::\+Generic\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Tell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 161 of file stream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{161 \{ \textcolor{keywordflow}{return} static\_cast<size\_t>(\mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a9a38a9d5b1ce782cacd4ec1bdf87fc2d}{src\_}} - \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a2556705b0a0fd6393862efe6db025b32}{head\_}}); \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Scan\+Write\+Unescaped\+String(), and rapidjson\+::\+Writer$<$ Output\+Stream, Source\+Encoding, Target\+Encoding, Stack\+Allocator, write\+Flags $>$\+::\+Write\+Raw\+Value().
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_generic_string_stream_a2556705b0a0fd6393862efe6db025b32}\label{structrapidjson_1_1_generic_string_stream_a2556705b0a0fd6393862efe6db025b32}} 
+\index{rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}!head\_@{head\_}}
+\index{head\_@{head\_}!rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{head\_}{head\_}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+const \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}}$\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{rapidjson\+::\+Generic\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::head\+\_\+}
+
+
+
+Original head of the string. 
+
+
+
+Definition at line 169 of file stream.\+h.
+
+\mbox{\Hypertarget{structrapidjson_1_1_generic_string_stream_a9a38a9d5b1ce782cacd4ec1bdf87fc2d}\label{structrapidjson_1_1_generic_string_stream_a9a38a9d5b1ce782cacd4ec1bdf87fc2d}} 
+\index{rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}!src\_@{src\_}}
+\index{src\_@{src\_}!rapidjson::GenericStringStream$<$ Encoding $>$@{rapidjson::GenericStringStream$<$ Encoding $>$}}
+\subsubsection{\texorpdfstring{src\_}{src\_}}
+{\footnotesize\ttfamily template$<$typename Encoding$>$ \\
+const \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream_a70ad06c96ddf8349be59f3d4f6bbadc8}{Ch}}$\ast$ \mbox{\hyperlink{structrapidjson_1_1_generic_string_stream}{rapidjson\+::\+Generic\+String\+Stream}}$<$ \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::src\+\_\+}
+
+
+
+Current read position. 
+
+
+
+Definition at line 168 of file stream.\+h.
+
+
+
+Referenced by rapidjson\+::internal\+::\+Count\+String\+Code\+Point().
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{fwd_8h}{fwd.\+h}}\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{stream_8h}{stream.\+h}}\end{DoxyCompactItemize}

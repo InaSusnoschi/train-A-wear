@@ -47,32 +47,20 @@
 
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/buttonPlie"
         android:layout_width="120dp"
         android:layout_height="55dp"
         android:layout_marginStart="145dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="145dp"
         android:text="@string/squat_plie"
+        android:onClick="enterPlieSquat"
         android:textSize="16sp"
         android:typeface="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
-    <Button
-        android:id="@+id/buttonSquatWeights"
-        android:layout_width="120dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="145dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="145dp"
-        android:text="@string/squat_weights"
-        android:textSize="16sp"
-        android:typeface="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
 
     <TextView
         android:id="@+id/textStretch"
@@ -88,6 +76,6 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonSquatWeights" />
+        app:layout_constraintTop_toBottomOf="@id/buttonPlie" />
 
 </android.support.constraint.ConstraintLayout>

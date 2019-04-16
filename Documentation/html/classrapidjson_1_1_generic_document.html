@@ -20,9 +20,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logosmall.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">train-A-wear
+   &#160;<span id="projectnumber">2.1</span>
    </div>
+   <div id="projectbrief">Real time feedback application with wireless connection to three IMUs</div>
   </td>
  </tr>
  </tbody>
@@ -85,13 +88,12 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for rapidjson::GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_document__inherit__graph.png" border="0" usemap="#rapidjson_1_1_generic_document_3_01_encoding_00_01_allocator_00_01_stack_allocator_01_4_inherit__map" alt="Inheritance graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for rapidjson::GenericDocument&lt; Encoding, Allocator, StackAllocator &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_document__coll__graph.png" border="0" usemap="#rapidjson_1_1_generic_document_3_01_encoding_00_01_allocator_00_01_stack_allocator_01_4_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="classrapidjson_1_1_generic_document.png" usemap="#rapidjson::GenericDocument_3C_20Encoding_2C_20Allocator_2C_20StackAllocator_20_3E_map" alt=""/>
+  <map id="rapidjson::GenericDocument_3C_20Encoding_2C_20Allocator_2C_20StackAllocator_20_3E_map" name="rapidjson::GenericDocument_3C_20Encoding_2C_20Allocator_2C_20StackAllocator_20_3E_map">
+<area href="classrapidjson_1_1_generic_value.html" title="Represents a JSON value. Use Value for UTF8 encoding and default allocator." alt="rapidjson::GenericValue&lt; Encoding, Allocator &gt;" shape="rect" coords="0,0,399,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -554,7 +556,7 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -588,9 +590,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::<a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a> </td>
@@ -616,11 +615,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructor. </p>
@@ -651,9 +645,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::~<a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a> </td>
@@ -662,11 +653,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02172">2172</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -712,9 +698,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Bool </td>
@@ -724,11 +707,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02438">2438</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -757,7 +735,7 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -791,7 +769,7 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -811,9 +789,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Double </td>
@@ -823,11 +798,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02443">2443</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -843,9 +813,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::EndArray </td>
@@ -855,11 +822,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02473">2473</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -876,9 +838,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::EndObject </td>
@@ -888,11 +847,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02465">2465</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -909,9 +863,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::GetAllocator </td>
@@ -920,11 +871,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the allocator of this document. </p>
@@ -944,9 +890,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">size_t <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::GetErrorOffset </td>
@@ -955,11 +898,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the position of last parsing error in input, 0 otherwise. </p>
@@ -977,9 +915,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s.html#ga7d3acf640886b1f2552dc8c4cd6dea60">ParseErrorCode</a> <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::GetParseError </td>
@@ -988,11 +923,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the <a class="el" href="group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s.html#ga7d3acf640886b1f2552dc8c4cd6dea60">ParseErrorCode</a> of last parsing. </p>
@@ -1010,9 +940,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">size_t <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::GetStackCapacity </td>
@@ -1021,11 +948,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the capacity of stack in bytes. </p>
@@ -1043,9 +965,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::HasParseError </td>
@@ -1054,11 +973,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Whether a parse error has occurred in the last parsing. </p>
@@ -1068,11 +982,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="ttc" id="classrapidjson_1_1_generic_document_html_a43e4cc449e68b2fb6ea6732b6a83d69e"><div class="ttname"><a href="classrapidjson_1_1_generic_document.html#a43e4cc449e68b2fb6ea6732b6a83d69e">rapidjson::GenericDocument::parseResult_</a></div><div class="ttdeci">ParseResult parseResult_</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l02502">document.h:2502</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="train-_a-wear__server_8cpp_source.html#l00118">parsing_function()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_document_a7607bb42b51547e44bfd4cab35d8f20e_icgraph.png" border="0" usemap="#classrapidjson_1_1_generic_document_a7607bb42b51547e44bfd4cab35d8f20e_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1083,9 +992,6 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Int </td>
@@ -1095,11 +1001,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02439">2439</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1115,9 +1016,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Int64 </td>
@@ -1127,11 +1025,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02441">2441</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1147,9 +1040,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Key </td>
@@ -1175,11 +1065,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02463">2463</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1194,9 +1079,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Null </td>
@@ -1205,11 +1087,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02437">2437</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1225,9 +1102,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::operator <a class="el" href="structrapidjson_1_1_parse_result.html">ParseResult</a> </td>
@@ -1236,11 +1110,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Implicit conversion to get the last parse result. </p>
@@ -1290,9 +1159,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
 <div class="memtemplate">
 template&lt;unsigned parseFlags, typename SourceEncoding &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Parse </td>
@@ -1302,11 +1168,6 @@ template&lt;unsigned parseFlags, typename SourceEncoding &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Parse JSON text from a read-only string (with <a class="el" href="classrapidjson_1_1_encoding.html" title="Concept for encoding of Unicode characters.">Encoding</a> conversion) </p>
@@ -1331,11 +1192,6 @@ template&lt;unsigned parseFlags, typename SourceEncoding &gt; </div>
 <p class="reference">References <a class="el" href="reader_8h_source.html#l00147">rapidjson::kParseInsituFlag</a>, and <a class="el" href="rapidjson_8h_source.html#l00406">RAPIDJSON_ASSERT</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="train-_a-wear__server_8cpp_source.html#l00118">parsing_function()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_document_aea842b533a858c9a3861451ad9e8642c_icgraph.png" border="0" usemap="#classrapidjson_1_1_generic_document_aea842b533a858c9a3861451ad9e8642c_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -1348,9 +1204,6 @@ Here is the caller graph for this function:</div>
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
 <div class="memtemplate">
 template&lt;unsigned parseFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Parse </td>
@@ -1360,11 +1213,6 @@ template&lt;unsigned parseFlags&gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Parse JSON text from a read-only string. </p>
@@ -1392,9 +1240,6 @@ template&lt;unsigned parseFlags&gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Parse </td>
@@ -1404,11 +1249,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Parse JSON text from a read-only string (with <a class="el" href="namespacerapidjson.html#a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835">kParseDefaultFlags</a>) </p>
@@ -1432,9 +1272,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
 <div class="memtemplate">
 template&lt;unsigned parseFlags, typename SourceEncoding &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Parse </td>
@@ -1454,11 +1291,6 @@ template&lt;unsigned parseFlags, typename SourceEncoding &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02348">2348</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1478,9 +1310,6 @@ template&lt;unsigned parseFlags, typename SourceEncoding &gt; </div>
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
 <div class="memtemplate">
 template&lt;unsigned parseFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Parse </td>
@@ -1500,11 +1329,6 @@ template&lt;unsigned parseFlags&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02357">2357</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1518,9 +1342,6 @@ template&lt;unsigned parseFlags&gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Parse </td>
@@ -1540,11 +1361,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02361">2361</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1560,9 +1376,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
 <div class="memtemplate">
 template&lt;unsigned parseFlags&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::ParseInsitu </td>
@@ -1572,11 +1385,6 @@ template&lt;unsigned parseFlags&gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Parse JSON text from a mutable string. </p>
@@ -1605,9 +1413,6 @@ template&lt;unsigned parseFlags&gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::ParseInsitu </td>
@@ -1617,11 +1422,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Parse JSON text from a mutable string (with <a class="el" href="namespacerapidjson.html#a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835">kParseDefaultFlags</a>) </p>
@@ -1646,9 +1446,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
 <div class="memtemplate">
 template&lt;unsigned parseFlags, typename SourceEncoding , typename InputStream &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::ParseStream </td>
@@ -1658,11 +1455,6 @@ template&lt;unsigned parseFlags, typename SourceEncoding , typename InputStream 
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Parse JSON text from an input stream (with <a class="el" href="classrapidjson_1_1_encoding.html" title="Concept for encoding of Unicode characters.">Encoding</a> conversion) </p>
@@ -1705,9 +1497,6 @@ template&lt;unsigned parseFlags, typename SourceEncoding , typename InputStream 
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
 <div class="memtemplate">
 template&lt;unsigned parseFlags, typename InputStream &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::ParseStream </td>
@@ -1717,11 +1506,6 @@ template&lt;unsigned parseFlags, typename InputStream &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Parse JSON text from an input stream. </p>
@@ -1753,9 +1537,6 @@ template&lt;unsigned parseFlags, typename InputStream &gt; </div>
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
 <div class="memtemplate">
 template&lt;typename InputStream &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::ParseStream </td>
@@ -1765,11 +1546,6 @@ template&lt;typename InputStream &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Parse JSON text from an input stream (with <a class="el" href="namespacerapidjson.html#a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835">kParseDefaultFlags</a>) </p>
@@ -1800,9 +1576,6 @@ template&lt;typename InputStream &gt; </div>
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
 <div class="memtemplate">
 template&lt;typename Generator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Populate </td>
@@ -1812,11 +1585,6 @@ template&lt;typename Generator &gt; </div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Populate this document by a generator which produces SAX events. </p>
@@ -1852,9 +1620,6 @@ template&lt;typename Generator &gt; </div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::RawNumber </td>
@@ -1880,11 +1645,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02445">2445</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1901,9 +1661,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::StartArray </td>
@@ -1912,11 +1669,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02471">2471</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1935,9 +1687,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::StartObject </td>
@@ -1946,11 +1695,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02461">2461</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -1969,9 +1713,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::<a class="el" href="structrapidjson_1_1_generic_value_1_1_string.html">String</a> </td>
@@ -1997,11 +1738,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02453">2453</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -2018,9 +1754,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classrapidjson_1_1_generic_document.html">GenericDocument</a>&amp; <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Swap </td>
@@ -2030,11 +1763,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Exchange the contents of this document with those of another. </p>
@@ -2056,11 +1784,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="ttc" id="classrapidjson_1_1_generic_document_html_a21961da965bca1d65007e0b55ca639a8"><div class="ttname"><a href="classrapidjson_1_1_generic_document.html#a21961da965bca1d65007e0b55ca639a8">rapidjson::GenericDocument::stack_</a></div><div class="ttdeci">internal::Stack&lt; StackAllocator &gt; stack_</div><div class="ttdef"><b>Definition:</b> <a href="document_8h_source.html#l02501">document.h:2501</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="swap_8h_source.html#l00033">rapidjson::internal::Swap()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classrapidjson_1_1_generic_document_abf1cbab989b856f9d260787b2575750b_cgraph.png" border="0" usemap="#classrapidjson_1_1_generic_document_abf1cbab989b856f9d260787b2575750b_cgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -2071,9 +1794,6 @@ Here is the call graph for this function:</div>
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Uint </td>
@@ -2083,11 +1803,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02440">2440</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -2103,9 +1818,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt;, typename StackAllocator  = CrtAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classrapidjson_1_1_generic_document.html">rapidjson::GenericDocument</a>&lt; <a class="el" href="classrapidjson_1_1_encoding.html">Encoding</a>, <a class="el" href="classrapidjson_1_1_allocator.html">Allocator</a>, StackAllocator &gt;::Uint64 </td>
@@ -2115,11 +1827,6 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="document_8h_source.html#l02442">2442</a> of file <a class="el" href="document_8h_source.html">document.h</a>.</p>
@@ -2333,12 +2040,12 @@ template&lt;typename Encoding , typename Allocator  = MemoryPoolAllocator&lt;&gt
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Server/rapidjson/<a class="el" href="document_8h_source.html">document.h</a></li>
+<li>D:/cloned repo trainawear/train-A-wear/Server/rapidjson/<a class="el" href="document_8h_source.html">document.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 16 2019 00:37:11 for train-A-wear by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

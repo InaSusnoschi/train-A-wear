@@ -1,0 +1,55 @@
+\hypertarget{structrapidjson_1_1internal_1_1_token_helper}{}\section{rapidjson\+::internal\+::Token\+Helper$<$ Stack, Ch $>$ Struct Template Reference}
+\label{structrapidjson_1_1internal_1_1_token_helper}\index{rapidjson::internal::TokenHelper$<$ Stack, Ch $>$@{rapidjson::internal::TokenHelper$<$ Stack, Ch $>$}}
+
+
+{\ttfamily \#include $<$schema.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE void \mbox{\hyperlink{structrapidjson_1_1internal_1_1_token_helper_a633523ce836cb5711fef98301ab6d8f7}{Append\+Index\+Token}} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}} \&document\+Stack, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Stack, typename Ch$>$\newline
+struct rapidjson\+::internal\+::\+Token\+Helper$<$ Stack, Ch $>$}
+
+
+
+Definition at line 1445 of file schema.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1internal_1_1_token_helper_a633523ce836cb5711fef98301ab6d8f7}\label{structrapidjson_1_1internal_1_1_token_helper_a633523ce836cb5711fef98301ab6d8f7}} 
+\index{rapidjson::internal::TokenHelper$<$ Stack, Ch $>$@{rapidjson::internal::TokenHelper$<$ Stack, Ch $>$}!AppendIndexToken@{AppendIndexToken}}
+\index{AppendIndexToken@{AppendIndexToken}!rapidjson::internal::TokenHelper$<$ Stack, Ch $>$@{rapidjson::internal::TokenHelper$<$ Stack, Ch $>$}}
+\subsubsection{\texorpdfstring{AppendIndexToken()}{AppendIndexToken()}}
+{\footnotesize\ttfamily template$<$typename Stack , typename Ch $>$ \\
+static R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE void \mbox{\hyperlink{structrapidjson_1_1internal_1_1_token_helper}{rapidjson\+::internal\+::\+Token\+Helper}}$<$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}}, Ch $>$\+::Append\+Index\+Token (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}} \&}]{document\+Stack,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 1446 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1446                                                                                              \{}
+\DoxyCodeLine{1447         *documentStack.template Push<Ch>() = \textcolor{charliteral}{'/'};}
+\DoxyCodeLine{1448         \textcolor{keywordtype}{char} buffer[21];}
+\DoxyCodeLine{1449         \textcolor{keywordtype}{size\_t} length = static\_cast<size\_t>((\textcolor{keyword}{sizeof}(\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{SizeType}}) == 4 ? \mbox{\hyperlink{namespacerapidjson_1_1internal_ad5e42102d2ac70a691b3fdfdd2238e70}{u32toa}}(index, buffer) : \mbox{\hyperlink{namespacerapidjson_1_1internal_af565c1edf212e5e41b8a51c3973e38cb}{u64toa}}(index, buffer)) - buffer);}
+\DoxyCodeLine{1450         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < length; i++)}
+\DoxyCodeLine{1451             *documentStack.template Push<Ch>() = static\_cast<Ch>(buffer[i]);}
+\DoxyCodeLine{1452     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::internal\+::u32toa(), and rapidjson\+::internal\+::u64toa().
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{schema_8h}{schema.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,198 @@
+\hypertarget{classrapidjson_1_1_cursor_stream_wrapper}{}\section{rapidjson\+::Cursor\+Stream\+Wrapper$<$ Input\+Stream, Encoding $>$ Class Template Reference}
+\label{classrapidjson_1_1_cursor_stream_wrapper}\index{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}}
+
+
+Cursor stream wrapper for counting line and column number if error exists.  
+
+
+
+
+{\ttfamily \#include $<$cursorstreamwrapper.\+h$>$}
+
+Inheritance diagram for rapidjson\+::Cursor\+Stream\+Wrapper$<$ Input\+Stream, Encoding $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrapidjson_1_1_cursor_stream_wrapper}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Encoding\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_a49421838afb7b754a756193896e8273b}{Ch}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_a3aaa212b6e82a7862242fccab52625bd}{Cursor\+Stream\+Wrapper}} (Input\+Stream \&is)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_a49421838afb7b754a756193896e8273b}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_af553de16f25ee449e213eb16e0955d38}{Take}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_a97c6cbbd334911639fe522bbfdd350b7}{Get\+Line}} () const
+\begin{DoxyCompactList}\small\item\em Get the error line number, if error exists. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_a33002632924bb10108077a22c6aa108d}{Get\+Column}} () const
+\begin{DoxyCompactList}\small\item\em Get the error column number, if error exists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_a45092cee2d910ac2bfb479794d5a46ef}{line\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Current Line. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_aac18faf6a4d396ddb8b4dfcc04107752}{col\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Current Column. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Input\+Stream, typename Encoding = U\+T\+F8$<$$>$$>$\newline
+class rapidjson\+::\+Cursor\+Stream\+Wrapper$<$ Input\+Stream, Encoding $>$}
+
+Cursor stream wrapper for counting line and column number if error exists. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Input\+Stream} & Any stream that implements \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} Concept \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 39 of file cursorstreamwrapper.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_cursor_stream_wrapper_a49421838afb7b754a756193896e8273b}\label{classrapidjson_1_1_cursor_stream_wrapper_a49421838afb7b754a756193896e8273b}} 
+\index{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Input\+Stream , typename Encoding  = U\+T\+F8$<$$>$$>$ \\
+typedef Encoding\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper}{rapidjson\+::\+Cursor\+Stream\+Wrapper}}$<$ Input\+Stream, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_a49421838afb7b754a756193896e8273b}{Ch}}}
+
+
+
+Definition at line 41 of file cursorstreamwrapper.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_cursor_stream_wrapper_a3aaa212b6e82a7862242fccab52625bd}\label{classrapidjson_1_1_cursor_stream_wrapper_a3aaa212b6e82a7862242fccab52625bd}} 
+\index{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}!CursorStreamWrapper@{CursorStreamWrapper}}
+\index{CursorStreamWrapper@{CursorStreamWrapper}!rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}}
+\subsubsection{\texorpdfstring{CursorStreamWrapper()}{CursorStreamWrapper()}}
+{\footnotesize\ttfamily template$<$typename Input\+Stream , typename Encoding  = U\+T\+F8$<$$>$$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper}{rapidjson\+::\+Cursor\+Stream\+Wrapper}}$<$ Input\+Stream, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper}{Cursor\+Stream\+Wrapper}} (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file cursorstreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                         :}
+\DoxyCodeLine{44         GenericStreamWrapper<InputStream, Encoding>(is), \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_a45092cee2d910ac2bfb479794d5a46ef}{line\_}}(1), \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_aac18faf6a4d396ddb8b4dfcc04107752}{col\_}}(0) \{\}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_cursor_stream_wrapper_a33002632924bb10108077a22c6aa108d}\label{classrapidjson_1_1_cursor_stream_wrapper_a33002632924bb10108077a22c6aa108d}} 
+\index{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}!GetColumn@{GetColumn}}
+\index{GetColumn@{GetColumn}!rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}}
+\subsubsection{\texorpdfstring{GetColumn()}{GetColumn()}}
+{\footnotesize\ttfamily template$<$typename Input\+Stream , typename Encoding  = U\+T\+F8$<$$>$$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper}{rapidjson\+::\+Cursor\+Stream\+Wrapper}}$<$ Input\+Stream, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Get\+Column (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the error column number, if error exists. 
+
+
+
+Definition at line 61 of file cursorstreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_aac18faf6a4d396ddb8b4dfcc04107752}{col\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_cursor_stream_wrapper_a97c6cbbd334911639fe522bbfdd350b7}\label{classrapidjson_1_1_cursor_stream_wrapper_a97c6cbbd334911639fe522bbfdd350b7}} 
+\index{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}!GetLine@{GetLine}}
+\index{GetLine@{GetLine}!rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}}
+\subsubsection{\texorpdfstring{GetLine()}{GetLine()}}
+{\footnotesize\ttfamily template$<$typename Input\+Stream , typename Encoding  = U\+T\+F8$<$$>$$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper}{rapidjson\+::\+Cursor\+Stream\+Wrapper}}$<$ Input\+Stream, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Get\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the error line number, if error exists. 
+
+
+
+Definition at line 59 of file cursorstreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_a45092cee2d910ac2bfb479794d5a46ef}{line\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_cursor_stream_wrapper_af553de16f25ee449e213eb16e0955d38}\label{classrapidjson_1_1_cursor_stream_wrapper_af553de16f25ee449e213eb16e0955d38}} 
+\index{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}!Take@{Take}}
+\index{Take@{Take}!rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}}
+\subsubsection{\texorpdfstring{Take()}{Take()}}
+{\footnotesize\ttfamily template$<$typename Input\+Stream , typename Encoding  = U\+T\+F8$<$$>$$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_a49421838afb7b754a756193896e8273b}{Ch}} \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper}{rapidjson\+::\+Cursor\+Stream\+Wrapper}}$<$ Input\+Stream, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::Take (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file cursorstreamwrapper.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47               \{}
+\DoxyCodeLine{48         \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_a49421838afb7b754a756193896e8273b}{Ch}} ch = this->\mbox{\hyperlink{classrapidjson_1_1_generic_stream_wrapper_a5cf3034d6761716e9ca2fe7591ed8274}{is\_}}.Take();}
+\DoxyCodeLine{49         \textcolor{keywordflow}{if}(ch == \textcolor{charliteral}{'\(\backslash\)n'}) \{}
+\DoxyCodeLine{50             \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_a45092cee2d910ac2bfb479794d5a46ef}{line\_}} ++;}
+\DoxyCodeLine{51             \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_aac18faf6a4d396ddb8b4dfcc04107752}{col\_}} = 0;}
+\DoxyCodeLine{52         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{53             \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper_aac18faf6a4d396ddb8b4dfcc04107752}{col\_}} ++;}
+\DoxyCodeLine{54         \}}
+\DoxyCodeLine{55         \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{56     \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_cursor_stream_wrapper_aac18faf6a4d396ddb8b4dfcc04107752}\label{classrapidjson_1_1_cursor_stream_wrapper_aac18faf6a4d396ddb8b4dfcc04107752}} 
+\index{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}!col\_@{col\_}}
+\index{col\_@{col\_}!rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}}
+\subsubsection{\texorpdfstring{col\_}{col\_}}
+{\footnotesize\ttfamily template$<$typename Input\+Stream , typename Encoding  = U\+T\+F8$<$$>$$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper}{rapidjson\+::\+Cursor\+Stream\+Wrapper}}$<$ Input\+Stream, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::col\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Current Column. 
+
+
+
+Definition at line 65 of file cursorstreamwrapper.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_cursor_stream_wrapper_a45092cee2d910ac2bfb479794d5a46ef}\label{classrapidjson_1_1_cursor_stream_wrapper_a45092cee2d910ac2bfb479794d5a46ef}} 
+\index{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}!line\_@{line\_}}
+\index{line\_@{line\_}!rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$@{rapidjson::CursorStreamWrapper$<$ InputStream, Encoding $>$}}
+\subsubsection{\texorpdfstring{line\_}{line\_}}
+{\footnotesize\ttfamily template$<$typename Input\+Stream , typename Encoding  = U\+T\+F8$<$$>$$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_cursor_stream_wrapper}{rapidjson\+::\+Cursor\+Stream\+Wrapper}}$<$ Input\+Stream, \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} $>$\+::line\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Current Line. 
+
+
+
+Definition at line 64 of file cursorstreamwrapper.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{cursorstreamwrapper_8h}{cursorstreamwrapper.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\hypertarget{reader_8h}{}\section{D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/reader.h File Reference}
+\label{reader_8h}\index{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/reader.h@{D:/cloned repo trainawear/train-\/A-\/wear/Server/rapidjson/reader.h}}
+{\ttfamily \#include \char`\"{}allocators.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stream.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}encodedstream.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal/meta.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal/stack.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal/strtod.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include \char`\"{}error/error.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_base_reader_handler}{rapidjson\+::\+Base\+Reader\+Handler$<$ Encoding, Derived $>$}}
+\begin{DoxyCompactList}\small\item\em Default implementation of \mbox{\hyperlink{classrapidjson_1_1_handler}{Handler}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stream_local_copy}{rapidjson\+::internal\+::\+Stream\+Local\+Copy$<$ Stream, int $>$}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stream_local_copy_3_01_stream_00_011_01_4}{rapidjson\+::internal\+::\+Stream\+Local\+Copy$<$ Stream, 1 $>$}}
+\begin{DoxyCompactList}\small\item\em Do copy optimization. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stream_local_copy_3_01_stream_00_010_01_4}{rapidjson\+::internal\+::\+Stream\+Local\+Copy$<$ Stream, 0 $>$}}
+\begin{DoxyCompactList}\small\item\em Keep reference. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_reader}{rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$}}
+\begin{DoxyCompactList}\small\item\em S\+A\+X-\/style J\+S\+ON parser. Use \mbox{\hyperlink{namespacerapidjson_ad5310edd1226f5b3ea82dc0d4d3740c6}{Reader}} for \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding and default allocator. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_reader_1_1_clear_stack_on_exit}{rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\+Clear\+Stack\+On\+Exit}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_stack_stream}{rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\+Stack\+Stream$<$ Char\+Type $>$}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_number_stream}{rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\+Number\+Stream$<$ Input\+Stream, backup, push\+On\+Take $>$}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_number_stream_3_01_input_stream_00_01false_00_01false_01_4}{rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\+Number\+Stream$<$ Input\+Stream, false, false $>$}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_number_stream_3_01_input_stream_00_01true_00_01false_01_4}{rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\+Number\+Stream$<$ Input\+Stream, true, false $>$}}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_reader_1_1_number_stream_3_01_input_stream_00_01true_00_01true_01_4}{rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\+Number\+Stream$<$ Input\+Stream, true, true $>$}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacerapidjson}{rapidjson}}
+\begin{DoxyCompactList}\small\item\em main Rapid\+J\+S\+ON namespace \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacerapidjson_1_1internal}{rapidjson\+::internal}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7f8c4265b2edda78568ae3338aaf1461}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+R\+E\+T\+U\+RN}}(parse\+Error\+Code,  offset)
+\begin{DoxyCompactList}\small\item\em Macro to indicate a parse error. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gae3689840fa6e89a241313f33b602f865}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+OR}}(parse\+Error\+Code,  offset)
+\begin{DoxyCompactList}\small\item\em (Internal) macro to indicate and handle a parse error. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_ga77005e892e6601599beaf421b0395c31}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+P\+A\+R\+S\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+F\+L\+A\+GS}}~k\+Parse\+No\+Flags
+\begin{DoxyCompactList}\small\item\em User-\/defined k\+Parse\+Default\+Flags definition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9}{rapidjson\+::\+Parse\+Flag}} \{ \newline
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af2c7fa21e9e7656e467bd71079ac8fb0}{rapidjson\+::k\+Parse\+No\+Flags}} = 0, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a02748971d6ea0c5e22c69b8aa7f344ea}{rapidjson\+::k\+Parse\+Insitu\+Flag}} = 1, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a3df81f75479da8e052393f92cbec394b}{rapidjson\+::k\+Parse\+Validate\+Encoding\+Flag}} = 2, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a7923686c8bdb7614699f1fb1bb615bb2}{rapidjson\+::k\+Parse\+Iterative\+Flag}} = 4, 
+\newline
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af84c60868704433b80aa51a62e042bb1}{rapidjson\+::k\+Parse\+Stop\+When\+Done\+Flag}} = 8, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9adf80892cdfa076b2d1a7dd9530e15cb0}{rapidjson\+::k\+Parse\+Full\+Precision\+Flag}} = 16, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9ab5d719b36aac626135d5d622d0d837c1}{rapidjson\+::k\+Parse\+Comments\+Flag}} = 32, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a13981c0b803803f59d7a01aef3dfc987}{rapidjson\+::k\+Parse\+Numbers\+As\+Strings\+Flag}} = 64, 
+\newline
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9af8b8470221dbc6046a40ff31d758ceec}{rapidjson\+::k\+Parse\+Trailing\+Commas\+Flag}} = 128, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a857894ab51cafa62956e9c9f0dafc4d8}{rapidjson\+::k\+Parse\+Nan\+And\+Inf\+Flag}} = 256, 
+\mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9a5640cb00db7814b7f22be3683dda9835}{rapidjson\+::k\+Parse\+Default\+Flags}} = k\+Parse\+No\+Flags
+ \}
+\begin{DoxyCompactList}\small\item\em Combination of parse\+Flags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Input\+Stream $>$ }\\void \mbox{\hyperlink{namespacerapidjson_a6efb0f4d2a6f81477a59718d42e9464a}{rapidjson\+::\+Skip\+Whitespace}} (Input\+Stream \&is)
+\begin{DoxyCompactList}\small\item\em Skip the J\+S\+ON white spaces in a stream. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{namespacerapidjson_a946a04b733bc148c13e7b3b0721cabcc}{rapidjson\+::\+Skip\+Whitespace}} (const char $\ast$p, const char $\ast$end)
+\end{DoxyCompactItemize}

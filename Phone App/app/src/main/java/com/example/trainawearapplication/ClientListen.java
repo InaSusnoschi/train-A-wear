@@ -76,6 +76,12 @@ public class ClientListen implements Runnable {
 
     @Override
     public void run() {
+        /**
+         * This is a method that runs the udp client thread. It uses a variable run that sets the
+         * current state of the thread (if it is running or stopped). While this variable is true,
+         * a socket is created to communicate with the server on the binded port and read the
+         * data from the server.
+         */
 
         boolean run = true;
         while (run) {

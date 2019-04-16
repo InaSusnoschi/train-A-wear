@@ -1,0 +1,400 @@
+\hypertarget{classrapidjson_1_1_schema_validating_reader}{}\section{rapidjson\+::Schema\+Validating\+Reader$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$ Class Template Reference}
+\label{classrapidjson_1_1_schema_validating_reader}\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+
+
+A helper class for parsing with validation.  
+
+
+
+
+{\ttfamily \#include $<$schema.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Schema\+Document\+Type\+::\+Pointer\+Type \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}{Pointer\+Type}}
+\item 
+typedef Input\+Stream\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a3507a4886ce6778fe1cae39ed5f0baaf}{Ch}}
+\item 
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}$<$ Source\+Encoding, Stack\+Allocator $>$ \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a6fb634fa68daaa8c185136258042f4c6}{Value\+Type}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a1e2bcc66cad23376241cd91e8bf8c706}{Schema\+Validating\+Reader}} (Input\+Stream \&is, const Schema\+Document\+Type \&sd)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Handler $>$ }\\bool \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_adb09230cc40b8dc5ba607de14d37dc42}{operator()}} (\mbox{\hyperlink{classrapidjson_1_1_handler}{Handler}} \&handler)
+\item 
+const \mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} \& \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a957147a03ad791aa12a0552320371a41}{Get\+Parse\+Result}} () const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a803e1eff3f4fa021e56c6583c45c9fb4}{Is\+Valid}} () const
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}{Pointer\+Type}} \& \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_ae90052ccece8e04e7a840dd61f7ac83c}{Get\+Invalid\+Schema\+Pointer}} () const
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a3507a4886ce6778fe1cae39ed5f0baaf}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a67bf36f1e4bf24a0760170ed199f592b}{Get\+Invalid\+Schema\+Keyword}} () const
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}{Pointer\+Type}} \& \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a00e8db597e8a55b5f8810707dda40dfa}{Get\+Invalid\+Document\+Pointer}} () const
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a6fb634fa68daaa8c185136258042f4c6}{Value\+Type}} \& \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a296167ce6eb968797de22a671311c4a5}{Get\+Error}} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Input\+Stream \& \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_ae3443e580ba1f89f909d0427b5fc2a12}{is\+\_\+}}
+\item 
+const Schema\+Document\+Type \& \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_ac8ff3d5618d18af30ccce4b85155e0bf}{sd\+\_\+}}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a03ee9d61d5051eb0d97eca449d6c2615}{parse\+Result\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}{Pointer\+Type}} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_ac501cd85bafe1723f8f90e17b5979a2d}{invalid\+Schema\+Pointer\+\_\+}}
+\item 
+const \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a3507a4886ce6778fe1cae39ed5f0baaf}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a409c3e18192a623a92573f8a84596df2}{invalid\+Schema\+Keyword\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}{Pointer\+Type}} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a3e156223031fb88ccc7e51aa25d2d063}{invalid\+Document\+Pointer\+\_\+}}
+\item 
+Stack\+Allocator \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a115cbcbdbd933a36883934eb49cb4576}{allocator\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a6fb634fa68daaa8c185136258042f4c6}{Value\+Type}} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_adba5335f9c3577e2960c8c762c119abc}{error\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a92253c14145f392cbc7e058388629003}{is\+Valid\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$unsigned parse\+Flags, typename Input\+Stream, typename Source\+Encoding, typename Schema\+Document\+Type = Schema\+Document, typename Stack\+Allocator = Crt\+Allocator$>$\newline
+class rapidjson\+::\+Schema\+Validating\+Reader$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$}
+
+A helper class for parsing with validation. 
+
+This helper class is a functor, designed as a parameter of \mbox{\hyperlink{classrapidjson_1_1_generic_document_a63e18887979da500ece6f0bd10d29b64}{Generic\+Document\+::\+Populate()}}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em parse\+Flags} & Combination of \mbox{\hyperlink{namespacerapidjson_a81379eb4e94a0386d71d15fda882ebc9}{Parse\+Flag}}. \\
+\hline
+{\em Input\+Stream} & Type of input stream, implementing \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept. \\
+\hline
+{\em Source\+Encoding} & \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} of the input stream. \\
+\hline
+{\em Schema\+Document\+Type} & Type of schema document. \\
+\hline
+{\em Stack\+Allocator} & \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} type for stack. \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 2437 of file schema.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a3507a4886ce6778fe1cae39ed5f0baaf}\label{classrapidjson_1_1_schema_validating_reader_a3507a4886ce6778fe1cae39ed5f0baaf}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+typedef Input\+Stream\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a3507a4886ce6778fe1cae39ed5f0baaf}{Ch}}}
+
+
+
+Definition at line 2440 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}\label{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!PointerType@{PointerType}}
+\index{PointerType@{PointerType}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{PointerType}{PointerType}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+typedef Schema\+Document\+Type\+::\+Pointer\+Type \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}{Pointer\+Type}}}
+
+
+
+Definition at line 2439 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a6fb634fa68daaa8c185136258042f4c6}\label{classrapidjson_1_1_schema_validating_reader_a6fb634fa68daaa8c185136258042f4c6}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!ValueType@{ValueType}}
+\index{ValueType@{ValueType}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{ValueType}{ValueType}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+typedef \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}$<$Source\+Encoding, Stack\+Allocator$>$ \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a6fb634fa68daaa8c185136258042f4c6}{Value\+Type}}}
+
+
+
+Definition at line 2441 of file schema.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a1e2bcc66cad23376241cd91e8bf8c706}\label{classrapidjson_1_1_schema_validating_reader_a1e2bcc66cad23376241cd91e8bf8c706}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!SchemaValidatingReader@{SchemaValidatingReader}}
+\index{SchemaValidatingReader@{SchemaValidatingReader}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{SchemaValidatingReader()}{SchemaValidatingReader()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{Schema\+Validating\+Reader}} (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{const Schema\+Document\+Type \&}]{sd }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Input stream. \\
+\hline
+{\em sd} & Schema document. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 2448 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2448 : \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_ae3443e580ba1f89f909d0427b5fc2a12}{is\_}}(is), \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_ac8ff3d5618d18af30ccce4b85155e0bf}{sd\_}}(sd), \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a409c3e18192a623a92573f8a84596df2}{invalidSchemaKeyword\_}}(), \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_adba5335f9c3577e2960c8c762c119abc}{error\_}}(\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4acf030b422a32c3647c7c5973bd4dd0a9}{kObjectType}}), \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a92253c14145f392cbc7e058388629003}{isValid\_}}(\textcolor{keyword}{true}) \{\}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a296167ce6eb968797de22a671311c4a5}\label{classrapidjson_1_1_schema_validating_reader_a296167ce6eb968797de22a671311c4a5}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!GetError@{GetError}}
+\index{GetError@{GetError}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{GetError()}{GetError()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a6fb634fa68daaa8c185136258042f4c6}{Value\+Type}}\& \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::Get\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 2478 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2478 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_adba5335f9c3577e2960c8c762c119abc}{error\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a00e8db597e8a55b5f8810707dda40dfa}\label{classrapidjson_1_1_schema_validating_reader_a00e8db597e8a55b5f8810707dda40dfa}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!GetInvalidDocumentPointer@{GetInvalidDocumentPointer}}
+\index{GetInvalidDocumentPointer@{GetInvalidDocumentPointer}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{GetInvalidDocumentPointer()}{GetInvalidDocumentPointer()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}{Pointer\+Type}}\& \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::Get\+Invalid\+Document\+Pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 2477 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2477 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a3e156223031fb88ccc7e51aa25d2d063}{invalidDocumentPointer\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a67bf36f1e4bf24a0760170ed199f592b}\label{classrapidjson_1_1_schema_validating_reader_a67bf36f1e4bf24a0760170ed199f592b}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!GetInvalidSchemaKeyword@{GetInvalidSchemaKeyword}}
+\index{GetInvalidSchemaKeyword@{GetInvalidSchemaKeyword}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{GetInvalidSchemaKeyword()}{GetInvalidSchemaKeyword()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a3507a4886ce6778fe1cae39ed5f0baaf}{Ch}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::Get\+Invalid\+Schema\+Keyword (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 2476 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2476 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a409c3e18192a623a92573f8a84596df2}{invalidSchemaKeyword\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_ae90052ccece8e04e7a840dd61f7ac83c}\label{classrapidjson_1_1_schema_validating_reader_ae90052ccece8e04e7a840dd61f7ac83c}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!GetInvalidSchemaPointer@{GetInvalidSchemaPointer}}
+\index{GetInvalidSchemaPointer@{GetInvalidSchemaPointer}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{GetInvalidSchemaPointer()}{GetInvalidSchemaPointer()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}{Pointer\+Type}}\& \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::Get\+Invalid\+Schema\+Pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 2475 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2475 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_ac501cd85bafe1723f8f90e17b5979a2d}{invalidSchemaPointer\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a957147a03ad791aa12a0552320371a41}\label{classrapidjson_1_1_schema_validating_reader_a957147a03ad791aa12a0552320371a41}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!GetParseResult@{GetParseResult}}
+\index{GetParseResult@{GetParseResult}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{GetParseResult()}{GetParseResult()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}}\& \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::Get\+Parse\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 2473 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2473 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a03ee9d61d5051eb0d97eca449d6c2615}{parseResult\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a803e1eff3f4fa021e56c6583c45c9fb4}\label{classrapidjson_1_1_schema_validating_reader_a803e1eff3f4fa021e56c6583c45c9fb4}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!IsValid@{IsValid}}
+\index{IsValid@{IsValid}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{IsValid()}{IsValid()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::Is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 2474 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2474 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a92253c14145f392cbc7e058388629003}{isValid\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_adb09230cc40b8dc5ba607de14d37dc42}\label{classrapidjson_1_1_schema_validating_reader_adb09230cc40b8dc5ba607de14d37dc42}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+template$<$typename Handler $>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_handler}{Handler}} \&}]{handler }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2451 of file schema.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2451                                       \{}
+\DoxyCodeLine{2452         GenericReader<SourceEncoding, typename SchemaDocumentType::EncodingType, StackAllocator> reader;}
+\DoxyCodeLine{2453         GenericSchemaValidator<SchemaDocumentType, Handler> validator(\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_ac8ff3d5618d18af30ccce4b85155e0bf}{sd\_}}, handler);}
+\DoxyCodeLine{2454         \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a03ee9d61d5051eb0d97eca449d6c2615}{parseResult\_}} = reader.template Parse<parseFlags>(\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_ae3443e580ba1f89f909d0427b5fc2a12}{is\_}}, validator);}
+\DoxyCodeLine{2455 }
+\DoxyCodeLine{2456         \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a92253c14145f392cbc7e058388629003}{isValid\_}} = validator.IsValid();}
+\DoxyCodeLine{2457         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a92253c14145f392cbc7e058388629003}{isValid\_}}) \{}
+\DoxyCodeLine{2458             \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_ac501cd85bafe1723f8f90e17b5979a2d}{invalidSchemaPointer\_}} = \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}{PointerType}}();}
+\DoxyCodeLine{2459             \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a409c3e18192a623a92573f8a84596df2}{invalidSchemaKeyword\_}} = 0;}
+\DoxyCodeLine{2460             \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a3e156223031fb88ccc7e51aa25d2d063}{invalidDocumentPointer\_}} = \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}{PointerType}}();}
+\DoxyCodeLine{2461             \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_adba5335f9c3577e2960c8c762c119abc}{error\_}}.SetObject();}
+\DoxyCodeLine{2462         \}}
+\DoxyCodeLine{2463         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{2464             \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_ac501cd85bafe1723f8f90e17b5979a2d}{invalidSchemaPointer\_}} = validator.GetInvalidSchemaPointer();}
+\DoxyCodeLine{2465             \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a409c3e18192a623a92573f8a84596df2}{invalidSchemaKeyword\_}} = validator.GetInvalidSchemaKeyword();}
+\DoxyCodeLine{2466             \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a3e156223031fb88ccc7e51aa25d2d063}{invalidDocumentPointer\_}} = validator.GetInvalidDocumentPointer();}
+\DoxyCodeLine{2467             \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_adba5335f9c3577e2960c8c762c119abc}{error\_}}.CopyFrom(validator.GetError(), \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a115cbcbdbd933a36883934eb49cb4576}{allocator\_}});}
+\DoxyCodeLine{2468         \}}
+\DoxyCodeLine{2469 }
+\DoxyCodeLine{2470         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a03ee9d61d5051eb0d97eca449d6c2615}{parseResult\_}};}
+\DoxyCodeLine{2471     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\+Get\+Error(), rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\+Get\+Invalid\+Document\+Pointer(), rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\+Get\+Invalid\+Schema\+Keyword(), rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\+Get\+Invalid\+Schema\+Pointer(), and rapidjson\+::\+Generic\+Schema\+Validator$<$ Schema\+Document\+Type, Output\+Handler, State\+Allocator $>$\+::\+Is\+Valid().
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a115cbcbdbd933a36883934eb49cb4576}\label{classrapidjson_1_1_schema_validating_reader_a115cbcbdbd933a36883934eb49cb4576}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!allocator\_@{allocator\_}}
+\index{allocator\_@{allocator\_}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{allocator\_}{allocator\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+Stack\+Allocator \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2488 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_adba5335f9c3577e2960c8c762c119abc}\label{classrapidjson_1_1_schema_validating_reader_adba5335f9c3577e2960c8c762c119abc}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!error\_@{error\_}}
+\index{error\_@{error\_}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{error\_}{error\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a6fb634fa68daaa8c185136258042f4c6}{Value\+Type}} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::error\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2489 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a3e156223031fb88ccc7e51aa25d2d063}\label{classrapidjson_1_1_schema_validating_reader_a3e156223031fb88ccc7e51aa25d2d063}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!invalidDocumentPointer\_@{invalidDocumentPointer\_}}
+\index{invalidDocumentPointer\_@{invalidDocumentPointer\_}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{invalidDocumentPointer\_}{invalidDocumentPointer\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}{Pointer\+Type}} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::invalid\+Document\+Pointer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2487 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a409c3e18192a623a92573f8a84596df2}\label{classrapidjson_1_1_schema_validating_reader_a409c3e18192a623a92573f8a84596df2}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!invalidSchemaKeyword\_@{invalidSchemaKeyword\_}}
+\index{invalidSchemaKeyword\_@{invalidSchemaKeyword\_}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{invalidSchemaKeyword\_}{invalidSchemaKeyword\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a3507a4886ce6778fe1cae39ed5f0baaf}{Ch}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::invalid\+Schema\+Keyword\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2486 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_ac501cd85bafe1723f8f90e17b5979a2d}\label{classrapidjson_1_1_schema_validating_reader_ac501cd85bafe1723f8f90e17b5979a2d}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!invalidSchemaPointer\_@{invalidSchemaPointer\_}}
+\index{invalidSchemaPointer\_@{invalidSchemaPointer\_}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{invalidSchemaPointer\_}{invalidSchemaPointer\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader_a42c64d1ed25ffb2e70a35b9e43e0e564}{Pointer\+Type}} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::invalid\+Schema\+Pointer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2485 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_ae3443e580ba1f89f909d0427b5fc2a12}\label{classrapidjson_1_1_schema_validating_reader_ae3443e580ba1f89f909d0427b5fc2a12}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!is\_@{is\_}}
+\index{is\_@{is\_}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{is\_}{is\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+Input\+Stream\& \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::is\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2481 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a92253c14145f392cbc7e058388629003}\label{classrapidjson_1_1_schema_validating_reader_a92253c14145f392cbc7e058388629003}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!isValid\_@{isValid\_}}
+\index{isValid\_@{isValid\_}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{isValid\_}{isValid\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::is\+Valid\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2490 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_a03ee9d61d5051eb0d97eca449d6c2615}\label{classrapidjson_1_1_schema_validating_reader_a03ee9d61d5051eb0d97eca449d6c2615}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!parseResult\_@{parseResult\_}}
+\index{parseResult\_@{parseResult\_}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{parseResult\_}{parseResult\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::parse\+Result\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2484 of file schema.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_schema_validating_reader_ac8ff3d5618d18af30ccce4b85155e0bf}\label{classrapidjson_1_1_schema_validating_reader_ac8ff3d5618d18af30ccce4b85155e0bf}} 
+\index{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}!sd\_@{sd\_}}
+\index{sd\_@{sd\_}!rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$@{rapidjson::SchemaValidatingReader$<$ parseFlags, InputStream, SourceEncoding, SchemaDocumentType, StackAllocator $>$}}
+\subsubsection{\texorpdfstring{sd\_}{sd\_}}
+{\footnotesize\ttfamily template$<$unsigned parse\+Flags, typename Input\+Stream , typename Source\+Encoding , typename Schema\+Document\+Type  = Schema\+Document, typename Stack\+Allocator  = Crt\+Allocator$>$ \\
+const Schema\+Document\+Type\& \mbox{\hyperlink{classrapidjson_1_1_schema_validating_reader}{rapidjson\+::\+Schema\+Validating\+Reader}}$<$ parse\+Flags, Input\+Stream, Source\+Encoding, Schema\+Document\+Type, Stack\+Allocator $>$\+::sd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2482 of file schema.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{schema_8h}{schema.\+h}}\end{DoxyCompactItemize}

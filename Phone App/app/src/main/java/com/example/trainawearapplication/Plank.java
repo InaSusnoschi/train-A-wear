@@ -14,6 +14,11 @@ import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageClickListener;
 import com.synnapps.carouselview.ImageListener;
 
+/**
+ * @brief Plank activity
+ * contains the START/STOP buttons, the Wearing instructions and visuals on how to correctly perform
+ * planks and pushups
+ */
 public class Plank extends AppCompatActivity implements UpdateFeedback{
 
     final String TAG = "PlankActivity";
@@ -41,8 +46,9 @@ public class Plank extends AppCompatActivity implements UpdateFeedback{
     Button buttonConnect, buttonDisconnect;
     static TextView textViewStatePlank, textViewRxPlank, textFeedbackPlank, messageView;
 
-    UdpClientHandlerPlank udpClientHandler;
+//    UdpClientHandlerPlank udpClientHandler;
 
+    UdpClientHandlerPlank udpClientHandler;
     private final int PORT = 31415;
     private Thread udpListener;
     private ClientSend udpSender;
@@ -84,7 +90,7 @@ public class Plank extends AppCompatActivity implements UpdateFeedback{
         udpClientHandler = new com.example.trainawearapplication.UdpClientHandlerPlank();
 
         Log.d(TAG, "Start listening for messages");
-        udpListener = new Thread(new com.example.trainawearapplication.ClientListen(PORT, textViewStatePlank, udpClientHandler));
+        udpListener = new Thread(new com.example.trainawearapplication.ClientListenPlank(PORT, textViewStatePlank, udpClientHandler));
         udpListener.start();
 
         udpSender = new ClientSend("255.255.255.255", PORT);
@@ -148,23 +154,14 @@ public class Plank extends AppCompatActivity implements UpdateFeedback{
             case "1":
                 return ("Let's go!");
 
-            case "2":
-                return("Knees caving in: Keep your knees in line with your toes");
-
-            case "3":
-                return("Your back is bending, keep it straight while tensing your abs");
-
-            case "4":
-                return ("Bring the weight down slowly and increase speed when lifting");
-
-            case "5":
+            case "6":
                 return ("Try to keep you back in a neutral position, don't lift your hips");
 
-            case "6":
-                return ("If you keep your hips steady, the abs are working harder");
+            case "8":
+                return ("Keep your shoulders from rotating when lowering your body");
 
-            case "7":
-                return ("For an effective push up, bring your chest close to the ground");
+            case "10":
+                return ("Straighten your knees to get tension in your core");
 
             default:
                 return("You're doing great, keep going!");

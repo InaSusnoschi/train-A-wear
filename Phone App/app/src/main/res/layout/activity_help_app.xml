@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/textHowHelp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:text="@string/text_help_head"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
             tools:context=".ClassicSquat">
 
             <com.synnapps.carouselview.CarouselView
-                android:id="@+id/carousel"
+                android:id="@+id/carouselStr"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:pageColor="@color/colorGreyLight"
@@ -203,6 +203,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
+            android:textSize="20dp"
             android:alpha="0.8"
             android:textColor="#000000"
             android:text="@string/text_fault_head" />
@@ -212,6 +213,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
+            android:textSize="20dp"
             android:alpha="0.8"
             android:textColor="#000000"
             android:text="@string/button_mount" />
@@ -221,6 +223,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
+            android:textSize="20dp"
             android:alpha="0.8"
             android:textColor="#000000"
             android:text="@string/button_stretch" />
@@ -230,6 +233,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
+            android:textSize="20dp"
             android:alpha="0.8"
             android:textColor="#000000"
             android:text="@string/button_health" />

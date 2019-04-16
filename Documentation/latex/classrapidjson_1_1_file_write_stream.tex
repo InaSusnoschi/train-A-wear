@@ -1,0 +1,343 @@
+\hypertarget{classrapidjson_1_1_file_write_stream}{}\section{rapidjson\+::File\+Write\+Stream Class Reference}
+\label{classrapidjson_1_1_file_write_stream}\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+
+
+Wrapper of C file stream for output using fwrite().  
+
+
+
+
+{\ttfamily \#include $<$filewritestream.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_afc606cc81f6c3709d81bf99b30566330}{Ch}}
+\begin{DoxyCompactList}\small\item\em Character type. Only support char. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a9abf2078f78a30c7ad868f480e4221be}{File\+Write\+Stream}} (std\+::\+F\+I\+LE $\ast$fp, char $\ast$buffer, size\+\_\+t buffer\+Size)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a5a3b2b270c90f4672400d36a4f056fbc}{Put}} (char c)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a6e66d814422fd311a908cf2145535b99}{PutN}} (char c, size\+\_\+t n)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_ad21fb3d1318a91a1d32ce971378981e1}{Flush}} ()
+\item 
+char \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a8a9816245140dac55d66c24d5f21e231}{Peek}} () const
+\item 
+char \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a6b3d198633b02a7d016b8833b4615b33}{Take}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_ab57d1149f396b095b1eab2154974983d}{Tell}} () const
+\item 
+char $\ast$ \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a330ab2dff49aca7015f92e699a675f11}{Put\+Begin}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_ac755d1f640dc82a2359b2867ce09ac0c}{Put\+End}} (char $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a4c3e7e34c9c31ba4dfc03da6bfde0302}{File\+Write\+Stream}} (const \mbox{\hyperlink{classrapidjson_1_1_file_write_stream}{File\+Write\+Stream}} \&)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_file_write_stream}{File\+Write\+Stream}} \& \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a13bc77bf3da09dbb7f3f2c9229a01bda}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1_file_write_stream}{File\+Write\+Stream}} \&)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::\+F\+I\+LE $\ast$ \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a2feb4173ac3aa7a32c7e01bd42e3ffeb}{fp\+\_\+}}
+\item 
+char $\ast$ \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a6f69951e2b3ae4819383e9b949e1166c}{buffer\+\_\+}}
+\item 
+char $\ast$ \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_afc6c60e519e8b58ec7fd9930aa8e41eb}{buffer\+End\+\_\+}}
+\item 
+char $\ast$ \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper of C file stream for output using fwrite(). 
+
+\begin{DoxyNote}{Note}
+implements \mbox{\hyperlink{classrapidjson_1_1_stream}{Stream}} concept 
+\end{DoxyNote}
+
+
+Definition at line 32 of file filewritestream.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_afc606cc81f6c3709d81bf99b30566330}\label{classrapidjson_1_1_file_write_stream_afc606cc81f6c3709d81bf99b30566330}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily typedef char \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_afc606cc81f6c3709d81bf99b30566330}{rapidjson\+::\+File\+Write\+Stream\+::\+Ch}}}
+
+
+
+Character type. Only support char. 
+
+
+
+Definition at line 34 of file filewritestream.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_a9abf2078f78a30c7ad868f480e4221be}\label{classrapidjson_1_1_file_write_stream_a9abf2078f78a30c7ad868f480e4221be}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!FileWriteStream@{FileWriteStream}}
+\index{FileWriteStream@{FileWriteStream}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{FileWriteStream()}{FileWriteStream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily rapidjson\+::\+File\+Write\+Stream\+::\+File\+Write\+Stream (\begin{DoxyParamCaption}\item[{std\+::\+F\+I\+LE $\ast$}]{fp,  }\item[{char $\ast$}]{buffer,  }\item[{size\+\_\+t}]{buffer\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file filewritestream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36                                                                   : \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a2feb4173ac3aa7a32c7e01bd42e3ffeb}{fp\_}}(fp), \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a6f69951e2b3ae4819383e9b949e1166c}{buffer\_}}(buffer), \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_afc6c60e519e8b58ec7fd9930aa8e41eb}{bufferEnd\_}}(buffer + bufferSize), \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\_}}(\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a6f69951e2b3ae4819383e9b949e1166c}{buffer\_}}) \{ }
+\DoxyCodeLine{37         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a2feb4173ac3aa7a32c7e01bd42e3ffeb}{fp\_}} != 0);}
+\DoxyCodeLine{38     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_a4c3e7e34c9c31ba4dfc03da6bfde0302}\label{classrapidjson_1_1_file_write_stream_a4c3e7e34c9c31ba4dfc03da6bfde0302}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!FileWriteStream@{FileWriteStream}}
+\index{FileWriteStream@{FileWriteStream}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{FileWriteStream()}{FileWriteStream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily rapidjson\+::\+File\+Write\+Stream\+::\+File\+Write\+Stream (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_file_write_stream}{File\+Write\+Stream}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_ad21fb3d1318a91a1d32ce971378981e1}\label{classrapidjson_1_1_file_write_stream_ad21fb3d1318a91a1d32ce971378981e1}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!Flush@{Flush}}
+\index{Flush@{Flush}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily void rapidjson\+::\+File\+Write\+Stream\+::\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 63 of file filewritestream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63                  \{}
+\DoxyCodeLine{64         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\_}} != \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a6f69951e2b3ae4819383e9b949e1166c}{buffer\_}}) \{}
+\DoxyCodeLine{65             \textcolor{keywordtype}{size\_t} result = std::fwrite(\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a6f69951e2b3ae4819383e9b949e1166c}{buffer\_}}, 1, static\_cast<size\_t>(\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\_}} - \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a6f69951e2b3ae4819383e9b949e1166c}{buffer\_}}), \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a2feb4173ac3aa7a32c7e01bd42e3ffeb}{fp\_}});}
+\DoxyCodeLine{66             \textcolor{keywordflow}{if} (result < static\_cast<size\_t>(\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\_}} - \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a6f69951e2b3ae4819383e9b949e1166c}{buffer\_}})) \{}
+\DoxyCodeLine{67                 \textcolor{comment}{// failure deliberately ignored at this time}}
+\DoxyCodeLine{68                 \textcolor{comment}{// added to avoid warn\_unused\_result build errors}}
+\DoxyCodeLine{69             \}}
+\DoxyCodeLine{70             \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\_}} = \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a6f69951e2b3ae4819383e9b949e1166c}{buffer\_}};}
+\DoxyCodeLine{71         \}}
+\DoxyCodeLine{72     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_a13bc77bf3da09dbb7f3f2c9229a01bda}\label{classrapidjson_1_1_file_write_stream_a13bc77bf3da09dbb7f3f2c9229a01bda}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrapidjson_1_1_file_write_stream}{File\+Write\+Stream}}\& rapidjson\+::\+File\+Write\+Stream\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_file_write_stream}{File\+Write\+Stream}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_a8a9816245140dac55d66c24d5f21e231}\label{classrapidjson_1_1_file_write_stream_a8a9816245140dac55d66c24d5f21e231}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!Peek@{Peek}}
+\index{Peek@{Peek}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{Peek()}{Peek()}}
+{\footnotesize\ttfamily char rapidjson\+::\+File\+Write\+Stream\+::\+Peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 75 of file filewritestream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_a5a3b2b270c90f4672400d36a4f056fbc}\label{classrapidjson_1_1_file_write_stream_a5a3b2b270c90f4672400d36a4f056fbc}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!Put@{Put}}
+\index{Put@{Put}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily void rapidjson\+::\+File\+Write\+Stream\+::\+Put (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 40 of file filewritestream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                      \{ }
+\DoxyCodeLine{41         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\_}} >= \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_afc6c60e519e8b58ec7fd9930aa8e41eb}{bufferEnd\_}})}
+\DoxyCodeLine{42             \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_ad21fb3d1318a91a1d32ce971378981e1}{Flush}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44         *\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\_}}++ = c;}
+\DoxyCodeLine{45     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_a330ab2dff49aca7015f92e699a675f11}\label{classrapidjson_1_1_file_write_stream_a330ab2dff49aca7015f92e699a675f11}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!PutBegin@{PutBegin}}
+\index{PutBegin@{PutBegin}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{PutBegin()}{PutBegin()}}
+{\footnotesize\ttfamily char$\ast$ rapidjson\+::\+File\+Write\+Stream\+::\+Put\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 78 of file filewritestream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_ac755d1f640dc82a2359b2867ce09ac0c}\label{classrapidjson_1_1_file_write_stream_ac755d1f640dc82a2359b2867ce09ac0c}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!PutEnd@{PutEnd}}
+\index{PutEnd@{PutEnd}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{PutEnd()}{PutEnd()}}
+{\footnotesize\ttfamily size\+\_\+t rapidjson\+::\+File\+Write\+Stream\+::\+Put\+End (\begin{DoxyParamCaption}\item[{char $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 79 of file filewritestream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_a6e66d814422fd311a908cf2145535b99}\label{classrapidjson_1_1_file_write_stream_a6e66d814422fd311a908cf2145535b99}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!PutN@{PutN}}
+\index{PutN@{PutN}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{PutN()}{PutN()}}
+{\footnotesize\ttfamily void rapidjson\+::\+File\+Write\+Stream\+::\+PutN (\begin{DoxyParamCaption}\item[{char}]{c,  }\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file filewritestream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                 \{}
+\DoxyCodeLine{48         \textcolor{keywordtype}{size\_t} avail = static\_cast<size\_t>(\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_afc6c60e519e8b58ec7fd9930aa8e41eb}{bufferEnd\_}} - \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\_}});}
+\DoxyCodeLine{49         \textcolor{keywordflow}{while} (n > avail) \{}
+\DoxyCodeLine{50             std::memset(\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\_}}, c, avail);}
+\DoxyCodeLine{51             \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\_}} += avail;}
+\DoxyCodeLine{52             \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_ad21fb3d1318a91a1d32ce971378981e1}{Flush}}();}
+\DoxyCodeLine{53             n -= avail;}
+\DoxyCodeLine{54             avail = static\_cast<size\_t>(\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_afc6c60e519e8b58ec7fd9930aa8e41eb}{bufferEnd\_}} - \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\_}});}
+\DoxyCodeLine{55         \}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57         \textcolor{keywordflow}{if} (n > 0) \{}
+\DoxyCodeLine{58             std::memset(\mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\_}}, c, n);}
+\DoxyCodeLine{59             \mbox{\hyperlink{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}{current\_}} += n;}
+\DoxyCodeLine{60         \}}
+\DoxyCodeLine{61     \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::\+Put\+N().
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_a6b3d198633b02a7d016b8833b4615b33}\label{classrapidjson_1_1_file_write_stream_a6b3d198633b02a7d016b8833b4615b33}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!Take@{Take}}
+\index{Take@{Take}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{Take()}{Take()}}
+{\footnotesize\ttfamily char rapidjson\+::\+File\+Write\+Stream\+::\+Take (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 76 of file filewritestream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_ab57d1149f396b095b1eab2154974983d}\label{classrapidjson_1_1_file_write_stream_ab57d1149f396b095b1eab2154974983d}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!Tell@{Tell}}
+\index{Tell@{Tell}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{Tell()}{Tell()}}
+{\footnotesize\ttfamily size\+\_\+t rapidjson\+::\+File\+Write\+Stream\+::\+Tell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 77 of file filewritestream.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77 \{ \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\textcolor{keyword}{false}); \textcolor{keywordflow}{return} 0; \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_a6f69951e2b3ae4819383e9b949e1166c}\label{classrapidjson_1_1_file_write_stream_a6f69951e2b3ae4819383e9b949e1166c}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!buffer\_@{buffer\_}}
+\index{buffer\_@{buffer\_}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{buffer\_}{buffer\_}}
+{\footnotesize\ttfamily char$\ast$ rapidjson\+::\+File\+Write\+Stream\+::buffer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 87 of file filewritestream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_afc6c60e519e8b58ec7fd9930aa8e41eb}\label{classrapidjson_1_1_file_write_stream_afc6c60e519e8b58ec7fd9930aa8e41eb}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!bufferEnd\_@{bufferEnd\_}}
+\index{bufferEnd\_@{bufferEnd\_}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{bufferEnd\_}{bufferEnd\_}}
+{\footnotesize\ttfamily char$\ast$ rapidjson\+::\+File\+Write\+Stream\+::buffer\+End\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 88 of file filewritestream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}\label{classrapidjson_1_1_file_write_stream_a250f94025fad330db98c97da9d3967a6}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!current\_@{current\_}}
+\index{current\_@{current\_}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{current\_}{current\_}}
+{\footnotesize\ttfamily char$\ast$ rapidjson\+::\+File\+Write\+Stream\+::current\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 89 of file filewritestream.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_file_write_stream_a2feb4173ac3aa7a32c7e01bd42e3ffeb}\label{classrapidjson_1_1_file_write_stream_a2feb4173ac3aa7a32c7e01bd42e3ffeb}} 
+\index{rapidjson::FileWriteStream@{rapidjson::FileWriteStream}!fp\_@{fp\_}}
+\index{fp\_@{fp\_}!rapidjson::FileWriteStream@{rapidjson::FileWriteStream}}
+\subsubsection{\texorpdfstring{fp\_}{fp\_}}
+{\footnotesize\ttfamily std\+::\+F\+I\+LE$\ast$ rapidjson\+::\+File\+Write\+Stream\+::fp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 86 of file filewritestream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{filewritestream_8h}{filewritestream.\+h}}\end{DoxyCompactItemize}

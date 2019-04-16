@@ -1,0 +1,192 @@
+\hypertarget{class_buffer}{}\section{Buffer Class Reference}
+\label{class_buffer}\index{Buffer@{Buffer}}
+
+
+{\ttfamily \#include $<$Buffer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_buffer_ae7ef2cd201190fde551dcb902627112b}{Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Allocate memory for the buffer and initialize the values to 0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_buffer_a59b8743e4a5f731bdd0c4185c9ef263b}{$\sim$\+Buffer}} ()
+\item 
+void \mbox{\hyperlink{class_buffer_a43bc2e8725cb4f43bbf4b67d2c787fd1}{buffer}} (double value2)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_buffer}{Buffer}} functionality. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{class_buffer_a58556f015b2a2260b95a6c7005e41d45}{get\+\_\+buffer}} (void)
+\begin{DoxyCompactList}\small\item\em Access the buffer values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_buffer_a4cc559004546a17c01c5c9f898ef993c}{print\+\_\+buffer}} (void)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$ \mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\+\_\+val}}
+\item 
+int \mbox{\hyperlink{class_buffer_a18d933c855fdd62178d991d258206b80}{stage}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file Buffer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_buffer_ae7ef2cd201190fde551dcb902627112b}\label{class_buffer_ae7ef2cd201190fde551dcb902627112b}} 
+\index{Buffer@{Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!Buffer@{Buffer}}
+\subsubsection{\texorpdfstring{Buffer()}{Buffer()}}
+{\footnotesize\ttfamily Buffer\+::\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allocate memory for the buffer and initialize the values to 0. 
+
+
+
+Definition at line 23 of file Buffer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24 \{}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_buffer_a18d933c855fdd62178d991d258206b80}{stage}} = 0;}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}} = (\textcolor{keywordtype}{double}*) malloc(\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double})*2);}
+\DoxyCodeLine{27     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}})\{}
+\DoxyCodeLine{28         \mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}}[0] = 0;}
+\DoxyCodeLine{29         \mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}}[1] = 0;}
+\DoxyCodeLine{30     \}}
+\DoxyCodeLine{31 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_buffer_a59b8743e4a5f731bdd0c4185c9ef263b}\label{class_buffer_a59b8743e4a5f731bdd0c4185c9ef263b}} 
+\index{Buffer@{Buffer}!````~Buffer@{$\sim$Buffer}}
+\index{````~Buffer@{$\sim$Buffer}!Buffer@{Buffer}}
+\subsubsection{\texorpdfstring{$\sim$Buffer()}{~Buffer()}}
+{\footnotesize\ttfamily Buffer\+::$\sim$\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 33 of file Buffer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}})\{}
+\DoxyCodeLine{36         free(\mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}});}
+\DoxyCodeLine{37     \}}
+\DoxyCodeLine{38 \}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_buffer_a43bc2e8725cb4f43bbf4b67d2c787fd1}\label{class_buffer_a43bc2e8725cb4f43bbf4b67d2c787fd1}} 
+\index{Buffer@{Buffer}!buffer@{buffer}}
+\index{buffer@{buffer}!Buffer@{Buffer}}
+\subsubsection{\texorpdfstring{buffer()}{buffer()}}
+{\footnotesize\ttfamily void Buffer\+::buffer (\begin{DoxyParamCaption}\item[{double}]{value2 }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_buffer}{Buffer}} functionality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value2} & The value to be added Stores the last two values input by removing the oldest one \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file Buffer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56 \{}
+\DoxyCodeLine{57     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_buffer_a18d933c855fdd62178d991d258206b80}{stage}} == 0)\{}
+\DoxyCodeLine{58         \mbox{\hyperlink{class_buffer_a18d933c855fdd62178d991d258206b80}{stage}}++;}
+\DoxyCodeLine{59         \mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}}[0] = value2;}
+\DoxyCodeLine{60     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_buffer_a18d933c855fdd62178d991d258206b80}{stage}} == 1)\{}
+\DoxyCodeLine{61         \mbox{\hyperlink{class_buffer_a18d933c855fdd62178d991d258206b80}{stage}}++;}
+\DoxyCodeLine{62         \mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}}[1] = value2;}
+\DoxyCodeLine{63     \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_buffer_a18d933c855fdd62178d991d258206b80}{stage}} >= 2)\{}
+\DoxyCodeLine{64         \mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}}[0] = \mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}}[1];}
+\DoxyCodeLine{65         \mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}}[1] = value2;}
+\DoxyCodeLine{66     \}}
+\DoxyCodeLine{67     cout<<\mbox{\hyperlink{class_buffer_a18d933c855fdd62178d991d258206b80}{stage}}<<endl;}
+\DoxyCodeLine{68 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_buffer_a58556f015b2a2260b95a6c7005e41d45}\label{class_buffer_a58556f015b2a2260b95a6c7005e41d45}} 
+\index{Buffer@{Buffer}!get\_buffer@{get\_buffer}}
+\index{get\_buffer@{get\_buffer}!Buffer@{Buffer}}
+\subsubsection{\texorpdfstring{get\_buffer()}{get\_buffer()}}
+{\footnotesize\ttfamily double $\ast$ Buffer\+::get\+\_\+buffer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Access the buffer values. 
+
+
+
+Definition at line 73 of file Buffer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                               \{}
+\DoxyCodeLine{74     \textcolor{keywordtype}{double}* temp= (\textcolor{keywordtype}{double}*)malloc(\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{double}));}
+\DoxyCodeLine{75     temp[0] = \mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}}[0];}
+\DoxyCodeLine{76     temp[1] = \mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}}[1];}
+\DoxyCodeLine{77     \textcolor{keywordflow}{return} temp;}
+\DoxyCodeLine{78 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_buffer_a4cc559004546a17c01c5c9f898ef993c}\label{class_buffer_a4cc559004546a17c01c5c9f898ef993c}} 
+\index{Buffer@{Buffer}!print\_buffer@{print\_buffer}}
+\index{print\_buffer@{print\_buffer}!Buffer@{Buffer}}
+\subsubsection{\texorpdfstring{print\_buffer()}{print\_buffer()}}
+{\footnotesize\ttfamily void Buffer\+::print\+\_\+buffer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 40 of file Buffer.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                              \{}
+\DoxyCodeLine{41     cout << \textcolor{stringliteral}{"buffer[0]: "} << \mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}}[0] << endl;}
+\DoxyCodeLine{42     cout << \textcolor{stringliteral}{"buffer[1]: "} << \mbox{\hyperlink{class_buffer_a48f2242483497ad653ee41509b361c9f}{buffer\_val}}[1] << endl;}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_buffer_a48f2242483497ad653ee41509b361c9f}\label{class_buffer_a48f2242483497ad653ee41509b361c9f}} 
+\index{Buffer@{Buffer}!buffer\_val@{buffer\_val}}
+\index{buffer\_val@{buffer\_val}!Buffer@{Buffer}}
+\subsubsection{\texorpdfstring{buffer\_val}{buffer\_val}}
+{\footnotesize\ttfamily double$\ast$ Buffer\+::buffer\+\_\+val\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 22 of file Buffer.\+h.
+
+\mbox{\Hypertarget{class_buffer_a18d933c855fdd62178d991d258206b80}\label{class_buffer_a18d933c855fdd62178d991d258206b80}} 
+\index{Buffer@{Buffer}!stage@{stage}}
+\index{stage@{stage}!Buffer@{Buffer}}
+\subsubsection{\texorpdfstring{stage}{stage}}
+{\footnotesize\ttfamily int Buffer\+::stage\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 23 of file Buffer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/\mbox{\hyperlink{_buffer_8h}{Buffer.\+h}}\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/\mbox{\hyperlink{_buffer_8cpp}{Buffer.\+cpp}}\end{DoxyCompactItemize}

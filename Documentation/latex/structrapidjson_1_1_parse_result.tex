@@ -1,0 +1,395 @@
+\hypertarget{structrapidjson_1_1_parse_result}{}\section{rapidjson\+::Parse\+Result Struct Reference}
+\label{structrapidjson_1_1_parse_result}\index{rapidjson::ParseResult@{rapidjson::ParseResult}}
+
+
+Result of parsing (wraps Parse\+Error\+Code)  
+
+
+
+
+{\ttfamily \#include $<$error.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef bool(Parse\+Result\+::$\ast$ \mbox{\hyperlink{structrapidjson_1_1_parse_result_aff2daa285445bba8f76578ea274e34a3}{Boolean\+Type}}) () const
+\begin{DoxyCompactList}\small\item\em ! Unspecified boolean type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrapidjson_1_1_parse_result_a0f03679d5fa2736d9e351541e767fac1}{Parse\+Result}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor, no error. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structrapidjson_1_1_parse_result_ad15710045513f13ba526753c4a2cb59b}{Parse\+Result}} (\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} code, size\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Constructor to set an error. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} \mbox{\hyperlink{structrapidjson_1_1_parse_result_a3c6a1f7b7dc21363a255eb10a3c0e00e}{Code}} () const
+\begin{DoxyCompactList}\small\item\em Get the error code. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_parse_result_a85036788b0cfd1c676900de6f8260bd6}{Offset}} () const
+\begin{DoxyCompactList}\small\item\em Get the error offset, if \mbox{\hyperlink{structrapidjson_1_1_parse_result_ab6d87c6ce9c849f35e902fbe23f485c4}{Is\+Error()}}, 0 otherwise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structrapidjson_1_1_parse_result_af0936ace1dc9b674e9afb75ec6145b32}{operator Boolean\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Explicit conversion to {\ttfamily bool}, returns {\ttfamily true}, iff !\mbox{\hyperlink{structrapidjson_1_1_parse_result_ab6d87c6ce9c849f35e902fbe23f485c4}{Is\+Error()}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_parse_result_ab6d87c6ce9c849f35e902fbe23f485c4}{Is\+Error}} () const
+\begin{DoxyCompactList}\small\item\em Whether the result is an error. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_parse_result_a53e838c5114c4770b01ba5fb4fe2ec09}{operator==}} (const \mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} \&that) const
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_parse_result_a512e065514f0c55c539ef70033a3f508}{operator==}} (\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} code) const
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_parse_result_ac58540d291311724829cac7ead1bae79}{operator!=}} (const \mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} \&that) const
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_parse_result_a82fc3c16d5b670e8a86630c4feb730c1}{operator!=}} (\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} code) const
+\item 
+void \mbox{\hyperlink{structrapidjson_1_1_parse_result_a17c9f7f81675283393222658d613000f}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Reset error code. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structrapidjson_1_1_parse_result_a40c0bd4d6c535c57acbb5c2e656bea38}{Set}} (\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} code, size\+\_\+t offset=0)
+\begin{DoxyCompactList}\small\item\em Update error code and offset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} \mbox{\hyperlink{structrapidjson_1_1_parse_result_aa8a4a0331c0b50ce9f28be8449cb91e1}{code\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structrapidjson_1_1_parse_result_a5af9e6aa0412019ac0820dcd2eac8c10}{offset\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_parse_result_a58c9982e833d1c74686506ac7449200c}{operator==}} (\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} code, const \mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} \&err)
+\item 
+bool \mbox{\hyperlink{structrapidjson_1_1_parse_result_a0498aebcfdd3d4a5dcb989ee29b93d4d}{operator!=}} (\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} code, const \mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} \&err)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Result of parsing (wraps Parse\+Error\+Code) 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{namespacerapidjson_ace11b5b575baf1cccd5ba5f8586dcdc8}{Document}} doc;}
+\DoxyCodeLine{\mbox{\hyperlink{structrapidjson_1_1_parse_result_a0f03679d5fa2736d9e351541e767fac1}{ParseResult}} ok = doc.Parse(\textcolor{stringliteral}{"[42]"});}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (!ok) \{}
+\DoxyCodeLine{    fprintf(stderr, \textcolor{stringliteral}{"JSON parse error: \%s (\%u)"},}
+\DoxyCodeLine{            \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gae982013498511a0ef3c2a3d2069adb4f}{GetParseError\_En}}(ok.Code()), ok.Offset());}
+\DoxyCodeLine{    exit(EXIT\_FAILURE);}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classrapidjson_1_1_generic_reader_ac9c540b77de19661f6f45e04b9b0937b}{Generic\+Reader\+::\+Parse}}, \mbox{\hyperlink{classrapidjson_1_1_generic_document_aea842b533a858c9a3861451ad9e8642c}{Generic\+Document\+::\+Parse}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 106 of file error.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_aff2daa285445bba8f76578ea274e34a3}\label{structrapidjson_1_1_parse_result_aff2daa285445bba8f76578ea274e34a3}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!BooleanType@{BooleanType}}
+\index{BooleanType@{BooleanType}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{BooleanType}{BooleanType}}
+{\footnotesize\ttfamily typedef bool(Parse\+Result\+::$\ast$ rapidjson\+::\+Parse\+Result\+::\+Boolean\+Type) () const}
+
+
+
+! Unspecified boolean type 
+
+
+
+Definition at line 108 of file error.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_a0f03679d5fa2736d9e351541e767fac1}\label{structrapidjson_1_1_parse_result_a0f03679d5fa2736d9e351541e767fac1}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!ParseResult@{ParseResult}}
+\index{ParseResult@{ParseResult}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{ParseResult()}{ParseResult()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily rapidjson\+::\+Parse\+Result\+::\+Parse\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor, no error. 
+
+
+
+Definition at line 111 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111 : \mbox{\hyperlink{structrapidjson_1_1_parse_result_aa8a4a0331c0b50ce9f28be8449cb91e1}{code\_}}(\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a86a60b723dca32df5debab2c3db4235f}{kParseErrorNone}}), \mbox{\hyperlink{structrapidjson_1_1_parse_result_a5af9e6aa0412019ac0820dcd2eac8c10}{offset\_}}(0) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_ad15710045513f13ba526753c4a2cb59b}\label{structrapidjson_1_1_parse_result_ad15710045513f13ba526753c4a2cb59b}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!ParseResult@{ParseResult}}
+\index{ParseResult@{ParseResult}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{ParseResult()}{ParseResult()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily rapidjson\+::\+Parse\+Result\+::\+Parse\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}}}]{code,  }\item[{size\+\_\+t}]{offset }\end{DoxyParamCaption})}
+
+
+
+Constructor to set an error. 
+
+
+
+Definition at line 113 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{113 : \mbox{\hyperlink{structrapidjson_1_1_parse_result_aa8a4a0331c0b50ce9f28be8449cb91e1}{code\_}}(code), \mbox{\hyperlink{structrapidjson_1_1_parse_result_a5af9e6aa0412019ac0820dcd2eac8c10}{offset\_}}(offset) \{\}}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_a17c9f7f81675283393222658d613000f}\label{structrapidjson_1_1_parse_result_a17c9f7f81675283393222658d613000f}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!Clear@{Clear}}
+\index{Clear@{Clear}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void rapidjson\+::\+Parse\+Result\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset error code. 
+
+
+
+Definition at line 134 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{134 \{ \mbox{\hyperlink{structrapidjson_1_1_parse_result_a40c0bd4d6c535c57acbb5c2e656bea38}{Set}}(\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a86a60b723dca32df5debab2c3db4235f}{kParseErrorNone}}); \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Parse\+Error\+None.
+
+
+
+Referenced by rapidjson\+::\+Generic\+Reader$<$ Source\+Encoding, Target\+Encoding, Stack\+Allocator $>$\+::\+Iterative\+Parse().
+
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_a3c6a1f7b7dc21363a255eb10a3c0e00e}\label{structrapidjson_1_1_parse_result_a3c6a1f7b7dc21363a255eb10a3c0e00e}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!Code@{Code}}
+\index{Code@{Code}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{Code()}{Code()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} rapidjson\+::\+Parse\+Result\+::\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the error code. 
+
+
+
+Definition at line 116 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{116 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1_parse_result_aa8a4a0331c0b50ce9f28be8449cb91e1}{code\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_ab6d87c6ce9c849f35e902fbe23f485c4}\label{structrapidjson_1_1_parse_result_ab6d87c6ce9c849f35e902fbe23f485c4}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!IsError@{IsError}}
+\index{IsError@{IsError}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{IsError()}{IsError()}}
+{\footnotesize\ttfamily bool rapidjson\+::\+Parse\+Result\+::\+Is\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Whether the result is an error. 
+
+
+
+Definition at line 123 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{123 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1_parse_result_aa8a4a0331c0b50ce9f28be8449cb91e1}{code\_}} != \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gga7d3acf640886b1f2552dc8c4cd6dea60a86a60b723dca32df5debab2c3db4235f}{kParseErrorNone}}; \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Parse\+Error\+None.
+
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_a85036788b0cfd1c676900de6f8260bd6}\label{structrapidjson_1_1_parse_result_a85036788b0cfd1c676900de6f8260bd6}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!Offset@{Offset}}
+\index{Offset@{Offset}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{Offset()}{Offset()}}
+{\footnotesize\ttfamily size\+\_\+t rapidjson\+::\+Parse\+Result\+::\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the error offset, if \mbox{\hyperlink{structrapidjson_1_1_parse_result_ab6d87c6ce9c849f35e902fbe23f485c4}{Is\+Error()}}, 0 otherwise. 
+
+
+
+Definition at line 118 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1_parse_result_a5af9e6aa0412019ac0820dcd2eac8c10}{offset\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_af0936ace1dc9b674e9afb75ec6145b32}\label{structrapidjson_1_1_parse_result_af0936ace1dc9b674e9afb75ec6145b32}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!operator BooleanType@{operator BooleanType}}
+\index{operator BooleanType@{operator BooleanType}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{operator BooleanType()}{operator BooleanType()}}
+{\footnotesize\ttfamily rapidjson\+::\+Parse\+Result\+::operator \mbox{\hyperlink{structrapidjson_1_1_parse_result_aff2daa285445bba8f76578ea274e34a3}{Boolean\+Type}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Explicit conversion to {\ttfamily bool}, returns {\ttfamily true}, iff !\mbox{\hyperlink{structrapidjson_1_1_parse_result_ab6d87c6ce9c849f35e902fbe23f485c4}{Is\+Error()}}. 
+
+
+
+Definition at line 121 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{121 \{ \textcolor{keywordflow}{return} !\mbox{\hyperlink{structrapidjson_1_1_parse_result_ab6d87c6ce9c849f35e902fbe23f485c4}{IsError}}() ? \&\mbox{\hyperlink{structrapidjson_1_1_parse_result_ab6d87c6ce9c849f35e902fbe23f485c4}{ParseResult::IsError}} : NULL; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_ac58540d291311724829cac7ead1bae79}\label{structrapidjson_1_1_parse_result_ac58540d291311724829cac7ead1bae79}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool rapidjson\+::\+Parse\+Result\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} \&}]{that }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 129 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{129 \{ \textcolor{keywordflow}{return} !(*\textcolor{keyword}{this} == that); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_a82fc3c16d5b670e8a86630c4feb730c1}\label{structrapidjson_1_1_parse_result_a82fc3c16d5b670e8a86630c4feb730c1}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool rapidjson\+::\+Parse\+Result\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}}}]{code }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 130 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{130 \{ \textcolor{keywordflow}{return} !(*\textcolor{keyword}{this} == code); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_a53e838c5114c4770b01ba5fb4fe2ec09}\label{structrapidjson_1_1_parse_result_a53e838c5114c4770b01ba5fb4fe2ec09}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!operator==@{operator==}}
+\index{operator==@{operator==}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool rapidjson\+::\+Parse\+Result\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} \&}]{that }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 125 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{125 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1_parse_result_aa8a4a0331c0b50ce9f28be8449cb91e1}{code\_}} == that.code\_; \}}
+
+\end{DoxyCode}
+
+
+References code\+\_\+.
+
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_a512e065514f0c55c539ef70033a3f508}\label{structrapidjson_1_1_parse_result_a512e065514f0c55c539ef70033a3f508}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!operator==@{operator==}}
+\index{operator==@{operator==}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool rapidjson\+::\+Parse\+Result\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}}}]{code }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 126 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{structrapidjson_1_1_parse_result_aa8a4a0331c0b50ce9f28be8449cb91e1}{code\_}} == code; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_a40c0bd4d6c535c57acbb5c2e656bea38}\label{structrapidjson_1_1_parse_result_a40c0bd4d6c535c57acbb5c2e656bea38}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!Set@{Set}}
+\index{Set@{Set}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily void rapidjson\+::\+Parse\+Result\+::\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}}}]{code,  }\item[{size\+\_\+t}]{offset = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Update error code and offset. 
+
+
+
+Definition at line 136 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{136 \{ \mbox{\hyperlink{structrapidjson_1_1_parse_result_aa8a4a0331c0b50ce9f28be8449cb91e1}{code\_}} = code; \mbox{\hyperlink{structrapidjson_1_1_parse_result_a5af9e6aa0412019ac0820dcd2eac8c10}{offset\_}} = offset; \}}
+
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_a0498aebcfdd3d4a5dcb989ee29b93d4d}\label{structrapidjson_1_1_parse_result_a0498aebcfdd3d4a5dcb989ee29b93d4d}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{operator"!=}{operator!=}}
+{\footnotesize\ttfamily bool operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}}}]{code,  }\item[{const \mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} \&}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 131 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131 \{ \textcolor{keywordflow}{return} err != code; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_a58c9982e833d1c74686506ac7449200c}\label{structrapidjson_1_1_parse_result_a58c9982e833d1c74686506ac7449200c}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!operator==@{operator==}}
+\index{operator==@{operator==}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}}}]{code,  }\item[{const \mbox{\hyperlink{structrapidjson_1_1_parse_result}{Parse\+Result}} \&}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 127 of file error.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{127 \{ \textcolor{keywordflow}{return} code == err.code\_; \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_aa8a4a0331c0b50ce9f28be8449cb91e1}\label{structrapidjson_1_1_parse_result_aa8a4a0331c0b50ce9f28be8449cb91e1}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!code\_@{code\_}}
+\index{code\_@{code\_}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{code\_}{code\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ga7d3acf640886b1f2552dc8c4cd6dea60}{Parse\+Error\+Code}} rapidjson\+::\+Parse\+Result\+::code\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 139 of file error.\+h.
+
+
+
+Referenced by operator==().
+
+\mbox{\Hypertarget{structrapidjson_1_1_parse_result_a5af9e6aa0412019ac0820dcd2eac8c10}\label{structrapidjson_1_1_parse_result_a5af9e6aa0412019ac0820dcd2eac8c10}} 
+\index{rapidjson::ParseResult@{rapidjson::ParseResult}!offset\_@{offset\_}}
+\index{offset\_@{offset\_}!rapidjson::ParseResult@{rapidjson::ParseResult}}
+\subsubsection{\texorpdfstring{offset\_}{offset\_}}
+{\footnotesize\ttfamily size\+\_\+t rapidjson\+::\+Parse\+Result\+::offset\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 140 of file error.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/error/\mbox{\hyperlink{error_8h}{error.\+h}}\end{DoxyCompactItemize}

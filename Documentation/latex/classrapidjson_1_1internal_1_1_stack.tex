@@ -1,0 +1,652 @@
+\hypertarget{classrapidjson_1_1internal_1_1_stack}{}\section{rapidjson\+::internal\+::Stack$<$ Allocator $>$ Class Template Reference}
+\label{classrapidjson_1_1internal_1_1_stack}\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+
+
+A type-\/unsafe stack for storing different types of data.  
+
+
+
+
+{\ttfamily \#include $<$stack.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_ab8a8b942c223aea654baa07334938019}{Stack}} (\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$allocator, size\+\_\+t stack\+Capacity)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a1d8ebafffb9d65ebd966e06c55ed69e3}{$\sim$\+Stack}} ()
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_ae45ca5eb4e96402169dcd0bd1bd011bf}{Swap}} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}} \&rhs) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a3ca75baf72a1d4e33024fad61e722063}{Clear}} ()
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_ac0f6b58689374b5ac55337720676ac4e}{Shrink\+To\+Fit}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a67e2306eddcdbf50271e89b229573fc2}{Reserve}} (size\+\_\+t count=1)
+\item 
+{\footnotesize template$<$typename T $>$ }\\R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE T $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_aaa78ff2b719edef3bbccf0454263636c}{Push}} (size\+\_\+t count=1)
+\item 
+{\footnotesize template$<$typename T $>$ }\\R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE T $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_aeec5f2a60d38743c95ea45bc75ad5c7a}{Push\+Unsafe}} (size\+\_\+t count=1)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a58f510acbf1548de4127233905b82449}{Pop}} (size\+\_\+t count)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_ac77714adcc6dd02bf119d206232657b4}{Top}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\const T $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_aeb9393dba448f7c424a0aba46ea13768}{Top}} () const
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a33ae9809852ea9502dbb3c2d033d997d}{End}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\const T $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a54daa8c82c84fd65ce5a37af4aec8e93}{End}} () const
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a0855652d8ebbaa8a9299bfcdf81c47c2}{Bottom}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\const T $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a13ee4775d8febba763b67dc8114beaa5}{Bottom}} () const
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a2167273a8e50c7d7fc9749d8f246c12c}{Has\+Allocator}} () const
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_adb7cca61d3d77dd12189027882470e0c}{Get\+Allocator}} ()
+\item 
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_ac5d92c6efa27f38e3a625bc495d95151}{Empty}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a9379b6a185340ef704a0a78e39366fd6}{Get\+Size}} () const
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a280f80cf4d173edbec3feba59468a149}{Get\+Capacity}} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a33149301e7a60dbd1fe9b66c2c9e80ea}{Expand}} (size\+\_\+t count)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_ab2b7ea84cc9c009836c1413c2bf1771b}{Resize}} (size\+\_\+t new\+Capacity)
+\item 
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a6e9409fc62cdd2ad72137f051fbbb5a8}{Destroy}} ()
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a847c6fa5e362beeaa3b12e0bcbcb32ca}{Stack}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}} \&)
+\item 
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}} \& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a7d0b83798d0c29b50103841fe61ba7d9}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}} \&)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_af1b187bea41f9e60e96e0a535c489ae2}{allocator\+\_\+}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a75a35d20a594e20698d395db04359e0c}{own\+Allocator\+\_\+}}
+\item 
+char $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\+\_\+}}
+\item 
+char $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stack\+Top\+\_\+}}
+\item 
+char $\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a79604794766876390faf0731922e9446}{stack\+End\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a0f91a49432f4e0df57b8d28d7d75fe0f}{initial\+Capacity\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Allocator$>$\newline
+class rapidjson\+::internal\+::\+Stack$<$ Allocator $>$}
+
+A type-\/unsafe stack for storing different types of data. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}} & \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} for allocating stack memory. \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 37 of file stack.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_ab8a8b942c223aea654baa07334938019}\label{classrapidjson_1_1internal_1_1_stack_ab8a8b942c223aea654baa07334938019}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Stack@{Stack}}
+\index{Stack@{Stack}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Stack()}{Stack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$}]{allocator,  }\item[{size\+\_\+t}]{stack\+Capacity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41                                                       : \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_af1b187bea41f9e60e96e0a535c489ae2}{allocator\_}}(allocator), \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a75a35d20a594e20698d395db04359e0c}{ownAllocator\_}}(0), \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}}(0), \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}}(0), \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a79604794766876390faf0731922e9446}{stackEnd\_}}(0), \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a0f91a49432f4e0df57b8d28d7d75fe0f}{initialCapacity\_}}(stackCapacity) \{}
+\DoxyCodeLine{42     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a1d8ebafffb9d65ebd966e06c55ed69e3}\label{classrapidjson_1_1internal_1_1_stack_a1d8ebafffb9d65ebd966e06c55ed69e3}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!````~Stack@{$\sim$Stack}}
+\index{````~Stack@{$\sim$Stack}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{$\sim$Stack()}{~Stack()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::$\sim$\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 62 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62              \{}
+\DoxyCodeLine{63         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a6e9409fc62cdd2ad72137f051fbbb5a8}{Destroy}}();}
+\DoxyCodeLine{64     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a847c6fa5e362beeaa3b12e0bcbcb32ca}\label{classrapidjson_1_1internal_1_1_stack_a847c6fa5e362beeaa3b12e0bcbcb32ca}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Stack@{Stack}}
+\index{Stack@{Stack}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Stack()}{Stack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a0855652d8ebbaa8a9299bfcdf81c47c2}\label{classrapidjson_1_1internal_1_1_stack_a0855652d8ebbaa8a9299bfcdf81c47c2}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Bottom@{Bottom}}
+\index{Bottom@{Bottom}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Bottom()}{Bottom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Bottom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 163 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{163 \{ \textcolor{keywordflow}{return} reinterpret\_cast<T*>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a13ee4775d8febba763b67dc8114beaa5}\label{classrapidjson_1_1internal_1_1_stack_a13ee4775d8febba763b67dc8114beaa5}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Bottom@{Bottom}}
+\index{Bottom@{Bottom}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Bottom()}{Bottom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+template$<$typename T $>$ \\
+const T$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Bottom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 166 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{166 \{ \textcolor{keywordflow}{return} reinterpret\_cast<T*>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a3ca75baf72a1d4e33024fad61e722063}\label{classrapidjson_1_1internal_1_1_stack_a3ca75baf72a1d4e33024fad61e722063}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 99 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{99 \{ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}} = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a6e9409fc62cdd2ad72137f051fbbb5a8}\label{classrapidjson_1_1internal_1_1_stack_a6e9409fc62cdd2ad72137f051fbbb5a8}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 208 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{208                    \{}
+\DoxyCodeLine{209         Allocator::Free(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}});}
+\DoxyCodeLine{210         \mbox{\hyperlink{rapidjson_8h_a52c941c3fdd646527cdcd42aa846a28a}{RAPIDJSON\_DELETE}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a75a35d20a594e20698d395db04359e0c}{ownAllocator\_}}); \textcolor{comment}{// Only delete if it is owned by the stack}}
+\DoxyCodeLine{211     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_ac5d92c6efa27f38e3a625bc495d95151}\label{classrapidjson_1_1internal_1_1_stack_ac5d92c6efa27f38e3a625bc495d95151}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Empty@{Empty}}
+\index{Empty@{Empty}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Empty()}{Empty()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 177 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{177 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}} == \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}}; \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Parse(), and rapidjson\+::internal\+::\+Generic\+Regex\+Search$<$ Regex\+Type, Allocator $>$\+::\+Search\+With\+Anchoring().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a33ae9809852ea9502dbb3c2d033d997d}\label{classrapidjson_1_1internal_1_1_stack_a33ae9809852ea9502dbb3c2d033d997d}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!End@{End}}
+\index{End@{End}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{End()}{End()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 157 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{157 \{ \textcolor{keywordflow}{return} reinterpret\_cast<T*>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a54daa8c82c84fd65ce5a37af4aec8e93}\label{classrapidjson_1_1internal_1_1_stack_a54daa8c82c84fd65ce5a37af4aec8e93}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!End@{End}}
+\index{End@{End}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{End()}{End()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+template$<$typename T $>$ \\
+const T$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 160 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{160 \{ \textcolor{keywordflow}{return} reinterpret\_cast<T*>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a33149301e7a60dbd1fe9b66c2c9e80ea}\label{classrapidjson_1_1internal_1_1_stack_a33149301e7a60dbd1fe9b66c2c9e80ea}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Expand@{Expand}}
+\index{Expand@{Expand}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Expand()}{Expand()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+template$<$typename T $>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Expand (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 183 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{183                               \{}
+\DoxyCodeLine{184         \textcolor{comment}{// Only expand the capacity if the current stack exists. Otherwise just create a stack with initial capacity.}}
+\DoxyCodeLine{185         \textcolor{keywordtype}{size\_t} newCapacity;}
+\DoxyCodeLine{186         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}} == 0) \{}
+\DoxyCodeLine{187             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_af1b187bea41f9e60e96e0a535c489ae2}{allocator\_}})}
+\DoxyCodeLine{188                 \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a75a35d20a594e20698d395db04359e0c}{ownAllocator\_}} = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_af1b187bea41f9e60e96e0a535c489ae2}{allocator\_}} = \mbox{\hyperlink{rapidjson_8h_abdc7cd7902748ffe6626d71c59a73c3b}{RAPIDJSON\_NEW}}(Allocator)();}
+\DoxyCodeLine{189             newCapacity = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a0f91a49432f4e0df57b8d28d7d75fe0f}{initialCapacity\_}};}
+\DoxyCodeLine{190         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{191             newCapacity = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a280f80cf4d173edbec3feba59468a149}{GetCapacity}}();}
+\DoxyCodeLine{192             newCapacity += (newCapacity + 1) / 2;}
+\DoxyCodeLine{193         \}}
+\DoxyCodeLine{194         \textcolor{keywordtype}{size\_t} newSize = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a9379b6a185340ef704a0a78e39366fd6}{GetSize}}() + \textcolor{keyword}{sizeof}(T) * count;}
+\DoxyCodeLine{195         \textcolor{keywordflow}{if} (newCapacity < newSize)}
+\DoxyCodeLine{196             newCapacity = newSize;}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_ab2b7ea84cc9c009836c1413c2bf1771b}{Resize}}(newCapacity);}
+\DoxyCodeLine{199     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_adb7cca61d3d77dd12189027882470e0c}\label{classrapidjson_1_1internal_1_1_stack_adb7cca61d3d77dd12189027882470e0c}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!GetAllocator@{GetAllocator}}
+\index{GetAllocator@{GetAllocator}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{GetAllocator()}{GetAllocator()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}\& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 172 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{172                               \{}
+\DoxyCodeLine{173         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_af1b187bea41f9e60e96e0a535c489ae2}{allocator\_}});}
+\DoxyCodeLine{174         \textcolor{keywordflow}{return} *\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_af1b187bea41f9e60e96e0a535c489ae2}{allocator\_}};}
+\DoxyCodeLine{175     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a280f80cf4d173edbec3feba59468a149}\label{classrapidjson_1_1internal_1_1_stack_a280f80cf4d173edbec3feba59468a149}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!GetCapacity@{GetCapacity}}
+\index{GetCapacity@{GetCapacity}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{GetCapacity()}{GetCapacity()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 179 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{179 \{ \textcolor{keywordflow}{return} static\_cast<size\_t>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a79604794766876390faf0731922e9446}{stackEnd\_}} - \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a9379b6a185340ef704a0a78e39366fd6}\label{classrapidjson_1_1internal_1_1_stack_a9379b6a185340ef704a0a78e39366fd6}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{GetSize()}{GetSize()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 178 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{178 \{ \textcolor{keywordflow}{return} static\_cast<size\_t>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}} - \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}}); \}}
+
+\end{DoxyCode}
+
+
+Referenced by rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Eval(), rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Eval\+Quantifier(), and rapidjson\+::internal\+::\+Generic\+Regex$<$ Encoding, Allocator $>$\+::\+Parse().
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a2167273a8e50c7d7fc9749d8f246c12c}\label{classrapidjson_1_1internal_1_1_stack_a2167273a8e50c7d7fc9749d8f246c12c}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!HasAllocator@{HasAllocator}}
+\index{HasAllocator@{HasAllocator}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{HasAllocator()}{HasAllocator()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+bool \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Has\+Allocator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 168 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{168                               \{}
+\DoxyCodeLine{169         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_af1b187bea41f9e60e96e0a535c489ae2}{allocator\_}} != 0;}
+\DoxyCodeLine{170     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a7d0b83798d0c29b50103841fe61ba7d9}\label{classrapidjson_1_1internal_1_1_stack_a7d0b83798d0c29b50103841fe61ba7d9}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}}\& \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a58f510acbf1548de4127233905b82449}\label{classrapidjson_1_1internal_1_1_stack_a58f510acbf1548de4127233905b82449}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Pop@{Pop}}
+\index{Pop@{Pop}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Pop()}{Pop()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Pop (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 138 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{138                          \{}
+\DoxyCodeLine{139         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a9379b6a185340ef704a0a78e39366fd6}{GetSize}}() >= count * \textcolor{keyword}{sizeof}(T));}
+\DoxyCodeLine{140         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}} -= count * \textcolor{keyword}{sizeof}(T);}
+\DoxyCodeLine{141         \textcolor{keywordflow}{return} reinterpret\_cast<T*>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}});}
+\DoxyCodeLine{142     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_aaa78ff2b719edef3bbccf0454263636c}\label{classrapidjson_1_1internal_1_1_stack_aaa78ff2b719edef3bbccf0454263636c}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Push@{Push}}
+\index{Push@{Push}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Push()}{Push()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+template$<$typename T $>$ \\
+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE T$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Push (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 123 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{123                                                     \{}
+\DoxyCodeLine{124         Reserve<T>(count);}
+\DoxyCodeLine{125         \textcolor{keywordflow}{return} PushUnsafe<T>(count);}
+\DoxyCodeLine{126     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_aeec5f2a60d38743c95ea45bc75ad5c7a}\label{classrapidjson_1_1internal_1_1_stack_aeec5f2a60d38743c95ea45bc75ad5c7a}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!PushUnsafe@{PushUnsafe}}
+\index{PushUnsafe@{PushUnsafe}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{PushUnsafe()}{PushUnsafe()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+template$<$typename T $>$ \\
+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE T$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Push\+Unsafe (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 129 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{129                                                           \{}
+\DoxyCodeLine{130         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}});}
+\DoxyCodeLine{131         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(static\_cast<std::ptrdiff\_t>(\textcolor{keyword}{sizeof}(T) * count) <= (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a79604794766876390faf0731922e9446}{stackEnd\_}} - \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}}));}
+\DoxyCodeLine{132         T* ret = reinterpret\_cast<T*>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}});}
+\DoxyCodeLine{133         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}} += \textcolor{keyword}{sizeof}(T) * count;}
+\DoxyCodeLine{134         \textcolor{keywordflow}{return} ret;}
+\DoxyCodeLine{135     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a67e2306eddcdbf50271e89b229573fc2}\label{classrapidjson_1_1internal_1_1_stack_a67e2306eddcdbf50271e89b229573fc2}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Reserve@{Reserve}}
+\index{Reserve@{Reserve}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Reserve()}{Reserve()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+template$<$typename T $>$ \\
+R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+F\+O\+R\+C\+E\+I\+N\+L\+I\+NE void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Reserve (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 116 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{116                                                          \{}
+\DoxyCodeLine{117          \textcolor{comment}{// Expand the stack if needed}}
+\DoxyCodeLine{118         \textcolor{keywordflow}{if} (\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_ga6a2b1695c13e77ae425e3cbac980ccb5}{RAPIDJSON\_UNLIKELY}}(static\_cast<std::ptrdiff\_t>(\textcolor{keyword}{sizeof}(T) * count) > (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a79604794766876390faf0731922e9446}{stackEnd\_}} - \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}})))}
+\DoxyCodeLine{119             Expand<T>(count);}
+\DoxyCodeLine{120     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_ab2b7ea84cc9c009836c1413c2bf1771b}\label{classrapidjson_1_1internal_1_1_stack_ab2b7ea84cc9c009836c1413c2bf1771b}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Resize@{Resize}}
+\index{Resize@{Resize}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Resize()}{Resize()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Resize (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{new\+Capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 201 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{201                                     \{}
+\DoxyCodeLine{202         \textcolor{keyword}{const} \textcolor{keywordtype}{size\_t} size = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a9379b6a185340ef704a0a78e39366fd6}{GetSize}}();  \textcolor{comment}{// Backup the current size}}
+\DoxyCodeLine{203         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}} = static\_cast<char*>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_af1b187bea41f9e60e96e0a535c489ae2}{allocator\_}}->Realloc(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}}, \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a280f80cf4d173edbec3feba59468a149}{GetCapacity}}(), newCapacity));}
+\DoxyCodeLine{204         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}} = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}} + size;}
+\DoxyCodeLine{205         \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a79604794766876390faf0731922e9446}{stackEnd\_}} = \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}} + newCapacity;}
+\DoxyCodeLine{206     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_ac0f6b58689374b5ac55337720676ac4e}\label{classrapidjson_1_1internal_1_1_stack_ac0f6b58689374b5ac55337720676ac4e}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!ShrinkToFit@{ShrinkToFit}}
+\index{ShrinkToFit@{ShrinkToFit}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{ShrinkToFit()}{ShrinkToFit()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Shrink\+To\+Fit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 101 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101                        \{ }
+\DoxyCodeLine{102         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_ac5d92c6efa27f38e3a625bc495d95151}{Empty}}()) \{}
+\DoxyCodeLine{103             \textcolor{comment}{// If the stack is empty, completely deallocate the memory.}}
+\DoxyCodeLine{104             Allocator::Free(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}}); \textcolor{comment}{// NOLINT (+clang-analyzer-unix.Malloc)}}
+\DoxyCodeLine{105             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}} = 0;}
+\DoxyCodeLine{106             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}} = 0;}
+\DoxyCodeLine{107             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a79604794766876390faf0731922e9446}{stackEnd\_}} = 0;}
+\DoxyCodeLine{108         \}}
+\DoxyCodeLine{109         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{110             \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_ab2b7ea84cc9c009836c1413c2bf1771b}{Resize}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a9379b6a185340ef704a0a78e39366fd6}{GetSize}}());}
+\DoxyCodeLine{111     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_ae45ca5eb4e96402169dcd0bd1bd011bf}\label{classrapidjson_1_1internal_1_1_stack_ae45ca5eb4e96402169dcd0bd1bd011bf}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Swap@{Swap}}
+\index{Swap@{Swap}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+void \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 90 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{90                                              \{}
+\DoxyCodeLine{91         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_af1b187bea41f9e60e96e0a535c489ae2}{allocator\_}}, rhs.allocator\_);}
+\DoxyCodeLine{92         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a75a35d20a594e20698d395db04359e0c}{ownAllocator\_}}, rhs.ownAllocator\_);}
+\DoxyCodeLine{93         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}{stack\_}}, rhs.stack\_);}
+\DoxyCodeLine{94         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}}, rhs.stackTop\_);}
+\DoxyCodeLine{95         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a79604794766876390faf0731922e9446}{stackEnd\_}}, rhs.stackEnd\_);}
+\DoxyCodeLine{96         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a0f91a49432f4e0df57b8d28d7d75fe0f}{initialCapacity\_}}, rhs.initialCapacity\_);}
+\DoxyCodeLine{97     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_ac77714adcc6dd02bf119d206232657b4}\label{classrapidjson_1_1internal_1_1_stack_ac77714adcc6dd02bf119d206232657b4}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Top@{Top}}
+\index{Top@{Top}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Top()}{Top()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 145 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{145              \{ }
+\DoxyCodeLine{146         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a9379b6a185340ef704a0a78e39366fd6}{GetSize}}() >= \textcolor{keyword}{sizeof}(T));}
+\DoxyCodeLine{147         \textcolor{keywordflow}{return} reinterpret\_cast<T*>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}} - \textcolor{keyword}{sizeof}(T));}
+\DoxyCodeLine{148     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_aeb9393dba448f7c424a0aba46ea13768}\label{classrapidjson_1_1internal_1_1_stack_aeb9393dba448f7c424a0aba46ea13768}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!Top@{Top}}
+\index{Top@{Top}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{Top()}{Top()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+template$<$typename T $>$ \\
+const T$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 151 of file stack.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{151                          \{}
+\DoxyCodeLine{152         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a9379b6a185340ef704a0a78e39366fd6}{GetSize}}() >= \textcolor{keyword}{sizeof}(T));}
+\DoxyCodeLine{153         \textcolor{keywordflow}{return} reinterpret\_cast<T*>(\mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}{stackTop\_}} - \textcolor{keyword}{sizeof}(T));}
+\DoxyCodeLine{154     \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_af1b187bea41f9e60e96e0a535c489ae2}\label{classrapidjson_1_1internal_1_1_stack_af1b187bea41f9e60e96e0a535c489ae2}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!allocator\_@{allocator\_}}
+\index{allocator\_@{allocator\_}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{allocator\_}{allocator\_}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 217 of file stack.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a0f91a49432f4e0df57b8d28d7d75fe0f}\label{classrapidjson_1_1internal_1_1_stack_a0f91a49432f4e0df57b8d28d7d75fe0f}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!initialCapacity\_@{initialCapacity\_}}
+\index{initialCapacity\_@{initialCapacity\_}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{initialCapacity\_}{initialCapacity\_}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::initial\+Capacity\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 222 of file stack.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a75a35d20a594e20698d395db04359e0c}\label{classrapidjson_1_1internal_1_1_stack_a75a35d20a594e20698d395db04359e0c}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!ownAllocator\_@{ownAllocator\_}}
+\index{ownAllocator\_@{ownAllocator\_}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{ownAllocator\_}{ownAllocator\_}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::own\+Allocator\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 218 of file stack.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}\label{classrapidjson_1_1internal_1_1_stack_a14335b9cd1ba0c56dfc46cce4433e2ec}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!stack\_@{stack\_}}
+\index{stack\_@{stack\_}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{stack\_}{stack\_}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+char$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::stack\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 219 of file stack.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a79604794766876390faf0731922e9446}\label{classrapidjson_1_1internal_1_1_stack_a79604794766876390faf0731922e9446}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!stackEnd\_@{stackEnd\_}}
+\index{stackEnd\_@{stackEnd\_}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{stackEnd\_}{stackEnd\_}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+char$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::stack\+End\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 221 of file stack.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}\label{classrapidjson_1_1internal_1_1_stack_a954daadd0fa6ea68e84d7491311874da}} 
+\index{rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}!stackTop\_@{stackTop\_}}
+\index{stackTop\_@{stackTop\_}!rapidjson::internal::Stack$<$ Allocator $>$@{rapidjson::internal::Stack$<$ Allocator $>$}}
+\subsubsection{\texorpdfstring{stackTop\_}{stackTop\_}}
+{\footnotesize\ttfamily template$<$typename Allocator$>$ \\
+char$\ast$ \mbox{\hyperlink{classrapidjson_1_1internal_1_1_stack}{rapidjson\+::internal\+::\+Stack}}$<$ \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::stack\+Top\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 220 of file stack.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/internal/\mbox{\hyperlink{stack_8h}{stack.\+h}}\end{DoxyCompactItemize}

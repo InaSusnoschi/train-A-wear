@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 /**
- * The Squat activity parents the three types of squats
+ * @brief The Squat activity contains the three types of squats
  *
  * @author  Ioana Susnoschi
  * @version 1.0
@@ -25,6 +25,11 @@ public class Squat extends AppCompatActivity {
     public void enterClassicSquat(View view) {
         Intent classicSquat = new Intent(this, ClassicSquat.class);
         startActivity(classicSquat);
+    }
+
+    public void enterPlieSquat(View view) {
+        Intent plieSquat = new Intent(this, PlieSquat.class);
+        startActivity(plieSquat);
     }
 }
 

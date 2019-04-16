@@ -1,0 +1,407 @@
+\hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat}{}\section{com.\+example.\+trainawearapplication.\+Classic\+Squat Class Reference}
+\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat}\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+Inheritance diagram for com.\+example.\+trainawearapplication.\+Classic\+Squat\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.766562cm]{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_af11bf43a5c57edf97320d8662fc343a1}{enter\+Squat\+Instr}} (View view)
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_ab193e39e2f1255fd88d0508cfe7a63ff}{set\+View\+Text}} (Text\+View view, String text)
+\begin{DoxyCompactList}\small\item\em Method required by the \mbox{\hyperlink{interfacecom_1_1example_1_1trainawearapplication_1_1_update_feedback}{Update\+Feedback}} interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_ab2575cf1007e1d844a98e511b93aaf8d}{get\+Instruction}} ()
+\item 
+static void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a3a096fd4064cf28568fd13336c77d28f}{set\+Instruction}} (int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a3cbf1db0a5560d931ebdaa407a1a6285}{instruction}})
+\begin{DoxyCompactList}\small\item\em Implements the instruction obtained from the switch cases. \end{DoxyCompactList}\item 
+static String \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a1904cfcfcc9d0e3f1256202a8f7ad33e}{show\+Feedback}} (String instruction\+Def)
+\begin{DoxyCompactList}\small\item\em Switch case that decides on the feedback to be printed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a3cbf1db0a5560d931ebdaa407a1a6285}{instruction}} = 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_afa5582341ba5a9609e4eb7d539741e6a}{on\+Create}} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a8f22682b2ad8898b8242090342c1ab53}{client\+End}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_af799c82f2b94685d95b462b3df104344}{squat\+Images}} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Create Carousel view with three images. \end{DoxyCompactList}\item 
+String \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a3a3fa8bda7ea911bae8e086e0e5e86dc}{squat\+Images\+Title}}
+\item 
+final int \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a28250169a237362b6ab0a7412cd12da6}{P\+O\+RT}} = 31415
+\item 
+Thread \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a5c6683281be124ed40b4ad73bcec89fc}{udp\+Listener}}
+\item 
+\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send}{Client\+Send}} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_af9d9055eef7e92d48f0f544bec3a7abd}{udp\+Sender}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file Classic\+Squat.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a8f22682b2ad8898b8242090342c1ab53}\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a8f22682b2ad8898b8242090342c1ab53}} 
+\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}!clientEnd@{clientEnd}}
+\index{clientEnd@{clientEnd}!com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+\subsubsection{\texorpdfstring{clientEnd()}{clientEnd()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Classic\+Squat.\+client\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 169 of file Classic\+Squat.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{169                             \{}
+\DoxyCodeLine{170 \textcolor{comment}{//        udpClientThread = null;}}
+\DoxyCodeLine{171         textViewState.setText(\textcolor{stringliteral}{"clientEnd()"});}
+\DoxyCodeLine{172         buttonConnect.setEnabled(\textcolor{keyword}{true});}
+\DoxyCodeLine{173     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_af11bf43a5c57edf97320d8662fc343a1}\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_af11bf43a5c57edf97320d8662fc343a1}} 
+\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}!enterSquatInstr@{enterSquatInstr}}
+\index{enterSquatInstr@{enterSquatInstr}!com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+\subsubsection{\texorpdfstring{enterSquatInstr()}{enterSquatInstr()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Classic\+Squat.\+enter\+Squat\+Instr (\begin{DoxyParamCaption}\item[{View}]{view }\end{DoxyParamCaption})}
+
+
+
+Definition at line 117 of file Classic\+Squat.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{117                                            \{}
+\DoxyCodeLine{118         Intent squat\_instr = \textcolor{keyword}{new} Intent(\textcolor{keyword}{this}, SquatInstr.class);}
+\DoxyCodeLine{119         startActivity(squat\_instr);}
+\DoxyCodeLine{120     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_ab2575cf1007e1d844a98e511b93aaf8d}\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_ab2575cf1007e1d844a98e511b93aaf8d}} 
+\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}!getInstruction@{getInstruction}}
+\index{getInstruction@{getInstruction}!com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+\subsubsection{\texorpdfstring{getInstruction()}{getInstruction()}}
+{\footnotesize\ttfamily static int com.\+example.\+trainawearapplication.\+Classic\+Squat.\+get\+Instruction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 45 of file Classic\+Squat.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45                                        \{}
+\DoxyCodeLine{46         \textcolor{keywordflow}{return} \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a3cbf1db0a5560d931ebdaa407a1a6285}{instruction}};}
+\DoxyCodeLine{47     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+Classic\+Squat.\+instruction.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_afa5582341ba5a9609e4eb7d539741e6a}\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_afa5582341ba5a9609e4eb7d539741e6a}} 
+\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}!onCreate@{onCreate}}
+\index{onCreate@{onCreate}!com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+\subsubsection{\texorpdfstring{onCreate()}{onCreate()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Classic\+Squat.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 69 of file Classic\+Squat.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69                                                        \{}
+\DoxyCodeLine{70         super.onCreate(savedInstanceState);}
+\DoxyCodeLine{71         setContentView(R.layout.activity\_classic\_squat);}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73         \textcolor{comment}{// create activity from parent}}
+\DoxyCodeLine{74         Intent classicSquat = getIntent();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76         \textcolor{comment}{// set carousel view}}
+\DoxyCodeLine{77         CarouselView carouselView = findViewById(R.id.carousel);}
+\DoxyCodeLine{78         carouselView.setPageCount(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_af799c82f2b94685d95b462b3df104344}{squatImages}}.length);}
+\DoxyCodeLine{79         carouselView.setImageListener(\textcolor{keyword}{new} ImageListener() \{}
+\DoxyCodeLine{80             @Override}
+\DoxyCodeLine{81             \textcolor{keyword}{public} \textcolor{keywordtype}{void} setImageForPosition(\textcolor{keywordtype}{int} position, ImageView imageView) \{}
+\DoxyCodeLine{82                 imageView.setImageResource(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_af799c82f2b94685d95b462b3df104344}{squatImages}}[position]);}
+\DoxyCodeLine{83             \}}
+\DoxyCodeLine{84         \});}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86         carouselView.setImageClickListener(\textcolor{keyword}{new} ImageClickListener() \{}
+\DoxyCodeLine{87             @Override}
+\DoxyCodeLine{88             \textcolor{keyword}{public} \textcolor{keywordtype}{void} onClick(\textcolor{keywordtype}{int} position) \{}
+\DoxyCodeLine{89                 Toast.makeText(ClassicSquat.this, \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a3a3fa8bda7ea911bae8e086e0e5e86dc}{squatImagesTitle}}[position], Toast.LENGTH\_SHORT).show();}
+\DoxyCodeLine{90             \}}
+\DoxyCodeLine{91         \});}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93         \textcolor{comment}{// buttons and text fields for UDPclient thread and feedback}}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95         buttonConnect =  findViewById(R.id.buttonStartSquatClassic); \textcolor{comment}{// in History}}
+\DoxyCodeLine{96         buttonDisconnect =  findViewById(R.id.buttonStopSquatClassic); \textcolor{comment}{// in History}}
+\DoxyCodeLine{97         textViewState = findViewById(R.id.state); \textcolor{comment}{// store IP address after handshake}}
+\DoxyCodeLine{98         textViewRx = findViewById(R.id.received); \textcolor{comment}{// store numbers for feedback}}
+\DoxyCodeLine{99         textFeedback = findViewById(R.id.feedback); \textcolor{comment}{// in Squat}}
+\DoxyCodeLine{100         messageView = findViewById(R.id.message);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102         buttonConnect.setOnClickListener(buttonConnectOnClickListener);}
+\DoxyCodeLine{103         buttonDisconnect.setOnClickListener(buttonDisonnectOnClickListener);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105         udpClientHandler = \textcolor{keyword}{new} \mbox{\hyperlink{namespacecom}{com}}.\mbox{\hyperlink{namespacecom_1_1example}{example}}.\mbox{\hyperlink{namespacecom_1_1example_1_1trainawearapplication}{trainawearapplication}}.\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler}{UdpClientHandler}}();}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107         Log.d(TAG, \textcolor{stringliteral}{"Start listening for messages"});}
+\DoxyCodeLine{108         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a5c6683281be124ed40b4ad73bcec89fc}{udpListener}} = \textcolor{keyword}{new} Thread(\textcolor{keyword}{new} \mbox{\hyperlink{namespacecom}{com}}.\mbox{\hyperlink{namespacecom_1_1example}{example}}.\mbox{\hyperlink{namespacecom_1_1example_1_1trainawearapplication}{trainawearapplication}}.\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_listen}{ClientListen}}(\mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a28250169a237362b6ab0a7412cd12da6}{PORT}}, textViewState, udpClientHandler));}
+\DoxyCodeLine{109         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a5c6683281be124ed40b4ad73bcec89fc}{udpListener}}.start();}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_af9d9055eef7e92d48f0f544bec3a7abd}{udpSender}} = \textcolor{keyword}{new} ClientSend(\textcolor{stringliteral}{"255.255.255.255"}, \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a28250169a237362b6ab0a7412cd12da6}{PORT}});}
+\DoxyCodeLine{112         Log.d(TAG, \textcolor{stringliteral}{"sending to "} + textViewState.getText().toString());}
+\DoxyCodeLine{113         \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_af9d9055eef7e92d48f0f544bec3a7abd}{udpSender}}.execute(\textcolor{stringliteral}{"train-a-wear ready"});}
+\DoxyCodeLine{114     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+R.\+layout.\+activity\+\_\+classic\+\_\+squat, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Start\+Squat\+Classic, com.\+example.\+trainawearapplication.\+R.\+id.\+button\+Stop\+Squat\+Classic, com.\+example.\+trainawearapplication.\+R.\+id.\+carousel, com.\+example.\+trainawearapplication.\+R.\+id.\+feedback, com.\+example.\+trainawearapplication.\+R.\+id.\+message, com.\+example.\+trainawearapplication.\+Classic\+Squat.\+P\+O\+RT, com.\+example.\+trainawearapplication.\+R.\+id.\+received, com.\+example.\+trainawearapplication.\+Classic\+Squat.\+squat\+Images, com.\+example.\+trainawearapplication.\+Classic\+Squat.\+squat\+Images\+Title, com.\+example.\+trainawearapplication.\+R.\+id.\+state, com.\+example.\+trainawearapplication.\+Classic\+Squat.\+udp\+Listener, and com.\+example.\+trainawearapplication.\+Classic\+Squat.\+udp\+Sender.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a3a096fd4064cf28568fd13336c77d28f}\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a3a096fd4064cf28568fd13336c77d28f}} 
+\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}!setInstruction@{setInstruction}}
+\index{setInstruction@{setInstruction}!com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+\subsubsection{\texorpdfstring{setInstruction()}{setInstruction()}}
+{\footnotesize\ttfamily static void com.\+example.\+trainawearapplication.\+Classic\+Squat.\+set\+Instruction (\begin{DoxyParamCaption}\item[{int}]{instruction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Implements the instruction obtained from the switch cases. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction} & -\/ variable used to decide on the message to be displayed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file Classic\+Squat.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                                                        \{}
+\DoxyCodeLine{54         ClassicSquat.instruction = \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a3cbf1db0a5560d931ebdaa407a1a6285}{instruction}};}
+\DoxyCodeLine{55     \}}
+
+\end{DoxyCode}
+
+
+References com.\+example.\+trainawearapplication.\+Classic\+Squat.\+instruction.
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_ab193e39e2f1255fd88d0508cfe7a63ff}\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_ab193e39e2f1255fd88d0508cfe7a63ff}} 
+\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}!setViewText@{setViewText}}
+\index{setViewText@{setViewText}!com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+\subsubsection{\texorpdfstring{setViewText()}{setViewText()}}
+{\footnotesize\ttfamily void com.\+example.\+trainawearapplication.\+Classic\+Squat.\+set\+View\+Text (\begin{DoxyParamCaption}\item[{Text\+View}]{view,  }\item[{String}]{text }\end{DoxyParamCaption})}
+
+
+
+Method required by the \mbox{\hyperlink{interfacecom_1_1example_1_1trainawearapplication_1_1_update_feedback}{Update\+Feedback}} interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view} & updates the specified text\+View \\
+\hline
+{\em text} & String that corresponds to the feedback in show\+Feedback method \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1example_1_1trainawearapplication_1_1_update_feedback_a7a026880188b11aca6d8184d57e699e8}{com.\+example.\+trainawearapplication.\+Update\+Feedback}}.
+
+
+
+Definition at line 210 of file Classic\+Squat.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{210                                                         \{}
+\DoxyCodeLine{211         view.setText(text);}
+\DoxyCodeLine{212     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a1904cfcfcc9d0e3f1256202a8f7ad33e}\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a1904cfcfcc9d0e3f1256202a8f7ad33e}} 
+\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}!showFeedback@{showFeedback}}
+\index{showFeedback@{showFeedback}!com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+\subsubsection{\texorpdfstring{showFeedback()}{showFeedback()}}
+{\footnotesize\ttfamily static String com.\+example.\+trainawearapplication.\+Classic\+Squat.\+show\+Feedback (\begin{DoxyParamCaption}\item[{String}]{instruction\+Def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Switch case that decides on the feedback to be printed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em instruction\+Def} & The message from R\+PI that encodes a defect/situation found by the algorithm on the R\+PI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The feedback that will be printed using the thread handler, \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_udp_client_handler}{Udp\+Client\+Handler}} 
+\end{DoxyReturn}
+
+
+Definition at line 182 of file Classic\+Squat.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{182                                                              \{}
+\DoxyCodeLine{183         \textcolor{keywordflow}{switch} (instructionDef)\{}
+\DoxyCodeLine{184             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"0"}:}
+\DoxyCodeLine{185                 \textcolor{keywordflow}{return}(\textcolor{stringliteral}{"Ready to start"});}
+\DoxyCodeLine{186 }
+\DoxyCodeLine{187             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"1"}:}
+\DoxyCodeLine{188                 \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"Let's go!"});}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{190             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"3"}:}
+\DoxyCodeLine{191                 \textcolor{keywordflow}{return}(\textcolor{stringliteral}{"Knees caving in: Keep your knees in line with your toes"});}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"2"}:}
+\DoxyCodeLine{194                 \textcolor{keywordflow}{return}(\textcolor{stringliteral}{"Your back is bending, keep it straight while tensing your abs"});}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"4"}:}
+\DoxyCodeLine{197                 \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"It looks like your form is asymmetrical when lowering in squat"});}
+\DoxyCodeLine{198 }
+\DoxyCodeLine{199             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{200                 \textcolor{keywordflow}{return}(\textcolor{stringliteral}{"You're doing great, keep going!"});}
+\DoxyCodeLine{201         \}}
+\DoxyCodeLine{202     \}}
+
+\end{DoxyCode}
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Classic\+Squat\+Switch\+Test.\+test\+Switch\+Case0(), com.\+example.\+trainawearapplication.\+Classic\+Squat\+Switch\+Test.\+test\+Switch\+Case1(), com.\+example.\+trainawearapplication.\+Classic\+Squat\+Switch\+Test.\+test\+Switch\+Case2(), com.\+example.\+trainawearapplication.\+Classic\+Squat\+Switch\+Test.\+test\+Switch\+Case3(), com.\+example.\+trainawearapplication.\+Classic\+Squat\+Switch\+Test.\+test\+Switch\+Case6(), com.\+example.\+trainawearapplication.\+Classic\+Squat\+Switch\+Test.\+test\+Switch\+Case\+Default(), and com.\+example.\+trainawearapplication.\+Classic\+Squat\+Switch\+Test.\+test\+Switch\+Case\+Fail().
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a3cbf1db0a5560d931ebdaa407a1a6285}\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a3cbf1db0a5560d931ebdaa407a1a6285}} 
+\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}!instruction@{instruction}}
+\index{instruction@{instruction}!com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+\subsubsection{\texorpdfstring{instruction}{instruction}}
+{\footnotesize\ttfamily int com.\+example.\+trainawearapplication.\+Classic\+Squat.\+instruction = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 31 of file Classic\+Squat.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Classic\+Squat.\+get\+Instruction(), com.\+example.\+trainawearapplication.\+Plank.\+set\+Instruction(), and com.\+example.\+trainawearapplication.\+Classic\+Squat.\+set\+Instruction().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a28250169a237362b6ab0a7412cd12da6}\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a28250169a237362b6ab0a7412cd12da6}} 
+\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}!PORT@{PORT}}
+\index{PORT@{PORT}!com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+\subsubsection{\texorpdfstring{PORT}{PORT}}
+{\footnotesize\ttfamily final int com.\+example.\+trainawearapplication.\+Classic\+Squat.\+P\+O\+RT = 31415\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 63 of file Classic\+Squat.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Classic\+Squat.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_af799c82f2b94685d95b462b3df104344}\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_af799c82f2b94685d95b462b3df104344}} 
+\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}!squatImages@{squatImages}}
+\index{squatImages@{squatImages}!com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+\subsubsection{\texorpdfstring{squatImages}{squatImages}}
+{\footnotesize\ttfamily int com.\+example.\+trainawearapplication.\+Classic\+Squat.\+squat\+Images\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} \textcolor{keywordtype}{int}[]\{}
+\DoxyCodeLine{            R.drawable.squatstart1, R.drawable.squatmed3, R.drawable.squatend1}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Create Carousel view with three images. 
+
+
+
+Definition at line 35 of file Classic\+Squat.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Classic\+Squat.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a3a3fa8bda7ea911bae8e086e0e5e86dc}\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a3a3fa8bda7ea911bae8e086e0e5e86dc}} 
+\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}!squatImagesTitle@{squatImagesTitle}}
+\index{squatImagesTitle@{squatImagesTitle}!com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+\subsubsection{\texorpdfstring{squatImagesTitle}{squatImagesTitle}}
+{\footnotesize\ttfamily String \mbox{[}$\,$\mbox{]} com.\+example.\+trainawearapplication.\+Classic\+Squat.\+squat\+Images\+Title\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} String[]\{}
+\DoxyCodeLine{            \textcolor{stringliteral}{"Squat1"}, \textcolor{stringliteral}{"Squat2"}, \textcolor{stringliteral}{"Squat3"}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line 39 of file Classic\+Squat.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Classic\+Squat.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a5c6683281be124ed40b4ad73bcec89fc}\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_a5c6683281be124ed40b4ad73bcec89fc}} 
+\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}!udpListener@{udpListener}}
+\index{udpListener@{udpListener}!com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+\subsubsection{\texorpdfstring{udpListener}{udpListener}}
+{\footnotesize\ttfamily Thread com.\+example.\+trainawearapplication.\+Classic\+Squat.\+udp\+Listener\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 64 of file Classic\+Squat.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Classic\+Squat.\+on\+Create().
+
+\mbox{\Hypertarget{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_af9d9055eef7e92d48f0f544bec3a7abd}\label{classcom_1_1example_1_1trainawearapplication_1_1_classic_squat_af9d9055eef7e92d48f0f544bec3a7abd}} 
+\index{com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}!udpSender@{udpSender}}
+\index{udpSender@{udpSender}!com.example.trainawearapplication.ClassicSquat@{com.example.trainawearapplication.ClassicSquat}}
+\subsubsection{\texorpdfstring{udpSender}{udpSender}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1example_1_1trainawearapplication_1_1_client_send}{Client\+Send}} com.\+example.\+trainawearapplication.\+Classic\+Squat.\+udp\+Sender\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 65 of file Classic\+Squat.\+java.
+
+
+
+Referenced by com.\+example.\+trainawearapplication.\+Classic\+Squat.\+on\+Create().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Phone App/app/src/main/java/com/example/trainawearapplication/\mbox{\hyperlink{_classic_squat_8java}{Classic\+Squat.\+java}}\end{DoxyCompactItemize}

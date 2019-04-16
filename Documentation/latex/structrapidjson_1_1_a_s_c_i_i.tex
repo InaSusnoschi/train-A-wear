@@ -1,0 +1,290 @@
+\hypertarget{structrapidjson_1_1_a_s_c_i_i}{}\section{rapidjson\+::A\+S\+C\+II$<$ Char\+Type $>$ Struct Template Reference}
+\label{structrapidjson_1_1_a_s_c_i_i}\index{rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}}
+
+
+\mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{A\+S\+C\+II}} encoding.  
+
+
+
+
+{\ttfamily \#include $<$encodings.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_a598bb5f32c9f0c851529a9ded73db5eba7c8190ea4c25af669f952bfe200afeee}{support\+Unicode}} = 0
+ \}
+\item 
+typedef Char\+Type \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_a2c1e49f42921027d58f1125a627cc5e5}{Ch}}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Output\+Stream $>$ }\\static void \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_adac1c32ed7098e5814dc4b2d1b6f04b5}{Encode}} (Output\+Stream \&os, unsigned codepoint)
+\item 
+{\footnotesize template$<$typename Output\+Stream $>$ }\\static void \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_a0eee86da534d0652359a74caa084a0b7}{Encode\+Unsafe}} (Output\+Stream \&os, unsigned codepoint)
+\item 
+{\footnotesize template$<$typename Input\+Stream $>$ }\\static bool \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_aaec2b991fe580f147df60fe6eb15b3f0}{Decode}} (Input\+Stream \&is, unsigned $\ast$codepoint)
+\item 
+{\footnotesize template$<$typename Input\+Stream , typename Output\+Stream $>$ }\\static bool \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_a1d92c5e7540766a9fc03bebf788dab88}{Validate}} (Input\+Stream \&is, Output\+Stream \&os)
+\item 
+{\footnotesize template$<$typename Input\+Byte\+Stream $>$ }\\static Char\+Type \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_a0d3616276f046139c3628574f9b8ea0b}{Take\+B\+OM}} (Input\+Byte\+Stream \&is)
+\item 
+{\footnotesize template$<$typename Input\+Byte\+Stream $>$ }\\static \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_a2c1e49f42921027d58f1125a627cc5e5}{Ch}} \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_ad4ab53cc9d0c076d5548e7ed5be76f5b}{Take}} (Input\+Byte\+Stream \&is)
+\item 
+{\footnotesize template$<$typename Output\+Byte\+Stream $>$ }\\static void \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_a5da83adf5a57fa73144a128a80d10782}{Put\+B\+OM}} (Output\+Byte\+Stream \&os)
+\item 
+{\footnotesize template$<$typename Output\+Byte\+Stream $>$ }\\static void \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_a32e644c99e6658ae8c8f1578d8860eaf}{Put}} (Output\+Byte\+Stream \&os, \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_a2c1e49f42921027d58f1125a627cc5e5}{Ch}} c)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Char\+Type = char$>$\newline
+struct rapidjson\+::\+A\+S\+C\+I\+I$<$ Char\+Type $>$}
+
+\mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{A\+S\+C\+II}} encoding. 
+
+\href{http://en.wikipedia.org/wiki/ASCII}{\texttt{ http\+://en.\+wikipedia.\+org/wiki/\+A\+S\+C\+II}} 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Char\+Type} & Code unit for storing 7-\/bit \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{A\+S\+C\+II}} data. Default is char. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyNote}{Note}
+implements \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} concept 
+\end{DoxyNote}
+
+
+Definition at line 542 of file encodings.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_a_s_c_i_i_a2c1e49f42921027d58f1125a627cc5e5}\label{structrapidjson_1_1_a_s_c_i_i_a2c1e49f42921027d58f1125a627cc5e5}} 
+\index{rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = char$>$ \\
+typedef Char\+Type \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{rapidjson\+::\+A\+S\+C\+II}}$<$ Char\+Type $>$\+::\mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_a2c1e49f42921027d58f1125a627cc5e5}{Ch}}}
+
+
+
+Definition at line 543 of file encodings.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_a_s_c_i_i_a598bb5f32c9f0c851529a9ded73db5eb}\label{structrapidjson_1_1_a_s_c_i_i_a598bb5f32c9f0c851529a9ded73db5eb}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = char$>$ \\
+anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{supportUnicode@{supportUnicode}!rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}}\index{rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}!supportUnicode@{supportUnicode}}}\mbox{\Hypertarget{structrapidjson_1_1_a_s_c_i_i_a598bb5f32c9f0c851529a9ded73db5eba7c8190ea4c25af669f952bfe200afeee}\label{structrapidjson_1_1_a_s_c_i_i_a598bb5f32c9f0c851529a9ded73db5eba7c8190ea4c25af669f952bfe200afeee}} 
+support\+Unicode&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 545 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{545 \{ \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_a598bb5f32c9f0c851529a9ded73db5eba7c8190ea4c25af669f952bfe200afeee}{supportUnicode}} = 0 \};}
+
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structrapidjson_1_1_a_s_c_i_i_aaec2b991fe580f147df60fe6eb15b3f0}\label{structrapidjson_1_1_a_s_c_i_i_aaec2b991fe580f147df60fe6eb15b3f0}} 
+\index{rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}!Decode@{Decode}}
+\index{Decode@{Decode}!rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Decode()}{Decode()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = char$>$ \\
+template$<$typename Input\+Stream $>$ \\
+static bool \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{rapidjson\+::\+A\+S\+C\+II}}$<$ Char\+Type $>$\+::Decode (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{unsigned $\ast$}]{codepoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 560 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{560                                                              \{}
+\DoxyCodeLine{561         \mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\_t}} c = static\_cast<uint8\_t>(is.Take());}
+\DoxyCodeLine{562         *codepoint = c;}
+\DoxyCodeLine{563         \textcolor{keywordflow}{return} c <= 0X7F;}
+\DoxyCodeLine{564     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structrapidjson_1_1_a_s_c_i_i_adac1c32ed7098e5814dc4b2d1b6f04b5}\label{structrapidjson_1_1_a_s_c_i_i_adac1c32ed7098e5814dc4b2d1b6f04b5}} 
+\index{rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}!Encode@{Encode}}
+\index{Encode@{Encode}!rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Encode()}{Encode()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = char$>$ \\
+template$<$typename Output\+Stream $>$ \\
+static void \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{rapidjson\+::\+A\+S\+C\+II}}$<$ Char\+Type $>$\+::Encode (\begin{DoxyParamCaption}\item[{Output\+Stream \&}]{os,  }\item[{unsigned}]{codepoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 548 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{548                                                              \{}
+\DoxyCodeLine{549         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(codepoint <= 0x7F);}
+\DoxyCodeLine{550         os.Put(static\_cast<Ch>(codepoint \& 0xFF));}
+\DoxyCodeLine{551     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_a_s_c_i_i_a0eee86da534d0652359a74caa084a0b7}\label{structrapidjson_1_1_a_s_c_i_i_a0eee86da534d0652359a74caa084a0b7}} 
+\index{rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}!EncodeUnsafe@{EncodeUnsafe}}
+\index{EncodeUnsafe@{EncodeUnsafe}!rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{EncodeUnsafe()}{EncodeUnsafe()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = char$>$ \\
+template$<$typename Output\+Stream $>$ \\
+static void \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{rapidjson\+::\+A\+S\+C\+II}}$<$ Char\+Type $>$\+::Encode\+Unsafe (\begin{DoxyParamCaption}\item[{Output\+Stream \&}]{os,  }\item[{unsigned}]{codepoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 554 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{554                                                                    \{}
+\DoxyCodeLine{555         \mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___c_o_n_f_i_g_gabeba18d612187bad2ac62aed9276d47c}{RAPIDJSON\_ASSERT}}(codepoint <= 0x7F);}
+\DoxyCodeLine{556         \mbox{\hyperlink{namespacerapidjson_a0a774dcffe8ae07686f459ae017d2f20}{PutUnsafe}}(os, static\_cast<Ch>(codepoint \& 0xFF));}
+\DoxyCodeLine{557     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Put\+Unsafe(), and R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_a_s_c_i_i_a32e644c99e6658ae8c8f1578d8860eaf}\label{structrapidjson_1_1_a_s_c_i_i_a32e644c99e6658ae8c8f1578d8860eaf}} 
+\index{rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}!Put@{Put}}
+\index{Put@{Put}!rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Put()}{Put()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = char$>$ \\
+template$<$typename Output\+Byte\+Stream $>$ \\
+static void \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{rapidjson\+::\+A\+S\+C\+II}}$<$ Char\+Type $>$\+::Put (\begin{DoxyParamCaption}\item[{Output\+Byte\+Stream \&}]{os,  }\item[{\mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_a2c1e49f42921027d58f1125a627cc5e5}{Ch}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 593 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{593                                                 \{}
+\DoxyCodeLine{594         \mbox{\hyperlink{rapidjson_8h_af95188da1d8eb6d4b148fe9ce71cd7c4}{RAPIDJSON\_STATIC\_ASSERT}}(\textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} OutputByteStream::Ch) == 1);}
+\DoxyCodeLine{595         os.Put(static\_cast<typename OutputByteStream::Ch>(c));}
+\DoxyCodeLine{596     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_a_s_c_i_i_a5da83adf5a57fa73144a128a80d10782}\label{structrapidjson_1_1_a_s_c_i_i_a5da83adf5a57fa73144a128a80d10782}} 
+\index{rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}!PutBOM@{PutBOM}}
+\index{PutBOM@{PutBOM}!rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{PutBOM()}{PutBOM()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = char$>$ \\
+template$<$typename Output\+Byte\+Stream $>$ \\
+static void \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{rapidjson\+::\+A\+S\+C\+II}}$<$ Char\+Type $>$\+::Put\+B\+OM (\begin{DoxyParamCaption}\item[{Output\+Byte\+Stream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 587 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{587                                              \{}
+\DoxyCodeLine{588         \mbox{\hyperlink{rapidjson_8h_af95188da1d8eb6d4b148fe9ce71cd7c4}{RAPIDJSON\_STATIC\_ASSERT}}(\textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} OutputByteStream::Ch) == 1);}
+\DoxyCodeLine{589         (void)os;}
+\DoxyCodeLine{590     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_a_s_c_i_i_ad4ab53cc9d0c076d5548e7ed5be76f5b}\label{structrapidjson_1_1_a_s_c_i_i_ad4ab53cc9d0c076d5548e7ed5be76f5b}} 
+\index{rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}!Take@{Take}}
+\index{Take@{Take}!rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Take()}{Take()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = char$>$ \\
+template$<$typename Input\+Byte\+Stream $>$ \\
+static \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_a2c1e49f42921027d58f1125a627cc5e5}{Ch}} \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{rapidjson\+::\+A\+S\+C\+II}}$<$ Char\+Type $>$\+::Take (\begin{DoxyParamCaption}\item[{Input\+Byte\+Stream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 581 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{581                                         \{}
+\DoxyCodeLine{582         \mbox{\hyperlink{rapidjson_8h_af95188da1d8eb6d4b148fe9ce71cd7c4}{RAPIDJSON\_STATIC\_ASSERT}}(\textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} InputByteStream::Ch) == 1);}
+\DoxyCodeLine{583         \textcolor{keywordflow}{return} static\_cast<Ch>(is.Take());}
+\DoxyCodeLine{584     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_a_s_c_i_i_a0d3616276f046139c3628574f9b8ea0b}\label{structrapidjson_1_1_a_s_c_i_i_a0d3616276f046139c3628574f9b8ea0b}} 
+\index{rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}!TakeBOM@{TakeBOM}}
+\index{TakeBOM@{TakeBOM}!rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{TakeBOM()}{TakeBOM()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = char$>$ \\
+template$<$typename Input\+Byte\+Stream $>$ \\
+static Char\+Type \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{rapidjson\+::\+A\+S\+C\+II}}$<$ Char\+Type $>$\+::Take\+B\+OM (\begin{DoxyParamCaption}\item[{Input\+Byte\+Stream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 574 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{574                                                  \{}
+\DoxyCodeLine{575         \mbox{\hyperlink{rapidjson_8h_af95188da1d8eb6d4b148fe9ce71cd7c4}{RAPIDJSON\_STATIC\_ASSERT}}(\textcolor{keyword}{sizeof}(\textcolor{keyword}{typename} InputByteStream::Ch) == 1);}
+\DoxyCodeLine{576         \mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\_t}} c = static\_cast<uint8\_t>(\mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i_ad4ab53cc9d0c076d5548e7ed5be76f5b}{Take}}(is));}
+\DoxyCodeLine{577         \textcolor{keywordflow}{return} static\_cast<Ch>(c);}
+\DoxyCodeLine{578     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+A\+S\+S\+E\+RT.
+
+\mbox{\Hypertarget{structrapidjson_1_1_a_s_c_i_i_a1d92c5e7540766a9fc03bebf788dab88}\label{structrapidjson_1_1_a_s_c_i_i_a1d92c5e7540766a9fc03bebf788dab88}} 
+\index{rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}!Validate@{Validate}}
+\index{Validate@{Validate}!rapidjson::ASCII$<$ CharType $>$@{rapidjson::ASCII$<$ CharType $>$}}
+\subsubsection{\texorpdfstring{Validate()}{Validate()}}
+{\footnotesize\ttfamily template$<$typename Char\+Type  = char$>$ \\
+template$<$typename Input\+Stream , typename Output\+Stream $>$ \\
+static bool \mbox{\hyperlink{structrapidjson_1_1_a_s_c_i_i}{rapidjson\+::\+A\+S\+C\+II}}$<$ Char\+Type $>$\+::Validate (\begin{DoxyParamCaption}\item[{Input\+Stream \&}]{is,  }\item[{Output\+Stream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 567 of file encodings.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{567                                                             \{}
+\DoxyCodeLine{568         \mbox{\hyperlink{stdint_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\_t}} c = static\_cast<uint8\_t>(is.Take());}
+\DoxyCodeLine{569         os.Put(static\_cast<typename OutputStream::Ch>(c));}
+\DoxyCodeLine{570         \textcolor{keywordflow}{return} c <= 0x7F;}
+\DoxyCodeLine{571     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{encodings_8h}{encodings.\+h}}\end{DoxyCompactItemize}

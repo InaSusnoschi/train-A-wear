@@ -1,0 +1,701 @@
+\hypertarget{classrapidjson_1_1_generic_pointer}{}\section{rapidjson\+::Generic\+Pointer$<$ Value\+Type, Allocator $>$ Class Template Reference}
+\label{classrapidjson_1_1_generic_pointer}\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+
+
+Represents a J\+S\+ON Pointer. Use Pointer for \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding and default allocator.  
+
+
+
+
+{\ttfamily \#include $<$fwd.\+h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_1_1_percent_encode_stream}{Percent\+Encode\+Stream}}
+\begin{DoxyCompactList}\small\item\em A helper stream to encode character (U\+T\+F-\/8 code unit) into percent-\/encoded sequence. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token}{Token}}
+\begin{DoxyCompactList}\small\item\em A token is the basic units of internal representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Value\+Type\+::\+Encoding\+Type \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a399790c5fe8076d91a58c621c0c2a79e}{Encoding\+Type}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} type from Value. \end{DoxyCompactList}\item 
+typedef Value\+Type\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}}
+\begin{DoxyCompactList}\small\item\em Character type from Value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{Indent}\textbf{ Append token}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a7cb5eda2af1722e52efa591c4103ebec}{Append}} (const \mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token}{Token}} \&token, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}{allocator}}=0) const
+\begin{DoxyCompactList}\small\item\em Append a token and return a new Pointer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a30f4eac82e9fded60dead3f7d1cb3941}{Append}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}} $\ast$name, \mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}} length, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}{allocator}}=0) const
+\begin{DoxyCompactList}\small\item\em Append a name token with length, and return a new Pointer. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_aa881255d7b268d819d0f2cc27a4fff81}{R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN}} ((internal\+::\+Not\+Expr$<$ internal\+::\+Is\+Same$<$ typename internal\+::\+Remove\+Const$<$ T $>$\+::\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{Type}}, \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}} $>$ $>$),(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}})) \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a7cb5eda2af1722e52efa591c4103ebec}{Append}}(T $\ast$name
+\begin{DoxyCompactList}\small\item\em Append a name token without length, and return a new Pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}{allocator}}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a303e16e7d6c391a2afe8669744f79897}{allocator\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The current allocator. It is either user-\/supplied or equal to own\+Allocator\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a8798d7fdb02cd5b95bf032760aed8445}{own\+Allocator\+\_\+}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} owned by this Pointer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a38f23dc869001b53149804e563f6a465}{name\+Buffer\+\_\+}}
+\begin{DoxyCompactList}\small\item\em A buffer containing all names in tokens. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token}{Token}} $\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_ad76284430e5e54ed22a4c93dc59e00c7}{tokens\+\_\+}}
+\begin{DoxyCompactList}\small\item\em A list of tokens. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}{token\+Count\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Number of tokens in tokens\+\_\+. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a28e0ba01bc383d2fe7d54a450e35cd7a}{parse\+Error\+Offset\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Offset in code unit when parsing fail. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gade540ee4cc2a416c23b8ee2c12393c7b}{Pointer\+Parse\+Error\+Code}} \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a20d76ef128abbdd0acd87d2f1fb0ae34}{parse\+Error\+Code\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Parsing error code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Constructors and destructor.}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_aa077ce171ea25cf501c12f2d5df7f248}{Generic\+Pointer}} (\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}{allocator}}=0)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a8f831aae14afc493a82b5fb6aa9c3c43}{Generic\+Pointer}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}} $\ast$\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}{allocator}}=0)
+\begin{DoxyCompactList}\small\item\em Constructor that parses a string or U\+RI fragment representation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a00ad17ea227d2556404df7cc64c6aeb5}{Generic\+Pointer}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}} $\ast$\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, size\+\_\+t length, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}{allocator}}=0)
+\begin{DoxyCompactList}\small\item\em Constructor that parses a string or U\+RI fragment representation, with length of the source string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a6df9f6a01d1b5945811055e1cf8aead6}{Generic\+Pointer}} (const \mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token}{Token}} $\ast$tokens, size\+\_\+t token\+Count)
+\begin{DoxyCompactList}\small\item\em Constructor with user-\/supplied tokens. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_ae071847ed3e7389f5b256d26fcc8fd62}{Generic\+Pointer}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_afedfcaac36fa589a46667825d3d0b763}{Generic\+Pointer}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} \&rhs, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}{allocator}})
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a0e144b9956a5272c13ceff3b9306e748}{$\sim$\+Generic\+Pointer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a23194bb6ce6c07c78981344fe80ac3a6}{operator=}} (const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} \& \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a91762c063f390c1463eb772dfd1b822b}{Swap}} (\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} \&other) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\begin{DoxyCompactList}\small\item\em Swap the content of this pointer with an other. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a249c61b5d4bed20c3f8972c57f46a937}{swap}} (\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} \&\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}, \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} \&b) R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+N\+O\+E\+X\+C\+E\+PT
+\begin{DoxyCompactList}\small\item\em free-\/standing swap function helper \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Value\+Type, typename Allocator = Crt\+Allocator$>$\newline
+class rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$}
+
+Represents a J\+S\+ON Pointer. Use Pointer for \mbox{\hyperlink{structrapidjson_1_1_u_t_f8}{U\+T\+F8}} encoding and default allocator. 
+
+This class implements R\+FC 6901 \char`\"{}\+Java\+Script Object Notation (\+J\+S\+O\+N) Pointer\char`\"{} (\href{https://tools.ietf.org/html/rfc6901}{\texttt{ https\+://tools.\+ietf.\+org/html/rfc6901}}).
+
+A J\+S\+ON pointer is for identifying a specific value in a J\+S\+ON document (\mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}}). It can simplify coding of D\+OM tree manipulation, because it can access multiple-\/level depth of D\+OM tree with single A\+PI call.
+
+After it parses a string representation (e.\+g. \char`\"{}/foo/0\char`\"{} or U\+RI fragment representation (e.\+g. \char`\"{}\#/foo/0\char`\"{}) into its internal representation (tokens), it can be used to resolve a specific value in multiple documents, or sub-\/tree of documents.
+
+Contrary to \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}, Pointer can be copy constructed and copy assigned. Apart from assignment, a Pointer cannot be modified after construction.
+
+Although Pointer is very convenient, please aware that constructing Pointer involves parsing and dynamic memory allocation. A special constructor with user-\/ supplied tokens eliminates these.
+
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} depends on \mbox{\hyperlink{classrapidjson_1_1_generic_document}{Generic\+Document}} and \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Value\+Type} & The value type of the D\+OM tree. E.\+g. \mbox{\hyperlink{classrapidjson_1_1_generic_value}{Generic\+Value}}$<$U\+T\+F8$<$$>$ $>$ \\
+\hline
+{\em \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}} & The allocator type for allocating memory for internal representation.\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} uses same encoding of Value\+Type. However, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} of \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} is independent of \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} of Value. 
+\end{DoxyNote}
+
+
+Definition at line 126 of file fwd.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}\label{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!Ch@{Ch}}
+\index{Ch@{Ch}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{Ch}{Ch}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+typedef Value\+Type\+::\+Ch \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}}}
+
+
+
+Character type from Value. 
+
+
+
+Definition at line 82 of file pointer.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a399790c5fe8076d91a58c621c0c2a79e}\label{classrapidjson_1_1_generic_pointer_a399790c5fe8076d91a58c621c0c2a79e}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!EncodingType@{EncodingType}}
+\index{EncodingType@{EncodingType}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{EncodingType}{EncodingType}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+typedef Value\+Type\+::\+Encoding\+Type \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a399790c5fe8076d91a58c621c0c2a79e}{Encoding\+Type}}}
+
+
+
+\mbox{\hyperlink{classrapidjson_1_1_encoding}{Encoding}} type from Value. 
+
+
+
+Definition at line 81 of file pointer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_aa077ce171ea25cf501c12f2d5df7f248}\label{classrapidjson_1_1_generic_pointer_aa077ce171ea25cf501c12f2d5df7f248}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!GenericPointer@{GenericPointer}}
+\index{GenericPointer@{GenericPointer}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericPointer()}{GenericPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$}]{allocator = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+
+Definition at line 107 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{107 : \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a303e16e7d6c391a2afe8669744f79897}{allocator\_}}(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}{allocator}}), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a8798d7fdb02cd5b95bf032760aed8445}{ownAllocator\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a38f23dc869001b53149804e563f6a465}{nameBuffer\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_ad76284430e5e54ed22a4c93dc59e00c7}{tokens\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}{tokenCount\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a28e0ba01bc383d2fe7d54a450e35cd7a}{parseErrorOffset\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a20d76ef128abbdd0acd87d2f1fb0ae34}{parseErrorCode\_}}(\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba9094f236b2ec70c42f1ea91dffc1e39b}{kPointerParseErrorNone}}) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a8f831aae14afc493a82b5fb6aa9c3c43}\label{classrapidjson_1_1_generic_pointer_a8f831aae14afc493a82b5fb6aa9c3c43}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!GenericPointer@{GenericPointer}}
+\index{GenericPointer@{GenericPointer}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericPointer()}{GenericPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}} $\ast$}]{source,  }\item[{\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$}]{allocator = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor that parses a string or U\+RI fragment representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & A null-\/terminated, string or U\+RI fragment representation of J\+S\+ON pointer. \\
+\hline
+{\em allocator} & User supplied allocator for this pointer. If no allocator is provided, it creates a self-\/owned one. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 114 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{114                                                                         : \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a303e16e7d6c391a2afe8669744f79897}{allocator\_}}(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}{allocator}}), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a8798d7fdb02cd5b95bf032760aed8445}{ownAllocator\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a38f23dc869001b53149804e563f6a465}{nameBuffer\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_ad76284430e5e54ed22a4c93dc59e00c7}{tokens\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}{tokenCount\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a28e0ba01bc383d2fe7d54a450e35cd7a}{parseErrorOffset\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a20d76ef128abbdd0acd87d2f1fb0ae34}{parseErrorCode\_}}(\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba9094f236b2ec70c42f1ea91dffc1e39b}{kPointerParseErrorNone}}) \{}
+\DoxyCodeLine{115         Parse(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, \mbox{\hyperlink{namespacerapidjson_1_1internal_abe45d9242ecab3b9b58117961f57dc2f}{internal::StrLen}}(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}));}
+\DoxyCodeLine{116     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::source, and rapidjson\+::internal\+::\+Str\+Len().
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a00ad17ea227d2556404df7cc64c6aeb5}\label{classrapidjson_1_1_generic_pointer_a00ad17ea227d2556404df7cc64c6aeb5}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!GenericPointer@{GenericPointer}}
+\index{GenericPointer@{GenericPointer}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericPointer()}{GenericPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}} $\ast$}]{source,  }\item[{size\+\_\+t}]{length,  }\item[{\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$}]{allocator = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor that parses a string or U\+RI fragment representation, with length of the source string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & A string or U\+RI fragment representation of J\+S\+ON pointer. \\
+\hline
+{\em length} & Length of source. \\
+\hline
+{\em allocator} & User supplied allocator for this pointer. If no allocator is provided, it creates a self-\/owned one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Slightly faster than the overload without length. 
+\end{DoxyNote}
+
+
+Definition at line 137 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{137                                                                               : \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a303e16e7d6c391a2afe8669744f79897}{allocator\_}}(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}{allocator}}), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a8798d7fdb02cd5b95bf032760aed8445}{ownAllocator\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a38f23dc869001b53149804e563f6a465}{nameBuffer\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_ad76284430e5e54ed22a4c93dc59e00c7}{tokens\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}{tokenCount\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a28e0ba01bc383d2fe7d54a450e35cd7a}{parseErrorOffset\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a20d76ef128abbdd0acd87d2f1fb0ae34}{parseErrorCode\_}}(\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba9094f236b2ec70c42f1ea91dffc1e39b}{kPointerParseErrorNone}}) \{}
+\DoxyCodeLine{138         Parse(\mbox{\hyperlink{namespacerapidjson_a37a3d95ab06aa7542487bb76e704885c}{source}}, length);}
+\DoxyCodeLine{139     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::source.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a6df9f6a01d1b5945811055e1cf8aead6}\label{classrapidjson_1_1_generic_pointer_a6df9f6a01d1b5945811055e1cf8aead6}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!GenericPointer@{GenericPointer}}
+\index{GenericPointer@{GenericPointer}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericPointer()}{GenericPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token}{Token}} $\ast$}]{tokens,  }\item[{size\+\_\+t}]{token\+Count }\end{DoxyParamCaption})}
+
+
+
+Constructor with user-\/supplied tokens. 
+
+This constructor let user supplies const array of tokens. This prevents the parsing process and eliminates allocation. This is preferred for memory constrained environments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokens} & An constant array of tokens representing the J\+S\+ON pointer. \\
+\hline
+{\em token\+Count} & Number of tokens.\\
+\hline
+\end{DoxyParams}
+{\bfseries{Example}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define NAME(s) \{ s, sizeof(s) / sizeof(s[0]) - 1, kPointerInvalidIndex \}}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define INDEX(i) \{ \#i, sizeof(\#i) - 1, i \}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{static} \textcolor{keyword}{const} Pointer::Token kTokens[] = \{ NAME(\textcolor{stringliteral}{"foo"}), INDEX(123) \};}
+\DoxyCodeLine{\textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{namespacerapidjson_a080910f74d2f5046e6724280159cf374}{Pointer}} p(kTokens, \textcolor{keyword}{sizeof}(kTokens) / \textcolor{keyword}{sizeof}(kTokens[0]));}
+\DoxyCodeLine{\textcolor{comment}{// Equivalent to static const Pointer p("/foo/123");}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#undef NAME}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#undef INDEX}}
+\end{DoxyCode}
+ 
+
+Definition at line 163 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{163 : \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a303e16e7d6c391a2afe8669744f79897}{allocator\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a8798d7fdb02cd5b95bf032760aed8445}{ownAllocator\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a38f23dc869001b53149804e563f6a465}{nameBuffer\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_ad76284430e5e54ed22a4c93dc59e00c7}{tokens\_}}(const\_cast<Token*>(tokens)), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}{tokenCount\_}}(tokenCount), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a28e0ba01bc383d2fe7d54a450e35cd7a}{parseErrorOffset\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a20d76ef128abbdd0acd87d2f1fb0ae34}{parseErrorCode\_}}(\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba9094f236b2ec70c42f1ea91dffc1e39b}{kPointerParseErrorNone}}) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_ae071847ed3e7389f5b256d26fcc8fd62}\label{classrapidjson_1_1_generic_pointer_ae071847ed3e7389f5b256d26fcc8fd62}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!GenericPointer@{GenericPointer}}
+\index{GenericPointer@{GenericPointer}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericPointer()}{GenericPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+
+Definition at line 166 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{166                                               : \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a303e16e7d6c391a2afe8669744f79897}{allocator\_}}(rhs.allocator\_), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a8798d7fdb02cd5b95bf032760aed8445}{ownAllocator\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a38f23dc869001b53149804e563f6a465}{nameBuffer\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_ad76284430e5e54ed22a4c93dc59e00c7}{tokens\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}{tokenCount\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a28e0ba01bc383d2fe7d54a450e35cd7a}{parseErrorOffset\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a20d76ef128abbdd0acd87d2f1fb0ae34}{parseErrorCode\_}}(\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba9094f236b2ec70c42f1ea91dffc1e39b}{kPointerParseErrorNone}}) \{}
+\DoxyCodeLine{167         *\textcolor{keyword}{this} = rhs;}
+\DoxyCodeLine{168     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_afedfcaac36fa589a46667825d3d0b763}\label{classrapidjson_1_1_generic_pointer_afedfcaac36fa589a46667825d3d0b763}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!GenericPointer@{GenericPointer}}
+\index{GenericPointer@{GenericPointer}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{GenericPointer()}{GenericPointer()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{rhs,  }\item[{\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$}]{allocator }\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+
+Definition at line 171 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{171                                                                     : \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a303e16e7d6c391a2afe8669744f79897}{allocator\_}}(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}{allocator}}), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a8798d7fdb02cd5b95bf032760aed8445}{ownAllocator\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a38f23dc869001b53149804e563f6a465}{nameBuffer\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_ad76284430e5e54ed22a4c93dc59e00c7}{tokens\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}{tokenCount\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a28e0ba01bc383d2fe7d54a450e35cd7a}{parseErrorOffset\_}}(), \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a20d76ef128abbdd0acd87d2f1fb0ae34}{parseErrorCode\_}}(\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_ggade540ee4cc2a416c23b8ee2c12393c7ba9094f236b2ec70c42f1ea91dffc1e39b}{kPointerParseErrorNone}}) \{}
+\DoxyCodeLine{172         *\textcolor{keyword}{this} = rhs;}
+\DoxyCodeLine{173     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a0e144b9956a5272c13ceff3b9306e748}\label{classrapidjson_1_1_generic_pointer_a0e144b9956a5272c13ceff3b9306e748}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!````~GenericPointer@{$\sim$GenericPointer}}
+\index{````~GenericPointer@{$\sim$GenericPointer}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{$\sim$GenericPointer()}{~GenericPointer()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::$\sim$\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+
+
+Definition at line 176 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{176                       \{}
+\DoxyCodeLine{177         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a38f23dc869001b53149804e563f6a465}{nameBuffer\_}})    \textcolor{comment}{// If user-supplied tokens constructor is used, nameBuffer\_ is nullptr and tokens\_ are not deallocated.}}
+\DoxyCodeLine{178             Allocator::Free(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_ad76284430e5e54ed22a4c93dc59e00c7}{tokens\_}});}
+\DoxyCodeLine{179         \mbox{\hyperlink{rapidjson_8h_a52c941c3fdd646527cdcd42aa846a28a}{RAPIDJSON\_DELETE}}(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a8798d7fdb02cd5b95bf032760aed8445}{ownAllocator\_}});}
+\DoxyCodeLine{180     \}}
+
+\end{DoxyCode}
+
+
+References R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+E\+L\+E\+TE.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a7cb5eda2af1722e52efa591c4103ebec}\label{classrapidjson_1_1_generic_pointer_a7cb5eda2af1722e52efa591c4103ebec}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!Append@{Append}}
+\index{Append@{Append}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{Append()}{Append()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Append (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token}{Token}} \&}]{token,  }\item[{\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$}]{allocator = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+
+
+Append a token and return a new Pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em token} & \mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token}{Token}} to be appended. \\
+\hline
+{\em allocator} & \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} for the newly return Pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new Pointer with appended token. 
+\end{DoxyReturn}
+
+
+Definition at line 244 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{244                                                                               \{}
+\DoxyCodeLine{245         \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_aa077ce171ea25cf501c12f2d5df7f248}{GenericPointer}} r;}
+\DoxyCodeLine{246         r.allocator\_ = \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}{allocator}};}
+\DoxyCodeLine{247         \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}} *p = r.CopyFromRaw(*\textcolor{keyword}{this}, 1, token.length + 1);}
+\DoxyCodeLine{248         std::memcpy(p, token.name, (token.length + 1) * \textcolor{keyword}{sizeof}(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}}));}
+\DoxyCodeLine{249         r.tokens\_[\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}{tokenCount\_}}].name = p;}
+\DoxyCodeLine{250         r.tokens\_[\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}{tokenCount\_}}].length = token.length;}
+\DoxyCodeLine{251         r.tokens\_[\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}{tokenCount\_}}].index = token.index;}
+\DoxyCodeLine{252         \textcolor{keywordflow}{return} r;}
+\DoxyCodeLine{253     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Token\+::index, rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Token\+::length, and rapidjson\+::\+Generic\+Pointer$<$ Value\+Type, Allocator $>$\+::\+Token\+::name.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a30f4eac82e9fded60dead3f7d1cb3941}\label{classrapidjson_1_1_generic_pointer_a30f4eac82e9fded60dead3f7d1cb3941}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!Append@{Append}}
+\index{Append@{Append}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{Append()}{Append()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}} \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Append (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}} $\ast$}]{name,  }\item[{\mbox{\hyperlink{namespacerapidjson_a44eb33eaa523e36d466b1ced64b85c84}{Size\+Type}}}]{length,  }\item[{\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $\ast$}]{allocator = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+
+
+Append a name token with length, and return a new Pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name to be appended. \\
+\hline
+{\em length} & Length of name. \\
+\hline
+{\em allocator} & \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} for the newly return Pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new Pointer with appended token. 
+\end{DoxyReturn}
+
+
+Definition at line 262 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{262                                                                                            \{}
+\DoxyCodeLine{263         Token token = \{ name, length, \mbox{\hyperlink{namespacerapidjson_a7c5fc5aced6a3cde477b80699a3f13d7}{kPointerInvalidIndex}} \};}
+\DoxyCodeLine{264         \textcolor{keywordflow}{return} \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a7cb5eda2af1722e52efa591c4103ebec}{Append}}(token, \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}{allocator}});}
+\DoxyCodeLine{265     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::k\+Pointer\+Invalid\+Index.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a23194bb6ce6c07c78981344fe80ac3a6}\label{classrapidjson_1_1_generic_pointer_a23194bb6ce6c07c78981344fe80ac3a6}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Assignment operator. 
+
+
+
+Definition at line 183 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{183                                                          \{}
+\DoxyCodeLine{184         \textcolor{keywordflow}{if} (\textcolor{keyword}{this} != \&rhs) \{}
+\DoxyCodeLine{185             \textcolor{comment}{// Do not delete ownAllcator}}
+\DoxyCodeLine{186             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a38f23dc869001b53149804e563f6a465}{nameBuffer\_}})}
+\DoxyCodeLine{187                 Allocator::Free(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_ad76284430e5e54ed22a4c93dc59e00c7}{tokens\_}});}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189             \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}{tokenCount\_}} = rhs.tokenCount\_;}
+\DoxyCodeLine{190             \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a28e0ba01bc383d2fe7d54a450e35cd7a}{parseErrorOffset\_}} = rhs.parseErrorOffset\_;}
+\DoxyCodeLine{191             \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a20d76ef128abbdd0acd87d2f1fb0ae34}{parseErrorCode\_}} = rhs.parseErrorCode\_;}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193             \textcolor{keywordflow}{if} (rhs.nameBuffer\_)}
+\DoxyCodeLine{194                 CopyFromRaw(rhs); \textcolor{comment}{// Normally parsed tokens.}}
+\DoxyCodeLine{195             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{196                 \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_ad76284430e5e54ed22a4c93dc59e00c7}{tokens\_}} = rhs.tokens\_; \textcolor{comment}{// User supplied const tokens.}}
+\DoxyCodeLine{197                 \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a38f23dc869001b53149804e563f6a465}{nameBuffer\_}} = 0;}
+\DoxyCodeLine{198             \}}
+\DoxyCodeLine{199         \}}
+\DoxyCodeLine{200         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{201     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_aa881255d7b268d819d0f2cc27a4fff81}\label{classrapidjson_1_1_generic_pointer_aa881255d7b268d819d0f2cc27a4fff81}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!RAPIDJSON\_DISABLEIF\_RETURN@{RAPIDJSON\_DISABLEIF\_RETURN}}
+\index{RAPIDJSON\_DISABLEIF\_RETURN@{RAPIDJSON\_DISABLEIF\_RETURN}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{RAPIDJSON\_DISABLEIF\_RETURN()}{RAPIDJSON\_DISABLEIF\_RETURN()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+template$<$typename T $>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::R\+A\+P\+I\+D\+J\+S\+O\+N\+\_\+\+D\+I\+S\+A\+B\+L\+E\+I\+F\+\_\+\+R\+E\+T\+U\+RN (\begin{DoxyParamCaption}\item[{(internal\+::\+Not\+Expr$<$ internal\+::\+Is\+Same$<$ typename internal\+::\+Remove\+Const$<$ T $>$\+::\mbox{\hyperlink{namespacerapidjson_ae79a4751c1c460ff0de5ecc07874f3e4}{Type}}, \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}} $>$ $>$)}]{,  }\item[{(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$)}]{ }\end{DoxyParamCaption})}
+
+
+
+Append a name token without length, and return a new Pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name (const Ch$\ast$) to be appended. \\
+\hline
+{\em allocator} & \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} for the newly return Pointer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new Pointer with appended token. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a91762c063f390c1463eb772dfd1b822b}\label{classrapidjson_1_1_generic_pointer_a91762c063f390c1463eb772dfd1b822b}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!Swap@{Swap}}
+\index{Swap@{Swap}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}\& \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::Swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Swap the content of this pointer with an other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The pointer to swap with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Constant complexity. 
+\end{DoxyNote}
+
+
+Definition at line 208 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{208                                                                    \{}
+\DoxyCodeLine{209         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a303e16e7d6c391a2afe8669744f79897}{allocator\_}}, other.allocator\_);}
+\DoxyCodeLine{210         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a8798d7fdb02cd5b95bf032760aed8445}{ownAllocator\_}}, other.ownAllocator\_);}
+\DoxyCodeLine{211         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a38f23dc869001b53149804e563f6a465}{nameBuffer\_}}, other.nameBuffer\_);}
+\DoxyCodeLine{212         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_ad76284430e5e54ed22a4c93dc59e00c7}{tokens\_}}, other.tokens\_);}
+\DoxyCodeLine{213         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}{tokenCount\_}}, other.tokenCount\_);}
+\DoxyCodeLine{214         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a28e0ba01bc383d2fe7d54a450e35cd7a}{parseErrorOffset\_}}, other.parseErrorOffset\_);}
+\DoxyCodeLine{215         \mbox{\hyperlink{namespacerapidjson_1_1internal_a68791bde4229e786fa02b0833fee0bef}{internal::Swap}}(\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a20d76ef128abbdd0acd87d2f1fb0ae34}{parseErrorCode\_}}, other.parseErrorCode\_);}
+\DoxyCodeLine{216         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{217     \}}
+
+\end{DoxyCode}
+
+
+References rapidjson\+::internal\+::\+Swap().
+
+
+
+Referenced by rapidjson\+::\+Swap\+Value\+By\+Pointer().
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a249c61b5d4bed20c3f8972c57f46a937}\label{classrapidjson_1_1_generic_pointer_a249c61b5d4bed20c3f8972c57f46a937}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!swap@{swap}}
+\index{swap@{swap}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{swap}{swap}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+void swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{a,  }\item[{\mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+free-\/standing swap function helper 
+
+Helper function to enable support for common swap implementation pattern based on {\ttfamily std\+::swap\+:} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a249c61b5d4bed20c3f8972c57f46a937}{swap}}(MyClass\& \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}, MyClass\& b) \{}
+\DoxyCodeLine{    \textcolor{keyword}{using} std::swap;}
+\DoxyCodeLine{    \mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a249c61b5d4bed20c3f8972c57f46a937}{swap}}(\mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}.pointer, b.pointer);}
+\DoxyCodeLine{    \textcolor{comment}{// ...}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a91762c063f390c1463eb772dfd1b822b}{Swap()}} 
+\end{DoxySeeAlso}
+
+
+Definition at line 231 of file pointer.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{231 \{ \mbox{\hyperlink{namespacerapidjson_a11fce64e721729aaf6be4a485c78f231}{a}}.Swap(b); \}}
+
+\end{DoxyCode}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}\label{classrapidjson_1_1_generic_pointer_a3e671447cf032271956fa984aad23ef7}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!allocator@{allocator}}
+\index{allocator@{allocator}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{allocator}{allocator}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::allocator}
+
+
+
+Definition at line 275 of file pointer.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a303e16e7d6c391a2afe8669744f79897}\label{classrapidjson_1_1_generic_pointer_a303e16e7d6c391a2afe8669744f79897}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!allocator\_@{allocator\_}}
+\index{allocator\_@{allocator\_}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{allocator\_}{allocator\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::allocator\+\_\+}
+
+
+
+The current allocator. It is either user-\/supplied or equal to own\+Allocator\+\_\+. 
+
+
+
+Definition at line 1099 of file pointer.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a38f23dc869001b53149804e563f6a465}\label{classrapidjson_1_1_generic_pointer_a38f23dc869001b53149804e563f6a465}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!nameBuffer\_@{nameBuffer\_}}
+\index{nameBuffer\_@{nameBuffer\_}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{nameBuffer\_}{nameBuffer\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_generic_pointer_a850f78846c5548565f8395be5f3427b7}{Ch}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::name\+Buffer\+\_\+}
+
+
+
+A buffer containing all names in tokens. 
+
+
+
+Definition at line 1101 of file pointer.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a8798d7fdb02cd5b95bf032760aed8445}\label{classrapidjson_1_1_generic_pointer_a8798d7fdb02cd5b95bf032760aed8445}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!ownAllocator\_@{ownAllocator\_}}
+\index{ownAllocator\_@{ownAllocator\_}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{ownAllocator\_}{ownAllocator\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::own\+Allocator\+\_\+}
+
+
+
+\mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} owned by this Pointer. 
+
+
+
+Definition at line 1100 of file pointer.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a20d76ef128abbdd0acd87d2f1fb0ae34}\label{classrapidjson_1_1_generic_pointer_a20d76ef128abbdd0acd87d2f1fb0ae34}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!parseErrorCode\_@{parseErrorCode\_}}
+\index{parseErrorCode\_@{parseErrorCode\_}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{parseErrorCode\_}{parseErrorCode\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{group___r_a_p_i_d_j_s_o_n___e_r_r_o_r_s_gade540ee4cc2a416c23b8ee2c12393c7b}{Pointer\+Parse\+Error\+Code}} \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::parse\+Error\+Code\+\_\+}
+
+
+
+Parsing error code. 
+
+
+
+Definition at line 1105 of file pointer.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_a28e0ba01bc383d2fe7d54a450e35cd7a}\label{classrapidjson_1_1_generic_pointer_a28e0ba01bc383d2fe7d54a450e35cd7a}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!parseErrorOffset\_@{parseErrorOffset\_}}
+\index{parseErrorOffset\_@{parseErrorOffset\_}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{parseErrorOffset\_}{parseErrorOffset\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::parse\+Error\+Offset\+\_\+}
+
+
+
+Offset in code unit when parsing fail. 
+
+
+
+Definition at line 1104 of file pointer.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}\label{classrapidjson_1_1_generic_pointer_acb657759c16fa63da15186db8c29122b}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!tokenCount\_@{tokenCount\_}}
+\index{tokenCount\_@{tokenCount\_}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{tokenCount\_}{tokenCount\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+size\+\_\+t \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::token\+Count\+\_\+}
+
+
+
+Number of tokens in tokens\+\_\+. 
+
+
+
+Definition at line 1103 of file pointer.\+h.
+
+\mbox{\Hypertarget{classrapidjson_1_1_generic_pointer_ad76284430e5e54ed22a4c93dc59e00c7}\label{classrapidjson_1_1_generic_pointer_ad76284430e5e54ed22a4c93dc59e00c7}} 
+\index{rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}!tokens\_@{tokens\_}}
+\index{tokens\_@{tokens\_}!rapidjson::GenericPointer$<$ ValueType, Allocator $>$@{rapidjson::GenericPointer$<$ ValueType, Allocator $>$}}
+\subsubsection{\texorpdfstring{tokens\_}{tokens\_}}
+{\footnotesize\ttfamily template$<$typename Value\+Type , typename Allocator  = Crt\+Allocator$>$ \\
+\mbox{\hyperlink{structrapidjson_1_1_generic_pointer_1_1_token}{Token}}$\ast$ \mbox{\hyperlink{classrapidjson_1_1_generic_pointer}{rapidjson\+::\+Generic\+Pointer}}$<$ Value\+Type, \mbox{\hyperlink{classrapidjson_1_1_allocator}{Allocator}} $>$\+::tokens\+\_\+}
+
+
+
+A list of tokens. 
+
+
+
+Definition at line 1102 of file pointer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{fwd_8h}{fwd.\+h}}\item 
+D\+:/cloned repo trainawear/train-\/\+A-\/wear/\+Server/rapidjson/\mbox{\hyperlink{pointer_8h}{pointer.\+h}}\end{DoxyCompactItemize}

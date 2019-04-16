@@ -1,0 +1,107 @@
+ 
+
+\subsection*{Train-\/\+A-\/\+Wear}
+
+\subsubsection*{A wearable workout monitor that provides real time feedback on the user\textquotesingle{}s form while performing basic workouts to improve shape and exercise outcomes.}
+
+This uses a Raspberry Pi and three Inertial Measurement Units that detect position and orientation of the body segments they are placed on.
+
+\subsection*{If you need help or want to brag about your sensor, find us on any social media or join our \href{https://gitter.im/train-A-wear/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge}{\texttt{ }}}
+
+\subsection*{Prerequisites}
+
+
+\begin{DoxyItemize}
+\item Inertial Measurement Unit train-\/box
+\item Local Wi\+Fi network
+\item Android Smartphone
+\end{DoxyItemize}
+
+\subsubsection*{Server}
+
+
+\begin{DoxyItemize}
+\item Linux machine with g++ compiler
+\end{DoxyItemize}
+
+\subsubsection*{Sensor software}
+
+
+\begin{DoxyItemize}
+\item Arduino I\+DE
+\item E\+S\+P8266 Library
+\item L\+S\+M9\+D\+S1 Spark\+Fun Library
+\end{DoxyItemize}
+
+\subsubsection*{Android app\+:}
+
+
+\begin{DoxyItemize}
+\item An Android phone 
+\begin{DoxyItemize}
+\item Android S\+DK 27  
+\item Android Build tools v27.\+0.\+2  
+\item Android Support Repository  
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection*{Installing}
+
+\subsubsection*{Server}
+
+To install the server run the following commands on a Linux machine\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd ./Server}
+\DoxyCodeLine{make}
+\DoxyCodeLine{./tAw-server}
+\end{DoxyCode}
+ And you would have the train-\/\+A-\/wear server running on port 31415. The port can be changed in the server file.
+
+\subsubsection*{Microcontroller}
+
+Open the ino sketch from Sensor Software folder in Arduino I\+DE. Select settings for programming a generic E\+S\+P8266 board. Modify the following lines\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{*ssid\_1 = "X"}
+\DoxyCodeLine{*pass\_1 = "X"}
+\end{DoxyCode}
+ with the values of your Wi\+Fi\textquotesingle{}s S\+S\+ID and password. Upload the sketch, reset the sensor and it will be up and running.
+
+\subsubsection*{Phone application}
+
+Import the project from Phone App folder in Android Studio and run the gradle build. You can either generate an A\+PK file or install it straight away on your phone.
+
+\subsection*{Using the real time sensor system}
+
+Once everything is set up on the Raspberry Pi and the application is installed, the user can start using the features provided. The system requires a specific number and location for the inertial sensors, depending on the exercise type.
+
+\subsubsection*{Setup}
+
+To obtain the correct sensor placement, consult the Wear it and go section inside each workout. This provides descriptions of the location and orientation, as well as images. The top of the sensor carcass displays two logos and two L\+E\+Ds, which allows the user to determine the correct placement. \subsubsection*{Quick start}
+
+Star the application -\/$>$ Workout -\/$>$ exercise of choice -\/$>$ S\+T\+A\+RT
+
+\subsubsection*{Obtaining feedback}
+
+Enter a workout using the steps quoted in {\itshape Quick start}. When the sensors are ready to go, the message \char`\"{}\+Ready to go!\char`\"{} is displayed. Then, the workout can be started anytime by pressing S\+T\+A\+RT, and stopped
+
+The sensors send datagrams to the R\+PI, whose algorithms process it and send instructions to the app. These are displayed on the screen in the
+
+\subsubsection*{Additional features}
+
+To get help on {\bfseries{network or sensor faults}}\+: start the app -\/$>$ Help -\/$>$ F\+A\+U\+L\+TY S\+Y\+S\+T\+EM For more detail on {\bfseries{pre-\/ and post-\/workout stretching}}\+: start the app -\/$>$ Help -\/$>$ R\+E\+C\+O\+M\+M\+E\+N\+D\+ED S\+T\+R\+E\+T\+C\+H\+ES Advice on {\bfseries{healthy lifestyle{\bfseries{ is available\+: start the app -\/$>$ Help -\/$>$ H\+E\+A\+L\+TH \& L\+I\+F\+E\+S\+T\+Y\+LE}}}}
+
+{\bfseries{{\bfseries{\subsubsection*{Sensor power}}}}}
+
+{\bfseries{{\bfseries{ When the sensor is powered, the green L\+ED turns on. The red L\+ED is on when the battery is connected.}}}}
+
+{\bfseries{{\bfseries{\subsection*{Documentation}}}}}
+
+{\bfseries{{\bfseries{}}}}
+
+{\bfseries{{\bfseries{\subsubsection*{Examples}}}}}
+
+{\bfseries{{\bfseries{ Using I\+MU data to obtain body position and orientation.}}}}
+
+{\bfseries{{\bfseries{Decision loops for workout feedback.}}}}
+
+{\bfseries{{\bfseries{Real time data plotting on smartphone (php) }}}}
