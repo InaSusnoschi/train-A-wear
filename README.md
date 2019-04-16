@@ -63,7 +63,7 @@ Star the application -> Workout -> exercise of choice -> START
 
 ### Obtaining feedback
 Enter a workout using the steps quoted in <i>Quick start</i>. When the sensors are ready to go, the message "Ready to go!" is displayed. Then, the workout can be started anytime by pressing START, and stopped  
-The sensors send datagrams to the RPI, whose algorithms process it and send instructions to the app. These are displayed on the screen in the
+The sensors send datagrams to the RPI, whose algorithms process it and send instructions to the app. These are displayed on the screen in each workout activity.
 
 ### Additional features
 To get help on <b>network or sensor faults</b>: start the app -> Help -> FAULTY SYSTEM
@@ -77,7 +77,55 @@ When the sensor is powered, the green LED turns on. The red LED is on when the b
 
 ### Examples
 Using IMU data to obtain body position and orientation.
+This yields the roll of the body segment
+```ruby
+double Integration_algorithms::Roll(double gyro_y, double acc_x, double acc_z)
+{
+    double roll;
+    double dt = 0.01;
+    roll += gyro_y * dt;
+    double acc_correction_y = atan2f(acc_z, acc_x) *180/M_PI;
+    complementary_filter(&roll, acc_correction_y);
+    return roll;
+}
+```
+Which can be used to monitor back posture while squatting.
+#### Checking for lower back bending during squats
+```
+//rotation of the back (it does not stay stationary during the exercise)
+//check for rotation along y axis
+int Integration_algorithms::squat_straight_back(double gyro_y, double acc_x, double acc_z)
+{
+    double roll = Integration_algorithms::Roll(gyro_y, acc_x, acc_z);
+    if (roll < 0.2 || roll > 0.2){
+        return 1; //message "Bend during exercise!"
+    } else{
+        return 2; //message "Keep the nice posture"
+    }
+}
+```
+### Decision loops for workout feedback on the application
+The app receives continuous data after pressing the START button and implements a switch such as the one below, used for squat monitoring, to display feedback.
 
-Decision loops for workout feedback.
+```ruby
+    public static String showFeedback (String instructionDef){
+        switch (instructionDef){
+            case "0":
+                return("Ready to start");
 
-Real time data plotting on smartphone (php)
+            case "1":
+                return ("Let's go!");
+                
+            case "2":
+                return("Your back is bending, keep it straight while tensing your abs");
+
+            case "3":
+                return("Knees caving in: Keep your knees in line with your toes");
+
+            case "4":
+                return ("It looks like your form is asymmetrical when lowering in squat");
+
+            default:
+                return("You're doing great, keep going!");
+        }
+    }```
